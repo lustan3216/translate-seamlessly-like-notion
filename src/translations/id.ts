@@ -107,7 +107,21 @@ export const translations = {
   'footer.help': 'Pusat Bantuan',
   'footer.copyright': '© 2024 AnyTranslator. Semua hak dilindungi.',
   
+  // Support
+  'support.title': 'Dukungan',
+  'support.heading': 'Bagaimana kami bisa membantu Anda?',
+  'support.description': 'Kami di sini untuk membantu Anda mendapatkan yang terbaik dari Any Translator. Pilih cara yang Anda sukai untuk mendapatkan dukungan:',
+  'support.chat.title': 'Dukungan Live Chat',
+  'support.chat.description': 'Dapatkan bantuan instan dari tim dukungan kami melalui fitur live chat kami. Klik gelembung chat di sudut kanan bawah untuk memulai percakapan.',
+  'support.chat.button': 'Mulai Live Chat',
+  'support.email.title': 'Dukungan Email',
+  'support.email.description': 'Kirimkan kami email dengan pertanyaan atau umpan balik Anda. Kami biasanya merespons dalam 24 jam.',
+  'support.email.button': 'Kirim Email',
+  'support.email.address': 'support@anytranslator.app',
+  
   // Meta
   'meta.title': 'AnyTranslator - Aplikasi Terjemahan Cerdas',
-  'meta.description': 'Teman cerdas Anda untuk terjemahan instan dan akurat dalam 50+ bahasa'
+  'meta.description': 'Teman cerdas Anda untuk terjemahan instan dan akurat dalam 50+ bahasa',
+  'meta.support.title': 'Dukungan - Any Translator',
+  'meta.support.description': 'Dapatkan bantuan dengan Any Translator. Hubungi tim dukungan kami melalui live chat atau email untuk bantuan dengan kebutuhan terjemahan Anda.'
 };

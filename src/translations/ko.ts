@@ -107,7 +107,21 @@ export const translations = {
   'footer.help': '도움말 센터',
   'footer.copyright': '© 2024 AnyTranslator. 모든 권리 보유.',
   
+  // Support
+  'support.title': '지원',
+  'support.heading': '어떻게 도와드릴까요?',
+  'support.description': 'Any Translator를 최대한 활용할 수 있도록 도와드릴게요. 선호하는 지원 방식을 선택하세요:',
+  'support.chat.title': '라이브 채팅 지원',
+  'support.chat.description': '라이브 채팅 기능을 통해 지원팀으로부터 즉시 도움을 받으세요. 우측 하단의 채팅 버블을 클릭하여 대화를 시작하세요.',
+  'support.chat.button': '라이브 채팅 시작',
+  'support.email.title': '이메일 지원',
+  'support.email.description': '질문이나 피드백을 이메일로 보내주세요. 일반적으로 24시간 이내에 답변합니다.',
+  'support.email.button': '이메일 보내기',
+  'support.email.address': 'support@anytranslator.app',
+  
   // Meta
   'meta.title': 'AnyTranslator - 스마트 번역 앱',
-  'meta.description': '50+ 언어에서 즉시 정확한 번역을 위한 당신의 스마트한 동반자'
+  'meta.description': '50+ 언어에서 즉시 정확한 번역을 위한 당신의 스마트한 동반자',
+  'meta.support.title': '지원 - Any Translator',
+  'meta.support.description': 'Any Translator 도움말을 받으세요. 번역 요구사항에 대한 지원을 위해 라이브 채팅 또는 이메일로 지원팀에 문의하세요.'
 };

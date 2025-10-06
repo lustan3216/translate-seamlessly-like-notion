@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const { currentLanguage, setLanguage, t, languages } = useLanguage();
@@ -66,6 +67,11 @@ const Navigation = () => {
               {isMobile ? t('nav.openApp').split(' ')[0] : t('nav.openApp')}
             </Button>
           </a>
+          <Link to="/support">
+            <Button variant="ghost" size="sm" className="font-medium text-xs sm:text-sm px-2 sm:px-3 text-text-secondary hover:text-text-primary">
+              {t('footer.support')}
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>

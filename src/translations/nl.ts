@@ -107,7 +107,21 @@ export const translations = {
   'footer.help': 'Helpcentrum',
   'footer.copyright': '© 2024 AnyTranslator. Alle rechten voorbehouden.',
   
+  // Support
+  'support.title': 'Ondersteuning',
+  'support.heading': 'Hoe kunnen we je helpen?',
+  'support.description': 'We zijn hier om je te helpen het beste uit Any Translator te halen. Kies je voorkeursmanier om ondersteuning te krijgen:',
+  'support.chat.title': 'Live Chat Ondersteuning',
+  'support.chat.description': 'Krijg onmiddellijke hulp van ons ondersteuningsteam via onze live chat functie. Klik op de chat-bubble rechtsonder om een gesprek te starten.',
+  'support.chat.button': 'Live Chat Starten',
+  'support.email.title': 'E-mail Ondersteuning',
+  'support.email.description': 'Stuur ons een e-mail met je vragen of feedback. We reageren meestal binnen 24 uur.',
+  'support.email.button': 'E-mail Versturen',
+  'support.email.address': 'support@anytranslator.app',
+  
   // Meta
   'meta.title': 'AnyTranslator - Slimme vertaalapp',
-  'meta.description': 'Je slimme metgezel voor directe, accurate vertalingen in 50+ talen'
+  'meta.description': 'Je slimme metgezel voor directe, accurate vertalingen in 50+ talen',
+  'meta.support.title': 'Ondersteuning - Any Translator',
+  'meta.support.description': 'Krijg hulp met Any Translator. Neem contact op met ons ondersteuningsteam via live chat of e-mail voor hulp bij je vertaalbehoeften.'
 };

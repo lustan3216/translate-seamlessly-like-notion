@@ -107,7 +107,21 @@ export const translations = {
   'footer.help': 'Hjelpesenter',
   'footer.copyright': '© 2024 AnyTranslator. Alle rettigheter forbeholdt.',
   
+  // Support
+  'support.title': 'Support',
+  'support.heading': 'Hvordan kan vi hjelpe deg?',
+  'support.description': 'Vi er her for å hjelpe deg få mest mulig ut av Any Translator. Velg din foretrukne måte å få support på:',
+  'support.chat.title': 'Live Chat Support',
+  'support.chat.description': 'Få øyeblikkelig hjelp fra vårt supportteam gjennom vår live chat-funksjon. Klikk på chat-boblen nederst til høyre for å starte en samtale.',
+  'support.chat.button': 'Start Live Chat',
+  'support.email.title': 'E-post Support',
+  'support.email.description': 'Send oss en e-post med dine spørsmål eller tilbakemeldinger. Vi svarer typisk innen 24 timer.',
+  'support.email.button': 'Send E-post',
+  'support.email.address': 'support@anytranslator.app',
+  
   // Meta
   'meta.title': 'AnyTranslator - Smart oversettelsesapp',
-  'meta.description': 'Din smarte følgesvenn for øyeblikkelige, nøyaktige oversettelser på 50+ språk'
+  'meta.description': 'Din smarte følgesvenn for øyeblikkelige, nøyaktige oversettelser på 50+ språk',
+  'meta.support.title': 'Support - Any Translator',
+  'meta.support.description': 'Få hjelp med Any Translator. Kontakt vårt supportteam via live chat eller e-post for assistanse med dine oversettelsesbehov.'
 };

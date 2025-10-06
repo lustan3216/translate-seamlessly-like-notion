@@ -107,7 +107,21 @@ export const translations = {
   'footer.help': '幫助中心',
   'footer.copyright': '© 2024 AnyTranslator。保留所有權利。',
   
+  // Support
+  'support.title': '支援',
+  'support.heading': '我們如何幫助您？',
+  'support.description': '我們在這裡幫助您充分利用 Any Translator。選擇您喜歡的支援方式：',
+  'support.chat.title': '即時聊天支援',
+  'support.chat.description': '透過我們的即時聊天功能從我們的支援團隊獲得即時幫助。點擊右下角的聊天氣泡開始對話。',
+  'support.chat.button': '開始即時聊天',
+  'support.email.title': '電子郵件支援',
+  'support.email.description': '傳送電子郵件給我們，詢問或提供意見回饋。我們通常在 24 小時內回復。',
+  'support.email.button': '傳送電子郵件',
+  'support.email.address': 'support@anytranslator.app',
+  
   // Meta
   'meta.title': 'AnyTranslator - 智慧翻譯應用程式',
-  'meta.description': '您智慧的即時準確翻譯夥伴，支援50+種語言'
+  'meta.description': '您智慧的即時準確翻譯夥伴，支援50+種語言',
+  'meta.support.title': '支援 - Any Translator',
+  'meta.support.description': '獲得 Any Translator 幫助。透過即時聊天或電子郵件聯繫我們的支援團隊，獲得翻譯需求的協助。'
 };

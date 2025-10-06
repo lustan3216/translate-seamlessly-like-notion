@@ -107,7 +107,21 @@ export const translations = {
   'footer.help': 'ヘルプセンター',
   'footer.copyright': '© 2024 AnyTranslator。全著作権所有。',
   
+  // Support
+  'support.title': 'サポート',
+  'support.heading': 'どうしたらお手伝いできますか？',
+  'support.description': 'Any Translatorを最大限に活用できるようお手伝いします。お好みのサポート方法をお選びください：',
+  'support.chat.title': 'ライブチャットサポート',
+  'support.chat.description': 'ライブチャット機能でサポートチームから即座のヘルプを受けられます。右下のチャットバブルをクリックして会話を開始してください。',
+  'support.chat.button': 'ライブチャットを開始',
+  'support.email.title': 'メールサポート',
+  'support.email.description': 'ご質問やフィードバックをメールでお送りください。24時間以内に返信いたします。',
+  'support.email.button': 'メールを送信',
+  'support.email.address': 'support@anytranslator.app',
+  
   // Meta
   'meta.title': 'AnyTranslator - スマート翻訳アプリ',
-  'meta.description': '50+言語での即座で正確な翻訳のためのあなたのスマートなパートナー'
+  'meta.description': '50+言語での即座で正確な翻訳のためのあなたのスマートなパートナー',
+  'meta.support.title': 'サポート - Any Translator',
+  'meta.support.description': 'Any Translatorのヘルプを取得してください。翻訳ニーズのサポートについてライブチャットまたはメールでサポートチームにお問い合わせください。'
 };

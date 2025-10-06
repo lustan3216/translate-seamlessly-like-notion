@@ -107,7 +107,21 @@ export const translations = {
   'footer.help': 'ศูนย์ช่วยเหลือ',
   'footer.copyright': '© 2024 AnyTranslator สงวนลิขสิทธิ์ทั้งหมด',
   
+  // Support
+  'support.title': 'การสนับสนุน',
+  'support.heading': 'เราสามารถช่วยคุณได้อย่างไร?',
+  'support.description': 'เราอยู่ที่นี่เพื่อช่วยให้คุณได้ประโยชน์สูงสุดจาก Any Translator เลือกวิธีที่คุณต้องการในการรับการสนับสนุน:',
+  'support.chat.title': 'การสนับสนุนแชทสด',
+  'support.chat.description': 'รับความช่วยเหลือทันทีจากทีมสนับสนุนของเราผ่านคุณสมบัติแชทสด คลิกบัลลูนแชทที่มุมขวาล่างเพื่อเริ่มการสนทนา',
+  'support.chat.button': 'เริ่มแชทสด',
+  'support.email.title': 'การสนับสนุนทางอีเมล',
+  'support.email.description': 'ส่งอีเมลมาหาเราพร้อมคำถามหรือคำคิดเห็นของคุณ เรามักจะตอบกลับภายใน 24 ชั่วโมง',
+  'support.email.button': 'ส่งอีเมล',
+  'support.email.address': 'support@anytranslator.app',
+  
   // Meta
   'meta.title': 'AnyTranslator - แอปแปลภาษาอัจฉริยะ',
-  'meta.description': 'เพื่อนอัจฉริยะของคุณสำหรับการแปลทันทีและแม่นยำใน 50+ ภาษา'
+  'meta.description': 'เพื่อนอัจฉริยะของคุณสำหรับการแปลทันทีและแม่นยำใน 50+ ภาษา',
+  'meta.support.title': 'การสนับสนุน - Any Translator',
+  'meta.support.description': 'รับความช่วยเหลือกับ Any Translator ติดต่อทีมสนับสนุนของเราผ่านแชทสดหรืออีเมลเพื่อความช่วยเหลือกับความต้องการแปลของคุณ'
 };

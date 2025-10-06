@@ -107,7 +107,21 @@ export const translations = {
   'footer.help': 'Ohjekeskus',
   'footer.copyright': '© 2024 AnyTranslator. Kaikki oikeudet pidätetään.',
   
+  // Support
+  'support.title': 'Tuki',
+  'support.heading': 'Kuinka voimme auttaa sinua?',
+  'support.description': 'Olemme täällä auttamassa sinua saamaan kaiken irti Any Translatorista. Valitse haluamasi tukitapa:',
+  'support.chat.title': 'Live Chat -tuki',
+  'support.chat.description': 'Saa välitöntä apua tukitimiltämme live chat -toiminnon kautta. Klikkaa chat-kuplaa oikeassa alakulmassa aloittaaksesi keskustelun.',
+  'support.chat.button': 'Aloita Live Chat',
+  'support.email.title': 'Sähköpostituki',
+  'support.email.description': 'Lähetä meille sähköposti kysymyksistäsi tai palautteestasi. Vastaamme yleensä 24 tunnin kuluessa.',
+  'support.email.button': 'Lähetä sähköposti',
+  'support.email.address': 'support@anytranslator.app',
+  
   // Meta
   'meta.title': 'AnyTranslator - Älykäs käännössovellus',
-  'meta.description': 'Sinun älykäs kumppanisi välittömiin, tarkkoihin käännöksiin 50+ kielellä'
+  'meta.description': 'Sinun älykäs kumppanisi välittömiin, tarkkoihin käännöksiin 50+ kielellä',
+  'meta.support.title': 'Tuki - Any Translator',
+  'meta.support.description': 'Saa apua Any Translatorin kanssa. Ota yhteyttä tukitiimiimme live chatin tai sähköpostin kautta saadaksesi apua käännöstarpeisiisi.'
 };

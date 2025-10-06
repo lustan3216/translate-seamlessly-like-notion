@@ -107,7 +107,21 @@ export const translations = {
   'footer.help': 'Centre d\'aide',
   'footer.copyright': '© 2024 AnyTranslator. Tous droits réservés.',
   
+  // Support
+  'support.title': 'Support',
+  'support.heading': 'Comment pouvons-nous vous aider ?',
+  'support.description': 'Nous sommes là pour vous aider à tirer le meilleur parti d\'Any Translator. Choisissez votre méthode préférée pour obtenir de l\'aide :',
+  'support.chat.title': 'Support de Chat en Direct',
+  'support.chat.description': 'Obtenez une aide instantanée de notre équipe de support grâce à notre fonction de chat en direct. Cliquez sur la bulle de chat en bas à droite pour commencer une conversation.',
+  'support.chat.button': 'Démarrer le Chat en Direct',
+  'support.email.title': 'Support par Email',
+  'support.email.description': 'Envoyez-nous un email avec vos questions ou commentaires. Nous répondons généralement dans les 24 heures.',
+  'support.email.button': 'Envoyer un Email',
+  'support.email.address': 'support@anytranslator.app',
+  
   // Meta
   'meta.title': 'AnyTranslator - Application de traduction intelligente',
-  'meta.description': 'Votre compagnon intelligent pour des traductions instantanées et précises dans plus de 50 langues'
+  'meta.description': 'Votre compagnon intelligent pour des traductions instantanées et précises dans plus de 50 langues',
+  'meta.support.title': 'Support - Any Translator',
+  'meta.support.description': 'Obtenez de l\'aide avec Any Translator. Contactez notre équipe de support par chat en direct ou par email pour obtenir de l\'aide avec vos besoins de traduction.'
 };

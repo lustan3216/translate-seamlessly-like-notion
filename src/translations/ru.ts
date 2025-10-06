@@ -107,6 +107,22 @@ export const translations = {
   'footer.help': 'Справочный центр',
   'footer.copyright': '© 2024 Any Translator. Все права защищены.',
   
+  // Support Section
+  'support.title': 'Поддержка',
+  'support.heading': 'Как мы можем вам помочь?',
+  'support.description': 'Мы здесь, чтобы помочь вам получить максимум от Any Translator. Выберите предпочтительный способ получения поддержки:',
+  'support.chat.title': 'Поддержка в живом чате',
+  'support.chat.description': 'Получите мгновенную помощь от нашей команды поддержки через функцию живого чата. Нажмите на пузырь чата в правом нижнем углу, чтобы начать разговор.',
+  'support.chat.button': 'Начать живой чат',
+  'support.email.title': 'Поддержка по электронной почте',
+  'support.email.description': 'Отправьте нам электронное письмо с вашими вопросами или отзывами. Мы обычно отвечаем в течение 24 часов.',
+  'support.email.button': 'Отправить письмо',
+  'support.email.address': 'support@anytranslator.app',
+  
+  // Support Meta
+  'meta.support.title': 'Поддержка - Any Translator',
+  'meta.support.description': 'Получите помощь с Any Translator. Свяжитесь с нашей командой поддержки через живой чат или электронную почту для помощи с вашими потребностями в переводе.',
+  
   // Meta
   'meta.title': 'Any Translator - Умное приложение для перевода',
   'meta.description': 'Ваш умный помощник для мгновенных, точных переводов на 100+ языках'

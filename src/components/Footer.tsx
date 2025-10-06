@@ -24,6 +24,9 @@ const Footer = () => {
           </a>
           
           <div className="flex items-center gap-6">
+            <Link to="/support" className="text-notion-sm text-text-muted hover:text-text-secondary transition-colors">
+              {t('footer.support')}
+            </Link>
             <Link to="/terms-of-service" className="text-notion-sm text-text-muted hover:text-text-secondary transition-colors">
               {t('footer.terms')}
             </Link>

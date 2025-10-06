@@ -107,7 +107,21 @@ export const translations = {
   'footer.help': 'Trung tâm Trợ giúp',
   'footer.copyright': '© 2024 AnyTranslator. Tất cả quyền được bảo lưu.',
   
+  // Support
+  'support.title': 'Hỗ trợ',
+  'support.heading': 'Chúng tôi có thể giúp gì cho bạn?',
+  'support.description': 'Chúng tôi ở đây để giúp bạn tận dụng tối đa Any Translator. Chọn cách bạn thích để nhận hỗ trợ:',
+  'support.chat.title': 'Hỗ trợ Chat Trực tiếp',
+  'support.chat.description': 'Nhận trợ giúp tức thì từ đội ngũ hỗ trợ của chúng tôi thông qua tính năng chat trực tiếp. Nhấp vào bọc chat ở góc phải dưới để bắt đầu cuộc trò chuyện.',
+  'support.chat.button': 'Bắt đầu Chat Trực tiếp',
+  'support.email.title': 'Hỗ trợ Email',
+  'support.email.description': 'Gửi cho chúng tôi email với câu hỏi hoặc phản hồi của bạn. Chúng tôi thường phản hồi trong vòng 24 giờ.',
+  'support.email.button': 'Gửi Email',
+  'support.email.address': 'support@anytranslator.app',
+  
   // Meta
   'meta.title': 'AnyTranslator - Ứng dụng Dịch thuật Thông minh',
-  'meta.description': 'Người bạn thông minh của bạn cho bản dịch tức thì và chính xác trong 50+ ngôn ngữ'
+  'meta.description': 'Người bạn thông minh của bạn cho bản dịch tức thì và chính xác trong 50+ ngôn ngữ',
+  'meta.support.title': 'Hỗ trợ - Any Translator',
+  'meta.support.description': 'Nhận trợ giúp với Any Translator. Liên hệ đội ngũ hỗ trợ của chúng tôi qua chat trực tiếp hoặc email để được hỗ trợ với nhu cầu dịch thuật của bạn.'
 };
