@@ -107,6 +107,22 @@ export const translations = {
   'footer.help': '帮助中心',
   'footer.copyright': '© 2024 AnyTranslator。保留所有权利。',
   
+  // Support Section
+  'support.title': '支持',
+  'support.heading': '我们如何帮助您？',
+  'support.description': '我们在这里帮助您充分利用 Any Translator。选择您喜欢的支持方式：',
+  'support.chat.title': '实时聊天支持',
+  'support.chat.description': '通过我们的实时聊天功能从我们的支持团队获得即时帮助。点击右下角的聊天气泡开始对话。',
+  'support.chat.button': '开始实时聊天',
+  'support.email.title': '电子邮件支持',
+  'support.email.description': '发送电子邮件给我们，询问或提供意见反馈。我们通常在 24 小时内回复。',
+  'support.email.button': '发送电子邮件',
+  'support.email.address': 'support@anytranslator.app',
+  
+  // Support Meta
+  'meta.support.title': '支持 - Any Translator',
+  'meta.support.description': '获得 Any Translator 帮助。通过实时聊天或电子邮件联系我们的支持团队，获得翻译需求的协助。',
+  
   // Meta
   'meta.title': 'AnyTranslator - 智能翻译应用',
   'meta.description': '您智能的即时准确翻译伙伴，支持50+种语言'
