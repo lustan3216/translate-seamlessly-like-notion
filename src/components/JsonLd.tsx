@@ -16,7 +16,7 @@ export const JsonLd = ({ data }: JsonLdProps) => (
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "AnyTranslator Inc.",
+  "name": "Shiny Technology Co., Ltd.",
   "url": "https://anytranslator.app",
   "logo": {
     "@type": "ImageObject",
@@ -43,7 +43,7 @@ export const websiteSchema = {
   "description": "AI-powered translation app supporting 50+ languages with instant, accurate translations",
   "publisher": {
     "@type": "Organization",
-    "name": "AnyTranslator Inc."
+    "name": "Shiny Technology Co., Ltd."
   },
   "potentialAction": {
     "@type": "SearchAction",
@@ -106,7 +106,7 @@ export const mobileAppSchema = {
   ],
   "author": {
     "@type": "Organization",
-    "name": "AnyTranslator Inc."
+    "name": "Shiny Technology Co., Ltd."
   },
   "downloadUrl": "https://apps.apple.com/by/app/any-translator-ai-translate/id6738693321"
 };

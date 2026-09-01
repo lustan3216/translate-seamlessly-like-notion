@@ -44,7 +44,7 @@ const SEO = ({
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <meta name="keywords" content={pageKeywords} />
-        <meta name="author" content="AnyTranslator Inc." />
+        <meta name="author" content="Shiny Technology Co., Ltd." />
         <meta name="robots" content={noIndex ? 'noindex,nofollow' : 'index,follow'} />
         
         {/* Language and Locale */}
