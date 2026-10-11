@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-10",
+  "captures": [
+    {
+      "locale": "en",
+      "screen": "translate",
+      "path": "screens/en/translate.png",
+      "capture_id": "en-text-travel",
+      "sha256": "7df9283de130cc963ef35f8da1ce48b6ef905e20e64444463bcc2070f3d7da67",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T09:10:51.313412+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "en",
+      "screen": "voice",
+      "path": "screens/en/voice.png",
+      "capture_id": "en-audio-bidirectional-coffee",
+      "sha256": "e354a731c4bab0efcd27ba27f8b1248521e35bae6a164b020978deaa3f86c6a3",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T09:46:34.869109+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "en",
+      "screen": "agent",
+      "path": "screens/en/agent.png",
+      "capture_id": "en-agent-counterpart-recap",
+      "sha256": "23ce7baf0954a25db847206f276d00706b69dfea4d96e0cad889523510acb061",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T16:17:07.140116+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "en",
+      "screen": "menu",
+      "path": "screens/en/menu.png",
+      "capture_id": "en-scan-menu-selection",
+      "sha256": "73529aa9c4d010fa888cd9031e5a7af97e52c4ec33db1aee62f11e90c4d7483a",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T09:16:05.122138+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "en",
+      "screen": "document",
+      "path": "screens/en/document.png",
+      "capture_id": "en-scan-document-driving",
+      "sha256": "a4762230dcd834330022e64fa00595faf5e7ebe5890472f55f34c6b1eac98402",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T09:24:04.751413+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "en",
+      "screen": "chat",
+      "path": "screens/en/chat.png",
+      "capture_id": "en-chat-cafe-dialogue",
+      "sha256": "6be19b31064d67e12e12411c606e0b45006ab687f16ef78a8fa6c602cc2b72ba",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T09:33:34.109972+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "ru",
+      "screen": "translate",
+      "path": "screens/ru/translate.png",
+      "capture_id": "ru-text-travel",
+      "sha256": "7884cef47402df0751a4ba261e46e1fe26fcc30de2acaa766047411e92064285",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T09:58:17.799154+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "ru",
+      "screen": "voice",
+      "path": "screens/ru/voice.png",
+      "capture_id": "ru-audio-bidirectional-directions",
+      "sha256": "e2e029f0878897ddf2682e90018564ec4a7bebf2db17c14d824cf24cae26f06d",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T16:24:31.073859+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "ru",
+      "screen": "agent",
+      "path": "screens/ru/agent.png",
+      "capture_id": "ru-agent-hotel-summary",
+      "sha256": "2cdecbc151ebfb38439c442a605299b7456b32970640579796a6990bbb6fc598",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T16:07:42.541307+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "ru",
+      "screen": "menu",
+      "path": "screens/ru/menu.png",
+      "capture_id": "ru-scan-menu-selection",
+      "sha256": "68078c18065d7f609e0ef82862ffd9cdd87959c6c5d5adc717583c8e9eed0656",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T15:59:08.940719+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "ru",
+      "screen": "document",
+      "path": "screens/ru/document.png",
+      "capture_id": "ru-scan-document-cycling",
+      "sha256": "9aa375dfd77db7eb3e640f29eee22c127b22da6fb56561930626a8199271a051",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T16:29:03.376019+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    },
+    {
+      "locale": "ru",
+      "screen": "chat",
+      "path": "screens/ru/chat.png",
+      "capture_id": "ru-chat-cafe-dialogue",
+      "sha256": "c4dd828be510dc1bcad2f94ca7480ed1317c8db77aa4c5f19c2aa42d2f506b79",
+      "pixel_size": [
+        1320,
+        2868
+      ],
+      "captured_at": "2026-10-10T16:32:40.185700+00:00",
+      "installed_version_build": "2.0.11+202610101147",
+      "capture_platform": "iOS Simulator",
+      "pixel_modifications": "none; exact native screenshot bytes copied"
+    }
+  ]
+}

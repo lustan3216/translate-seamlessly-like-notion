@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import HugeIcon from "@/components/HugeIcon";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -28,7 +28,7 @@ const Navigation = () => {
             alt="AnyTranslator" 
             className="h-8 w-8 rounded-[5px]"
           />
-          <span className="text-notion-xl font-semibold text-text-primary">
+          <span className="text-base sm:text-notion-xl font-semibold text-text-primary">
             AnyTranslator
           </span>
         </a>
@@ -36,10 +36,10 @@ const Navigation = () => {
         <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="secondary" size="sm" className="font-medium text-xs sm:text-sm px-2 sm:px-3">
-                <span className="mr-1 sm:mr-2">{currentLanguage.flag}</span>
-                {isMobile ? '' : t('nav.language')}
-                <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4 ml-1 sm:ml-2" />
+              <Button variant="secondary" size="sm" className="font-medium text-xs sm:text-sm px-2 sm:px-3" aria-label={t('landing.language')}>
+                <HugeIcon name="language-square" className="h-4 w-4" />
+                {!isMobile && <span className="ml-2">{currentLanguage.nativeName}</span>}
+                <HugeIcon name="arrow-down-01-round" className="hidden sm:inline-block sm:h-4 sm:w-4 sm:ml-2" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-56">
@@ -49,10 +49,9 @@ const Navigation = () => {
                   onClick={() => setLanguage(language)}
                   className="flex items-center gap-2 cursor-pointer"
                 >
-                  <span>{language.flag}</span>
                   <span>{language.nativeName}</span>
                   {currentLanguage.code === language.code && (
-                    <span className="ml-auto text-blue-600">✓</span>
+                    <HugeIcon name="tick-02" className="ml-auto h-4 w-4 text-blue-600" />
                   )}
                 </DropdownMenuItem>
               ))}
@@ -67,7 +66,7 @@ const Navigation = () => {
               {isMobile ? t('nav.openApp').split(' ')[0] : t('nav.openApp')}
             </Button>
           </a>
-          <Link to="/support">
+          <Link to={`/support?lang=${currentLanguage.code}`}>
             <Button variant="ghost" size="sm" className="font-medium text-xs sm:text-sm px-2 sm:px-3 text-text-secondary hover:text-text-primary">
               {t('footer.support')}
             </Button>

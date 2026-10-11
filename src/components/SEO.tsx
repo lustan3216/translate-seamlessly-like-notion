@@ -18,7 +18,7 @@ const SEO = ({
   title,
   description,
   keywords,
-  image = 'https://anytranslator.app/cute.jpg',
+  image = 'https://anytranslator.app/app-preview/screens/en/translate.png',
   url,
   type = 'website',
   noIndex = false,
@@ -28,7 +28,7 @@ const SEO = ({
   const { currentLanguage } = useLanguage();
   
   const siteTitle = 'AnyTranslator';
-  const defaultDescription = 'Your smart companion for instant, accurate translations in 50+ languages';
+  const defaultDescription = 'Translate text, conversations and photos with AnyTranslator for iPhone.';
   const defaultKeywords = 'translator, translation, language, AI, multilingual, instant translation, voice translation, photo translation, text translation';
   
   const pageTitle = title ? `${title} | ${siteTitle}` : `${siteTitle} - Smart Translation App`;
@@ -61,7 +61,7 @@ const SEO = ({
         <meta property="og:image" content={image} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content={siteTitle} />
-        <meta property="og:locale" content={currentLanguage.code === 'en' ? 'en_US' : `${currentLanguage.code.replace('-', '_')}_${currentLanguage.code.replace('-', '_').toUpperCase()}`} />
+        <meta property="og:locale" content={currentLanguage.code === 'en' ? 'en_US' : ({ ko: 'ko_KR', ja: 'ja_JP', fr: 'fr_FR', de: 'de_DE', es: 'es_ES', it: 'it_IT', 'pt-br': 'pt_BR', fi: 'fi_FI', da: 'da_DK', nl: 'nl_NL', no: 'nb_NO', sv: 'sv_SE', 'zh-cn': 'zh_CN', 'zh-tw': 'zh_TW', id: 'id_ID', vi: 'vi_VN', th: 'th_TH', ru: 'ru_RU' }[currentLanguage.code] || 'en_US')} />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -89,7 +89,7 @@ const SEO = ({
         {/* iOS App Store Link */}
         <meta property="al:ios:app_store_id" content="6738693321" />
         <meta property="al:ios:app_name" content="AnyTranslator" />
-        <meta property="al:ios:url" content="anytranslator://open" />
+        <meta property="al:ios:url" content="translator://text" />
         
         {/* Performance optimizations */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

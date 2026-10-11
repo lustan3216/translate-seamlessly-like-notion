@@ -17,6 +17,7 @@ import { translations as zhTw } from './zh-tw';
 import { translations as id } from './id';
 import { translations as vi } from './vi';
 import { translations as th } from './th';
+import { landingTranslations } from './landing';
 
 export const translations: Record<string, Record<string, string>> = {
   'en': en,
@@ -42,5 +43,8 @@ export const translations: Record<string, Record<string, string>> = {
 };
 
 export const getTranslations = (languageCode: string): Record<string, string> => {
-  return translations[languageCode] || translations['en'];
+  return {
+    ...(translations[languageCode] || translations['en']),
+    ...(landingTranslations[languageCode] || landingTranslations['en']),
+  };
 };

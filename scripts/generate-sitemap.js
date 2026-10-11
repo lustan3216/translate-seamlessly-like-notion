@@ -40,6 +40,12 @@ const getStaticSitemapEntries = () => {
       priority: 1.0
     },
     {
+      url: `${baseUrl}/support`,
+      lastmod: currentDate,
+      changefreq: 'monthly',
+      priority: 0.5
+    },
+    {
       url: `${baseUrl}/terms-of-service`,
       lastmod: currentDate,
       changefreq: 'monthly',

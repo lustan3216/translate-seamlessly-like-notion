@@ -2,11 +2,11 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
   return (
     <footer className="border-t border-border-light py-lg">
-      <div className="container mx-auto flex items-center justify-center">
-        <div className="flex items-center gap-8">
+      <div className="container mx-auto flex items-center justify-center px-4">
+        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
           <a 
             href="https://apps.apple.com/by/app/any-translator-ai-translate/id6738693321"
             target="_blank"
@@ -23,14 +23,14 @@ const Footer = () => {
             </span>
           </a>
           
-          <div className="flex items-center gap-6">
-            <Link to="/support" className="text-notion-sm text-text-muted hover:text-text-secondary transition-colors">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+            <Link to={`/support?lang=${currentLanguage.code}`} className="text-notion-sm text-text-muted hover:text-text-secondary transition-colors">
               {t('footer.support')}
             </Link>
-            <Link to="/terms-of-service" className="text-notion-sm text-text-muted hover:text-text-secondary transition-colors">
+            <Link to={`/terms-of-service?lang=${currentLanguage.code}`} className="text-notion-sm text-text-muted hover:text-text-secondary transition-colors">
               {t('footer.terms')}
             </Link>
-            <Link to="/privacy-policy" className="text-notion-sm text-text-muted hover:text-text-secondary transition-colors">
+            <Link to={`/privacy-policy?lang=${currentLanguage.code}`} className="text-notion-sm text-text-muted hover:text-text-secondary transition-colors">
               {t('footer.privacy')}
             </Link>
           </div>
