@@ -10,7 +10,7 @@ assert.equal(languages.length, 19);
 assert.deepEqual(Object.keys(translations).sort(), languages.sort());
 
 const keys = Object.keys(translations.en).sort();
-assert.equal(keys.length, 72);
+assert.equal(keys.length, 70);
 for (const [language, copy] of Object.entries(translations)) {
   assert.deepEqual(Object.keys(copy).sort(), keys, `Missing landing copy: ${language}`);
   for (const [key, value] of Object.entries(copy)) {

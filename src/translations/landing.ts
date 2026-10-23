@@ -11,7 +11,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Svar på en besked. Spørg i receptionen. Læs skiltet foran dig. Med tekst-, tale- og fotooversættelse i én app bliver fremmede ord til dit næste skridt.",
     "landing.explore": "Se funktionerne",
     "landing.platform": "Til iPhone og iPad",
-    "landing.screensNote": "Faktiske skærmbilleder fra appen. Funktioner markeret som et smugkig er endnu ikke tilgængelige i App Store-versionen.",
     "landing.featureEyebrow": "ÉN APP, MANGE VEJE TIL FORSTÅELSE",
     "landing.featureTitle": "Hver funktion har en plads i din hverdag.",
     "landing.featureBody": "Oversæt en samtale, vælg et måltid, forstå et dokument eller lær af en besked. Udforsk alle funktionerne nedenfor med eksempler på, hvornår de hjælper, og hvad du kan bruge resultatet til.",
@@ -51,7 +50,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Hvorfor vælge Pro?",
     "landing.knowledgeTitle": "Tilpasset viden: forklaringer, der passer til dig.",
     "landing.knowledgeBody": "Gem instruktioner til forklaringer, for eksempel dit fagområde, dine studiemål eller den ønskede detaljeringsgrad. Vælg den profil, der passer til det, du læser, så Helper kan forklare begreber i den rette sammenhæng. Pro understøtter op til 5 profiler til forskellige behov.",
-    "landing.preview": "Smugkig på en ny funktion",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Til dig, der bruger et andet sprog hver dag.",
     "landing.proBody": "Når et andet sprog er en del af dit arbejde, dine rejser eller din læring, giver Pro dig mere plads til at kommunikere og flere måder at tilpasse appen til dig.",
@@ -71,7 +69,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: forstå ordene bag oversættelsen.",
     "landing.helperBody": "Åbn forklaringer ved siden af en oversættelse, og udforsk ordforråd, grammatik, eksempler og kulturel sammenhæng. Brug Helper, når den bogstavelige betydning er klar, men du stadig vil vide, hvordan en vending bruges. Tilpassede vidensprofiler lader dig tilpasse forklaringerne til dine interesser og læringsbehov.",
     "landing.historyTitle": "Historik: vend tilbage til dine oversættelser.",
-    "landing.historyBody": "Åbn gemte oversættelser for at tjekke en vending, vende tilbage til en samtale eller repetere det, du har lært. Forhåndsvisningen af Smart Scan gemmer også organiserede scanninger, og forhåndsvisningen af Voice Agent gemmer samtaler og bekræftelser på enheden, så du kan finde detaljerne igen."
+    "landing.historyBody": "Åbn gemte oversættelser for at tjekke en vending, vende tilbage til en samtale eller repetere det, du har lært. Smart Scan gemmer også organiserede scanninger, og Voice Agent gemmer samtaler og bekræftelser på enheden, så du kan finde detaljerne igen."
   },
   "de": {
     "landing.navFeatures": "Funktionen",
@@ -85,7 +83,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Eine Nachricht beantworten. An der Rezeption nachfragen. Das Schild vor dir lesen. Mit Text-, Sprach- und Fotoübersetzung in einer App werden aus unbekannten Worten deine nächsten Schritte.",
     "landing.explore": "Funktionen entdecken",
     "landing.platform": "Für iPhone und iPad",
-    "landing.screensNote": "Echte App-Ansichten. Als Vorschau gekennzeichnete Funktionen sind in der App Store-Version noch nicht verfügbar.",
     "landing.featureEyebrow": "EINE APP. VIELE WEGE ZUM VERSTEHEN.",
     "landing.featureTitle": "Jede Funktion hat ihren Platz im Alltag.",
     "landing.featureBody": "Ein Gespräch übersetzen, ein Gericht auswählen, ein Dokument verstehen oder aus einer Nachricht lernen. Entdecke alle Funktionen mit Beispielen dafür, wann sie helfen und wie du das Ergebnis nutzen kannst.",
@@ -125,7 +122,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Warum Pro wählen?",
     "landing.knowledgeTitle": "Eigenes Wissen: Erklärungen, die zu dir passen.",
     "landing.knowledgeBody": "Speichere Vorgaben für Erklärungen, etwa deinen Beruf, deine Lernziele oder die gewünschte Ausführlichkeit. Wähle das passende Profil für den Text, den du liest, damit Helper Begriffe im richtigen Kontext erklärt. Pro unterstützt bis zu 5 Profile für unterschiedliche Bedürfnisse.",
-    "landing.preview": "Funktionsvorschau",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Für alle, die jeden Tag eine andere Sprache nutzen.",
     "landing.proBody": "Wenn eine andere Sprache zu deiner Arbeit, deinen Reisen oder deinem Lernen gehört, gibt dir Pro mehr Spielraum zum Kommunizieren und mehr Möglichkeiten, die App auf dich abzustimmen.",
@@ -145,7 +141,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: die Wörter hinter der Übersetzung verstehen.",
     "landing.helperBody": "Öffne Erklärungen neben einer Übersetzung und erfahre mehr über Wortschatz, Grammatik, Beispiele und kulturellen Kontext. Nutze Helper, wenn du die wörtliche Bedeutung kennst, aber noch wissen möchtest, wie eine Formulierung verwendet wird. Mit eigenen Wissensprofilen passt du diese Erklärungen an deine Interessen und Lernziele an.",
     "landing.historyTitle": "Verlauf: frühere Übersetzungen wiederfinden.",
-    "landing.historyBody": "Öffne gespeicherte Übersetzungen, um eine Formulierung nachzuschlagen, ein Gespräch erneut anzusehen oder Gelerntes zu wiederholen. Die Vorschau von Smart Scan speichert auch aufbereitete Scans. Die Vorschau von Voice Agent bewahrt Gesprächs- und Bestätigungsaufzeichnungen auf dem Gerät auf, damit du Details später prüfen kannst."
+    "landing.historyBody": "Öffne gespeicherte Übersetzungen, um eine Formulierung nachzuschlagen, ein Gespräch erneut anzusehen oder Gelerntes zu wiederholen. Smart Scan speichert auch aufbereitete Scans. Voice Agent bewahrt Gesprächs- und Bestätigungsaufzeichnungen auf dem Gerät auf, damit du Details später prüfen kannst."
   },
   "en": {
     "landing.navFeatures": "Features",
@@ -159,7 +155,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Reply to a message. Ask at the front desk. Read the sign in front of you. Turn unfamiliar words into your next step, with text, voice and photo translation in one App.",
     "landing.explore": "Explore the features",
     "landing.platform": "For iPhone and iPad",
-    "landing.screensNote": "Actual App screens. Features marked as previews are not yet available in the App Store version.",
     "landing.featureEyebrow": "ONE APP, MANY WAYS TO UNDERSTAND",
     "landing.featureTitle": "Every feature, with a real reason to use it.",
     "landing.featureBody": "Translate a conversation, choose a meal, understand a document or learn from a message. Explore every feature below, with examples of when it helps and what you can do with the result.",
@@ -199,7 +194,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Why choose Pro?",
     "landing.knowledgeTitle": "Custom knowledge: explanations shaped around you.",
     "landing.knowledgeBody": "Save instructions for explanations, such as your profession, study goals or preferred level of detail. Select the profile that fits what you are reading so Helper can explain terms with the right context. Pro supports up to 5 profiles for different needs.",
-    "landing.preview": "Feature preview",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "For people who use another language every day.",
     "landing.proBody": "When another language is part of your work, travels or learning, Pro gives you more room to communicate and more ways to make the App your own.",
@@ -219,7 +213,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: understand the words behind the translation.",
     "landing.helperBody": "Open explanations alongside a translation to explore vocabulary, grammar, examples and cultural context. Use Helper when a literal meaning is clear but you still need to know how a phrase is used. Custom knowledge profiles let you tailor these explanations to your interests and learning needs.",
     "landing.historyTitle": "History: return to what you have translated.",
-    "landing.historyBody": "Reopen saved translations to check a phrase, revisit a conversation or review what you learned. Smart Scan previews also keep organized scans, and Voice Agent previews keep conversation and confirmation records on the device so you can revisit the details."
+    "landing.historyBody": "Reopen saved translations to check a phrase, revisit a conversation or review what you learned. Smart Scan also keeps organized scans, and Voice Agent keeps conversation and confirmation records on the device so you can revisit the details."
   },
   "es": {
     "landing.navFeatures": "Funciones",
@@ -233,7 +227,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Responde a un mensaje. Pregunta en recepción. Lee el cartel que tienes delante. Con traducción de texto, voz y fotos en una sola app, convierte las palabras desconocidas en tu próximo paso.",
     "landing.explore": "Descubre las funciones",
     "landing.platform": "Para iPhone y iPad",
-    "landing.screensNote": "Pantallas reales de la app. Las funciones marcadas como avances aún no están disponibles en la versión de App Store.",
     "landing.featureEyebrow": "UNA APP, MUCHAS FORMAS DE ENTENDER",
     "landing.featureTitle": "Cada función tiene un momento en el que te ayuda.",
     "landing.featureBody": "Traduce una conversación, elige qué comer, entiende un documento o aprende a partir de un mensaje. Explora todas las funciones a continuación, con ejemplos de cuándo usarlas y de qué puedes hacer con el resultado.",
@@ -273,7 +266,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "¿Por qué elegir Pro?",
     "landing.knowledgeTitle": "Conocimientos personalizados: explicaciones adaptadas a ti.",
     "landing.knowledgeBody": "Guarda instrucciones para las explicaciones, como tu profesión, tus objetivos de estudio o el nivel de detalle que prefieres. Selecciona el perfil adecuado para lo que lees y Helper explicará los términos con el contexto correspondiente. Pro admite hasta 5 perfiles para distintas necesidades.",
-    "landing.preview": "Vista previa de una función",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Para quienes usan otro idioma cada día.",
     "landing.proBody": "Cuando otro idioma forma parte de tu trabajo, tus viajes o tu aprendizaje, Pro te da más margen para comunicarte y más opciones para adaptar la app a ti.",
@@ -293,7 +285,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: entiende las palabras detrás de la traducción.",
     "landing.helperBody": "Abre explicaciones junto a la traducción para explorar vocabulario, gramática, ejemplos y contexto cultural. Usa Helper cuando ya entiendes el significado literal, pero necesitas saber cómo se utiliza una expresión. Los perfiles de conocimientos personalizados adaptan estas explicaciones a tus intereses y necesidades de aprendizaje.",
     "landing.historyTitle": "Historial: vuelve a lo que has traducido.",
-    "landing.historyBody": "Vuelve a abrir traducciones guardadas para comprobar una frase, revisar una conversación o repasar lo aprendido. La versión preliminar de Smart Scan también conserva los escaneos organizados, y la de Voice Agent guarda las conversaciones y los registros de confirmación en el dispositivo para que puedas consultar los detalles."
+    "landing.historyBody": "Vuelve a abrir traducciones guardadas para comprobar una frase, revisar una conversación o repasar lo aprendido. Smart Scan también conserva los escaneos organizados, y Voice Agent guarda las conversaciones y los registros de confirmación en el dispositivo para que puedas consultar los detalles."
   },
   "fi": {
     "landing.navFeatures": "Ominaisuudet",
@@ -307,7 +299,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Vastaa viestiin. Kysy vastaanotossa. Lue edessäsi oleva kyltti. Tekstin, puheen ja kuvien käännökset samassa sovelluksessa auttavat muuttamaan vieraat sanat seuraavaksi askeleeksi.",
     "landing.explore": "Tutustu ominaisuuksiin",
     "landing.platform": "iPhonelle ja iPadille",
-    "landing.screensNote": "Aitoja sovellusnäkymiä. Ennakkokatsauksiksi merkityt ominaisuudet eivät ole vielä saatavilla App Store -versiossa.",
     "landing.featureEyebrow": "YKSI SOVELLUS, MONTA TAPAA YMMÄRTÄÄ",
     "landing.featureTitle": "Jokaiselle toiminnolle on käyttöä arjessa.",
     "landing.featureBody": "Käännä keskustelu, valitse ateria, ymmärrä asiakirja tai opi viestistä. Tutustu kaikkiin toimintoihin ja esimerkkeihin siitä, milloin ne auttavat ja mitä voit tehdä tuloksella.",
@@ -347,7 +338,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Miksi valita Pro?",
     "landing.knowledgeTitle": "Omat tiedot: sinulle sopivat selitykset.",
     "landing.knowledgeBody": "Tallenna selityksiä varten ohjeita, kuten ammattisi, opiskelutavoitteesi tai toivomasi tarkkuus. Valitse lukemaasi tekstiin sopiva profiili, jotta Helper voi selittää termit oikeassa asiayhteydessä. Pro tukee enintään 5 profiilia eri tarpeisiin.",
-    "landing.preview": "Uuden ominaisuuden ennakkokatsaus",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Sinulle, joka käytät toista kieltä joka päivä.",
     "landing.proBody": "Kun toinen kieli kuuluu työhösi, matkoihisi tai opiskeluun, Pro antaa enemmän tilaa viestintään ja lisää tapoja tehdä sovelluksesta omannäköisesi.",
@@ -367,7 +357,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: ymmärrä käännöksen taustalla olevat sanat.",
     "landing.helperBody": "Avaa selitykset käännöksen vierelle ja tutustu sanastoon, kielioppiin, esimerkkeihin ja kulttuuriseen taustaan. Käytä Helperiä, kun ymmärrät kirjaimellisen merkityksen mutta haluat vielä tietää, miten ilmausta käytetään. Omat tietoprofiilit mukauttavat selitykset kiinnostuksenkohteisiisi ja oppimistarpeisiisi.",
     "landing.historyTitle": "Historia: palaa aiempiin käännöksiisi.",
-    "landing.historyBody": "Avaa tallennetut käännökset tarkistaaksesi ilmauksen, palataksesi keskusteluun tai kerrataksesi oppimaasi. Myös Smart Scanin esikatselu tallentaa järjestetyt skannaukset. Voice Agentin esikatselu säilyttää keskustelu- ja vahvistustiedot laitteessa, jotta voit palata yksityiskohtiin myöhemmin."
+    "landing.historyBody": "Avaa tallennetut käännökset tarkistaaksesi ilmauksen, palataksesi keskusteluun tai kerrataksesi oppimaasi. Myös Smart Scan tallentaa järjestetyt skannaukset. Voice Agent säilyttää keskustelu- ja vahvistustiedot laitteessa, jotta voit palata yksityiskohtiin myöhemmin."
   },
   "fr": {
     "landing.navFeatures": "Fonctionnalités",
@@ -381,7 +371,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Répondez à un message. Posez une question à la réception. Lisez le panneau devant vous. Avec la traduction de textes, de voix et de photos dans une seule app, transformez des mots inconnus en prochaine étape.",
     "landing.explore": "Découvrir les fonctionnalités",
     "landing.platform": "Pour iPhone et iPad",
-    "landing.screensNote": "Écrans réels de l’app. Les fonctionnalités indiquées comme des aperçus ne sont pas encore disponibles dans la version App Store.",
     "landing.featureEyebrow": "UNE APP, MILLE FAÇONS DE COMPRENDRE",
     "landing.featureTitle": "Chaque fonctionnalité répond à un besoin concret.",
     "landing.featureBody": "Traduisez une conversation, choisissez un plat, comprenez un document ou apprenez à partir d’un message. Découvrez toutes les fonctionnalités ci-dessous, avec des exemples de situations où elles vous aident et de ce que vous pouvez faire ensuite.",
@@ -421,7 +410,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Pourquoi choisir Pro ?",
     "landing.knowledgeTitle": "Connaissances personnalisées : des explications adaptées à vous.",
     "landing.knowledgeBody": "Enregistrez des consignes pour les explications, par exemple votre métier, vos objectifs d’étude ou le niveau de détail souhaité. Sélectionnez le profil adapté à votre lecture pour que Helper explique les termes dans le bon contexte. Pro permet de créer jusqu’à 5 profils pour différents besoins.",
-    "landing.preview": "Aperçu de fonctionnalité",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Pour ceux qui utilisent une autre langue au quotidien.",
     "landing.proBody": "Quand une autre langue fait partie de votre travail, de vos voyages ou de votre apprentissage, Pro vous donne plus de latitude pour communiquer et plus de possibilités pour adapter l’app à vos besoins.",
@@ -441,7 +429,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper : comprenez aussi comment employer les mots.",
     "landing.helperBody": "Ouvrez des explications à côté de la traduction pour explorer le vocabulaire, la grammaire, les exemples et le contexte culturel. Utilisez Helper lorsque le sens littéral est clair, mais que vous souhaitez comprendre comment employer une expression. Les profils de connaissances personnalisés adaptent ces explications à vos centres d’intérêt et à vos besoins d’apprentissage.",
     "landing.historyTitle": "Historique : retrouvez ce que vous avez traduit.",
-    "landing.historyBody": "Rouvrez vos traductions enregistrées pour vérifier une phrase, retrouver une conversation ou réviser ce que vous avez appris. La version en aperçu de Smart Scan conserve aussi les documents scannés et organisés, tandis que celle de Voice Agent conserve les conversations et les confirmations sur l’appareil pour vous permettre de revoir les détails."
+    "landing.historyBody": "Rouvrez vos traductions enregistrées pour vérifier une phrase, retrouver une conversation ou réviser ce que vous avez appris. Smart Scan conserve aussi les documents scannés et organisés, tandis que Voice Agent conserve les conversations et les confirmations sur l’appareil pour vous permettre de revoir les détails."
   },
   "id": {
     "landing.navFeatures": "Fitur",
@@ -455,7 +443,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Balas pesan. Bertanya di resepsionis. Baca papan di depan Anda. Dengan terjemahan teks, suara, dan foto dalam satu aplikasi, kata-kata asing menjadi langkah Anda berikutnya.",
     "landing.explore": "Jelajahi fitur",
     "landing.platform": "Untuk iPhone dan iPad",
-    "landing.screensNote": "Tampilan asli aplikasi. Fitur bertanda pratinjau belum tersedia dalam versi App Store.",
     "landing.featureEyebrow": "SATU APLIKASI, BANYAK CARA MEMAHAMI",
     "landing.featureTitle": "Setiap fitur punya saat yang tepat untuk digunakan.",
     "landing.featureBody": "Terjemahkan percakapan, pilih makanan, pahami dokumen, atau belajar dari pesan. Jelajahi semua fitur di bawah ini, lengkap dengan contoh kapan fitur tersebut membantu dan apa yang dapat Anda lakukan dengan hasilnya.",
@@ -495,7 +482,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Mengapa memilih Pro?",
     "landing.knowledgeTitle": "Pengetahuan khusus: penjelasan sesuai latar belakang Anda.",
     "landing.knowledgeBody": "Simpan instruksi penjelasan, seperti bidang pekerjaan, tujuan belajar, atau tingkat detail yang Anda sukai. Pilih profil yang sesuai dengan bacaan Anda agar Helper menjelaskan istilah dalam konteks yang tepat. Pro mendukung hingga 5 profil untuk kebutuhan berbeda.",
-    "landing.preview": "Pratinjau fitur baru",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Untuk Anda yang memakai bahasa lain setiap hari.",
     "landing.proBody": "Saat bahasa lain menjadi bagian dari pekerjaan, perjalanan, atau belajar Anda, Pro memberi lebih banyak ruang untuk berkomunikasi dan lebih banyak cara menyesuaikan aplikasi dengan kebutuhan Anda.",
@@ -515,7 +501,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: pahami arti dan cara memakai ungkapan.",
     "landing.helperBody": "Buka penjelasan di samping terjemahan untuk mempelajari kosakata, tata bahasa, contoh, dan konteks budaya. Gunakan Helper ketika arti harfiahnya sudah jelas, tetapi Anda masih ingin tahu cara menggunakan ungkapan tersebut. Profil pengetahuan khusus membantu menyesuaikan penjelasan dengan minat dan kebutuhan belajar Anda.",
     "landing.historyTitle": "Riwayat: lihat kembali terjemahan dan percakapan Anda.",
-    "landing.historyBody": "Buka kembali terjemahan tersimpan untuk memeriksa ungkapan, meninjau percakapan, atau mengulang pelajaran. Pratinjau Smart Scan juga menyimpan hasil pindai yang sudah tertata, sedangkan pratinjau Voice Agent menyimpan percakapan dan catatan konfirmasi di perangkat agar rinciannya dapat Anda lihat kembali."
+    "landing.historyBody": "Buka kembali terjemahan tersimpan untuk memeriksa ungkapan, meninjau percakapan, atau mengulang pelajaran. Smart Scan juga menyimpan hasil pindai yang sudah tertata, sedangkan Voice Agent menyimpan percakapan dan catatan konfirmasi di perangkat agar rinciannya dapat Anda lihat kembali."
   },
   "it": {
     "landing.navFeatures": "Funzioni",
@@ -529,7 +515,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Rispondi a un messaggio. Chiedi alla reception. Leggi il cartello davanti a te. Con traduzione di testo, voce e foto in un’unica app, le parole sconosciute diventano il tuo prossimo passo.",
     "landing.explore": "Scopri le funzioni",
     "landing.platform": "Per iPhone e iPad",
-    "landing.screensNote": "Schermate reali dell’app. Le funzioni indicate come anteprime non sono ancora disponibili nella versione App Store.",
     "landing.featureEyebrow": "UN'APP, TANTI MODI PER CAPIRE",
     "landing.featureTitle": "Ogni funzione ha un motivo concreto per essere usata.",
     "landing.featureBody": "Traduci una conversazione, scegli cosa mangiare, comprendi un documento o impara da un messaggio. Scopri tutte le funzioni qui sotto, con esempi di quando sono utili e di cosa puoi fare con il risultato.",
@@ -569,7 +554,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Perché scegliere Pro?",
     "landing.knowledgeTitle": "Conoscenze personalizzate: spiegazioni adatte al tuo contesto.",
     "landing.knowledgeBody": "Salva istruzioni per le spiegazioni, come la tua professione, i tuoi obiettivi di studio o il livello di dettaglio che preferisci. Scegli il profilo adatto a ciò che stai leggendo, così Helper può spiegare i termini nel contesto corretto. Pro supporta fino a 5 profili per esigenze diverse.",
-    "landing.preview": "Anteprima di una funzione",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Per chi usa un’altra lingua ogni giorno.",
     "landing.proBody": "Quando un’altra lingua fa parte del lavoro, dei viaggi o dello studio, Pro ti dà più spazio per comunicare e più modi per adattare l’app alle tue esigenze.",
@@ -589,7 +573,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: comprendi anche come usare le parole.",
     "landing.helperBody": "Apri le spiegazioni accanto a una traduzione per approfondire vocabolario, grammatica, esempi e contesto culturale. Usa Helper quando il significato letterale è chiaro, ma vuoi capire come si usa un’espressione. I profili di conoscenze personalizzate adattano le spiegazioni ai tuoi interessi e alle tue esigenze di apprendimento.",
     "landing.historyTitle": "Cronologia: ritrova ciò che hai tradotto.",
-    "landing.historyBody": "Riapri le traduzioni salvate per controllare una frase, rivedere una conversazione o ripassare ciò che hai imparato. La versione in anteprima di Smart Scan conserva anche le scansioni organizzate, mentre quella di Voice Agent salva le conversazioni e le conferme sul dispositivo, così puoi tornare a consultarne i dettagli."
+    "landing.historyBody": "Riapri le traduzioni salvate per controllare una frase, rivedere una conversazione o ripassare ciò che hai imparato. Smart Scan conserva anche le scansioni organizzate, mentre Voice Agent salva le conversazioni e le conferme sul dispositivo, così puoi tornare a consultarne i dettagli."
   },
   "ja": {
     "landing.navFeatures": "機能",
@@ -603,7 +587,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "外国語のメッセージに返信する。ホテルのフロントで尋ねる。目の前の案内を読む。テキスト・音声・写真の翻訳をひとつのアプリで使って、知らない言葉を次の行動につなげましょう。",
     "landing.explore": "機能を見る",
     "landing.platform": "iPhone・iPad 対応",
-    "landing.screensNote": "実際のアプリ画面です。プレビューと表示された機能は、App Store版ではまだ利用できません。",
     "landing.featureEyebrow": "ひとつの APP、広がる理解",
     "landing.featureTitle": "どの機能にも、役立つ場面があります。",
     "landing.featureBody": "会話を翻訳する、料理を選ぶ、書類を読む、メッセージから表現を学ぶ。すべての機能を、役立つ場面と使い方、その先にできることと一緒に紹介します。",
@@ -643,7 +626,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Proを選ぶ理由",
     "landing.knowledgeTitle": "カスタム知識：あなたの背景に合わせた解説。",
     "landing.knowledgeBody": "仕事の分野、学習目標、好みの詳しさなどを解説の指示として保存してください。読んでいる内容に合うプロファイルを選ぶと、Helper がその背景を踏まえて言葉を説明します。Pro では用途に合わせて最大 5 件のプロファイルを保存できます。",
-    "landing.preview": "機能プレビュー",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "毎日、外国語を使うあなたへ。",
     "landing.proBody": "仕事、旅行、学習で外国語が身近にあるなら。Proなら、もっと余裕をもってやり取りでき、アプリも自分の使い方に合わせられます。",
@@ -663,7 +645,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper 解説：意味だけでなく、使い方まで。",
     "landing.helperBody": "訳文のそばで、語彙、文法、例文、文化的な背景の解説を確認できます。直訳の意味は分かっても、使い方が気になるときは Helper に。カスタム知識プロファイルを使うと、興味や学習目的に合った解説に調整できます。",
     "landing.historyTitle": "履歴：翻訳した言葉や会話を、あとから振り返る。",
-    "landing.historyBody": "保存した翻訳を開き直して、表現を確認したり、会話を振り返ったり、学んだことを復習したりできます。Smart Scan のプレビューでは整理済みのスキャンも保存し、Voice Agent のプレビューでは会話と確認の記録を端末に残せるので、細かな内容も見返せます。"
+    "landing.historyBody": "保存した翻訳を開き直して、表現を確認したり、会話を振り返ったり、学んだことを復習したりできます。Smart Scan では整理済みのスキャンも保存し、Voice Agent では会話と確認の記録を端末に残せるので、細かな内容も見返せます。"
   },
   "ko": {
     "landing.navFeatures": "기능",
@@ -677,7 +659,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "외국어 메시지에 답하고, 호텔 프런트에 묻고, 눈앞의 안내문을 읽어 보세요. 텍스트·음성·사진 번역을 하나의 앱에서 사용해 낯선 말을 다음 행동으로 이어 가세요.",
     "landing.explore": "기능 살펴보기",
     "landing.platform": "iPhone 및 iPad용",
-    "landing.screensNote": "실제 앱 화면입니다. 미리보기로 표시된 기능은 아직 App Store 버전에서 사용할 수 없습니다.",
     "landing.featureEyebrow": "하나의 앱, 다양한 이해의 방법",
     "landing.featureTitle": "모든 기능에는 필요한 순간이 있습니다.",
     "landing.featureBody": "대화를 번역하고, 음식을 고르고, 문서를 이해하고, 메시지에서 새로운 표현을 배워 보세요. 각 기능을 언제 쓰면 좋은지, 결과로 무엇을 할 수 있는지 아래에서 한눈에 확인할 수 있습니다.",
@@ -717,7 +698,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Pro를 선택하는 이유",
     "landing.knowledgeTitle": "맞춤 지식: 배경에 맞춰 제공하는 해설.",
     "landing.knowledgeBody": "직업 분야, 학습 목표, 원하는 설명의 깊이 등을 해설 지침으로 저장하세요. 읽는 내용에 맞는 프로필을 선택하면 Helper가 적절한 맥락에 따라 표현을 설명합니다. Pro에서는 서로 다른 필요에 맞춰 최대 5개의 프로필을 저장할 수 있습니다.",
-    "landing.preview": "기능 미리보기",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "매일 다른 언어를 사용하는 당신에게.",
     "landing.proBody": "외국어가 업무, 여행, 학습의 일부라면 Pro로 더 여유 있게 소통하세요. 앱을 내 방식에 맞게 설정할 수 있는 선택지도 늘어납니다.",
@@ -737,7 +717,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper 해설: 뜻을 넘어 쓰임까지 이해하세요.",
     "landing.helperBody": "번역 옆에서 어휘, 문법, 예문, 문화적 배경에 대한 해설을 확인하세요. 직역한 뜻은 알겠지만 실제로 어떻게 쓰는지 궁금하다면 Helper가 설명을 보태 줍니다. 맞춤 지식 프로필을 활용하면 관심사와 학습 목적에 맞게 해설을 조정할 수 있습니다.",
     "landing.historyTitle": "기록: 번역하고 대화한 내용을 다시 확인하세요.",
-    "landing.historyBody": "저장한 번역을 다시 열어 표현을 확인하고, 대화를 돌아보거나 배운 내용을 복습하세요. Smart Scan 미리보기는 정리된 스캔도 보관하고, Voice Agent 미리보기는 대화와 확인 기록을 기기에 보관하므로 세부 내용을 다시 살펴볼 수 있습니다."
+    "landing.historyBody": "저장한 번역을 다시 열어 표현을 확인하고, 대화를 돌아보거나 배운 내용을 복습하세요. Smart Scan은 정리된 스캔도 보관하고, Voice Agent는 대화와 확인 기록을 기기에 보관하므로 세부 내용을 다시 살펴볼 수 있습니다."
   },
   "nl": {
     "landing.navFeatures": "Functies",
@@ -751,7 +731,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Beantwoord een bericht. Stel een vraag bij de receptie. Lees het bord voor je. Met tekst-, spraak- en fotovertaling in één app worden onbekende woorden je volgende stap.",
     "landing.explore": "Ontdek de functies",
     "landing.platform": "Voor iPhone en iPad",
-    "landing.screensNote": "Echte schermen uit de app. Functies die als vooruitblik zijn gemarkeerd, zijn nog niet beschikbaar in de App Store-versie.",
     "landing.featureEyebrow": "ÉÉN APP, VELE MANIEREN OM TE BEGRIJPEN",
     "landing.featureTitle": "Elke functie heeft een plek in je dagelijks leven.",
     "landing.featureBody": "Vertaal een gesprek, kies een maaltijd, begrijp een document of leer van een bericht. Ontdek hieronder alle functies, met voorbeelden van wanneer ze helpen en wat je met het resultaat kunt doen.",
@@ -791,7 +770,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Waarom kiezen voor Pro?",
     "landing.knowledgeTitle": "Aangepaste kennis: uitleg die bij jou past.",
     "landing.knowledgeBody": "Bewaar instructies voor uitleg, zoals je beroep, studiedoelen of gewenste detailniveau. Kies het profiel dat past bij wat je leest, zodat Helper begrippen in de juiste context kan uitleggen. Pro ondersteunt maximaal 5 profielen voor verschillende behoeften.",
-    "landing.preview": "Vooruitblik op een nieuwe functie",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Voor wie elke dag een andere taal gebruikt.",
     "landing.proBody": "Als een andere taal onderdeel is van je werk, reizen of studie, geeft Pro je meer ruimte om te communiceren en meer manieren om de app op jou af te stemmen.",
@@ -811,7 +789,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: begrijp de woorden achter de vertaling.",
     "landing.helperBody": "Open uitleg naast een vertaling en ontdek meer over woordenschat, grammatica, voorbeelden en culturele context. Gebruik Helper wanneer de letterlijke betekenis duidelijk is, maar je nog wilt weten hoe een uitdrukking wordt gebruikt. Met aangepaste kennisprofielen stem je de uitleg af op je interesses en leerbehoeften.",
     "landing.historyTitle": "Geschiedenis: keer terug naar je vertalingen.",
-    "landing.historyBody": "Open opgeslagen vertalingen om een uitdrukking te controleren, een gesprek terug te lezen of te herhalen wat je hebt geleerd. De preview van Smart Scan bewaart ook geordende scans. De preview van Voice Agent bewaart gesprekken en bevestigingen op je apparaat, zodat je de details later kunt terugvinden."
+    "landing.historyBody": "Open opgeslagen vertalingen om een uitdrukking te controleren, een gesprek terug te lezen of te herhalen wat je hebt geleerd. Smart Scan bewaart ook geordende scans. Voice Agent bewaart gesprekken en bevestigingen op je apparaat, zodat je de details later kunt terugvinden."
   },
   "no": {
     "landing.navFeatures": "Funksjoner",
@@ -825,7 +803,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Svar på en melding. Spør i resepsjonen. Les skiltet foran deg. Med tekst-, tale- og bildeoversettelse i én app blir ukjente ord til ditt neste steg.",
     "landing.explore": "Utforsk funksjonene",
     "landing.platform": "For iPhone og iPad",
-    "landing.screensNote": "Faktiske skjermbilder fra appen. Funksjoner merket som forhåndsvisninger er ennå ikke tilgjengelige i App Store-versjonen.",
     "landing.featureEyebrow": "ÉN APP, MANGE VEIER TIL FORSTÅELSE",
     "landing.featureTitle": "Hver funksjon har sin plass i hverdagen.",
     "landing.featureBody": "Oversett en samtale, velg et måltid, forstå et dokument eller lær av en melding. Utforsk alle funksjonene nedenfor, med eksempler på når de hjelper og hva du kan gjøre med resultatet.",
@@ -865,7 +842,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Hvorfor velge Pro?",
     "landing.knowledgeTitle": "Tilpasset kunnskap: forklaringer som passer deg.",
     "landing.knowledgeBody": "Lagre instruksjoner for forklaringer, som yrket ditt, studiemål eller ønsket detaljnivå. Velg profilen som passer til det du leser, slik at Helper kan forklare begreper i riktig sammenheng. Pro støtter opptil 5 profiler for ulike behov.",
-    "landing.preview": "Forhåndsvisning av ny funksjon",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "For deg som bruker et annet språk hver dag.",
     "landing.proBody": "Når et annet språk er en del av jobben, reisene eller læringen din, gir Pro deg mer rom til å kommunisere og flere måter å tilpasse appen til deg på.",
@@ -885,7 +861,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: forstå ordene bak oversettelsen.",
     "landing.helperBody": "Åpne forklaringer ved siden av en oversettelse og utforsk ordforråd, grammatikk, eksempler og kulturell sammenheng. Bruk Helper når den bokstavelige betydningen er klar, men du fortsatt vil vite hvordan et uttrykk brukes. Tilpassede kunnskapsprofiler lar deg tilpasse forklaringene til interessene og læringsbehovene dine.",
     "landing.historyTitle": "Historikk: gå tilbake til oversettelsene dine.",
-    "landing.historyBody": "Åpne lagrede oversettelser for å sjekke en formulering, lese en samtale igjen eller repetere det du har lært. Forhåndsvisningen av Smart Scan lagrer også organiserte skanninger. Forhåndsvisningen av Voice Agent lagrer samtaler og bekreftelser på enheten, slik at du kan gå tilbake til detaljene."
+    "landing.historyBody": "Åpne lagrede oversettelser for å sjekke en formulering, lese en samtale igjen eller repetere det du har lært. Smart Scan lagrer også organiserte skanninger. Voice Agent lagrer samtaler og bekreftelser på enheten, slik at du kan gå tilbake til detaljene."
   },
   "pt-br": {
     "landing.navFeatures": "Recursos",
@@ -899,7 +875,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Responda a uma mensagem. Tire uma dúvida na recepção. Leia a placa à sua frente. Com tradução de texto, voz e fotos em um só app, transforme palavras desconhecidas no seu próximo passo.",
     "landing.explore": "Conheça os recursos",
     "landing.platform": "Para iPhone e iPad",
-    "landing.screensNote": "Telas reais do app. As funções marcadas como prévias ainda não estão disponíveis na versão da App Store.",
     "landing.featureEyebrow": "UM APP, MUITAS FORMAS DE ENTENDER",
     "landing.featureTitle": "Cada recurso tem um momento em que faz a diferença.",
     "landing.featureBody": "Traduza uma conversa, escolha uma refeição, entenda um documento ou aprenda com uma mensagem. Conheça todos os recursos abaixo, com exemplos de quando usá-los e do que você pode fazer com o resultado.",
@@ -939,7 +914,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Por que escolher o Pro?",
     "landing.knowledgeTitle": "Conhecimento personalizado: explicações adaptadas a você.",
     "landing.knowledgeBody": "Salve instruções para as explicações, como sua profissão, seus objetivos de estudo ou o nível de detalhe que prefere. Selecione o perfil adequado ao que está lendo para que o Helper explique os termos com o contexto certo. O Pro oferece até 5 perfis para necessidades diferentes.",
-    "landing.preview": "Prévia de uma função",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Para quem usa outro idioma todos os dias.",
     "landing.proBody": "Quando outro idioma faz parte do trabalho, das viagens ou dos estudos, o Pro dá mais espaço para se comunicar e mais opções para deixar o app do seu jeito.",
@@ -959,7 +933,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: entenda também como usar as palavras.",
     "landing.helperBody": "Abra explicações ao lado da tradução para explorar vocabulário, gramática, exemplos e contexto cultural. Use o Helper quando o significado literal estiver claro, mas você ainda precisar entender como uma expressão é usada. Os perfis de conhecimento personalizado adaptam essas explicações aos seus interesses e necessidades de aprendizado.",
     "landing.historyTitle": "Histórico: volte ao que você já traduziu.",
-    "landing.historyBody": "Reabra traduções salvas para conferir uma frase, rever uma conversa ou revisar o que aprendeu. A versão de prévia do Smart Scan também mantém as digitalizações organizadas, e a do Voice Agent salva as conversas e os registros de confirmação no dispositivo para você consultar os detalhes depois."
+    "landing.historyBody": "Reabra traduções salvas para conferir uma frase, rever uma conversa ou revisar o que aprendeu. O Smart Scan também mantém as digitalizações organizadas, e o Voice Agent salva as conversas e os registros de confirmação no dispositivo para você consultar os detalhes depois."
   },
   "ru": {
     "landing.navFeatures": "Возможности",
@@ -973,7 +947,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Ответьте на сообщение. Задайте вопрос на ресепшене. Прочитайте вывеску перед собой. Перевод текста, речи и фотографий в одном приложении поможет превратить незнакомые слова в следующий шаг.",
     "landing.explore": "Посмотреть возможности",
     "landing.platform": "Для iPhone и iPad",
-    "landing.screensNote": "Реальные экраны приложения. Функции с пометкой «предварительный обзор» пока недоступны в версии из App Store.",
     "landing.featureEyebrow": "ОДНО ПРИЛОЖЕНИЕ. МНОГО СПОСОБОВ ПОНЯТЬ.",
     "landing.featureTitle": "Для каждой функции есть подходящий момент.",
     "landing.featureBody": "Переведите разговор, выберите блюда, разберитесь в документе или выучите выражение из сообщения. Все функции представлены ниже: когда они пригодятся, как ими пользоваться и что делать с результатом.",
@@ -1013,7 +986,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Почему стоит выбрать Pro?",
     "landing.knowledgeTitle": "Пользовательские знания: объяснения с учётом вашего опыта.",
     "landing.knowledgeBody": "Сохраните инструкции для объяснений: например, вашу профессию, учебные цели или желаемую степень подробности. Выбирайте профиль под текущий текст, чтобы Helper объяснял термины в подходящем контексте. Pro поддерживает до 5 профилей для разных задач.",
-    "landing.preview": "Предварительный обзор новой функции",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Для тех, кто каждый день пользуется другим языком.",
     "landing.proBody": "Если другой язык — часть вашей работы, путешествий или учёбы, Pro даст больше возможностей для общения и настройки приложения под себя.",
@@ -1033,7 +1005,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Объяснения Helper: понимайте не только смысл, но и употребление.",
     "landing.helperBody": "Откройте объяснения рядом с переводом, чтобы разобраться в лексике, грамматике, примерах и культурном контексте. Используйте Helper, когда буквальный смысл понятен, но ещё нужно узнать, как употребляется выражение. Профили пользовательских знаний позволяют настроить объяснения под ваши интересы и учебные задачи.",
     "landing.historyTitle": "История: возвращайтесь к переводам и разговорам.",
-    "landing.historyBody": "Открывайте сохранённые переводы, чтобы проверить выражение, вернуться к разговору или повторить изученное. Предварительная версия Smart Scan также сохраняет обработанные сканы, а предварительная версия Voice Agent хранит разговоры и записи подтверждений на устройстве, чтобы вы могли снова посмотреть детали."
+    "landing.historyBody": "Открывайте сохранённые переводы, чтобы проверить выражение, вернуться к разговору или повторить изученное. Smart Scan также сохраняет обработанные сканы, а Voice Agent хранит разговоры и записи подтверждений на устройстве, чтобы вы могли снова посмотреть детали."
   },
   "sv": {
     "landing.navFeatures": "Funktioner",
@@ -1047,7 +1019,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Svara på ett meddelande. Fråga i receptionen. Läs skylten framför dig. Med text-, tal- och fotoöversättning i en enda app blir främmande ord ditt nästa steg.",
     "landing.explore": "Upptäck funktionerna",
     "landing.platform": "För iPhone och iPad",
-    "landing.screensNote": "Verkliga skärmbilder från appen. Funktioner märkta som förhandstittar finns ännu inte i App Store-versionen.",
     "landing.featureEyebrow": "EN APP, MÅNGA SÄTT ATT FÖRSTÅ",
     "landing.featureTitle": "Varje funktion har sin plats i vardagen.",
     "landing.featureBody": "Översätt ett samtal, välj en måltid, förstå ett dokument eller lär dig av ett meddelande. Utforska alla funktioner nedan, med exempel på när de hjälper och vad du kan göra med resultatet.",
@@ -1087,7 +1058,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Varför välja Pro?",
     "landing.knowledgeTitle": "Anpassad kunskap: förklaringar som passar dig.",
     "landing.knowledgeBody": "Spara instruktioner för förklaringar, som ditt yrke, dina studiemål eller önskad detaljnivå. Välj profilen som passar det du läser, så att Helper kan förklara begrepp i rätt sammanhang. Pro stöder upp till 5 profiler för olika behov.",
-    "landing.preview": "Förhandstitt på ny funktion",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "För dig som använder ett annat språk varje dag.",
     "landing.proBody": "När ett annat språk ingår i ditt arbete, dina resor eller ditt lärande ger Pro dig mer utrymme att kommunicera och fler sätt att anpassa appen efter dig.",
@@ -1107,7 +1077,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper: förstå orden bakom översättningen.",
     "landing.helperBody": "Öppna förklaringar bredvid en översättning och utforska ordförråd, grammatik, exempel och kulturellt sammanhang. Använd Helper när den bokstavliga betydelsen är tydlig men du fortfarande vill veta hur ett uttryck används. Anpassade kunskapsprofiler låter dig anpassa förklaringarna efter dina intressen och lärandebehov.",
     "landing.historyTitle": "Historik: gå tillbaka till dina översättningar.",
-    "landing.historyBody": "Öppna sparade översättningar för att kontrollera en formulering, återvända till ett samtal eller repetera det du har lärt dig. Förhandsversionen av Smart Scan sparar även ordnade skanningar. Förhandsversionen av Voice Agent sparar samtal och bekräftelser på enheten så att du kan återvända till detaljerna."
+    "landing.historyBody": "Öppna sparade översättningar för att kontrollera en formulering, återvända till ett samtal eller repetera det du har lärt dig. Smart Scan sparar även ordnade skanningar. Voice Agent sparar samtal och bekräftelser på enheten så att du kan återvända till detaljerna."
   },
   "th": {
     "landing.navFeatures": "ฟีเจอร์",
@@ -1121,7 +1091,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "ตอบข้อความ สอบถามที่แผนกต้อนรับ อ่านป้ายตรงหน้า เปลี่ยนคำที่ไม่คุ้นให้เป็นก้าวต่อไปของคุณ ด้วยการแปลข้อความ เสียง และรูปภาพใน แอปเดียว",
     "landing.explore": "ดูฟีเจอร์ทั้งหมด",
     "landing.platform": "สำหรับ iPhone และ iPad",
-    "landing.screensNote": "หน้าจอจริงจากแอป ฟีเจอร์ที่ระบุว่าพรีวิวยังไม่มีในเวอร์ชันบน App Store",
     "landing.featureEyebrow": "แอปเดียว เข้าใจได้หลายแบบ",
     "landing.featureTitle": "ทุกฟีเจอร์มีช่วงเวลาที่ช่วยคุณได้",
     "landing.featureBody": "แปลบทสนทนา เลือกอาหาร อ่านเอกสารให้เข้าใจ หรือเรียนรู้จากข้อความ ดูทุกฟีเจอร์ด้านล่างพร้อมตัวอย่างว่าเหมาะกับตอนไหน ใช้อย่างไร และนำผลลัพธ์ไปทำอะไรต่อได้",
@@ -1161,7 +1130,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "ทำไมต้องเลือก Pro?",
     "landing.knowledgeTitle": "ความรู้แบบกำหนดเอง: คำอธิบายตามพื้นฐานของคุณ",
     "landing.knowledgeBody": "บันทึกคำสั่งสำหรับการอธิบาย เช่น สายอาชีพ เป้าหมายการเรียน หรือระดับความละเอียดที่ชอบ เลือกโปรไฟล์ให้เหมาะกับสิ่งที่กำลังอ่าน เพื่อให้ Helper อธิบายคำศัพท์ตามบริบทที่ตรงกับคุณ Pro รองรับได้สูงสุด 5 โปรไฟล์สำหรับความต้องการต่างกัน",
-    "landing.preview": "พรีวิวฟีเจอร์ใหม่",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "สำหรับคนที่ใช้ภาษาอื่นทุกวัน",
     "landing.proBody": "เมื่อภาษาอื่นเป็นส่วนหนึ่งของงาน การเดินทาง หรือการเรียน Pro ช่วยให้คุณมีพื้นที่สื่อสารมากขึ้น พร้อมวิธีปรับแอปให้เข้ากับคุณมากขึ้น",
@@ -1181,7 +1149,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper อธิบาย: เข้าใจทั้งความหมายและวิธีใช้",
     "landing.helperBody": "เปิดคำอธิบายข้างคำแปลเพื่อเรียนรู้คำศัพท์ ไวยากรณ์ ตัวอย่าง และบริบททางวัฒนธรรม ใช้ Helper เมื่อเข้าใจความหมายตรงตัวแล้ว แต่ยังอยากรู้ว่าวลีนั้นใช้แบบไหน โปรไฟล์ความรู้แบบกำหนดเองช่วยปรับคำอธิบายให้เข้ากับความสนใจและความต้องการเรียนรู้ของคุณ",
     "landing.historyTitle": "ประวัติ: กลับมาดูสิ่งที่เคยแปลและพูดคุย",
-    "landing.historyBody": "เปิดคำแปลที่บันทึกไว้อีกครั้งเพื่อตรวจสอบวลี ทบทวนบทสนทนา หรือสิ่งที่เรียนรู้ พรีวิว Smart Scan ยังเก็บสแกนที่จัดไว้แล้ว และพรีวิว Voice Agent เก็บบทสนทนากับบันทึกการยืนยันไว้บนอุปกรณ์ เพื่อให้คุณกลับมาดูรายละเอียดได้"
+    "landing.historyBody": "เปิดคำแปลที่บันทึกไว้อีกครั้งเพื่อตรวจสอบวลี ทบทวนบทสนทนา หรือสิ่งที่เรียนรู้ Smart Scan ยังเก็บสแกนที่จัดไว้แล้ว และ Voice Agent เก็บบทสนทนากับบันทึกการยืนยันไว้บนอุปกรณ์ เพื่อให้คุณกลับมาดูรายละเอียดได้"
   },
   "vi": {
     "landing.navFeatures": "Tính năng",
@@ -1195,7 +1163,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "Trả lời tin nhắn. Hỏi tại quầy lễ tân. Đọc biển báo trước mắt. Với dịch văn bản, giọng nói và ảnh trong một ứng dụng, những từ xa lạ sẽ mở ra bước tiếp theo cho bạn.",
     "landing.explore": "Khám phá tính năng",
     "landing.platform": "Dành cho iPhone và iPad",
-    "landing.screensNote": "Màn hình thực tế của ứng dụng. Những tính năng được đánh dấu xem trước chưa có trong phiên bản App Store.",
     "landing.featureEyebrow": "MỘT ỨNG DỤNG, NHIỀU CÁCH ĐỂ HIỂU",
     "landing.featureTitle": "Mỗi tính năng đều có lúc bạn cần đến.",
     "landing.featureBody": "Dịch cuộc trò chuyện, chọn món, đọc hiểu tài liệu hoặc học từ một tin nhắn. Khám phá tất cả tính năng bên dưới, cùng những tình huống hữu ích, cách sử dụng và việc bạn có thể làm với kết quả.",
@@ -1235,7 +1202,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "Vì sao nên chọn Pro?",
     "landing.knowledgeTitle": "Kiến thức tùy chỉnh: giải thích theo bối cảnh của bạn.",
     "landing.knowledgeBody": "Lưu hướng dẫn cho phần giải thích, chẳng hạn nghề nghiệp, mục tiêu học tập hoặc mức độ chi tiết bạn thích. Chọn hồ sơ phù hợp với nội dung đang đọc để Helper giải thích thuật ngữ đúng bối cảnh. Pro hỗ trợ tối đa 5 hồ sơ cho các nhu cầu khác nhau.",
-    "landing.preview": "Xem trước tính năng mới",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "Dành cho bạn dùng ngoại ngữ mỗi ngày.",
     "landing.proBody": "Khi ngoại ngữ là một phần trong công việc, chuyến đi hoặc việc học, Pro cho bạn thêm không gian để giao tiếp và thêm cách điều chỉnh ứng dụng theo nhu cầu của mình.",
@@ -1255,7 +1221,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper giải thích: hiểu nghĩa và biết cách dùng.",
     "landing.helperBody": "Mở phần giải thích bên cạnh bản dịch để tìm hiểu từ vựng, ngữ pháp, ví dụ và bối cảnh văn hóa. Dùng Helper khi đã hiểu nghĩa đen nhưng vẫn muốn biết một cụm từ được dùng thế nào. Hồ sơ kiến thức tùy chỉnh giúp điều chỉnh phần giải thích theo sở thích và nhu cầu học tập của bạn.",
     "landing.historyTitle": "Lịch sử: xem lại nội dung đã dịch và trò chuyện.",
-    "landing.historyBody": "Mở lại bản dịch đã lưu để kiểm tra một cụm từ, xem lại cuộc trò chuyện hoặc ôn điều đã học. Bản xem trước Smart Scan cũng lưu các bản quét đã sắp xếp; bản xem trước Voice Agent lưu hội thoại và thông tin xác nhận trên thiết bị để bạn xem lại chi tiết."
+    "landing.historyBody": "Mở lại bản dịch đã lưu để kiểm tra một cụm từ, xem lại cuộc trò chuyện hoặc ôn điều đã học. Smart Scan cũng lưu các bản quét đã sắp xếp; Voice Agent lưu hội thoại và thông tin xác nhận trên thiết bị để bạn xem lại chi tiết."
   },
   "zh-cn": {
     "landing.navFeatures": "功能介绍",
@@ -1269,7 +1235,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "回复外语消息、到酒店办理入住、看懂眼前的告示。用文字、语音与照片翻译，把陌生的语言变成你能采取的下一步。",
     "landing.explore": "探索所有功能",
     "landing.platform": "适用于 iPhone 和 iPad",
-    "landing.screensNote": "实际 App 画面。标注“预览”的功能尚未在 App Store 版本上线。",
     "landing.featureEyebrow": "一个 APP，多种理解方式",
     "landing.featureTitle": "每项功能，都有用得上的时刻。",
     "landing.featureBody": "面对面沟通、出国点餐、看懂文件、回复消息，或把用过的外语学起来。所有功能直接展开，让你了解什么时候用、怎么用，以及用完能做什么。",
@@ -1309,7 +1274,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "为什么选择 Pro？",
     "landing.knowledgeTitle": "自定义知识：让讲解配合你的背景。",
     "landing.knowledgeBody": "将职业领域、学习目标或喜欢的讲解深度保存为设置。阅读时选择合适的知识配置，让 Helper 结合你的背景解释词句。Pro 最多保存 5 组，为工作、学习和不同场景分别设置。",
-    "landing.preview": "新功能预览",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "给每天都会用到外语的你。",
     "landing.proBody": "当外语融入每天的工作、旅行与学习，Pro 让你有更多空间继续沟通，也让翻译与学习更贴近自己的需求。",
@@ -1329,7 +1293,7 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper 讲解：不只知道意思，也懂怎么用。",
     "landing.helperBody": "在译文旁查看单词、语法、例句与文化背景讲解。直译看懂了，却还不确定一句话怎么用，就让 Helper 补充说明。搭配自定义知识，让讲解更贴近你的兴趣与学习需求。",
     "landing.historyTitle": "历史记录：翻译过、聊过的内容，随时回顾。",
-    "landing.historyBody": "重新打开已保存的翻译，查看一句话、回顾对话，或复习学过的内容。Smart Scan 预览也会保留已整理的扫描，Voice Agent 预览则在设备上保留对话与核对记录，方便再次查看细节。"
+    "landing.historyBody": "重新打开已保存的翻译，查看一句话、回顾对话，或复习学过的内容。Smart Scan 也会保留已整理的扫描，Voice Agent 则在设备上保留对话与核对记录，方便再次查看细节。"
   },
   "zh-tw": {
     "landing.navFeatures": "功能介紹",
@@ -1343,7 +1307,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.heroBody": "回覆外語訊息、到飯店辦入住、看懂眼前的告示。用文字、語音與照片翻譯，把陌生的語言，變成你能採取的下一步。",
     "landing.explore": "探索所有功能",
     "landing.platform": "適用於 iPhone 與 iPad",
-    "landing.screensNote": "實際 App 畫面。標示「預覽」的功能尚未於 App Store 版本上線。",
     "landing.featureEyebrow": "一個 APP，多種理解方式",
     "landing.featureTitle": "每項功能，都有用得上的時刻。",
     "landing.featureBody": "面對面溝通、出國點餐、看懂文件、回覆訊息，或把用過的外語學起來。所有功能直接展開，讓你知道何時用、怎麼用，以及用完能做什麼。",
@@ -1383,7 +1346,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.proExplore": "為什麼選擇 Pro？",
     "landing.knowledgeTitle": "自訂知識：讓解說配合你的背景。",
     "landing.knowledgeBody": "把職業領域、學習目標或喜歡的解說深度存成設定。閱讀時選擇合適的知識，讓 Helper 依你的背景說明詞句。Pro 最多儲存 5 組，工作與學習各有適合的解說。",
-    "landing.preview": "新功能預覽",
     "landing.proEyebrow": "ANYTRANSLATOR PRO",
     "landing.proTitle": "給每天都會用到外語的你。",
     "landing.proBody": "當外語是每天的工作、旅行與學習，Pro 讓你有更多空間繼續溝通，也讓翻譯與學習更貼近自己的需求。",
@@ -1403,6 +1365,6 @@ export const landingTranslations: Record<string, Record<string, string>> = {
     "landing.helperTitle": "Helper 解說：不只知道意思，也懂怎麼用。",
     "landing.helperBody": "在譯文旁查看單字、文法、例句與文化背景解說。直譯看懂了，卻還不確定一句話怎麼用，就交給 Helper 補充。搭配自訂知識，讓解說更貼近你的興趣與學習需求。",
     "landing.historyTitle": "歷史紀錄：翻過、聊過的內容，隨時回頭看。",
-    "landing.historyBody": "重新開啟已儲存的翻譯，查一句話、回顧對話，或複習學過的內容。Smart Scan 預覽也會保留已整理的掃描，Voice Agent 預覽則在裝置上保留對話與核對紀錄，方便再查細節。"
+    "landing.historyBody": "重新開啟已儲存的翻譯，查一句話、回顧對話，或複習學過的內容。Smart Scan 也會保留已整理的掃描，Voice Agent 則在裝置上保留對話與核對紀錄，方便再查細節。"
   }
 };
