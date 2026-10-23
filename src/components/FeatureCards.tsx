@@ -22,11 +22,9 @@ const FeatureCards = () => {
     <section className="pb-12 lg:pb-16 scroll-mt-24" id="features">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="mb-6 text-center text-sm text-text-muted leading-relaxed">{t("landing.screensNote")}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
             {cards.map((card) => {
               const featured = card.id === "menu" || card.id === "agent";
-              const preview = featured || card.id === "document";
               const title = t(`landing.${card.id}Title`);
 
               return (
@@ -38,16 +36,13 @@ const FeatureCards = () => {
                           <HugeIcon name={card.icon} className="h-5 w-5" />
                           {featured && t(`landing.${card.id}Label`)}
                         </span>
-                        {preview && <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-medium text-gray-700">{t("landing.preview")}</span>}
                       </div>
                       <h3 className={`font-semibold text-gray-900 mb-3 leading-snug break-words ${featured ? "text-2xl xl:text-3xl" : "text-xl"}`}>{title}</h3>
                       <p className="text-gray-600 leading-relaxed">{t(`landing.${card.id}Body`)}</p>
-                      {!preview && (
-                        <a href="https://apps.apple.com/by/app/any-translator-ai-translate/id6738693321" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-4 text-sm font-medium text-blue-700 hover:text-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600">
-                          {t("features.tryIt")}
-                          <HugeIcon name="arrow-right-01-round" />
-                        </a>
-                      )}
+                      <a href="https://apps.apple.com/by/app/any-translator-ai-translate/id6738693321" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-4 text-sm font-medium text-blue-700 hover:text-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600">
+                        {t("features.tryIt")}
+                        <HugeIcon name="arrow-right-01-round" />
+                      </a>
                     </div>
                     <div className={`flex justify-center ${featured ? "" : "mt-auto pt-6"}`}>
                       <img
