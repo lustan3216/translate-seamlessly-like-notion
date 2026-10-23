@@ -28,7 +28,7 @@ export const mobileAppSchema = {
   name: 'AnyTranslator',
   url: 'https://anytranslator.app/',
   applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'iOS',
+  operatingSystem: 'iOS, iPadOS, macOS',
   downloadUrl: 'https://apps.apple.com/app/id6738693321',
   featureList: ['Text translation', 'Voice translation', 'Photo translation', 'Chat', 'Helper explanations', 'Custom knowledge', 'Translation keyboard', 'Learning widgets', 'Translation history'],
   screenshot: ['translate', 'voice', 'chat'].map((name) => `https://anytranslator.app/app-preview/screens/en/${name}.png`),
