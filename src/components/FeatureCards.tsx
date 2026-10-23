@@ -12,11 +12,6 @@ const FeatureCards = () => {
     { id: "text", screen: "translate", icon: "language-square", gradient: "from-blue-100/50 to-blue-50/30", accent: "bg-blue-100 text-blue-700" },
     { id: "chat", screen: "chat", icon: "bubble-chat-question", gradient: "from-indigo-100/50 to-indigo-50/30", accent: "bg-indigo-100 text-indigo-700" },
   ];
-  const menuSource = currentLanguage.code === "ru"
-    ? "https://commons.wikimedia.org/wiki/File:Menu_(Brunch)_-_Mange_Tout.jpg"
-    : "https://commons.wikimedia.org/wiki/File:Цены_на_кофе_в_Москве_(ЦАО,_декабрь_2016).jpg";
-  const menuLicense = currentLanguage.code === "ru" ? "CC0" : "CC BY-SA 4.0";
-  const menuCredit = t("landing.sampleCredit").split(menuLicense);
 
   return (
     <section className="pb-12 lg:pb-16 scroll-mt-24" id="features">
@@ -57,12 +52,6 @@ const FeatureCards = () => {
               );
             })}
           </div>
-          <p className="mt-5 text-center text-xs text-text-muted leading-relaxed">
-            <a href={menuSource} target="_blank" rel="noopener noreferrer" className="underline">{menuCredit[0]}</a>
-            <a href={menuLicense === "CC0" ? "https://creativecommons.org/publicdomain/zero/1.0/" : "https://creativecommons.org/licenses/by-sa/4.0/"} target="_blank" rel="noopener noreferrer" className="underline">{menuLicense}</a>{menuCredit[1]}
-            <br />
-            <a href="https://www.nps.gov/zion/planyourvisit/publications.htm" target="_blank" rel="noopener noreferrer" className="underline">{t("landing.documentCredit")}</a>
-          </p>
         </div>
       </div>
     </section>
