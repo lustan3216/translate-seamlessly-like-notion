@@ -15,7 +15,7 @@ The assistant helps ask and clarify while the user decides. Scans organize photo
 
 ## SEO and routes
 
-`npm run build` now creates localized static HTML before publication: 19 homepages + 19 support pages + the two existing English legal documents = 40 canonical pages, plus a noindex 404 page. Terms and privacy text are unchanged; language-query variants redirect to the actual English canonical rather than falsely claiming translated policies.
+`npm run build` now creates localized static HTML before publication: 19 homepages + 19 support pages + the two existing English legal documents = 40 canonical pages, plus a noindex 404 page. Terms and privacy text are unchanged; language-query variants directly serve the existing English HTML with the query-free English canonical, avoiding a query-preserving redirect loop and any claim of translated policies.
 
 The public URL format is preserved (`/?lang=zh-tw`, `/support?lang=ja`). Query-aware static hosting rules select the corresponding HTML before filesystem routing. The sitemap lists only canonical pages, with reciprocal language alternates for translated pages and English x-default. `robots.txt` uses one group, allows public resources and advertises the www canonical sitemap. No synthetic daily modification dates are added. Unknown routes and missing assets use HTTP 404.
 
@@ -23,6 +23,6 @@ The public URL format is preserved (`/?lang=zh-tw`, `/support?lang=ja`). Query-a
 
 Required local checks: 19-locale copy/assets check; TypeScript application check; targeted ESLint; production build with static-page SEO assertions; XML parse; native browser responsive checks, interactions, raw document HTML and hydration. Native browser evidence lives outside the website Git repository in `translator/output/marketing/website-conversion-20261024/`.
 
-Publish this scoped branch to website remote main to trigger the existing Vercel integration. Do not publish the unrelated local-only archive/merge commits. Confirm the exact remote commit and successful hosting build, then verify the real public domain's HTML, locale content, sitemap, robots, legal redirects and 404 responses. A local build or Git push alone is not publication proof.
+Publish this scoped branch to website remote main to trigger the existing Vercel integration. Do not publish the unrelated local-only archive/merge commits. Confirm the exact remote commit and successful hosting build, then verify the real public domain's HTML, locale content, sitemap, robots, English legal-query responses and 404 responses. A local build or Git push alone is not publication proof.
 
 Rollback: revert this website release commit on remote main and allow Vercel to rebuild the baseline. No App binary, API contract, Worker, database, subscription configuration or device-install changes are involved. No claim is made about measured download uplift, search rankings or completed Google indexing.

@@ -522,36 +522,10 @@
     },
     {
       "src": "^/terms-of-service/?$",
-      "has": [
-        {
-          "type": "query",
-          "key": "lang"
-        }
-      ],
-      "headers": {
-        "Location": "/terms-of-service"
-      },
-      "status": 308
-    },
-    {
-      "src": "^/terms-of-service/?$",
       "dest": "/_localized/en/terms-of-service/index.html",
       "headers": {
         "Content-Language": "en-US"
       }
-    },
-    {
-      "src": "^/privacy-policy/?$",
-      "has": [
-        {
-          "type": "query",
-          "key": "lang"
-        }
-      ],
-      "headers": {
-        "Location": "/privacy-policy"
-      },
-      "status": 308
     },
     {
       "src": "^/privacy-policy/?$",
