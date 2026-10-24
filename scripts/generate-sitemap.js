@@ -1,101 +1,11 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import { SITE_URL, SITE_LOCALES, SITE_ROUTES, canonicalUrl, localesForPath } from '../src/lib/site-config.mjs';
 
-// Sitemap generator functions
-const generateSitemap = (entries) => {
-  const header = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
-  const footer = '</urlset>';
-  
-  const urls = entries.map(entry => {
-    let urlXml = `  <url>\n    <loc>${entry.url}</loc>`;
-    
-    if (entry.lastmod) {
-      urlXml += `\n    <lastmod>${entry.lastmod}</lastmod>`;
-    }
-    
-    if (entry.changefreq) {
-      urlXml += `\n    <changefreq>${entry.changefreq}</changefreq>`;
-    }
-    
-    if (entry.priority !== undefined) {
-      urlXml += `\n    <priority>${entry.priority.toFixed(1)}</priority>`;
-    }
-    
-    urlXml += '\n  </url>';
-    return urlXml;
-  }).join('\n');
-  
-  return `${header}\n${urls}\n${footer}`;
-};
-
-const getStaticSitemapEntries = () => {
-  const baseUrl = 'https://anytranslator.app';
-  const currentDate = new Date().toISOString().split('T')[0];
-  
-  return [
-    {
-      url: baseUrl,
-      lastmod: currentDate,
-      changefreq: 'weekly',
-      priority: 1.0
-    },
-    {
-      url: `${baseUrl}/support`,
-      lastmod: currentDate,
-      changefreq: 'monthly',
-      priority: 0.5
-    },
-    {
-      url: `${baseUrl}/terms-of-service`,
-      lastmod: currentDate,
-      changefreq: 'monthly',
-      priority: 0.3
-    },
-    {
-      url: `${baseUrl}/privacy-policy`,
-      lastmod: currentDate,
-      changefreq: 'monthly',
-      priority: 0.3
-    }
-  ];
-};
-
-const generateMultilingualSitemap = () => {
-  const languages = ['en', 'ru', 'es', 'it', 'fr', 'de', 'ko', 'ja', 'pt-br', 'fi', 'da', 'nl', 'no', 'sv', 'zh-cn', 'zh-tw', 'id', 'vi', 'th'];
-  const baseEntries = getStaticSitemapEntries();
-  const allEntries = [];
-  
-  baseEntries.forEach(entry => {
-    // Default English version
-    allEntries.push(entry);
-    
-    // Other language versions
-    languages.slice(1).forEach(lang => {
-      const langUrl = entry.url + (entry.url === 'https://anytranslator.app' ? '' : '') + `?lang=${lang}`;
-      allEntries.push({
-        ...entry,
-        url: langUrl,
-        priority: entry.priority ? entry.priority * 0.8 : undefined
-      });
-    });
-  });
-  
-  return generateSitemap(allEntries);
-};
-
-// Generate sitemap
-const sitemapContent = generateMultilingualSitemap();
-
-// Ensure public directory exists
-const publicDir = path.join(process.cwd(), 'public');
-if (!fs.existsSync(publicDir)) {
-  fs.mkdirSync(publicDir, { recursive: true });
-}
-
-// Write sitemap.xml
-const sitemapPath = path.join(publicDir, 'sitemap.xml');
-fs.writeFileSync(sitemapPath, sitemapContent, 'utf8');
-
-console.log('✅ Generated sitemap.xml with multilingual support');
-console.log(`📍 Location: ${sitemapPath}`);
-console.log(`📊 Total URLs: ${(sitemapContent.match(/<url>/g) || []).length}`);
+const escapeXml = (value) => value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+const entries = SITE_ROUTES.flatMap((route) => localesForPath(route).map(({ code }) => {
+  const alternates = [...localesForPath(route).map((locale) => ({ tag: locale.tag, href: canonicalUrl(route, locale.code) })), { tag: 'x-default', href: canonicalUrl(route, 'en') }];
+  return `  <url>\n    <loc>${escapeXml(canonicalUrl(route, code))}</loc>\n${alternates.map(({ tag, href }) => `    <xhtml:link rel="alternate" hreflang="${tag}" href="${escapeXml(href)}" />`).join('\n')}\n  </url>`;
+}));
+fs.writeFileSync('public/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join('\n')}\n</urlset>\n`);
+fs.writeFileSync('public/robots.txt', `User-agent: *\nAllow: /\nDisallow: /_localized/\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+console.log(`Generated sitemap with ${entries.length} localized canonical URLs.`);

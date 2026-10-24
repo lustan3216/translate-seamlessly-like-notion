@@ -1,0 +1,156 @@
+{
+  "images": [
+    {
+      "locale": "en",
+      "src": "/app-preview/social/en.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "c0dc634e99f5fb757293de5dfe966eea9852d6bbc88207bf3e9cc3e196e6e998",
+      "sha256": "42003ad7b1e79f3516669142272b6c50171995b2473dfecca32416e64e3141d0"
+    },
+    {
+      "locale": "ko",
+      "src": "/app-preview/social/ko.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "e7ec68cd02de643fbdf6a3823f21347313ee657376a027373548bbeb51c9956a",
+      "sha256": "fccdf1087dc860abb64f65fef31dae24b7fd469ec28aaae797d240b42e19b4ba"
+    },
+    {
+      "locale": "ja",
+      "src": "/app-preview/social/ja.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "e93749cb1356d86fd43c1c7334c120d616a0f65334aa7305d9bdf9de73e5ffd3",
+      "sha256": "e389f05ca50c73f03d188030da29f7db25f6f23e46ff723eab7fafecd536b124"
+    },
+    {
+      "locale": "fr",
+      "src": "/app-preview/social/fr.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "669e00dd5b5c6762b6c35ffe2678700ba22ce417a3af4a8de7f263be27a1fc59",
+      "sha256": "d8a7eb72782f5eea8b4546a5e58dc03979186415a4b0c9061a42eb0da8b86d0a"
+    },
+    {
+      "locale": "de",
+      "src": "/app-preview/social/de.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "4d37788458d504e5b1ee6f8366f632f830d12c5c2666ac7a076d3a0ab7bb1de1",
+      "sha256": "5c5a8ac84621665b162a7e395dcc45b1cdae31106afa6ef0226ade7b2225f0cf"
+    },
+    {
+      "locale": "es",
+      "src": "/app-preview/social/es.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "df9d54109eacf12d9959d3c5c4eb9bb2080828f83b023d1468e922b1e311fb7a",
+      "sha256": "fb7096d2947bcc8364f00620b8bcfaa8e0f49739c17457fe1b173ae2aef3d237"
+    },
+    {
+      "locale": "it",
+      "src": "/app-preview/social/it.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "0128f9f91c9383c448e76db59fe481fd089abf32fb7e1244f6f7aad5e3803bcd",
+      "sha256": "14dac73d7fb33be2d754405d639d2d19c221c59a306f4c7e7c7315ee37715308"
+    },
+    {
+      "locale": "pt-br",
+      "src": "/app-preview/social/pt-br.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "ba855b54fd0b1675f5afa5afaae985bca392c1d8a51006a00ffbbba29437aaa4",
+      "sha256": "ca73d93dd71cb3660c90cd15a8a7cb7ccca4df0ceae11a90e11b85a631d28b2c"
+    },
+    {
+      "locale": "fi",
+      "src": "/app-preview/social/fi.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "93f6cf78e1dae3aa23c54b6835efd37819267dd477e31439f188d9a4fca30f4d",
+      "sha256": "5e7d7c8b99bab62c3986f2000ad2f0219af3b237affe723c9f6aec356c0d5f34"
+    },
+    {
+      "locale": "da",
+      "src": "/app-preview/social/da.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "47658baf74fcf94cac8866141deb56c3d5f23086cec32644df3a9e006e73d216",
+      "sha256": "e34cc281a368f14d9bcd34dda38ff033812c05f243290a7968ded667ab91174c"
+    },
+    {
+      "locale": "nl",
+      "src": "/app-preview/social/nl.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "6262c7167fc55364af902c06b6ea61a8a175c00590d5893013f586441f51c78f",
+      "sha256": "6d91abb144ddf7da76ea986ef9579baa40a0c5c3612f0c6b95dfc85b744e4dd9"
+    },
+    {
+      "locale": "no",
+      "src": "/app-preview/social/no.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "b1cf45acbd9a14344041df067358baea7327ba27ee9114cc8d979a2e3f21e8e4",
+      "sha256": "2ad590a024977a2b145dd9d3ab4163f80487569098035f6c2fd394215f2ed984"
+    },
+    {
+      "locale": "sv",
+      "src": "/app-preview/social/sv.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "d78d66c00da9aee4e458c43f1834db67f67f6cc37b17cdde164ca0bb734ac67b",
+      "sha256": "2b444eb0a2664f3fc7c2950bae94be1180d808d32b094c4cd919f01122b34f83"
+    },
+    {
+      "locale": "zh-cn",
+      "src": "/app-preview/social/zh-cn.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "d4e8ea57b8e8057f03f89143c0cd09f2b3fce4706adffb0c72a23fc06d2822df",
+      "sha256": "2f37d1a44d296abbbf2470e45eeb15b3d22b0285065ec154317e0759c554477a"
+    },
+    {
+      "locale": "zh-tw",
+      "src": "/app-preview/social/zh-tw.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "f46cd0245748c0e77a9162412994a64974c65b97ac46f06b2ca3f76a304093d0",
+      "sha256": "5bfa2b9eae6c3632267f124f513d1128cd86fedc6201467d5457a5bc28fc4be6"
+    },
+    {
+      "locale": "id",
+      "src": "/app-preview/social/id.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "51a6d002b29dcde6eed652701a8277b88f9d5d75c5803d45e3af016f53c64870",
+      "sha256": "b2d48beca9c4d3d1be73b469476d2bce30bee77eb4789781c4b21ae5ac4b6854"
+    },
+    {
+      "locale": "vi",
+      "src": "/app-preview/social/vi.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "8c733f800e8f57c232ea741e4429bb526616f1938c567941954039347a4ddd5c",
+      "sha256": "eac3ec1fce39434de34f2c25397980cc0017dc1a8891b116f0a3c45554ee40f3"
+    },
+    {
+      "locale": "th",
+      "src": "/app-preview/social/th.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "2ca2a42d80341267690d5beb88a5b554ca1719226c29f85e1af91bdfe285a137",
+      "sha256": "6ceae3cfdcc577f2c1fcf726d5a6783e549087e345e409b69793da8ad34f999c"
+    },
+    {
+      "locale": "ru",
+      "src": "/app-preview/social/ru.jpg",
+      "width": 1200,
+      "height": 514,
+      "originalSHA256": "2081a85b5088c9fb54ea7c5d2ba5e9bc8edc1eb0263310d6e648ca602e2b1c58",
+      "sha256": "aed16ce6218fddc8b405e7377b8f685a29a4f01e8b302d87cb69f7de39ae6502"
+    }
+  ]
+}

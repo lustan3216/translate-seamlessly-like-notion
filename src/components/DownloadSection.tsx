@@ -1,10 +1,11 @@
 import HugeIcon from "@/components/HugeIcon";
 import { useLanguage } from "@/contexts/LanguageContext";
+import AppStoreLink from "@/components/AppStoreLink";
 
 const DownloadSection = () => {
   const { t } = useLanguage();
   return (
-    <section className="py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="download" className="scroll-mt-24 py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
@@ -27,10 +28,7 @@ const DownloadSection = () => {
           </div>
           
           <div className="flex justify-center items-center">
-            <a 
-              href="https://apps.apple.com/by/app/any-translator-ai-translate/id6738693321" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <AppStoreLink source="download"
               className="inline-block hover:opacity-80 transition-opacity"
             >
               <img 
@@ -38,7 +36,7 @@ const DownloadSection = () => {
                 alt={t('download.appStore')} 
                 className="h-14 w-auto"
               />
-            </a>
+            </AppStoreLink>
           </div>
         </div>
       </div>

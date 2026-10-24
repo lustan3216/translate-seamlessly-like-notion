@@ -1,61 +1,32 @@
 import HugeIcon from "@/components/HugeIcon";
+import AppScreen, { type ScreenFeature } from "@/components/AppScreen";
+import AppStoreLink from "@/components/AppStoreLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-
+const cards: Array<{ id: ScreenFeature; icon: string; background: string }> = [
+  { id: "agent", icon: "bot", background: "from-green-50 to-emerald-50/40" },
+  { id: "menu", icon: "restaurant-01", background: "from-pink-50 to-rose-50/40" },
+  { id: "document", icon: "file-search", background: "from-purple-50 to-violet-50/40" },
+  { id: "keyboard", icon: "keyboard-01", background: "from-blue-50 to-sky-50/40" },
+  { id: "widget", icon: "book", background: "from-amber-50 to-yellow-50/40" },
+  { id: "voice", icon: "mic-01", background: "from-orange-50 to-amber-50/40" },
+  { id: "text", icon: "language-square", background: "from-sky-50 to-blue-50/40" },
+  { id: "chat", icon: "bubble-chat-question", background: "from-indigo-50 to-purple-50/40" },
+  { id: "helper", icon: "book", background: "from-teal-50 to-green-50/40" },
+];
 const FeatureCards = () => {
-  const { t, currentLanguage } = useLanguage();
-  const screenshotLocale = currentLanguage.code === "ru" ? "ru" : "en";
-  const cards = [
-    { id: "menu", screen: "menu", icon: "restaurant-01", gradient: "from-pink-100/70 to-pink-50/50", accent: "bg-pink-100 text-pink-700" },
-    { id: "agent", screen: "agent", icon: "bot", gradient: "from-green-100/70 to-green-50/50", accent: "bg-green-100 text-green-700" },
-    { id: "document", screen: "document", icon: "file-search", gradient: "from-purple-100/50 to-purple-50/30", accent: "bg-purple-100 text-purple-700" },
-    { id: "voice", screen: "voice", icon: "mic-01", gradient: "from-orange-100/50 to-orange-50/30", accent: "bg-orange-100 text-orange-700" },
-    { id: "text", screen: "translate", icon: "language-square", gradient: "from-blue-100/50 to-blue-50/30", accent: "bg-blue-100 text-blue-700" },
-    { id: "chat", screen: "chat", icon: "bubble-chat-question", gradient: "from-indigo-100/50 to-indigo-50/30", accent: "bg-indigo-100 text-indigo-700" },
-  ];
-
-  return (
-    <section className="pb-12 lg:pb-16 scroll-mt-24" id="features">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-            {cards.map((card) => {
-              const featured = card.id === "menu" || card.id === "agent";
-              const title = t(`landing.${card.id}Title`);
-
-              return (
-                <article key={card.id} data-feature={card.id} className={`min-w-0 rounded-3xl bg-gradient-to-br ${card.gradient} p-6 ${featured ? "xl:col-span-2 sm:p-8" : ""}`}>
-                  <div className={featured ? "grid gap-8 xl:grid-cols-[minmax(0,1fr)_200px] xl:items-center h-full" : "flex flex-col h-full"}>
-                    <div className="min-w-0">
-                      <div className="flex flex-wrap items-center gap-2 mb-4">
-                        <span className={`inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium ${card.accent}`}>
-                          <HugeIcon name={card.icon} className="h-5 w-5" />
-                          {featured && t(`landing.${card.id}Label`)}
-                        </span>
-                      </div>
-                      <h3 className={`font-semibold text-gray-900 mb-3 leading-snug break-words ${featured ? "text-2xl xl:text-3xl" : "text-xl"}`}>{title}</h3>
-                      <p className="text-gray-600 leading-relaxed">{t(`landing.${card.id}Body`)}</p>
-                      <a href="https://apps.apple.com/by/app/any-translator-ai-translate/id6738693321" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-4 text-sm font-medium text-blue-700 hover:text-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600">
-                        {t("features.tryIt")}
-                        <HugeIcon name="arrow-right-01-round" />
-                      </a>
-                    </div>
-                    <div className={`flex justify-center ${featured ? "" : "mt-auto pt-6"}`}>
-                      <img
-                        src={`/app-preview/screens/${screenshotLocale}/${card.screen}.png`}
-                        alt={title}
-                        className={`max-w-full h-auto object-contain rounded-[24px] border border-black/5 shadow-xl ${featured ? "w-[224px] xl:w-[200px]" : "w-[200px] xl:w-[180px]"}`}
-                        width="1320" height="2868" loading="lazy" decoding="async"
-                      />
-                    </div>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+  const { t } = useLanguage();
+  return <section className="scroll-mt-24 pb-8 lg:pb-12" id="features"><div className="container mx-auto px-4"><div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-6 lg:gap-6">
+    {cards.map(({ id, icon, background }) => {
+      const featured = id === "agent" || id === "menu";
+      return <article key={id} id={`feature-${id}`} data-feature={id} className={`min-w-0 scroll-mt-24 overflow-hidden rounded-3xl bg-gradient-to-br ${background} p-6 sm:p-7 ${featured ? "lg:col-span-3" : "lg:col-span-2"}`}>
+        <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-gray-600"><HugeIcon name={icon} className="h-5 w-5" />{t(`landing.${id}Label`)}</div>
+        <h3 className={`font-semibold leading-snug tracking-tight text-gray-950 ${featured ? "text-2xl sm:text-3xl" : "text-2xl"}`}>{t(`landing.${id}Title`)}</h3>
+        <p className="mt-3 text-base leading-relaxed text-gray-600">{t(`landing.${id}Body`)}</p>
+        {featured && <ol className="mt-5 grid grid-cols-3 gap-3 text-xs sm:text-sm leading-snug text-gray-600" aria-label={t(`landing.${id}Label`)}>{[1, 2, 3].map(step => <li key={step}><span className="mb-2 block text-lg font-semibold text-blue-600">{step.toString().padStart(2, "0")}</span>{t(`landing.${id}Step${step}`)}</li>)}</ol>}
+        <div className={`mx-auto mt-7 flex justify-center ${featured ? "h-[420px] sm:h-[460px]" : "h-[360px] sm:h-[390px]"}`}><AppScreen feature={id} className="max-h-full w-auto rounded-2xl shadow-[0_12px_28px_-16px_rgba(15,23,42,0.3)]" /></div>
+        <AppStoreLink source={`feature-${id}`} className="mt-6 inline-flex min-h-10 items-center gap-2 text-sm font-semibold text-blue-700 hover:text-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600">{t("landing.navDownload")}<HugeIcon name="arrow-right-01-round" /></AppStoreLink>
+      </article>;
+    })}
+  </div></div></section>;
 };
-
 export default FeatureCards;
