@@ -1,5 +1,6 @@
 import HugeIcon from "@/components/HugeIcon";
 import { useLanguage } from "@/contexts/LanguageContext";
+import AppStoreLink from "@/components/AppStoreLink";
 
 const ProSection = () => {
   const { t } = useLanguage();
@@ -29,10 +30,10 @@ const ProSection = () => {
             ))}
           </div>
           <div className="mt-9 text-center">
-            <a href="https://apps.apple.com/by/app/any-translator-ai-translate/id6738693321" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-medium rounded-xl px-6 py-4 hover:bg-blue-700 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600">
+            <AppStoreLink source="pro" className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-medium rounded-xl px-6 py-4 hover:bg-blue-700 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600">
               {t("landing.proCta")}
               <HugeIcon name="arrow-right-01-round" />
-            </a>
+            </AppStoreLink>
             <p className="text-sm text-gray-600 leading-relaxed max-w-2xl mx-auto mt-4">{t("landing.proNote")}</p>
           </div>
         </div>

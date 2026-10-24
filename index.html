@@ -3,27 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AnyTranslator - Smart Translation App</title>
-    <meta name="description" content="Reply to messages, talk across languages and read the world around you. Text, voice and photo translation with AnyTranslator for iPhone." />
-    <meta name="author" content="AnyTranslator" />
+    <!--seo-start-->
+    <title>AnyTranslator — AI translation for real life</title>
+    <meta name="description" content="Understand menus and documents, translate conversations, and reply across languages with AnyTranslator for iPhone, iPad and Mac." />
+    <!--seo-end-->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="AnyTranslator — Know what to say. Get things done." />
-    <meta property="og:description" content="Reply to messages, talk across languages and read the world around you. Text, voice and photo translation for iPhone." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://anytranslator.app/" />
-    <meta property="og:image" content="https://anytranslator.app/app-preview/logo.png" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AnyTranslator — Know what to say. Get things done." />
-    <meta name="twitter:description" content="Reply to messages, talk across languages and read the world around you. Text, voice and photo translation for iPhone." />
-    <meta name="twitter:image" content="https://anytranslator.app/app-preview/logo.png" />
 
     <!-- Crisp Chat Support -->
     <script type="text/javascript">
@@ -41,21 +29,6 @@
 
   <body>
     <div id="root"><!--ssr-outlet--></div>
-    <!-- GitHub Pages SPA redirect script -->
-    <script>
-      // Single Page Apps for GitHub Pages
-      // https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

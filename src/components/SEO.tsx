@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/contexts/LanguageContext';
 import HreflangLinks from './HreflangLinks';
+import { useLocation } from 'react-router-dom';
+import { SITE_URL, canonicalUrl as getCanonicalUrl, localeForCode } from '@/lib/site-config.mjs';
 
 interface SEOProps {
   title?: string;
@@ -18,24 +20,24 @@ const SEO = ({
   title,
   description,
   keywords,
-  image = 'https://anytranslator.app/app-preview/screens/en/translate.png',
+  image = 'https://www.anytranslator.app/app-preview/screens/en/translate.png',
   url,
   type = 'website',
   noIndex = false,
   publishedTime,
   modifiedTime
 }: SEOProps) => {
-  const { currentLanguage } = useLanguage();
-  
+  const { currentLanguage, t } = useLanguage();
+  const { pathname } = useLocation();
+  const locale = localeForCode(currentLanguage.code);
+
   const siteTitle = 'AnyTranslator';
-  const defaultDescription = 'Translate text, conversations and photos with AnyTranslator for iPhone.';
-  const defaultKeywords = 'translator, translation, language, AI, multilingual, instant translation, voice translation, photo translation, text translation';
-  
+  const defaultDescription = t('meta.description');
+
   const pageTitle = title ? `${title} | ${siteTitle}` : `${siteTitle} - Smart Translation App`;
   const pageDescription = description || defaultDescription;
-  const pageKeywords = keywords || defaultKeywords;
-  const pageUrl = url ? `https://anytranslator.app${url}` : 'https://anytranslator.app/';
-  const canonicalUrl = pageUrl + (currentLanguage.code !== 'en' ? `?lang=${currentLanguage.code}` : '');
+  const canonicalUrl = getCanonicalUrl(url || pathname, currentLanguage.code);
+  const imageUrl = image.replace(/^https:\/\/(?:www\.)?anytranslator\.app/, SITE_URL);
 
   return (
     <>
@@ -43,34 +45,34 @@ const SEO = ({
         {/* Basic Meta Tags */}
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
-        <meta name="keywords" content={pageKeywords} />
+        {keywords && <meta name="keywords" content={keywords} />}
         <meta name="author" content="Shiny Technology Co., Ltd." />
         <meta name="robots" content={noIndex ? 'noindex,nofollow' : 'index,follow'} />
-        
+
         {/* Language and Locale */}
-        <html lang={currentLanguage.code} />
+        <html lang={locale.tag} />
         <meta name="language" content={currentLanguage.code} />
-        
+
         {/* Canonical URL */}
         <link rel="canonical" href={canonicalUrl} />
-        
+
         {/* Open Graph Tags */}
         <meta property="og:type" content={type} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:image" content={image} />
+        <meta property="og:image" content={imageUrl} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content={siteTitle} />
-        <meta property="og:locale" content={currentLanguage.code === 'en' ? 'en_US' : ({ ko: 'ko_KR', ja: 'ja_JP', fr: 'fr_FR', de: 'de_DE', es: 'es_ES', it: 'it_IT', 'pt-br': 'pt_BR', fi: 'fi_FI', da: 'da_DK', nl: 'nl_NL', no: 'nb_NO', sv: 'sv_SE', 'zh-cn': 'zh_CN', 'zh-tw': 'zh_TW', id: 'id_ID', vi: 'vi_VN', th: 'th_TH', ru: 'ru_RU' }[currentLanguage.code] || 'en_US')} />
-        
+        <meta property="og:locale" content={locale.ogLocale} />
+
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content={image} />
+        <meta name="twitter:image" content={imageUrl} />
         <meta name="twitter:site" content="@anytranslator" />
         <meta name="twitter:creator" content="@anytranslator" />
-        
+
         {/* Article Meta (for blog posts/articles) */}
         {type === 'article' && publishedTime && (
           <meta property="article:published_time" content={publishedTime} />
@@ -78,37 +80,37 @@ const SEO = ({
         {type === 'article' && modifiedTime && (
           <meta property="article:modified_time" content={modifiedTime} />
         )}
-        
+
         {/* App Meta Tags */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content={siteTitle} />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content={siteTitle} />
-        
+
         {/* iOS App Store Link */}
         <meta property="al:ios:app_store_id" content="6738693321" />
         <meta property="al:ios:app_name" content="AnyTranslator" />
         <meta property="al:ios:url" content="translator://text" />
-        
+
         {/* Performance optimizations */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
         {/* DNS Prefetch */}
         <link rel="dns-prefetch" href="https://apps.apple.com" />
-        <link rel="dns-prefetch" href="https://play.google.com" />
-        
+
+
         {/* Viewport meta tag for mobile optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-        
+
         {/* Theme color for mobile browsers */}
         <meta name="theme-color" content="#3B82F6" />
         <meta name="msapplication-TileColor" content="#3B82F6" />
       </Helmet>
-      
+
       {/* Hreflang Links */}
-      <HreflangLinks path={url} />
+      {!noIndex && <HreflangLinks path={url || pathname} />}
     </>
   );
 };

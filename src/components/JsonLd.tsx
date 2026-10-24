@@ -10,15 +10,15 @@ export const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Shiny Technology Co., Ltd.',
-  url: 'https://anytranslator.app/',
-  logo: 'https://anytranslator.app/app-preview/logo.png',
+  url: 'https://www.anytranslator.app/',
+  logo: 'https://www.anytranslator.app/app-preview/logo.png',
 };
 
 export const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'AnyTranslator',
-  url: 'https://anytranslator.app/',
+  url: 'https://www.anytranslator.app/',
   inLanguage: ['en', 'ko', 'ja', 'fr', 'de', 'es', 'it', 'pt-BR', 'fi', 'da', 'nl', 'no', 'sv', 'zh-CN', 'zh-TW', 'id', 'vi', 'th', 'ru'],
 };
 
@@ -26,12 +26,12 @@ export const mobileAppSchema = {
   '@context': 'https://schema.org',
   '@type': 'MobileApplication',
   name: 'AnyTranslator',
-  url: 'https://anytranslator.app/',
+  url: 'https://www.anytranslator.app/',
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'iOS, iPadOS, macOS',
   downloadUrl: 'https://apps.apple.com/app/id6738693321',
   featureList: ['Text translation', 'Voice translation', 'Photo translation', 'Chat', 'Helper explanations', 'Custom knowledge', 'Translation keyboard', 'Learning widgets', 'Translation history'],
-  screenshot: ['translate', 'voice', 'chat'].map((name) => `https://anytranslator.app/app-preview/screens/en/${name}.png`),
+  screenshot: ['agent', 'menu', 'keyboard'].map((name) => `https://www.anytranslator.app/app-preview/product/en/${name}.webp`),
 };
 
 export const createBreadcrumbSchema = (items: Array<{ name: string; url: string }>) => ({

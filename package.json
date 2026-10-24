@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "dev:ssr": "node server.js",
-    "build": "npm run generate:sitemap && vite build",
+    "build": "npm run generate:sitemap && vite build && node scripts/prerender.mjs && npm run check:seo",
     "build:client": "vite build --outDir dist/client",
     "build:server": "vite build --outDir dist/server --ssr src/entry-server.tsx",
     "build:ssr": "npm run build:client && npm run build:server",
@@ -15,7 +15,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "preview:ssr": "npm run build:ssr && node server.js",
-    "check:landing": "node scripts/check-landing.mjs"
+    "check:landing": "node scripts/check-landing.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

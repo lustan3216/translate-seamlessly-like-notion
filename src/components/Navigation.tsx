@@ -7,20 +7,17 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useIsMobile } from "@/hooks/use-mobile";
 import { Link } from "react-router-dom";
+import AppStoreLink from "@/components/AppStoreLink";
 
 const Navigation = () => {
   const { currentLanguage, setLanguage, t, languages } = useLanguage();
-  const isMobile = useIsMobile();
 
   return (
     <nav className="border-b border-border-light bg-background/80 backdrop-blur-md sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
-        <a 
-          href="https://apps.apple.com/by/app/any-translator-ai-translate/id6738693321"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          to={currentLanguage.code === "en" ? "/" : `/?lang=${currentLanguage.code}`}
           className="flex items-center gap-2 hover:opacity-80 transition-opacity flex-shrink-0"
         >
           <img 
@@ -28,17 +25,17 @@ const Navigation = () => {
             alt="AnyTranslator" 
             className="h-8 w-8 rounded-[5px]"
           />
-          <span className="text-base sm:text-notion-xl font-semibold text-text-primary">
+          <span className="hidden sm:inline text-base sm:text-notion-xl font-semibold text-text-primary">
             AnyTranslator
           </span>
-        </a>
+        </Link>
         
         <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" size="sm" className="font-medium text-xs sm:text-sm px-2 sm:px-3" aria-label={t('landing.language')}>
                 <HugeIcon name="language-square" className="h-4 w-4" />
-                {!isMobile && <span className="ml-2">{currentLanguage.nativeName}</span>}
+                <span className="hidden sm:inline ml-2">{currentLanguage.nativeName}</span>
                 <HugeIcon name="arrow-down-01-round" className="hidden sm:inline-block sm:h-4 sm:w-4 sm:ml-2" />
               </Button>
             </DropdownMenuTrigger>
@@ -57,20 +54,8 @@ const Navigation = () => {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          <a 
-            href="https://apps.apple.com/by/app/any-translator-ai-translate/id6738693321"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="primary" size="sm" className="font-medium text-white text-xs sm:text-sm px-2 sm:px-3">
-              {isMobile ? t('nav.openApp').split(' ')[0] : t('nav.openApp')}
-            </Button>
-          </a>
-          <Link to={`/support?lang=${currentLanguage.code}`}>
-            <Button variant="ghost" size="sm" className="font-medium text-xs sm:text-sm px-2 sm:px-3 text-text-secondary hover:text-text-primary">
-              {t('footer.support')}
-            </Button>
-          </Link>
+          <AppStoreLink source="navigation" className="inline-flex min-h-10 max-w-[55vw] items-center justify-center rounded-lg bg-blue-600 px-3 sm:px-4 text-center text-xs sm:text-sm font-semibold leading-tight text-white hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600">{t("landing.navDownload")}</AppStoreLink>
+          <Link to={currentLanguage.code === "en" ? "/support" : `/support?lang=${currentLanguage.code}`} className="hidden md:inline-flex min-h-10 items-center rounded-lg px-3 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-950">{t("footer.support")}</Link>
         </div>
       </div>
     </nav>

@@ -1,4 +1,6 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useEffect, ReactNode } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { languageForLocation } from '@/lib/site-config.mjs';
 import { getTranslations as getTranslationsFromFiles } from '../translations';
 
 export type Language = {
@@ -52,41 +54,19 @@ type LanguageProviderProps = {
 };
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  const [currentLanguage, setCurrentLanguage] = useState<Language>(() => {
-    // First, check URL parameter
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlLang = urlParams.get('lang');
-    if (urlLang) {
-      const found = languages.find(lang => lang.code === urlLang);
-      if (found) return found;
-    }
-    
-    // Then check saved language
-    const savedLanguage = localStorage.getItem('selectedLanguage');
-    if (savedLanguage) {
-      const found = languages.find(lang => lang.code === savedLanguage);
-      if (found) return found;
-    }
-    
-    // Detect browser language
-    const browserLang = navigator.language.toLowerCase();
-    const found = languages.find(lang => 
-      lang.code === browserLang || 
-      lang.code === browserLang.substring(0, 2)
-    );
-    
-    return found || languages[0]; // Default to English (US)
-  });
+  const location = useLocation();
+  const navigate = useNavigate();
+  // URLs are shareable language selections, including the English URL without ?lang.
+  const currentLanguage = languages.find((language) =>
+    language.code === languageForLocation(location.pathname, location.search)
+  ) || languages[0];
 
   const setLanguage = (language: Language) => {
-    setCurrentLanguage(language);
-    localStorage.setItem('selectedLanguage', language.code);
-    document.documentElement.lang = language.code;
-    
-    // Update URL parameter
-    const url = new URL(window.location.href);
-    url.searchParams.set('lang', language.code);
-    window.history.replaceState({}, '', url.toString());
+    const params = new URLSearchParams(location.search);
+    if (language.code === 'en') params.delete('lang');
+    else params.set('lang', language.code);
+    const search = params.toString();
+    navigate(`${location.pathname}${search ? `?${search}` : ''}${location.hash}`, { replace: true });
   };
 
   const t = (key: string): string => {
@@ -95,30 +75,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   };
 
   useEffect(() => {
-    document.documentElement.lang = currentLanguage.code;
-  }, [currentLanguage]);
-
-  // Listen for URL changes and update language accordingly
-  useEffect(() => {
-    const handleUrlChange = () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const urlLang = urlParams.get('lang');
-      if (urlLang && urlLang !== currentLanguage.code) {
-        const found = languages.find(lang => lang.code === urlLang);
-        if (found) {
-          setCurrentLanguage(found);
-          localStorage.setItem('selectedLanguage', found.code);
-          document.documentElement.lang = found.code;
-        }
-      }
-    };
-
-    // Listen for popstate events (back/forward navigation)
-    window.addEventListener('popstate', handleUrlChange);
-    
-    return () => {
-      window.removeEventListener('popstate', handleUrlChange);
-    };
+    // Storage can be unavailable in private browsing; it never overrides the URL.
+    try { localStorage.setItem('selectedLanguage', currentLanguage.code); } catch { /* optional preference */ }
   }, [currentLanguage.code]);
 
   return (

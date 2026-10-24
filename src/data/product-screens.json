@@ -1,0 +1,895 @@
+{
+  "en": {
+    "agent": {
+      "src": "/app-preview/product/en/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/en/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/en/document.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "keyboard": {
+      "src": "/app-preview/product/en/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/en/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/en/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/en/text.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "chat": {
+      "src": "/app-preview/product/en/chat.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "helper": {
+      "src": "/app-preview/product/en/helper.webp",
+      "width": 768,
+      "height": 1669
+    }
+  },
+  "ko": {
+    "agent": {
+      "src": "/app-preview/product/ko/agent.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "menu": {
+      "src": "/app-preview/product/ko/menu.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "document": {
+      "src": "/app-preview/product/ko/document.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "keyboard": {
+      "src": "/app-preview/product/ko/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/ko/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/ko/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/ko/text.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "chat": {
+      "src": "/app-preview/product/ko/chat.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "helper": {
+      "src": "/app-preview/product/ko/helper.webp",
+      "width": 768,
+      "height": 1672
+    }
+  },
+  "ja": {
+    "agent": {
+      "src": "/app-preview/product/ja/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/ja/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/ja/document.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "keyboard": {
+      "src": "/app-preview/product/ja/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/ja/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/ja/voice.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "text": {
+      "src": "/app-preview/product/ja/text.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "chat": {
+      "src": "/app-preview/product/ja/chat.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "helper": {
+      "src": "/app-preview/product/ja/helper.webp",
+      "width": 768,
+      "height": 1672
+    }
+  },
+  "fr": {
+    "agent": {
+      "src": "/app-preview/product/fr/agent.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "menu": {
+      "src": "/app-preview/product/fr/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/fr/document.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "keyboard": {
+      "src": "/app-preview/product/fr/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/fr/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/fr/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/fr/text.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "chat": {
+      "src": "/app-preview/product/fr/chat.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "helper": {
+      "src": "/app-preview/product/fr/helper.webp",
+      "width": 768,
+      "height": 1672
+    }
+  },
+  "de": {
+    "agent": {
+      "src": "/app-preview/product/de/agent.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "menu": {
+      "src": "/app-preview/product/de/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/de/document.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "keyboard": {
+      "src": "/app-preview/product/de/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/de/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/de/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/de/text.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "chat": {
+      "src": "/app-preview/product/de/chat.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "helper": {
+      "src": "/app-preview/product/de/helper.webp",
+      "width": 768,
+      "height": 1669
+    }
+  },
+  "es": {
+    "agent": {
+      "src": "/app-preview/product/es/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/es/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/es/document.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "keyboard": {
+      "src": "/app-preview/product/es/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/es/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/es/voice.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "text": {
+      "src": "/app-preview/product/es/text.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "chat": {
+      "src": "/app-preview/product/es/chat.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "helper": {
+      "src": "/app-preview/product/es/helper.webp",
+      "width": 768,
+      "height": 1672
+    }
+  },
+  "it": {
+    "agent": {
+      "src": "/app-preview/product/it/agent.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "menu": {
+      "src": "/app-preview/product/it/menu.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "document": {
+      "src": "/app-preview/product/it/document.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "keyboard": {
+      "src": "/app-preview/product/it/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/it/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/it/voice.webp",
+      "width": 768,
+      "height": 1667
+    },
+    "text": {
+      "src": "/app-preview/product/it/text.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "chat": {
+      "src": "/app-preview/product/it/chat.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "helper": {
+      "src": "/app-preview/product/it/helper.webp",
+      "width": 768,
+      "height": 1669
+    }
+  },
+  "pt-br": {
+    "agent": {
+      "src": "/app-preview/product/pt-br/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/pt-br/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/pt-br/document.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "keyboard": {
+      "src": "/app-preview/product/pt-br/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/pt-br/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/pt-br/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/pt-br/text.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "chat": {
+      "src": "/app-preview/product/pt-br/chat.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "helper": {
+      "src": "/app-preview/product/pt-br/helper.webp",
+      "width": 768,
+      "height": 1672
+    }
+  },
+  "fi": {
+    "agent": {
+      "src": "/app-preview/product/fi/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/fi/menu.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "document": {
+      "src": "/app-preview/product/fi/document.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "keyboard": {
+      "src": "/app-preview/product/fi/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/fi/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/fi/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/fi/text.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "chat": {
+      "src": "/app-preview/product/fi/chat.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "helper": {
+      "src": "/app-preview/product/fi/helper.webp",
+      "width": 768,
+      "height": 1672
+    }
+  },
+  "da": {
+    "agent": {
+      "src": "/app-preview/product/da/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/da/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/da/document.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "keyboard": {
+      "src": "/app-preview/product/da/keyboard.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "widget": {
+      "src": "/app-preview/product/da/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/da/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/da/text.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "chat": {
+      "src": "/app-preview/product/da/chat.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "helper": {
+      "src": "/app-preview/product/da/helper.webp",
+      "width": 768,
+      "height": 1672
+    }
+  },
+  "nl": {
+    "agent": {
+      "src": "/app-preview/product/nl/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/nl/menu.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "document": {
+      "src": "/app-preview/product/nl/document.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "keyboard": {
+      "src": "/app-preview/product/nl/keyboard.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "widget": {
+      "src": "/app-preview/product/nl/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/nl/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/nl/text.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "chat": {
+      "src": "/app-preview/product/nl/chat.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "helper": {
+      "src": "/app-preview/product/nl/helper.webp",
+      "width": 768,
+      "height": 1669
+    }
+  },
+  "no": {
+    "agent": {
+      "src": "/app-preview/product/no/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/no/menu.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "document": {
+      "src": "/app-preview/product/no/document.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "keyboard": {
+      "src": "/app-preview/product/no/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/no/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/no/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/no/text.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "chat": {
+      "src": "/app-preview/product/no/chat.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "helper": {
+      "src": "/app-preview/product/no/helper.webp",
+      "width": 768,
+      "height": 1672
+    }
+  },
+  "sv": {
+    "agent": {
+      "src": "/app-preview/product/sv/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/sv/menu.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "document": {
+      "src": "/app-preview/product/sv/document.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "keyboard": {
+      "src": "/app-preview/product/sv/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/sv/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/sv/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/sv/text.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "chat": {
+      "src": "/app-preview/product/sv/chat.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "helper": {
+      "src": "/app-preview/product/sv/helper.webp",
+      "width": 768,
+      "height": 1668
+    }
+  },
+  "zh-cn": {
+    "agent": {
+      "src": "/app-preview/product/zh-cn/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/zh-cn/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/zh-cn/document.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "keyboard": {
+      "src": "/app-preview/product/zh-cn/keyboard.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "widget": {
+      "src": "/app-preview/product/zh-cn/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/zh-cn/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/zh-cn/text.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "chat": {
+      "src": "/app-preview/product/zh-cn/chat.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "helper": {
+      "src": "/app-preview/product/zh-cn/helper.webp",
+      "width": 768,
+      "height": 1667
+    }
+  },
+  "zh-tw": {
+    "agent": {
+      "src": "/app-preview/product/zh-tw/agent.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "menu": {
+      "src": "/app-preview/product/zh-tw/menu.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "document": {
+      "src": "/app-preview/product/zh-tw/document.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "keyboard": {
+      "src": "/app-preview/product/zh-tw/keyboard.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "widget": {
+      "src": "/app-preview/product/zh-tw/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/zh-tw/voice.webp",
+      "width": 768,
+      "height": 1667
+    },
+    "text": {
+      "src": "/app-preview/product/zh-tw/text.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "chat": {
+      "src": "/app-preview/product/zh-tw/chat.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "helper": {
+      "src": "/app-preview/product/zh-tw/helper.webp",
+      "width": 768,
+      "height": 1669
+    }
+  },
+  "id": {
+    "agent": {
+      "src": "/app-preview/product/id/agent.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "menu": {
+      "src": "/app-preview/product/id/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/id/document.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "keyboard": {
+      "src": "/app-preview/product/id/keyboard.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "widget": {
+      "src": "/app-preview/product/id/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/id/voice.webp",
+      "width": 768,
+      "height": 1667
+    },
+    "text": {
+      "src": "/app-preview/product/id/text.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "chat": {
+      "src": "/app-preview/product/id/chat.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "helper": {
+      "src": "/app-preview/product/id/helper.webp",
+      "width": 768,
+      "height": 1672
+    }
+  },
+  "vi": {
+    "agent": {
+      "src": "/app-preview/product/vi/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/vi/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/vi/document.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "keyboard": {
+      "src": "/app-preview/product/vi/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/vi/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/vi/voice.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "text": {
+      "src": "/app-preview/product/vi/text.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "chat": {
+      "src": "/app-preview/product/vi/chat.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "helper": {
+      "src": "/app-preview/product/vi/helper.webp",
+      "width": 768,
+      "height": 1672
+    }
+  },
+  "th": {
+    "agent": {
+      "src": "/app-preview/product/th/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/th/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/th/document.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "keyboard": {
+      "src": "/app-preview/product/th/keyboard.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "widget": {
+      "src": "/app-preview/product/th/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/th/voice.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "text": {
+      "src": "/app-preview/product/th/text.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "chat": {
+      "src": "/app-preview/product/th/chat.webp",
+      "width": 768,
+      "height": 1672
+    },
+    "helper": {
+      "src": "/app-preview/product/th/helper.webp",
+      "width": 768,
+      "height": 1668
+    }
+  },
+  "ru": {
+    "agent": {
+      "src": "/app-preview/product/ru/agent.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "menu": {
+      "src": "/app-preview/product/ru/menu.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "document": {
+      "src": "/app-preview/product/ru/document.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "keyboard": {
+      "src": "/app-preview/product/ru/keyboard.webp",
+      "width": 768,
+      "height": 1668
+    },
+    "widget": {
+      "src": "/app-preview/product/ru/widget.webp",
+      "width": 768,
+      "height": 1664
+    },
+    "voice": {
+      "src": "/app-preview/product/ru/voice.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "text": {
+      "src": "/app-preview/product/ru/text.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "chat": {
+      "src": "/app-preview/product/ru/chat.webp",
+      "width": 768,
+      "height": 1669
+    },
+    "helper": {
+      "src": "/app-preview/product/ru/helper.webp",
+      "width": 768,
+      "height": 1669
+    }
+  }
+}

@@ -18,6 +18,15 @@ import { translations as id } from './id';
 import { translations as vi } from './vi';
 import { translations as th } from './th';
 import { landingTranslations } from './landing';
+import baseRefresh from './landing-refresh/base.json';
+import groupARefresh from './landing-refresh/group-a.json';
+import groupBRefresh from './landing-refresh/group-b.json';
+
+export const landingRefreshTranslations: Record<string, Record<string, string>> = {
+  ...baseRefresh,
+  ...groupARefresh,
+  ...groupBRefresh,
+};
 
 export const translations: Record<string, Record<string, string>> = {
   'en': en,
@@ -46,5 +55,6 @@ export const getTranslations = (languageCode: string): Record<string, string> =>
   return {
     ...(translations[languageCode] || translations['en']),
     ...(landingTranslations[languageCode] || landingTranslations['en']),
+    ...(landingRefreshTranslations[languageCode] || landingRefreshTranslations.en),
   };
 };

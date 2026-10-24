@@ -1,12 +1,572 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^ko$"
+        }
+      ],
+      "dest": "/_localized/ko/index.html",
+      "headers": {
+        "Content-Language": "ko-KR"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^ja$"
+        }
+      ],
+      "dest": "/_localized/ja/index.html",
+      "headers": {
+        "Content-Language": "ja-JP"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^fr$"
+        }
+      ],
+      "dest": "/_localized/fr/index.html",
+      "headers": {
+        "Content-Language": "fr-FR"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^de$"
+        }
+      ],
+      "dest": "/_localized/de/index.html",
+      "headers": {
+        "Content-Language": "de-DE"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^es$"
+        }
+      ],
+      "dest": "/_localized/es/index.html",
+      "headers": {
+        "Content-Language": "es-ES"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^it$"
+        }
+      ],
+      "dest": "/_localized/it/index.html",
+      "headers": {
+        "Content-Language": "it-IT"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^pt-br$"
+        }
+      ],
+      "dest": "/_localized/pt-br/index.html",
+      "headers": {
+        "Content-Language": "pt-BR"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^fi$"
+        }
+      ],
+      "dest": "/_localized/fi/index.html",
+      "headers": {
+        "Content-Language": "fi-FI"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^da$"
+        }
+      ],
+      "dest": "/_localized/da/index.html",
+      "headers": {
+        "Content-Language": "da-DK"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^nl$"
+        }
+      ],
+      "dest": "/_localized/nl/index.html",
+      "headers": {
+        "Content-Language": "nl-NL"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^no$"
+        }
+      ],
+      "dest": "/_localized/no/index.html",
+      "headers": {
+        "Content-Language": "nb-NO"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^sv$"
+        }
+      ],
+      "dest": "/_localized/sv/index.html",
+      "headers": {
+        "Content-Language": "sv-SE"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^zh-cn$"
+        }
+      ],
+      "dest": "/_localized/zh-cn/index.html",
+      "headers": {
+        "Content-Language": "zh-CN"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^zh-tw$"
+        }
+      ],
+      "dest": "/_localized/zh-tw/index.html",
+      "headers": {
+        "Content-Language": "zh-TW"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^id$"
+        }
+      ],
+      "dest": "/_localized/id/index.html",
+      "headers": {
+        "Content-Language": "id-ID"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^vi$"
+        }
+      ],
+      "dest": "/_localized/vi/index.html",
+      "headers": {
+        "Content-Language": "vi-VN"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^th$"
+        }
+      ],
+      "dest": "/_localized/th/index.html",
+      "headers": {
+        "Content-Language": "th-TH"
+      }
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^ru$"
+        }
+      ],
+      "dest": "/_localized/ru/index.html",
+      "headers": {
+        "Content-Language": "ru-RU"
+      }
+    },
+    {
+      "src": "^/$",
+      "dest": "/_localized/en/index.html",
+      "headers": {
+        "Content-Language": "en-US"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^ko$"
+        }
+      ],
+      "dest": "/_localized/ko/support/index.html",
+      "headers": {
+        "Content-Language": "ko-KR"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^ja$"
+        }
+      ],
+      "dest": "/_localized/ja/support/index.html",
+      "headers": {
+        "Content-Language": "ja-JP"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^fr$"
+        }
+      ],
+      "dest": "/_localized/fr/support/index.html",
+      "headers": {
+        "Content-Language": "fr-FR"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^de$"
+        }
+      ],
+      "dest": "/_localized/de/support/index.html",
+      "headers": {
+        "Content-Language": "de-DE"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^es$"
+        }
+      ],
+      "dest": "/_localized/es/support/index.html",
+      "headers": {
+        "Content-Language": "es-ES"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^it$"
+        }
+      ],
+      "dest": "/_localized/it/support/index.html",
+      "headers": {
+        "Content-Language": "it-IT"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^pt-br$"
+        }
+      ],
+      "dest": "/_localized/pt-br/support/index.html",
+      "headers": {
+        "Content-Language": "pt-BR"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^fi$"
+        }
+      ],
+      "dest": "/_localized/fi/support/index.html",
+      "headers": {
+        "Content-Language": "fi-FI"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^da$"
+        }
+      ],
+      "dest": "/_localized/da/support/index.html",
+      "headers": {
+        "Content-Language": "da-DK"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^nl$"
+        }
+      ],
+      "dest": "/_localized/nl/support/index.html",
+      "headers": {
+        "Content-Language": "nl-NL"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^no$"
+        }
+      ],
+      "dest": "/_localized/no/support/index.html",
+      "headers": {
+        "Content-Language": "nb-NO"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^sv$"
+        }
+      ],
+      "dest": "/_localized/sv/support/index.html",
+      "headers": {
+        "Content-Language": "sv-SE"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^zh-cn$"
+        }
+      ],
+      "dest": "/_localized/zh-cn/support/index.html",
+      "headers": {
+        "Content-Language": "zh-CN"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^zh-tw$"
+        }
+      ],
+      "dest": "/_localized/zh-tw/support/index.html",
+      "headers": {
+        "Content-Language": "zh-TW"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^id$"
+        }
+      ],
+      "dest": "/_localized/id/support/index.html",
+      "headers": {
+        "Content-Language": "id-ID"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^vi$"
+        }
+      ],
+      "dest": "/_localized/vi/support/index.html",
+      "headers": {
+        "Content-Language": "vi-VN"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^th$"
+        }
+      ],
+      "dest": "/_localized/th/support/index.html",
+      "headers": {
+        "Content-Language": "th-TH"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "^ru$"
+        }
+      ],
+      "dest": "/_localized/ru/support/index.html",
+      "headers": {
+        "Content-Language": "ru-RU"
+      }
+    },
+    {
+      "src": "^/support/?$",
+      "dest": "/_localized/en/support/index.html",
+      "headers": {
+        "Content-Language": "en-US"
+      }
+    },
+    {
+      "src": "^/terms-of-service/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang"
+        }
+      ],
+      "headers": {
+        "Location": "/terms-of-service"
+      },
+      "status": 308
+    },
+    {
+      "src": "^/terms-of-service/?$",
+      "dest": "/_localized/en/terms-of-service/index.html",
+      "headers": {
+        "Content-Language": "en-US"
+      }
+    },
+    {
+      "src": "^/privacy-policy/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang"
+        }
+      ],
+      "headers": {
+        "Location": "/privacy-policy"
+      },
+      "status": 308
+    },
+    {
+      "src": "^/privacy-policy/?$",
+      "dest": "/_localized/en/privacy-policy/index.html",
+      "headers": {
+        "Content-Language": "en-US"
+      }
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/404.html",
+      "status": 404
+    }
   ]
 }
