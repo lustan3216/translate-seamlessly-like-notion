@@ -73,7 +73,7 @@ for (const route of SITE_ROUTES) {
 }
 const config = JSON.parse(await read('vercel.json'));
 const routeRules = config.routes;
-assert.equal(routeRules.findIndex((rule) => rule.handle === 'filesystem'), 42, 'Localized routes and legal redirects must resolve before filesystem.');
+assert.equal(routeRules.findIndex((rule) => rule.handle === 'filesystem'), 40, 'Localized routes must resolve before filesystem.');
 assert.equal(routeRules.at(-1).status, 404);
 const resolveRoute = (pathname, search = '') => {
   const query = new URLSearchParams(search);
@@ -86,9 +86,10 @@ for (const route of SITE_ROUTES) {
   }
   if (localesForPath(route).length === 1) {
     for (const { code } of SITE_LOCALES) {
-      const redirect = resolveRoute(route, `?lang=${code}`);
-      assert.equal(redirect?.status, 308, `Legal language URL must redirect: ${route} / ${code}`);
-      assert.equal(redirect.headers.Location, route);
+      const legalPage = resolveRoute(route, `?lang=${code}`);
+      assert.equal(legalPage?.dest, `/${outputPath(route, 'en')}`, `Legal language URL must serve English HTML: ${route} / ${code}`);
+      assert.equal(legalPage.status || 200, 200);
+      assert.equal(legalPage.headers['Content-Language'], 'en-US');
       assert.equal(languageForLocation(route, `?lang=${code}`), 'en');
       assert.equal(canonicalUrl(route, code), `${SITE_URL}${route}`);
     }
