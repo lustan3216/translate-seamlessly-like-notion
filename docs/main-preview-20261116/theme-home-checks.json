@@ -1,0 +1,166 @@
+{
+  "appSource": "8727cc50d0265c9a312b23e4fabb057670e67639",
+  "scope": "Website home and theme; App captures still pending",
+  "checks": [
+    {
+      "actual": "light",
+      "h1Count": 1,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "scenarios": 10,
+      "stories": 3,
+      "themeButton": {
+        "height": 44,
+        "left": 1094,
+        "right": 1138,
+        "width": 44
+      },
+      "width": 1440
+    },
+    {
+      "actual": "dark",
+      "h1Count": 1,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "scenarios": 10,
+      "stories": 3,
+      "themeButton": {
+        "height": 44,
+        "left": 1094,
+        "right": 1138,
+        "width": 44
+      },
+      "width": 1440
+    },
+    {
+      "actual": "light",
+      "h1Count": 1,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "scenarios": 10,
+      "stories": 3,
+      "themeButton": {
+        "height": 44,
+        "left": 706,
+        "right": 750,
+        "width": 44
+      },
+      "width": 1024
+    },
+    {
+      "actual": "dark",
+      "h1Count": 1,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "scenarios": 10,
+      "stories": 3,
+      "themeButton": {
+        "height": 44,
+        "left": 706,
+        "right": 750,
+        "width": 44
+      },
+      "width": 1024
+    },
+    {
+      "actual": "light",
+      "h1Count": 1,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "scenarios": 10,
+      "stories": 3,
+      "themeButton": {
+        "height": 44,
+        "left": 450,
+        "right": 494,
+        "width": 44
+      },
+      "width": 768
+    },
+    {
+      "actual": "dark",
+      "h1Count": 1,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "scenarios": 10,
+      "stories": 3,
+      "themeButton": {
+        "height": 44,
+        "left": 450,
+        "right": 494,
+        "width": 44
+      },
+      "width": 768
+    },
+    {
+      "actual": "light",
+      "h1Count": 1,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "scenarios": 10,
+      "stories": 3,
+      "themeButton": {
+        "height": 44,
+        "left": 214,
+        "right": 258,
+        "width": 44
+      },
+      "width": 390
+    },
+    {
+      "actual": "dark",
+      "h1Count": 1,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "scenarios": 10,
+      "stories": 3,
+      "themeButton": {
+        "height": 44,
+        "left": 214,
+        "right": 258,
+        "width": 44
+      },
+      "width": 390
+    },
+    {
+      "actual": "light",
+      "h1Count": 1,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "scenarios": 10,
+      "stories": 3,
+      "themeButton": {
+        "height": 44,
+        "left": 144,
+        "right": 188,
+        "width": 44
+      },
+      "width": 320
+    },
+    {
+      "actual": "dark",
+      "h1Count": 1,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "scenarios": 10,
+      "stories": 3,
+      "themeButton": {
+        "height": 44,
+        "left": 144,
+        "right": 188,
+        "width": 44
+      },
+      "width": 320
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "credit": [
+      {
+        "font": "13px",
+        "left": 120,
+        "links": [
+          "https://commons.wikimedia.org/wiki/File:Zoomed-In_%22No_Swimming%22_Sign.jpg",
+          "https://commons.wikimedia.org/wiki/User:Schism.07",
+          "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        ],
+        "right": 1320,
+        "text": "範例照片：Wikimedia Commons ／ Schism.07 ／ CC0 1.0。"
+      }
+    ],
+    "pageWidth": 1440,
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "credit": [
+      {
+        "font": "13px",
+        "left": 20,
+        "links": [
+          "https://commons.wikimedia.org/wiki/File:Zoomed-In_%22No_Swimming%22_Sign.jpg",
+          "https://commons.wikimedia.org/wiki/User:Schism.07",
+          "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        ],
+        "right": 370,
+        "text": "範例照片：Wikimedia Commons ／ Schism.07 ／ CC0 1.0。"
+      }
+    ],
+    "pageWidth": 390,
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "credit": [
+      {
+        "font": "13px",
+        "left": 20,
+        "links": [
+          "https://commons.wikimedia.org/wiki/File:Zoomed-In_%22No_Swimming%22_Sign.jpg",
+          "https://commons.wikimedia.org/wiki/User:Schism.07",
+          "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        ],
+        "right": 370,
+        "text": "範例照片：Wikimedia Commons ／ Schism.07 ／ CC0 1.0。"
+      }
+    ],
+    "pageWidth": 390,
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "credit": [
+      {
+        "font": "13px",
+        "left": 120,
+        "links": [
+          "https://commons.wikimedia.org/wiki/File:Zoomed-In_%22No_Swimming%22_Sign.jpg",
+          "https://commons.wikimedia.org/wiki/User:Schism.07",
+          "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        ],
+        "right": 1320,
+        "text": "範例照片：Wikimedia Commons ／ Schism.07 ／ CC0 1.0。"
+      }
+    ],
+    "pageWidth": 1440,
+    "theme": "dark",
+    "width": 1440
+  }
+]

@@ -1,0 +1,105 @@
+/* Irregular abstract artwork forms the stage. Native App images retain their original pixels. */
+.marketing-site .mk-photo-stage {
+  --photo-wash: #ffffff26;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--mk-surface);
+}
+.mk-photo-stage::before,
+.mk-photo-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+  border-radius: inherit;
+}
+.mk-photo-stage::before {
+  background: var(--stage-photo) center / cover no-repeat;
+}
+.mk-photo-stage::after { z-index: -1; background: var(--photo-wash); }
+[data-photo], .mk-photo-stage { --stage-photo: url("/app-preview/backgrounds/abstract-mist-v3.webp"); }
+[data-photo="shore"]::before, .mk-photo-stage--shore::before { background-position: 28% 65%; }
+[data-photo="meadow"]::before, .mk-photo-stage--meadow::before { background-position: 72% 50%; }
+[data-photo="meadow"]::before, .mk-photo-stage--meadow::before { filter: grayscale(1); }
+[data-photo="water"]::before, .mk-photo-stage--water::before { background-position: 48% 25%; }
+.marketing-site .mk-photo-stage[data-photo="meadow"],
+.marketing-site .mk-photo-stage--meadow { --photo-wash: #f5f4eb24; }
+.marketing-site .mk-demo-stage.mk-photo-stage {
+  --photo-wash: linear-gradient(90deg, #ffffffec 0%, #ffffffbc 42%, #ffffff40 100%);
+}
+.mk-photo-stage .native-app-screen { box-shadow: 0 18px 36px -22px #17252266; }
+.marketing-site .mk-home-scenario-art.mk-photo-stage {
+  align-self: stretch;
+  align-items: center;
+  border-radius: 20px;
+  padding: 28px 16px;
+}
+.marketing-site .mk-card-artwork.mk-photo-stage {
+  border-radius: 16px 16px 0 0;
+  margin-inline: -12px;
+  padding-top: 24px;
+}
+.marketing-site .mk-card-screen.mk-card-translation-context {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  flex: 0 0 auto;
+  height: auto;
+  margin-inline: -12px;
+  padding: 16px 12px 20px;
+  border-radius: 16px 16px 0 0;
+}
+.mk-card-translation-context figcaption {
+  color: var(--mk-ink);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.marketing-site .mk-card-screen.mk-card-translation-context img {
+  display: block;
+  width: min(100%, 240px);
+  max-width: none;
+  height: auto;
+  border: 0;
+  border-radius: 16px;
+  transform: none;
+}
+@media (min-width: 701px) {
+  .marketing-site .mk-feature-grid:has(.mk-card-translation-context) .mk-card-artwork {
+    flex-grow: 1;
+  }
+}
+.mk-platform-art.mk-photo-stage,
+.mk-partner-screens.mk-photo-stage {
+  padding: 32px;
+  border-radius: 24px;
+}
+.marketing-site .mk-home-scenario {
+  grid-template-columns: minmax(0, 1fr) 200px;
+  padding: 28px;
+}
+.marketing-site .mk-home-scenario-art.mk-photo-stage {
+  padding-inline: 12px;
+}
+@media (max-width: 1199px) {
+  .marketing-site .mk-home-scenario { grid-template-columns: 1fr; }
+}
+:root[data-theme="dark"] .mk-photo-stage { --photo-wash: #1821258a; }
+:root[data-theme="dark"] .mk-photo-stage[data-photo="meadow"],
+:root[data-theme="dark"] .mk-photo-stage--meadow { --photo-wash: #20251a77; }
+:root[data-theme="dark"] .marketing-site .mk-demo-stage.mk-photo-stage {
+  --photo-wash: linear-gradient(90deg, #202020f5 0%, #202020ce 42%, #18212575 100%);
+}
+@media (max-width: 900px) {
+  .marketing-site .mk-demo-stage.mk-photo-stage {
+    --photo-wash: linear-gradient(180deg, #ffffffed 0%, #ffffffb8 30%, #ffffff3d 100%);
+  }
+  :root[data-theme="dark"] .marketing-site .mk-demo-stage.mk-photo-stage {
+    --photo-wash: linear-gradient(180deg, #202020f5 0%, #202020ce 30%, #18212575 100%);
+  }
+}

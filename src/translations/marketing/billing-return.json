@@ -1,0 +1,116 @@
+{
+  "en": {
+    "title": "Payment complete",
+    "instructions": "We sent an activation email to the address you used at checkout. Open it on your iPhone and tap “Activate in AnyTranslator.”",
+    "resend": "Didn’t get the email? Resend",
+    "resent": "Email resent"
+  },
+  "ko": {
+    "title": "결제 완료",
+    "instructions": "결제에 사용한 주소로 활성화 이메일을 보냈습니다. iPhone에서 이메일을 열고 ‘AnyTranslator에서 활성화’를 탭하세요.",
+    "resend": "이메일이 안 왔나요? 다시 보내기",
+    "resent": "이메일을 다시 보냈습니다"
+  },
+  "ja": {
+    "title": "お支払い完了",
+    "instructions": "決済時に使ったアドレスへ有効化メールを送りました。iPhoneでメールを開き、「AnyTranslatorで有効化」をタップしてください。",
+    "resend": "メールが届かない場合は再送",
+    "resent": "メールを再送しました"
+  },
+  "fr": {
+    "title": "Paiement effectué",
+    "instructions": "L’e-mail d’activation a été envoyé à l’adresse utilisée pour le paiement. Ouvrez-le sur votre iPhone et touchez « Activer dans AnyTranslator ».",
+    "resend": "E-mail non reçu ? Renvoyer",
+    "resent": "E-mail renvoyé"
+  },
+  "de": {
+    "title": "Zahlung abgeschlossen",
+    "instructions": "Die Aktivierungs-E-Mail ging an deine beim Bezahlen verwendete Adresse. Öffne sie auf deinem iPhone und tippe auf „In AnyTranslator aktivieren“.",
+    "resend": "Keine E-Mail erhalten? Erneut senden",
+    "resent": "E-Mail erneut gesendet"
+  },
+  "es": {
+    "title": "Pago completado",
+    "instructions": "Enviamos el correo de activación a la dirección que usaste al pagar. Ábrelo en tu iPhone y toca «Activar en AnyTranslator».",
+    "resend": "¿No te llegó el correo? Reenviar",
+    "resent": "Correo reenviado"
+  },
+  "it": {
+    "title": "Pagamento completato",
+    "instructions": "Abbiamo inviato l’e-mail di attivazione all’indirizzo usato per il pagamento. Aprila sul tuo iPhone e tocca «Attiva in AnyTranslator».",
+    "resend": "E-mail non ricevuta? Invia di nuovo",
+    "resent": "E-mail inviata di nuovo"
+  },
+  "pt-br": {
+    "title": "Pagamento concluído",
+    "instructions": "Enviamos o e-mail de ativação para o endereço usado no pagamento. Abra-o no iPhone e toque em “Ativar no AnyTranslator”.",
+    "resend": "Não recebeu o e-mail? Reenviar",
+    "resent": "E-mail reenviado"
+  },
+  "fi": {
+    "title": "Maksu suoritettu",
+    "instructions": "Lähetimme aktivointiviestin maksussa käyttämääsi sähköpostiosoitteeseen. Avaa viesti iPhonessa ja napauta ”Aktivoi AnyTranslatorissa”.",
+    "resend": "Eikö viesti tullut? Lähetä uudelleen",
+    "resent": "Viesti lähetetty uudelleen"
+  },
+  "da": {
+    "title": "Betaling gennemført",
+    "instructions": "Vi har sendt en aktiveringsmail til adressen, du brugte ved betaling. Åbn mailen på din iPhone, og tryk på »Aktivér i AnyTranslator«.",
+    "resend": "Ingen mail? Send igen",
+    "resent": "Mail sendt igen"
+  },
+  "nl": {
+    "title": "Betaling voltooid",
+    "instructions": "We hebben de activatiemail naar het e-mailadres gestuurd waarmee je hebt betaald. Open de mail op je iPhone en tik op ‘Activeren in AnyTranslator’.",
+    "resend": "Geen e-mail ontvangen? Opnieuw sturen",
+    "resent": "E-mail opnieuw verstuurd"
+  },
+  "no": {
+    "title": "Betaling fullført",
+    "instructions": "Vi har sendt en aktiveringsmail til adressen du brukte ved betaling. Åpne e-posten på iPhone og trykk på «Aktiver i AnyTranslator».",
+    "resend": "Ingen e-post? Send på nytt",
+    "resent": "E-post sendt på nytt"
+  },
+  "sv": {
+    "title": "Betalningen är klar",
+    "instructions": "Vi har skickat ett aktiveringsmejl till adressen du använde vid betalningen. Öppna mejlet på din iPhone och tryck på ”Aktivera i AnyTranslator”.",
+    "resend": "Inget mejl? Skicka igen",
+    "resent": "Mejlet har skickats igen"
+  },
+  "zh-cn": {
+    "title": "付款完成",
+    "instructions": "开通邮件已发送到你付款时使用的邮箱。在 iPhone 上打开邮件，轻点「在 AnyTranslator 开通」。",
+    "resend": "没收到邮件？重新发送",
+    "resent": "已重新发送"
+  },
+  "zh-tw": {
+    "title": "付款完成",
+    "instructions": "開通信已寄到你付款時用的信箱。在 iPhone 上打開信，點「在 AnyTranslator 開通」。",
+    "resend": "沒收到信？重新寄送",
+    "resent": "已重新寄送"
+  },
+  "id": {
+    "title": "Pembayaran selesai",
+    "instructions": "Email aktivasi sudah dikirim ke alamat yang Anda gunakan saat membayar. Buka email di iPhone dan ketuk “Aktifkan di AnyTranslator”.",
+    "resend": "Belum menerima email? Kirim ulang",
+    "resent": "Email telah dikirim ulang"
+  },
+  "vi": {
+    "title": "Thanh toán hoàn tất",
+    "instructions": "Email kích hoạt đã được gửi tới địa chỉ bạn dùng khi thanh toán. Mở email trên iPhone và chạm vào “Kích hoạt trong AnyTranslator”.",
+    "resend": "Chưa nhận được email? Gửi lại",
+    "resent": "Đã gửi lại email"
+  },
+  "th": {
+    "title": "ชำระเงินเรียบร้อย",
+    "instructions": "เราส่งอีเมลเปิดใช้งานไปยังที่อยู่ที่คุณใช้ชำระเงินแล้ว เปิดอีเมลบน iPhone แล้วแตะ “เปิดใช้งานใน AnyTranslator”",
+    "resend": "ไม่ได้รับอีเมลใช่ไหม ส่งอีกครั้ง",
+    "resent": "ส่งอีเมลอีกครั้งแล้ว"
+  },
+  "ru": {
+    "title": "Оплата завершена",
+    "instructions": "Письмо для активации отправлено на адрес, указанный при оплате. Откройте письмо на iPhone и нажмите «Активировать в AnyTranslator».",
+    "resend": "Не получили письмо? Отправить ещё раз",
+    "resent": "Письмо отправлено повторно"
+  }
+}

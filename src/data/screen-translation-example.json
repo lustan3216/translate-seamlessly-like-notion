@@ -1,0 +1,86 @@
+{
+  "image": {
+    "src": "/app-preview/examples/screen-translation-safari.webp",
+    "srcSet": "/app-preview/examples/screen-translation-safari-768.webp 768w, /app-preview/examples/screen-translation-safari.webp 1290w",
+    "width": 1290,
+    "height": 2796
+  },
+  "copy": {
+    "en": {
+      "label": "Safari · Webpage translation",
+      "alt": "The original webpage in Safari with the AnyTranslator translation floating over it in Picture in Picture."
+    },
+    "ko": {
+      "label": "Safari · 웹페이지 번역",
+      "alt": "Safari의 원본 웹페이지 위에 AnyTranslator의 번역이 화면 속 화면으로 표시됩니다."
+    },
+    "ja": {
+      "label": "Safari · ウェブページ翻訳",
+      "alt": "Safariで元のウェブページを開いたまま、AnyTranslatorの訳文がピクチャインピクチャで表示されています。"
+    },
+    "fr": {
+      "label": "Safari · Traduction de page web",
+      "alt": "La page web d’origine dans Safari, avec la traduction AnyTranslator dans une fenêtre flottante."
+    },
+    "de": {
+      "label": "Safari · Webseitenübersetzung",
+      "alt": "Die ursprüngliche Webseite in Safari mit der Übersetzung von AnyTranslator in einem Bild-in-Bild-Fenster."
+    },
+    "es": {
+      "label": "Safari · Traducción de páginas web",
+      "alt": "La página web original en Safari con la traducción de AnyTranslator en una ventana flotante."
+    },
+    "it": {
+      "label": "Safari · Traduzione di pagine web",
+      "alt": "La pagina web originale aperta in Safari con la traduzione di AnyTranslator in una finestra flottante."
+    },
+    "pt-br": {
+      "label": "Safari · Tradução de páginas da web",
+      "alt": "A página da web original no Safari com a tradução do AnyTranslator em uma janela flutuante."
+    },
+    "fi": {
+      "label": "Safari · Verkkosivun käännös",
+      "alt": "Alkuperäinen verkkosivu Safarissa ja AnyTranslatorin käännös kelluvassa ikkunassa."
+    },
+    "da": {
+      "label": "Safari · Oversættelse af websider",
+      "alt": "Den oprindelige webside i Safari med oversættelsen fra AnyTranslator i et flydende vindue."
+    },
+    "nl": {
+      "label": "Safari · Webpagina vertalen",
+      "alt": "De oorspronkelijke webpagina in Safari met de vertaling van AnyTranslator in een zwevend venster."
+    },
+    "no": {
+      "label": "Safari · Oversettelse av nettsider",
+      "alt": "Den opprinnelige nettsiden i Safari med oversettelsen fra AnyTranslator i et flytende vindu."
+    },
+    "sv": {
+      "label": "Safari · Översättning av webbsidor",
+      "alt": "Den ursprungliga webbsidan i Safari med AnyTranslators översättning i ett flytande fönster."
+    },
+    "zh-cn": {
+      "label": "Safari · 网页文字翻译",
+      "alt": "Safari 保留网页原文，AnyTranslator 在画中画窗口显示译文。"
+    },
+    "zh-tw": {
+      "label": "Safari · 網頁文字翻譯",
+      "alt": "Safari 保留網頁原文，AnyTranslator 在子母畫面顯示譯文。"
+    },
+    "id": {
+      "label": "Safari · Terjemahan halaman web",
+      "alt": "Halaman web asli di Safari dengan terjemahan AnyTranslator dalam jendela mengambang."
+    },
+    "vi": {
+      "label": "Safari · Dịch trang web",
+      "alt": "Trang web gốc đang mở trong Safari với bản dịch của AnyTranslator trong cửa sổ nổi."
+    },
+    "th": {
+      "label": "Safari · แปลหน้าเว็บ",
+      "alt": "หน้าเว็บต้นฉบับใน Safari พร้อมคำแปลจาก AnyTranslator ในหน้าต่างลอย"
+    },
+    "ru": {
+      "label": "Safari · Перевод веб-страниц",
+      "alt": "Исходная веб-страница в Safari и перевод AnyTranslator в плавающем окне."
+    }
+  }
+}

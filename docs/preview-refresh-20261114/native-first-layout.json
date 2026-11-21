@@ -1,0 +1,44 @@
+[
+  {
+    "overflow": false,
+    "shots": [
+      {
+        "complete": true,
+        "height": 599.984375,
+        "objectFit": "contain",
+        "sourceRatio": 0.46126126126126127,
+        "src": "/app-preview/native/20261114-device2237-initial/zh-tw/text.webp",
+        "width": 276.75
+      }
+    ],
+    "width": 320
+  },
+  {
+    "overflow": false,
+    "shots": [
+      {
+        "complete": true,
+        "height": 599.984375,
+        "objectFit": "contain",
+        "sourceRatio": 0.46126126126126127,
+        "src": "/app-preview/native/20261114-device2237-initial/zh-tw/text.webp",
+        "width": 276.75
+      }
+    ],
+    "width": 768
+  },
+  {
+    "overflow": false,
+    "shots": [
+      {
+        "complete": true,
+        "height": 599.984375,
+        "objectFit": "contain",
+        "sourceRatio": 0.46126126126126127,
+        "src": "/app-preview/native/20261114-device2237-initial/zh-tw/text.webp",
+        "width": 276.75
+      }
+    ],
+    "width": 1440
+  }
+]

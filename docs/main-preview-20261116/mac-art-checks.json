@@ -1,0 +1,125 @@
+{
+  "scope": "Mac brand illustrations only, no claim of native macOS screenshots",
+  "checks": [
+    {
+      "actual": "light",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/download",
+      "width": 1440
+    },
+    {
+      "actual": "dark",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/download",
+      "width": 1440
+    },
+    {
+      "actual": "light",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/download",
+      "width": 320
+    },
+    {
+      "actual": "dark",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/download",
+      "width": 320
+    },
+    {
+      "actual": "light",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/blog",
+      "width": 1440
+    },
+    {
+      "actual": "dark",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/blog",
+      "width": 1440
+    },
+    {
+      "actual": "light",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/blog",
+      "width": 320
+    },
+    {
+      "actual": "dark",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/blog",
+      "width": 320
+    },
+    {
+      "actual": "light",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/blog/anytranslator-on-mac",
+      "width": 1440
+    },
+    {
+      "actual": "dark",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/blog/anytranslator-on-mac",
+      "width": 1440
+    },
+    {
+      "actual": "light",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "light",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/blog/anytranslator-on-mac",
+      "width": 320
+    },
+    {
+      "actual": "dark",
+      "macArt": 1,
+      "macPending": 0,
+      "mode": "dark",
+      "offscreen": [],
+      "overflow": false,
+      "path": "/blog/anytranslator-on-mac",
+      "width": 320
+    }
+  ]
+}

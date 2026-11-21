@@ -1,0 +1,3335 @@
+{
+  "fetchedAt": "2026-11-21T03:53:11.439Z",
+  "regions": {
+    "AE": {
+      "territory": "ARE",
+      "currency": "AED",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "14.99",
+        "com.gpt.langpt.basic.1month": "39.99",
+        "com.gpt.langpt.basic.1year": "279.99",
+        "com.gpt.langpt.voice.1week": "24.99",
+        "com.gpt.langpt.voice.1month": "79.99",
+        "com.gpt.langpt.voice.1year": "559.99"
+      }
+    },
+    "AF": {
+      "territory": "AFG",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "AG": {
+      "territory": "ATG",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "AI": {
+      "territory": "AIA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "AL": {
+      "territory": "ALB",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "AM": {
+      "territory": "ARM",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "AO": {
+      "territory": "AGO",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "AR": {
+      "territory": "ARG",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "AT": {
+      "territory": "AUT",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "AU": {
+      "territory": "AUS",
+      "currency": "AUD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "5.99",
+        "com.gpt.langpt.basic.1month": "14.99",
+        "com.gpt.langpt.basic.1year": "104.99",
+        "com.gpt.langpt.voice.1week": "9.99",
+        "com.gpt.langpt.voice.1month": "29.99",
+        "com.gpt.langpt.voice.1year": "209.99"
+      }
+    },
+    "AZ": {
+      "territory": "AZE",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "BA": {
+      "territory": "BIH",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "BB": {
+      "territory": "BRB",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "BE": {
+      "territory": "BEL",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "BF": {
+      "territory": "BFA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "BG": {
+      "territory": "BGR",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "BH": {
+      "territory": "BHR",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "BJ": {
+      "territory": "BEN",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "BM": {
+      "territory": "BMU",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "BN": {
+      "territory": "BRN",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "BO": {
+      "territory": "BOL",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "BR": {
+      "territory": "BRA",
+      "currency": "BRL",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "24.9",
+        "com.gpt.langpt.basic.1month": "59.9",
+        "com.gpt.langpt.basic.1year": "419.9",
+        "com.gpt.langpt.voice.1week": "49.9",
+        "com.gpt.langpt.voice.1month": "129.9",
+        "com.gpt.langpt.voice.1year": "909.9"
+      }
+    },
+    "BS": {
+      "territory": "BHS",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "BT": {
+      "territory": "BTN",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "BW": {
+      "territory": "BWA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "BY": {
+      "territory": "BLR",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "BZ": {
+      "territory": "BLZ",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "CA": {
+      "territory": "CAN",
+      "currency": "CAD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "12.99",
+        "com.gpt.langpt.basic.1year": "90.99",
+        "com.gpt.langpt.voice.1week": "9.99",
+        "com.gpt.langpt.voice.1month": "24.99",
+        "com.gpt.langpt.voice.1year": "174.99"
+      }
+    },
+    "CD": {
+      "territory": "COD",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "CG": {
+      "territory": "COG",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "CH": {
+      "territory": "CHE",
+      "currency": "CHF",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.0",
+        "com.gpt.langpt.basic.1month": "9.0",
+        "com.gpt.langpt.basic.1year": "63.0",
+        "com.gpt.langpt.voice.1week": "6.0",
+        "com.gpt.langpt.voice.1month": "18.0",
+        "com.gpt.langpt.voice.1year": "126.0"
+      }
+    },
+    "CI": {
+      "territory": "CIV",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "CL": {
+      "territory": "CHL",
+      "currency": "CLP",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4990",
+        "com.gpt.langpt.basic.1month": "9990",
+        "com.gpt.langpt.basic.1year": "69990",
+        "com.gpt.langpt.voice.1week": "7990",
+        "com.gpt.langpt.voice.1month": "22990",
+        "com.gpt.langpt.voice.1year": "160990"
+      }
+    },
+    "CM": {
+      "territory": "CMR",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "CN": {
+      "territory": "CHN",
+      "currency": "CNY",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "28.0",
+        "com.gpt.langpt.basic.1month": "68.0",
+        "com.gpt.langpt.basic.1year": "478.0",
+        "com.gpt.langpt.voice.1week": "48.0",
+        "com.gpt.langpt.voice.1month": "148.0",
+        "com.gpt.langpt.voice.1year": "1048.0"
+      }
+    },
+    "CO": {
+      "territory": "COL",
+      "currency": "COP",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "19900.0",
+        "com.gpt.langpt.basic.1month": "49900.0",
+        "com.gpt.langpt.basic.1year": "349000.0",
+        "com.gpt.langpt.voice.1week": "29900.0",
+        "com.gpt.langpt.voice.1month": "99900.0",
+        "com.gpt.langpt.voice.1year": "699900.0"
+      }
+    },
+    "CR": {
+      "territory": "CRI",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "CV": {
+      "territory": "CPV",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "CY": {
+      "territory": "CYP",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "CZ": {
+      "territory": "CZE",
+      "currency": "CZK",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "99.0",
+        "com.gpt.langpt.basic.1month": "249.0",
+        "com.gpt.langpt.basic.1year": "1740.0",
+        "com.gpt.langpt.voice.1week": "199.0",
+        "com.gpt.langpt.voice.1month": "499.0",
+        "com.gpt.langpt.voice.1year": "3490.0"
+      }
+    },
+    "DE": {
+      "territory": "DEU",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "DK": {
+      "territory": "DNK",
+      "currency": "DKK",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "39.0",
+        "com.gpt.langpt.basic.1month": "89.0",
+        "com.gpt.langpt.basic.1year": "620.0",
+        "com.gpt.langpt.voice.1week": "59.0",
+        "com.gpt.langpt.voice.1month": "179.0",
+        "com.gpt.langpt.voice.1year": "1250.0"
+      }
+    },
+    "DM": {
+      "territory": "DMA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "DO": {
+      "territory": "DOM",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "DZ": {
+      "territory": "DZA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "EC": {
+      "territory": "ECU",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "EE": {
+      "territory": "EST",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "EG": {
+      "territory": "EGY",
+      "currency": "EGP",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "199.99",
+        "com.gpt.langpt.basic.1month": "499.99",
+        "com.gpt.langpt.basic.1year": "3500.0",
+        "com.gpt.langpt.voice.1week": "399.99",
+        "com.gpt.langpt.voice.1month": "999.99",
+        "com.gpt.langpt.voice.1year": "7000.0"
+      }
+    },
+    "ES": {
+      "territory": "ESP",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "FI": {
+      "territory": "FIN",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "FJ": {
+      "territory": "FJI",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "FM": {
+      "territory": "FSM",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "FR": {
+      "territory": "FRA",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "GA": {
+      "territory": "GAB",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "GB": {
+      "territory": "GBR",
+      "currency": "GBP",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "GD": {
+      "territory": "GRD",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "GE": {
+      "territory": "GEO",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "GH": {
+      "territory": "GHA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "GM": {
+      "territory": "GMB",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "GR": {
+      "territory": "GRC",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "GT": {
+      "territory": "GTM",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "GW": {
+      "territory": "GNB",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "GY": {
+      "territory": "GUY",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "HK": {
+      "territory": "HKG",
+      "currency": "HKD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "32.0",
+        "com.gpt.langpt.basic.1month": "88.0",
+        "com.gpt.langpt.basic.1year": "618.0",
+        "com.gpt.langpt.voice.1week": "58.0",
+        "com.gpt.langpt.voice.1month": "148.0",
+        "com.gpt.langpt.voice.1year": "1038.0"
+      }
+    },
+    "HN": {
+      "territory": "HND",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "HR": {
+      "territory": "HRV",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "HU": {
+      "territory": "HUN",
+      "currency": "HUF",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "1790",
+        "com.gpt.langpt.basic.1month": "4490",
+        "com.gpt.langpt.basic.1year": "31490",
+        "com.gpt.langpt.voice.1week": "2990",
+        "com.gpt.langpt.voice.1month": "8990",
+        "com.gpt.langpt.voice.1year": "62990"
+      }
+    },
+    "ID": {
+      "territory": "IDN",
+      "currency": "IDR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "69000",
+        "com.gpt.langpt.basic.1month": "169000",
+        "com.gpt.langpt.basic.1year": "1179000",
+        "com.gpt.langpt.voice.1week": "119000",
+        "com.gpt.langpt.voice.1month": "349000",
+        "com.gpt.langpt.voice.1year": "2449000"
+      }
+    },
+    "IE": {
+      "territory": "IRL",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "IL": {
+      "territory": "ISR",
+      "currency": "ILS",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "14.9",
+        "com.gpt.langpt.basic.1month": "34.9",
+        "com.gpt.langpt.basic.1year": "244.9",
+        "com.gpt.langpt.voice.1week": "24.9",
+        "com.gpt.langpt.voice.1month": "69.9",
+        "com.gpt.langpt.voice.1year": "489.9"
+      }
+    },
+    "IN": {
+      "territory": "IND",
+      "currency": "INR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "399.0",
+        "com.gpt.langpt.basic.1month": "999.0",
+        "com.gpt.langpt.basic.1year": "6999.0",
+        "com.gpt.langpt.voice.1week": "699.0",
+        "com.gpt.langpt.voice.1month": "1999.0",
+        "com.gpt.langpt.voice.1year": "13999.0"
+      }
+    },
+    "IQ": {
+      "territory": "IRQ",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "IS": {
+      "territory": "ISL",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "IT": {
+      "territory": "ITA",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "JM": {
+      "territory": "JAM",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "JO": {
+      "territory": "JOR",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "JP": {
+      "territory": "JPN",
+      "currency": "JPY",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "600",
+        "com.gpt.langpt.basic.1month": "1500",
+        "com.gpt.langpt.basic.1year": "10500",
+        "com.gpt.langpt.voice.1week": "1100",
+        "com.gpt.langpt.voice.1month": "3000",
+        "com.gpt.langpt.voice.1year": "21000"
+      }
+    },
+    "KE": {
+      "territory": "KEN",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "KG": {
+      "territory": "KGZ",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "KH": {
+      "territory": "KHM",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "KN": {
+      "territory": "KNA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "KR": {
+      "territory": "KOR",
+      "currency": "KRW",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "6600",
+        "com.gpt.langpt.basic.1month": "17000",
+        "com.gpt.langpt.basic.1year": "119000",
+        "com.gpt.langpt.voice.1week": "11000",
+        "com.gpt.langpt.voice.1month": "33000",
+        "com.gpt.langpt.voice.1year": "230000"
+      }
+    },
+    "KW": {
+      "territory": "KWT",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "KY": {
+      "territory": "CYM",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "KZ": {
+      "territory": "KAZ",
+      "currency": "KZT",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "2490.0",
+        "com.gpt.langpt.basic.1month": "5990.0",
+        "com.gpt.langpt.basic.1year": "41990.0",
+        "com.gpt.langpt.voice.1week": "3990.0",
+        "com.gpt.langpt.voice.1month": "11990.0",
+        "com.gpt.langpt.voice.1year": "83990.0"
+      }
+    },
+    "LA": {
+      "territory": "LAO",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "LB": {
+      "territory": "LBN",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "LC": {
+      "territory": "LCA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "LK": {
+      "territory": "LKA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "LR": {
+      "territory": "LBR",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "LT": {
+      "territory": "LTU",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "LU": {
+      "territory": "LUX",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "LV": {
+      "territory": "LVA",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "LY": {
+      "territory": "LBY",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MA": {
+      "territory": "MAR",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MD": {
+      "territory": "MDA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "ME": {
+      "territory": "MNE",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MG": {
+      "territory": "MDG",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MK": {
+      "territory": "MKD",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "ML": {
+      "territory": "MLI",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MM": {
+      "territory": "MMR",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MN": {
+      "territory": "MNG",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MO": {
+      "territory": "MAC",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MR": {
+      "territory": "MRT",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MS": {
+      "territory": "MSR",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MT": {
+      "territory": "MLT",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "MU": {
+      "territory": "MUS",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "MV": {
+      "territory": "MDV",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MW": {
+      "territory": "MWI",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "MX": {
+      "territory": "MEX",
+      "currency": "MXN",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "89.0",
+        "com.gpt.langpt.basic.1month": "199.0",
+        "com.gpt.langpt.basic.1year": "1390.0",
+        "com.gpt.langpt.voice.1week": "149.0",
+        "com.gpt.langpt.voice.1month": "399.0",
+        "com.gpt.langpt.voice.1year": "2799.0"
+      }
+    },
+    "MY": {
+      "territory": "MYS",
+      "currency": "MYR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "19.9",
+        "com.gpt.langpt.basic.1month": "49.9",
+        "com.gpt.langpt.basic.1year": "349.0",
+        "com.gpt.langpt.voice.1week": "29.9",
+        "com.gpt.langpt.voice.1month": "99.9",
+        "com.gpt.langpt.voice.1year": "699.9"
+      }
+    },
+    "MZ": {
+      "territory": "MOZ",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "NA": {
+      "territory": "NAM",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "NE": {
+      "territory": "NER",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "NG": {
+      "territory": "NGA",
+      "currency": "NGN",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "6900.0",
+        "com.gpt.langpt.basic.1month": "14900.0",
+        "com.gpt.langpt.basic.1year": "103900.0",
+        "com.gpt.langpt.voice.1week": "9900.0",
+        "com.gpt.langpt.voice.1month": "29900.0",
+        "com.gpt.langpt.voice.1year": "209000.0"
+      }
+    },
+    "NI": {
+      "territory": "NIC",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "NL": {
+      "territory": "NLD",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "NO": {
+      "territory": "NOR",
+      "currency": "NOK",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "49.0",
+        "com.gpt.langpt.basic.1month": "129.0",
+        "com.gpt.langpt.basic.1year": "900.0",
+        "com.gpt.langpt.voice.1week": "89.0",
+        "com.gpt.langpt.voice.1month": "249.0",
+        "com.gpt.langpt.voice.1year": "1740.0"
+      }
+    },
+    "NP": {
+      "territory": "NPL",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "NR": {
+      "territory": "NRU",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "NZ": {
+      "territory": "NZL",
+      "currency": "NZD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "6.99",
+        "com.gpt.langpt.basic.1month": "19.99",
+        "com.gpt.langpt.basic.1year": "139.99",
+        "com.gpt.langpt.voice.1week": "12.99",
+        "com.gpt.langpt.voice.1month": "39.99",
+        "com.gpt.langpt.voice.1year": "279.99"
+      }
+    },
+    "OM": {
+      "territory": "OMN",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "PA": {
+      "territory": "PAN",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "PE": {
+      "territory": "PER",
+      "currency": "PEN",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "17.9",
+        "com.gpt.langpt.basic.1month": "44.9",
+        "com.gpt.langpt.basic.1year": "314.9",
+        "com.gpt.langpt.voice.1week": "29.9",
+        "com.gpt.langpt.voice.1month": "89.9",
+        "com.gpt.langpt.voice.1year": "629.9"
+      }
+    },
+    "PG": {
+      "territory": "PNG",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "PH": {
+      "territory": "PHL",
+      "currency": "PHP",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "249.0",
+        "com.gpt.langpt.basic.1month": "599.0",
+        "com.gpt.langpt.basic.1year": "4190.0",
+        "com.gpt.langpt.voice.1week": "449.0",
+        "com.gpt.langpt.voice.1month": "1290.0",
+        "com.gpt.langpt.voice.1year": "9050.0"
+      }
+    },
+    "PK": {
+      "territory": "PAK",
+      "currency": "PKR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "1100.0",
+        "com.gpt.langpt.basic.1month": "2900.0",
+        "com.gpt.langpt.basic.1year": "20300.0",
+        "com.gpt.langpt.voice.1week": "1900.0",
+        "com.gpt.langpt.voice.1month": "4900.0",
+        "com.gpt.langpt.voice.1year": "34500.0"
+      }
+    },
+    "PL": {
+      "territory": "POL",
+      "currency": "PLN",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "19.99",
+        "com.gpt.langpt.basic.1month": "49.99",
+        "com.gpt.langpt.basic.1year": "349.99",
+        "com.gpt.langpt.voice.1week": "29.99",
+        "com.gpt.langpt.voice.1month": "99.99",
+        "com.gpt.langpt.voice.1year": "700.0"
+      }
+    },
+    "PT": {
+      "territory": "PRT",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "PW": {
+      "territory": "PLW",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "PY": {
+      "territory": "PRY",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "QA": {
+      "territory": "QAT",
+      "currency": "QAR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "14.99",
+        "com.gpt.langpt.basic.1month": "39.99",
+        "com.gpt.langpt.basic.1year": "279.99",
+        "com.gpt.langpt.voice.1week": "24.99",
+        "com.gpt.langpt.voice.1month": "69.99",
+        "com.gpt.langpt.voice.1year": "490.0"
+      }
+    },
+    "RO": {
+      "territory": "ROU",
+      "currency": "RON",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "19.99",
+        "com.gpt.langpt.basic.1month": "49.99",
+        "com.gpt.langpt.basic.1year": "349.99",
+        "com.gpt.langpt.voice.1week": "39.99",
+        "com.gpt.langpt.voice.1month": "99.99",
+        "com.gpt.langpt.voice.1year": "700.0"
+      }
+    },
+    "RS": {
+      "territory": "SRB",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "RU": {
+      "territory": "RUS",
+      "currency": "RUB",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "349.0",
+        "com.gpt.langpt.basic.1month": "899.0",
+        "com.gpt.langpt.basic.1year": "6300.0",
+        "com.gpt.langpt.voice.1week": "599.0",
+        "com.gpt.langpt.voice.1month": "1790.0",
+        "com.gpt.langpt.voice.1year": "12490.0"
+      }
+    },
+    "RW": {
+      "territory": "RWA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "SA": {
+      "territory": "SAU",
+      "currency": "SAR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "17.99",
+        "com.gpt.langpt.basic.1month": "39.99",
+        "com.gpt.langpt.basic.1year": "279.99",
+        "com.gpt.langpt.voice.1week": "29.99",
+        "com.gpt.langpt.voice.1month": "89.99",
+        "com.gpt.langpt.voice.1year": "629.99"
+      }
+    },
+    "SB": {
+      "territory": "SLB",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "SC": {
+      "territory": "SYC",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "SE": {
+      "territory": "SWE",
+      "currency": "SEK",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "49.0",
+        "com.gpt.langpt.basic.1month": "129.0",
+        "com.gpt.langpt.basic.1year": "900.0",
+        "com.gpt.langpt.voice.1week": "99.0",
+        "com.gpt.langpt.voice.1month": "249.0",
+        "com.gpt.langpt.voice.1year": "1740.0"
+      }
+    },
+    "SG": {
+      "territory": "SGP",
+      "currency": "SGD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "5.98",
+        "com.gpt.langpt.basic.1month": "14.98",
+        "com.gpt.langpt.basic.1year": "104.98",
+        "com.gpt.langpt.voice.1week": "9.98",
+        "com.gpt.langpt.voice.1month": "29.98",
+        "com.gpt.langpt.voice.1year": "209.98"
+      }
+    },
+    "SI": {
+      "territory": "SVN",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "SK": {
+      "territory": "SVK",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "SL": {
+      "territory": "SLE",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "SN": {
+      "territory": "SEN",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "SR": {
+      "territory": "SUR",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "ST": {
+      "territory": "STP",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "SV": {
+      "territory": "SLV",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "SZ": {
+      "territory": "SWZ",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "TC": {
+      "territory": "TCA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "TD": {
+      "territory": "TCD",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "TH": {
+      "territory": "THA",
+      "currency": "THB",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "149.0",
+        "com.gpt.langpt.basic.1month": "399.0",
+        "com.gpt.langpt.basic.1year": "2790.0",
+        "com.gpt.langpt.voice.1week": "249.0",
+        "com.gpt.langpt.voice.1month": "699.0",
+        "com.gpt.langpt.voice.1year": "4900.0"
+      }
+    },
+    "TJ": {
+      "territory": "TJK",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "TM": {
+      "territory": "TKM",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "TN": {
+      "territory": "TUN",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "TO": {
+      "territory": "TON",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "TR": {
+      "territory": "TUR",
+      "currency": "TRY",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "199.99",
+        "com.gpt.langpt.basic.1month": "499.99",
+        "com.gpt.langpt.basic.1year": "3500.0",
+        "com.gpt.langpt.voice.1week": "399.99",
+        "com.gpt.langpt.voice.1month": "999.99",
+        "com.gpt.langpt.voice.1year": "7000.0"
+      }
+    },
+    "TT": {
+      "territory": "TTO",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "TW": {
+      "territory": "TWN",
+      "currency": "TWD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "120",
+        "com.gpt.langpt.basic.1month": "320",
+        "com.gpt.langpt.basic.1year": "2250",
+        "com.gpt.langpt.voice.1week": "220",
+        "com.gpt.langpt.voice.1month": "690",
+        "com.gpt.langpt.voice.1year": "4850"
+      }
+    },
+    "TZ": {
+      "territory": "TZA",
+      "currency": "TZS",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "11900.0",
+        "com.gpt.langpt.basic.1month": "29900.0",
+        "com.gpt.langpt.basic.1year": "209000.0",
+        "com.gpt.langpt.voice.1week": "19900.0",
+        "com.gpt.langpt.voice.1month": "59900.0",
+        "com.gpt.langpt.voice.1year": "419900.0"
+      }
+    },
+    "UA": {
+      "territory": "UKR",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "UG": {
+      "territory": "UGA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "US": {
+      "territory": "USA",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "UY": {
+      "territory": "URY",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "UZ": {
+      "territory": "UZB",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "VC": {
+      "territory": "VCT",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "VE": {
+      "territory": "VEN",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "VG": {
+      "territory": "VGB",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "VN": {
+      "territory": "VNM",
+      "currency": "VND",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "119000",
+        "com.gpt.langpt.basic.1month": "299000",
+        "com.gpt.langpt.basic.1year": "2095000",
+        "com.gpt.langpt.voice.1week": "199000",
+        "com.gpt.langpt.voice.1month": "599000",
+        "com.gpt.langpt.voice.1year": "4195000"
+      }
+    },
+    "VU": {
+      "territory": "VUT",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "XK": {
+      "territory": "XKS",
+      "currency": "EUR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "YE": {
+      "territory": "YEM",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "3.99",
+        "com.gpt.langpt.basic.1month": "9.99",
+        "com.gpt.langpt.basic.1year": "69.99",
+        "com.gpt.langpt.voice.1week": "6.99",
+        "com.gpt.langpt.voice.1month": "19.99",
+        "com.gpt.langpt.voice.1year": "139.99"
+      }
+    },
+    "ZA": {
+      "territory": "ZAF",
+      "currency": "ZAR",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "79.99",
+        "com.gpt.langpt.basic.1month": "199.99",
+        "com.gpt.langpt.basic.1year": "1399.99",
+        "com.gpt.langpt.voice.1week": "149.99",
+        "com.gpt.langpt.voice.1month": "399.99",
+        "com.gpt.langpt.voice.1year": "2799.99"
+      }
+    },
+    "ZM": {
+      "territory": "ZMB",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    },
+    "ZW": {
+      "territory": "ZWE",
+      "currency": "USD",
+      "prices": {
+        "com.gpt.langpt.basic.1week": "4.99",
+        "com.gpt.langpt.basic.1month": "11.99",
+        "com.gpt.langpt.basic.1year": "83.99",
+        "com.gpt.langpt.voice.1week": "7.99",
+        "com.gpt.langpt.voice.1month": "22.99",
+        "com.gpt.langpt.voice.1year": "160.99"
+      }
+    }
+  },
+  "scheduled": {
+    "fetchedAt": "2026-11-21T03:57:14.756Z",
+    "regions": {
+      "AE": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "19.99",
+          "com.gpt.langpt.voice.1week": "39.99"
+        }
+      },
+      "AF": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "AG": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "AI": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "AL": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "AM": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "AO": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "AR": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "AT": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "AU": {
+        "effectiveAt": "2026-11-21T18:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "7.49",
+          "com.gpt.langpt.voice.1week": "14.99"
+        }
+      },
+      "AZ": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "BA": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "BB": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "BE": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "BF": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "BG": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "BH": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "BJ": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "BM": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "BN": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "BO": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "BR": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "29.99",
+          "com.gpt.langpt.voice.1week": "64.99"
+        }
+      },
+      "BS": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "BT": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "BW": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "BY": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "BZ": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "CA": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "6.49",
+          "com.gpt.langpt.voice.1week": "12.49"
+        }
+      },
+      "CD": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "CG": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "CH": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.5",
+          "com.gpt.langpt.voice.1week": "9.0"
+        }
+      },
+      "CI": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "CL": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4990",
+          "com.gpt.langpt.voice.1week": "11490"
+        }
+      },
+      "CM": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "CN": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "34.0",
+          "com.gpt.langpt.voice.1week": "74.0"
+        }
+      },
+      "CO": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "24900.0",
+          "com.gpt.langpt.voice.1week": "49900.0"
+        }
+      },
+      "CR": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "CV": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "CY": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "CZ": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "125.0",
+          "com.gpt.langpt.voice.1week": "249.99"
+        }
+      },
+      "DE": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "DK": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "44.0",
+          "com.gpt.langpt.voice.1week": "89.0"
+        }
+      },
+      "DM": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "DO": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "DZ": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "EC": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "EE": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "EG": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "249.99",
+          "com.gpt.langpt.voice.1week": "499.99"
+        }
+      },
+      "ES": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "FI": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "FJ": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "FM": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "FR": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "GA": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "GB": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "GD": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "GE": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "GH": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "GM": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "GR": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "GT": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "GW": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "GY": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "HK": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "44.0",
+          "com.gpt.langpt.voice.1week": "74.0"
+        }
+      },
+      "HN": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "HR": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "HU": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "2250",
+          "com.gpt.langpt.voice.1week": "4490"
+        }
+      },
+      "ID": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "84000",
+          "com.gpt.langpt.voice.1week": "174000"
+        }
+      },
+      "IE": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "IL": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "17.5",
+          "com.gpt.langpt.voice.1week": "34.9"
+        }
+      },
+      "IN": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "499.0",
+          "com.gpt.langpt.voice.1week": "999.0"
+        }
+      },
+      "IQ": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "IS": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "IT": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "JM": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "JO": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "JP": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "750",
+          "com.gpt.langpt.voice.1week": "1500"
+        }
+      },
+      "KE": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "KG": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "KH": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "KN": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "KR": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "8500",
+          "com.gpt.langpt.voice.1week": "16500"
+        }
+      },
+      "KW": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "KY": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "KZ": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "2990.0",
+          "com.gpt.langpt.voice.1week": "5990.0"
+        }
+      },
+      "LA": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "LB": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "LC": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "LK": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "LR": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "LT": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "LU": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "LV": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "LY": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MA": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MD": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "ME": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MG": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MK": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "ML": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MM": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MN": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MO": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MR": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MS": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MT": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "MU": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "MV": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MW": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "MX": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "99.0",
+          "com.gpt.langpt.voice.1week": "199.0"
+        }
+      },
+      "MY": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "24.99",
+          "com.gpt.langpt.voice.1week": "49.99"
+        }
+      },
+      "MZ": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "NA": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "NE": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "NG": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "7400.0",
+          "com.gpt.langpt.voice.1week": "14900.0"
+        }
+      },
+      "NI": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "NL": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "NO": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "64.0",
+          "com.gpt.langpt.voice.1week": "125.0"
+        }
+      },
+      "NP": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "NR": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "NZ": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "9.99",
+          "com.gpt.langpt.voice.1week": "19.99"
+        }
+      },
+      "OM": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "PA": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "PE": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "22.5",
+          "com.gpt.langpt.voice.1week": "44.99"
+        }
+      },
+      "PG": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "PH": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "299.0",
+          "com.gpt.langpt.voice.1week": "649.0"
+        }
+      },
+      "PK": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "1450.0",
+          "com.gpt.langpt.voice.1week": "2450.0"
+        }
+      },
+      "PL": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "24.99",
+          "com.gpt.langpt.voice.1week": "49.99"
+        }
+      },
+      "PT": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "PW": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "PY": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "QA": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "19.99",
+          "com.gpt.langpt.voice.1week": "34.99"
+        }
+      },
+      "RO": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "24.99",
+          "com.gpt.langpt.voice.1week": "49.99"
+        }
+      },
+      "RS": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "RU": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "449.0",
+          "com.gpt.langpt.voice.1week": "895.0"
+        }
+      },
+      "RW": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "SA": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "19.99",
+          "com.gpt.langpt.voice.1week": "44.99"
+        }
+      },
+      "SB": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "SC": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "SE": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "64.0",
+          "com.gpt.langpt.voice.1week": "125.0"
+        }
+      },
+      "SG": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "7.48",
+          "com.gpt.langpt.voice.1week": "14.98"
+        }
+      },
+      "SI": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "SK": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "SL": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "SN": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "SR": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "ST": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "SV": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "SZ": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "TC": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "TD": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "TH": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "199.0",
+          "com.gpt.langpt.voice.1week": "349.0"
+        }
+      },
+      "TJ": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "TM": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "TN": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "TO": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "TR": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "249.99",
+          "com.gpt.langpt.voice.1week": "499.99"
+        }
+      },
+      "TT": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "TW": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "160",
+          "com.gpt.langpt.voice.1week": "345"
+        }
+      },
+      "TZ": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "14900.0",
+          "com.gpt.langpt.voice.1week": "29900.0"
+        }
+      },
+      "UA": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "UG": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "US": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "UY": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "UZ": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "VC": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "VE": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "VG": {
+        "effectiveAt": "2026-11-22T04:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "VN": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "149000",
+          "com.gpt.langpt.voice.1week": "299000"
+        }
+      },
+      "VU": {
+        "effectiveAt": "2026-11-21T15:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "XK": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "YE": {
+        "effectiveAt": "2026-11-21T19:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "4.99",
+          "com.gpt.langpt.voice.1week": "9.99"
+        }
+      },
+      "ZA": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "99.99",
+          "com.gpt.langpt.voice.1week": "199.99"
+        }
+      },
+      "ZM": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      },
+      "ZW": {
+        "effectiveAt": "2026-11-22T00:00:00.000Z",
+        "prices": {
+          "com.gpt.langpt.basic.1week": "5.99",
+          "com.gpt.langpt.voice.1week": "11.49"
+        }
+      }
+    }
+  }
+}

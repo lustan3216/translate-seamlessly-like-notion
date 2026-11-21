@@ -1,0 +1,100 @@
+[
+  {
+    "failed": 0,
+    "images": [
+      {
+        "feature": "chat",
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+        "width": 1290
+      },
+      {
+        "feature": "chat",
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+        "width": 359
+      }
+    ],
+    "selected": [
+      "AI 助手"
+    ]
+  },
+  {
+    "failed": 0,
+    "images": [
+      {
+        "feature": "screen-translation",
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+        "width": 359
+      }
+    ],
+    "selected": [
+      "任何 App 翻譯"
+    ]
+  },
+  {
+    "failed": 0,
+    "images": [
+      {
+        "feature": "helper",
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+        "width": 1290
+      },
+      {
+        "feature": "text",
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+        "width": 604
+      }
+    ],
+    "selected": [
+      "文字翻譯與寫作"
+    ]
+  },
+  {
+    "failed": 0,
+    "images": [
+      {
+        "feature": "menu",
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+        "width": 1290
+      },
+      {
+        "feature": "menu",
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+        "width": 359
+      }
+    ],
+    "selected": [
+      "菜單掃描與點餐"
+    ]
+  },
+  {
+    "failed": 0,
+    "images": [
+      {
+        "feature": "document",
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+        "width": 359
+      },
+      {
+        "feature": "document",
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+        "width": 604
+      }
+    ],
+    "selected": [
+      "文件智慧掃描"
+    ]
+  },
+  {
+    "failed": 0,
+    "images": [
+      {
+        "feature": "voice",
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+        "width": 604
+      }
+    ],
+    "selected": [
+      "即時語音翻譯"
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "images": [
+      {
+        "ok": true,
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp"
+      },
+      {
+        "ok": true,
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp"
+      }
+    ],
+    "pending": 0,
+    "photo": "url(\"http://127.0.0.1:5178/app-preview/backgrounds/water.webp\")",
+    "title": "AI 助手"
+  },
+  {
+    "images": [
+      {
+        "ok": true,
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp"
+      }
+    ],
+    "pending": 0,
+    "photo": "url(\"http://127.0.0.1:5178/app-preview/backgrounds/water.webp\")",
+    "title": "任何 App 翻譯"
+  },
+  {
+    "images": [
+      {
+        "ok": true,
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp"
+      },
+      {
+        "ok": true,
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp"
+      }
+    ],
+    "pending": 0,
+    "photo": "url(\"http://127.0.0.1:5178/app-preview/backgrounds/water.webp\")",
+    "title": "文字翻譯與寫作"
+  },
+  {
+    "images": [
+      {
+        "ok": true,
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp"
+      },
+      {
+        "ok": true,
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp"
+      }
+    ],
+    "pending": 0,
+    "photo": "url(\"http://127.0.0.1:5178/app-preview/backgrounds/shore.webp\")",
+    "title": "菜單掃描與點餐"
+  },
+  {
+    "images": [
+      {
+        "ok": true,
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp"
+      },
+      {
+        "ok": true,
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp"
+      }
+    ],
+    "pending": 0,
+    "photo": "url(\"http://127.0.0.1:5178/app-preview/backgrounds/meadow.webp\")",
+    "title": "文件智慧掃描"
+  },
+  {
+    "images": [
+      {
+        "ok": true,
+        "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp"
+      }
+    ],
+    "pending": 0,
+    "photo": "url(\"http://127.0.0.1:5178/app-preview/backgrounds/water.webp\")",
+    "title": "即時語音翻譯"
+  }
+]

@@ -1,0 +1,450 @@
+{
+  "preview": [
+    {
+      "locale": "en",
+      "chargedPrices": [
+        "USD 9.99 / month",
+        "USD 19.99 / month"
+      ],
+      "language": "en-US",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "ko",
+      "chargedPrices": [
+        "USD 9.99 /월",
+        "USD 19.99 /월"
+      ],
+      "language": "ko-KR",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "ja",
+      "chargedPrices": [
+        "USD 9.99 ／月",
+        "USD 19.99 ／月"
+      ],
+      "language": "ja-JP",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "fr",
+      "chargedPrices": [
+        "9,99 USD / mois",
+        "19,99 USD / mois"
+      ],
+      "language": "fr-FR",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "de",
+      "chargedPrices": [
+        "9,99 USD / Monat",
+        "19,99 USD / Monat"
+      ],
+      "language": "de-DE",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "es",
+      "chargedPrices": [
+        "9,99 USD / mes",
+        "19,99 USD / mes"
+      ],
+      "language": "es-ES",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "it",
+      "chargedPrices": [
+        "9,99 USD / mese",
+        "19,99 USD / mese"
+      ],
+      "language": "it-IT",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "pt-br",
+      "chargedPrices": [
+        "USD 9,99 / mês",
+        "USD 19,99 / mês"
+      ],
+      "language": "pt-BR",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "fi",
+      "chargedPrices": [
+        "9,99 USD / kuukausi",
+        "19,99 USD / kuukausi"
+      ],
+      "language": "fi-FI",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "da",
+      "chargedPrices": [
+        "9,99 USD / måned",
+        "19,99 USD / måned"
+      ],
+      "language": "da-DK",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "nl",
+      "chargedPrices": [
+        "USD 9,99 / maand",
+        "USD 19,99 / maand"
+      ],
+      "language": "nl-NL",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "no",
+      "chargedPrices": [
+        "9,99 USD / måned",
+        "19,99 USD / måned"
+      ],
+      "language": "nb-NO",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "sv",
+      "chargedPrices": [
+        "9,99 USD / månad",
+        "19,99 USD / månad"
+      ],
+      "language": "sv-SE",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "zh-cn",
+      "chargedPrices": [
+        "USD 9.99 ／月",
+        "USD 19.99 ／月"
+      ],
+      "language": "zh-CN",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "zh-tw",
+      "chargedPrices": [
+        "USD 9.99 ／月",
+        "USD 19.99 ／月"
+      ],
+      "language": "zh-TW",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "id",
+      "chargedPrices": [
+        "USD 9,99 / bulan",
+        "USD 19,99 / bulan"
+      ],
+      "language": "id-ID",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "vi",
+      "chargedPrices": [
+        "9,99 USD / tháng",
+        "19,99 USD / tháng"
+      ],
+      "language": "vi-VN",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "th",
+      "chargedPrices": [
+        "USD 9.99 / เดือน",
+        "USD 19.99 / เดือน"
+      ],
+      "language": "th-TH",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "ru",
+      "chargedPrices": [
+        "9,99 USD / месяц",
+        "19,99 USD / месяц"
+      ],
+      "language": "ru-RU",
+      "options": 175,
+      "support": true,
+      "pass": true
+    }
+  ],
+  "production": [
+    {
+      "locale": "en",
+      "chargedPrices": [
+        "USD 9.99 / month",
+        "USD 19.99 / month"
+      ],
+      "language": "en-US",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "ko",
+      "chargedPrices": [
+        "USD 9.99 /월",
+        "USD 19.99 /월"
+      ],
+      "language": "ko-KR",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "ja",
+      "chargedPrices": [
+        "USD 9.99 ／月",
+        "USD 19.99 ／月"
+      ],
+      "language": "ja-JP",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "fr",
+      "chargedPrices": [
+        "9,99 USD / mois",
+        "19,99 USD / mois"
+      ],
+      "language": "fr-FR",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "de",
+      "chargedPrices": [
+        "9,99 USD / Monat",
+        "19,99 USD / Monat"
+      ],
+      "language": "de-DE",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "es",
+      "chargedPrices": [
+        "9,99 USD / mes",
+        "19,99 USD / mes"
+      ],
+      "language": "es-ES",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "it",
+      "chargedPrices": [
+        "9,99 USD / mese",
+        "19,99 USD / mese"
+      ],
+      "language": "it-IT",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "pt-br",
+      "chargedPrices": [
+        "USD 9,99 / mês",
+        "USD 19,99 / mês"
+      ],
+      "language": "pt-BR",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "fi",
+      "chargedPrices": [
+        "9,99 USD / kuukausi",
+        "19,99 USD / kuukausi"
+      ],
+      "language": "fi-FI",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "da",
+      "chargedPrices": [
+        "9,99 USD / måned",
+        "19,99 USD / måned"
+      ],
+      "language": "da-DK",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "nl",
+      "chargedPrices": [
+        "USD 9,99 / maand",
+        "USD 19,99 / maand"
+      ],
+      "language": "nl-NL",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "no",
+      "chargedPrices": [
+        "9,99 USD / måned",
+        "19,99 USD / måned"
+      ],
+      "language": "nb-NO",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "sv",
+      "chargedPrices": [
+        "9,99 USD / månad",
+        "19,99 USD / månad"
+      ],
+      "language": "sv-SE",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "zh-cn",
+      "chargedPrices": [
+        "USD 9.99 ／月",
+        "USD 19.99 ／月"
+      ],
+      "language": "zh-CN",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "zh-tw",
+      "chargedPrices": [
+        "USD 9.99 ／月",
+        "USD 19.99 ／月"
+      ],
+      "language": "zh-TW",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "id",
+      "chargedPrices": [
+        "USD 9,99 / bulan",
+        "USD 19,99 / bulan"
+      ],
+      "language": "id-ID",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "vi",
+      "chargedPrices": [
+        "9,99 USD / tháng",
+        "19,99 USD / tháng"
+      ],
+      "language": "vi-VN",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "th",
+      "chargedPrices": [
+        "USD 9.99 / เดือน",
+        "USD 19.99 / เดือน"
+      ],
+      "language": "th-TH",
+      "options": 175,
+      "support": true,
+      "pass": true
+    },
+    {
+      "locale": "ru",
+      "chargedPrices": [
+        "9,99 USD / месяц",
+        "19,99 USD / месяц"
+      ],
+      "language": "ru-RU",
+      "options": 175,
+      "support": true,
+      "pass": true
+    }
+  ],
+  "legal": [
+    {
+      "footerSupport": true,
+      "h1": " 服務條款 ",
+      "locale": "zh-TW",
+      "route": "/terms-of-service"
+    },
+    {
+      "footerSupport": true,
+      "h1": " 隱私政策 ",
+      "locale": "zh-TW",
+      "route": "/privacy-policy"
+    },
+    {
+      "footerSupport": true,
+      "h1": "有想法，聊聊吧。",
+      "locale": "zh-TW",
+      "route": "/contact"
+    },
+    {
+      "footerSupport": true,
+      "h1": "使用支援",
+      "locale": "zh-TW",
+      "route": "/support"
+    }
+  ]
+}

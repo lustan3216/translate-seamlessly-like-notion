@@ -1,104 +1,287 @@
-import assert from 'node:assert/strict';
-import fs from 'node:fs/promises';
-import { SITE_URL, SITE_ROUTES, SITE_LOCALES, canonicalUrl, languageFromSearch, languageForLocation, localesForPath, outputPath } from '../src/lib/site-config.mjs';
+import assert from "node:assert/strict";
+import fs from "node:fs/promises";
+import {
+  SITE_URL,
+  SITE_ROUTES,
+  SITE_LOCALES,
+  canonicalUrl,
+  languageFromSearch,
+  languageForLocation,
+  localesForPath,
+  outputPath,
+} from "../src/lib/site-config.mjs";
 
-const decode = (value) => value.replaceAll('&amp;', '&').replaceAll('&quot;', '"').replaceAll('&#x27;', "'");
-const attr = (tag, name) => decode(tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1] || '');
-const tags = (html, element) => [...html.matchAll(new RegExp(`<${element}\\b[^>]*>`, 'g'))].map((match) => match[0]);
-const read = (file) => fs.readFile(file, 'utf8');
+const decode = (value) =>
+  value
+    .replaceAll("&amp;", "&")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#x27;", "'");
+const attr = (tag, name) =>
+  decode(tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1] || "");
+const tags = (html, element) =>
+  [...html.matchAll(new RegExp(`<${element}\\b[^>]*>`, "g"))].map(
+    (match) => match[0],
+  );
+const read = (file) => fs.readFile(file, "utf8");
 
 assert.equal(SITE_LOCALES.length, 19);
-assert.equal(languageFromSearch(''), 'en', 'The English canonical URL must override saved preferences.');
-assert.equal(languageFromSearch('?lang=unknown'), 'en');
-assert.equal(languageFromSearch('?lang=zh-tw&utm_source=test'), 'zh-tw');
-assert.equal(canonicalUrl('/support?lang=ru#help', 'zh-tw'), `${SITE_URL}/support?lang=zh-tw`);
+assert.equal(
+  languageFromSearch(""),
+  "en",
+  "The English canonical URL must override saved preferences.",
+);
+assert.equal(languageFromSearch("?lang=unknown"), "en");
+assert.equal(languageFromSearch("?lang=zh-tw&utm_source=test"), "zh-tw");
+assert.equal(
+  canonicalUrl("/support?lang=ru#help", "zh-tw"),
+  `${SITE_URL}/support?lang=zh-tw`,
+);
 
-const robots = await read('public/robots.txt');
-assert.equal((robots.match(/^User-agent:/gm) || []).length, 1, 'Use one unambiguous robots group.');
+const robots = await read("public/robots.txt");
+assert.equal(
+  (robots.match(/^User-agent:/gm) || []).length,
+  1,
+  "Use one unambiguous robots group.",
+);
 assert.ok(robots.includes(`Sitemap: ${SITE_URL}/sitemap.xml`));
-assert.ok(!/Crawl-delay|Disallow: \/(?:assets|app-preview|lovable-uploads)\//.test(robots));
+assert.ok(
+  !/Crawl-delay|Disallow: \/(?:assets|app-preview|lovable-uploads)\//.test(
+    robots,
+  ),
+);
 
-const sitemap = await read('public/sitemap.xml');
+const sitemap = await read("public/sitemap.xml");
 assert.ok(sitemap.includes('xmlns:xhtml="http://www.w3.org/1999/xhtml"'));
-assert.ok(!sitemap.includes('<lastmod>'), 'A build date is not a page modification date.');
-assert.ok(!/[&](?!amp;|lt;|gt;|quot;|apos;)/.test(sitemap), 'XML must escape ampersands.');
+assert.ok(
+  !sitemap.includes("<lastmod>"),
+  "A build date is not a page modification date.",
+);
+assert.ok(
+  !/[&](?!amp;|lt;|gt;|quot;|apos;)/.test(sitemap),
+  "XML must escape ampersands.",
+);
 const pageCopy = new Map();
-const entries = [...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((match) => match[1]);
-assert.equal(entries.length, 40);
-assert.equal(new Set(entries.map((entry) => decode(entry.match(/<loc>([^<]+)<\/loc>/)[1]))).size, 40);
+const entries = [...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)].map(
+  (match) => match[1],
+);
+const expectedPageCount = SITE_ROUTES.reduce(
+  (total, route) => total + localesForPath(route).length,
+  0,
+);
+assert.equal(entries.length, expectedPageCount);
+assert.equal(
+  new Set(entries.map((entry) => decode(entry.match(/<loc>([^<]+)<\/loc>/)[1])))
+    .size,
+  expectedPageCount,
+);
 for (const route of SITE_ROUTES) {
   for (const { code, tag } of localesForPath(route)) {
     const canonical = canonicalUrl(route, code);
-    const entry = entries.find((entry) => decode(entry.match(/<loc>([^<]+)<\/loc>/)[1]) === canonical);
+    const entry = entries.find(
+      (entry) => decode(entry.match(/<loc>([^<]+)<\/loc>/)[1]) === canonical,
+    );
     assert.ok(entry, `Missing sitemap entry: ${canonical}`);
-    const alternates = tags(entry, 'xhtml:link');
+    const alternates = tags(entry, "xhtml:link");
     assert.equal(alternates.length, localesForPath(route).length + 1);
-    for (const locale of localesForPath(route)) assert.ok(alternates.some((link) => attr(link, 'hreflang') === locale.tag && attr(link, 'href') === canonicalUrl(route, locale.code)), `Missing reciprocal alternate: ${canonical} / ${locale.code}`);
-    assert.ok(alternates.some((link) => attr(link, 'hreflang') === 'x-default' && attr(link, 'href') === canonicalUrl(route, 'en')));
+    for (const locale of localesForPath(route))
+      assert.ok(
+        alternates.some(
+          (link) =>
+            attr(link, "hreflang") === locale.tag &&
+            attr(link, "href") === canonicalUrl(route, locale.code),
+        ),
+        `Missing reciprocal alternate: ${canonical} / ${locale.code}`,
+      );
+    assert.ok(
+      alternates.some(
+        (link) =>
+          attr(link, "hreflang") === "x-default" &&
+          attr(link, "href") === canonicalUrl(route, "en"),
+      ),
+    );
 
     const html = await read(`dist/${outputPath(route, code)}`);
     const head = html.match(/<head>([\s\S]*?)<\/head>/)?.[1];
     assert.ok(head, `Missing head: ${canonical}`);
-    assert.equal(attr(tags(html, 'html')[0], 'lang'), tag);
+    assert.equal(attr(tags(html, "html")[0], "lang"), tag);
     assert.ok(html.includes('data-prerendered="true"'));
-    assert.ok(!html.includes('<!--ssr-outlet-->') && !html.includes('<!--seo-start-->'));
-    assert.ok(!html.includes('data-lov-id'), 'Production prerender must not include development tagger attributes.');
+    assert.ok(
+      !html.includes("<!--ssr-outlet-->") && !html.includes("<!--seo-start-->"),
+    );
+    assert.ok(
+      !html.includes("data-lov-id"),
+      "Production prerender must not include development tagger attributes.",
+    );
     assert.equal((head.match(/<title\b/g) || []).length, 1);
     assert.ok(/<title[^>]*>[^<]{3,}<\/title>/.test(head));
-    const metas = tags(head, 'meta');
-    const descriptions = metas.filter((meta) => attr(meta, 'name') === 'description');
+    const metas = tags(head, "meta");
+    const descriptions = metas.filter(
+      (meta) => attr(meta, "name") === "description",
+    );
     assert.equal(descriptions.length, 1);
-    assert.ok(attr(descriptions[0], 'content').length > 12, `Empty description: ${canonical}`);
-    const links = tags(head, 'link');
-    const canonicals = links.filter((link) => attr(link, 'rel') === 'canonical');
+    assert.ok(
+      attr(descriptions[0], "content").length > 12,
+      `Empty description: ${canonical}`,
+    );
+    const links = tags(head, "link");
+    const canonicals = links.filter(
+      (link) => attr(link, "rel") === "canonical",
+    );
     assert.equal(canonicals.length, 1);
-    assert.equal(attr(canonicals[0], 'href'), canonical);
-    assert.equal(attr(metas.find((meta) => attr(meta, 'property') === 'og:url'), 'content'), canonical);
-    const htmlAlternates = links.filter((link) => attr(link, 'rel') === 'alternate');
+    assert.equal(attr(canonicals[0], "href"), canonical);
+    assert.equal(
+      attr(
+        metas.find((meta) => attr(meta, "property") === "og:url"),
+        "content",
+      ),
+      canonical,
+    );
+    const htmlAlternates = links.filter(
+      (link) => attr(link, "rel") === "alternate",
+    );
     assert.equal(htmlAlternates.length, localesForPath(route).length + 1);
-    for (const locale of localesForPath(route)) assert.ok(htmlAlternates.some((link) => attr(link, 'hrefLang') === locale.tag && attr(link, 'href') === canonicalUrl(route, locale.code)), `Missing HTML alternate: ${canonical} / ${locale.code}`);
-    pageCopy.set(`${route}:${code}`, { title: head.match(/<title[^>]*>([^<]+)<\/title>/)[1], description: attr(descriptions[0], 'content') });
+    for (const locale of localesForPath(route))
+      assert.ok(
+        htmlAlternates.some(
+          (link) =>
+            attr(link, "hrefLang") === locale.tag &&
+            attr(link, "href") === canonicalUrl(route, locale.code),
+        ),
+        `Missing HTML alternate: ${canonical} / ${locale.code}`,
+      );
+    pageCopy.set(`${route}:${code}`, {
+      title: head.match(/<title[^>]*>([^<]+)<\/title>/)[1],
+      description: attr(descriptions[0], "content"),
+    });
     const body = html.match(/<body>([\s\S]*?)<\/body>/)?.[1];
-    assert.ok(/<h1\b[^>]*>/.test(body), `Missing static page content: ${canonical}`);
-    assert.ok(!/>\s*(?:landing|support|meta)\.[A-Za-z][^<]*</.test(body), `Untranslated key in rendered body: ${canonical}`);
+    assert.ok(
+      /<h1\b[^>]*>/.test(body),
+      `Missing static page content: ${canonical}`,
+    );
+    assert.ok(
+      !/>\s*(?:landing|support|meta|nav|hero|download|home|features|feature|cases|case|pricing|about|affiliate|contact|blog|article|privacy|footer|faq|notFound)\.[A-Za-z][^<]*</.test(
+        body,
+      ),
+      `Untranslated key in rendered body: ${canonical}`,
+    );
   }
 }
 for (const route of SITE_ROUTES) {
   const english = pageCopy.get(`${route}:en`);
-  for (const { code } of localesForPath(route).filter((locale) => locale.code !== 'en')) {
+  if (!english) continue;
+  for (const { code } of localesForPath(route).filter(
+    (locale) => locale.code !== "en",
+  )) {
     const localized = pageCopy.get(`${route}:${code}`);
-    assert.notDeepEqual(localized, english, `English metadata fallback: ${route} / ${code}`);
-    assert.notEqual(localized.description, english.description, `English description fallback: ${route} / ${code}`);
+    assert.notDeepEqual(
+      localized,
+      english,
+      `English metadata fallback: ${route} / ${code}`,
+    );
+    assert.notEqual(
+      localized.description,
+      english.description,
+      `English description fallback: ${route} / ${code}`,
+    );
   }
 }
-const config = JSON.parse(await read('vercel.json'));
+const config = JSON.parse(await read("vercel.json"));
 const routeRules = config.routes;
-assert.equal(routeRules.findIndex((rule) => rule.handle === 'filesystem'), 40, 'Localized routes must resolve before filesystem.');
-assert.equal(routeRules.at(-1).status, 404);
-const resolveRoute = (pathname, search = '') => {
+const retiredAgentRedirects = [
+  ...SITE_LOCALES.map(({ code }) => ({
+    src: "^/features/agent/?$",
+    has: [{ type: "query", key: "lang", value: `^${code}$` }],
+    headers: { Location: code === "en" ? "/features/chat" : `/features/chat?lang=${code}` },
+    status: 308,
+  })),
+  { src: "^/features/agent/?$", headers: { Location: "/features/chat" }, status: 308 },
+];
+assert.deepEqual(
+  routeRules.slice(0, retiredAgentRedirects.length),
+  retiredAgentRedirects,
+  "Localized retired Agent redirects must precede canonical routes and the fallback redirect.",
+);
+const filesystemIndex = expectedPageCount + retiredAgentRedirects.length;
+assert.equal(
+  routeRules.findIndex((rule) => rule.handle === "filesystem"),
+  filesystemIndex,
+  "Localized routes must resolve before filesystem.",
+);
+assert.deepEqual(routeRules.slice(filesystemIndex), [
+  { handle: "filesystem" },
+  { src: "/.*", dest: "/404.html", status: 404 },
+]);
+const resolveRoute = (pathname, search = "") => {
   const query = new URLSearchParams(search);
-  return routeRules.find((rule) => rule.src && new RegExp(rule.src).test(pathname) && (!rule.has || rule.has.every((condition) => query.has(condition.key) && (!condition.value || new RegExp(condition.value).test(query.get(condition.key))))));
+  return routeRules.find(
+    (rule) =>
+      rule.src &&
+      new RegExp(rule.src).test(pathname) &&
+      (!rule.has ||
+        rule.has.every(
+          (condition) =>
+            query.has(condition.key) &&
+            (!condition.value ||
+              new RegExp(condition.value).test(query.get(condition.key))),
+        )),
+  );
 };
 for (const route of SITE_ROUTES) {
-  for (const { code } of localesForPath(route)) {
-    const search = code === 'en' ? '' : `?lang=${code}`;
-    assert.equal(resolveRoute(route, search)?.dest, `/${outputPath(route, code)}`, `Incorrect hosting route: ${route} / ${code}`);
+  for (const { code, tag } of localesForPath(route)) {
+    const search = code === "en" ? "" : `?lang=${code}`;
+    const matched = resolveRoute(route, search);
+    assert.equal(
+      matched?.dest,
+      `/${outputPath(route, code)}`,
+      `Incorrect hosting route: ${route} / ${code}`,
+    );
+    assert.equal(matched.status || 200, 200);
+    assert.equal(matched.headers["Content-Language"], tag);
   }
   if (localesForPath(route).length === 1) {
+    const only = localesForPath(route)[0];
     for (const { code } of SITE_LOCALES) {
       const legalPage = resolveRoute(route, `?lang=${code}`);
-      assert.equal(legalPage?.dest, `/${outputPath(route, 'en')}`, `Legal language URL must serve English HTML: ${route} / ${code}`);
+      assert.equal(
+        legalPage?.dest,
+        `/${outputPath(route, only.code)}`,
+        `A single-language page must serve its supported HTML: ${route} / ${code}`,
+      );
       assert.equal(legalPage.status || 200, 200);
-      assert.equal(legalPage.headers['Content-Language'], 'en-US');
-      assert.equal(languageForLocation(route, `?lang=${code}`), 'en');
-      assert.equal(canonicalUrl(route, code), `${SITE_URL}${route}`);
+      assert.equal(legalPage.headers["Content-Language"], only.tag);
+      assert.equal(languageForLocation(route, `?lang=${code}`), only.code);
+      assert.equal(canonicalUrl(route, code), canonicalUrl(route, only.code));
     }
   }
 }
-for (const unknown of ['/missing-page', '/assets/missing.js', '/app-preview/missing.png']) {
-  const match = routeRules.find((rule) => rule.src && new RegExp(rule.src).test(unknown));
-  assert.equal(match?.status, 404, `Must not serve a successful SPA fallback: ${unknown}`);
+for (const pathname of ["/features/agent", "/features/agent/"]) {
+  for (const { code } of SITE_LOCALES) {
+    const redirect = resolveRoute(pathname, `?lang=${code}`);
+    assert.equal(redirect?.status, 308);
+    assert.equal(redirect.headers.Location, code === "en" ? "/features/chat" : `/features/chat?lang=${code}`);
+  }
+  for (const search of ["", "?lang=unknown"]) {
+    const redirect = resolveRoute(pathname, search);
+    assert.equal(redirect?.status, 308);
+    assert.equal(redirect.headers.Location, "/features/chat");
+  }
 }
-const notFound = await read('dist/404.html');
+for (const unknown of [
+  "/missing-page",
+  "/assets/missing.js",
+  "/app-preview/missing.png",
+]) {
+  const match = routeRules.find(
+    (rule) => rule.src && new RegExp(rule.src).test(unknown),
+  );
+  assert.equal(
+    match?.status,
+    404,
+    `Must not serve a successful SPA fallback: ${unknown}`,
+  );
+}
+const notFound = await read("dist/404.html");
 assert.ok(/name="robots" content="noindex,nofollow"/.test(notFound));
-console.log('SEO checks passed: 40 static pages (19 home + 19 support + 2 English legal documents), reciprocal hreflang, self canonicals, sitemap, robots, and true 404 routing.');
+console.log(
+  `SEO checks passed: ${expectedPageCount} static pages across ${SITE_ROUTES.length} routes, reciprocal hreflang, self canonicals, sitemap, robots, and true 404 routing.`,
+);

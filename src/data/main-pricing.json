@@ -1,0 +1,63 @@
+{
+  "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
+  "publicConfigSHA256": "15ecba386ea5e4a2f899a267aa192edc4ce1d033326451fbf1cc556c555e0ef6",
+  "plans": {
+    "free": {
+      "visible": false,
+      "translateCount": 25,
+      "audioMinutes": 5,
+      "voiceAgentMinutes": 2,
+      "quotaPeriod": "week",
+      "periodDays": 1,
+      "helperCount": 1
+    },
+    "com.gpt.langpt.basic.1week": {
+      "visible": true,
+      "translateCount": -1,
+      "audioMinutes": 150,
+      "voiceAgentMinutes": 10,
+      "quotaPeriod": "week",
+      "helperCount": 5
+    },
+    "com.gpt.langpt.basic.1month": {
+      "visible": true,
+      "translateCount": -1,
+      "audioMinutes": 600,
+      "voiceAgentMinutes": 30,
+      "quotaPeriod": "month",
+      "helperCount": 5
+    },
+    "com.gpt.langpt.basic.1year": {
+      "visible": true,
+      "translateCount": -1,
+      "audioMinutes": 600,
+      "voiceAgentMinutes": 30,
+      "quotaPeriod": "month",
+      "helperCount": 5
+    },
+    "com.gpt.langpt.voice.1week": {
+      "visible": true,
+      "translateCount": -1,
+      "audioMinutes": 600,
+      "voiceAgentMinutes": 45,
+      "quotaPeriod": "week",
+      "helperCount": 5
+    },
+    "com.gpt.langpt.voice.1month": {
+      "visible": true,
+      "translateCount": -1,
+      "audioMinutes": 2400,
+      "voiceAgentMinutes": 135,
+      "quotaPeriod": "month",
+      "helperCount": 5
+    },
+    "com.gpt.langpt.voice.1year": {
+      "visible": true,
+      "translateCount": -1,
+      "audioMinutes": 2400,
+      "voiceAgentMinutes": 135,
+      "quotaPeriod": "month",
+      "helperCount": 5
+    }
+  }
+}

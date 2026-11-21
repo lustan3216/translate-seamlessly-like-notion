@@ -1,0 +1,49 @@
+{
+  "scope": "Codex /root/screen_main_audit; local image work and attempted native-browser QA",
+  "locales": {
+    "fi": {
+      "checkpoint": "output/imagegen-localization-all/fi/progress.json",
+      "accepted": 17,
+      "rejected": 0,
+      "expected": 17
+    },
+    "da": {
+      "checkpoint": "output/imagegen-localization-all/da/progress.json",
+      "accepted": 17,
+      "rejected": 0,
+      "expected": 17
+    },
+    "nl": {
+      "checkpoint": "output/imagegen-localization-all/nl/progress.json",
+      "accepted": 17,
+      "rejected": 0,
+      "expected": 17
+    },
+    "no": {
+      "checkpoint": "output/imagegen-localization-all/no/progress.json",
+      "accepted": 17,
+      "rejected": 0,
+      "expected": 17
+    },
+    "sv": {
+      "checkpoint": "output/imagegen-localization-all/sv/progress.json",
+      "accepted": 17,
+      "rejected": 0,
+      "expected": 17
+    }
+  },
+  "alt": "screen-translation.primary describes actual NPS Preview PiP; previous setup alt preserved as screen-translation.setup; no redundant screen-text key",
+  "browserQA": {
+    "status": "blocked-in-subagent-surface",
+    "documentationRead": true,
+    "requestedTab": "browser-use:88776a7f-aaf6-43c2-8ff5-acc126b493a1",
+    "getTabError": "Browser is not available: iab",
+    "getStateBrowsers": [],
+    "nativeMacAppsPresent": true,
+    "fallbackUsed": false,
+    "browserScreenshotEvidence": null,
+    "officialTasteGateRun": false,
+    "skillPathError": "No such file or directory: /Users/luyi/.codex/artifacts/anytranslator-website-taste-skill-20261114/skills/taste-skill/SKILL.md",
+    "limit": "No browser visual/interaction acceptance claimed by this subagent. Root retains global registry/QA/deployment ownership."
+  }
+}

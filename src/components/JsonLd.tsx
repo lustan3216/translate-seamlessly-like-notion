@@ -28,10 +28,10 @@ export const mobileAppSchema = {
   name: 'AnyTranslator',
   url: 'https://www.anytranslator.app/',
   applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'iOS, iPadOS, macOS',
+  operatingSystem: 'iOS, iPadOS',
   downloadUrl: 'https://apps.apple.com/app/id6738693321',
-  featureList: ['Text translation', 'Voice translation', 'Photo translation', 'Chat', 'Helper explanations', 'Custom knowledge', 'Translation keyboard', 'Learning widgets', 'Translation history'],
-  screenshot: ['agent', 'menu', 'keyboard'].map((name) => `https://www.anytranslator.app/app-preview/product/en/${name}.webp`),
+  featureList: ['Text translation', 'Voice translation', 'AI conversation assistant', 'Photo translation', 'Menu scanning and order display', 'Document scanning', 'Chat', 'Helper explanations', 'Saved explanation instructions', 'Translation keyboard', 'Learning widgets', 'Translation history'],
+  image: 'https://www.anytranslator.app/app-preview/logo.png',
 };
 
 export const createBreadcrumbSchema = (items: Array<{ name: string; url: string }>) => ({

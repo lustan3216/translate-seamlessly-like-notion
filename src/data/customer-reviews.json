@@ -1,0 +1,51 @@
+{
+  "retrievedAt": "2026-11-18T03:17:47.022157+00:00",
+  "appId": "6738693321",
+  "source": "Apple App Store customer reviews RSS",
+  "reviews": [
+    {
+      "id": "14792569759",
+      "quote": "很難找到翻譯精準又這麼多功能的翻譯軟體",
+      "name": "平台系統串接公司",
+      "rating": 5,
+      "date": "2026-11-14",
+      "version": "2.1.4",
+      "storefront": "台灣",
+      "sourceUrl": "https://apps.apple.com/tw/app/id6738693321?see-all=reviews",
+      "feedUrl": "https://itunes.apple.com/tw/rss/customerreviews/page=1/id=6738693321/sortby=mostrecent/json"
+    },
+    {
+      "id": "14689800454",
+      "quote": "蠻實用的 果斷訂閱",
+      "name": "韋韋Bruce",
+      "rating": 5,
+      "date": "2026-10-20",
+      "version": "2.1.2",
+      "storefront": "台灣",
+      "sourceUrl": "https://apps.apple.com/tw/app/id6738693321?see-all=reviews",
+      "feedUrl": "https://itunes.apple.com/tw/rss/customerreviews/page=1/id=6738693321/sortby=mostrecent/json"
+    },
+    {
+      "id": "14634594658",
+      "quote": "語言翻譯開會時頗好用",
+      "name": "fishshome",
+      "rating": 5,
+      "date": "2026-10-06",
+      "version": "2.0.11",
+      "storefront": "台灣",
+      "sourceUrl": "https://apps.apple.com/tw/app/id6738693321?see-all=reviews",
+      "feedUrl": "https://itunes.apple.com/tw/rss/customerreviews/page=1/id=6738693321/sortby=mostrecent/json"
+    },
+    {
+      "id": "14634322888",
+      "quote": "這個學語言好方便，一個App解決3、4個App，而且翻譯很準",
+      "name": "手作媽咪",
+      "rating": 5,
+      "date": "2026-10-06",
+      "version": "2.0.11",
+      "storefront": "台灣",
+      "sourceUrl": "https://apps.apple.com/tw/app/id6738693321?see-all=reviews",
+      "feedUrl": "https://itunes.apple.com/tw/rss/customerreviews/page=1/id=6738693321/sortby=mostrecent/json"
+    }
+  ]
+}

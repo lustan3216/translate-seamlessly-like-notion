@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+dist-account-preview
 dist-ssr
 *.local
 
@@ -22,3 +23,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Original generated artwork retained locally
+/output/imagegen/
+
+# Rejected concept assets kept outside the active site
+/output/rejected-designs/
+/output/native-captures/
+/output/imagegen-localization-220/
+/output/imagegen-localization-all/
+/output/vercel-release/

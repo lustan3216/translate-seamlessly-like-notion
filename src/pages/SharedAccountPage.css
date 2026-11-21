@@ -1,0 +1,102 @@
+.mk-account-page {
+  max-width: 700px;
+  display: grid;
+  gap: 20px;
+  padding-bottom: 72px;
+}
+
+.mk-account-section {
+  display: grid;
+  gap: 16px;
+  align-items: start;
+  justify-items: start;
+  min-width: 0;
+  border: 1px solid var(--mk-line);
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.marketing-site .mk-account-section :is(h1, h2) {
+  font-size: 24px;
+  overflow-wrap: anywhere;
+}
+
+.mk-account-section form {
+  width: 100%;
+}
+
+.mk-account-section .mk-field {
+  margin-bottom: 12px;
+}
+
+.mk-account-section button:disabled {
+  opacity: 0.5;
+  cursor: default;
+  transform: none;
+}
+
+.mk-account-notice,
+.mk-account-translation {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--mk-surface);
+}
+
+.mk-account-notice .mk-button {
+  margin-top: 12px;
+}
+
+.mk-account-translation {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.mk-account-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.mk-account-code {
+  font-size: 28px;
+  letter-spacing: 0.14em;
+  font-variant-numeric: tabular-nums;
+}
+
+.mk-account-skeleton {
+  width: 100%;
+  min-height: 24px;
+  border-radius: 12px;
+  background: var(--mk-surface);
+}
+
+.mk-account-skeleton-title {
+  width: min(100%, 16rem);
+  min-height: clamp(48px, 8vw, 84px);
+  margin-inline: auto;
+}
+
+.mk-billing-return-qr {
+  display: block;
+  width: 148px;
+  height: 148px;
+}
+
+@media (max-width: 767px) {
+  .mk-account-page {
+    padding-bottom: 40px;
+  }
+
+  .mk-account-section {
+    padding: 20px;
+  }
+
+  .mk-billing-return-qr {
+    display: none;
+  }
+
+  .mk-billing-return .mk-button {
+    width: 100%;
+  }
+}

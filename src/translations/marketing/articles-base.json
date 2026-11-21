@@ -1,0 +1,42 @@
+{
+  "en": {
+    "voice.intro": "A live conversation and a written message need different workflows. Start with voice translation when you want bilingual captions and spoken output. Start with text translation when you want to review the wording before sharing it.",
+    "voice.tip": "For a face-to-face conversation, select both languages and place the microphone where it can hear each speaker. For a quiet setting, use captions and the available audio-output mode. Check names, dates and amounts before acting on a translation.",
+    "voice.limit": "Choose the audio mode before you begin: two-way conversation, private listening, speaking for you or captions only. Available playback depends on the connected audio output. This workflow translates a conversation inside AnyTranslator.",
+    "menu.intro": "A menu can mix dish names, unfamiliar ingredients, sizes and prices on the same page. Take a clear, straight-on photo with the entire page in view, then use menu scanning to organize the information before you choose.",
+    "menu.tip": "Review each dish, available options and quantity before showing the order to staff. If you have an allergy or dietary requirement, ask staff directly and confirm the ingredients and preparation. A photo or an AI interpretation cannot verify that a meal is safe.",
+    "menu.limit": "Blurry text, handwritten specials and unusual layouts can cause mistakes. Compare the result with the original photo, rescan unclear areas and confirm prices with staff. The order screen helps communication; it does not place or pay for an order.",
+    "work.intro": "Before translating a work message, decide what the other person needs to know and what you want them to do next. Include the necessary context in your draft, then choose a tone that suits the relationship and situation.",
+    "work.tip": "Use a polite tone for a request, a letter style for a longer email or a concise style for a short update. Read names, deadlines, units and commitments in the result before you copy it. Ask Helper or Chat about a phrase if the intended meaning is unclear.",
+    "work.limit": "You decide what is sent. AnyTranslator can help prepare and revise the wording, but it does not verify business facts or accept commitments for you. Keep the original message available when reviewing important details.",
+    "learning.intro": "The words you have just needed are useful material for practice. After a translation, choose one expression you would like to use yourself. Ask why it works, look at another example and try making a sentence about your own day.",
+    "learning.tip": "Choose whether Helper explains the source or translation, then ask Chat about another example. Add the learning Widget on iPhone: the Home Screen card can speak, queue another review or mark a phrase as known. A Lock Screen card opens the app for review.",
+    "learning.limit": "Keep practice small enough to repeat. The learning Widget and its placement are iOS features; custom content and settings can depend on your plan. A translated sentence is a starting point for study, so compare usage when the context matters.",
+    "mac.intro": "The macOS download button opens the existing AnyTranslator App Store listing. The listing currently marks the iPhone app as not verified for macOS. Check availability and device compatibility in the store before downloading.",
+    "mac.tip": "Open the listing on your Mac and check the download and compatibility information shown for your device. If the app is available, review its in-app instructions and feature availability. The guides on this site describe the current mobile app workflows.",
+    "mac.limit": "The iOS translation keyboard and learning Widget are separate iOS features. This is not a promise of a native Mac keyboard extension, system-audio capture, global push-to-talk shortcut or automatic insertion into another app’s text field.",
+    "keyboard.intro": "On iPhone or iPad, add the AnyTranslator keyboard in iOS Settings and follow the app’s setup instructions. Some translation features require Full Access for online processing. Read the permission explanation before enabling it.",
+    "keyboard.tip": "Open the conversation you want to reply to, switch to the translation keyboard and choose your target language. Draft your message, translate it and check the result before sending it. You can also use the main app when you want a longer explanation.",
+    "keyboard.limit": "Some apps and secure fields restrict third-party keyboards. Switch back to a supported input field or use the main app if the keyboard is unavailable. Apple’s system dictation is separate, and the iOS keyboard extension does not run as a Mac-wide input tool."
+  },
+  "zh-tw": {
+    "voice.intro": "面對面的對話，和準備傳出去的訊息，需要不同的做法。想一邊聽、一邊讀雙語字幕，可以從語音翻譯開始；想先檢查措辭、調整語氣，再分享出去，則從文字翻譯開始。",
+    "voice.tip": "面對面聊天時，選好雙方語言，把麥克風放在能聽清楚兩位說話者的位置。安靜的場合可依情境使用字幕與適當的聲音輸出模式。涉及姓名、日期與金額，請在採取行動前再確認。",
+    "voice.limit": "開始前，依情境選擇雙向對話、私下聽、幫我說或只看字幕；可用的播放方式也受已連接的音訊裝置影響。這個流程在 AnyTranslator 內翻譯對話。",
+    "menu.intro": "一張菜單常把菜名、陌生食材、份量與價格放在一起。先拍一張清楚、盡量正對且涵蓋整頁的照片，再用菜單掃描整理內容，讓選擇從讀懂開始。",
+    "menu.tip": "展示點單前，先確認每道餐點、可選項目與份數。有過敏或飲食限制時，請直接詢問店員，確認食材與烹調方式。照片或 AI 解讀無法證明一份餐點對你是否安全。",
+    "menu.limit": "模糊的字、手寫特餐與特殊排版都可能導致錯誤。請對照原圖，重新拍攝不清楚的區域，並向店員確認價格。點單畫面用來輔助溝通，不會替你送單或付款。",
+    "work.intro": "翻譯工作訊息前，先想清楚對方需要知道甚麼，以及你希望對方接下來做甚麼。把必要背景放進草稿，再依彼此關係與情境選擇語氣。",
+    "work.tip": "提出請求時可選禮貌語氣，較長的 Email 可用書信風格，簡短進度則可選精簡。複製前，請檢查結果中的姓名、期限、單位與承諾。遇到不確定的說法，可以讓 Helper 或 Chat 進一步解釋。",
+    "work.limit": "最後由你決定傳送內容。AnyTranslator 可以協助準備與修改措辭，但不會驗證商業事實，也不會代你接受承諾。重要細節請保留原文一起對照。",
+    "learning.intro": "剛剛真正用到的字句，就是很好的練習材料。翻譯之後，挑一句你也想自己說的表達，問問它為甚麼這樣用，再看一個例句，試著寫成與自己生活有關的句子。",
+    "learning.tip": "在 Helper 選擇解說原文或譯文，再到 Chat 追問其他例句。在 iPhone 加入學習 Widget：主畫面卡片可直接朗讀、再複習或標記已記住；鎖定畫面卡片則會開啟 App 複習。",
+    "learning.limit": "讓每次練習簡單到能持續。學習 Widget 需 iOS 17 或更新版本；自訂內容及設定依方案而異。譯文是學習的起點，涉及特定情境時，仍需對照實際用法。",
+    "mac.intro": "macOS 下載按鈕連到 AnyTranslator 現有的 App Store 頁面，目前標示 iPhone App 尚未針對 macOS 驗證。下載前，請先在商店確認是否可取得，以及你的裝置相容性。",
+    "mac.tip": "在 Mac 開啟商店頁，查看針對你的裝置顯示的下載與相容性資訊。若可取得 App，再依 App 內指引確認功能是否可用。本站各功能指南介紹的是目前行動版 App 的操作流程。",
+    "mac.limit": "iOS 翻譯鍵盤與學習 Widget 為 iOS 獨立功能。這不代表提供原生 Mac 鍵盤擴充功能、系統音訊擷取、全域按住說話快捷鍵，或自動寫入其他 App 的文字欄位。",
+    "keyboard.intro": "在 iPhone 或 iPad 的 iOS 設定中加入 AnyTranslator 鍵盤，依 App 指引啟用完整取用，以使用線上翻譯。在支援的輸入欄，可打字或搭配 iOS 提供的原生聽寫，先把話語變成文字，再用 AnyTranslator 翻譯與調整語氣。",
+    "keyboard.tip": "打開想回覆的對話，切換到 AnyTranslator 鍵盤並選好輸入語言。系統有提供聽寫時，可用 iOS 原生聽寫完成草稿；先檢查辨識的姓名、數字與內容，再選目標語言與語氣翻譯。確認譯文後自行傳送；需要較長的解釋時，也可以回到主 App。",
+    "keyboard.limit": "部分 App 與安全欄位會限制第三方鍵盤或聽寫；iOS 原生聽寫也受系統、裝置、語言與設定影響。未提供聽寫時，可改用打字；鍵盤無法使用時，請改用支援的輸入欄位或主 App。這裡的語音輸入由 iOS 原生聽寫提供，iOS 鍵盤擴充功能也不會成為 Mac 的全域輸入工具。"
+  }
+}

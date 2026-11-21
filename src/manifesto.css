@@ -1,0 +1,134 @@
+.mk-manifesto-intro {
+  padding-block: 120px 80px;
+}
+.marketing-site .mk-manifesto-intro h1 {
+  font-size: clamp(28px, 5.2vw, 72px);
+  line-height: 1.3;
+}
+.mk-manifesto-intro h1 span { color: var(--mk-muted); }
+.mk-manifesto-letter {
+  max-width: 760px;
+  margin-inline: auto;
+}
+.marketing-site .mk-manifesto-opening {
+  padding: 36px 40px;
+  border-radius: 24px;
+  background: var(--mk-surface);
+  font-size: 20px;
+  line-height: 1.9;
+  text-wrap: pretty;
+}
+.mk-manifesto-chapter {
+  padding-top: 100px;
+}
+.marketing-site .mk-manifesto-chapter h2 {
+  margin-bottom: 28px;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.4;
+}
+.marketing-site .mk-manifesto-chapter p {
+  font-size: 20px;
+  line-height: 1.95;
+  color: var(--mk-muted);
+  text-wrap: pretty;
+}
+.marketing-site .mk-manifesto-chapter p + p {
+  margin-top: 24px;
+}
+.mk-manifesto-everyday {
+  padding-top: 120px;
+}
+.marketing-site .mk-manifesto-everyday h2 {
+  margin-top: 24px;
+  line-height: 1.4;
+}
+.mk-manifesto-scenes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  margin-top: 56px;
+}
+.marketing-site .mk-manifesto-scenes h3 {
+  font-size: 22px;
+  line-height: 1.45;
+}
+.marketing-site .mk-manifesto-scenes p {
+  margin-top: 16px;
+  font-size: 16px;
+  color: var(--mk-muted);
+  text-wrap: pretty;
+}
+.mk-manifesto-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-top: 20px;
+}
+.mk-manifesto-product-stage {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(24px, 5vw, 64px);
+  padding: 48px;
+  margin-top: 56px;
+  border-radius: 28px;
+  background: var(--mk-surface);
+  overflow: hidden;
+}
+.mk-manifesto-product-stage::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: url("/app-preview/backgrounds/abstract-mist-v3.webp") center / cover no-repeat;
+  opacity: 0.7;
+}
+.marketing-site .mk-manifesto-product-stage > .native-app-screen {
+  width: min(25%, 240px);
+  flex-shrink: 1;
+  box-shadow: 0 18px 36px -22px #17252266;
+}
+.mk-manifesto-close {
+  padding-block: 120px;
+  text-align: center;
+}
+.marketing-site .mk-manifesto-close h2 {
+  margin-top: 28px;
+  font-size: clamp(32px, 4.6vw, 60px);
+  line-height: 1.4;
+}
+.marketing-site .mk-manifesto-close > p:not(.mk-eyebrow) {
+  margin-top: 28px;
+  font-size: 18px;
+  color: var(--mk-muted);
+}
+.mk-manifesto-close .mk-actions {
+  margin-top: 36px;
+}
+:root[data-theme="dark"] .mk-manifesto-product-stage::before {
+  opacity: 0.25;
+}
+@media (max-width: 900px) {
+  .mk-manifesto-intro { padding-block: 80px 56px; }
+  .mk-manifesto-scenes { gap: 28px; }
+  .mk-manifesto-product-stage { padding: 36px 28px; }
+}
+@media (max-width: 600px) {
+  .mk-manifesto-intro { padding-block: 56px 40px; }
+  .marketing-site .mk-manifesto-intro h1 { font-size: clamp(28px, 8.2vw, 42px); }
+  .marketing-site .mk-manifesto-opening { padding: 24px; border-radius: 20px; font-size: 18px; }
+  .mk-manifesto-opening br { display: none; }
+  .mk-manifesto-chapter { padding-top: 64px; }
+  .marketing-site .mk-manifesto-chapter h2 { margin-bottom: 24px; font-size: 28px; }
+  .marketing-site .mk-manifesto-chapter p { font-size: 18px; line-height: 1.9; }
+  .mk-manifesto-everyday { padding-top: 80px; }
+  .mk-manifesto-scenes { grid-template-columns: minmax(0, 1fr); gap: 36px; margin-top: 36px; }
+  .mk-manifesto-product-stage { padding: 32px; margin-top: 40px; border-radius: 24px; }
+  .marketing-site .mk-manifesto-product-stage > .native-app-screen { width: min(100%, 260px); flex-shrink: 0; }
+  .mk-manifesto-product-stage > .native-app-screen:nth-child(n + 2) { display: none; }
+  .mk-manifesto-close { padding-block: 80px; }
+  .marketing-site .mk-manifesto-close h2 { font-size: 32px; }
+  .marketing-site .mk-manifesto-close > p:not(.mk-eyebrow) { font-size: 16px; }
+}

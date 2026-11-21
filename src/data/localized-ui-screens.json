@@ -1,0 +1,2217 @@
+{
+  "zh-tw": [
+    {
+      "src": "/app-preview/localized-ui/20261118/widget-straight.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/keyboard-native.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 384
+    }
+  ],
+  "en": [
+    {
+      "src": "/app-preview/localized-ui/20261118/en/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/keyboard.webp",
+      "width": 759,
+      "height": 2071,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 385
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/en/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "fr": [
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/menu-options.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 427
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/keyboard.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 386
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fr/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "fi": [
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/keyboard.webp",
+      "width": 759,
+      "height": 2071,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 384
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/fi/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "zh-cn": [
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/keyboard.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 384
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/zh-cn/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "ja": [
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/menu-options.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 427
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/keyboard.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 352
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ja/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "de": [
+    {
+      "src": "/app-preview/localized-ui/20261118/de/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/keyboard.webp",
+      "width": 759,
+      "height": 2071,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 385
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/de/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "da": [
+    {
+      "src": "/app-preview/localized-ui/20261118/da/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/keyboard.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 353
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/da/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "ko": [
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/keyboard.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 384
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ko/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "es": [
+    {
+      "src": "/app-preview/localized-ui/20261118/es/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/es/keyboard.webp",
+      "width": 759,
+      "height": 2071,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 384
+    }
+  ],
+  "it": [
+    {
+      "src": "/app-preview/localized-ui/20261118/it/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/keyboard.webp",
+      "width": 759,
+      "height": 2071,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 385
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/it/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "nl": [
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/keyboard.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 386
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/nl/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "no": [
+    {
+      "src": "/app-preview/localized-ui/20261118/no/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/keyboard.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 386
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/no/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "sv": [
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/keyboard.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 352
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/sv/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "id": [
+    {
+      "src": "/app-preview/localized-ui/20261118/id/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/keyboard.webp",
+      "width": 759,
+      "height": 2072,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 360
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/id/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "ru": [
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/keyboard.webp",
+      "width": 759,
+      "height": 2071,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 385
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/ru/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "pt-br": [
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/keyboard.webp",
+      "width": 759,
+      "height": 2071,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 385
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/widget.webp",
+      "width": 853,
+      "height": 1844,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/pt-br/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "vi": [
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/keyboard.webp",
+      "width": 759,
+      "height": 2071,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 418
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/vi/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ],
+  "th": [
+    {
+      "src": "/app-preview/localized-ui/20261118/th/voice.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/helper.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/photos.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/document-original.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/menu.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/menu-options.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/menu-staff.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/keyboard.webp",
+      "width": 759,
+      "height": 2071,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
+      "kind": "gpt-image-ui-edit",
+      "displayCropBottom": 385
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/widget.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/screen-translation-setup.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/table.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/table-cell-source.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/document.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/chat-chat-scenario.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/chat-chat-entry.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+      "kind": "gpt-image-ui-edit"
+    },
+    {
+      "src": "/app-preview/localized-ui/20261118/th/screen-translation-screen-text.webp",
+      "width": 852,
+      "height": 1846,
+      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp",
+      "kind": "gpt-image-ui-edit"
+    }
+  ]
+}

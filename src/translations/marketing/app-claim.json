@@ -1,0 +1,192 @@
+{
+  "en": {
+    "title": "Retrieve your subscription",
+    "openHelp": "Open AnyTranslator to activate your subscription. After installing or updating the app, open the link in your email again.",
+    "invalid": "Open the subscription link from your email to continue.",
+    "open": "Open AnyTranslator",
+    "download": "Download on the App Store",
+    "delivery": "Open the access link sent to the email address you used at checkout.",
+    "resend": "Email me a new link",
+    "requested": "Check the email address you used at checkout."
+  },
+  "ko": {
+    "title": "구독 가져오기",
+    "openHelp": "AnyTranslator를 열어 구독을 활성화하세요. 앱을 설치하거나 업데이트했다면 이메일의 링크를 다시 열어 주세요.",
+    "invalid": "계속하려면 이메일에 있는 구독 링크를 열어 주세요.",
+    "open": "AnyTranslator 열기",
+    "download": "App Store에서 다운로드",
+    "delivery": "결제할 때 사용한 이메일 주소로 전송된 이용 링크를 열어 주세요.",
+    "resend": "새 링크 이메일로 받기",
+    "requested": "결제할 때 사용한 이메일을 확인해 주세요."
+  },
+  "ja": {
+    "title": "サブスクリプションを引き継ぐ",
+    "openHelp": "AnyTranslator を開いてサブスクリプションを有効にしてください。アプリをインストールまたは更新した場合は、メール内のリンクをもう一度開いてください。",
+    "invalid": "続行するにはメールに記載されたサブスクリプションのリンクを開いてください。",
+    "open": "AnyTranslator を開く",
+    "download": "App Store でダウンロード",
+    "delivery": "決済時に使用したメールアドレスに届いた利用リンクを開いてください。",
+    "resend": "新しいリンクをメールで送る",
+    "requested": "決済時に使用したメールをご確認ください。"
+  },
+  "fr": {
+    "title": "Récupérer votre abonnement",
+    "openHelp": "Ouvrez AnyTranslator pour activer votre abonnement. Si vous installez ou mettez à jour l’app, ouvrez ensuite de nouveau le lien reçu par e-mail.",
+    "invalid": "Pour continuer, ouvrez le lien de votre abonnement reçu par e-mail.",
+    "open": "Ouvrir AnyTranslator",
+    "download": "Télécharger sur l’App Store",
+    "delivery": "Ouvrez le lien d’accès envoyé à l’adresse e-mail utilisée lors du paiement.",
+    "resend": "Recevoir un nouveau lien par e-mail",
+    "requested": "Vérifiez la messagerie utilisée lors du paiement."
+  },
+  "de": {
+    "title": "Dein Abo abrufen",
+    "openHelp": "Öffne AnyTranslator, um dein Abo zu aktivieren. Wenn du die App installierst oder aktualisierst, öffne anschließend den Link in deiner E-Mail erneut.",
+    "invalid": "Öffne den Abo-Link aus deiner E-Mail, um fortzufahren.",
+    "open": "AnyTranslator öffnen",
+    "download": "Im App Store laden",
+    "delivery": "Öffne den Zugangslink, den wir an die beim Bezahlen verwendete E-Mail-Adresse gesendet haben.",
+    "resend": "Neuen Link per E-Mail senden",
+    "requested": "Prüfe das E-Mail-Postfach, das du beim Bezahlen verwendet hast."
+  },
+  "es": {
+    "title": "Recuperar tu suscripción",
+    "openHelp": "Abre AnyTranslator para activar tu suscripción. Si instalas o actualizas la app, vuelve a abrir el enlace del correo.",
+    "invalid": "Abre el enlace de suscripción de tu correo para continuar.",
+    "open": "Abrir AnyTranslator",
+    "download": "Descargar en el App Store",
+    "delivery": "Abre el enlace de acceso enviado a la dirección de correo que usaste al pagar.",
+    "resend": "Enviarme un enlace nuevo por correo",
+    "requested": "Revisa el correo que usaste al pagar."
+  },
+  "it": {
+    "title": "Recupera il tuo abbonamento",
+    "openHelp": "Apri AnyTranslator per attivare il tuo abbonamento. Se installi o aggiorni l’app, apri di nuovo il link nell’email.",
+    "invalid": "Apri il link dell’abbonamento nella tua email per continuare.",
+    "open": "Apri AnyTranslator",
+    "download": "Scarica dall’App Store",
+    "delivery": "Apri il link di accesso inviato all’indirizzo email usato per il pagamento.",
+    "resend": "Inviami un nuovo link via email",
+    "requested": "Controlla l’email che hai usato per il pagamento."
+  },
+  "pt-br": {
+    "title": "Recupere sua assinatura",
+    "openHelp": "Abra o AnyTranslator para ativar sua assinatura. Se instalar ou atualizar o app, abra novamente o link do seu e-mail.",
+    "invalid": "Para continuar, abra o link da assinatura que você recebeu por e-mail.",
+    "open": "Abrir o AnyTranslator",
+    "download": "Baixar na App Store",
+    "delivery": "Abra o link de acesso enviado para o endereço de e-mail usado no pagamento.",
+    "resend": "Receber um novo link por e-mail",
+    "requested": "Verifique o e-mail que você usou no pagamento."
+  },
+  "fi": {
+    "title": "Nouda tilauksesi",
+    "openHelp": "Avaa AnyTranslator aktivoidaksesi tilauksesi. Jos asennat tai päivität sovelluksen, avaa sähköpostissa oleva linkki uudelleen.",
+    "invalid": "Jatka avaamalla sähköpostissa oleva tilauslinkki.",
+    "open": "Avaa AnyTranslator",
+    "download": "Lataa App Storesta",
+    "delivery": "Avaa maksun yhteydessä käyttämääsi sähköpostiosoitteeseen lähetetty käyttölinkki.",
+    "resend": "Lähetä uusi linkki sähköpostitse",
+    "requested": "Tarkista maksun yhteydessä käyttämäsi sähköposti."
+  },
+  "da": {
+    "title": "Hent dit abonnement",
+    "openHelp": "Åbn AnyTranslator for at aktivere dit abonnement. Hvis du installerer eller opdaterer appen, skal du derefter åbne linket i din e-mail igen.",
+    "invalid": "Åbn abonnementslinket fra din e-mail for at fortsætte.",
+    "open": "Åbn AnyTranslator",
+    "download": "Hent i App Store",
+    "delivery": "Åbn adgangslinket, der er sendt til den e-mailadresse, du brugte ved betalingen.",
+    "resend": "Send mig et nyt link på e-mail",
+    "requested": "Tjek den e-mail, du brugte ved betalingen."
+  },
+  "nl": {
+    "title": "Haal je abonnement op",
+    "openHelp": "Open AnyTranslator om je abonnement te activeren. Als je de app installeert of bijwerkt, open je daarna de link uit je e-mail opnieuw.",
+    "invalid": "Open de abonnementslink uit je e-mail om verder te gaan.",
+    "open": "Open AnyTranslator",
+    "download": "Download in de App Store",
+    "delivery": "Open de toegangslink die is verstuurd naar het e-mailadres dat je bij het afrekenen gebruikte.",
+    "resend": "Mail me een nieuwe link",
+    "requested": "Controleer het e-mailadres dat je bij het afrekenen gebruikte."
+  },
+  "no": {
+    "title": "Hent abonnementet ditt",
+    "openHelp": "Åpne AnyTranslator for å aktivere abonnementet ditt. Hvis du installerer eller oppdaterer appen, åpner du lenken i e-posten på nytt etterpå.",
+    "invalid": "Åpne abonnementslenken i e-posten for å fortsette.",
+    "open": "Åpne AnyTranslator",
+    "download": "Last ned fra App Store",
+    "delivery": "Åpne tilgangslenken som er sendt til e-postadressen du brukte ved betalingen.",
+    "resend": "Send meg en ny lenke på e-post",
+    "requested": "Sjekk e-posten du brukte ved betalingen."
+  },
+  "sv": {
+    "title": "Hämta din prenumeration",
+    "openHelp": "Öppna AnyTranslator för att aktivera din prenumeration. Om du installerar eller uppdaterar appen öppnar du sedan länken i ditt mejl igen.",
+    "invalid": "Öppna prenumerationslänken i ditt mejl för att fortsätta.",
+    "open": "Öppna AnyTranslator",
+    "download": "Ladda ner i App Store",
+    "delivery": "Öppna åtkomstlänken som skickades till e-postadressen du använde vid betalningen.",
+    "resend": "Mejla mig en ny länk",
+    "requested": "Kontrollera e-posten du använde vid betalningen."
+  },
+  "zh-cn": {
+    "title": "找回你的订阅",
+    "openHelp": "打开 AnyTranslator 激活订阅。如果需要安装或更新 App，请完成后再次打开邮件中的链接。",
+    "invalid": "请打开邮件中的订阅链接继续。",
+    "open": "打开 AnyTranslator",
+    "download": "在 App Store 下载",
+    "delivery": "请打开付款时使用的邮箱，查看订阅启用链接。",
+    "resend": "通过邮件获取新链接",
+    "requested": "请查看付款时使用的邮箱。"
+  },
+  "zh-tw": {
+    "title": "取回你的訂閱",
+    "openHelp": "開啟 AnyTranslator 啟用訂閱。若需安裝或更新 App，完成後請再點一次信中的連結。",
+    "invalid": "請從你的電子郵件開啟訂閱連結以繼續。",
+    "open": "開啟 AnyTranslator",
+    "download": "前往 App Store 下載",
+    "delivery": "請開啟付款時使用的電子郵件，查看訂閱啟用連結。",
+    "resend": "寄送新的連結",
+    "requested": "請查看付款時使用的電子郵件。"
+  },
+  "id": {
+    "title": "Pulihkan langganan Anda",
+    "openHelp": "Buka AnyTranslator untuk mengaktifkan langganan Anda. Jika Anda memasang atau memperbarui aplikasi, buka kembali tautan di email setelahnya.",
+    "invalid": "Buka tautan langganan dari email Anda untuk melanjutkan.",
+    "open": "Buka AnyTranslator",
+    "download": "Unduh di App Store",
+    "delivery": "Buka tautan akses yang dikirim ke alamat email yang Anda gunakan saat membayar.",
+    "resend": "Kirimkan tautan baru lewat email",
+    "requested": "Periksa email yang Anda gunakan saat membayar."
+  },
+  "vi": {
+    "title": "Khôi phục gói đăng ký của bạn",
+    "openHelp": "Mở AnyTranslator để kích hoạt gói đăng ký. Nếu cài đặt hoặc cập nhật ứng dụng, hãy mở lại liên kết trong email sau khi hoàn tất.",
+    "invalid": "Mở liên kết đăng ký trong email của bạn để tiếp tục.",
+    "open": "Mở AnyTranslator",
+    "download": "Tải về trên App Store",
+    "delivery": "Mở liên kết truy cập được gửi đến địa chỉ email bạn dùng khi thanh toán.",
+    "resend": "Gửi liên kết mới qua email",
+    "requested": "Hãy kiểm tra email bạn dùng khi thanh toán."
+  },
+  "th": {
+    "title": "เรียกคืนการสมัครสมาชิก",
+    "openHelp": "เปิด AnyTranslator เพื่อเปิดใช้งานการสมัครสมาชิก หากต้องติดตั้งหรืออัปเดตแอป ให้เปิดลิงก์ในอีเมลอีกครั้งหลังดำเนินการเสร็จ",
+    "invalid": "เปิดลิงก์การสมัครสมาชิกในอีเมลเพื่อดำเนินการต่อ",
+    "open": "เปิด AnyTranslator",
+    "download": "ดาวน์โหลดจาก App Store",
+    "delivery": "เปิดลิงก์เข้าใช้งานที่ส่งไปยังอีเมลที่คุณใช้ชำระเงิน",
+    "resend": "ส่งลิงก์ใหม่ทางอีเมล",
+    "requested": "ตรวจสอบอีเมลที่คุณใช้ชำระเงิน"
+  },
+  "ru": {
+    "title": "Восстановите свою подписку",
+    "openHelp": "Откройте AnyTranslator, чтобы активировать подписку. Если вы установили или обновили приложение, снова откройте ссылку из письма.",
+    "invalid": "Чтобы продолжить, откройте ссылку на подписку из письма.",
+    "open": "Открыть AnyTranslator",
+    "download": "Загрузить из App Store",
+    "delivery": "Откройте ссылку для доступа, отправленную на адрес электронной почты, который вы указали при оплате.",
+    "resend": "Отправить новую ссылку на почту",
+    "requested": "Проверьте почту, которую вы указали при оплате."
+  }
+}

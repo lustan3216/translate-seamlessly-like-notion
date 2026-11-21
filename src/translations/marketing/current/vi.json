@@ -1,0 +1,653 @@
+{
+  "marketing": {
+    "hero.title": "Thế giới rộng lớn.",
+    "hero.accent": "Đừng để ngôn ngữ cản bước.",
+    "nav.manifesto": "Điều chúng tôi tin",
+    "hero.body": "Hiểu thực đơn để gọi món, dịch tin nhắn để trả lời. Văn bản, ảnh, phụ đề video, giọng AI tự nhiên và luyện hội thoại—đưa ngoại ngữ vào cuộc sống.",
+    "feature.table": "Dịch bảng",
+    "home.featuresTitle": "11 công cụ dịch và học, luôn bên bạn.",
+    "home.featuresBody": "Đọc thực đơn, xem tài liệu, trả lời tin nhắn, luyện nói. Đủ công cụ trong một ứng dụng.",
+    "home.blogTitle": "Hướng dẫn thực tế để dịch hiệu quả hơn.",
+    "download.macNote": "Xem mẫu Mac tương thích và yêu cầu hệ thống trên App Store. Bàn phím dịch, Widget học tập và dịch trong ứng dụng khác dành cho iOS／iPadOS.",
+    "features.title": "Dịch, trò chuyện và học trong cùng một ứng dụng.",
+    "features.body": "Hiểu thực đơn, tài liệu và bảng; trả lời tin nhắn, theo dõi video, rồi luyện nói với Trợ lý AI. 11 công cụ kết nối đọc, viết, nghe và nói.",
+    "pricing.allowance": "Xem hạn mức miễn phí trong ứng dụng",
+    "pricing.more": "Chọn gói Tiêu chuẩn hoặc Giọng nói theo nhu cầu",
+    "pricing.manage": "Khôi phục giao dịch trong ứng dụng; quản lý gia hạn và hủy qua Apple. Thẻ mức sử dụng hiển thị số dư và ngày làm mới.",
+    "pricing.voiceNote": "Dịch giọng nói và phụ đề video dùng chung phút giọng nói. Khi kết nối giọng nói với Trợ lý AI, văn bản, giọng nói và ảnh đều dùng phút Trợ lý AI. Câu hỏi văn bản/ảnh thông thường và chữ trên màn hình dùng lượt dịch. Xem số dư và ngày làm mới trong ứng dụng.",
+    "article.voice": "Nên chọn tính năng giọng nói nào?",
+    "affiliate.processTitle": "Quy trình hợp tác",
+    "faq.FreeQ": "Có thể dùng thử miễn phí không?",
+    "faq.FreeA": "Trải nghiệm miễn phí dịch, Trợ lý AI, giọng nói và nội dung Widget cơ bản; xem hạn mức trong ứng dụng. Pro hỗ trợ quét nhiều trang, thêm cài đặt Helper và nội dung học tùy chỉnh. Gói Giọng nói có thêm phút sử dụng.",
+    "faq.AgentQ": "Giọng nói Trợ lý AI khác dịch giọng nói thế nào?",
+    "faq.AgentA": "Giao tiếp trực tiếp: dùng dịch giọng nói với phụ đề song ngữ và giọng AI tự nhiên. Muốn đặt câu hỏi hoặc luyện nói: dùng giọng nói Trợ lý AI để nghe mẫu rồi tập theo. Hai tính năng dùng hạn mức phút riêng.",
+    "voice.eyebrow": "Giọng AI tự nhiên",
+    "voice.title": "Không chỉ hiểu, còn nói tự nhiên.",
+    "voice.body": "Giọng AI thế hệ mới với ngữ điệu và nhịp điệu tự nhiên. Nghe từng câu, nói theo để quen phát âm và giọng điệu. Rồi trò chuyện với AI, tự tin cất lời bằng ngoại ngữ.",
+    "voice.action": "Khám phá dịch giọng nói",
+    "faq.ScanQ": "Khi nào chọn thực đơn, tài liệu hay bảng?",
+    "faq.ScanA": "Thực đơn giúp chọn món, món thêm và hiển thị đơn bằng ngôn ngữ gốc. Tài liệu sắp xếp đoạn theo trang; Bảng đối chiếu hàng và cột. Miễn phí: 1 ảnh mỗi lần. Pro: tối đa 10 ảnh mỗi đợt. Mở lại kết quả từ lịch sử quét.",
+    "faq.AccuracyQ": "Làm sao kiểm tra cách và đuôi từ tiếng Nga, Đức?",
+    "faq.AccuracyA": "Dùng Ngữ pháp, Lỗi thường gặp và Phân tích từng từ trong Helper để hiểu cách và đuôi từ tiếng Nga, Đức. Muốn sửa câu gốc, hãy yêu cầu Trợ lý AI hiệu đính và giải thích lý do.",
+    "article.work": "Viết đa ngôn ngữ: biến cách Nga/Đức và giọng điệu trả lời",
+    "about.body": "Kết nối dịch, giải thích và luyện tập, để bạn tập trung giao tiếp.",
+    "about.story": "Sau khi hiểu là trả lời, hỏi thêm, gọi món hoặc ghi nhớ một câu. AnyTranslator giúp bước tiếp theo dễ dàng hơn.",
+    "privacy.body": "Tính năng dịch và AI được xử lý trực tuyến. Xem chính sách quyền riêng tư để biết về dữ liệu và quyền truy cập.",
+    "affiliate.status": "Hiện chúng tôi trao đổi riêng với từng đối tác. Nội dung hợp tác và điều kiện chia sẻ doanh thu được thỏa thuận riêng.",
+    "download.iosNote": "Dịch văn bản, giọng nói, ảnh, thực đơn, tài liệu và bảng, cùng Trợ lý AI, dịch màn hình, bàn phím và Widget học tập.",
+    "download.ios": "Tải miễn phí cho iOS",
+    "pricing.cta": "Nâng cấp Pro trong ứng dụng",
+    "feature.chat": "Trợ lý AI",
+    "home.statement": "Từ hiểu một câu, đến tự mình cất lời.",
+    "home.statementBody": "Nắm ý chính trong ảnh, nối cuộc trò chuyện bằng phiên dịch, rồi nghe mẫu AI tự nhiên để luyện du lịch hay phỏng vấn. Phản hồi và ôn tập giúp đưa cách diễn đạt hữu ích vào đời sống.",
+    "case.study.title": "Luyện điều muốn nói, đến khi nói được.",
+    "case.study.body": "Chọn mục tiêu cho du lịch, công việc hay hằng ngày; cũng có thể tự tạo tình huống và mục tiêu. Nói với AI, xem phản hồi và tập lại để dùng được những gì đã chuẩn bị.",
+    "article.chat": "Huấn luyện viên ngoại ngữ bỏ túi: ảnh, phiên dịch và luyện nói",
+    "article.learning": "Đưa những câu đã luyện vào đời thường.",
+    "feature.screen-translation": "Dịch trong ứng dụng khác",
+    "article.screen": "Đọc phụ đề và trang web xuyên ứng dụng",
+    "case.media.title": "Xem video, đọc web, hiểu liền mạch.",
+    "case.media.body": "Video vẫn phát, trang web vẫn mở. Đối chiếu phụ đề hoặc chữ đang thấy qua Hình trong hình; gặp câu muốn tìm hiểu thêm, hãy hỏi Trợ lý AI."
+  },
+  "features": {
+    "text": {
+      "title": "Dịch văn bản: rõ ý, đúng giọng điệu.",
+      "summary": "Tin nhắn và email với bảy giọng điệu theo người nhận. Hiểu biến cách Nga/Đức qua Helper, rồi nhờ Trợ lý AI hiệu đính câu gốc.",
+      "heading": "Viết cho ai, chọn giọng điệu phù hợp.",
+      "body": "Yêu cầu công việc lịch sự, trò chuyện bạn bè tự nhiên, tin nhắn dài gọn lại. Nghe phát âm AI, lưu câu hay; dùng Helper giải thích cách và đuôi từ Nga/Đức hoặc nhờ AI hiệu đính.",
+      "steps": [
+        "Bảy giọng điệu, từ thư trang trọng đến trò chuyện thường ngày.",
+        "Helper giải thích biến cách Nga/Đức; Trợ lý AI hiệu đính câu gốc theo yêu cầu.",
+        "Nghe giọng AI tự nhiên, lưu câu hay hoặc đưa vào bản nháp Trợ lý AI."
+      ],
+      "sections": [
+        {
+          "title": "Hiểu cách và đuôi từ tiếng Nga, Đức",
+          "body": "Ngữ pháp, lỗi thường gặp và phân tích từng từ giúp hiểu cách tiếng Nga, mạo từ và đuôi từ tiếng Đức bằng ngôn ngữ quen thuộc. Hiểu quan hệ trong câu rồi chọn cách diễn đạt."
+        },
+        {
+          "title": "Bảy giọng điệu theo người nhận",
+          "body": "Tự động, Lịch sự, Hài hước, Thư từ, Bạn bè, Ngắn gọn, Tán tỉnh. Từ công việc đến làm quen quốc tế, luôn có giọng điệu phù hợp.",
+          "items": [
+            "Tự động: xử lý giọng điệu theo bản gốc và ngữ cảnh.",
+            "Lịch sự: dùng cho đề nghị, câu hỏi hoặc tin nhắn công việc.",
+            "Hài hước: làm cuộc trò chuyện phù hợp nhẹ nhàng hơn.",
+            "Thư từ: dùng cho email hoặc thư.",
+            "Bạn bè: tự nhiên, thoải mái như với người quen.",
+            "Ngắn gọn: rút gọn lời văn, rồi kiểm tra thông tin quan trọng.",
+            "Tán tỉnh: tinh nghịch, thân mật khi làm quen quốc tế."
+          ]
+        },
+        {
+          "title": "Hiệu đính Nga/Đức: hiểu lý do rồi chọn cách viết",
+          "body": "Giọng Tự động giữ nguyên văn bản nếu toàn bộ đã ở ngôn ngữ đích. Kiểm tra cách, đuôi từ hoặc ngữ pháp Nga/Đức qua Helper, hoặc nhờ Trợ lý AI hiệu đính câu gốc."
+        }
+      ]
+    },
+    "photos": {
+      "title": "Dịch ảnh: bản dịch ngay trên dòng chữ.",
+      "summary": "Hướng camera vào biển báo, nhãn hay thông báo. Bản dịch xuất hiện ngay trên ảnh.",
+      "heading": "Đưa camera vào ngoại ngữ, đọc bản dịch trên ảnh.",
+      "body": "Xem bản dịch phủ lên chữ nước ngoài. Chụp ảnh hoặc chọn từ album, chạm vào chữ để xem chi tiết mà vẫn giữ các dấu hiệu xung quanh.",
+      "steps": [
+        "Bản dịch phủ trực tiếp: hướng vào biển báo để đọc.",
+        "Chụp hoặc chọn ảnh từ album để dịch chữ trong ảnh.",
+        "Chạm xem chi tiết và vẫn đối chiếu được ảnh gốc."
+      ]
+    },
+    "voice": {
+      "title": "Dịch giọng nói: theo kịp lời của cả hai bên.",
+      "summary": "Phụ đề song ngữ theo cuộc nói chuyện, giọng AI tự nhiên truyền đạt giúp bạn. Bốn chế độ để đôi bên hiểu nhau.",
+      "heading": "Giao tiếp tại chỗ, để bản dịch nối lời.",
+      "body": "Hỏi đường, nhận phòng, trò chuyện trực tiếp: phụ đề song ngữ và giọng AI tự nhiên truyền cả ý nghĩa lẫn sắc thái. Chọn bốn chế độ âm thanh; sau đó xem tóm tắt, nghe lại và học cách diễn đạt hữu ích.",
+      "steps": [
+        "Hội thoại hai chiều đọc lời cả hai bên; chế độ Nói giúp tôi phát bản dịch của bạn.",
+        "Nghe riêng bằng loa thoại hoặc tai nghe; chỉ xem phụ đề ở nơi yên tĩnh.",
+        "Xem lại hội thoại, nghe lại giọng AI, sao chép hoặc chia sẻ ý chính tóm tắt."
+      ],
+      "sections": [
+        {
+          "title": "Giọng AI tự nhiên, nghe cả ngữ điệu và nhịp điệu",
+          "body": "Mô hình giọng nói thế hệ mới tạo ngữ điệu tự nhiên và sắc thái cảm xúc theo nội dung. Dùng để giao tiếp tại chỗ, rồi nghe lại và nói theo để quen phát âm cùng giọng điệu mới."
+        }
+      ]
+    },
+    "menu": {
+      "title": "Quét thực đơn: hiểu món, rồi đưa đơn cho nhân viên.",
+      "summary": "Chụp thực đơn, chọn rõ món, giá và món thêm. Đưa đơn bằng ngôn ngữ gốc cho nhân viên.",
+      "heading": "Chụp thực đơn, chọn xong là đưa cho nhân viên.",
+      "body": "Biến thực đơn ngoại ngữ thành các món có thể chọn: tên, mô tả, giá và món thêm ở cùng một chỗ. Chọn số lượng, ghi chú rồi hiển thị đơn gốc. Giá đã biết được cộng riêng theo tiền tệ.",
+      "steps": [
+        "Sắp xếp tên món, mô tả và giá thành danh sách dễ chọn.",
+        "Chọn số lượng, cỡ, món thêm có sẵn và ghi chú theo ý thích.",
+        "Hiển thị đơn gốc, cộng giá đã biết theo từng tiền tệ."
+      ]
+    },
+    "document": {
+      "title": "Quét tài liệu: theo từng trang, giữ đoạn và ý chính.",
+      "summary": "Chụp tài liệu nhiều trang, đọc theo đoạn, danh sách và bảng. Đối chiếu bản gốc, mở lại từ lịch sử.",
+      "heading": "Tài liệu dài, đọc vẫn có trọng tâm.",
+      "body": "Thông báo, tờ giới thiệu du lịch và tài liệu nhiều trang được sắp xếp thành tiêu đề, đoạn và danh sách rõ ràng. Đối chiếu văn bản, ảnh gốc bất cứ lúc nào; tìm lại từ lịch sử mà không phải làm lại.",
+      "steps": [
+        "Sắp xếp ảnh theo trang, giữ cấu trúc tiêu đề, đoạn và danh sách.",
+        "Chạm đối chiếu văn bản và ảnh gốc, không bỏ sót chi tiết dài.",
+        "Tìm lịch sử quét để mở lại tài liệu khi cần."
+      ]
+    },
+    "keyboard": {
+      "title": "Bàn phím dịch: chuẩn bị trả lời ngay trong ứng dụng.",
+      "summary": "Trả lời không cần chuyển qua lại. Gõ hoặc dùng đọc chính tả iOS, dịch và đổi giọng điệu trong ô nhập, rồi tự gửi.",
+      "heading": "Hoàn thiện câu trả lời ngay trong ứng dụng đang dùng.",
+      "body": "Dịch và điều chỉnh giọng điệu cho chat, tin nhắn công việc ngay trong ô nhập. Gõ hoặc dùng đọc chính tả iOS để trả lời tự nhiên, gọn gàng. Cũng có thể dịch và chèn từ bảng nhớ tạm.",
+      "steps": [
+        "Dịch trong ô nhập, thay bản nháp và tiếp tục trả lời.",
+        "Gõ hoặc dùng đọc chính tả iOS, rồi chọn ngôn ngữ và giọng điệu.",
+        "Dịch, sao chép bảng nhớ tạm hoặc chèn tại con trỏ."
+      ]
+    },
+    "helper": {
+      "title": "Helper giải thích ngữ pháp và cách dùng.",
+      "summary": "Hiểu cách tiếng Nga, đuôi từ tiếng Đức bằng ngôn ngữ quen thuộc. Lưu cách giải thích một lần, dùng lại với câu mới.",
+      "heading": "Hiểu nghĩa, học cả cách dùng.",
+      "body": "Cách, đuôi từ và mẫu câu của bản gốc lẫn bản dịch được giải thích bằng ngôn ngữ của bạn. Chọn ngữ pháp, lỗi thường gặp hoặc phân tích từng từ. Lưu lĩnh vực, mục tiêu và độ sâu giải thích thành chỉ dẫn riêng để dùng lại.",
+      "steps": [
+        "Ngữ pháp, lỗi thường gặp, phân tích từng từ để hiểu cấu trúc câu.",
+        "Mở rộng với từ đồng nghĩa, ví dụ, hàm ý và gợi ý trả lời.",
+        "Tùy chỉnh lĩnh vực, mục tiêu, độ sâu; lưu chỉ dẫn để dùng lại."
+      ],
+      "sections": [
+        {
+          "title": "Hiểu lý do biến cách Nga/Đức",
+          "body": "Ví dụ theo ngữ cảnh: từ công cụ cách tiếng Nga đến tặng cách tiếng Đức, xem cách, mạo từ và đuôi danh từ thay đổi cùng nhau.",
+          "items": [
+            "Tiếng Nga: Я говорю с мой друг. → Я говорю с моим другом. с nghĩa là ‘cùng với’ dùng công cụ cách; đuôi của мой và друг cùng thay đổi.",
+            "Tiếng Đức: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit dùng tặng cách; danh từ biến cách yếu Kunde thành Kunden."
+          ]
+        },
+        {
+          "title": "Lưu chỉ dẫn, dùng lại với câu mới",
+          "body": "Lưu ‘giải thích cách tiếng Nga bằng tiếng Việt’ hoặc ‘giải thích đuôi từ tiếng Đức’. Câu mới vẫn theo cách giải thích quen thuộc để bạn tập trung vào điều muốn học."
+        }
+      ]
+    },
+    "widget": {
+      "title": "Widget học tập, ôn lại mọi lúc.",
+      "summary": "Màn hình chính là thẻ ôn tập: xem từ, câu, nghe phát âm AI, đánh dấu cần ôn hoặc đã nhớ. Tự chọn nội dung, chủ đề và độ khó.",
+      "heading": "Biến thời gian rảnh thành thời gian ôn tập.",
+      "body": "Chạm từ màn hình chính để nghe phát âm AI, nói theo, ôn và đánh dấu đã nhớ. Từ màn hình khóa mở ứng dụng; dùng Chờ khi được hỗ trợ. Học từ, cụm kết hợp, thành ngữ, câu theo chủ đề, độ khó và chỉ dẫn riêng.",
+      "steps": [
+        "Xem từ và câu, nghe rồi nói theo AI ngay trên màn hình chính.",
+        "Đánh dấu cần ôn／đã nhớ để chuẩn bị lượt học tiếp theo.",
+        "Chọn loại từ câu, chủ đề, độ khó và thêm chỉ dẫn riêng."
+      ]
+    },
+    "table": {
+      "title": "Dịch bảng: đối chiếu hàng cột, đọc rõ từng con số.",
+      "summary": "Lịch trình và bảng giá theo hàng cột. Cuộn ngang bảng rộng để xem giờ, giá và đơn vị trên từng dòng.",
+      "heading": "Theo hàng và cột, đọc rõ các con số.",
+      "body": "Nhiều số, nhiều cột vẫn đọc theo cấu trúc bảng. Sắp xếp lịch trình, bảng giá; cuộn ngang khi bảng rộng. Chạm xem văn bản, trở về ảnh gốc để đối chiếu giờ, số tiền và đơn vị.",
+      "steps": [
+        "Giữ cách đọc theo hàng cột để dễ đối chiếu giờ và giá.",
+        "Cuộn ngang bảng rộng để xem đủ cột và đơn vị.",
+        "Đối chiếu văn bản, ảnh gốc; mở lại từ lịch sử quét."
+      ]
+    },
+    "chat": {
+      "title": "Trợ lý AI",
+      "summary": "Nắm ý chính trong ảnh, phiên dịch trực tiếp, luyện nói cùng giọng AI tự nhiên. Huấn luyện viên ngoại ngữ luôn bên bạn khi du lịch, làm việc và sinh hoạt.",
+      "heading": "Huấn luyện viên ngoại ngữ bên bạn, để dùng được thật.",
+      "body": "Luyện gọi món trước chuyến đi, luyện diễn đạt trước công việc; ảnh không hiểu thì hỏi ngay. Hội thoại và mẫu giọng AI tự nhiên, phiên dịch trực tiếp, luyện tình huống giúp từ nghe hiểu đến dám nói.",
+      "steps": [
+        "Nắm ý chính trong ảnh để hiểu biển báo, tin nhắn và hình ảnh.",
+        "Luyện tình huống và mục tiêu để sẵn sàng cho du lịch, công việc, hằng ngày.",
+        "Nghe mẫu tự nhiên, nói theo, tập lại và lưu cách diễn đạt hữu ích."
+      ],
+      "sections": [
+        {
+          "title": "Ảnh hay phiên dịch, điều trước mắt cứ hỏi",
+          "body": "Thêm ảnh biển báo, thông báo hoặc tin nhắn để AI tóm tắt ý chính, điều cần lưu ý và bước tiếp theo. Khi bất đồng ngôn ngữ, dùng trò chuyện giọng nói hoặc phiên dịch trực tiếp để hỏi rõ.",
+          "items": [
+            "Hội thoại giọng nói: nói để hỏi, rồi tiếp tục trò chuyện.",
+            "Trò chuyện bằng tiếng Anh: biến luyện tập thành hội thoại tự nhiên.",
+            "Phiên dịch trực tiếp: nối cuộc trò chuyện khác ngôn ngữ.",
+            "Cho AI xem ảnh: nắm ý chính và bước tiếp theo."
+          ]
+        },
+        {
+          "title": "Luyện ngoại ngữ hữu ích cho cuộc sống của bạn",
+          "body": "Từ nhà hàng, sân bay đến phỏng vấn và công việc: chọn tình huống để luyện hội thoại, chọn mục tiêu để học từng bước, hoặc tự tạo. Tập trung trả lời thành tiếng để sẵn sàng cho lần nói thật tiếp theo.",
+          "items": [
+            "Luyện tình huống: nhập vai và hoàn thành nhiệm vụ hội thoại.",
+            "Luyện mục tiêu: học cách diễn đạt, rồi áp dụng vào tình huống.",
+            "Học tùy chỉnh: tự tạo tình huống hoặc mục tiêu cho dịp cụ thể."
+          ]
+        },
+        {
+          "title": "Nghe tự nhiên, cất lời dễ hơn",
+          "body": "Nhờ AI làm mẫu chậm, rồi tập phát âm, giọng điệu và nhịp điệu. Đưa câu vào hội thoại tự nhiên để mỗi lần tập gần hơn với giao tiếp thật."
+        },
+        {
+          "title": "Hiểu phản hồi, lần sau nói mượt hơn",
+          "body": "So sánh câu gốc với cách nói tự nhiên, nghe mẫu và xem lý do. Có thể nhờ AI hiệu đính câu ngắn tiếng Nga, Đức và hơn nữa. Lưu cách diễn đạt, tập lại, xem hội thoại trong lịch sử để chuẩn bị lần sau."
+        }
+      ]
+    },
+    "screen-translation": {
+      "title": "Dịch màn hình, hiểu phụ đề và chữ.",
+      "summary": "Ở lại video hoặc trang web đang xem, đọc phụ đề và chữ qua Hình trong hình. Đối chiếu bản gốc, xem lại câu hữu ích trong lịch sử.",
+      "heading": "Ở trong ứng dụng đang dùng, hiểu nội dung trước mắt.",
+      "body": "Âm thanh video ngoại ngữ hay chữ trên web đều có chế độ phù hợp. Hình trong hình cho xem nội dung gốc cùng bản dịch, bớt gián đoạn chuyển ứng dụng khi xem video, đọc bài hay tin nhắn trò chơi.",
+      "steps": [
+        "Phụ đề video: biến âm thanh đang phát thành chữ dễ hiểu.",
+        "Chữ trên màn hình: đọc nội dung đang thấy trong web, chat và trò chơi.",
+        "Hình trong hình và lịch sử: vừa xem vừa đối chiếu, sau đó đọc lại."
+      ],
+      "sections": [
+        {
+          "title": "Phụ đề video, theo kịp nội dung",
+          "body": "Dịch âm thanh từ ứng dụng khác thành phụ đề cùng bản gốc. Khi xem video, phát trực tiếp hoặc học ngoại ngữ, nắm ý chính bằng ngôn ngữ quen thuộc mà vẫn tiếp tục xem."
+        },
+        {
+          "title": "Chữ trên màn hình, đọc tiếp nội dung",
+          "body": "Đọc bản dịch chữ đang thấy trong web, chat, trò chơi hay tài liệu qua Hình trong hình. Kéo gần đoạn cần đọc hoặc cuộn trang gốc để tiếp tục phần sau."
+        },
+        {
+          "title": "Bản dịch theo nội dung, câu hay lưu lại",
+          "body": "Đối chiếu trong lúc xem bản gốc. Văn bản và bản dịch đã hoàn thành được lưu trong lịch sử để mở lại. Tự đưa cách diễn đạt yêu thích sang Trợ lý AI để hỏi nghĩa và luyện cách dùng.",
+          "items": [
+            "Cần iOS／iPadOS 16 trở lên, Hình trong hình và internet. Nội dung được bảo vệ có thể không dịch được."
+          ]
+        }
+      ]
+    }
+  },
+  "workflows": {
+    "travel": [
+      "Dùng dịch giọng nói khi nhận phòng, đối chiếu phụ đề để xác nhận loại phòng, tiền cọc và giờ trả phòng.",
+      "Luyện nhận phòng và hỏi thêm trước với Trợ lý AI để sẵn sàng cất lời.",
+      "Chụp nội quy chỗ ở vào Tài liệu để tra giờ, phí và mở lại từ lịch sử quét."
+    ],
+    "work": [
+      "Chọn giọng điệu theo người nhận: yêu cầu lịch sự, trả lời ngắn gọn trong công việc.",
+      "Hiểu cách và đuôi từ Nga/Đức qua Helper, rồi nhờ Trợ lý AI hiệu đính câu gốc.",
+      "Đưa ngữ cảnh để so sánh câu trả lời; sẵn sàng thì về ứng dụng cũ gửi."
+    ],
+    "dining": [
+      "Biến ảnh thực đơn thành món có thể chọn, đặt số lượng, món thêm rồi hiển thị đơn gốc.",
+      "Dùng dịch giọng nói hỏi nhân viên về khẩu phần, nguyên liệu và cách chế biến.",
+      "Luyện hỏi thêm với Trợ lý AI; nhu cầu dị ứng phải xác nhận trực tiếp với nhân viên."
+    ],
+    "messages": [
+      "Đổi ngôn ngữ, giọng điệu trong ô nhập cũ, trả lời không cần chuyển ứng dụng.",
+      "Tin nhắn dài dùng dịch văn bản để đối chiếu, nghe phát âm và lưu câu hay.",
+      "Kể bối cảnh cho Trợ lý AI để tìm câu trả lời phù hợp lúc đó."
+    ],
+    "reading": [
+      "Thông báo, tờ giới thiệu và giấy tờ nhiều trang chọn Tài liệu để đọc đoạn, danh sách, bảng theo trang.",
+      "Lịch trình, bảng giá chọn Bảng để cuộn ngang, đối chiếu hàng cột, bản gốc và đơn vị.",
+      "Đưa câu khó sang dịch văn bản, để Helper giải thích cách dùng."
+    ],
+    "study": [
+      "Chọn tình huống, đặt mục tiêu với Trợ lý AI để chuẩn bị hội thoại thật tiếp theo.",
+      "Dùng Helper hiểu ngữ pháp, từ vựng và ví dụ để gỡ chỗ vướng.",
+      "Nghe phát âm AI, nói theo câu thường dùng qua Widget học tập; biến lúc rảnh thành luyện tập."
+    ],
+    "media": [
+      "Theo video bằng phụ đề, đọc web bằng chữ trên màn hình; xem bản gốc cùng bản dịch.",
+      "Sao chép câu sang Trợ lý AI để hỏi nghĩa, so cách nói rồi tập lại.",
+      "Chọn giọng điệu trong dịch văn bản để dùng điều đã hiểu vào câu trả lời."
+    ]
+  },
+  "articles": {
+    "voice.intro": "Giao tiếp tại chỗ dùng phụ đề song ngữ và giọng dịch AI tự nhiên; muốn nghe mẫu, luyện nói thì dùng giọng nói Trợ lý AI. Xem video trong ứng dụng khác, chọn phụ đề video của Dịch trong ứng dụng khác.",
+    "voice.tip": "Chọn ngôn ngữ hai bên và chế độ âm thanh trước khi nói. Sau đó nghe lại giọng dịch AI, tập theo ngữ điệu và nhịp điệu; xem hội thoại cùng tóm tắt để giữ lại cách diễn đạt hữu ích.",
+    "voice.limit": "Hội thoại hai chiều phù hợp giao tiếp trực tiếp; nghe riêng qua loa thoại hoặc tai nghe; chỉ xem phụ đề khi không tiện phát tiếng. Khởi động phụ đề video từ Dịch trong ứng dụng khác. Nội dung thu được tùy iOS.",
+    "menu.intro": "Trong trang Ảnh, chọn Sắp xếp rồi Thực đơn. Thêm ảnh chụp thẳng, rõ và đủ cả trang để sắp xếp tên món, nguyên liệu, khẩu phần và giá.",
+    "menu.tip": "Đọc món và giá, chọn số lượng, cỡ hoặc món thêm có sẵn rồi thêm ghi chú. Mở đơn gốc để cùng hiển thị món, lựa chọn và số lượng cho nhân viên.",
+    "menu.limit": "Giá đã biết được cộng riêng theo tiền tệ; giá chưa rõ sẽ không có tổng chắc chắn. Xác nhận nguyên liệu, chất gây dị ứng và cách nấu trực tiếp với nhân viên trước khi đưa đơn.",
+    "work.intro": "Dịch tiếng Nga, Đức để hiểu trước, rồi chọn giọng điệu trả lời. Helper giải thích cách và đuôi từ; muốn hiệu đính câu gốc, hãy yêu cầu rõ với Trợ lý AI.",
+    "work.tip": "Chọn theo người nhận: yêu cầu công việc dùng Lịch sự, email dùng Thư từ, người quen dùng Bạn bè. Câu khó nhờ Helper giải thích rồi đưa bối cảnh để Trợ lý AI so sánh câu trả lời.",
+    "work.limit": "Giọng Tự động giữ nguyên văn bản nếu toàn bộ đã ở ngôn ngữ đích. Muốn sửa cách, đuôi từ hoặc ngữ pháp, dùng Helper hiểu lý do rồi yêu cầu Trợ lý AI hiệu đính rõ ràng.",
+    "mac.intro": "Trên Mac cũng có thể dịch văn bản, hỏi AI. Trước tiên xem mẫu máy và hệ thống có hỗ trợ trên App Store.",
+    "mac.tip": "Sau khi tải, dùng dịch văn bản và Trợ lý AI; trong trang Ảnh có thể chọn tệp ảnh hoặc dán ảnh. Xem mẫu máy tương thích và yêu cầu hệ thống trên trang cửa hàng của thiết bị.",
+    "mac.limit": "Bàn phím dịch, Widget và Dịch trong ứng dụng khác chủ yếu dành cho iPhone／iPad được hỗ trợ. Tính năng từng nền tảng theo giao diện ứng dụng thực tế.",
+    "keyboard.intro": "Làm theo hướng dẫn để thêm bàn phím trên iOS, bật Cho phép truy cập đầy đủ để dịch trực tuyến. Với ô nhập hỗ trợ, gõ hoặc dùng đọc chính tả hệ thống để soạn, rồi dịch và đổi giọng điệu.",
+    "keyboard.tip": "Soạn bằng bàn phím hoặc đọc chính tả iOS, sau đó chọn ngôn ngữ và giọng điệu. Trong công cụ cũng có thể dịch bảng nhớ tạm, sao chép bản dịch hoặc chèn tại con trỏ.",
+    "keyboard.limit": "Bàn phím và đọc chính tả tùy ứng dụng, iOS và ngôn ngữ. Khi cần, gõ tay hoặc trở về ứng dụng chính để dịch; tải gói ngôn ngữ nhập theo hướng dẫn.",
+    "chat.intro": "Dùng Trợ lý AI như huấn luyện viên ngoại ngữ bỏ túi: nắm ý ảnh, phiên dịch trực tiếp hoặc luyện nói cho du lịch, công việc. Bắt đầu từ một câu hỏi, đưa sự chuẩn bị vào cuộc sống.",
+    "chat.tip": "Bắt đầu từ tình huống và mục tiêu như gọi món, phỏng vấn hoặc tự tạo. Nhờ AI làm mẫu chậm để tập ngữ điệu, nhịp điệu; rồi trò chuyện, xem phản hồi, lưu câu hay và tập lại.",
+    "chat.limit": "Cần internet và hạn mức; giọng nói cần quyền micro. Tính năng tùy phiên bản, ngôn ngữ và trạng thái dịch vụ. Hãy kiểm tra nguồn thông tin quan trọng. Mục tiêu tùy chỉnh thay kế hoạch và tiến độ cũ; xem số dư trong ứng dụng.",
+    "learning.intro": "Muốn dùng ngoại ngữ hằng ngày, hãy luyện cuộc trò chuyện thật sắp gặp. Chọn mục tiêu, tình huống với Trợ lý AI; nhờ phản hồi và ôn tập để biến câu thành cách diễn đạt của mình.",
+    "learning.tip": "Mỗi lần tập trung một tình huống: trả lời trước, rồi so với cách nói tự nhiên. Nhờ AI làm mẫu ngữ điệu, nhịp điệu; dùng Helper hiểu cách dùng, Widget học tập để ôn và ghi nhớ lâu hơn.",
+    "learning.limit": "Luyện AI cần internet và hạn mức; Widget học tập cần iOS 17 trở lên. Nội dung và cài đặt tùy chỉnh khác nhau theo gói.",
+    "screen.intro": "Xem video, đọc web với bản dịch trước mắt. Hiểu âm thanh qua phụ đề, đọc chữ qua chế độ chữ trên màn hình; dùng Hình trong hình để đối chiếu và đọc lại câu quan trọng sau đó.",
+    "screen.tip": "Xem video dùng phụ đề, đọc web dùng chữ trên màn hình. Kéo Hình trong hình hoặc cuộn trang gốc để đọc phần tiếp. Kết thúc thì dừng phát màn hình; mở lại câu muốn ôn từ lịch sử.",
+    "screen.limit": "Cần iOS／iPadOS 16 trở lên, Hình trong hình và internet; nội dung được bảo vệ có thể không dịch được. Phụ đề dùng phút giọng nói, chữ trên màn hình dùng lượt dịch. Xem số dư trong ứng dụng."
+  },
+  "scan": {
+    "title": "Thực đơn, tài liệu, bảng—mỗi loại có cách đọc rõ ràng.",
+    "body": "Thực đơn thành món có thể chọn, tài liệu thành đoạn, bảng giữ hàng cột; biển báo và nhãn được dịch ngay trên ảnh."
+  },
+  "documentArticle": {
+    "title": "Quét tài liệu: sắp xếp theo trang, đọc đối chiếu bản gốc",
+    "intro": "Thông báo giấy, tờ giới thiệu du lịch hoặc tài liệu nhiều trang: trong trang Ảnh, chọn Sắp xếp rồi Tài liệu, thêm ảnh theo thứ tự. Sau khi sắp xếp đoạn, danh sách và bảng, đối chiếu bản gốc bất cứ lúc nào.",
+    "tip": "Chụp rõ từng trang, kiểm tra thứ tự rồi gửi cả đợt. Chạm chữ để xem nguyên văn hoặc về ảnh gốc từng trang; bảng rộng có thể cuộn ngang. Tìm lịch sử theo tiêu đề hoặc loại nội dung.",
+    "limit": "Chọn theo nội dung: món ăn chọn Thực đơn; lịch trình, bảng giá có hàng cột chọn Bảng; trang khác chọn Tài liệu. Chỗ mờ thì đối chiếu ảnh gốc hoặc chụp lại."
+  },
+  "pricing": {
+    "standardTitle": "Tiêu chuẩn",
+    "voiceTitle": "Giọng nói",
+    "freeAllowance": "Tải miễn phí, trải nghiệm dịch, Trợ lý AI và giọng nói. Xem hạn mức trong ứng dụng.",
+    "freeScan": "Sắp xếp 1 ảnh mỗi lần",
+    "freeHelper": "Lưu 1 bộ cài đặt Helper tùy chỉnh",
+    "standardWeeklyAllowance": "Mỗi tuần: 150 phút dịch giọng nói／phụ đề video và 10 phút giọng nói Trợ lý AI.",
+    "standardMonthlyAllowance": "Gói tháng và năm: mỗi tháng 600 phút dịch giọng nói／phụ đề video và 30 phút giọng nói Trợ lý AI.",
+    "voiceWeeklyAllowance": "Mỗi tuần: 600 phút dịch giọng nói／phụ đề video và 45 phút giọng nói Trợ lý AI.",
+    "voiceMonthlyAllowance": "Gói tháng và năm: mỗi tháng 2.400 phút dịch giọng nói／phụ đề video và 135 phút giọng nói Trợ lý AI.",
+    "unlimitedTranslations": "Gói trả phí có lượt dịch không giới hạn cho văn bản, ảnh, gõ với Trợ lý AI và chữ trên màn hình.",
+    "scanAllowance": "Sắp xếp tối đa 10 ảnh mỗi đợt",
+    "helperAllowance": "Gói trả phí hiện tại lưu được 5 bộ cài đặt Helper tùy chỉnh",
+    "widgetAllowance": "Tự chọn nội dung, chủ đề và độ khó",
+    "annualQuotaNote": "Gói năm là chu kỳ thanh toán; hạn mức giọng nói và Trợ lý AI vẫn làm mới hằng tháng.",
+    "quotaNote": "Văn bản, ảnh thông thường với Trợ lý AI dùng lượt dịch. Khi kết nối giọng nói, văn bản, giọng nói và ảnh dùng chung phút Trợ lý AI. Phụ đề video và dịch giọng nói dùng chung phút giọng nói; chữ trên màn hình dùng lượt dịch.",
+    "legacyNote": "Thuê bao cũ và gói miễn phí có thể có hạn mức khác. Xem số dư và ngày làm mới tiếp theo trên thẻ mức sử dụng trong ứng dụng.",
+    "standardNote": "Dịch hằng ngày, đọc ảnh, luyện ngoại ngữ. Đủ công cụ thường dùng trong một nơi.",
+    "voiceNote": "Dịch giọng nói, phụ đề video, luyện cùng AI—thêm thời gian để cất lời.",
+    "voiceLabel": "Dịch giọng nói và phụ đề video",
+    "chatVoiceLabel": "Hội thoại giọng nói với Trợ lý AI",
+    "aiTextLabel": "Hỏi Trợ lý AI bằng văn bản và ảnh",
+    "freeWidget": "Ôn từ và câu cơ bản",
+    "scanLabel": "Quét thực đơn・tài liệu・bảng",
+    "freeAccess": "Trải nghiệm miễn phí"
+  },
+  "extras": {
+    "homeScenarios": [
+      {
+        "id": "travel-and-dining",
+        "title": "Du lịch và gọi món, muốn hỏi cứ hỏi.",
+        "body": "Từ quầy lễ tân đến bàn ăn xứ lạ, hỏi rõ, gọi đúng.",
+        "scenarios": [
+          {
+            "id": "travel",
+            "context": "Hỏi đường・nhận phòng khách sạn・giao tiếp khi đi lại",
+            "title": "Chi tiết nhận phòng, hỏi rõ tại chỗ.",
+            "body": "Dùng ngôn ngữ của mình hỏi loại phòng, tiền cọc và giờ trả phòng.",
+            "points": [
+              "Đối chiếu phụ đề song ngữ, chuyển bốn chế độ phát theo hoàn cảnh."
+            ],
+            "action": "Xem dịch giọng nói"
+          },
+          {
+            "id": "dining",
+            "context": "Gọi món nhà hàng・món thêm ở quán cà phê・ghi chú món",
+            "title": "Hiểu món, gọi rõ cả phần thêm.",
+            "body": "Hiểu tên, giá và món thêm; chọn số lượng rồi hiển thị đơn gốc.",
+            "points": [
+              "Cộng riêng từng tiền tệ để nắm rõ đơn hơn."
+            ],
+            "action": "Xem quét thực đơn và gọi món"
+          }
+        ]
+      },
+      {
+        "id": "documents-and-tables",
+        "title": "Tài liệu có đoạn, bảng có hàng cột.",
+        "body": "Đọc nội quy chỗ ở, chuyến xe theo cấu trúc ban đầu.",
+        "scenarios": [
+          {
+            "id": "documents",
+            "context": "Thông báo giấy・tờ giới thiệu du lịch・nội quy chỗ ở",
+            "title": "Nhiều giấy tờ, đọc vẫn mạch lạc.",
+            "body": "Chụp thông báo, nội quy, tờ giới thiệu để sắp xếp thành đoạn rõ ràng.",
+            "points": [
+              "Xử lý nhiều trang cùng đợt, đối chiếu nguyên văn và bản dịch mọi lúc."
+            ],
+            "action": "Xem quét tài liệu"
+          },
+          {
+            "id": "tables",
+            "context": "Lịch giao thông・bảng giá vé・giá dịch vụ",
+            "title": "Con số dày đặc, đối chiếu trong nháy mắt.",
+            "body": "Chuyến, giá vé, ngày được xếp ngay ngắn để dễ tìm thông tin quan trọng.",
+            "points": [
+              "Giữ hàng cột, chạm để kiểm tra nguyên văn."
+            ],
+            "action": "Xem dịch bảng"
+          }
+        ]
+      },
+      {
+        "id": "watch-read-and-reply",
+        "title": "Video và tin nhắn, tiếp tục hiểu liền mạch.",
+        "body": "Nội dung ở trước mắt, trả lời trong hội thoại cũ.",
+        "scenarios": [
+          {
+            "id": "media",
+            "context": "Video ngoại ngữ・đọc web・hướng dẫn trò chơi",
+            "title": "Tiếp tục hiểu nội dung ngoại ngữ yêu thích.",
+            "body": "Xem video có phụ đề dịch, đọc web có dịch màn hình. Ở lại ứng dụng đang xem, bản dịch đi cùng nội dung.",
+            "points": [
+              "Di chuyển Hình trong hình, chọn chế độ phụ đề hoặc chữ."
+            ],
+            "action": "Xem dịch trong ứng dụng khác"
+          },
+          {
+            "id": "messages",
+            "context": "Tin nhắn công việc・bản nháp email・giọng điệu trả lời",
+            "title": "Công việc chuyên nghiệp, bạn bè tự nhiên.",
+            "body": "Dịch và đổi giọng điệu ngay trong hội thoại cũ; trả lời khách hàng gọn gàng, nói với bạn bè tự nhiên.",
+            "points": [
+              "Dịch cả bảng nhớ tạm, chèn câu trả lời trực tiếp."
+            ],
+            "action": "Xem bàn phím dịch iOS"
+          }
+        ]
+      },
+      {
+        "id": "practice-and-remember",
+        "title": "Phỏng vấn và du lịch, tập trước khi nói.",
+        "body": "Luyện quen điều muốn dùng, ôn thêm vào lúc rảnh.",
+        "scenarios": [
+          {
+            "id": "practice",
+            "context": "Phỏng vấn xin việc・nói khi du lịch・mục tiêu học tùy chỉnh",
+            "title": "Trước lúc quan trọng, luyện cùng AI cho vững.",
+            "body": "Phỏng vấn, nhận phòng, gọi món—AI nhập vai cùng luyện. Ảnh không hiểu thì hỏi, nói để tiếp tục trò chuyện.",
+            "points": [
+              "Học theo mục tiêu cùng phản hồi tức thì, từ câu đến tình huống."
+            ],
+            "action": "Xem Trợ lý AI"
+          },
+          {
+            "id": "daily-learning",
+            "context": "Lúc đi làm・ôn trên màn hình chính・màn hình khóa",
+            "title": "Thời gian vụn cũng tích lũy ngoại ngữ.",
+            "body": "Mở màn hình chính để thấy câu muốn học, nghe phát âm, đánh dấu ôn. Biến chờ đợi thành tiến bộ.",
+            "points": [
+              "Chọn nội dung, chủ đề, độ khó để học điều thực sự dùng."
+            ],
+            "action": "Xem Widget học tập"
+          }
+        ]
+      },
+      {
+        "id": "see-and-understand",
+        "title": "Hiểu chữ, hiểu cả cách dùng.",
+        "body": "Ảnh giúp đọc chữ, Helper giải thích cách dùng.",
+        "scenarios": [
+          {
+            "id": "photos",
+            "context": "Biển báo・nhãn sản phẩm・thông báo triển lãm",
+            "title": "Đưa camera vào, bản dịch nằm trên ảnh gốc.",
+            "body": "Biển báo, nhãn sản phẩm, thông báo triển lãm—hướng camera để đọc bản dịch ngay trên ảnh.",
+            "points": [
+              "Chụp, chọn album hoặc dịch trực tiếp để đọc chữ trước mắt."
+            ],
+            "action": "Xem dịch ảnh"
+          },
+          {
+            "id": "helper",
+            "context": "Tiếng Nga・tiếng Đức・hiệu đính và giải thích tùy chỉnh",
+            "title": "Không chỉ hiểu nghĩa, còn hiểu ngữ pháp.",
+            "body": "Để Helper phân tích cách tiếng Nga, đuôi từ tiếng Đức. Làm rõ ngữ pháp, lỗi thường gặp và cách dùng từng từ.",
+            "points": [
+              "Lưu lĩnh vực chuyên môn, sở thích giải thích để tạo trợ lý ngôn ngữ riêng."
+            ],
+            "action": "Xem giải thích Helper"
+          }
+        ]
+      }
+    ],
+    "stories": {
+      "sectionLabel": "Đưa bản dịch vào đời thường",
+      "menu": {
+        "label": "Dịch thực đơn",
+        "title": "Từ một thực đơn,\nđến một đơn gọi món.",
+        "body": "Hiểu món, chọn phần thêm. Đưa đơn gốc cho nhân viên, gọi đúng điều muốn ăn.",
+        "action": "Xem cách gọi món"
+      },
+      "reply": {
+        "label": "Dịch văn bản và giọng điệu",
+        "title": "Đúng ý,\nđúng cả giọng điệu.",
+        "body": "Cần chuyên nghiệp thì chuyên nghiệp, cần thân thiện thì thân thiện. Bảy giọng điệu để mỗi câu đều như lời bạn nói.",
+        "action": "Khám phá dịch văn bản"
+      },
+      "practice": {
+        "label": "Trợ lý AI",
+        "title": "Luyện điều muốn nói,\nđến khi bật thành lời.",
+        "body": "Gọi món, phỏng vấn, du lịch—AI nhập vai luyện cùng bất cứ lúc nào. Từ một câu đến hội thoại thật sự tiếp diễn.",
+        "action": "Tìm hiểu Trợ lý AI"
+      },
+      "voice": {
+        "label": "Giọng AI tự nhiên",
+        "title": "Không chỉ hiểu,\ncòn nói tự nhiên.",
+        "body": "Giọng AI thế hệ mới với ngữ điệu và nhịp điệu tự nhiên. Nghe từng câu, nói theo để quen phát âm và giọng điệu, rồi trò chuyện với AI để cất lời bằng ngoại ngữ.",
+        "action": "Khám phá dịch giọng nói"
+      }
+    },
+    "manifesto": {
+      "seoTitle": "Điều chúng tôi tin",
+      "seoDescription": "Khác ngôn ngữ không nên khiến cuộc sống nhỏ lại. AnyTranslator tập hợp công cụ để hiểu, diễn đạt và luyện tập khi sống ở nước ngoài, du học hoặc học ngoại ngữ.",
+      "eyebrow": "Điều chúng tôi tin",
+      "title": "Ngôn ngữ khác biệt,\ncuộc sống vẫn rộng mở.",
+      "lead": "Ở phương xa, bạn xứng đáng có dũng khí sống tự tại.",
+      "opening": "Đến một quốc gia khác là để thấy thêm thế giới, có thêm khả năng.\nKhông phải để đến nơi rồi chỉ dám sống dè dặt vì ngôn ngữ.",
+      "chapters": [
+        {
+          "title": "Xa nhà, đừng xa chính mình.",
+          "paragraphs": [
+            "Đi quanh siêu thị mấy vòng rồi vẫn mua nhầm đồ. Người ở quầy nói một tràng dài, bạn chỉ hiểu vài từ nhưng ngại hỏi lại. Có câu hỏi trong lớp, đến miệng rồi lại im lặng.",
+            "Một biểu mẫu, thông báo từ trường, giấy thuê nhà đều có thể khiến ngày bình thường thêm vất vả. Muốn làm cho tốt, nhưng ngay cả mở lời cũng cần lấy hết can đảm.",
+            "Không phải bạn thiếu ý tưởng hay chưa cố gắng. Chỉ là đôi khi, ngôn ngữ để con người thật của bạn bên ngoài cuộc trò chuyện."
+          ]
+        },
+        {
+          "title": "Cuộc sống không chỉ hỏi theo một cách.",
+          "paragraphs": [
+            "Có thể là thực đơn không hiểu, tin nhắn thoại của chủ nhà, lời giải thích ở quầy thủ tục, hoặc tài liệu cần đọc kỹ đến cuối.",
+            "Vì thế, sự giúp đỡ cũng không thể chỉ có một kiểu. Bạn không nên phải chạy qua nhiều công cụ chỉ để ăn một bữa, đáp một lời, xong một việc.",
+            "AnyTranslator muốn đưa tính năng thực sự cần đến nơi bạn dễ chạm tới. Bớt một lần mắc kẹt, thêm chút vững tin để sống tốt mỗi ngày."
+          ]
+        },
+        {
+          "title": "Hiểu một câu, vững bước tiếp theo.",
+          "paragraphs": [
+            "Chụp nhãn để biết mua gì; hiểu tên món, món thêm để gọi đúng. Sắp xếp thông báo và tài liệu theo trang, để đoạn, hàng cột, chi tiết quan trọng có chỗ tra lại.",
+            "Gặp trực tiếp, phụ đề song ngữ và giọng AI tự nhiên giúp truyền đạt. Tin nhắn cần trang trọng, thân mật hay ngắn gọn thì chọn giọng phù hợp, nói trọn ý mình.",
+            "Chưa dám nói, hãy tập với Trợ lý AI trước. Từ du lịch, lớp học đến phỏng vấn, luyện dần điều muốn nói. Hiểu, diễn đạt và học cuối cùng nối trong cùng một cuộc sống."
+          ]
+        },
+        {
+          "title": "Mọi ngôn ngữ đều xứng đáng được thấu hiểu.",
+          "paragraphs": [
+            "Ngôn ngữ không chỉ là đổi một bộ từ. Điều khó có thể là cách và đuôi từ tiếng Nga, Đức, hay câu nói chỉ hiểu được khi đặt vào đời sống địa phương.",
+            "Chúng tôi sẽ tiếp tục trau chuốt ngữ cảnh, giọng điệu, giải thích và quan tâm nhu cầu của ngôn ngữ ít người dùng. Ít người nói không có nghĩa bớt tận tâm. Để bạn không chỉ nhận bản dịch, mà còn hiểu vì sao nói như vậy."
+          ]
+        }
+      ],
+      "everydayEyebrow": "Từ đời sống, đến tính năng phù hợp",
+      "everydayTitle": "Biến mỗi điều ngại ngần,\nthành bước tiếp theo có thể đi.",
+      "scenarios": [
+        {
+          "title": "Sống rõ ràng mỗi ngày",
+          "body": "Mua đúng đồ, hiểu thực đơn, hỏi rõ rồi quyết định.",
+          "linkLabels": [
+            "Dịch ảnh",
+            "Thực đơn và gọi món"
+          ]
+        },
+        {
+          "title": "Làm tốt việc quan trọng",
+          "body": "Đọc thông báo, tài liệu, bảng theo từng cấu trúc.",
+          "linkLabels": [
+            "Quét tài liệu",
+            "Dịch bảng"
+          ]
+        },
+        {
+          "title": "Nói lên lời của mình",
+          "body": "Hiểu người đối diện, tập trước khi thật sự cất lời.",
+          "linkLabels": [
+            "Dịch giọng nói",
+            "Trợ lý AI"
+          ]
+        }
+      ],
+      "closeEyebrow": "AnyTranslator",
+      "closeTitle": "Biến phương xa,\nthành đời thường của mình.",
+      "closeBody": "Hỏi điều muốn hỏi, nói điều muốn nói.\nĐể phương xa không chỉ là nơi đến, mà còn là nơi sống tự tại.",
+      "aboutAction": "Đọc điều chúng tôi tin"
+    },
+    "reviews": {
+      "eyebrow": "Đánh giá thật từ App Store",
+      "title": "Họ đã vượt qua\nrào cản ngôn ngữ.",
+      "body": "Họp, học ngoại ngữ, giao tiếp hằng ngày. Nghe người dùng chia sẻ.",
+      "ratingAriaTemplate": "{rating} trên 5 điểm",
+      "sourceAriaTemplate": "Xem đánh giá của {name} trên App Store",
+      "storefrontLabel": "Đài Loan",
+      "translatedLabel": "Dịch từ tiếng Trung phồn thể",
+      "quotesById": {
+        "14792569759": "Khó tìm được ứng dụng dịch vừa chính xác vừa nhiều tính năng như thế này.",
+        "14689800454": "Khá hữu ích, đăng ký ngay không đắn đo.",
+        "14634594658": "Dịch ngôn ngữ khi họp khá tiện.",
+        "14634322888": "Học ngoại ngữ rất tiện. Một ứng dụng thay cho 3–4 ứng dụng, dịch cũng rất chính xác."
+      }
+    },
+    "askAi": {
+      "title": "AnyTranslator có hợp với bạn?",
+      "body": "Cho AI biết nhu cầu để so sánh từ góc nhìn khác.",
+      "actionTemplate": "Hỏi {service}",
+      "prompt": "Dựa trên thông tin công khai tại {url}, hãy đánh giá AnyTranslator có phù hợp nhu cầu của tôi không. Tôi muốn biết về dịch văn bản và giọng nói, quét thực đơn và tài liệu, Trợ lý AI, học ngoại ngữ và giá. Trước tiên hãy hỏi tình huống sử dụng của tôi, rồi so sánh điểm phù hợp và không phù hợp; nêu rõ tính năng hoặc giá chưa xác minh được và kèm nguồn."
+    },
+    "theme": {
+      "darkMode": "Chế độ tối",
+      "lightAction": "Chuyển sang chế độ sáng",
+      "darkAction": "Chuyển sang chế độ tối"
+    },
+    "macArt": {
+      "ariaLabel": "Minh họa thương hiệu tải AnyTranslator cho macOS, dùng biểu tượng ứng dụng thật và chữ Mac App Store"
+    },
+    "pricingUnit": {
+      "perBatchTemplate": "{count} ảnh／đợt"
+    },
+    "imageAlt": {
+      "voice.primary": "Dịch giọng nói: hỏi giờ đóng cửa và lượt vào cuối của bảo tàng, đối chiếu phụ đề tiếng Anh và tiếng Việt.",
+      "text.primary": "Dịch văn bản: tin nhắn đổi lịch tiếng Anh được dịch sang tiếng Nga, kèm giải thích ngữ pháp bằng tiếng Việt.",
+      "helper.primary": "Helper giải thích ngữ pháp: phân tích thức điều kiện, thời gian và cách của tin nhắn đổi lịch công việc tiếng Nga bằng tiếng Việt.",
+      "photos.primary": "Dịch ảnh: bản dịch tiếng Việt phủ lên thực đơn đồ uống thật, đối chiếu nguyên văn tiếng Anh.",
+      "table.primary": "Dịch bảng: lịch xe đưa đón Zion công khai, đối chiếu ba khoảng ngày cùng chuyến đầu và cuối.",
+      "table.cell-source": "Đối chiếu nguyên văn bảng: mở thông tin chuyến xe đầu để xem tiêu đề hàng tiếng Anh tương ứng.",
+      "document.primary": "Dịch tài liệu: sắp xếp giới thiệu giao thông công viên công khai thành đoạn tiếng Việt, đối chiếu thông tin xe đạp và ô tô.",
+      "document.original": "Đối chiếu ảnh tài liệu gốc: nguyên văn Getting Around công khai gồm ba cột, hiển thị trang 1／1 của cùng tài liệu.",
+      "menu.primary": "Dịch thực đơn: sắp xếp cà phê và giá, hiển thị đã chọn 2 latte cùng tổng 7.80.",
+      "menu.options": "Gọi món: latte／flat white thêm sữa yến mạch, chọn 2 phần và xem tổng 7.80.",
+      "menu.staff": "Đưa nhân viên xem: hiển thị đơn nguyên văn latte／flat white, sữa yến mạch, 2 phần, tổng 7.80.",
+      "chat.primary": "Tình huống nhà hàng Trợ lý AI: lời mở đầu của nhân viên bằng tiếng Anh sơ cấp, kèm nhiệm vụ hội thoại và câu trọng tâm.",
+      "chat.chat-entry": "Chế độ hội thoại Trợ lý AI: trò chuyện thông minh, luyện mục tiêu, luyện tình huống; chọn ngôn ngữ và độ khó rồi bắt đầu.",
+      "keyboard.primary": "Các phím gốc iOS và thanh công cụ dịch AnyTranslator, giữ bản nháp tin nhắn công việc tiếng Việt trong ô nhập.",
+      "widget.primary": "Xem trước Widget học tập gốc: thẻ cà phê có câu tiếng Trung, Pinyin, nghĩa và gợi ý dùng bằng tiếng Việt, cùng nút ôn tập.",
+      "screen-translation.primary": "Dịch chữ trên màn hình: hướng dẫn lái xe trong công viên bằng tiếng Anh trên Preview, kèm bản dịch tiếng Việt trong cửa sổ hình trong hình.",
+      "screen-translation.setup": "Cài đặt dịch trong ứng dụng khác: chọn phụ đề video hoặc chữ trên màn hình, đặt đích tiếng Việt và hiển thị bản gốc."
+    }
+  }
+}

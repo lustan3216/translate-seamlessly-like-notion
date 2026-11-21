@@ -1,0 +1,95 @@
+{
+  "previewRoutes": [
+    {
+      "h1": "Bildschirmübersetzung für Untertitel und Text.",
+      "img": 0,
+      "lang": "de-DE",
+      "missing": 0,
+      "path": "/features/screen-translation?lang=de",
+      "robots": "index,follow",
+      "status": 200
+    },
+    {
+      "h1": "Widget de aprendizado: revise a qualquer hora.",
+      "img": 0,
+      "lang": "pt-BR",
+      "missing": 0,
+      "path": "/features/widget?lang=pt-br",
+      "robots": "index,follow",
+      "status": 200
+    },
+    {
+      "h1": "Bàn phím dịch: chuẩn bị trả lời ngay trong ứng dụng.",
+      "img": 0,
+      "lang": "vi-VN",
+      "missing": 0,
+      "path": "/features/keyboard?lang=vi",
+      "robots": "index,follow",
+      "status": 200
+    },
+    {
+      "h1": "AIアシスタント",
+      "lang": "ja-JP",
+      "missing": 0,
+      "path": "/features/chat?lang=ja",
+      "robots": "index,follow",
+      "status": 200,
+      "redirectStatus": 308
+    },
+    {
+      "h1": "This page took a different turn.",
+      "lang": "en-US",
+      "missing": 0,
+      "path": "/missing-page-release-check",
+      "robots": "noindex,nofollow",
+      "status": 404
+    }
+  ],
+  "previewImages": [
+    {
+      "path": "/features/screen-translation?lang=de",
+      "asset": "/de/screen-translation-screen-text.webp",
+      "complete": true,
+      "h": 1846,
+      "overflow": 0,
+      "w": 852
+    },
+    {
+      "path": "/features/widget?lang=pt-br",
+      "asset": "/pt-br/widget.webp",
+      "complete": true,
+      "h": 1844,
+      "overflow": 0,
+      "w": 853
+    },
+    {
+      "path": "/features/keyboard?lang=vi",
+      "asset": "/vi/keyboard.webp",
+      "complete": true,
+      "h": 2071,
+      "overflow": 0,
+      "w": 759
+    }
+  ],
+  "productionRoutes": [
+    {
+      "status": 200,
+      "redirect": 308,
+      "h1": "AIアシスタント",
+      "path": "/features/chat?lang=ja",
+      "robots": "index,follow"
+    },
+    {
+      "status": 404,
+      "h1": "This page took a different turn.",
+      "path": "/missing-page-release-check",
+      "robots": "noindex,nofollow"
+    },
+    {
+      "status": 200,
+      "h1": "Bildschirmübersetzung für Untertitel und Text.",
+      "path": "/features/screen-translation?lang=de",
+      "robots": "index,follow"
+    }
+  ]
+}

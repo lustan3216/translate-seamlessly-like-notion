@@ -1,0 +1,15 @@
+{
+  "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
+  "icons": [
+    {
+      "name": "closed-caption",
+      "source": "assets/icons/Stroke/closed-caption.svg",
+      "sha256": "eecbb5d33535f2e25ea7b4bdb1eac8e036b0b80f640f176b73553353b333a95f"
+    },
+    {
+      "name": "table",
+      "source": "assets/icons/Stroke/table.svg",
+      "sha256": "0c6917c7a430e167bf3cda3afcf9229f7fa68108724e8dc3f3f0b8a173814371"
+    }
+  ]
+}

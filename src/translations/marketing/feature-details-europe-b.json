@@ -1,0 +1,787 @@
+{
+  "fi": {
+    "scan": {
+      "title": "Kuvasta tietoa, jota voit käyttää.",
+      "body": "Lue kyltin tai etiketin käännös kuvan päältä reaaliaikaisessa tilassa. Valitse järjestelytila, kun haluat valita ruokia ruokalistalta tai lukea asiakirjan selkeinä osioina ja taulukoina. Eri näkymät palvelevat eri tarpeita."
+    },
+    "practiceTitle": "Aloita todellisesta tarpeesta.",
+    "features": {
+      "text": {
+        "title": "Tekstikäännös tilanteeseen sopivalla sävyllä.",
+        "summary": "Käännä viesti, sähköposti tai lause ja valitse sopiva sävy. Kuuntele, kopioi tai kysy sanavalinnoista ennen vastaamista.",
+        "heading": "Valmistele sanat, jotka haluat lähettää.",
+        "body": "Kirjoita tai liitä teksti ja valitse lähtö- ja kohdekieli. Pidä sävy automaattisena tai valitse kohtelias, humoristinen, kirjemäinen, ystävällinen tai tiivis ilmaisu. Lue käännös, kuuntele ääntäminen, kopioi se tai tallenna suosikiksi. Chat-painike vie käännöksen keskusteluun, kun haluat kysyä lisää.",
+        "steps": [
+          "Valitse kielet ja kirjoita tai liitä viesti, sähköposti tai lause.",
+          "Valitse vastaukseesi sopiva sävy ja tarkista käännös.",
+          "Kuuntele, kopioi tai tallenna tulos tai kysy sanavalinnoista Chatissa."
+        ]
+      },
+      "photos": {
+        "title": "Kuvakäännös suoraan sanojen päälle.",
+        "summary": "Lue kylttejä, etikettejä ja ilmoituksia kirjoittamatta niitä uudelleen. Käytä kameraa tai kuvaa ja näe käännökset kuvan päällä.",
+        "heading": "Lue kyltti ja säilytä ympäristön vihjeet näkyvissä.",
+        "body": "Avaa Kuva-välilehden reaaliaikainen tila ja valitse kielet. Suuntaa kamera tekstiin, ota kuva tai valitse kuva kirjastosta. Sovellus tunnistaa tekstin ja näyttää käännökset kuvan päällä. Napauta tunnistettua tekstialuetta nähdäksesi käännöksen tiedot. Vaihda järjestelytilaan, jos tarvitset ruokalistan tilausvalintoja tai asiakirjan osioita ja taulukoita.",
+        "steps": [
+          "Avaa Kuva, valitse reaaliaikainen tila ja kielet.",
+          "Suuntaa kamera kylttiin tai etikettiin tai ota tai valitse kuva.",
+          "Lue käännökset kuvan päältä ja avaa lisätiedot napauttamalla tekstialuetta."
+        ]
+      },
+      "voice": {
+        "title": "Puhekäännös keskustelun molemmille osapuolille.",
+        "summary": "Seuraa puhetta kaksikielisillä tekstityksillä ja käännetyllä äänellä. Valitse kaksisuuntainen keskustelu, yksityinen kuuntelu, puolestasi puhuminen tai pelkkä tekstitys.",
+        "heading": "Valitse, miten haluat kuulla ja tulla kuulluksi.",
+        "body": "Valitse molemmat kielet ja äänitila ennen mikrofonin avaamista. Kaksisuuntainen keskustelu toistaa käännökset molemmille, yksityinen kuuntelu vain tarvitsemasi käännökset ja puolestasi puhuminen oman puheesi käännöksen toiselle. Pelkkä tekstitys poistaa automaattisen puhetoiston. Seuraa alkuperäistä ja käännettyä tekstitystä keskustelun aikana. Palaa lopuksi keskustelutekstiin ja automaattiseen yhteenvetoon, toista käännettyä puhetta tai kopioi ja jaa yhteenveto.",
+        "steps": [
+          "Valitse molemmat kielet ja tilanteeseen sopiva äänitila.",
+          "Avaa mikrofoni ja seuraa kaksikielistä tekstitystä sekä valittua äänentoistoa.",
+          "Lopeta keskustelu, tarkista keskusteluteksti ja yhteenveto ja kopioi tai jaa tarpeelliset tiedot."
+        ]
+      },
+      "agent": {
+        "title": "Tavoitteestasi lähtevä tekoälykeskusteluavustaja.",
+        "summary": "Kerro, mitä haluat selvittää tai järjestää. Voice Agent auttaa kysymään, jatkamaan ja tarkistamaan yksityiskohdat kasvokkaisessa keskustelussa.",
+        "heading": "Tavoitteen kertomisesta tuloksen tarkistamiseen.",
+        "body": "Kuvaile tavoitteesi ja rajasi tekstillä tai puheella ja vastaa avustajan valmistelukysymyksiin. Kun vahvistat tehtävän, avustaja auttaa puhumaan edessäsi olevan henkilön kanssa ja selvittää puuttuvia tietoja samalla, kun seuraat kaksikielistä keskustelua. Pyydä tarvittaessa yhteenveto. Tarkista se ensin itse. Vasta hyväksyntäsi jälkeen avustaja välittää sen toiselle osapuolelle vahvistettavaksi. Sinä teet päätökset.",
+        "steps": [
+          "Valitse molemmat kielet, kerro tavoitteesi ja vastaa valmistelukysymyksiin.",
+          "Vahvista tehtävä ja anna avustajan auttaa kysymään ja esittämään jatkokysymyksiä.",
+          "Pyydä ja tarkista yhteenveto ja hyväksy sitten toiselle osapuolelle välitettävä sisältö."
+        ]
+      },
+      "menu": {
+        "title": "Ruokalistan skannaus lukemisesta tilauksen näyttämiseen.",
+        "summary": "Muuta ruokalistan kuvat käännetyiksi ruoiksi, valinnoiksi ja hinnoiksi. Valitse ruoat, määrät ja saatavilla olevat lisukkeet ja näytä tilaus ruokalistan alkuperäisen tekstin kanssa.",
+        "heading": "Lue ruokalista, valitse ruoat ja näytä henkilökunnalle.",
+        "body": "Valitse Kuva-välilehdellä järjestelytila ja lisää ruokalistan kuvat kamerasta tai kirjastosta. Tarkista käännetyt ruokalajien nimet, kuvaukset, hinnat ja vaihtoehdot. Valitse ruoat, määrät ja esimerkiksi koot tai lisukkeet sekä lisää tarvittaessa ruokailua koskeva huomautus. Tilausnäkymässä näkyvät kunkin ruoan alkuperäinen nimi ja käännetty nimi sekä vaihtoehtojen alkuperäiset nimet ja määrät. Tunnetut hinnat lasketaan yhteen valuutoittain ilman valuuttamuunnosta. Tuntematon ruoan tai vaihtoehdon hinta estää varman kokonaissumman. Vertaa epäselviä tietoja alkuperäiseen kuvaan ja varmista ne henkilökunnalta. Ilmaisella tilillä skannaukseen voi lisätä yhden kuvan, Prolla enintään kymmenen kuvaa erässä.",
+        "steps": [
+          "Avaa Kuva → järjestelytila, valitse kielet ja lisää selkeät kuvat ruokalistasta.",
+          "Tarkista ruoat ja hinnat, valitse määrät ja saatavilla olevat vaihtoehdot ja lisää tarvittaessa huomautus.",
+          "Tarkista tilaus ja saatavilla olevat summat ja näytä alkuperäiskieliset ruoat ja vaihtoehdot henkilökunnalle."
+        ]
+      },
+      "document": {
+        "title": "Asiakirjan skannaus selkeinä kappaleina ja taulukoina.",
+        "summary": "Kuvaa paperinen, myös monisivuinen asiakirja ja lue se järjestettyinä osioina, luetteloina ja taulukoina. Vertaa alkuperäisiin kuviin ja avaa tallennetut skannaukset historiasta.",
+        "heading": "Säilytä asiakirjan osiot, kappaleet ja taulukkorakenne.",
+        "body": "Valitse Kuva-välilehdellä järjestelytila. Kuvaa asiakirjan sivut järjestyksessä tai lisää niiden kuvat kirjastosta. Lähetä sivut yhdessä ja lue tunnistettu sisältö otsikkona, osioina, kappaleina, numeroituina luetteloina ja rivejä sekä sarakkeita sisältävinä taulukoina. Palaa alkuperäisille sivuille tai tarkista lähdeteksti napauttamalla tekstiä, kun tarkistat päivämääriä, hintoja ja muita tietoja. Hae historiasta tallennettuja skannauksia otsikon tai sisältötyypin perusteella ja avaa ne myöhemmin. Ilmaisella tilillä voi lisätä yhden kuvan, Prolla enintään kymmenen kuvaa erässä. Toiminto skannaa kuvattuja sivuja eikä ole PDF- tai Word-editori.",
+        "steps": [
+          "Avaa Kuva → järjestelytila, valitse kielet ja lisää sivukuvat järjestyksessä: yksi ilmaiseksi tai enintään kymmenen Prolla.",
+          "Lähetä sivut yhdessä ja lue järjestetyt osiot, luettelot ja taulukot.",
+          "Vertaa alkuperäisiin sivuihin, tarkista lähdeteksti ja avaa tallennettu skannaus tarvittaessa historiasta."
+        ]
+      },
+      "keyboard": {
+        "title": "Käännä vastaus sovelluksessa, jota jo käytät.",
+        "summary": "Käännä luonnos ja muuta sen sävyä iPhonen tai iPadin näppäimistöllä tuetussa tekstikentässä. Tarkista tulos ennen lähettämistä.",
+        "heading": "Kirjoita, käännä ja tarkista vastaus samassa paikassa.",
+        "body": "Lisää AnyTranslator-näppäimistö sovelluksen ohjeella ja salli täysi käyttöoikeus iOS-asetuksissa verkkokäännöksiä varten. Valitse tuetussa kentässä käännettävä teksti tai valmistele luonnos ja valitse kohdekieli sekä sävy. Käännös korvaa valitun tekstin tai tekstin, jonka iOS antaa näppäimistön käyttöön. Leikepöytäkäännös näkyy erillisellä tuloskortilla, josta voit kopioida tuloksen tai lisätä sen kohdistimen kohdalle. Jotkin sovellukset ja suojatut kentät rajoittavat kolmannen osapuolen näppäimistöjä.",
+        "steps": [
+          "Lisää näppäimistö ja salli täysi käyttöoikeus sovelluksen käyttöönotto-ohjeella.",
+          "Valmistele tai valitse luonnos tuetussa tekstikentässä, vaihda näppäimistöä ja valitse kohdekieli sekä sävy.",
+          "Käännä teksti, tarkista korvattu sisältö ja lähetä itse. Kopioi tai lisää erillinen tulos leikepöytäkortilta."
+        ]
+      },
+      "chat": {
+        "title": "Jatka kysymistä tekstin ja kuvien avulla.",
+        "summary": "Tuo ilmaus, käännös tai kuva Chatiin. Kysy merkitystä, pyydä esimerkki tai mieti sopivaa vastausta.",
+        "heading": "Ymmärrä yksityiskohdat jatkokysymyksellä.",
+        "body": "Kirjoita kysymys, lisää kuvia tai jatka tekstikäännöksen sanamuodosta sen vieressä olevalla Chat-painikkeella. Kysy vieraasta ilmauksesta, pyydä uusi esimerkki tai vertaa mahdollisia vastauksia samassa keskustelussa. Tarkista vastaus, kopioi hyödylliset ilmaukset ja kysy lisää, kun tarvitset lisää taustaa. Chat auttaa tutkimaan antamaasi sisältöä. Varmista tärkeät tiedot alkuperäisestä lähteestä.",
+        "steps": [
+          "Kirjoita kysymys, lisää kuva tai avaa Chat tekstikäännöksestä.",
+          "Kysy merkityksestä, esimerkeistä tai tilanteeseen sopivasta vastauksesta.",
+          "Tarkista vastaus, kopioi hyödylliset ilmaukset ja jatka jatkokysymyksellä."
+        ]
+      },
+      "helper": {
+        "title": "Helper selittää, miten sanat toimivat.",
+        "summary": "Tutki kielioppia, esimerkkejä, sanojen merkityksiä ja mahdollisia vastauksia. Tallenna omat selitysohjeet ja käytä niitä uusien tekstien kanssa.",
+        "heading": "Valitse, mitä selitetään ja miten.",
+        "body": "Valitse tekstikäännössivulla, selittääkö Helper alkuperäistä tekstiä vai käännöstä. Valitse esimerkiksi kielioppi, sana sanalta -analyysi, esimerkit, piilomerkitys tai vastausehdotukset tai tallenna oma ohje tarvitsemaasi selitystä varten. Asetuksiin voi kuvata alasi, oppimistavoitteesi tai toivotun tarkkuuden. Ilmainen versio tukee yhtä Helper-profiilia, Pro enintään viittä. Mukautettu tieto tarkoittaa tässä uudelleen käytettäviä ohjeita, ei ladatuista asiakirjoista koostuvaa tietokantaa.",
+        "steps": [
+          "Käännä teksti ja valitse, selittääkö Helper alkuperäistä vai käännöstä.",
+          "Valitse valmis selitystapa tai tallenna oma ohje tarvitsemaasi tietoa varten.",
+          "Lue selitys ja käytä tallennettuja asetuksia uudelleen tekstin vaihtuessa."
+        ]
+      },
+      "widget": {
+        "title": "Oppimiskortit suoraan Koti-valikossa.",
+        "summary": "Kertaa sanoja ja ilmauksia, kuuntele ääntämistä ja merkitse muistamasi asiat Koti-valikon widgetissä. Lukitun näytön widget tarjoaa toisen reitin harjoitteluun.",
+        "heading": "Kuuntele ja kertaa avaamatta sovellusta joka kerta.",
+        "body": "Valitse oppimis- ja käännöskielet sovelluksessa ja lisää Koti-valikon tai lukitun näytön widget ohjeen avulla. Koti-valikon korteilla voit kuunnella ääntämistä, valita uuden kertauksen tai merkitä kortin muistetuksi. Vastauksesi ohjaavat myöhempiä kertauksia. Lukitun näytön kortin napauttaminen avaa sen sovelluksessa ja merkitsee sen uudelleen kerrattavaksi. Automaattinen sisältö on ilmainen. Prolla voit valita sisältötyyppejä, yhdistää aiheita ja vaikeustasoja sekä lisätä omia aihe- tai vaikeustaso-ohjeita.",
+        "steps": [
+          "Valitse oppimiskielet ja lisää Koti-valikon tai lukitun näytön widget sovelluksen ohjeella.",
+          "Lue kortti ja kuuntele ääntämistä sen painikkeella Koti-valikossa.",
+          "Valitse Koti-valikossa uusi kertaus tai muistettu. Napauta lukitun näytön korttia avataksesi sen ja kerrataksesi uudelleen."
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "Valitse hotellin sisäänkirjautumisessa puhekäännökseen oma kielesi ja henkilökunnan kieli. Keskustele huoneesta, vakuusmaksusta ja uloskirjautumisajasta kaksikielisen tekstityksen ja tilanteeseen sopivan äänitilan avulla.",
+        "Jos haluat pyytää myöhäistä uloskirjautumista tai selvittää lisämaksun, kerro Voice Agentille tavoitteesi ja rajasi. Vahvista tehtävä, anna sen auttaa jatkokysymyksissä ja tarkista yhteenveto ennen kuin hyväksyt sen välittämisen henkilökunnalle.",
+        "Kuvaa hotellin paperiohjeet järjestelytilassa. Lue osiot ja taulukot, vertaa uloskirjautumisaikoja tai maksuja alkuperäiseen kuvaan ja palaa tallennettuun skannaukseen oleskelun aikana."
+      ],
+      "work": [
+        "Liitä työviesti tekstikäännökseen ja valitse kohdekieli sekä suhteeseen sopiva sävy. Tarkista nimet, päivämäärät ja sitoumukset ennen vastauksen kopioimista.",
+        "Jos ilmaus jää epäselväksi, valitse Helperin lähteeksi alkuperäinen teksti tai käännös. Käytä piilomerkitystä, kielioppia, vastausehdotuksia tai alallesi tallentamaasi ohjetta.",
+        "Tuo sanamuoto Chatiin ja vertaa lyhyempää vastausta yksityiskohtaisempaan. Lisää vastaanottajan tarvitsema tausta, tarkista lopullinen luonnos ja lähetä se tavallisella viestintäsovelluksellasi."
+      ],
+      "dining": [
+        "Lisää ruokalistan sivut kohdassa Kuva → järjestelytila ja tarkista käännetyt ruoat, vaihtoehdot sekä hinnat. Valitse määrät ja saatavilla olevat lisukkeet, lisää huomautus ja näytä henkilökunnalle tilaus alkuperäisine ruokien ja vaihtoehtojen nimineen.",
+        "Kysy puhekäännöksellä epäselvästä ruoasta, annoskoosta tai ainesosasta. Valitse molemmat kielet ja varmista vastaus tarjoilijalta.",
+        "Jos keskusteluun liittyy useita ehtoja, kerro pyyntösi Voice Agentille ja anna sen auttaa jatkokysymyksissä. Tarkista yhteenveto ennen tietojen välittämistä. Henkilökunnan on vahvistettava ainesosat ja valmistustapa."
+      ],
+      "study": [
+        "Aloita sanasta tai lauseesta, jonka olet oikeasti kohdannut. Valitse se Helperin lähteeksi ja tutki esimerkkejä, sana sanalta -analyysia tai olennaisinta kielioppiselitystä.",
+        "Valitse oppimiskieli ja lisää oppimiswidget Koti-valikkoon. Kuuntele kortit ja valitse uusi kertaus tai muistettu. Prolla voit mukauttaa sisältötyyppejä, aiheita ja vaikeustasoa.",
+        "Palaa Chatiin ilmauksen kanssa, jota haluat käyttää itse. Pyydä esimerkki tutusta tilanteesta, kirjoita oma versiosi ja kysy, mitä voisit muuttaa."
+      ],
+      "messages": [
+        "Vaihda tuetussa viestikentässä AnyTranslator-näppäimistöön, valmistele tai valitse luonnos ja valitse kohdekieli sekä sävy. Käännä paikallaan ja lue tulos ennen lähettämistä.",
+        "Liitä pidempi viesti tai tarkemmin tutkittava vastaus pääsovellukseen. Vertaa käännöstä, säädä sävyä ja kuuntele ääntäminen ennen kuin kopioit sen takaisin.",
+        "Jos et ole varma toisen tarkoituksesta tai vastauksesi sävystä, kysy Chatilta ja anna asiaankuuluva teksti sekä tausta. Tarkista ehdotukset ja valitse lähetettävä sanamuoto."
+      ],
+      "reading": [
+        "Kuvaa ilmoitus, esite tai asiakirja järjestelytilassa ja lisää sivut järjestyksessä. Lue osiot, luettelot ja taulukot ja tarkista tarvitsemasi tieto alkuperäiseltä sivulta.",
+        "Kirjoita vieras ilmaus tekstikäännössivulle ja pyydä Helperiltä käyttöhuomautus, kielioppiselitys tai sana sanalta -analyysi. Valitse selityksen lähteeksi alkuperäinen teksti tai käännös.",
+        "Tuo tekstikatkelma tai kuva Chatiin, kun haluat kysyä esimerkiksi sovellettavasta päivämäärästä tai ilmauksen viittauskohteesta. Vertaa vastausta alkuperäiseen asiakirjaan ennen kuin luotat tärkeään tietoon."
+      ]
+    },
+    "documentArticle": {
+      "title": "Skannaa asiakirjan sivut selkeiksi osioiksi ja taulukoiksi",
+      "intro": "Paperinen ilmoitus, matkaesite tai monisivuinen asiakirja tarvitsee usein muutakin kuin kuvan päälle lisätyn käännöksen. Lisää sivukuvat järjestyksessä kohdassa Kuva → järjestelytila ja lähetä ne yhdessä. Tunnistettu teksti järjestyy osioiksi, kappaleiksi, luetteloiksi ja taulukoiksi, joista löydät tarvitsemasi tiedot.",
+      "tip": "Valitse lähtö- ja kohdekieli, kuvaa jokainen sivu selkeästi ja tarkista järjestys ennen lähettämistä. Ilmaisella tilillä voi käyttää yhtä kuvaa skannausta kohden, Prolla enintään kymmentä. Lue järjestetty tulos, tarkista lähde napauttamalla tekstiä ja palaa alkuperäiseen sivuun tarkistaessasi päivämäärää, summaa tai taulukon tietoa. Hae historiasta otsikolla tai sisältötyypillä avataksesi tallennetun skannauksen myöhemmin.",
+      "limit": "Ohje koskee kameralla kuvattuja tai kuvakirjastosta valittuja sivuja. Se ei kuvaa PDF- tai Word-tiedostojen tuontia, muokkausta tai vientiä. Tunnistus ja tulkinta voivat ohittaa epäselvän tekstin tai monimutkaisen asettelun, joten vertaa tärkeät tiedot alkuperäisiin sivuihin."
+    }
+  },
+  "da": {
+    "scan": {
+      "title": "Et foto bliver til noget, du kan bruge.",
+      "body": "Brug livevisning til at læse oversat tekst hen over et skilt eller en etiket. Skift til Organiser for et menukort, du kan vælge fra, eller dokumentsider med læsbare afsnit og tabeller. Hver visning har sin egen opgave."
+    },
+    "practiceTitle": "Begynd med en virkelig opgave.",
+    "features": {
+      "text": {
+        "title": "Tekstoversættelse med en tone, der passer.",
+        "summary": "Oversæt en besked, e-mail eller sætning, og vælg, hvordan den skal lyde. Lyt, kopiér eller spørg til ordlyden, før du svarer.",
+        "heading": "Gør de ord klar, du vil sende.",
+        "body": "Skriv eller indsæt teksten, og vælg kilde- og målsprog. Behold automatisk tone, eller vælg høflig, humoristisk, brevpræget, venlig eller kortfattet ordlyd. Læs resultatet, hør udtalen, kopiér det, eller gem det som favorit. Chat-knappen tager oversættelsen med ind i en samtale, når du vil spørge mere.",
+        "steps": [
+          "Vælg sprog, og skriv eller indsæt en besked, e-mail eller sætning.",
+          "Vælg en tone, der passer til dit svar, og gennemgå oversættelsen.",
+          "Lyt, kopiér eller gem resultatet, eller åbn Chat for at spørge til ordlyden."
+        ]
+      },
+      "photos": {
+        "title": "Fotooversættelse direkte oven på ordene.",
+        "summary": "Læs skilte, etiketter og meddelelser uden at skrive dem af. Brug kameraet eller et foto, og se oversat tekst oven på billedet.",
+        "heading": "Læs et skilt med omgivelserne i behold.",
+        "body": "Åbn livevisning på fanen Foto, og vælg dine sprog. Ret kameraet mod teksten, tag et foto, eller vælg et fra biblioteket. Appen genkender teksten og viser oversættelser hen over billedet. Tryk på et genkendt tekstområde for at se oversættelsens detaljer. Skift til Organiser for et menukort med bestillingsvalg eller et dokument med afsnit og tabeller.",
+        "steps": [
+          "Åbn Foto, vælg livevisning og dine sprog.",
+          "Ret kameraet mod et skilt eller en etiket, eller tag eller vælg et foto.",
+          "Læs den oversatte tekst på billedet, og tryk på et tekstområde for detaljer."
+        ]
+      },
+      "voice": {
+        "title": "Taleoversættelse til begge sider af samtalen.",
+        "summary": "Følg talen med tosprogede undertekster og oversat lyd. Vælg tovejssamtale, privat lytning, tal for mig eller kun undertekster.",
+        "heading": "Vælg, hvordan du vil høre og blive hørt.",
+        "body": "Vælg begge sprog og en lydtilstand, før du tænder mikrofonen. Tovejssamtale afspiller oversættelser for begge parter. Privat lytning afspiller de oversættelser, du har brug for. Tal for mig afspiller din oversatte tale for den anden person. Kun undertekster slår automatisk oplæsning fra. Læs originale og oversatte undertekster under samtalen. Gå bagefter tilbage til samtaleteksten og det automatiske resumé, afspil oversat tale igen, eller kopiér og del resuméet.",
+        "steps": [
+          "Vælg begge sprog og den lydtilstand, der passer til situationen.",
+          "Tænd mikrofonen, og følg de tosprogede undertekster og den valgte lydudgang.",
+          "Afslut samtalen, gennemgå samtaletekst og resumé, og kopiér eller del nyttige oplysninger."
+        ]
+      },
+      "agent": {
+        "title": "En AI-samtaleassistent, der tager udgangspunkt i dit mål.",
+        "summary": "Forklar, hvad du skal have afklaret eller arrangeret. Voice Agent hjælper dig med at spørge, følge op og kontrollere detaljer i en samtale ansigt til ansigt.",
+        "heading": "Fra at forklare dit mål til at gennemgå resultatet.",
+        "body": "Beskriv dit mål og dine grænser med tekst eller tale, og svar på assistentens forberedende spørgsmål. Når du bekræfter opgaven, hjælper assistenten dig med at tale med personen foran dig og spørger ind til manglende detaljer, mens du følger den tosprogede samtale. Bed om et resumé, når du har brug for det. Gennemgå det først selv. Først efter din godkendelse viderebringer assistenten det til den anden person til bekræftelse. Du træffer beslutningerne.",
+        "steps": [
+          "Vælg begge sprog, forklar dit mål, og svar på eventuelle forberedende spørgsmål.",
+          "Bekræft opgaven, og lad assistenten hjælpe dig med spørgsmål og opfølgning hos den anden person.",
+          "Bed om og gennemgå et resumé, og godkend derefter det, der viderebringes."
+        ]
+      },
+      "menu": {
+        "title": "Menuscanning fra at læse retter til at vise bestillingen.",
+        "summary": "Lav menufotos om til oversatte retter, valgmuligheder og priser. Vælg mad, antal og tilgængeligt tilbehør, og vis bestillingen med menuens originale tekst.",
+        "heading": "Læs menuen, vælg mad, og vis personalet.",
+        "body": "Vælg Organiser i Foto, og tilføj menufotos fra kameraet eller biblioteket. Gennemgå oversatte navne på retter, beskrivelser, priser og tilgængelige valg. Vælg retter, antal og valgmuligheder som størrelser eller tilbehør, og tilføj en bemærkning til måltidet efter behov. Bestillingsvisningen viser hver rets originale og oversatte navn samt originale navne på valgmuligheder og antal. Kendte priser lægges sammen for hver valuta uden valutaomregning. En ukendt pris på en ret eller valgmulighed forhindrer en sikker totalsum. Sammenlign uklare detaljer med originalfotoet, og bekræft dem med personalet. Gratis scanninger tager ét foto; Pro tager op til ti pr. billedserie.",
+        "steps": [
+          "Åbn Foto → Organiser, vælg sprog, og tilføj tydelige fotos af menuen.",
+          "Gennemgå retter og priser, vælg antal og tilgængelige valg, og tilføj om nødvendigt en bemærkning.",
+          "Kontrollér bestillingen og eventuelle totaler, og vis personalet retter og valg på originalsproget."
+        ]
+      },
+      "document": {
+        "title": "Dokumentscanning med læsbare afsnit og tabeller.",
+        "summary": "Fotografér et papirdokument, også med flere sider, og læs det som ordnede afsnit, lister og tabeller. Sammenlign med originalbillederne, og genåbn gemte scanninger fra historikken.",
+        "heading": "Bevar dokumentets afsnit, tekstafsnit og tabelstruktur.",
+        "body": "Vælg Organiser i Foto, og fotografér dokumentsiderne i rækkefølge, eller tilføj deres fotos fra biblioteket. Send dem samlet for at læse det genkendte indhold som titel, afsnit, tekstafsnit, nummererede lister og tabeller med rækker og kolonner. Skift til hver originalside, eller tryk på teksten for at kontrollere kilden, når du gennemgår datoer, priser og andre detaljer. Søg efter gemte scanninger efter titel eller indholdstype i historikken, og genåbn dem senere. Gratis scanninger tager ét foto; Pro tager op til ti ad gangen. Forløbet scanner fotograferede sider; det er ikke et redigeringsværktøj til PDF eller Word.",
+        "steps": [
+          "Åbn Foto → Organiser, vælg sprog, og tilføj sidefotos i rækkefølge: ét gratis eller op til ti med Pro.",
+          "Send siderne samlet, og læs de ordnede afsnit, lister og tabeller.",
+          "Sammenlign med originalsiderne, kontrollér kildeteksten, og genåbn den gemte scanning fra historikken efter behov."
+        ]
+      },
+      "keyboard": {
+        "title": "Oversæt dit svar i den app, du allerede bruger.",
+        "summary": "Brug iPhone- eller iPad-tastaturet til at oversætte en kladde og tilpasse tonen i et understøttet tekstfelt. Gennemgå resultatet, før du sender det.",
+        "heading": "Skriv, oversæt og kontrollér svaret på stedet.",
+        "body": "Følg appens vejledning for at tilføje AnyTranslator-tastaturet og slå Fuld adgang til i iOS-indstillinger til onlineoversættelse. Vælg teksten, du vil oversætte, eller klargør din kladde i et understøttet felt, og vælg målsprog og tone. Oversættelsen erstatter den valgte tekst eller den tekst, iOS giver tastaturet adgang til. Oversættelse fra udklipsholderen bruger et særskilt resultatkort, hvor du kan kopiere resultatet eller indsætte det ved markøren. Visse apps og sikre felter begrænser tredjepartstastaturer.",
+        "steps": [
+          "Tilføj tastaturet, og slå Fuld adgang til ved at følge appens opsætningsvejledning.",
+          "Klargør eller vælg kladden i et understøttet tekstfelt, skift tastatur, og vælg målsprog og tone.",
+          "Oversæt teksten, kontrollér erstatningen, og send selv. Brug udklipsholderkortet til at kopiere eller indsætte et separat resultat."
+        ]
+      },
+      "chat": {
+        "title": "Spørg videre med tekst og fotos.",
+        "summary": "Tag en vending, oversættelse eller et foto med ind i Chat. Spørg om betydningen, bed om et eksempel, eller find frem til dit svar.",
+        "heading": "Brug det næste spørgsmål til at forstå detaljerne.",
+        "body": "Skriv et spørgsmål, tilføj fotos, eller brug Chat-knappen ved en tekstoversættelse til at fortsætte med den ordlyd. Spørg om et ukendt udtryk, bed om et andet eksempel, eller sammenlign mulige svar i samme samtale. Gennemgå svaret, kopiér nyttige formuleringer, og stil et opfølgende spørgsmål, når du har brug for mere sammenhæng. Chat hjælper med at undersøge det indhold, du giver; kontrollér vigtige fakta i originalen.",
+        "steps": [
+          "Skriv et spørgsmål, tilføj et foto, eller åbn Chat fra en tekstoversættelse.",
+          "Spørg om betydningen, eksempler eller et svar, der passer til situationen.",
+          "Gennemgå svaret, kopiér nyttige formuleringer, og fortsæt med et opfølgende spørgsmål."
+        ]
+      },
+      "helper": {
+        "title": "Helper-forklaringer, der viser, hvordan ordene virker.",
+        "summary": "Udforsk grammatik, eksempler, betydning ord for ord og mulige svar. Gem dine egne forklaringsinstruktioner, og genbrug dem med ny tekst.",
+        "heading": "Vælg, hvad der skal forklares, og hvordan.",
+        "body": "Vælg på tekstoversættelsessiden, om Helper skal forklare kildeteksten eller oversættelsen. Vælg en forudindstilling som grammatik, ord-for-ord-analyse, eksempler, skjult betydning eller svarforslag, eller gem din egen instruktion til den forklaring, du har brug for. Gemte indstillinger kan beskrive dit fagområde, læringsmål eller ønskede detaljeniveau. Gratisversionen understøtter én Helper-profil, og Pro op til fem. Tilpasset viden betyder her genbrugelige instruktioner frem for en vidensbase af uploadede dokumenter.",
+        "steps": [
+          "Oversæt noget tekst, og vælg, om Helper skal forklare originalen eller oversættelsen.",
+          "Vælg en forklaringsforudindstilling, eller gem din egen instruktion til de ønskede detaljer.",
+          "Læs forklaringen, og genbrug dine gemte indstillinger, når teksten ændrer sig."
+        ]
+      },
+      "widget": {
+        "title": "Læringskort, du kan bruge fra hjemmeskærmen.",
+        "summary": "Repetér ord og vendinger, hør udtalen, og markér det, du husker, direkte i widgetten på hjemmeskærmen. Tilføj en widget på låseskærmen som endnu en vej tilbage til øvelse.",
+        "heading": "Lyt og repetér uden at åbne appen hver gang.",
+        "body": "Vælg dine lærings- og oversættelsessprog i appen, og følg vejledningen til at tilføje en widget på hjemme- eller låseskærmen. Kort på hjemmeskærmen lader dig afspille udtale, vælge at repetere igen eller markere et kort som husket. Dine svar styrer senere repetition. Et tryk på et kort på låseskærmen åbner det i appen og markerer det til ny repetition. Automatisk indhold er gratis. Pro lader dig vælge indholdstyper, kombinere emner og sværhedsgrader og tilføje egne instruktioner til emne eller sværhedsgrad.",
+        "steps": [
+          "Vælg læringssprog, og følg appens vejledning til at tilføje en widget på hjemme- eller låseskærmen.",
+          "Læs et kort, og brug dets udtaleknap på hjemmeskærmen.",
+          "Vælg repetér igen eller husket på hjemmeskærmen. Tryk på et kort på låseskærmen for at åbne det og repetere igen."
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "Vælg dit eget og personalets sprog i taleoversættelse ved indtjekning på hotellet. Brug tosprogede undertekster og en lydtilstand, der passer til stedet, til at tale om værelset, depositum og udtjekningstid.",
+        "Skal du bede om sen udtjekning eller afklare et ekstra gebyr, så fortæl Voice Agent dit mål og dine grænser. Bekræft opgaven, lad den hjælpe med opfølgende spørgsmål, og gennemgå resuméet, før du godkender en viderebringelse til personalet.",
+        "Fotografér hotellets trykte anvisninger i Organiser. Læs afsnit og tabeller, sammenlign udtjekningstider eller gebyrer med originalbilledet, og vend tilbage til den gemte scanning under opholdet."
+      ],
+      "work": [
+        "Indsæt en arbejdsbesked i tekstoversættelse, og vælg målsprog og en tone, der passer til relationen. Kontrollér navne, datoer og forpligtelser, før du kopierer svaret.",
+        "Hvis en vending stadig er uklar, så vælg originalen eller oversættelsen som kilde for Helper. Brug skjult betydning, grammatik eller svarforslag eller din gemte instruktion til dit fagområde.",
+        "Tag ordlyden med ind i Chat for at sammenligne et kortere svar med et mere detaljeret. Tilføj den baggrund, modtageren har brug for, gennemgå den endelige kladde, og send via din sædvanlige kommunikationsapp."
+      ],
+      "dining": [
+        "Tilføj menusiderne i Foto → Organiser, og gennemgå oversatte retter, valg og priser. Vælg antal og tilgængeligt tilbehør, tilføj en bemærkning, og vis personalet bestillingen med originale navne på retter og valg.",
+        "Brug taleoversættelse til at spørge om en ret, portionsstørrelse eller ingrediens, der stadig er uklar. Vælg begge sprog, og bekræft svaret med den, der serverer.",
+        "Ved en samtale med flere betingelser kan du forklare dit ønske til Voice Agent og lade den hjælpe med opfølgende spørgsmål. Gennemgå resuméet, før den viderebringer detaljerne. Personalet skal bekræfte ingredienser og tilberedning."
+      ],
+      "study": [
+        "Begynd med et ord eller en sætning, du faktisk er stødt på. Vælg det som kilde for Helper, og se på eksempler, ord-for-ord-analyse eller den mest relevante grammatiske forklaring.",
+        "Indstil dit læringssprog, og tilføj læringswidgetten på hjemmeskærmen. Lyt til kortene, og markér repetér igen eller husket. Pro kan tilpasse indholdstyper, emner og sværhedsgrad.",
+        "Vend tilbage til Chat med en vending, du selv vil bruge. Bed om et eksempel fra en velkendt situation, skriv din egen version, og spørg, hvad du kan ændre."
+      ],
+      "messages": [
+        "Skift til AnyTranslator-tastaturet i et understøttet beskedfelt, klargør eller vælg kladden, og vælg målsprog og tone. Oversæt på stedet, og læs teksten, før du sender.",
+        "Indsæt længere beskeder eller svar, du vil undersøge nærmere, i hovedappen. Sammenlign oversættelsen, tilpas tonen, og lyt til udtalen, før du kopierer teksten tilbage.",
+        "Er du usikker på, hvad den anden mener, eller hvordan dit svar lyder, så spørg Chat med relevant tekst og sammenhæng. Gennemgå forslagene, og vælg den ordlyd, du vil sende."
+      ],
+      "reading": [
+        "Fotografér en meddelelse, brochure eller et dokument i Organiser, og tilføj siderne i rækkefølge. Læs afsnit, lister og tabeller, og skift til originalsiden for at kontrollere den ønskede detalje.",
+        "Indsæt et ukendt udtryk på tekstoversættelsessiden, og bed Helper om en brugsnote, grammatisk forklaring eller ord-for-ord-analyse. Vælg, om den skal forklare originalen eller oversættelsen.",
+        "Tag et tekststykke eller foto med ind i Chat, når du vil stille et konkret spørgsmål, for eksempel hvilken dato der gælder, eller hvad en vending henviser til. Sammenlign svaret med originaldokumentet, før du stoler på en vigtig detalje."
+      ]
+    },
+    "documentArticle": {
+      "title": "Scan dokumentsider til læsbare afsnit og tabeller",
+      "intro": "En trykt meddelelse, rejsebrochure eller et dokument med flere sider kræver ofte mere end tekst oven på et billede. Tilføj sidefotos i rækkefølge i Foto → Organiser, og send dem samlet. Resultatet ordner den genkendte tekst i afsnit, tekstafsnit, lister og tabeller, så du kan finde de oplysninger, du skal bruge.",
+      "tip": "Vælg kilde- og målsprog, fotografér hver side tydeligt, og kontrollér rækkefølgen, før du sender. Gratisversionen tager ét foto pr. scanning; Pro op til ti. Læs det ordnede resultat, tryk på tekst for at kontrollere kilden, og skift til originalsiden ved gennemgang af en dato, et beløb eller en tabelpost. Søg i historikken efter titel eller indholdstype for at genåbne den gemte scanning senere.",
+      "limit": "Denne vejledning gælder fotograferede sider fra kameraet eller fotobiblioteket. Den beskriver ikke import, redigering eller eksport af PDF- eller Word-filer. Genkendelse og fortolkning kan overse uklar tekst eller komplekse layouts, så sammenlign vigtige detaljer med originalsiderne."
+    }
+  },
+  "nl": {
+    "scan": {
+      "title": "Een foto wordt informatie die je kunt gebruiken.",
+      "body": "Lees met de liveweergave vertaalde tekst over een bord of etiket. Schakel over naar Ordenen voor een menu waaruit je kunt kiezen, of documentpagina’s met leesbare onderdelen en tabellen. Elke weergave dient een andere taak."
+    },
+    "practiceTitle": "Begin met een echte taak.",
+    "features": {
+      "text": {
+        "title": "Tekstvertaling met een passende toon.",
+        "summary": "Vertaal een bericht, e-mail of zin en kies hoe je wilt overkomen. Luister, kopieer of vraag naar de formulering voordat je antwoordt.",
+        "heading": "Bereid de woorden voor die je wilt versturen.",
+        "body": "Typ of plak je tekst en selecteer de bron- en doeltaal. Laat de toon automatisch kiezen of gebruik een beleefde, humoristische, briefachtige, vriendelijke of beknopte formulering. Lees het resultaat, beluister de uitspraak, kopieer het of sla het op als favoriet. Met de Chat-knop neem je de vertaling mee naar een gesprek als je meer wilt vragen.",
+        "steps": [
+          "Selecteer je talen en typ of plak een bericht, e-mail of zin.",
+          "Kies de toon die bij je antwoord past en controleer de vertaling.",
+          "Luister, kopieer of bewaar het resultaat, of open Chat om naar de formulering te vragen."
+        ]
+      },
+      "photos": {
+        "title": "Fotovertaling direct over de woorden.",
+        "summary": "Lees borden, etiketten en mededelingen zonder ze over te typen. Gebruik de camera of een foto en zie de vertaling over het beeld.",
+        "heading": "Lees een bord terwijl de omgeving zichtbaar blijft.",
+        "body": "Open de liveweergave op het tabblad Foto en selecteer je talen. Richt de camera op de tekst, maak een foto of kies er een uit je bibliotheek. De app herkent tekst en toont vertalingen over het beeld. Tik op een herkend tekstgebied voor de vertaalgegevens. Schakel over naar Ordenen voor een menu met bestelkeuzes of een document met onderdelen en tabellen.",
+        "steps": [
+          "Open Foto, kies de liveweergave en selecteer je talen.",
+          "Richt de camera op een bord of etiket, of maak of kies een foto.",
+          "Lees de vertaalde tekst over het beeld en tik op een tekstgebied voor details."
+        ]
+      },
+      "voice": {
+        "title": "Spraakvertaling voor beide kanten van het gesprek.",
+        "summary": "Volg spraak met tweetalige ondertitels en vertaalde audio. Kies een tweerichtingsgesprek, privé luisteren, namens jou spreken of alleen ondertitels.",
+        "heading": "Kies hoe je wilt horen en gehoord wilt worden.",
+        "body": "Selecteer beide talen en een audiomodus voordat je de microfoon aanzet. Een tweerichtingsgesprek speelt vertalingen voor beide partijen af. Privé luisteren speelt de vertalingen af die jij nodig hebt. Namens jou spreken laat de ander jouw vertaalde spraak horen. Alleen ondertitels schakelt automatisch voorlezen uit. Lees tijdens het praten de oorspronkelijke en vertaalde ondertitels. Bekijk na afloop het transcript en de automatische samenvatting, speel vertaalde spraak opnieuw af of kopieer en deel de samenvatting.",
+        "steps": [
+          "Selecteer beide talen en de audiomodus die bij de situatie past.",
+          "Zet de microfoon aan en volg de tweetalige ondertitels en de gekozen audio-uitvoer.",
+          "Beëindig het gesprek, bekijk het transcript en de samenvatting en kopieer of deel nuttige gegevens."
+        ]
+      },
+      "agent": {
+        "title": "Een AI-gespreksassistent die vanuit jouw doel werkt.",
+        "summary": "Leg uit wat je wilt uitzoeken of regelen. Voice Agent helpt je vragen, doorvragen en details controleren in een persoonlijk gesprek.",
+        "heading": "Van je doel uitleggen tot het resultaat controleren.",
+        "body": "Beschrijf je doel en grenzen met tekst of spraak en beantwoord de voorbereidende vragen. Zodra je de taak bevestigt, helpt de assistent je met de persoon tegenover je te spreken en vraagt hij door op ontbrekende details terwijl jij het tweetalige gesprek volgt. Vraag om een samenvatting wanneer je die nodig hebt. Controleer die eerst zelf. Pas na jouw goedkeuring geeft de assistent de inhoud ter bevestiging door aan de ander. Jij neemt de beslissingen.",
+        "steps": [
+          "Kies beide talen, leg je doel uit en beantwoord eventuele voorbereidende vragen.",
+          "Bevestig de taak en laat de assistent helpen met vragen en doorvragen bij de ander.",
+          "Vraag om een samenvatting, controleer die en keur goed wat aan de ander wordt doorgegeven."
+        ]
+      },
+      "menu": {
+        "title": "Menuscan: van gerechten lezen tot je bestelling tonen.",
+        "summary": "Zet menufoto’s om in vertaalde gerechten, opties en prijzen. Kies eten, aantallen en beschikbare extra’s en toon de bestelling met de oorspronkelijke menutekst.",
+        "heading": "Lees het menu, kies je eten en laat het zien.",
+        "body": "Kies Ordenen in Foto en voeg menufoto’s toe via de camera of je bibliotheek. Bekijk de vertaalde gerechtnamen, beschrijvingen, prijzen en beschikbare keuzes. Kies gerechten, aantallen en opties zoals maten of extra’s en voeg zo nodig een opmerking toe. De bestelweergave toont de oorspronkelijke en vertaalde naam van elk gerecht, met oorspronkelijke optienamen en aantallen. Bekende prijzen worden per valuta opgeteld, zonder omrekening. Een onbekende gerecht- of optieprijs verhindert een zeker totaal. Vergelijk onduidelijke details met de oorspronkelijke foto en bevestig ze met het personeel. Gratis scans bevatten één foto; met Pro maximaal tien per reeks.",
+        "steps": [
+          "Open Foto → Ordenen, selecteer je talen en voeg duidelijke foto’s van het menu toe.",
+          "Bekijk gerechten en prijzen, kies aantallen en beschikbare opties en voeg zo nodig een opmerking toe.",
+          "Controleer de bestelling en beschikbare totalen en toon de gerechten en opties in de oorspronkelijke taal aan het personeel."
+        ]
+      },
+      "document": {
+        "title": "Documenten scannen met leesbare alinea’s en tabellen.",
+        "summary": "Fotografeer een papieren document, ook met meerdere pagina’s, en lees het als geordende onderdelen, lijsten en tabellen. Vergelijk met de oorspronkelijke beelden en heropen bewaarde scans vanuit de geschiedenis.",
+        "heading": "Behoud onderdelen, alinea’s en de tabelstructuur.",
+        "body": "Kies Ordenen in Foto en fotografeer documentpagina’s op volgorde of voeg hun foto’s toe uit je bibliotheek. Verstuur ze samen om de herkende inhoud te lezen als titel, onderdelen, alinea’s, genummerde lijsten en tabellen met rijen en kolommen. Ga terug naar elke oorspronkelijke pagina of tik op tekst om de bron te controleren bij datums, prijzen en andere details. Zoek bewaarde scans op titel of inhoudstype in de geschiedenis en open ze later opnieuw. Gratis scans bevatten één foto; Pro maximaal tien per reeks. Deze werkwijze scant gefotografeerde pagina’s en is geen PDF- of Word-editor.",
+        "steps": [
+          "Open Foto → Ordenen, selecteer je talen en voeg paginafoto’s op volgorde toe: één gratis of maximaal tien met Pro.",
+          "Verstuur de pagina’s samen en lees de geordende onderdelen, lijsten en tabellen.",
+          "Vergelijk met de oorspronkelijke pagina’s, controleer brontekst en heropen de bewaarde scan zo nodig vanuit de geschiedenis."
+        ]
+      },
+      "keyboard": {
+        "title": "Vertaal je antwoord in de app die je al gebruikt.",
+        "summary": "Vertaal een concept en pas de toon aan met het iPhone- of iPad-toetsenbord in een ondersteund tekstveld. Controleer het resultaat voordat je het verstuurt.",
+        "heading": "Schrijf, vertaal en controleer je antwoord ter plekke.",
+        "body": "Volg de appgids om het AnyTranslator-toetsenbord toe te voegen en Volledige toegang in te schakelen in de iOS-instellingen voor onlinevertaling. Selecteer in een ondersteund veld de te vertalen tekst of bereid je concept voor en kies de doeltaal en toon. De vertaling vervangt de geselecteerde tekst of de tekst die iOS aan het toetsenbord beschikbaar stelt. Klembordvertaling gebruikt een afzonderlijke resultaatkaart waar je het resultaat kunt kopiëren of bij de cursor invoegen. Sommige apps en beveiligde velden beperken toetsenborden van derden.",
+        "steps": [
+          "Voeg het toetsenbord toe en schakel Volledige toegang in volgens de installatiegids in de app.",
+          "Bereid je concept voor of selecteer het in een ondersteund tekstveld, wissel van toetsenbord en kies de doeltaal en toon.",
+          "Vertaal de tekst, controleer de vervanging en verstuur zelf. Kopieer of voeg een afzonderlijk resultaat in via de klembordkaart."
+        ]
+      },
+      "chat": {
+        "title": "Blijf doorvragen met tekst en foto’s.",
+        "summary": "Neem een uitdrukking, vertaling of foto mee naar Chat. Vraag wat die betekent, vraag om een voorbeeld of bepaal hoe je wilt antwoorden.",
+        "heading": "Begrijp de details met je volgende vraag.",
+        "body": "Schrijf een vraag, voeg foto’s toe of gebruik de Chat-knop naast een tekstvertaling om verder te gaan met die formulering. Vraag naar een onbekende uitdrukking, vraag een ander voorbeeld of vergelijk mogelijke antwoorden binnen hetzelfde gesprek. Controleer het antwoord, kopieer nuttige formuleringen en vraag door als er meer context nodig is. Chat helpt je aangeleverde inhoud te onderzoeken. Controleer belangrijke feiten aan de hand van het origineel.",
+        "steps": [
+          "Voer een vraag in, voeg een foto toe of open Chat vanuit een tekstvertaling.",
+          "Vraag naar de betekenis, voorbeelden of een antwoord dat bij je situatie past.",
+          "Controleer het antwoord, kopieer nuttige formuleringen en ga verder met een vervolgvraag."
+        ]
+      },
+      "helper": {
+        "title": "Uitleg van Helper laat zien hoe woorden werken.",
+        "summary": "Verken grammatica, voorbeelden, woordbetekenissen en mogelijke antwoorden. Bewaar je eigen uitleginstructies en gebruik ze opnieuw bij nieuwe tekst.",
+        "heading": "Kies wat er wordt uitgelegd en hoe.",
+        "body": "Kies op de tekstvertaalpagina of Helper de brontekst of vertaling uitlegt. Selecteer een voorinstelling zoals grammatica, woord-voor-woordanalyse, voorbeelden, verborgen betekenis of antwoordvoorstellen, of bewaar je eigen instructie voor de gewenste uitleg. Je instellingen kunnen je vakgebied, leerdoel of gewenste detailniveau beschrijven. De gratis versie ondersteunt één Helper-profiel, Pro maximaal vijf. Aangepaste kennis betekent hier herbruikbare instructies, geen kennisbank met geüploade documenten.",
+        "steps": [
+          "Vertaal tekst en kies of Helper het origineel of de vertaling moet uitleggen.",
+          "Kies een uitlegvoorinstelling of bewaar je eigen instructie voor de gewenste details.",
+          "Lees de uitleg en gebruik je bewaarde instellingen opnieuw als de tekst verandert."
+        ]
+      },
+      "widget": {
+        "title": "Leerkaarten die je vanaf het beginscherm gebruikt.",
+        "summary": "Herhaal woorden en uitdrukkingen, hoor de uitspraak en markeer wat je onthoudt direct in de beginschermwidget. Voeg een toegangsschermwidget toe voor een extra weg terug naar oefenen.",
+        "heading": "Luister en herhaal zonder telkens de app te openen.",
+        "body": "Kies je leer- en vertaaltalen in de app en volg de gids om een widget op het begin- of toegangsscherm toe te voegen. Met beginschermkaarten speel je de uitspraak af, kies je opnieuw herhalen of markeer je een kaart als onthouden. Je antwoorden sturen latere herhalingen. Tikken op een toegangsschermkaart opent die in de app en markeert die voor nog een herhaling. Automatische inhoud is gratis. Met Pro kies je inhoudstypen, combineer je onderwerpen en moeilijkheidsniveaus en voeg je eigen instructies voor onderwerp of moeilijkheid toe.",
+        "steps": [
+          "Kies je leertalen en volg de appgids om een widget op het begin- of toegangsscherm toe te voegen.",
+          "Lees een kaart en gebruik de uitspraakknop op het beginscherm.",
+          "Kies opnieuw herhalen of onthouden op het beginscherm. Tik op een toegangsschermkaart om die te openen en opnieuw te herhalen."
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "Kies bij het inchecken in een hotel jouw taal en die van het personeel in spraakvertaling. Bespreek je kamer, borg en uitchecktijd met tweetalige ondertitels en een audiomodus die bij de omgeving past.",
+        "Wil je later uitchecken of een toeslag ophelderen, vertel Voice Agent dan je doel en grenzen. Bevestig de taak, laat de assistent helpen met vervolgvragen en controleer de samenvatting voordat je toestemming geeft die door te geven aan het personeel.",
+        "Fotografeer de papieren hotelinstructies in Ordenen. Lees de onderdelen en tabellen, vergelijk uitchecktijden of kosten met de oorspronkelijke foto en bekijk de bewaarde scan tijdens je verblijf opnieuw."
+      ],
+      "work": [
+        "Plak een werkbericht in tekstvertaling en kies de doeltaal en een toon die bij de relatie past. Controleer namen, datums en toezeggingen voordat je het antwoord kopieert.",
+        "Is een uitdrukking nog onduidelijk, kies dan het origineel of de vertaling voor Helper. Gebruik verborgen betekenis, grammatica, antwoordvoorstellen of je bewaarde instructie voor je vakgebied.",
+        "Neem de formulering mee naar Chat om een korter antwoord te vergelijken met een uitgebreider antwoord. Voeg de context toe die de ander nodig heeft, controleer het definitieve concept en verstuur het via je gebruikelijke communicatie-app."
+      ],
+      "dining": [
+        "Voeg menupagina’s toe in Foto → Ordenen en bekijk vertaalde gerechten, opties en prijzen. Kies aantallen en beschikbare extra’s, voeg een opmerking toe en toon de bestelling met oorspronkelijke gerecht- en optienamen aan het personeel.",
+        "Vraag via spraakvertaling naar een gerecht, portiegrootte of ingrediënt dat nog onduidelijk is. Selecteer beide talen en bevestig het antwoord met degene die je bedient.",
+        "Leg bij een gesprek met meerdere voorwaarden je verzoek uit aan Voice Agent en laat de assistent helpen doorvragen. Controleer de samenvatting voordat de details worden doorgegeven. Het personeel moet ingrediënten en bereiding bevestigen."
+      ],
+      "study": [
+        "Begin met een woord of zin die je werkelijk bent tegengekomen. Kies die als bron voor Helper en bekijk voorbeelden, woord-voor-woordanalyse of de relevantste grammaticale uitleg.",
+        "Stel je leertaal in en voeg de leerwidget toe aan je beginscherm. Luister naar kaarten en markeer opnieuw herhalen of onthouden. Met Pro pas je inhoudstypen, onderwerpen en moeilijkheid aan.",
+        "Ga terug naar Chat met een uitdrukking die je zelf wilt gebruiken. Vraag om een voorbeeld in een bekende situatie, schrijf je eigen versie en vraag wat je kunt veranderen."
+      ],
+      "messages": [
+        "Schakel in een ondersteund berichtenveld over naar het AnyTranslator-toetsenbord, bereid je concept voor of selecteer het en kies de doeltaal en toon. Vertaal ter plekke en lees het resultaat voor je het verstuurt.",
+        "Plak een langer bericht of een antwoord dat je beter wilt bekijken in de hoofdapp. Vergelijk de vertaling, pas de toon aan en beluister de uitspraak voordat je die terugkopieert.",
+        "Twijfel je aan wat de ander bedoelt of hoe je antwoord overkomt, vraag het dan aan Chat met de relevante tekst en context. Controleer de voorstellen en kies de formulering die je wilt versturen."
+      ],
+      "reading": [
+        "Fotografeer een mededeling, brochure of document in Ordenen en voeg de pagina’s op volgorde toe. Lees de onderdelen, lijsten en tabellen en ga naar de oorspronkelijke pagina om een detail te controleren.",
+        "Voer een onbekende uitdrukking in op de tekstvertaalpagina en vraag Helper om een gebruikstoelichting, grammaticale uitleg of woord-voor-woordanalyse. Kies of de uitleg het origineel of de vertaling betreft.",
+        "Neem een passage of foto mee naar Chat voor een specifieke vraag, zoals welke datum geldt of waarnaar een uitdrukking verwijst. Vergelijk het antwoord met het oorspronkelijke document voordat je op een belangrijk detail vertrouwt."
+      ]
+    },
+    "documentArticle": {
+      "title": "Scan documentpagina’s tot leesbare onderdelen en tabellen",
+      "intro": "Een papieren mededeling, reisbrochure of document met meerdere pagina’s vraagt vaak om meer dan tekst over een foto. Voeg paginafoto’s op volgorde toe in Foto → Ordenen en verstuur ze samen. Het resultaat ordent de herkende tekst in onderdelen, alinea’s, lijsten en tabellen, zodat je de nodige informatie kunt vinden.",
+      "tip": "Kies de bron- en doeltaal, fotografeer elke pagina duidelijk en controleer de volgorde voor het versturen. Gratis scans bevatten één foto, Pro maximaal tien. Lees het geordende resultaat, tik op tekst om de bron te controleren en ga terug naar de oorspronkelijke pagina bij een datum, bedrag of tabelwaarde. Zoek in de geschiedenis op titel of inhoudstype om de bewaarde scan later opnieuw te openen.",
+      "limit": "Deze gids gaat over gefotografeerde pagina’s uit de camera of fotobibliotheek. Hij beschrijft geen import, bewerking of export van PDF- of Word-bestanden. Herkenning en interpretatie kunnen onduidelijke tekst of complexe indelingen missen. Vergelijk belangrijke details daarom met de oorspronkelijke pagina’s."
+    }
+  },
+  "no": {
+    "scan": {
+      "title": "Et bilde blir til informasjon du kan bruke.",
+      "body": "Bruk sanntidsvisning til å lese oversatt tekst over et skilt eller en etikett. Bytt til Organiser for en meny du kan velge fra, eller dokumentsider med lesbare avsnitt og tabeller. Hver visning løser en egen oppgave."
+    },
+    "practiceTitle": "Begynn med en virkelig oppgave.",
+    "features": {
+      "text": {
+        "title": "Tekstoversettelse med en tone som passer.",
+        "summary": "Oversett en melding, e-post eller setning, og velg hvordan den skal høres ut. Lytt, kopier eller spør om ordlyden før du svarer.",
+        "heading": "Gjør klar ordene du vil sende.",
+        "body": "Skriv eller lim inn teksten, og velg kilde- og målspråk. Behold automatisk tone, eller velg høflig, humoristisk, brevpreget, vennlig eller kortfattet ordlyd. Les resultatet, hør uttalen, kopier det eller lagre det som favoritt. Chat-knappen tar oversettelsen med inn i en samtale når du vil spørre mer.",
+        "steps": [
+          "Velg språk, og skriv eller lim inn en melding, e-post eller setning.",
+          "Velg tonen som passer til svaret, og se gjennom oversettelsen.",
+          "Lytt, kopier eller lagre resultatet, eller åpne Chat for å spørre om ordlyden."
+        ]
+      },
+      "photos": {
+        "title": "Bildeoversettelse rett over ordene.",
+        "summary": "Les skilt, etiketter og oppslag uten å skrive dem av. Bruk kameraet eller et bilde, med oversatt tekst oppå bildet.",
+        "heading": "Les et skilt med omgivelsene i behold.",
+        "body": "Åpne sanntidsvisning i Bilde-fanen og velg språk. Rett kameraet mot teksten, ta et bilde eller velg et fra biblioteket. Appen gjenkjenner tekst og viser oversettelser over bildet. Trykk på et gjenkjent tekstområde for å se oversettelsesdetaljene. Bytt til Organiser for en meny med bestillingsvalg eller et dokument med avsnitt og tabeller.",
+        "steps": [
+          "Åpne Bilde, velg sanntidsvisning og språk.",
+          "Rett kameraet mot et skilt eller en etikett, eller ta eller velg et bilde.",
+          "Les den oversatte teksten over bildet, og trykk på et tekstområde for detaljer."
+        ]
+      },
+      "voice": {
+        "title": "Taleoversettelse for begge sider av samtalen.",
+        "summary": "Følg talen med tospråklige undertekster og oversatt lyd. Velg toveissamtale, privat lytting, snakk for meg eller bare undertekster.",
+        "heading": "Velg hvordan du vil høre og bli hørt.",
+        "body": "Velg begge språkene og en lydmodus før du slår på mikrofonen. Toveissamtale spiller av oversettelser for begge parter. Privat lytting spiller av oversettelsene du trenger. Snakk for meg spiller av din oversatte tale for den andre personen. Bare undertekster slår av automatisk opplesing. Les originale og oversatte undertekster mens dere snakker. Gå tilbake til samtaleteksten og det automatiske sammendraget etterpå, spill oversatt tale på nytt, eller kopier og del sammendraget.",
+        "steps": [
+          "Velg begge språkene og lydmodusen som passer til situasjonen.",
+          "Slå på mikrofonen, og følg de tospråklige undertekstene og valgt lydutgang.",
+          "Avslutt samtalen, se gjennom samtaleteksten og sammendraget, og kopier eller del nyttige detaljer."
+        ]
+      },
+      "agent": {
+        "title": "En KI-samtaleassistent som tar utgangspunkt i målet ditt.",
+        "summary": "Forklar hva du trenger å avklare eller ordne. Voice Agent hjelper deg med å spørre, følge opp og kontrollere detaljene i en samtale ansikt til ansikt.",
+        "heading": "Fra å forklare målet til å gjennomgå resultatet.",
+        "body": "Beskriv målet og grensene dine med tekst eller tale, og svar på assistentens forberedende spørsmål. Når du bekrefter oppgaven, hjelper assistenten deg med å snakke med personen foran deg og spør etter manglende detaljer mens du følger den tospråklige samtalen. Be om et sammendrag når du trenger det. Se gjennom det selv først. Først etter godkjenningen din formidler assistenten innholdet til den andre personen for bekreftelse. Du tar avgjørelsene.",
+        "steps": [
+          "Velg begge språkene, forklar målet og svar på eventuelle forberedende spørsmål.",
+          "Bekreft oppgaven, og la assistenten hjelpe med spørsmål og oppfølging hos den andre personen.",
+          "Be om og gjennomgå et sammendrag, og godkjenn deretter det som formidles videre."
+        ]
+      },
+      "menu": {
+        "title": "Menyskanning fra å lese retter til å vise bestillingen.",
+        "summary": "Gjør menybilder om til oversatte retter, valg og priser. Velg mat, antall og tilgjengelig tilbehør, og vis bestillingen med menyens originaltekst.",
+        "heading": "Les menyen, velg mat og vis personalet.",
+        "body": "Velg Organiser i Bilde, og legg til menybilder fra kameraet eller biblioteket. Se gjennom oversatte rettsnavn, beskrivelser, priser og tilgjengelige valg. Velg retter, antall og alternativer som størrelser eller tilbehør, og legg til en merknad ved behov. Bestillingsvisningen viser hver retts originale og oversatte navn, med originale alternativnavn og antall. Kjente priser summeres separat for hver valuta uten valutaomregning. En ukjent retts- eller alternativpris hindrer en sikker totalsum. Sammenlign uklare detaljer med originalbildet, og bekreft dem med personalet. Gratis skanninger tar ett bilde; Pro tar opptil ti per skanning.",
+        "steps": [
+          "Åpne Bilde → Organiser, velg språk og legg til tydelige bilder av menyen.",
+          "Se gjennom retter og priser, velg antall og tilgjengelige alternativer, og legg til en merknad ved behov.",
+          "Kontroller bestillingen og eventuelle totalsummer, og vis personalet retter og valg på originalspråket."
+        ]
+      },
+      "document": {
+        "title": "Dokumentskanning med lesbare avsnitt og tabeller.",
+        "summary": "Fotografer et papirdokument, også med flere sider, og les det som ordnede deler, lister og tabeller. Sammenlign med originalbildene, og åpne lagrede skanninger fra historikken igjen.",
+        "heading": "Bevar dokumentets deler, avsnitt og tabellstruktur.",
+        "body": "Velg Organiser i Bilde, og fotografer dokumentsidene i rekkefølge eller legg til bildene deres fra biblioteket. Send dem samlet for å lese gjenkjent innhold som tittel, deler, avsnitt, nummererte lister og tabeller med rader og kolonner. Bytt til hver originalside eller trykk på tekst for å kontrollere kilden når du gjennomgår datoer, priser og andre detaljer. Søk etter lagrede skanninger etter tittel eller innholdstype i historikken, og åpne dem senere. Gratis skanninger tar ett bilde; Pro opptil ti per skanning. Denne arbeidsflyten skanner fotograferte sider og er ikke et redigeringsverktøy for PDF eller Word.",
+        "steps": [
+          "Åpne Bilde → Organiser, velg språk og legg til sidebilder i rekkefølge: ett gratis eller opptil ti med Pro.",
+          "Send sidene samlet, og les de ordnede delene, listene og tabellene.",
+          "Sammenlign med originalsidene, kontroller kildeteksten og åpne den lagrede skanningen fra historikken ved behov."
+        ]
+      },
+      "keyboard": {
+        "title": "Oversett svaret i appen du allerede bruker.",
+        "summary": "Bruk iPhone- eller iPad-tastaturet til å oversette et utkast og tilpasse tonen i et støttet tekstfelt. Se gjennom resultatet før du sender det.",
+        "heading": "Skriv, oversett og kontroller svaret på stedet.",
+        "body": "Følg appens veiledning for å legge til AnyTranslator-tastaturet og slå på Full tilgang i iOS-innstillinger for nettbasert oversettelse. Velg teksten du vil oversette, eller klargjør utkastet i et støttet felt, og velg målspråk og tone. Oversettelsen erstatter den valgte teksten eller teksten iOS gjør tilgjengelig for tastaturet. Utklippstavleoversettelse bruker et eget resultatkort der du kan kopiere resultatet eller sette det inn ved markøren. Noen apper og sikre felt begrenser tredjepartstastaturer.",
+        "steps": [
+          "Legg til tastaturet og slå på Full tilgang ved å følge oppsettsveiledningen i appen.",
+          "Klargjør eller velg utkastet i et støttet tekstfelt, bytt tastatur og velg målspråk og tone.",
+          "Oversett teksten, kontroller erstatningen og send selv. Bruk utklippstavlekortet til å kopiere eller sette inn et separat resultat."
+        ]
+      },
+      "chat": {
+        "title": "Spør videre med tekst og bilder.",
+        "summary": "Ta et uttrykk, en oversettelse eller et bilde med inn i Chat. Spør hva det betyr, be om et eksempel eller finn ut hvordan du vil svare.",
+        "heading": "Bruk neste spørsmål til å forstå detaljene.",
+        "body": "Skriv et spørsmål, legg til bilder eller bruk Chat-knappen ved en tekstoversettelse for å fortsette med den ordlyden. Spør om et ukjent uttrykk, be om et nytt eksempel eller sammenlign mulige svar i samme samtale. Se gjennom svaret, kopier nyttige formuleringer og still et oppfølgingsspørsmål når du trenger mer sammenheng. Chat hjelper med å undersøke innholdet du gir. Kontroller viktige fakta mot originalen.",
+        "steps": [
+          "Skriv inn et spørsmål, legg til et bilde eller åpne Chat fra en tekstoversettelse.",
+          "Spør om betydningen, eksempler eller et svar som passer til situasjonen.",
+          "Se gjennom svaret, kopier nyttige formuleringer og fortsett med et oppfølgingsspørsmål."
+        ]
+      },
+      "helper": {
+        "title": "Helper-forklaringer som viser hvordan ordene fungerer.",
+        "summary": "Utforsk grammatikk, eksempler, betydning ord for ord og mulige svar. Lagre egne forklaringsinstruksjoner og bruk dem igjen med ny tekst.",
+        "heading": "Velg hva som skal forklares, og hvordan.",
+        "body": "Velg på tekstoversettelsessiden om Helper skal forklare kildeteksten eller oversettelsen. Velg en forhåndsinnstilling som grammatikk, ord-for-ord-analyse, eksempler, skjult betydning eller svarforslag, eller lagre din egen instruksjon for forklaringen du trenger. Lagrede innstillinger kan beskrive fagområdet ditt, læringsmålet eller ønsket detaljnivå. Gratisversjonen støtter én Helper-profil og Pro opptil fem. Tilpasset kunnskap betyr her gjenbrukbare instruksjoner, ikke en kunnskapsbase med opplastede dokumenter.",
+        "steps": [
+          "Oversett tekst og velg om Helper skal forklare originalen eller oversettelsen.",
+          "Velg en forhåndsinnstilt forklaring eller lagre din egen instruksjon for detaljene du trenger.",
+          "Les forklaringen, og bruk de lagrede innstillingene på nytt når teksten endres."
+        ]
+      },
+      "widget": {
+        "title": "Læringskort du kan bruke fra Hjem-skjermen.",
+        "summary": "Repeter ord og uttrykk, hør uttalen og marker det du husker, direkte i widgeten på Hjem-skjermen. Legg til en widget på låst skjerm som enda en vei tilbake til øving.",
+        "heading": "Lytt og repeter uten å åpne appen hver gang.",
+        "body": "Velg lærings- og oversettelsesspråk i appen, og følg veiledningen for å legge til en widget på Hjem-skjermen eller låst skjerm. Kort på Hjem-skjermen lar deg spille uttalen, velge repeter igjen eller markere kortet som husket. Svarene dine styrer senere repetisjon. Et trykk på et kort på låst skjerm åpner det i appen og markerer det for en ny repetisjon. Automatisk innhold er gratis. Pro lar deg velge innholdstyper, kombinere temaer og vanskelighetsgrader og legge til egne instruksjoner for tema eller nivå.",
+        "steps": [
+          "Velg læringsspråk, og følg appens veiledning for å legge til en widget på Hjem-skjermen eller låst skjerm.",
+          "Les et kort og bruk uttaleknappen på Hjem-skjermen.",
+          "Velg repeter igjen eller husket på Hjem-skjermen. Trykk på et kort på låst skjerm for å åpne det og repetere igjen."
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "Velg ditt eget og personalets språk i taleoversettelse ved innsjekking på hotellet. Bruk tospråklige undertekster og en lydmodus som passer til omgivelsene, til å snakke om rommet, depositumet og utsjekkingstiden.",
+        "Skal du be om sen utsjekking eller avklare en ekstra kostnad, fortell Voice Agent målet og grensene dine. Bekreft oppgaven, la den hjelpe med oppfølgingsspørsmål, og se gjennom sammendraget før du godkjenner videreformidling til personalet.",
+        "Fotografer hotellets trykte instrukser i Organiser. Les deler og tabeller, sammenlign utsjekkingstider eller gebyrer med originalbildet, og gå tilbake til den lagrede skanningen under oppholdet."
+      ],
+      "work": [
+        "Lim inn en jobbmelding i tekstoversettelse, og velg målspråk og en tone som passer til forholdet. Kontroller navn, datoer og forpliktelser før du kopierer svaret.",
+        "Hvis et uttrykk fortsatt er uklart, velg originalen eller oversettelsen for Helper. Bruk skjult betydning, grammatikk, svarforslag eller den lagrede instruksjonen for fagområdet ditt.",
+        "Ta ordlyden med inn i Chat for å sammenligne et kortere svar med et mer detaljert. Legg til sammenhengen den andre trenger, se gjennom det endelige utkastet, og send det via den vanlige kommunikasjonsappen din."
+      ],
+      "dining": [
+        "Legg til menysidene i Bilde → Organiser og se gjennom oversatte retter, valg og priser. Velg antall og tilgjengelig tilbehør, legg til en merknad og vis personalet bestillingen med originale retts- og alternativnavn.",
+        "Bruk taleoversettelse til å spørre om en rett, porsjonsstørrelse eller ingrediens som fortsatt er uklar. Velg begge språkene, og bekreft svaret med den som serverer.",
+        "Forklar ønsket ditt til Voice Agent ved en samtale med flere betingelser, og la den hjelpe med oppfølgingsspørsmål. Se gjennom sammendraget før detaljene formidles videre. Personalet må bekrefte ingredienser og tilberedning."
+      ],
+      "study": [
+        "Begynn med et ord eller en setning du faktisk har møtt. Velg det som kilde for Helper, og se på eksempler, ord-for-ord-analyse eller den mest relevante grammatikkforklaringen.",
+        "Velg læringsspråk og legg til læringswidgeten på Hjem-skjermen. Lytt til kort og marker repeter igjen eller husket. Pro kan tilpasse innholdstyper, temaer og vanskelighetsgrad.",
+        "Gå tilbake til Chat med et uttrykk du vil bruke selv. Be om et eksempel i en kjent situasjon, skriv din egen versjon og spør hva du kan endre."
+      ],
+      "messages": [
+        "Bytt til AnyTranslator-tastaturet i et støttet meldingsfelt, klargjør eller velg utkastet og velg målspråk og tone. Oversett på stedet og les teksten før du sender.",
+        "Lim inn en lengre melding eller et svar du vil undersøke nærmere, i hovedappen. Sammenlign oversettelsen, juster tonen og lytt til uttalen før du kopierer det tilbake.",
+        "Er du usikker på hva den andre mener eller hvordan svaret høres ut, spør Chat med relevant tekst og sammenheng. Se gjennom forslagene og velg ordlyden du vil sende."
+      ],
+      "reading": [
+        "Fotografer et oppslag, en brosjyre eller et dokument i Organiser, og legg til sidene i rekkefølge. Les delene, listene og tabellene, og bytt til originalsiden for å kontrollere ønsket detalj.",
+        "Skriv inn et ukjent uttrykk på tekstoversettelsessiden og be Helper om en bruksmerknad, grammatikkforklaring eller ord-for-ord-analyse. Velg om originalen eller oversettelsen skal forklares.",
+        "Ta et avsnitt eller bilde med inn i Chat når du har et konkret spørsmål, som hvilken dato som gjelder eller hva et uttrykk viser til. Sammenlign svaret med originaldokumentet før du stoler på en viktig detalj."
+      ]
+    },
+    "documentArticle": {
+      "title": "Skann dokumentsider til lesbare deler og tabeller",
+      "intro": "Et trykt oppslag, en reisebrosjyre eller et dokument med flere sider trenger ofte mer enn tekst oppå et bilde. Legg til sidebilder i rekkefølge i Bilde → Organiser og send dem samlet. Resultatet ordner gjenkjent tekst i deler, avsnitt, lister og tabeller, så du kan finne informasjonen du trenger.",
+      "tip": "Velg kilde- og målspråk, fotografer hver side tydelig og kontroller rekkefølgen før innsending. Gratisversjonen tar ett bilde per skanning; Pro opptil ti. Les det ordnede resultatet, trykk på tekst for å kontrollere kilden, og bytt til originalsiden ved gjennomgang av en dato, et beløp eller en tabellverdi. Søk i historikken etter tittel eller innholdstype for å åpne den lagrede skanningen senere.",
+      "limit": "Denne veiledningen gjelder fotograferte sider fra kameraet eller bildebiblioteket. Den beskriver ikke import, redigering eller eksport av PDF- eller Word-filer. Gjenkjenning og tolkning kan overse uklar tekst eller kompliserte oppsett, så sammenlign viktige detaljer med originalsidene."
+    }
+  },
+  "sv": {
+    "scan": {
+      "title": "Ett foto blir till information du kan använda.",
+      "body": "Använd livevisning för att läsa översatt text över en skylt eller etikett. Byt till Organisera för en meny du kan välja från eller dokumentsidor med läsbara avsnitt och tabeller. Varje vy löser en egen uppgift."
+    },
+    "practiceTitle": "Börja med en verklig uppgift.",
+    "features": {
+      "text": {
+        "title": "Textöversättning med en ton som passar.",
+        "summary": "Översätt ett meddelande, mejl eller en mening och välj hur det ska låta. Lyssna, kopiera eller fråga om formuleringen innan du svarar.",
+        "heading": "Förbered orden du vill skicka.",
+        "body": "Skriv eller klistra in texten och välj käll- och målspråk. Behåll automatisk ton eller välj en artig, humoristisk, brevlik, vänlig eller kortfattad formulering. Läs resultatet, hör uttalet, kopiera det eller spara det som favorit. Chat-knappen tar med översättningen till ett samtal när du vill fråga mer.",
+        "steps": [
+          "Välj språk och skriv eller klistra in ett meddelande, mejl eller en mening.",
+          "Välj den ton som passar ditt svar och granska översättningen.",
+          "Lyssna, kopiera eller spara resultatet, eller öppna Chat för att fråga om formuleringen."
+        ]
+      },
+      "photos": {
+        "title": "Fotoöversättning direkt över orden.",
+        "summary": "Läs skyltar, etiketter och meddelanden utan att skriva av dem. Använd kameran eller ett foto och se översatt text ovanpå bilden.",
+        "heading": "Läs en skylt med omgivningen kvar i bild.",
+        "body": "Öppna livevisning på fliken Foto och välj språk. Rikta kameran mot texten, ta ett foto eller välj ett från biblioteket. Appen känner igen text och visar översättningar över bilden. Tryck på ett identifierat textområde för att se översättningsdetaljerna. Byt till Organisera för en meny med beställningsval eller ett dokument med avsnitt och tabeller.",
+        "steps": [
+          "Öppna Foto, välj livevisning och språk.",
+          "Rikta kameran mot en skylt eller etikett, eller ta eller välj ett foto.",
+          "Läs den översatta texten över bilden och tryck på ett textområde för detaljer."
+        ]
+      },
+      "voice": {
+        "title": "Talöversättning för båda sidor av samtalet.",
+        "summary": "Följ talet med tvåspråkiga undertexter och översatt ljud. Välj tvåvägssamtal, privat lyssning, tala åt mig eller bara undertexter.",
+        "heading": "Välj hur du vill höra och höras.",
+        "body": "Välj båda språken och ett ljudläge innan du slår på mikrofonen. Tvåvägssamtal spelar upp översättningar för båda parter. Privat lyssning spelar upp de översättningar du behöver. Tala åt mig spelar upp ditt översatta tal för den andra personen. Bara undertexter stänger av automatisk uppläsning. Läs ursprungliga och översatta undertexter medan ni pratar. Gå efteråt tillbaka till samtalstexten och den automatiska sammanfattningen, spela upp översatt tal igen eller kopiera och dela sammanfattningen.",
+        "steps": [
+          "Välj båda språken och det ljudläge som passar situationen.",
+          "Slå på mikrofonen och följ de tvåspråkiga undertexterna och valt ljudutmatningsläge.",
+          "Avsluta samtalet, granska samtalstexten och sammanfattningen och kopiera eller dela användbara detaljer."
+        ]
+      },
+      "agent": {
+        "title": "En AI-samtalsassistent som utgår från ditt mål.",
+        "summary": "Förklara vad du behöver ta reda på eller ordna. Voice Agent hjälper dig att fråga, följa upp och kontrollera detaljer i ett samtal ansikte mot ansikte.",
+        "heading": "Från att förklara målet till att granska resultatet.",
+        "body": "Beskriv ditt mål och dina gränser med text eller tal och svara på assistentens förberedande frågor. När du bekräftar uppgiften hjälper assistenten dig att prata med personen framför dig och frågar vidare om saknade detaljer medan du följer det tvåspråkiga samtalet. Be om en sammanfattning när du behöver en. Granska den själv först. Först efter ditt godkännande förmedlar assistenten innehållet till den andra personen för bekräftelse. Du fattar besluten.",
+        "steps": [
+          "Välj båda språken, förklara ditt mål och svara på eventuella förberedande frågor.",
+          "Bekräfta uppgiften och låt assistenten hjälpa dig att fråga och följa upp med den andra personen.",
+          "Be om och granska en sammanfattning och godkänn sedan det som förmedlas vidare."
+        ]
+      },
+      "menu": {
+        "title": "Menyskanning från att läsa rätter till att visa beställningen.",
+        "summary": "Gör menyfoton till översatta rätter, alternativ och priser. Välj mat, antal och tillgängliga tillval och visa beställningen med menyns originaltext.",
+        "heading": "Läs menyn, välj maten och visa personalen.",
+        "body": "Välj Organisera i Foto och lägg till menyfoton från kameran eller biblioteket. Granska översatta rättnamn, beskrivningar, priser och tillgängliga val. Välj rätter, antal och alternativ som storlekar eller tillval och lägg till en kommentar om måltiden vid behov. Beställningsvyn visar varje rätts ursprungliga och översatta namn, med ursprungliga alternativnamn och antal. Kända priser summeras separat per valuta utan valutaomräkning. Ett okänt rätt- eller alternativpris förhindrar en säker totalsumma. Jämför otydliga detaljer med originalfotot och bekräfta dem med personalen. Gratis skanningar tar ett foto; Pro tar upp till tio åt gången.",
+        "steps": [
+          "Öppna Foto → Organisera, välj språk och lägg till tydliga foton av menyn.",
+          "Granska rätter och priser, välj antal och tillgängliga alternativ och lägg till en kommentar vid behov.",
+          "Kontrollera beställningen och eventuella totalsummor och visa personalen rätter och alternativ på originalspråket."
+        ]
+      },
+      "document": {
+        "title": "Dokumentskanning med läsbara stycken och tabeller.",
+        "summary": "Fotografera ett pappersdokument, även med flera sidor, och läs det som ordnade avsnitt, listor och tabeller. Jämför med originalbilderna och öppna sparade skanningar igen från historiken.",
+        "heading": "Behåll dokumentets avsnitt, stycken och tabellstruktur.",
+        "body": "Välj Organisera i Foto och fotografera dokumentsidorna i ordning eller lägg till foton av dem från biblioteket. Skicka dem tillsammans för att läsa det identifierade innehållet som titel, avsnitt, stycken, numrerade listor och tabeller med rader och kolumner. Växla till varje originalsida eller tryck på text för att kontrollera källan när du granskar datum, priser och andra detaljer. Sök efter sparade skanningar efter titel eller innehållstyp i historiken och öppna dem senare. Gratis skanningar tar ett foto; Pro upp till tio åt gången. Det här arbetsflödet skannar fotograferade sidor och är ingen PDF- eller Word-redigerare.",
+        "steps": [
+          "Öppna Foto → Organisera, välj språk och lägg till sidfoton i ordning: ett gratis eller upp till tio med Pro.",
+          "Skicka sidorna tillsammans och läs ordnade avsnitt, listor och tabeller.",
+          "Jämför med originalsidorna, kontrollera källtexten och öppna den sparade skanningen från historiken vid behov."
+        ]
+      },
+      "keyboard": {
+        "title": "Översätt ditt svar i appen du redan använder.",
+        "summary": "Använd iPhone- eller iPad-tangentbordet för att översätta ett utkast och anpassa tonen i ett textfält som stöds. Granska resultatet innan du skickar.",
+        "heading": "Skriv, översätt och kontrollera svaret på plats.",
+        "body": "Följ appens guide för att lägga till AnyTranslator-tangentbordet och aktivera Full åtkomst i iOS-inställningar för onlineöversättning. Markera texten du vill översätta eller förbered ditt utkast i ett fält som stöds och välj målspråk och ton. Översättningen ersätter den markerade texten eller den text iOS gör tillgänglig för tangentbordet. Urklippsöversättning använder ett separat resultatkort där du kan kopiera resultatet eller infoga det vid markören. Vissa appar och säkra fält begränsar tangentbord från tredje part.",
+        "steps": [
+          "Lägg till tangentbordet och aktivera Full åtkomst enligt installationsguiden i appen.",
+          "Förbered eller markera utkastet i ett textfält som stöds, byt tangentbord och välj målspråk och ton.",
+          "Översätt texten, kontrollera ersättningen och skicka själv. Använd urklippskortet för att kopiera eller infoga ett separat resultat."
+        ]
+      },
+      "chat": {
+        "title": "Fortsätt fråga med text och foton.",
+        "summary": "Ta med en fras, översättning eller ett foto till Chat. Fråga vad det betyder, be om ett exempel eller kom fram till hur du vill svara.",
+        "heading": "Förstå detaljerna med nästa fråga.",
+        "body": "Skriv en fråga, lägg till foton eller använd Chat-knappen vid en textöversättning för att fortsätta med den formuleringen. Fråga om ett okänt uttryck, be om ett annat exempel eller jämför möjliga svar i samma samtal. Granska svaret, kopiera användbara formuleringar och ställ en följdfråga när mer sammanhang behövs. Chat hjälper dig att undersöka det innehåll du ger. Kontrollera viktiga fakta mot originalet.",
+        "steps": [
+          "Skriv en fråga, lägg till ett foto eller öppna Chat från en textöversättning.",
+          "Fråga om betydelsen, exempel eller ett svar som passar din situation.",
+          "Granska svaret, kopiera användbara formuleringar och fortsätt med en följdfråga."
+        ]
+      },
+      "helper": {
+        "title": "Helper-förklaringar som visar hur orden fungerar.",
+        "summary": "Utforska grammatik, exempel, betydelse ord för ord och möjliga svar. Spara egna förklaringsinstruktioner och återanvänd dem med ny text.",
+        "heading": "Välj vad som ska förklaras och hur.",
+        "body": "Välj på textöversättningssidan om Helper ska förklara källtexten eller översättningen. Välj en förinställning som grammatik, ord-för-ord-analys, exempel, dold betydelse eller svarsförslag, eller spara en egen instruktion för förklaringen du behöver. Dina sparade inställningar kan beskriva ditt fackområde, lärandemål eller önskade detaljnivå. Gratisversionen stöder en Helper-profil och Pro upp till fem. Anpassad kunskap betyder här återanvändbara instruktioner, inte en kunskapsbas med uppladdade dokument.",
+        "steps": [
+          "Översätt en text och välj om Helper ska förklara originalet eller översättningen.",
+          "Välj en förinställd förklaring eller spara en egen instruktion för de detaljer du behöver.",
+          "Läs förklaringen och återanvänd dina sparade inställningar när texten ändras."
+        ]
+      },
+      "widget": {
+        "title": "Inlärningskort du kan använda från hemskärmen.",
+        "summary": "Repetera ord och fraser, hör uttalet och markera det du minns direkt i hemskärmswidgeten. Lägg till en låsskärmswidget som ännu en väg tillbaka till övning.",
+        "heading": "Lyssna och repetera utan att öppna appen varje gång.",
+        "body": "Välj inlärnings- och översättningsspråk i appen och följ guiden för att lägga till en widget på hem- eller låsskärmen. Kort på hemskärmen låter dig spela upp uttal, välja repetera igen eller markera ett kort som ihågkommet. Dina svar styr senare repetition. Ett tryck på ett låsskärmskort öppnar det i appen och markerar det för ny repetition. Automatiskt innehåll är gratis. Pro låter dig välja innehållstyper, kombinera ämnen och svårighetsgrader och lägga till egna instruktioner för ämne eller svårighet.",
+        "steps": [
+          "Välj inlärningsspråk och följ appens guide för att lägga till en widget på hem- eller låsskärmen.",
+          "Läs ett kort och använd uttalsknappen på hemskärmen.",
+          "Välj repetera igen eller ihågkommet på hemskärmen. Tryck på ett låsskärmskort för att öppna det och repetera igen."
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "Välj ditt och personalens språk i talöversättning vid incheckning på hotellet. Använd tvåspråkiga undertexter och ett ljudläge som passar miljön för att diskutera rum, deposition och utcheckningstid.",
+        "Behöver du be om sen utcheckning eller reda ut en extra avgift, berätta för Voice Agent om ditt mål och dina gränser. Bekräfta uppgiften, låt assistenten hjälpa med följdfrågor och granska sammanfattningen innan du godkänner att den förmedlas till personalen.",
+        "Fotografera hotellets tryckta instruktioner i Organisera. Läs avsnitt och tabeller, jämför utcheckningstider eller avgifter med originalbilden och återvänd till den sparade skanningen under vistelsen."
+      ],
+      "work": [
+        "Klistra in ett arbetsmeddelande i textöversättning och välj målspråk och en ton som passar relationen. Kontrollera namn, datum och åtaganden innan du kopierar svaret.",
+        "Om en fras fortfarande är oklar, välj originalet eller översättningen för Helper. Använd dold betydelse, grammatik, svarsförslag eller din sparade instruktion för fackområdet.",
+        "Ta med formuleringen till Chat för att jämföra ett kortare svar med ett mer detaljerat. Lägg till det sammanhang mottagaren behöver, granska det färdiga utkastet och skicka det via din vanliga kommunikationsapp."
+      ],
+      "dining": [
+        "Lägg till menysidorna i Foto → Organisera och granska översatta rätter, alternativ och priser. Välj antal och tillgängliga tillval, lägg till en kommentar och visa personalen beställningen med ursprungliga rätt- och alternativnamn.",
+        "Använd talöversättning för att fråga om en rätt, portionsstorlek eller ingrediens som fortfarande är oklar. Välj båda språken och bekräfta svaret med den som serverar.",
+        "För ett samtal med flera villkor kan du förklara din önskan för Voice Agent och låta assistenten hjälpa med följdfrågor. Granska sammanfattningen innan detaljerna förmedlas vidare. Personalen måste bekräfta ingredienser och tillagning."
+      ],
+      "study": [
+        "Börja med ett ord eller en mening du faktiskt har stött på. Välj det som källa för Helper och titta på exempel, ord-för-ord-analys eller den mest relevanta grammatikförklaringen.",
+        "Ställ in inlärningsspråk och lägg till inlärningswidgeten på hemskärmen. Lyssna på kort och markera repetera igen eller ihågkommet. Pro kan anpassa innehållstyper, ämnen och svårighetsgrad.",
+        "Återvänd till Chat med en fras du vill använda själv. Be om ett exempel i en bekant situation, skriv din egen version och fråga vad du kan ändra."
+      ],
+      "messages": [
+        "Byt till AnyTranslator-tangentbordet i ett meddelandefält som stöds, förbered eller markera utkastet och välj målspråk och ton. Översätt på plats och läs texten innan du skickar.",
+        "Klistra in längre meddelanden eller svar du vill granska närmare i huvudappen. Jämför översättningen, justera tonen och lyssna på uttalet innan du kopierar tillbaka texten.",
+        "Är du osäker på vad den andra menar eller hur ditt svar låter, fråga Chat med relevant text och sammanhang. Granska förslagen och välj formuleringen du vill skicka."
+      ],
+      "reading": [
+        "Fotografera ett meddelande, en broschyr eller ett dokument i Organisera och lägg till sidorna i ordning. Läs avsnitt, listor och tabeller och byt till originalsidan för att kontrollera önskad detalj.",
+        "Skriv in ett okänt uttryck på textöversättningssidan och be Helper om en användningsnotering, grammatikförklaring eller ord-för-ord-analys. Välj om originalet eller översättningen ska förklaras.",
+        "Ta med ett textstycke eller foto till Chat för en konkret fråga, som vilket datum som gäller eller vad en fras syftar på. Jämför svaret med originaldokumentet innan du förlitar dig på en viktig detalj."
+      ]
+    },
+    "documentArticle": {
+      "title": "Skanna dokumentsidor till läsbara avsnitt och tabeller",
+      "intro": "Ett tryckt meddelande, en resebroschyr eller ett dokument med flera sidor behöver ofta mer än text ovanpå en bild. Lägg till sidfoton i ordning i Foto → Organisera och skicka dem tillsammans. Resultatet ordnar identifierad text i avsnitt, stycken, listor och tabeller så att du kan hitta informationen du behöver.",
+      "tip": "Välj käll- och målspråk, fotografera varje sida tydligt och kontrollera ordningen före inskickning. Gratisversionen tar ett foto per skanning; Pro upp till tio. Läs det ordnade resultatet, tryck på text för att kontrollera källan och byt till originalsidan när du granskar ett datum, belopp eller tabellvärde. Sök i historiken efter titel eller innehållstyp för att öppna den sparade skanningen senare.",
+      "limit": "Den här guiden gäller fotograferade sidor från kameran eller bildbiblioteket. Den beskriver inte import, redigering eller export av PDF- eller Word-filer. Identifiering och tolkning kan missa otydlig text eller komplexa layouter, så jämför viktiga detaljer med originalsidorna."
+    }
+  }
+}

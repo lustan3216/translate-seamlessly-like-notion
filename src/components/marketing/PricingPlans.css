@@ -1,0 +1,125 @@
+.mk-price-period {
+  color: var(--mk-muted);
+  font-size: 0.58em;
+  letter-spacing: normal;
+}
+
+.mk-pricing-periods button {
+  min-inline-size: 44px;
+}
+
+.mk-price-details {
+  min-inline-size: 0;
+  max-inline-size: 100%;
+}
+
+.mk-price-details h3 {
+  overflow-wrap: anywhere;
+}
+
+.mk-price-details p {
+  margin-block-start: 8px;
+}
+
+.mk-price-placeholder {
+  display: inline-block;
+  inline-size: 5em;
+  block-size: 0.8em;
+}
+
+.mk-price-action-placeholder {
+  inline-size: 100%;
+  block-size: 52px;
+  margin-block-start: 24px;
+}
+
+.mk-price-placeholder,
+.mk-price-action-placeholder {
+  background: var(--mk-line);
+  border-radius: 999px;
+}
+
+.mk-price-card button:disabled {
+  opacity: 0.5;
+  cursor: default;
+  transform: none;
+}
+
+.mk-price-comparison {
+  margin-top: 64px;
+}
+
+.mk-price-comparison > h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.mk-price-comparison-frame {
+  border: 1px solid var(--mk-line);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.mk-price-comparison-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  line-height: 1.45;
+}
+
+.mk-price-comparison-table th,
+.mk-price-comparison-table td {
+  padding: 16px 20px;
+  vertical-align: middle;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.mk-price-comparison-table thead,
+.mk-price-comparison-table :is(th, td):nth-child(3) {
+  background: var(--mk-surface);
+}
+
+.mk-price-comparison-table tbody tr {
+  border-top: 1px solid var(--mk-line);
+}
+
+.mk-price-comparison-table th {
+  font-weight: 600;
+}
+
+.mk-price-comparison-table th:first-child {
+  width: 28%;
+  text-align: start;
+}
+
+.mk-price-comparison-table td {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 767px) {
+  .mk-price-comparison {
+    margin-top: 40px;
+  }
+
+  .mk-price-comparison > h2 {
+    margin-bottom: 16px;
+  }
+
+  .mk-price-comparison-frame {
+    border-radius: 16px;
+  }
+
+  .mk-price-comparison-table {
+    font-size: 12px;
+  }
+
+  .mk-price-comparison-table th,
+  .mk-price-comparison-table td {
+    padding: 12px 6px;
+  }
+
+  .mk-price-comparison-table th:first-child {
+    padding-inline-start: 10px;
+  }
+}

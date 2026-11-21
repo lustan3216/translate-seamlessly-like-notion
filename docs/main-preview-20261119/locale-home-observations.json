@@ -1,0 +1,206 @@
+[
+  {
+    "code": "en",
+    "viewport": "desktop",
+    "failed": [],
+    "h1": "The world is wide.\nDon't let language get in the way.",
+    "lang": "en-US",
+    "navRight": 1200,
+    "scrollWidth": 1280,
+    "url": "http://127.0.0.1:5178/",
+    "width": 1280
+  },
+  {
+    "code": "ko",
+    "viewport": "desktop",
+    "failed": [],
+    "h1": "세상은 넓으니까.\n언어에 가로막히지 마세요.",
+    "lang": "ko-KR",
+    "navRight": 1200,
+    "scrollWidth": 1280,
+    "url": "http://127.0.0.1:5178/?lang=ko",
+    "width": 1280
+  },
+  {
+    "code": "ja",
+    "viewport": "desktop",
+    "failed": [],
+    "h1": "世界は広い。\n言葉の壁を、越えていこう。",
+    "lang": "ja-JP",
+    "navRight": 1200,
+    "scrollWidth": 1280,
+    "url": "http://127.0.0.1:5178/?lang=ja",
+    "width": 1280
+  },
+  {
+    "code": "en",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "The world is wide.\nDon't let language get in the way.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "ko",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "세상은 넓으니까.\n언어에 가로막히지 마세요.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "ja",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "世界は広い。\n言葉の壁を、越えていこう。",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "fr",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "Le monde est vaste.\nNe laissez pas la langue vous arrêter.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "de",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "Die Welt ist groß.\nLass Sprache nicht im Weg stehen.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "es",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "El mundo es enorme.\nQue el idioma no te frene.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "it",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "Il mondo è grande.\nNon lasciare che la lingua ti fermi.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "pt-br",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "O mundo é grande.\nNão deixe o idioma limitar você.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "fi",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "Maailma on suuri.\nÄlä anna kielen olla este.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "da",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "Verden er stor.\nLad ikke sproget stå i vejen.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "nl",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "De wereld is groot.\nLaat taal je niet tegenhouden.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "no",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "Verden er stor.\nIkke la språket stå i veien.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "sv",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "Världen är stor.\nLåt inte språket stå i vägen.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "zh-cn",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "世界很大。\n别让语言挡路。",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "zh-tw",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "世界很大。\n別讓語言擋路。",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "id",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "Dunia begitu luas.\nJangan biarkan bahasa membatasi.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "vi",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "Thế giới rộng lớn.\nĐừng để ngôn ngữ cản bước.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "th",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "โลกกว้างใหญ่\nอย่าให้ภาษาขวางทางคุณ",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "code": "ru",
+    "viewport": "mobile",
+    "failed": 0,
+    "h1": "Мир огромен.\nПусть язык не мешает жить.",
+    "navRight": 370,
+    "scrollWidth": 390,
+    "width": 390
+  }
+]

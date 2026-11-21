@@ -1,0 +1,653 @@
+{
+  "marketing": {
+    "hero.title": "De wereld is groot.",
+    "hero.accent": "Laat taal je niet tegenhouden.",
+    "nav.manifesto": "Ons manifest",
+    "hero.body": "Begrijp de menukaart en bestel. Vertaal een bericht en antwoord. Tekst, foto's en video-ondertitels, met natuurlijke AI-spraak en gespreksoefeningen, maken een vreemde taal bruikbaar in het dagelijks leven.",
+    "feature.table": "Tabellen vertalen",
+    "home.featuresTitle": "11 vertaal- en leerhulpmiddelen, altijd bij je.",
+    "home.featuresBody": "Lees menu's en documenten, beantwoord berichten en oefen spreken. Alles wat je nodig hebt bij elkaar.",
+    "home.blogTitle": "Praktische gidsen om meer uit vertalen te halen.",
+    "download.macNote": "Bekijk ondersteunde Mac-modellen en systeemvereisten in de App Store. Het vertaaltoetsenbord, de leerwidget en vertaling in andere apps zijn voor iOS/iPadOS.",
+    "features.title": "Vertalen, gesprekken en leren in één app.",
+    "features.body": "Begrijp menu's, documenten en tabellen, beantwoord berichten, volg video's en oefen spreken met de AI-assistent. 11 hulpmiddelen verbinden lezen, schrijven, luisteren en spreken.",
+    "pricing.allowance": "Bekijk de gratis gebruikslimieten in de app",
+    "pricing.more": "Kies Standaard of Spraak op basis van je gebruik",
+    "pricing.manage": "Herstel aankopen in de app en beheer verlengen en opzeggen via Apple. De gebruikskaart toont je tegoed en de volgende aanvuldatum.",
+    "pricing.voiceNote": "Spraakvertaling en video-ondertitels delen spraakminuten. Tijdens een spraakverbinding met de AI-assistent gebruiken tekst, spraak en foto's assistentminuten. Gewone tekst- en fotovragen en schermtekst gebruiken vertaalbeurten. Bekijk tegoed en aanvuldatums in de app.",
+    "article.voice": "Welke spraakfunctie kies je?",
+    "affiliate.processTitle": "Zo werkt samenwerken",
+    "faq.FreeQ": "Kan ik gratis beginnen?",
+    "faq.FreeA": "Probeer vertalen, de AI-assistent, spraak en basisinhoud voor de widget gratis. Bekijk limieten in de app. Pro biedt scans van meerdere pagina's, meer Helper-instellingen en eigen leerinhoud. Spraak bevat ook meer minuten.",
+    "faq.AgentQ": "Wat is het verschil tussen de stem van de AI-assistent en spraakvertaling?",
+    "faq.AgentA": "Gebruik spraakvertaling voor gesprekken tegenover elkaar met tweetalige ondertitels en natuurlijke AI-spraak. Gebruik de stem van de AI-assistent om vragen te stellen of spreken te oefenen: luister naar voorbeelden en oefen verder. Ze gebruiken aparte minutentegoeden.",
+    "voice.eyebrow": "Natuurlijke AI-spraak",
+    "voice.title": "Begrijp het. Zeg het natuurlijk.",
+    "voice.body": "Een nieuwe generatie AI-spraak brengt natuurlijke intonatie en ritme. Luister naar een zin, spreek die na en raak vertrouwd met uitspraak en accent. Oefen daarna gesprekken met AI.",
+    "voice.action": "Ontdek spraakvertaling",
+    "faq.ScanQ": "Wanneer kies ik menu, document of tabel?",
+    "faq.ScanA": "Met Menu kies je gerechten en extra's en toon je de bestelling in de brontaal. Document ordent alinea's per pagina. Tabel bewaart rijen en kolommen. Gratis: 1 foto per keer. Pro: maximaal 10 per batch. Resultaten staan in de scangeschiedenis.",
+    "faq.AccuracyQ": "Hoe controleer ik Russische en Duitse naamvallen en uitgangen?",
+    "faq.AccuracyA": "Gebruik Helpers Grammatica, Veelgemaakte fouten en Woord voor woord om Russische en Duitse naamvallen en uitgangen te begrijpen. Wil je de bronzin aanpassen, vraag de AI-assistent dan om correctie en uitleg.",
+    "article.work": "Schrijven over taalgrenzen: Russische en Duitse verbuigingen en de toon van je antwoord",
+    "about.body": "Vertaling, uitleg en oefening sluiten op elkaar aan, zodat jij je op communicatie kunt richten.",
+    "about.story": "Na het begrijpen kun je antwoorden, doorvragen, bestellen of een zin onthouden. AnyTranslator maakt die volgende stappen eenvoudiger.",
+    "privacy.body": "Vertaal- en AI-functies worden online verwerkt. Lees het privacybeleid voor informatie over gegevens en machtigingen.",
+    "affiliate.status": "Samenwerkingen worden momenteel individueel besproken. Inhoud en commissievoorwaarden worden apart afgesproken.",
+    "download.iosNote": "Tekst, spraak, foto's, menu's, documenten en tabellen vertalen, met AI-assistent, schermvertaling, toetsenbord en leerwidget.",
+    "download.ios": "Download gratis voor iOS",
+    "pricing.cta": "Upgrade naar Pro in de app",
+    "feature.chat": "AI-assistent",
+    "home.statement": "Van een zin begrijpen naar zelf spreken.",
+    "home.statementBody": "Haal hoofdzaken uit foto's, reageer met tolkhulp en luister naar natuurlijke AI-voorbeelden voor een reis of sollicitatiegesprek. Feedback en herhaling helpen je nuttige uitdrukkingen dagelijks te gebruiken.",
+    "case.study.title": "Oefen wat je wilt zeggen, tot je het kunt uitspreken.",
+    "case.study.body": "Kies een doel voor reizen, werk of dagelijks leven, of maak eigen scenario's en doelen. Spreek met AI, bekijk feedback en oefen opnieuw om je voorbereide zinnen te gebruiken.",
+    "article.chat": "Je taalcoach onderweg: foto's, tolken en spreken oefenen",
+    "article.learning": "Neem geoefende zinnen mee je dagelijks leven in.",
+    "feature.screen-translation": "Vertalen in elke app",
+    "article.screen": "Ondertitels en webpagina's in andere apps",
+    "case.media.title": "Kijk video's en lees webpagina's met vertaling erbij.",
+    "case.media.body": "De video speelt door, de webpagina blijft open. Vergelijk ondertitels of zichtbare tekst in beeld-in-beeld en vraag de AI-assistent naar zinnen die je beter wilt begrijpen."
+  },
+  "features": {
+    "text": {
+      "title": "Tekstvertaling: duidelijke betekenis, passende toon.",
+      "summary": "Zeven tonen voor berichten en e-mails, afgestemd op de ontvanger. Begrijp Russische en Duitse verbuigingen met Helper en laat de AI-assistent de bronzin nakijken.",
+      "heading": "Kies de toon die bij de ontvanger past.",
+      "body": "Formuleer werkverzoeken beleefd, praat natuurlijk met vrienden of kort lange berichten in. Luister naar AI-uitspraak en bewaar goede zinnen. Helper verklaart Russische en Duitse naamvallen en uitgangen; de AI-assistent helpt met correcties.",
+      "steps": [
+        "Zeven tonen, van formele brieven tot dagelijkse gesprekken.",
+        "Helper legt Russische en Duitse verbuigingen uit; de AI-assistent kijkt de bronzin op verzoek na.",
+        "Luister naar natuurlijke AI-uitspraak, bewaar zinnen of neem tekst mee als concept voor de AI-assistent."
+      ],
+      "sections": [
+        {
+          "title": "Begrijp Russische en Duitse naamvallen en uitgangen",
+          "body": "Grammatica, veelgemaakte fouten en woordanalyse verklaren Russische naamvallen en Duitse lidwoorden en uitgangen in je eigen taal. Begrijp de verbanden en kies dan je formulering."
+        },
+        {
+          "title": "Zeven tonen voor verschillende ontvangers",
+          "body": "Automatisch, beleefd, humoristisch, brief, vriendelijk, beknopt en flirterig: een passende toon voor werk en internationale contacten.",
+          "items": [
+            "Automatisch: stemt de toon af op brontekst en context.",
+            "Beleefd: voor verzoeken, vragen en werkberichten.",
+            "Humoristisch: maakt geschikte gesprekken wat luchtiger.",
+            "Brief: voor e-mails en brieven.",
+            "Vriendelijk: natuurlijk en ontspannen, zoals onder bekenden.",
+            "Beknopt: verkort de formulering; controleer belangrijke informatie.",
+            "Flirterig: speels en lief voor internationale contacten."
+          ]
+        },
+        {
+          "title": "Russisch en Duits nakijken: begrijp eerst waarom iets verandert",
+          "body": "De automatische toon behoudt de brontekst als die volledig in de doeltaal staat. Controleer naamvallen, uitgangen en grammatica met Helper of vraag de AI-assistent de oorspronkelijke zin na te kijken."
+        }
+      ]
+    },
+    "photos": {
+      "title": "Fotovertaling: de vertaling direct op de woorden.",
+      "summary": "Borden, etiketten en mededelingen: richt de camera en lees de vertaling op de foto.",
+      "heading": "Richt op vreemde tekst, lees de vertaling op de foto.",
+      "body": "Richt op een anderstalig bord en lees de vertaling direct op de afbeelding. Maak een foto of kies er een uit je bibliotheek. Tik op tekst voor details en behoud aanwijzingen uit de omgeving.",
+      "steps": [
+        "Live vertaaloverlay: richt op een bord en lees meteen.",
+        "Maak een foto of kies uit je bibliotheek en vertaal de tekst erin.",
+        "Bekijk vertaaldetails met behoud van de oorspronkelijke beeldcontext."
+      ]
+    },
+    "voice": {
+      "title": "Spraakvertaling: volg beide kanten van het gesprek.",
+      "summary": "Tweetalige ondertitels volgen de spraak, natuurlijke AI-spraak brengt je woorden over. Vier modi helpen beide gesprekspartners begrijpen.",
+      "heading": "Laat de vertaling je woorden overbrengen in een gesprek.",
+      "body": "De weg vragen, inchecken of praten: tweetalige ondertitels en natuurlijke AI-spraak brengen betekenis en toon over. Vier audiomodi passen bij verschillende situaties. Bekijk achteraf een samenvatting en beluister vertalingen opnieuw om uitdrukkingen te leren.",
+      "steps": [
+        "Tweerichtingsgesprek leest beide vertalingen voor; Spreek voor mij speelt jouw vertaling af.",
+        "Privé luisteren gebruikt de telefoonhoorn of koptelefoon; Alleen ondertitels past bij stille situaties.",
+        "Bekijk het gesprek, beluister AI-vertalingen opnieuw en kopieer of deel de hoofdpunten uit de samenvatting."
+      ],
+      "sections": [
+        {
+          "title": "Natuurlijke AI-vertaling met toon en ritme",
+          "body": "Een nieuwe generatie spraakmodellen maakt vertaalde spraak met natuurlijke intonatie en subtiele emotie passend bij de inhoud. Gebruik het in gesprekken en spreek het later na om uitspraak en accenten te leren kennen."
+        }
+      ]
+    },
+    "menu": {
+      "title": "Menu's scannen: van gerechten begrijpen naar je bestelling tonen.",
+      "summary": "Fotografeer het menu, kies gerechten, prijzen en extra's en toon je bestelling in de brontaal.",
+      "heading": "Fotografeer het menu, kies en laat het personeel zien.",
+      "body": "Maak een anderstalig menu selecteerbaar: namen, beschrijvingen, prijzen en beschikbare extra's bij elkaar. Kies aantallen en opmerkingen, toon de oorspronkelijke bestelling en zie bekende prijzen per valuta opgeteld.",
+      "steps": [
+        "Namen, beschrijvingen en prijzen worden overzichtelijke gerechtkeuzes.",
+        "Kies aantallen, formaten, beschikbare extra's en opmerkingen.",
+        "Toon de bestelling in de brontaal, met bekende prijzen per valuta opgeteld."
+      ]
+    },
+    "document": {
+      "title": "Documenten scannen: orden per pagina, behoud alinea's en hoofdzaken.",
+      "summary": "Fotografeer meerdere pagina's en lees alinea's, lijsten en tabellen. Vergelijk met de bron en open opnieuw uit de geschiedenis.",
+      "heading": "Lange documenten geordend, belangrijke informatie in beeld.",
+      "body": "Mededelingen, reisfolders en papieren van meerdere pagina's worden automatisch ingedeeld in koppen, alinea's en lijsten. Vergelijk met brontekst en foto's en vind ze terug in de geschiedenis zonder opnieuw te verwerken.",
+      "steps": [
+        "Foto's worden op paginavolgorde geordend met behoud van koppen, alinea's en lijsten.",
+        "Tik om brontekst en foto te vergelijken, zodat details niet verloren gaan.",
+        "Zoek je document terug in de scangeschiedenis."
+      ]
+    },
+    "keyboard": {
+      "title": "Toetsenbordvertaling: bereid je antwoord voor in je huidige app.",
+      "summary": "Antwoord zonder steeds apps te wisselen. Typ of gebruik iOS-dicteren, vertaal en verander de toon in het tekstveld en verstuur zelf.",
+      "heading": "Maak je antwoord af in dezelfde app.",
+      "body": "Vertaal chats en werkberichten en pas de toon aan in het bestaande tekstveld. Typ of gebruik iOS-dicteren. Vertaal en voeg ook klembordtekst direct in.",
+      "steps": [
+        "Vertaal in het tekstveld, vervang het concept en schrijf verder.",
+        "Typ of dicteer met iOS en kies taal en toon.",
+        "Vertaal klembordtekst, kopieer of voeg in bij de cursor."
+      ]
+    },
+    "helper": {
+      "title": "Helper verklaart grammatica en gebruik.",
+      "summary": "Leer Russische naamvallen en Duitse uitgangen in je eigen taal. Sla je uitlegvoorkeur één keer op en gebruik die voor nieuwe zinnen.",
+      "heading": "Begrijp uitdrukkingen en leer ze gebruiken.",
+      "body": "Naamvallen, uitgangen en zinspatronen in bron en vertaling worden uitgelegd in je eigen taal. Kies grammatica, veelgemaakte fouten of woordanalyse. Sla vakgebied, leerdoel en uitlegdiepte op als eigen instructies voor volgende zinnen.",
+      "steps": [
+        "Grammatica, veelgemaakte fouten en woordanalyse laten zien hoe zinnen zijn opgebouwd.",
+        "Verken synoniemen, voorbeeldzinnen, impliciete betekenissen en antwoordsuggesties.",
+        "Kies vakgebied, doelen en diepgang en bewaar uitleg-instructies voor hergebruik."
+      ],
+      "sections": [
+        {
+          "title": "Begrijp waarom Russisch en Duits verbuigen",
+          "body": "Voorbeelden in context: van de Russische instrumentalis tot de Duitse datief. Zie hoe naamvallen, lidwoorden en zelfstandig-naamwoorduitgangen samen veranderen.",
+          "items": [
+            "Russisch: Я говорю с мой друг. → Я говорю с моим другом. с in de betekenis 'samen met' vraagt de instrumentalis, dus zowel мой als друг krijgt een andere uitgang.",
+            "Duits: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit vraagt de datief; de zwak verbogen vorm van Kunde is Kunden."
+          ]
+        },
+        {
+          "title": "Bewaar uitleg-instructies voor de volgende zin",
+          "body": "Sla bijvoorbeeld 'Leg Russische naamvallen uit in mijn taal' of 'Verklaar Duitse uitgangen' op. Nieuwe zinnen krijgen dezelfde vertrouwde uitleg, zodat je je kunt richten op wat je wilt leren."
+        }
+      ]
+    },
+    "widget": {
+      "title": "Leerwidget: herhalen binnen handbereik.",
+      "summary": "Je beginscherm wordt een leerkaart: lees uitdrukkingen, luister naar AI-uitspraak en markeer voor herhaling of als geleerd. Kies inhoud, onderwerp en niveau.",
+      "heading": "Maak van korte pauzes herhaalmomenten.",
+      "body": "Luister op het beginscherm naar AI-uitspraak, spreek na en markeer als geleerd. Tik op het toegangsscherm om de app te openen; gebruik Stand-by waar ondersteund. Kies woorden, woordcombinaties, idiomen en zinnen met eigen onderwerpen, niveau en instructies.",
+      "steps": [
+        "Lees uitdrukkingen, luister naar AI-uitspraak en spreek na vanaf je beginscherm.",
+        "Markeer voor herhaling of als geleerd voor de volgende leerronde.",
+        "Kies inhoudstype, onderwerp en niveau en voeg eigen instructies toe."
+      ]
+    },
+    "table": {
+      "title": "Tabellen vertalen: vergelijk rijen en kolommen en begrijp elk getal.",
+      "summary": "Dienstregelingen en prijslijsten worden rijen en kolommen. Scrol brede tabellen horizontaal en bekijk tijden, prijzen en eenheden samen.",
+      "heading": "Volg rijen en kolommen om cijfers duidelijk te lezen.",
+      "body": "Lees ook informatie vol cijfers als tabel. Orden dienstregelingen en prijslijsten in rijen en kolommen en scrol brede tabellen horizontaal. Open brontekst of foto om tijden, bedragen en eenheden te controleren.",
+      "steps": [
+        "Rijen en kolommen houden tijden en prijzen vergelijkbaar.",
+        "Scrol brede tabellen horizontaal om alle velden en eenheden te zien.",
+        "Vergelijk brontekst en foto's en open opnieuw vanuit de scangeschiedenis."
+      ]
+    },
+    "chat": {
+      "title": "AI-assistent",
+      "summary": "Vind hoofdzaken in foto's, laat live tolken en oefen spreken met natuurlijke AI-spraak. Een taalcoach voor reizen, werk en dagelijks leven.",
+      "heading": "Je taalcoach onderweg helpt je de taal te gebruiken.",
+      "body": "Oefen bestellen voor je reis of formuleringen voor je werk en stel vragen over onduidelijke foto's. Natuurlijke AI-spraak voert gesprekken en geeft voorbeelden. Live tolken en scenario-oefeningen brengen je van begrijpen naar durven spreken.",
+      "steps": [
+        "Haal hoofdzaken uit foto's en begrijp borden, berichten en afbeeldingen.",
+        "Oefen scenario's en doelen voor reizen, werk en dagelijkse gesprekken.",
+        "Luister naar natuurlijke voorbeelden, spreek na en oefen opnieuw. Bewaar bruikbare uitdrukkingen."
+      ],
+      "sections": [
+        {
+          "title": "Vraag over foto's en laat ter plekke tolken",
+          "body": "Voeg een foto van een bord, mededeling of bericht toe. AI ordent hoofdpunten, aandachtspunten en vervolgstappen. Gebruik spraakchat of live tolken om je vragen duidelijk te stellen bij een taalbarrière.",
+          "items": [
+            "Spraakgesprek: vraag hardop en praat verder.",
+            "Praat Engels met mij: maak van oefenen een natuurlijk gesprek.",
+            "Tolk live voor mij: verbind verschillende talen.",
+            "Laat AI een foto begrijpen: vind hoofdzaken en vervolgstappen."
+          ]
+        },
+        {
+          "title": "Oefen de taal die je in je leven nodig hebt",
+          "body": "Van restaurant en luchthaven tot sollicitatie en werk: kies een scenario om gesprekken te oefenen of een doel om stapsgewijs te leren. Maak ook eigen scenario's en doelen. Hardop antwoorden staat centraal als voorbereiding op het volgende echte gesprek.",
+          "items": [
+            "Scenario-oefening: speel een rol en voltooi gesprekstaken.",
+            "Doeloefening: oefen eerst uitdrukkingen en gebruik ze daarna in een scenario.",
+            "Eigen leerroute: maak een scenario of doel voor een specifieke gelegenheid."
+          ]
+        },
+        {
+          "title": "Natuurlijke voorbeelden maken spreken makkelijker",
+          "body": "Vraag AI langzamer voor te doen en oefen uitspraak, accent en ritme. Gebruik de zinnen daarna in een natuurlijk gesprek om dichter bij echte communicatie te komen."
+        },
+        {
+          "title": "Begrijp feedback en spreek de volgende keer soepeler",
+          "body": "Vergelijk originele en natuurlijke formuleringen, luister naar voorbeelden en lees de redenen. Vraag ook correcties van korte Russische, Duitse of andere zinnen. Bewaar uitdrukkingen, herhaal oefeningen en bekijk gesprekken in de geschiedenis ter voorbereiding."
+        }
+      ]
+    },
+    "screen-translation": {
+      "title": "Schermvertaling maakt ondertitels en tekst begrijpelijk.",
+      "summary": "Blijf bij je video of webpagina en lees ondertitels en schermtekst in beeld-in-beeld. Vergelijk bron en vertaling en lees nuttige zinnen later terug in de geschiedenis.",
+      "heading": "Begrijp de inhoud in de app die je al gebruikt.",
+      "body": "Kies een passende modus voor anderstalige video-audio of webtekst. Beeld-in-beeld toont bron en vertaling samen, zodat video's, artikelen en spelberichten minder onderbroken worden door appwissels.",
+      "steps": [
+        "Video-ondertitels: maak van afgespeelde spraak begrijpelijke ondertitels.",
+        "Schermtekst: lees zichtbare tekst op webpagina's, in chats en games.",
+        "Beeld-in-beeld en geschiedenis: vergelijk tijdens het kijken en lees later opnieuw."
+      ],
+      "sections": [
+        {
+          "title": "Volg de video met ondertitels",
+          "body": "Vertaal audio uit andere apps naar ondertitels met de bron erbij. Volg video's, livestreams en taallessen in een vertrouwde taal terwijl de inhoud doorgaat."
+        },
+        {
+          "title": "Lees verder met schermtekst",
+          "body": "Lees vertalingen van zichtbare tekst in webpagina's, chats, games of documenten in beeld-in-beeld. Sleep het venster naar de gewenste alinea of scrol de oorspronkelijke pagina verder."
+        },
+        {
+          "title": "De vertaling blijft bij je, nuttige zinnen blijven bewaard",
+          "body": "Vergelijk de vertaling met de oorspronkelijke inhoud tijdens het kijken. Afgeronde brontekst en vertaling worden bewaard in de geschiedenis. Zet een uitdrukking zelf over naar de AI-assistent om naar de betekenis te vragen of het gebruik te oefenen.",
+          "items": [
+            "Vereist iOS/iPadOS 16 of nieuwer, beeld-in-beeld en internet. Beschermde inhoud kan mogelijk niet worden vertaald."
+          ]
+        }
+      ]
+    }
+  },
+  "workflows": {
+    "travel": [
+      "Gebruik spraakvertaling bij het inchecken en bevestig kamertype, borg en uitchecktijd met ondertitels.",
+      "Oefen inchecken en vervolgvragen met de AI-assistent voor het echte gesprek.",
+      "Fotografeer verblijfsregels als Document, controleer tijden en kosten en open opnieuw uit de scangeschiedenis."
+    ],
+    "work": [
+      "Kies de toon van werkberichten op basis van de ontvanger: beleefd verzoek of beknopt antwoord.",
+      "Begrijp Russische en Duitse naamvallen en uitgangen met Helper en laat de AI-assistent de bronzin nakijken.",
+      "Geef context om antwoorden te vergelijken en keer terug naar je oorspronkelijke app om het gekozen antwoord te versturen."
+    ],
+    "dining": [
+      "Maak menufoto's selecteerbaar, kies aantallen en extra's en toon je bestelling in de brontaal.",
+      "Praat met personeel via spraakvertaling over porties, ingrediënten en bereidingswijze.",
+      "Oefen vervolgvragen met de AI-assistent en bevestig allergiebehoeften rechtstreeks bij het personeel."
+    ],
+    "messages": [
+      "Wissel taal en toon in het oorspronkelijke tekstveld zonder tussen apps te springen.",
+      "Vergelijk lange berichten met de brontekst, luister naar uitspraak en bewaar goede zinnen.",
+      "Geef de AI-assistent de achtergrond en vind een passend antwoord voor de situatie."
+    ],
+    "reading": [
+      "Kies Document voor mededelingen, folders en meerdere papieren pagina's en lees alinea's, lijsten en tabellen per pagina.",
+      "Kies Tabel voor dienstregelingen en prijslijsten, scrol horizontaal en controleer brontekst en eenheden.",
+      "Neem moeilijke zinnen mee naar tekstvertaling en laat Helper het gebruik uitleggen."
+    ],
+    "study": [
+      "Oefen scenario's en stel doelen met de AI-assistent voor je volgende echte gesprek.",
+      "Begrijp grammatica, woorden en voorbeelden met Helper en verhelder lastige punten.",
+      "Luister in de leerwidget naar AI-uitspraak en spreek veelgebruikte zinnen na tijdens korte pauzes."
+    ],
+    "media": [
+      "Volg video's met ondertitels en webpagina's met schermtekst, met bron en vertaling naast elkaar.",
+      "Kopieer zinnen naar de AI-assistent, vraag naar de betekenis, vergelijk formuleringen en oefen opnieuw.",
+      "Kies een passende toon in tekstvertaling en gebruik de begrepen inhoud in je antwoord."
+    ]
+  },
+  "articles": {
+    "voice.intro": "Voor gesprekken tegenover elkaar: tweetalige ondertitels en natuurlijke AI-spraak. Voor voorbeelden en spreekoefeningen: de stem van de AI-assistent. Kies voor video's in andere apps de video-ondertitels bij Vertalen in elke app.",
+    "voice.tip": "Kies vóór het gesprek beide talen en de audiomodus. Beluister AI-vertalingen opnieuw en oefen intonatie en ritme. Bekijk gesprek en samenvatting en bewaar bruikbare uitdrukkingen.",
+    "voice.limit": "Tweerichtingsgesprek is voor gesprekken tegenover elkaar. Privé luisteren werkt met de telefoonhoorn of koptelefoon; Alleen ondertitels voor momenten zonder geluid. Start video-ondertitels via Vertalen in elke app. iOS bepaalt welke inhoud kan worden vastgelegd.",
+    "menu.intro": "Kies Menu onder Ordenen op de fotopagina. Voeg rechte, scherpe foto's van de hele pagina toe om namen, ingrediënten, porties en prijzen als gerechten te ordenen.",
+    "menu.tip": "Lees gerechten en prijzen, kies aantallen, formaten en beschikbare extra's en voeg opmerkingen toe. Open de oorspronkelijke bestelling en toon gerechten, opties en aantallen aan het personeel.",
+    "menu.limit": "Bekende prijzen worden per valuta opgeteld. Bij onbekende prijzen is er geen zekere totaalsom. Vraag het personeel rechtstreeks naar ingrediënten, allergenen en bereidingswijze en toon daarna zelf de bestelling.",
+    "work.intro": "Vertaal eerst Russisch of Duits om het te begrijpen en kies daarna een antwoordtoon. Helper verklaart naamvallen en uitgangen. Vraag de AI-assistent expliciet de oorspronkelijke zin na te kijken.",
+    "work.tip": "Kies de toon op basis van de ontvanger: Beleefd voor werkverzoeken, Brief voor e-mail en Vriendelijk voor bekenden. Laat Helper lastige zinnen uitleggen en geef de AI-assistent context om antwoorden te vergelijken.",
+    "work.limit": "Automatisch behoudt de brontekst als die volledig in de doeltaal staat. Wil je naamvallen, uitgangen of grammatica aanpassen, begrijp dan eerst de reden met Helper en vraag expliciet om correctie bij de AI-assistent.",
+    "mac.intro": "Vertaal tekst en stel AI vragen op de Mac. Controleer eerst in de App Store of je model en systeem de download ondersteunen.",
+    "mac.tip": "Na het downloaden kun je tekst vertalen en de AI-assistent gebruiken. Kies of plak een afbeelding op de fotopagina. Compatibele modellen en systeemvereisten staan op de winkelpagina van je apparaat.",
+    "mac.limit": "Het vertaaltoetsenbord, de widget en vertaling in andere apps zijn vooral voor ondersteunde iPhones/iPads. Beschikbare functies blijken uit de app op elk platform.",
+    "keyboard.intro": "Voeg het toetsenbord in iOS toe volgens de app-instructies en schakel volledige toegang in voor online vertaling. Typ of gebruik systeemdicteren in ondersteunde velden en vertaal daarna met de gewenste toon.",
+    "keyboard.tip": "Schrijf je concept of gebruik ingebouwd iOS-dicteren en kies taal en toon. Met de hulpmiddelen kun je ook het klembord vertalen, de vertaling kopiëren of bij de cursor invoegen.",
+    "keyboard.limit": "Beschikbaarheid van toetsenbord en dicteren hangt af van app, iOS en taal. Typ indien nodig of vertaal in de hoofdapp. Download invoertaalpakketten volgens de instructies.",
+    "chat.intro": "Gebruik de AI-assistent als taalcoach onderweg: haal hoofdzaken uit foto's, laat live tolken of oefen spreken voor reizen en werk. Begin met een vraag en neem je voorbereiding mee het leven in.",
+    "chat.tip": "Begin met scenario's en doelen zoals bestellen of solliciteren, of maak eigen varianten. Vraag AI langzamer voor te doen, oefen intonatie en ritme, praat verder, bekijk feedback en bewaar zinnen om opnieuw te oefenen.",
+    "chat.limit": "Vereist internet en gebruikstegoed; spraak vereist microfoontoegang. Functies hangen af van versie, taal en servicestatus. Controleer belangrijke informatie bij de bron. Een eigen doel vervangt het bestaande plan en de voortgang. Bekijk je resterende tegoed in de app.",
+    "learning.intro": "Oefen het volgende gesprek dat je echt zult voeren. Kies doelen en scenario's met de AI-assistent en maak zinnen eigen door feedback en herhaling.",
+    "learning.tip": "Richt je op één situatie tegelijk: antwoord eerst en vergelijk met een natuurlijke formulering. Vraag AI om intonatie en ritme voor te doen, leer het gebruik met Helper en herhaal met de leerwidget.",
+    "learning.limit": "AI-oefeningen vereisen internet en gebruikstegoed. De leerwidget vereist iOS 17 of nieuwer. Eigen inhoud en instellingen hangen af van het abonnement.",
+    "screen.intro": "Houd vertaling in beeld bij video's en webpagina's. Begrijp audio via ondertitels en inhoud via schermtekst en vergelijk in beeld-in-beeld. Lees belangrijke zinnen later opnieuw.",
+    "screen.tip": "Gebruik ondertitels voor video's en schermtekst voor webpagina's. Sleep het beeld-in-beeldvenster of scrol de bronpagina naar het volgende stuk. Stop na afloop de schermuitzending en open gewenste zinnen uit de geschiedenis.",
+    "screen.limit": "Vereist iOS/iPadOS 16 of nieuwer, beeld-in-beeld en internet. Beschermde inhoud kan mogelijk niet worden vertaald. Ondertitels gebruiken spraakminuten; schermtekst gebruikt vertaalbeurten. Bekijk het tegoed in de app."
+  },
+  "scan": {
+    "title": "Menu's, documenten en tabellen: elk op een heldere manier leesbaar.",
+    "body": "Menu's worden selecteerbare gerechten, documenten worden alinea's en tabellen behouden rijen en kolommen. Borden en etiketten krijgen vertaling direct op de foto."
+  },
+  "documentArticle": {
+    "title": "Documenten scannen: orden pagina's en lees met de bron erbij",
+    "intro": "Kies Document onder Ordenen op de fotopagina voor papieren mededelingen, reisfolders of meerdere pagina's. Voeg foto's in volgorde toe. Vergelijk geordende alinea's, lijsten en tabellen met de bron.",
+    "tip": "Fotografeer alle pagina's scherp, controleer de volgorde en verstuur samen. Tik op tekst voor de bron of ga terug naar de originele paginafoto. Scrol brede tabellen horizontaal en doorzoek de geschiedenis op titel of inhoudstype.",
+    "limit": "Kies Menu voor gerechten, Tabel voor dienstregelingen en prijslijsten en Document voor andere pagina's. Vergelijk onduidelijke delen met de bronfoto of maak een nieuwe foto."
+  },
+  "pricing": {
+    "standardTitle": "Standaard",
+    "voiceTitle": "Spraak",
+    "freeAllowance": "Download gratis en probeer vertaling, de AI-assistent en spraak. Bekijk limieten in de app.",
+    "freeScan": "Verwerk 1 foto per keer",
+    "freeHelper": "Bewaar 1 eigen Helper-instelling",
+    "standardWeeklyAllowance": "Per week 150 minuten spraakvertaling/video-ondertitels en 10 minuten AI-assistentstem.",
+    "standardMonthlyAllowance": "Maand- en jaarabonnementen: per maand 600 minuten spraakvertaling/video-ondertitels en 30 minuten AI-assistentstem.",
+    "voiceWeeklyAllowance": "Per week 600 minuten spraakvertaling/video-ondertitels en 45 minuten AI-assistentstem.",
+    "voiceMonthlyAllowance": "Maand- en jaarabonnementen: per maand 2.400 minuten spraakvertaling/video-ondertitels en 135 minuten AI-assistentstem.",
+    "unlimitedTranslations": "Betaalde abonnementen hebben onbeperkte vertalingen voor tekst, foto's, getypte AI-vragen en schermtekst.",
+    "scanAllowance": "Verwerk maximaal 10 foto's per batch",
+    "helperAllowance": "Huidige betaalde abonnementen bewaren 5 eigen Helper-instellingen",
+    "widgetAllowance": "Kies inhoud, onderwerp en niveau",
+    "annualQuotaNote": "Jaarlijks is de facturatieperiode; spraak- en assistenttegoed worden nog steeds maandelijks aangevuld.",
+    "quotaNote": "Gewone tekst- en fotovragen gebruiken vertaalbeurten. Tijdens een assistentspraakverbinding delen tekst, spraak en foto's assistentminuten. Video-ondertitels en spraakvertaling delen spraakminuten; schermtekst gebruikt vertaalbeurten.",
+    "legacyNote": "Bestaande abonnementen en gratis pakketten kunnen andere limieten hebben. Bekijk tegoed en de volgende aanvuldatum op de gebruikskaart in de app.",
+    "standardNote": "Dagelijks vertalen, foto's lezen en talen oefenen met de vertrouwde hulpmiddelen bij elkaar.",
+    "voiceNote": "Meer tijd om te spreken met spraakvertaling, video-ondertitels en AI-oefeningen.",
+    "voiceLabel": "Spraakvertaling en video-ondertitels",
+    "chatVoiceLabel": "Spraakgesprekken met de AI-assistent",
+    "aiTextLabel": "Tekst- en fotovragen aan de AI-assistent",
+    "freeWidget": "Basisherhaling van woorden en zinnen",
+    "scanLabel": "Menu's, documenten en tabellen scannen",
+    "freeAccess": "Gratis proberen"
+  },
+  "extras": {
+    "homeScenarios": [
+      {
+        "id": "travel-and-dining",
+        "title": "Vragen en bestellen op reis.",
+        "body": "Van hotelbalie tot buitenlandse eettafel: vraag duidelijk en bestel wat je wilt.",
+        "scenarios": [
+          {
+            "id": "travel",
+            "context": "De weg vragen · Inchecken · Vervoer",
+            "title": "Vraag verblijfsdetails ter plekke na.",
+            "body": "Vraag in je eigen taal naar kamertype, borg en uitchecktijd.",
+            "points": [
+              "Vergelijk tweetalige ondertitels direct en wissel naar wens tussen vier afspeelmodi."
+            ],
+            "action": "Bekijk spraakvertaling"
+          },
+          {
+            "id": "dining",
+            "context": "Restaurantbestellingen · Koffie-extra's · Eetwensen",
+            "title": "Begrijp gerechten en bestel ook extra's duidelijk.",
+            "body": "Namen, prijzen en extra's samen in beeld. Kies aantallen en toon de bestelling in de brontaal.",
+            "points": [
+              "Aparte totalen per valuta geven overzicht bij bestellen."
+            ],
+            "action": "Bekijk menu's scannen en bestellen"
+          }
+        ]
+      },
+      {
+        "id": "documents-and-tables",
+        "title": "Alinea's voor documenten, rijen en kolommen voor tabellen.",
+        "body": "Lees verblijfsregels en dienstregelingen met hun oorspronkelijke structuur.",
+        "scenarios": [
+          {
+            "id": "documents",
+            "context": "Papieren mededelingen · Reisfolders · Verblijfsregels",
+            "title": "Ook veel papier blijft overzichtelijk.",
+            "body": "Fotografeer mededelingen, verblijfsregels en folders en krijg duidelijke alinea's.",
+            "points": [
+              "Verwerk meerdere pagina's samen en vergelijk bron en vertaling."
+            ],
+            "action": "Bekijk documenten scannen"
+          },
+          {
+            "id": "tables",
+            "context": "Dienstregelingen · Ticketprijzen · Dienstenprijslijsten",
+            "title": "Vergelijk vele cijfers in één oogopslag.",
+            "body": "Vertrektijden, prijzen en datums staan geordend, zodat belangrijke informatie makkelijk te vinden is.",
+            "points": [
+              "Rijen en kolommen blijven behouden; tik om de bron te controleren."
+            ],
+            "action": "Bekijk tabellen vertalen"
+          }
+        ]
+      },
+      {
+        "id": "watch-read-and-reply",
+        "title": "Begrijp video's en berichten zonder onderbreking.",
+        "body": "De inhoud blijft in beeld, je antwoord in het oorspronkelijke gesprek.",
+        "scenarios": [
+          {
+            "id": "media",
+            "context": "Anderstalige video's · Webpagina's · Speluitleg",
+            "title": "Blijf je favoriete anderstalige inhoud begrijpen.",
+            "body": "Vertaalde ondertitels voor video's, schermvertaling voor webpagina's. Je huidige app blijft in beeld terwijl de vertaling de inhoud volgt.",
+            "points": [
+              "Verplaatsbaar beeld-in-beeld en vrije keuze tussen ondertitel- en tekstmodus."
+            ],
+            "action": "Bekijk vertaling in elke app"
+          },
+          {
+            "id": "messages",
+            "context": "Werkberichten · E-mailconcepten · Antwoordtoon",
+            "title": "Professionele werkantwoorden, natuurlijke gesprekken met vrienden.",
+            "body": "Vertaal en verander de toon in je bestaande gesprek. Antwoord klanten helder en vrienden natuurlijk.",
+            "points": [
+              "Vertaal ook klembordtekst en voeg het antwoord direct in."
+            ],
+            "action": "Bekijk het iOS-vertaaltoetsenbord"
+          }
+        ]
+      },
+      {
+        "id": "practice-and-remember",
+        "title": "Oefen voor je sollicitatie of reis.",
+        "body": "Leer de zinnen die je wilt gebruiken en herhaal ze in dagelijkse pauzes.",
+        "scenarios": [
+          {
+            "id": "practice",
+            "context": "Sollicitatiegesprekken · Spreken op reis · Eigen leerdoelen",
+            "title": "Oefen eerst met AI voor belangrijke momenten.",
+            "body": "Solliciteren, inchecken en bestellen: AI-rollen oefenen met je mee. Vraag over een onduidelijke foto en praat verder met je stem.",
+            "points": [
+              "Doelgericht leren met directe feedback brengt je van uitdrukkingen naar scenario's."
+            ],
+            "action": "Bekijk de AI-assistent"
+          },
+          {
+            "id": "daily-learning",
+            "context": "Reismomenten · Herhalen op het beginscherm · Toegangsscherm",
+            "title": "Ook korte pauzes bouwen taalvaardigheid op.",
+            "body": "Zie de woorden en zinnen die je wilt leren op je beginscherm, luister naar uitspraak en markeer voor herhaling. Maak van wachten vooruitgang.",
+            "points": [
+              "Kies inhoud, onderwerp en niveau en leer wat je echt nodig hebt."
+            ],
+            "action": "Bekijk de leerwidget"
+          }
+        ]
+      },
+      {
+        "id": "see-and-understand",
+        "title": "Begrijp tekst én gebruik.",
+        "body": "Lees tekst in foto's en laat Helper het gebruik verklaren.",
+        "scenarios": [
+          {
+            "id": "photos",
+            "context": "Verkeersborden · Productetiketten · Tentoonstellingsberichten",
+            "title": "Richt de camera en lees de vertaling op de bronfoto.",
+            "body": "Verkeersborden, productetiketten en tentoonstellingsberichten: richt de camera en zie de vertaling op de originele foto.",
+            "points": [
+              "Foto's, je bibliotheek en live vertaling helpen je de tekst voor je te lezen."
+            ],
+            "action": "Bekijk fotovertaling"
+          },
+          {
+            "id": "helper",
+            "context": "Russisch · Duits · Grammaticacorrectie en eigen uitleg",
+            "title": "Begrijp de betekenis én de grammatica.",
+            "body": "Laat Helper Russische naamvallen en Duitse uitgangen in je taal uitleggen. Begrijp grammatica, veelgemaakte fouten en woordgebruik.",
+            "points": [
+              "Sla vakgebied en uitlegvoorkeuren op voor je eigen taalhulp."
+            ],
+            "action": "Bekijk Helper-uitleg"
+          }
+        ]
+      }
+    ],
+    "stories": {
+      "sectionLabel": "Vertaling in het dagelijks leven",
+      "menu": {
+        "label": "Menuvertaling",
+        "title": "Van een menu\nnaar een bestelling.",
+        "body": "Begrijp gerechten en kies extra's. Laat de bestelling in de brontaal aan het personeel zien en bestel wat je wilt.",
+        "action": "Bekijk hoe je bestelt"
+      },
+      "reply": {
+        "label": "Tekstvertaling en toon",
+        "title": "De juiste betekenis.\nDe passende toon.",
+        "body": "Professioneel waar nodig, vriendelijk wanneer het past. Zeven tonen laten elke zin als jouw eigen woorden klinken.",
+        "action": "Ontdek tekstvertaling"
+      },
+      "practice": {
+        "label": "AI-assistent",
+        "title": "Oefen wat je wilt zeggen,\ntot het vanzelf komt.",
+        "body": "Bestellingen, sollicitaties en reizen: een AI-rol staat klaar om te oefenen. Van één zin naar een gesprek dat verdergaat.",
+        "action": "Maak kennis met de AI-assistent"
+      },
+      "voice": {
+        "label": "Natuurlijke AI-spraak",
+        "title": "Begrijp het.\nZeg het natuurlijk.",
+        "body": "Een nieuwe generatie AI-spraak brengt natuurlijke intonatie en ritme. Luister naar een zin, spreek die na en raak vertrouwd met uitspraak en accent. Oefen daarna gesprekken met AI.",
+        "action": "Ontdek spraakvertaling"
+      }
+    },
+    "manifesto": {
+      "seoTitle": "Ons manifest",
+      "seoDescription": "Een andere taal mag je leven niet kleiner maken. AnyTranslator bundelt hulpmiddelen om te begrijpen, jezelf uit te drukken en te oefenen voor wonen, studeren en leren in het buitenland.",
+      "eyebrow": "Ons manifest",
+      "title": "Een andere taal.\nEen even groot leven.",
+      "lead": "Ver van huis verdien je de moed om vrijuit te leven.",
+      "opening": "Je gaat naar een ander land om meer van de wereld te zien en meer mogelijkheden te vinden.\nTaal zou je daar niet moeten beperken tot een voorzichtig bestaan.",
+      "chapters": [
+        {
+          "title": "Ver van huis hoeft niet ver van jezelf te betekenen.",
+          "paragraphs": [
+            "Je loopt rond in de supermarkt en koopt toch het verkeerde. Aan de balie hoor je een lang verhaal, begrijp je maar enkele woorden en durf je niet opnieuw te vragen. In de les heb je een vraag, maar slik je die toch in.",
+            "Een formulier, schoolbericht of huurdocument kan een eenvoudige dag zwaar maken. Je wilt het goed doen, maar hebt al moed nodig om te beginnen met spreken.",
+            "Het ontbreekt je niet aan ideeën of inzet. Soms houdt de taal je echte zelf gewoon buiten het gesprek."
+          ]
+        },
+        {
+          "title": "Het leven stelt niet maar één soort vraag.",
+          "paragraphs": [
+            "Het kan een onbegrijpelijk menu zijn, een spraakbericht van de verhuurder, uitleg aan een loket of een document dat zorgvuldig moet worden gelezen.",
+            "Daarom moet hulp ook meerdere vormen hebben. Voor een maaltijd, antwoord of taak zou je niet telkens tussen allerlei hulpmiddelen moeten springen.",
+            "AnyTranslator wil de functies die je echt nodig hebt binnen handbereik brengen. Elke vermeden blokkade geeft meer vertrouwen om je leven te leiden."
+          ]
+        },
+        {
+          "title": "Van een zin begrijpen naar de volgende stap.",
+          "paragraphs": [
+            "Fotografeer een etiket en weet wat je koopt. Begrijp gerechten en extra's en bestel duidelijk. Orden meldingen en documenten per pagina, zodat alinea's, rijen, kolommen en belangrijke details terug te vinden zijn.",
+            "Tweetalige ondertitels en natuurlijke AI-spraak helpen in gesprekken tegenover elkaar. Kies voor berichten een formele, vriendelijke of beknopte toon en breng je hele bedoeling over.",
+            "Durf je nog niet te spreken, oefen dan eerst met de AI-assistent. Van reizen en lessen tot sollicitaties: leer je woorden geleidelijk gebruiken. Begrijpen, uitdrukken en leren worden onderdeel van hetzelfde leven."
+          ]
+        },
+        {
+          "title": "Elke taal verdient het goed begrepen te worden.",
+          "paragraphs": [
+            "Taal is meer dan woorden vervangen. Het lastige kan zitten in Russische en Duitse naamvallen en uitgangen, of in een uitdrukking die je pas in het lokale leven leert gebruiken.",
+            "We blijven context, toon en uitleg verbeteren en houden ook kleinere talen in het oog. Minder gebruikers betekent niet minder aandacht. Je krijgt een vertaling én begrijpt waarom iets zo wordt gezegd."
+          ]
+        }
+      ],
+      "everydayEyebrow": "Van dagelijkse behoeften naar passende functies",
+      "everydayTitle": "Van elke aarzeling\nnaar een volgende stap.",
+      "scenarios": [
+        {
+          "title": "Begrijp het dagelijks leven",
+          "body": "Koop de juiste producten, begrijp de menukaart en stel vragen voor je beslist.",
+          "linkLabels": [
+            "Fotovertaling",
+            "Menu's en bestellen"
+          ]
+        },
+        {
+          "title": "Regel de belangrijke zaken",
+          "body": "Lees mededelingen, documenten en tabellen met behoud van hun structuur.",
+          "linkLabels": [
+            "Documenten scannen",
+            "Tabellen vertalen"
+          ]
+        },
+        {
+          "title": "Spreek je eigen gedachten uit",
+          "body": "Begrijp de ander en oefen vóór het echte gesprek.",
+          "linkLabels": [
+            "Spraakvertaling",
+            "AI-assistent"
+          ]
+        }
+      ],
+      "closeEyebrow": "AnyTranslator",
+      "closeTitle": "Maak van een verre plek\nje eigen dagelijkse leven.",
+      "closeBody": "Vraag wat je wilt vragen. Zeg wat je wilt zeggen.\nLaat ver weg meer zijn dan een bestemming: een plek waar je vrij kunt leven.",
+      "aboutAction": "Lees ons manifest"
+    },
+    "reviews": {
+      "eyebrow": "Echte beoordelingen uit de App Store",
+      "title": "Zij hebben de taalbarrière\nal achter zich gelaten.",
+      "body": "Vergaderen, talen leren en dagelijks communiceren. Lees wat gebruikers zeggen.",
+      "ratingAriaTemplate": "{rating} van 5 sterren",
+      "sourceAriaTemplate": "Bekijk de beoordeling van {name} in de App Store",
+      "storefrontLabel": "Taiwan",
+      "translatedLabel": "Vertaald uit traditioneel Chinees",
+      "quotesById": {
+        "14792569759": "Het is moeilijk om een vertaalapp te vinden die zo nauwkeurig is en zoveel functies heeft.",
+        "14689800454": "Erg handig. Ik heb meteen een abonnement genomen.",
+        "14634594658": "De taalvertaling is erg handig tijdens vergaderingen.",
+        "14634322888": "Hiermee leer je zo makkelijk talen. Eén app vervangt 3 of 4 apps en de vertalingen zijn heel nauwkeurig."
+      }
+    },
+    "askAi": {
+      "title": "Past AnyTranslator bij jou?",
+      "body": "Vertel AI wat je nodig hebt en vergelijk vanuit een andere invalshoek.",
+      "actionTemplate": "Vraag {service}",
+      "prompt": "Beoordeel op basis van openbare informatie op {url} of AnyTranslator bij mijn behoeften past. Ik wil weten over tekst- en spraakvertaling, menu- en documentscans, de AI-assistent, talen leren en prijzen. Vraag eerst naar mijn gebruikssituaties en vergelijk daarna waar de app wel en niet geschikt voor is. Benoem duidelijk functies en prijzen die je niet kunt bevestigen en geef bronnen."
+    },
+    "theme": {
+      "darkMode": "Donkere modus",
+      "lightAction": "Schakel naar lichte modus",
+      "darkAction": "Schakel naar donkere modus"
+    },
+    "macArt": {
+      "ariaLabel": "AnyTranslator-merkillustratie voor macOS-download met het echte apppictogram en de tekst Mac App Store"
+    },
+    "pricingUnit": {
+      "perBatchTemplate": "{count} foto's/batch"
+    },
+    "imageAlt": {
+      "voice.primary": "Spraakvertaling: vraag naar de sluitingstijd en laatste toegang van een museum met Engelse en Nederlandse ondertitels.",
+      "text.primary": "Tekstvertaling: Engelse afspraakwijziging vertaald naar het Russisch met grammaticale uitleg in het Nederlands.",
+      "helper.primary": "Helper-grammatica: voorwaardelijke vorm, tijd en naamvallen in een Russisch werkbericht uitgelegd in het Nederlands.",
+      "photos.primary": "Fotovertaling: Nederlandse vertaaloverlay op een echte drankenkaart, naast het Engelse origineel.",
+      "table.primary": "Tabelvertaling: openbare Zion-shuttledienstregeling met drie datumperiodes en eerste en laatste vertrektijden.",
+      "table.cell-source": "Brontabel: informatie over de eerste shuttle geopend met het bijbehorende Engelse rijlabel.",
+      "document.primary": "Documentvertaling: openbare parkvervoersfolder in Nederlandse alinea's met fiets- en rijinformatie.",
+      "document.original": "Bronfoto: openbare tekst Getting Around in drie kolommen, pagina 1/1 van hetzelfde document.",
+      "menu.primary": "Menuvertaling: koffiedranken en prijzen, met 2 geselecteerde lattes en totaal 7.80.",
+      "menu.options": "Menubestelling: latte/flat white met havermelk, aantal 2 en totaal 7.80.",
+      "menu.staff": "Tonen aan personeel: bestelling in de brontaal van latte/flat white en havermelk, 2 porties, totaal 7.80.",
+      "chat.primary": "Restaurantscenario van de AI-assistent: opening van een ober op beginnersniveau Engels, Engelse sleutelzinnen en Nederlandse taakuitleg.",
+      "chat.chat-entry": "Gespreksmodi van de AI-assistent: slim gesprek, doeloefening en scenario-oefening, met taal- en niveaukeuze vóór de start.",
+      "keyboard.primary": "Native iOS-toetsen en de vertaalwerkbalk van AnyTranslator, met behoud van het Nederlandse werkbericht dat wordt getypt.",
+      "widget.primary": "Voorbeeld van de leerwidget: Chinees koffievoorbeeld en Pinyin, Nederlandse vertaling en gebruikstip en herhaalknoppen.",
+      "screen-translation.primary": "Schermtekstvertaling: een openbare NPS-tekst over autorijden in Preview met Nederlands resultaat in beeld-in-beeld.",
+      "screen-translation.setup": "Instellingen voor vertaling in andere apps: video-ondertitels of schermtekst, Nederlands als doeltaal en weergave van de brontekst."
+    }
+  }
+}

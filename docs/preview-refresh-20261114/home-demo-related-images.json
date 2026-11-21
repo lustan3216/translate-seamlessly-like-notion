@@ -1,0 +1,45 @@
+[
+  {
+    "images": [
+      {
+        "feature": "document",
+        "shot": "table"
+      },
+      {
+        "feature": "document",
+        "shot": "primary"
+      }
+    ],
+    "overflow": false,
+    "title": "文件智慧掃描",
+    "visible": "flex"
+  },
+  {
+    "images": [
+      {
+        "feature": "voice",
+        "shot": "primary"
+      }
+    ],
+    "overflow": false,
+    "title": "即時語音翻譯",
+    "visible": "flex"
+  },
+  {
+    "images": [],
+    "overflow": false,
+    "title": "Voice Agent 對話助手",
+    "visible": "none"
+  },
+  {
+    "images": [
+      {
+        "feature": "chat",
+        "shot": "primary"
+      }
+    ],
+    "overflow": false,
+    "title": "AI 對話",
+    "visible": "flex"
+  }
+]
