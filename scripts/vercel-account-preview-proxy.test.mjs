@@ -8,6 +8,7 @@ test("account sessions and public billing stay on their assigned origins", async
     VERCEL_ENV: "preview",
     VERCEL_URL: "account-preview-abc.vercel.app",
     SHARED_ACCOUNT_PROXY_TOKEN: "server-token-12345678901234567890123456",
+    SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN: "https://fixture-dev.et3216-c0d.workers.dev",
     SHARED_ACCOUNT_LIVE_PROXY_TOKEN: "separate-live-token-123456789012345678",
   };
   const original = Object.fromEntries(Object.keys(env).map((key) => [key, process.env[key]]));
@@ -72,7 +73,7 @@ test("account sessions and public billing stay on their assigned origins", async
   assert.deepEqual(allowed.headers["set-cookie"], [session, clear]);
   assert.equal(allowed.headers.location, undefined);
   assert.equal(allowed.headers["cache-control"], "private, no-store");
-  assert.equal(request.url, "https://codex-creem-shared-account-anytranslator-api-dev.et3216-c0d.workers.dev/v1/account/passkeys/login/options");
+  assert.equal(request.url, `${env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN}/v1/account/passkeys/login/options`);
   assert.equal(request.redirect, "manual");
   assert.equal(request.body.toString(), "{}");
   assert.deepEqual(request.headers, {
@@ -98,9 +99,6 @@ test("account sessions and public billing stay on their assigned origins", async
     [{ url: "/api/account-preview?account_route=session&account_route=delete" }, 404],
     [{ url: "/api/account/session?account_route=delete" }, 404],
     [{ url: "/api/account/pair/start" }, 404],
-    [{ url: "/api/account/billing/app-link" }, 404],
-    [{ url: "/api/account/billing/guest-checkout" }, 404],
-    [{ url: "/api/account/billing/guest-resend" }, 404],
     [{ url: "/api/account/email-access" }, 404],
     [{ url: "/api/account/email-access/request" }, 404],
     [{ method: "GET" }, 405],
@@ -115,7 +113,51 @@ test("account sessions and public billing stay on their assigned origins", async
   delete process.env.SHARED_ACCOUNT_PROXY_TOKEN;
   assert.equal((await call()).statusCode, 404);
   process.env.SHARED_ACCOUNT_PROXY_TOKEN = env.SHARED_ACCOUNT_PROXY_TOKEN;
+
+  delete process.env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN;
+  for (const invalidOrigin of [
+    undefined, "", "http://fixture-dev.et3216-c0d.workers.dev", "https://et3216-c0d.workers.dev",
+    "https://nested.fixture-dev.et3216-c0d.workers.dev", "https://-fixture.et3216-c0d.workers.dev",
+    "https://fixture-dev.et3216-c0d.workers.dev.example.invalid", "https://cloudflare.anytranslator.app",
+    "https://user@fixture-dev.et3216-c0d.workers.dev",
+    ...[":443", "/", "/account", "?", "#", "\n"].map((suffix) => `${env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN}${suffix}`),
+  ]) {
+    if (invalidOrigin !== undefined) process.env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN = invalidOrigin;
+    const response = await call();
+    assert.equal(response.statusCode, 503, JSON.stringify(invalidOrigin));
+    assert.deepEqual(response.body, { error: "not_configured" });
+  }
+  process.env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN = env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN;
   assert.equal(upstream.mock.callCount(), 4);
+
+  const guestOffer = Buffer.from(JSON.stringify({ attemptId: "local-fixture", offer: offers[1], locale: "zh-tw" }));
+  for (const { route, body, status, payload, authenticated } of [
+    { route: "billing/guest-checkout", body: guestOffer, status: 200,
+      payload: { checkoutUrl: "https://checkout.creem.io/ch_fixture", checkoutId: "ch_fixture" } },
+    { route: "billing/guest-resend", body: Buffer.from('{"checkoutId":"ch_fixture"}'), status: 202, payload: {} },
+    { route: "billing/app-link", body: Buffer.from('{"locale":"zh-tw"}'), status: 200, payload: { account: {} }, authenticated: true },
+  ]) {
+    const options = {
+      url: `/api/account-preview?account_route=${encodeURIComponent(route)}`,
+      body,
+      headers: { cookie: `deployment-cookie=never-forward; ${accountCookie}` },
+    };
+    const response = await call(options);
+    assert.equal(response.statusCode, status);
+    assert.deepEqual(response.body, payload);
+    assert.equal(request.url, `${env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN}/v1/account/${route}`);
+    assert.equal(request.headers.Origin, origin);
+    assert.deepEqual(request.body, body);
+    assert.equal(request.headers.Cookie, authenticated ? accountCookie : undefined);
+    assert.deepEqual(response.headers["set-cookie"], authenticated ? [session, clear] : undefined);
+
+    const accepted = upstream.mock.callCount();
+    assert.equal((await call({ ...options, method: "GET" })).statusCode, 405);
+    assert.equal((await call({ ...options, headers: { origin: undefined } })).statusCode, 403);
+    assert.equal((await call({ ...options, headers: { origin: "https://other.vercel.app" } })).statusCode, 403);
+    assert.equal((await call({ ...options, headers: { "sec-fetch-site": "cross-site" } })).statusCode, 403);
+    assert.equal(upstream.mock.callCount(), accepted);
+  }
 
   for (const [status, expected] of [[401, 401], [302, 502], [500, 502]]) {
     upstreamStatus = status;
@@ -131,7 +173,7 @@ test("account sessions and public billing stay on their assigned origins", async
       host: "account.anytranslator.app", origin: "https://account.anytranslator.app",
       cookie: accountCookie, "x-vercel-forwarded-for": "2001:db8::12", "x-at-account-client-ip": "spoofed",
     },
-    url: "/api/account-live?account_route=billing%2Fcheckout",
+    url: "/api/account-live?account_route=billing%2Fportal",
   };
   const liveCatalog = {
     proxy: liveCatalogProxy, method: "GET",
@@ -143,7 +185,7 @@ test("account sessions and public billing stay on their assigned origins", async
   process.env.VERCEL_ENV = "production";
   upstreamStatus = 200;
   assert.equal((await call(liveAccount)).statusCode, 200);
-  assert.equal(request.url, "https://cloudflare.anytranslator.app/v1/account/billing/checkout");
+  assert.equal(request.url, "https://cloudflare.anytranslator.app/v1/account/billing/portal");
   assert.equal(request.headers["X-AT-Account-Proxy-Token"], env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN);
   assert.equal(request.headers["X-AT-Account-Client-IP"], "2001:db8::12");
   assert.equal(request.headers.Cookie, accountCookie);
@@ -174,7 +216,7 @@ test("account sessions and public billing stay on their assigned origins", async
   assert.equal(catalog.headers["set-cookie"], undefined);
   const publicCheckout = {
     ...liveCatalog, method: "POST", url: "/api/account/billing/guest-checkout",
-    body: Buffer.from(JSON.stringify({ attemptId: "local-fixture", offer: offers[1], locale: "zh-tw" })),
+    body: guestOffer,
     headers: {
       ...liveCatalog.headers, "x-vercel-forwarded-for": "2001:db8::13", "x-at-account-client-ip": "spoofed",
     },
@@ -222,7 +264,7 @@ test("account sessions and public billing stay on their assigned origins", async
     [{ headers: { ...publicCheckout.headers, "sec-fetch-site": "cross-site" } }, 403],
     [{ headers: { ...publicCheckout.headers, "content-type": "text/plain" } }, 415],
     [{ body: Buffer.alloc(65_537) }, 413],
-    ...["session", "billing/checkout", "billing/status", "billing/portal", "billing/app-link", "email-access", "email-access/request"]
+    ...["session", "billing/status", "billing/portal", "billing/app-link", "email-access", "email-access/request"]
       .map((route) => [{ url: `/api/account/${route}` }, 404]),
   ]) {
     assert.equal((await call({ ...publicCheckout, ...options })).statusCode, status);

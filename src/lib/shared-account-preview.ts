@@ -50,7 +50,7 @@ export function useCreemOffer() {
   useEffect(() => { setMounted(true); }, []);
   const enabled = mounted && (sharedAccountPreviewEnabled || (sharedAccountLiveEnabled
     && window.location.origin === (sharedAccountLiveAccountEnabled ? liveAccountOrigin : SITE_URL)));
-  const { data, isError, isFetching, isPending, refetch } = useQuery({
+  const { data, isPending, refetch } = useQuery({
     queryKey: ["creem-catalog"],
     enabled,
     retry: false,
@@ -85,6 +85,6 @@ export function useCreemOffer() {
     loading: (!mounted && (sharedAccountLiveEnabled || sharedAccountPreviewEnabled)) || (enabled && isPending),
     guestCheckoutEnabled: enabled && data?.guestCheckoutEnabled === true,
     webEmailAccessEnabled: enabled && data?.webEmailAccessEnabled === true,
-    isError, isFetching, refetch,
+    refetch,
   };
 }

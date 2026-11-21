@@ -1,24 +1,21 @@
 import { useEffect, useRef, useState, type FormEvent, type ReactNode } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import MarketingShell, { useMarketing } from "@/components/marketing/MarketingShell";
-import { CreemBillingNotice } from "@/components/marketing/CreemBillingNotice";
 import { accountRequest, AccountRequestError, clearStoredCheckoutAttempt, visitCreem } from "@/lib/shared-account-client";
 import { createPasskey, getPasskey, type LoginOptions, type RegistrationOptions } from "@/lib/passkeys";
 import { sharedAccountCopy } from "@/translations/marketing/shared-account";
-import { formatCreemPrice, isLiveAccountHost, sharedAccountLiveAccountEnabled, sharedAccountPreviewEnabled, useCreemOffer } from "@/lib/shared-account-preview";
+import { isLiveAccountHost, sharedAccountLiveAccountEnabled, sharedAccountPreviewEnabled, useCreemOffer } from "@/lib/shared-account-preview";
 import { accountDeliveryCopy } from "@/translations/marketing/shared-account-delivery";
 import { guestCheckoutCopy } from "@/translations/marketing/shared-account-guest";
 import appClaimCopy from "@/translations/marketing/app-claim.json";
 import creemCopy from "@/translations/marketing/creem-preview.json";
-import pricingCopy from "@/translations/marketing/pricing.json";
 import BillingReturnPage from "./BillingReturnPage";
 import "./SharedAccountPage.css";
 
 type Account = { id: string; display_name: string };
 type Entitlement = { source: string; plan: string; expiresAt: string; status: string };
 type Billing = {
-  enabled: boolean;
   entitlement: Entitlement | null;
   hasPortal?: boolean;
   translationEnabled?: boolean;
@@ -80,11 +77,8 @@ function AccountManagement() {
   const email = appClaimCopy[currentLanguage.code as keyof typeof appClaimCopy];
   const webPricing = creemCopy[currentLanguage.code];
   const guest = guestCheckoutCopy[currentLanguage.code];
-  const catalog = useCreemOffer();
-  const offer = catalog.isError ? undefined : catalog.offers?.find(({ id }) => id === "standard-monthly");
-  const planPrice = offer && `${formatCreemPrice(currentLanguage.code, offer)} ${pricingCopy[currentLanguage.code].perMonth}`;
+  const { webEmailAccessEnabled } = useCreemOffer();
   const manageSubscription = sharedAccountPreviewEnabled ? messages.portal : webPricing.manageSubscription;
-  const billingUnavailable = sharedAccountPreviewEnabled ? messages.billingUnavailable : webPricing.unavailable;
   const [account, setAccount] = useState<Account | null>();
   const [billing, setBilling] = useState<Billing>();
   const [pair, setPair] = useState<Pairing>();
@@ -99,7 +93,6 @@ function AccountManagement() {
   const [error, setError] = useState("");
   const [feedback, setFeedback] = useState("");
   const [busy, setBusy] = useState(false);
-  const [leavingForCheckout, setLeavingForCheckout] = useState(false);
   const [refresh, setRefresh] = useState(0);
   const [target, setTarget] = useState(currentLanguage.code === "en" ? "zh-tw" : currentLanguage.code);
   const [text, setText] = useState("");
@@ -114,16 +107,10 @@ function AccountManagement() {
   const allowAccountUse = showBilling && location.hash !== "#delete";
   const params = new URLSearchParams(location.search);
   const billingReturn = params.get("billing") === "return";
-  const allowPurchase = allowAccountUse && !billingReturn;
-  const selections = params.getAll("subscribe");
-  const selectedPurchase = selections.length === 1 && selections[0] === "standard-monthly";
-  const unavailablePurchase = selections.length > 0 && !selectedPurchase;
-  const legacyPurchase = sharedAccountLiveAccountEnabled && allowPurchase && selections.length > 0;
   const guestReturning = sharedAccountLiveAccountEnabled && billingReturn;
-  const pageTitle = legacyPurchase ? webPricing.title : messages.title;
   const emailAccessHash = sharedAccountLiveAccountEnabled && /^#access(?:=|$)/.test(location.hash) ? location.hash : "";
   const emailAccessPending = Boolean(emailAccessHash || emailAccess);
-  const sessionLoading = !legacyPurchase && (emailAccessPending || (account === undefined && !sessionError));
+  const sessionLoading = emailAccessPending || (account === undefined && !sessionError);
   const hasPasskeys = typeof window !== "undefined" && window.isSecureContext
     && typeof PublicKeyCredential !== "undefined" && !!navigator.credentials;
 
@@ -169,14 +156,14 @@ function AccountManagement() {
   }, [emailAccess]);
 
   useEffect(() => {
-    if (emailAccessPending || legacyPurchase) return;
+    if (emailAccessPending) return;
     const controller = new AbortController();
     setSessionError(false);
     accountRequest<{ account: Account | null }>("/session", undefined, controller.signal)
       .then(({ account: active }) => { if (!controller.signal.aborted) setAccount(active); })
       .catch(() => { if (!controller.signal.aborted) setSessionError(true); });
     return () => controller.abort();
-  }, [refresh, emailAccessPending, legacyPurchase]);
+  }, [refresh, emailAccessPending]);
 
   useEffect(() => {
     setBilling(undefined);
@@ -189,7 +176,7 @@ function AccountManagement() {
       accountRequest<Billing>("/billing/status", undefined, controller.signal)
         .then((status) => {
           if (controller.signal.aborted) return;
-          // On checkout return, allow the provider webhook to finish before rendering purchase controls.
+          // On checkout return, allow the provider webhook to finish before showing a pending payment.
           if (billingReturn && !status.entitlement && attempts < 3) {
             attempts++;
             timer = window.setTimeout(loadBilling, attempts * 1000);
@@ -238,10 +225,7 @@ function AccountManagement() {
 
   useEffect(() => {
     const restoreBilling = (event: PageTransitionEvent) => {
-      if (event.persisted) {
-        setLeavingForCheckout(false);
-        setRefresh((value) => value + 1);
-      }
+      if (event.persisted) setRefresh((value) => value + 1);
     };
     window.addEventListener("pageshow", restoreBilling);
     return () => window.removeEventListener("pageshow", restoreBilling);
@@ -325,26 +309,6 @@ function AccountManagement() {
     });
   }
 
-  function startCheckout() {
-    if (!allowPurchase || !offer || unavailablePurchase || leavingForCheckout
-      || !billing?.enabled || billing.entitlement) return;
-    return run(async () => {
-      try {
-        const { checkoutUrl } = await accountRequest<{ checkoutUrl: string }>(
-          "/billing/checkout", sharedAccountPreviewEnabled ? {} : { offer, locale: currentLanguage.code },
-        );
-        visitCreem(checkoutUrl, true);
-        setLeavingForCheckout(true);
-      } catch (failure) {
-        if (failure instanceof AccountRequestError && failure.status === 409) {
-          setRefresh((value) => value + 1);
-          if (!sharedAccountPreviewEnabled) await catalog.refetch();
-        }
-        throw failure;
-      }
-    });
-  }
-
   function sendTranslation(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     return run(async () => {
@@ -363,57 +327,35 @@ function AccountManagement() {
     : error === "pairing_unavailable" ? messages.pairExpired
     : ["billing_needs_attention", "account_has_active_billing", "billing_cancellation_required"].includes(error)
       ? sharedAccountPreviewEnabled ? messages.billingBlock : webPricing.deletionBlocked
-    : error === "Manage the existing Test Mode subscription first" || error === "creem_manage_existing" ? manageSubscription
-    : error === "creem_quote_changed" ? webPricing.quoteChanged
     : error === "passkey_cancelled" ? messages.passkeyCancelled
     : error === "web_text_quota_exceeded" ? messages.quotaReached
     : error === "sign_in_required" ? messages.signIn
     : messages.error;
   const expiry = billing?.entitlement ? new Date(billing.entitlement.expiresAt) : null;
   const paidAccess = allowAccountUse && expiry && expiry.getTime() > Date.now();
-  const showLiveAppDelivery = paidAccess && isLiveAccountHost()
-    && billing?.appClaimEmailEnabled === true && billing.entitlement?.source === "creem_live";
   const showPreviewAppDelivery = paidAccess && sharedAccountPreviewEnabled && billing?.entitlement?.source === "creem_test";
+  const canResendAppLink = paidAccess && billing?.appClaimEmailEnabled === true
+    && (showPreviewAppDelivery || (isLiveAccountHost() && billing.entitlement?.source === "creem_live"));
 
   return (
     <MarketingShell close={false}>
       <Helmet>
-        <title>{sessionLoading ? "AnyTranslator" : `${pageTitle} | AnyTranslator`}</title>
+        <title>{sessionLoading ? "AnyTranslator" : `${messages.title} | AnyTranslator`}</title>
         <meta name="robots" content="noindex, nofollow" />
         <meta name="referrer" content="no-referrer" />
       </Helmet>
       <header className="mk-page-intro mk-wrap">
-        {sessionLoading ? <AccountSkeleton className="mk-account-skeleton-title" /> : <h1>{pageTitle}</h1>}
+        {sessionLoading ? <AccountSkeleton className="mk-account-skeleton-title" /> : <h1>{messages.title}</h1>}
       </header>
-      <div className="mk-wrap mk-account-page" aria-busy={busy || leavingForCheckout || sessionLoading}>
-        {(busy || leavingForCheckout || emailAccessPending) && <AccountSkeleton />}
+      <div className="mk-wrap mk-account-page" aria-busy={busy || sessionLoading}>
+        {(busy || emailAccessPending) && <AccountSkeleton />}
         {error && <p role="alert" className="mk-account-notice">{errorText}</p>}
         {feedback === "deleted" && <p role="status" className="mk-account-notice">{messages.deleted}</p>}
         {feedback === "email_link_requested" && <p role="status" className="mk-account-notice">{guest.linkRequested}</p>}
-        {legacyPurchase && !emailAccessPending && (
-          <div className="mk-account-section">
-            <a className="mk-button" href={href("/pricing")}>{webPricing.seePlans}</a>
-          </div>
-        )}
-        {sharedAccountPreviewEnabled && allowPurchase && unavailablePurchase && (
-          <AccountSection id="account-selection" title={webPricing.unavailable}>
-            <Link className="mk-button mk-button-secondary" to={href("/pricing")}>{webPricing.seePlans}</Link>
-          </AccountSection>
-        )}
-        {sharedAccountPreviewEnabled && allowPurchase && selectedPurchase && !account && !emailAccessPending && (
-          <AccountSection id="account-selection" title={copy.pricing.standardTitle}>
-            {offer ? (
-              <>
-                <p>{planPrice}</p>
-                <p>{webPricing.testMode}</p>
-              </>
-            ) : catalog.loading ? <AccountSkeleton /> : <p>{billingUnavailable}</p>}
-          </AccountSection>
-        )}
         {guestReturning && account === null && !emailAccessPending && (
           <p role="status" className="mk-account-notice">{guest.checkInbox}</p>
         )}
-        {catalog.webEmailAccessEnabled && !billingReturn && account === null && !emailAccessPending && !legacyPurchase && (
+        {webEmailAccessEnabled && !billingReturn && account === null && !emailAccessPending && (
           <AccountSection id="account-email-sign-in" title={guest.emailSignIn}>
             <EmailAccessForm copy={guest} disabled={busy} onRequest={requestEmailLink} />
           </AccountSection>
@@ -437,7 +379,7 @@ function AccountManagement() {
               ) : <AccountSkeleton />}
           </AccountSection>
         )}
-        {emailAccessPending || legacyPurchase ? null : sessionError ? (
+        {emailAccessPending ? null : sessionError ? (
           <div className="mk-account-notice">
             <p role="alert">{messages.error}</p>
             <button className="mk-button mk-button-secondary" type="button" onClick={() => setRefresh((value) => value + 1)}>{messages.retry}</button>
@@ -472,17 +414,9 @@ function AccountManagement() {
                               onClick={() => setRefresh((value) => value + 1)}>{messages.retry}</button>
                           </>
                         )}
-                        {allowPurchase && !billing.entitlement && !unavailablePurchase && (!billing.enabled ? <p>{billingUnavailable}</p> : offer ? (
-                          <>
-                            <p><strong>{copy.pricing.standardTitle}</strong> · {planPrice}</p>
-                            {sharedAccountPreviewEnabled ? <p>{webPricing.testMode}</p> : <CreemBillingNotice offer={offer} />}
-                          </>
-                        ) : catalog.loading ? <AccountSkeleton /> : <p>{billingUnavailable}</p>)}
                         <div className="mk-account-actions">
-                          {billing.enabled && allowPurchase && !billing.entitlement && !unavailablePurchase && offer && (
-                            <button className="mk-button" type="button" disabled={busy || leavingForCheckout || catalog.isFetching} onClick={() => void startCheckout()}>
-                              {!sharedAccountPreviewEnabled || selectedPurchase ? webPricing.continueCheckout : messages.checkout}
-                            </button>
+                          {allowAccountUse && !billingReturn && !paidAccess && (
+                            <a className="mk-button" href={href("/pricing")}>{messages.choosePlan}</a>
                           )}
                           {(billing.entitlement || billing.hasPortal) && (
                             <button className="mk-button mk-button-secondary" type="button" disabled={busy} onClick={() => void run(async () => {
@@ -494,17 +428,16 @@ function AccountManagement() {
                       </>
                     )}
               </AccountSection>}
-              {showPreviewAppDelivery && (
-                <AccountSection id="account-app-delivery" title={messages.pairTitle}>
-                  <p>{webPricing.testMode}</p>
-                  <p>{delivery.bindHelp}</p>
-                </AccountSection>
-              )}
-              {showLiveAppDelivery && (
-                <AccountSection id="account-app-delivery" title={email.title}>
-                  <p>{email.delivery}</p>
-                  <button type="button" className="mk-button" disabled={busy} onClick={() => void resendAppLink()}>{email.resend}</button>
-                  {feedback === "app_link_requested" && <p role="status">{email.requested}</p>}
+              {(showPreviewAppDelivery || canResendAppLink) && (
+                <AccountSection id="account-app-delivery" title={showPreviewAppDelivery ? messages.pairTitle : email.title}>
+                  {showPreviewAppDelivery && <><p>{webPricing.testMode}</p><p>{delivery.bindHelp}</p></>}
+                  {canResendAppLink && (
+                    <>
+                      <p>{email.delivery}</p>
+                      <button type="button" className="mk-button" disabled={busy} onClick={() => void resendAppLink()}>{email.resend}</button>
+                      {feedback === "app_link_requested" && <p role="status">{email.requested}</p>}
+                    </>
+                  )}
                 </AccountSection>
               )}
               {allowAccountUse && (sharedAccountPreviewEnabled || billing?.translationEnabled) && <AccountSection id="account-translate" title={messages.translateTitle}>

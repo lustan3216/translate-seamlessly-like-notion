@@ -4,8 +4,8 @@ import { defineConfig, loadEnv, mergeConfig, type ConfigEnv, type Plugin, type P
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
-
-const accountPreviewWorker = "https://codex-creem-shared-account-anytranslator-api-dev.et3216-c0d.workers.dev";
+// @ts-expect-error The Vercel handler is packaged as a standalone JavaScript file.
+import { isPreviewWorkerOrigin } from "./scripts/vercel-account-preview-proxy.mjs";
 
 function sharedAccountPreview(isolated: boolean): { options: PreviewOptions; guard: Plugin } {
   const siteOrigin = process.env.ACCOUNT_WEB_ORIGIN ?? "http://localhost:8080";
@@ -18,12 +18,13 @@ function sharedAccountPreview(isolated: boolean): { options: PreviewOptions; gua
     throw new Error("Invalid isolated account preview origin");
   }
 
-  const targetOrigin = process.env.SHARED_ACCOUNT_API_TARGET ?? accountPreviewWorker;
-  if (!URL.canParse(targetOrigin)) throw new Error("Invalid account preview API target");
+  const fixtureOrigin = process.env.SHARED_ACCOUNT_API_TARGET;
+  const targetOrigin = fixtureOrigin ?? process.env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN;
+  if (!targetOrigin || !URL.canParse(targetOrigin)) throw new Error("Invalid account preview API target");
   const target = new URL(targetOrigin);
   const loopbackFixture = local && target.protocol === "http:" && target.hostname === "127.0.0.1" && target.port;
   if (target.username || target.password || target.pathname !== "/" || target.search || target.hash
-    || !(target.origin === accountPreviewWorker || loopbackFixture)) {
+    || !(fixtureOrigin === undefined ? isPreviewWorkerOrigin(targetOrigin) : loopbackFixture)) {
     throw new Error("Account preview requires its branch Worker or a loopback fixture");
   }
   const token = process.env.SHARED_ACCOUNT_PROXY_TOKEN;

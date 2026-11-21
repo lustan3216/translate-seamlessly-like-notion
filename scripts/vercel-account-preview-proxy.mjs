@@ -1,24 +1,28 @@
 import { isIP } from "node:net";
 
-const worker = "https://codex-creem-shared-account-anytranslator-api-dev.et3216-c0d.workers.dev";
 const liveWorker = "https://cloudflare.anytranslator.app";
 const liveAccountHost = "account.anytranslator.app";
 const billingCatalog = "billing/catalog";
-const liveGuestResend = "billing/guest-resend";
-const guestBillingRoutes = new Set(["billing/guest-checkout", liveGuestResend]);
-const livePostRoutes = new Set(["billing/app-link", ...guestBillingRoutes, "email-access", "email-access/request"]);
+const guestResend = "billing/guest-resend";
+const guestBillingRoutes = new Set(["billing/guest-checkout", guestResend]);
+const livePostRoutes = new Set(["email-access", "email-access/request"]);
 const getRoutes = new Set(["session", "billing/status"]);
 const postRoutes = new Set([
   "passkeys/register/options", "passkeys/register/verify",
   "passkeys/login/options", "passkeys/login/verify",
   "pair/preview", "pair/approve", "logout", "delete",
-  "translate", "billing/checkout", "billing/portal",
+  "translate", "billing/portal", "billing/app-link", ...guestBillingRoutes,
 ]);
 const prefix = "/api/account/";
 const jsonType = "application/json";
 const maxBodyBytes = 64 * 1024;
 const ownedCookie = /^__Host-at_(?:session|flow)=/;
 const setCookie = /^__Host-at_(?:session|flow)=(?:[A-Za-z0-9_-]{43})?; Max-Age=\d+; Path=\/; HttpOnly; Secure; SameSite=Strict$/;
+
+/** @param {string | undefined} origin */
+export function isPreviewWorkerOrigin(origin) {
+  return /^https:\/\/[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.et3216-c0d\.workers\.dev$/.test(origin ?? "");
+}
 
 function routeFromPath(url = "", functionPath) {
   const delimiter = url.indexOf("?");
@@ -49,6 +53,7 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
     || req.headers.host !== host || !/^[\x21-\x7e]{32,512}$/.test(token ?? "")) {
     return reply(res, 404, "not_found");
   }
+  if (!backend) return reply(res, 503, "not_configured");
 
   const route = routeFromPath(req.url, functionPath);
   const catalog = route === billingCatalog;
@@ -98,7 +103,7 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
     const response = await fetch(`${backend}/v1/account/${route}`, {
       method, headers, body, redirect: "manual", signal: AbortSignal.timeout(50_000),
     });
-    if (route === liveGuestResend && response.status === 202) {
+    if (route === guestResend && response.status === 202) {
       await response.body?.cancel();
       res.statusCode = 202;
       return res.end("{}");
@@ -118,11 +123,11 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
 }
 
 export default function previewAccountProxy(req, res) {
-  const { VERCEL_URL: host, SHARED_ACCOUNT_PROXY_TOKEN: token } = process.env;
+  const { VERCEL_URL: host, SHARED_ACCOUNT_PROXY_TOKEN: token, SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN: backend } = process.env;
   return proxy(req, res, {
     vercelEnvironment: "preview",
     host: /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.vercel\.app$/.test(host ?? "") ? host : null,
-    token, backend: worker, functionPath: "/api/account-preview",
+    token, backend: isPreviewWorkerOrigin(backend) ? backend : undefined, functionPath: "/api/account-preview",
   });
 }
 
