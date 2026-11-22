@@ -42,7 +42,7 @@ function reply(res, status, error) {
   res.end(JSON.stringify({ error }));
 }
 
-async function proxy(req, res, { vercelEnvironment, host, token, backend, functionPath, publicBilling = false }) {
+async function proxy(req, res, { vercelEnvironment, host, target, functionPath, publicBilling = false }) {
   res.setHeader("Content-Type", "application/json; charset=utf-8");
   res.setHeader("Cache-Control", "private, no-store");
   res.setHeader("X-Content-Type-Options", "nosniff");
@@ -50,11 +50,12 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
   res.setHeader("Referrer-Policy", "no-referrer");
 
   if (process.env.VERCEL_ENV !== vercelEnvironment || !host
-    || req.headers.host !== host || !/^[\x21-\x7e]{32,512}$/.test(token ?? "")) {
+    || req.headers.host !== host || (target && !/^[\x21-\x7e]{32,512}$/.test(target.token ?? ""))) {
     return reply(res, 404, "not_found");
   }
-  if (!backend) return reply(res, 503, "not_configured");
+  if (!target?.backend) return reply(res, 503, "not_configured");
 
+  const { backend, token } = target;
   const route = routeFromPath(req.url, functionPath);
   const catalog = route === billingCatalog;
   if (publicBilling && !catalog && !guestBillingRoutes.has(route)) return reply(res, 404, "not_found");
@@ -127,14 +128,27 @@ export default function previewAccountProxy(req, res) {
   return proxy(req, res, {
     vercelEnvironment: "preview",
     host: /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.vercel\.app$/.test(host ?? "") ? host : null,
-    token, backend: isPreviewWorkerOrigin(backend) ? backend : undefined, functionPath: "/api/account-preview",
+    target: { token, backend: isPreviewWorkerOrigin(backend) ? backend : undefined },
+    functionPath: "/api/account-preview",
   });
+}
+
+function liveProxyTarget() {
+  const {
+    SHARED_ACCOUNT_LIVE_TEST_WORKER_ORIGIN: backend,
+    SHARED_ACCOUNT_LIVE_TEST_PROXY_TOKEN: token,
+  } = process.env;
+  // shortcut: Creem Test backend until Creem Live approval; delete both Vercel vars (and this branch) after approval.
+  if (backend === undefined && token === undefined) {
+    return { backend: liveWorker, token: process.env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN };
+  }
+  return isPreviewWorkerOrigin(backend) && token ? { backend, token } : undefined;
 }
 
 export function liveAccountProxy(req, res) {
   return proxy(req, res, {
     vercelEnvironment: "production", host: liveAccountHost,
-    token: process.env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN, backend: liveWorker,
+    target: liveProxyTarget(),
     functionPath: "/api/account-live",
   });
 }
@@ -142,7 +156,7 @@ export function liveAccountProxy(req, res) {
 export function liveCatalogProxy(req, res) {
   return proxy(req, res, {
     vercelEnvironment: "production", host: "www.anytranslator.app",
-    token: process.env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN, backend: liveWorker,
+    target: liveProxyTarget(),
     functionPath: "/api/account-catalog", publicBilling: true,
   });
 }
