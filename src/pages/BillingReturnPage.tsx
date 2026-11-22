@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import AppStoreLink, { APP_STORE_URL } from "@/components/AppStoreLink";
+import HugeIcon from "@/components/HugeIcon";
 import MarketingShell, { useMarketing } from "@/components/marketing/MarketingShell";
 import { appStoreQr } from "@/lib/app-store-qr";
 import { accountRequest } from "@/lib/shared-account-client";
@@ -55,12 +56,13 @@ export default function BillingReturnPage({ checkoutId }: { checkoutId: string }
         <meta name="robots" content="noindex, nofollow" />
         <meta name="referrer" content="no-referrer" />
       </Helmet>
-      <header className="mk-page-intro mk-wrap">
-        <h1 id="billing-return-title">{copy.title}</h1>
-      </header>
-      <div className="mk-wrap mk-account-page">
+      <div className="mk-wrap mk-account-page mk-billing-return-page">
         <section className="mk-account-section mk-billing-return" aria-labelledby="billing-return-title">
-          <p>{copy.instructions}</p>
+          <span className="mk-billing-return-badge">
+            <HugeIcon name="tick-02" className="h-6 w-6" />
+          </span>
+          <h1 id="billing-return-title">{copy.title}</h1>
+          <p className="mk-billing-return-copy">{copy.instructions}</p>
           <AppStoreLink source="billing-return" className="mk-button">{download}</AppStoreLink>
           <svg className="mk-billing-return-qr" viewBox={`0 0 ${qr.size} ${qr.size}`} aria-hidden="true" shapeRendering="crispEdges">
             <rect width={qr.size} height={qr.size} fill="white" />
