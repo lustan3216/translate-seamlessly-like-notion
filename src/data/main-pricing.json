@@ -4,7 +4,7 @@
   "plans": {
     "free": {
       "visible": false,
-      "translateCount": 25,
+      "translateCount": 15,
       "audioMinutes": 5,
       "voiceAgentMinutes": 2,
       "quotaPeriod": "week",

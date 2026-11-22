@@ -21,7 +21,16 @@
     "lastChecked": "App Store prices updated {date}.",
     "subscribeStandard": "Subscribe to Standard",
     "subscribeVoice": "Subscribe to Voice",
-    "subscribeInApp": "Subscribe in the app"
+    "subscribeInApp": "Subscribe in the app",
+    "translationCountOne": "{count} translation",
+    "translationCountFew": "{count} translations",
+    "translationCountOther": "{count} translations",
+    "freeQuotaDay": "{amount} / day",
+    "freeQuotaWeek": "{amount} / week",
+    "freeQuotaMonth": "{amount} / month",
+    "freeQuotaDays": "{amount} every {days} days",
+    "sharedTranslationQuota": "Text & writing, photo translation, and AI assistant text and photo questions outside voice sessions share one translation quota.",
+    "photoBatchOne": "{count} photo per batch"
   },
   "zh-tw": {
     "billing": "付款週期",
@@ -45,7 +54,16 @@
     "lastChecked": "App Store 價格更新於 {date}。",
     "subscribeStandard": "訂閱標準版",
     "subscribeVoice": "訂閱語音版",
-    "subscribeInApp": "在 App 內訂閱"
+    "subscribeInApp": "在 App 內訂閱",
+    "translationCountOne": "{count} 次",
+    "translationCountFew": "{count} 次",
+    "translationCountOther": "{count} 次",
+    "freeQuotaDay": "每天 {amount}",
+    "freeQuotaWeek": "每週 {amount}",
+    "freeQuotaMonth": "每月 {amount}",
+    "freeQuotaDays": "每 {days} 天 {amount}",
+    "sharedTranslationQuota": "文字翻譯與寫作、照片翻譯，以及 AI 助手的文字與照片提問（語音連線期間除外）共用翻譯次數。",
+    "photoBatchOne": "{count} 張／批"
   },
   "ko": {
     "billing": "결제 주기",
@@ -69,7 +87,16 @@
     "lastChecked": "App Store 가격 업데이트: {date}.",
     "subscribeStandard": "스탠다드 구독",
     "subscribeVoice": "음성 플랜 구독",
-    "subscribeInApp": "앱에서 구독"
+    "subscribeInApp": "앱에서 구독",
+    "translationCountOne": "{count}회",
+    "translationCountFew": "{count}회",
+    "translationCountOther": "{count}회",
+    "freeQuotaDay": "{amount} /일",
+    "freeQuotaWeek": "{amount} /주",
+    "freeQuotaMonth": "{amount} /월",
+    "freeQuotaDays": "{days}일마다 {amount}",
+    "sharedTranslationQuota": "텍스트 번역과 글쓰기, 사진 번역, AI 도우미 텍스트·사진 질문(음성 연결 중 제외)은 번역 횟수 한도를 공유합니다.",
+    "photoBatchOne": "한 번에 {count}장"
   },
   "ja": {
     "billing": "請求期間",
@@ -93,7 +120,16 @@
     "lastChecked": "App Store価格の更新日：{date}。",
     "subscribeStandard": "スタンダードに登録",
     "subscribeVoice": "音声プランに登録",
-    "subscribeInApp": "アプリ内で登録"
+    "subscribeInApp": "アプリ内で登録",
+    "translationCountOne": "{count}回",
+    "translationCountFew": "{count}回",
+    "translationCountOther": "{count}回",
+    "freeQuotaDay": "{amount} ／日",
+    "freeQuotaWeek": "{amount} ／週",
+    "freeQuotaMonth": "{amount} ／月",
+    "freeQuotaDays": "{days}日ごとに {amount}",
+    "sharedTranslationQuota": "テキスト翻訳・文章作成、写真翻訳、AIアシスタントへの文字・写真の質問（音声接続中を除く）は、翻訳回数の利用枠を共有します。",
+    "photoBatchOne": "1回{count}枚"
   },
   "fr": {
     "billing": "Période de facturation",
@@ -117,7 +153,16 @@
     "lastChecked": "Tarifs de l’App Store mis à jour le {date}.",
     "subscribeStandard": "S’abonner à Standard",
     "subscribeVoice": "S’abonner à Voix",
-    "subscribeInApp": "S’abonner dans l’app"
+    "subscribeInApp": "S’abonner dans l’app",
+    "translationCountOne": "{count} traduction",
+    "translationCountFew": "{count} traductions",
+    "translationCountOther": "{count} traductions",
+    "freeQuotaDay": "{amount} / jour",
+    "freeQuotaWeek": "{amount} / semaine",
+    "freeQuotaMonth": "{amount} / mois",
+    "freeQuotaDays": "{amount} tous les {days} jours",
+    "sharedTranslationQuota": "La traduction de texte, la rédaction, la traduction de photos et les questions texte ou photo à l’assistant IA hors session vocale partagent le même quota de traductions.",
+    "photoBatchOne": "{count} photo/lot"
   },
   "de": {
     "billing": "Abrechnungszeitraum",
@@ -141,7 +186,16 @@
     "lastChecked": "App-Store-Preise aktualisiert am {date}.",
     "subscribeStandard": "Standard abonnieren",
     "subscribeVoice": "Sprache abonnieren",
-    "subscribeInApp": "In der App abonnieren"
+    "subscribeInApp": "In der App abonnieren",
+    "translationCountOne": "{count} Übersetzung",
+    "translationCountFew": "{count} Übersetzungen",
+    "translationCountOther": "{count} Übersetzungen",
+    "freeQuotaDay": "{amount} / Tag",
+    "freeQuotaWeek": "{amount} / Woche",
+    "freeQuotaMonth": "{amount} / Monat",
+    "freeQuotaDays": "{amount} alle {days} Tage",
+    "sharedTranslationQuota": "Text und Schreiben, Fotoübersetzungen sowie Text- und Fotofragen an den KI-Assistenten außerhalb von Sprachsitzungen teilen sich ein Übersetzungskontingent.",
+    "photoBatchOne": "{count} Foto/Stapel"
   },
   "es": {
     "billing": "Periodo de facturación",
@@ -165,7 +219,16 @@
     "lastChecked": "Precios del App Store actualizados el {date}.",
     "subscribeStandard": "Suscribirse a Estándar",
     "subscribeVoice": "Suscribirse a Voz",
-    "subscribeInApp": "Suscribirse en la app"
+    "subscribeInApp": "Suscribirse en la app",
+    "translationCountOne": "{count} traducción",
+    "translationCountFew": "{count} traducciones",
+    "translationCountOther": "{count} traducciones",
+    "freeQuotaDay": "{amount} / día",
+    "freeQuotaWeek": "{amount} / semana",
+    "freeQuotaMonth": "{amount} / mes",
+    "freeQuotaDays": "{amount} cada {days} días",
+    "sharedTranslationQuota": "El texto y la escritura, la traducción de fotos y las preguntas de texto o fotos al asistente de IA fuera de las sesiones de voz comparten el mismo límite de traducciones.",
+    "photoBatchOne": "{count} foto/lote"
   },
   "it": {
     "billing": "Periodo di fatturazione",
@@ -189,7 +252,16 @@
     "lastChecked": "Prezzi dell’App Store aggiornati il {date}.",
     "subscribeStandard": "Abbonati a Standard",
     "subscribeVoice": "Abbonati a Voce",
-    "subscribeInApp": "Abbonati nell’app"
+    "subscribeInApp": "Abbonati nell’app",
+    "translationCountOne": "{count} traduzione",
+    "translationCountFew": "{count} traduzioni",
+    "translationCountOther": "{count} traduzioni",
+    "freeQuotaDay": "{amount} / giorno",
+    "freeQuotaWeek": "{amount} / settimana",
+    "freeQuotaMonth": "{amount} / mese",
+    "freeQuotaDays": "{amount} ogni {days} giorni",
+    "sharedTranslationQuota": "Testo e scrittura, traduzione di foto e domande di testo o foto all’assistente IA fuori dalle sessioni vocali condividono la stessa quota di traduzioni.",
+    "photoBatchOne": "{count} foto/gruppo"
   },
   "pt-br": {
     "billing": "Período de cobrança",
@@ -213,7 +285,16 @@
     "lastChecked": "Preços da App Store atualizados em {date}.",
     "subscribeStandard": "Assinar o Padrão",
     "subscribeVoice": "Assinar o Voz",
-    "subscribeInApp": "Assinar no app"
+    "subscribeInApp": "Assinar no app",
+    "translationCountOne": "{count} tradução",
+    "translationCountFew": "{count} traduções",
+    "translationCountOther": "{count} traduções",
+    "freeQuotaDay": "{amount} / dia",
+    "freeQuotaWeek": "{amount} / semana",
+    "freeQuotaMonth": "{amount} / mês",
+    "freeQuotaDays": "{amount} a cada {days} dias",
+    "sharedTranslationQuota": "Texto e escrita, tradução de fotos e perguntas com texto ou fotos ao assistente de IA (fora das sessões de voz) compartilham a mesma cota de traduções.",
+    "photoBatchOne": "{count} foto/lote"
   },
   "fi": {
     "billing": "Laskutusjakso",
@@ -237,7 +318,16 @@
     "lastChecked": "App Store -hinnat päivitetty {date}.",
     "subscribeStandard": "Tilaa Peruspaketti",
     "subscribeVoice": "Tilaa Puhepaketti",
-    "subscribeInApp": "Tilaa sovelluksessa"
+    "subscribeInApp": "Tilaa sovelluksessa",
+    "translationCountOne": "{count} käännös",
+    "translationCountFew": "{count} käännöstä",
+    "translationCountOther": "{count} käännöstä",
+    "freeQuotaDay": "{amount} / päivä",
+    "freeQuotaWeek": "{amount} / viikko",
+    "freeQuotaMonth": "{amount} / kuukausi",
+    "freeQuotaDays": "{amount} / {days} päivää",
+    "sharedTranslationQuota": "Teksti ja kirjoittaminen, kuvakäännökset sekä tekoälyavustajan teksti- ja kuvakysymykset puheyhteyden ulkopuolella käyttävät samaa käännöskiintiötä.",
+    "photoBatchOne": "{count} kuva/erä"
   },
   "da": {
     "billing": "Betalingsperiode",
@@ -261,7 +351,16 @@
     "lastChecked": "App Store-priser opdateret {date}.",
     "subscribeStandard": "Abonner på Standard",
     "subscribeVoice": "Abonner på Tale",
-    "subscribeInApp": "Abonner i appen"
+    "subscribeInApp": "Abonner i appen",
+    "translationCountOne": "{count} oversættelse",
+    "translationCountFew": "{count} oversættelser",
+    "translationCountOther": "{count} oversættelser",
+    "freeQuotaDay": "{amount} / dag",
+    "freeQuotaWeek": "{amount} / uge",
+    "freeQuotaMonth": "{amount} / måned",
+    "freeQuotaDays": "{amount} hver {days}. dag",
+    "sharedTranslationQuota": "Tekst og skrivning, fotooversættelse og tekst- og billedspørgsmål til AI-assistenten uden for stemmesessioner deler den samme oversættelseskvote.",
+    "photoBatchOne": "{count} foto/batch"
   },
   "nl": {
     "billing": "Factureringsperiode",
@@ -285,7 +384,16 @@
     "lastChecked": "App Store-prijzen bijgewerkt op {date}.",
     "subscribeStandard": "Neem Standaard",
     "subscribeVoice": "Neem Spraak",
-    "subscribeInApp": "Abonneer je in de app"
+    "subscribeInApp": "Abonneer je in de app",
+    "translationCountOne": "{count} vertaalbeurt",
+    "translationCountFew": "{count} vertaalbeurten",
+    "translationCountOther": "{count} vertaalbeurten",
+    "freeQuotaDay": "{amount} / dag",
+    "freeQuotaWeek": "{amount} per week",
+    "freeQuotaMonth": "{amount} / maand",
+    "freeQuotaDays": "{amount} per {days} dagen",
+    "sharedTranslationQuota": "Tekst en schrijven, fotovertaling en tekst- en fotovragen aan de AI-assistent buiten spraaksessies delen hetzelfde tegoed aan vertaalbeurten.",
+    "photoBatchOne": "{count} foto/batch"
   },
   "no": {
     "billing": "Betalingsperiode",
@@ -309,7 +417,16 @@
     "lastChecked": "App Store-priser oppdatert {date}.",
     "subscribeStandard": "Abonner på Standard",
     "subscribeVoice": "Abonner på Tale",
-    "subscribeInApp": "Abonner i appen"
+    "subscribeInApp": "Abonner i appen",
+    "translationCountOne": "{count} oversettelse",
+    "translationCountFew": "{count} oversettelser",
+    "translationCountOther": "{count} oversettelser",
+    "freeQuotaDay": "{amount} / dag",
+    "freeQuotaWeek": "{amount} / uke",
+    "freeQuotaMonth": "{amount} / måned",
+    "freeQuotaDays": "{amount} hver {days}. dag",
+    "sharedTranslationQuota": "Tekst og skriving, bildeoversettelse og tekst- og bildespørsmål til KI-assistenten utenom taleøkter deler samme oversettelseskvote.",
+    "photoBatchOne": "{count} bilde/gruppe"
   },
   "sv": {
     "billing": "Betalningsperiod",
@@ -333,7 +450,16 @@
     "lastChecked": "App Store-priser uppdaterade {date}.",
     "subscribeStandard": "Prenumerera på Standard",
     "subscribeVoice": "Prenumerera på Röst",
-    "subscribeInApp": "Prenumerera i appen"
+    "subscribeInApp": "Prenumerera i appen",
+    "translationCountOne": "{count} översättning",
+    "translationCountFew": "{count} översättningar",
+    "translationCountOther": "{count} översättningar",
+    "freeQuotaDay": "{amount} / dag",
+    "freeQuotaWeek": "{amount} / vecka",
+    "freeQuotaMonth": "{amount} / månad",
+    "freeQuotaDays": "{amount} per {days} dagar",
+    "sharedTranslationQuota": "Text och skrivande, fotoöversättning samt text- och bildfrågor till AI-assistenten utanför röstsamtal delar samma översättningskvot.",
+    "photoBatchOne": "{count} foto/omgång"
   },
   "zh-cn": {
     "billing": "付款周期",
@@ -357,7 +483,16 @@
     "lastChecked": "App Store 价格更新于 {date}。",
     "subscribeStandard": "订阅标准版",
     "subscribeVoice": "订阅语音版",
-    "subscribeInApp": "在 App 内订阅"
+    "subscribeInApp": "在 App 内订阅",
+    "translationCountOne": "{count} 次",
+    "translationCountFew": "{count} 次",
+    "translationCountOther": "{count} 次",
+    "freeQuotaDay": "每天 {amount}",
+    "freeQuotaWeek": "每周 {amount}",
+    "freeQuotaMonth": "每月 {amount}",
+    "freeQuotaDays": "每 {days} 天 {amount}",
+    "sharedTranslationQuota": "文字翻译与写作、照片翻译，以及 AI 助手的文字与照片提问（语音连接期间除外）共用翻译次数。",
+    "photoBatchOne": "{count} 张／批"
   },
   "id": {
     "billing": "Periode pembayaran",
@@ -381,7 +516,16 @@
     "lastChecked": "Harga App Store diperbarui pada {date}.",
     "subscribeStandard": "Langganan Standar",
     "subscribeVoice": "Langganan Suara",
-    "subscribeInApp": "Berlangganan di aplikasi"
+    "subscribeInApp": "Berlangganan di aplikasi",
+    "translationCountOne": "{count} terjemahan",
+    "translationCountFew": "{count} terjemahan",
+    "translationCountOther": "{count} terjemahan",
+    "freeQuotaDay": "{amount} / hari",
+    "freeQuotaWeek": "{amount} / minggu",
+    "freeQuotaMonth": "{amount} / bulan",
+    "freeQuotaDays": "{amount} setiap {days} hari",
+    "sharedTranslationQuota": "Teks dan penulisan, terjemahan foto, serta pertanyaan teks dan foto untuk Asisten AI di luar sesi suara memakai kuota terjemahan yang sama.",
+    "photoBatchOne": "{count} foto／proses"
   },
   "vi": {
     "billing": "Chu kỳ thanh toán",
@@ -405,7 +549,16 @@
     "lastChecked": "Giá App Store cập nhật ngày {date}.",
     "subscribeStandard": "Đăng ký gói Tiêu chuẩn",
     "subscribeVoice": "Đăng ký gói Giọng nói",
-    "subscribeInApp": "Đăng ký trong ứng dụng"
+    "subscribeInApp": "Đăng ký trong ứng dụng",
+    "translationCountOne": "{count} lượt dịch",
+    "translationCountFew": "{count} lượt dịch",
+    "translationCountOther": "{count} lượt dịch",
+    "freeQuotaDay": "{amount} / ngày",
+    "freeQuotaWeek": "{amount} / tuần",
+    "freeQuotaMonth": "{amount} / tháng",
+    "freeQuotaDays": "{amount} mỗi {days} ngày",
+    "sharedTranslationQuota": "Dịch văn bản và hỗ trợ viết, dịch ảnh và hỏi Trợ lý AI bằng văn bản hoặc ảnh ngoài phiên thoại dùng chung hạn mức lượt dịch.",
+    "photoBatchOne": "{count} ảnh／đợt"
   },
   "th": {
     "billing": "รอบการเรียกเก็บเงิน",
@@ -429,7 +582,16 @@
     "lastChecked": "อัปเดตราคา App Store เมื่อ {date}",
     "subscribeStandard": "สมัครแพ็กเกจมาตรฐาน",
     "subscribeVoice": "สมัครแพ็กเกจเสียง",
-    "subscribeInApp": "สมัครในแอป"
+    "subscribeInApp": "สมัครในแอป",
+    "translationCountOne": "{count} ครั้ง",
+    "translationCountFew": "{count} ครั้ง",
+    "translationCountOther": "{count} ครั้ง",
+    "freeQuotaDay": "{amount} / วัน",
+    "freeQuotaWeek": "{amount} / สัปดาห์",
+    "freeQuotaMonth": "{amount} / เดือน",
+    "freeQuotaDays": "{amount} ทุก {days} วัน",
+    "sharedTranslationQuota": "การแปลข้อความและงานเขียน การแปลรูปภาพ และการถามผู้ช่วย AI ด้วยข้อความหรือรูปภาพนอกการสนทนาด้วยเสียง ใช้โควตาการแปลร่วมกัน",
+    "photoBatchOne": "{count} รูป/ชุด"
   },
   "ru": {
     "billing": "Период оплаты",
@@ -453,6 +615,15 @@
     "lastChecked": "Цены App Store обновлены {date}.",
     "subscribeStandard": "Подписаться на «Стандарт»",
     "subscribeVoice": "Подписаться на «Голос»",
-    "subscribeInApp": "Подписаться в приложении"
+    "subscribeInApp": "Подписаться в приложении",
+    "translationCountOne": "{count} перевод",
+    "translationCountFew": "{count} перевода",
+    "translationCountOther": "{count} переводов",
+    "freeQuotaDay": "{amount} / день",
+    "freeQuotaWeek": "{amount} / неделю",
+    "freeQuotaMonth": "{amount} / месяц",
+    "freeQuotaDays": "{amount} / {days} дн.",
+    "sharedTranslationQuota": "Перевод текста и помощь с письмом, перевод по фото и вопросы ИИ-помощнику с текстом или фото вне голосовых сессий используют общий лимит переводов.",
+    "photoBatchOne": "{count} фото/пакет"
   }
 }

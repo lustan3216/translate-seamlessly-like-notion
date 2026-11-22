@@ -48,7 +48,8 @@ function sourceSnapshot() {
     for (const key of ["translateCount", "audioMinutes", "voiceAgentMinutes", "helperCount"])
       assert.ok(Number.isInteger(plan[key]) && plan[key] >= -1, `Plan quantity: ${id}/${key}`);
     assert.ok(["week", "month"].includes(plan.quotaPeriod), `Quota period: ${id}`);
-    if (plan.periodDays !== undefined) assert.ok(Number.isInteger(plan.periodDays) && plan.periodDays > 0, `Period days: ${id}`);
+    if (id === "free" || plan.periodDays !== undefined)
+      assert.ok(Number.isInteger(plan.periodDays) && plan.periodDays > 0, `Period days: ${id}`);
     if (id !== "free") {
       assert.ok(plan.visible, `Unavailable advertised plan: ${id}`);
       assert.equal(plan.translateCount, -1, `Unlimited paid translation: ${id}`);
@@ -138,12 +139,21 @@ function sourceSnapshot() {
     const guideSource = source("lib/locales/chat_guide_translations.dart").toString("utf8");
     assert.ok(guideSource.includes("我是你的 AI 語言助手，可以直接說，也可以打字跟我聊"), "Current AI language assistant intro");
     assert.ok(guideSource.includes("也可以透過以下兩種方式學語言："), "Learning-entry guide remains visible");
+    // The fallback describes a fresh installation at the pinned source date.
+    const sourceTime = Date.parse(execFileSync("git", ["-C", appRepo, "show", "-s", "--format=%cI", mainSourceCommit], { encoding: "utf8" }).trim());
+    const rawFree = config.subscription.free;
+    const { scheduledPolicy, newInstallations } = rawFree;
+    const free = scheduledPolicy && sourceTime >= Date.parse(scheduledPolicy.effectiveAt)
+      ? { ...rawFree, ...scheduledPolicy }
+      : newInstallations && sourceTime >= Date.parse(newInstallations.createdAtOrAfter)
+        ? { ...rawFree, translateCount: newInstallations.translateCount }
+        : rawFree;
     const selected = Object.fromEntries(planIds.map((id) => {
-      const plan = config.subscription[id];
+      const plan = id === "free" ? free : config.subscription[id];
       assert.ok(plan, `Missing source plan: ${id}`);
       return [id, Object.fromEntries(fields.filter((key) => Object.hasOwn(plan, key)).map((key) => [key, plan[key]]))];
     }));
-    assert.deepEqual(snapshot.plans, selected, "Pricing snapshot must equal the pinned public subscription subset");
+    assert.deepEqual(snapshot.plans, selected, "Pricing snapshot must match the pinned public quotas for a new installation");
     const scanSource = source("lib/models/smart_scan_document.dart").toString("utf8");
     scan = {
       free: Number(scanSource.match(/smartScanFreePhotoLimit\s*=\s*(\d+)/)?.[1]),
@@ -296,15 +306,17 @@ export async function checkMainContent() {
       checkRendered(`/blog/${article.slug}?lang=zh-tw`, ["intro", "tip", "limit"].map((suffix) => article.id === "document" ? copy.documentArticle[suffix] : copy.articles[`${article.id}.${suffix}`]));
     for (const url of ["/", "/features/text"])
       assert.doesNotMatch(render(url).html, /data-developer-accuracy|98\.3%/, `Removed unverified accuracy panel: ${url}`);
-    const currentPricing = checkRendered("/pricing?lang=zh-tw", [copy.pricing.freeAllowance, copy.pricing.quotaNote]);
+    const pricingCopy = json("src/translations/marketing/pricing.json");
+    const zhPricing = pricingCopy["zh-tw"];
+    const currentPricing = checkRendered("/pricing?lang=zh-tw", [copy.pricing.freeAllowance, copy.pricing.quotaNote, zhPricing.sharedTranslationQuota]);
     const priceCards = (html) => [...html.matchAll(/<article\b[^>]*class="[^"]*mk-price-card[^"]*"[^>]*>([\s\S]*?)<\/article>/g)].map((match) => text(match[1]));
     const currentCards = priceCards(currentPricing);
     assert.equal(currentCards.length, 3, "Current pricing card count");
     assert.doesNotMatch(currentCards[0], /每週|每月|每日|每天/, "Current Free card must leave reset policy conditional");
-    const table = currentPricing.match(/<table\b[^>]*class="mk-price-comparison-table"[^>]*>([\s\S]*?)<\/table>/)?.[1];
+    const comparisonTable = (html) => html.match(/<table\b[^>]*class="mk-price-comparison-table"[^>]*>([\s\S]*?)<\/table>/)?.[1];
+    const table = comparisonTable(currentPricing);
     assert.ok(table, "Current pricing has a semantic comparison table");
     assert.doesNotMatch([...currentCards, text(table)].join(" "), /Voice Agent|語音代理/, "Current pricing must describe Chat instead of the retired Agent");
-    const zhPricing = json("src/translations/marketing/pricing.json")["zh-tw"];
     const zhNumber = new Intl.NumberFormat("zh-tw");
     const headers = [...table.matchAll(/<th scope="col">([\s\S]*?)<\/th>/g)].map((match) => text(match[1]));
     assert.deepEqual(headers, [marketing["nav.features"], marketing["pricing.free"], copy.pricing.standardTitle, copy.pricing.voiceTitle]);
@@ -313,6 +325,16 @@ export async function checkMainContent() {
     ]));
     assert.equal(rows.size, 8, "Current pricing comparison row count");
     for (const values of rows.values()) assert.equal(values.length, 3, "Each feature compares all three plans");
+    const free = snapshot.plans.free;
+    const zhPeriod = free.periodDays === 1 ? "每天" : free.periodDays === 7 ? "每週" :
+      free.periodDays === 30 ? "每月" : `每 ${zhNumber.format(free.periodDays)} 天`;
+    for (const label of [marketing["feature.text"], marketing["feature.photos"], copy.pricing.aiTextLabel])
+      assert.equal(rows.get(label)?.[0], `${zhPeriod} ${zhNumber.format(free.translateCount)} 次`, `Shared Free translation allowance: ${label}`);
+    for (const [label, value] of [[copy.pricing.voiceLabel, free.audioMinutes], [copy.pricing.chatVoiceLabel, free.voiceAgentMinutes]])
+      assert.equal(rows.get(label)?.[0], `${zhPeriod} ${zhNumber.format(value)} 分鐘`, `Free minutes: ${label}`);
+    const english = render("/pricing").html;
+    assert.ok(text(english).includes(pricingCopy.en.sharedTranslationQuota), "English shared Free quota note");
+    assert.match(text(comparisonTable(english)), /\b1 photo per batch 10 photos per batch 10 photos per batch\b/, "English scan allowance singular and plural");
     for (const [index, tier, title] of [[1, "basic", copy.pricing.standardTitle], [2, "voice", copy.pricing.voiceTitle]]) {
       const plan = snapshot.plans[`com.gpt.langpt.${tier}.1month`];
       assert.ok(currentCards[index].includes(title), `Current rendered plan name: ${tier}`);
@@ -324,7 +346,7 @@ export async function checkMainContent() {
     for (const [index, helper, photos] of [[0, snapshot.plans.free.helperCount, scan.free], [1, snapshot.plans["com.gpt.langpt.basic.1month"].helperCount, scan.paid], [2, snapshot.plans["com.gpt.langpt.voice.1month"].helperCount, scan.paid]]) {
       assert.equal(rows.get(zhPricing.profiles)?.[index], zhNumber.format(helper), `Current rendered Helper allowance: ${index}`);
       assert.equal(rows.get(copy.pricing.scanLabel)?.[index], text(`${photos} 張／批`), `Current rendered scan allowance: ${index}`);
-      assert.equal(rows.get(copy.pricing.aiTextLabel)?.[index], index === 0 ? copy.pricing.freeAccess : zhPricing.unlimited, `Current assistant text/photo scope: ${index}`);
+      if (index !== 0) assert.equal(rows.get(copy.pricing.aiTextLabel)?.[index], zhPricing.unlimited, `Current assistant text/photo scope: ${index}`);
       assert.equal(rows.get(marketing["feature.widget"])?.[index], text(index === 0 ? copy.pricing.freeWidget : copy.pricing.widgetAllowance), `Current Widget upgrade benefit: ${index}`);
     }
     const currentRoutes = SITE_ROUTES.filter((route) => localesForPath(route).some(({ code }) => code === "zh-tw"));

@@ -11,7 +11,10 @@ const websiteRoot = fileURLToPath(new URL('../', import.meta.url));
 const nativePrefix = '/app-preview/native/';
 const localizedPrefix = '/app-preview/localized-ui/';
 const retiredPrefixes = ['app-preview/product/', 'app-preview/screens/', 'app-preview/social/'];
-const pricingFunctionFiles = ['api/asc-prices.mjs', 'scripts/sync-asc-prices.mjs', 'src/data/asc-price-snapshot.mjs', 'src/data/asc-prices.json'];
+const pricingFunctions = {
+  'api/asc-prices': ['api/asc-prices.mjs', 'scripts/sync-asc-prices.mjs', 'src/data/asc-price-snapshot.mjs', 'src/data/asc-prices.json'],
+  'api/plan-quotas': ['api/plan-quotas.mjs', 'src/data/main-pricing.json'],
+};
 const json = async (file) => JSON.parse(await readFile(file, 'utf8'));
 
 function inside(root, relative) {
@@ -105,11 +108,11 @@ async function prepare(root, liveBilling = false) {
     && (!file.startsWith(nativePrefix.slice(1)) || nativeImages.has(`/${file}`))
     && (!file.startsWith(localizedPrefix.slice(1)) || localizedImages.has(`/${file}`));
   const distFiles = await filesIn(dist);
-  const pricingSources = await Promise.all(pricingFunctionFiles.map(async (file) => {
+  const pricingSources = new Map(await Promise.all(Object.values(pricingFunctions).flat().map(async (file) => {
     const source = await plainPath(root, file);
     assert.ok((await lstat(source)).isFile(), `Missing pricing runtime input: ${file}`);
     return [file, source];
-  }));
+  })));
   for (const file of distFiles.filter((name) => /\.(?:html|js|css)$/i.test(name))) {
     const text = (await readFile(inside(dist, file), 'utf8')).replaceAll('\\/', '/');
     for (const prefix of retiredPrefixes)
@@ -153,20 +156,26 @@ async function prepare(root, liveBilling = false) {
   const config = { version: 3, routes };
   await writeFile(inside(release, 'config.json'), `${JSON.stringify(config, null, 2)}\n`);
   assert.deepEqual(await json(inside(release, 'config.json')), config, 'Build Output API routes changed.');
-  const pricingFunction = inside(release, 'functions/api/asc-prices.func');
-  for (const [file, source] of pricingSources) {
-    const target = inside(pricingFunction, file);
-    await mkdir(path.dirname(target), { recursive: true });
-    await copyFile(source, target);
-    assert.equal(await hash(target), await hash(source), `Copied function file hash differs: ${file}`);
+  const functions = Object.keys(pricingFunctions);
+  for (const [name, files] of Object.entries(pricingFunctions)) {
+    const functionRoot = inside(release, `functions/${name}.func`);
+    for (const file of files) {
+      const source = pricingSources.get(file);
+      const target = inside(functionRoot, file);
+      await mkdir(path.dirname(target), { recursive: true });
+      await copyFile(source, target);
+      assert.equal(await hash(target), await hash(source), `Copied function file hash differs: ${file}`);
+    }
+    await writeFile(inside(functionRoot, '.vc-config.json'), JSON.stringify({
+      runtime: 'nodejs24.x', handler: `${name}.mjs`, launcherType: 'Nodejs', maxDuration: 10,
+    }) + '\n');
+    assert.deepEqual(await filesIn(functionRoot), ['.vc-config.json', ...files].sort());
   }
-  await writeFile(inside(pricingFunction, '.vc-config.json'), JSON.stringify({
-    runtime: 'nodejs24.x', handler: 'api/asc-prices.mjs', launcherType: 'Nodejs', maxDuration: 10,
-  }) + '\n');
-  assert.deepEqual(await filesIn(pricingFunction), ['.vc-config.json', ...pricingFunctionFiles].sort());
-  if (liveBilling) await writeLiveAccountFunction(release, 'account-catalog');
+  if (liveBilling) {
+    await writeLiveAccountFunction(release, 'account-catalog');
+    functions.push('api/account-catalog');
+  }
   assert.deepEqual((await readdir(release)).sort(), ['config.json', 'functions', 'static']);
-  const functions = liveBilling ? ['api/asc-prices', 'api/account-catalog'] : ['api/asc-prices'];
   return { version: 3, files: published.length, bytes, functions, nativeImages: nativeImages.size, localizedImages: localizedImages.size, excludedFiles: distFiles.length - published.length, routes: routes.length, configSHA256: await hash(inside(release, 'config.json')) };
 }
 
@@ -179,7 +188,7 @@ async function selfTest() {
   const edit = '/app-preview/localized-ui/current/en/chat-chat-scenario.webp';
   try {
     const routes = [{ handle: 'filesystem' }, { src: '/.*', dest: '/404.html', status: 404 }];
-    for (const file of pricingFunctionFiles) await put(file, file);
+    for (const file of Object.values(pricingFunctions).flat()) await put(file, file);
     await put('vercel.json', JSON.stringify({ routes }));
     await put('src/data/native-product-screens.json', JSON.stringify({ 'zh-tw': { chat: { src: native, srcSet: `${responsive} 768w, ${native} 1290w`, gallery: [{ src: gallery }] } } }));
     await put('src/data/localized-ui-screens.json', JSON.stringify({ en: [{ src: edit, sourceNative: native }] }));
@@ -189,10 +198,10 @@ async function selfTest() {
     for (const file of excluded) await put(`dist/${file}`, 'must not publish');
     const result = await prepare(root);
     assert.equal(result.files, 10); assert.equal(result.excludedFiles, excluded.length);
-    assert.deepEqual(result.functions, ['api/asc-prices']);
+    assert.deepEqual(result.functions, ['api/asc-prices', 'api/plan-quotas']);
     assert.deepEqual((await json(inside(root, 'output/vercel-release/.vercel/output/config.json'))).routes, routes);
     const candidate = await prepare(root, true);
-    assert.deepEqual(candidate.functions, ['api/asc-prices', 'api/account-catalog']);
+    assert.deepEqual(candidate.functions, ['api/asc-prices', 'api/plan-quotas', 'api/account-catalog']);
     const candidateConfig = await json(inside(root, 'output/vercel-release/.vercel/output/config.json'));
     assert.deepEqual(candidateConfig.routes, [
       { src: '^/api/account-catalog(?:/.*)?$', status: 404 },
@@ -201,7 +210,11 @@ async function selfTest() {
       { src: '^/api/account/billing/guest-resend$', dest: '/api/account-catalog?account_route=billing/guest-resend' },
       ...routes,
     ]);
-    assert.deepEqual(await readdir(inside(root, 'output/vercel-release/.vercel/output/functions/api')), ['account-catalog.func', 'asc-prices.func']);
+    const functionsRoot = inside(root, 'output/vercel-release/.vercel/output/functions/api');
+    assert.deepEqual((await readdir(functionsRoot)).sort(), ['account-catalog.func', 'asc-prices.func', 'plan-quotas.func']);
+    const quotaFunction = inside(functionsRoot, 'plan-quotas.func');
+    assert.deepEqual(await filesIn(quotaFunction), ['.vc-config.json', 'api/plan-quotas.mjs', 'src/data/main-pricing.json']);
+    assert.equal((await json(inside(quotaFunction, '.vc-config.json'))).handler, 'api/plan-quotas.mjs');
     for (const file of excluded) assert.equal(await readFile(inside(root, `dist/${file}`), 'utf8'), 'must not publish', 'Never remove dist/private source files.');
     for (const file of ['index.html', 'assets/app.js', 'assets/styles.css']) {
       for (const prefix of retiredPrefixes) {
@@ -225,7 +238,7 @@ async function selfTest() {
     await put('src/data/localized-ui-screens.json', '{}');
     await symlink(inside(root, 'public'), inside(root, 'dist/escape'));
     await assert.rejects(prepare(root), /Symlinks are not permitted/);
-    console.log('Vercel output self-test passed: exact selected src/srcSet/gallery, unchanged routes/static/404/social-v2, source/copy hashes, retired-directory/reference rejection, stale-build/path/symlink rejection, private/history exclusion and source preservation.');
+    console.log('Vercel output self-test passed: pricing function bundles, exact selected src/srcSet/gallery, unchanged routes/static/404/social-v2, source/copy hashes, retired-directory/reference rejection, stale-build/path/symlink rejection, private/history exclusion and source preservation.');
   } finally {
     await rm(root, { recursive: true, force: true });
   }
