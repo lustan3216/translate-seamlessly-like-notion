@@ -309,7 +309,7 @@ export default function PricingPlans() {
       <section className="mk-wrap mk-price-comparison" aria-labelledby="pricing-comparison-heading">
         <h2 id="pricing-comparison-heading">{m("pricing.compare")}</h2>
         <div className="mk-price-comparison-frame">
-          <table className="mk-price-comparison-table" aria-labelledby="pricing-comparison-heading" aria-describedby="pricing-shared-translation-quota">
+          <table className="mk-price-comparison-table" aria-labelledby="pricing-comparison-heading">
             <thead>
               <tr>
                 <th scope="col">{m("nav.features")}</th>
@@ -328,7 +328,6 @@ export default function PricingPlans() {
         </div>
       </section>
       <div className="mk-wrap mk-pricing-note">
-        <p id="pricing-shared-translation-quota" className="mk-small">{p("sharedTranslationQuota")}</p>
         {needsApplePrices && (
           <p className="mk-small" role="status">
             {storefront

@@ -29,7 +29,6 @@
     "freeQuotaWeek": "{amount} / week",
     "freeQuotaMonth": "{amount} / month",
     "freeQuotaDays": "{amount} every {days} days",
-    "sharedTranslationQuota": "Text & writing, photo translation, and AI assistant text and photo questions outside voice sessions share one translation quota.",
     "photoBatchOne": "{count} photo per batch"
   },
   "zh-tw": {
@@ -62,7 +61,6 @@
     "freeQuotaWeek": "每週 {amount}",
     "freeQuotaMonth": "每月 {amount}",
     "freeQuotaDays": "每 {days} 天 {amount}",
-    "sharedTranslationQuota": "文字翻譯與寫作、照片翻譯，以及 AI 助手的文字與照片提問（語音連線期間除外）共用翻譯次數。",
     "photoBatchOne": "{count} 張／批"
   },
   "ko": {
@@ -95,7 +93,6 @@
     "freeQuotaWeek": "{amount} /주",
     "freeQuotaMonth": "{amount} /월",
     "freeQuotaDays": "{days}일마다 {amount}",
-    "sharedTranslationQuota": "텍스트 번역과 글쓰기, 사진 번역, AI 도우미 텍스트·사진 질문(음성 연결 중 제외)은 번역 횟수 한도를 공유합니다.",
     "photoBatchOne": "한 번에 {count}장"
   },
   "ja": {
@@ -128,7 +125,6 @@
     "freeQuotaWeek": "{amount} ／週",
     "freeQuotaMonth": "{amount} ／月",
     "freeQuotaDays": "{days}日ごとに {amount}",
-    "sharedTranslationQuota": "テキスト翻訳・文章作成、写真翻訳、AIアシスタントへの文字・写真の質問（音声接続中を除く）は、翻訳回数の利用枠を共有します。",
     "photoBatchOne": "1回{count}枚"
   },
   "fr": {
@@ -161,7 +157,6 @@
     "freeQuotaWeek": "{amount} / semaine",
     "freeQuotaMonth": "{amount} / mois",
     "freeQuotaDays": "{amount} tous les {days} jours",
-    "sharedTranslationQuota": "La traduction de texte, la rédaction, la traduction de photos et les questions texte ou photo à l’assistant IA hors session vocale partagent le même quota de traductions.",
     "photoBatchOne": "{count} photo/lot"
   },
   "de": {
@@ -194,7 +189,6 @@
     "freeQuotaWeek": "{amount} / Woche",
     "freeQuotaMonth": "{amount} / Monat",
     "freeQuotaDays": "{amount} alle {days} Tage",
-    "sharedTranslationQuota": "Text und Schreiben, Fotoübersetzungen sowie Text- und Fotofragen an den KI-Assistenten außerhalb von Sprachsitzungen teilen sich ein Übersetzungskontingent.",
     "photoBatchOne": "{count} Foto/Stapel"
   },
   "es": {
@@ -227,7 +221,6 @@
     "freeQuotaWeek": "{amount} / semana",
     "freeQuotaMonth": "{amount} / mes",
     "freeQuotaDays": "{amount} cada {days} días",
-    "sharedTranslationQuota": "El texto y la escritura, la traducción de fotos y las preguntas de texto o fotos al asistente de IA fuera de las sesiones de voz comparten el mismo límite de traducciones.",
     "photoBatchOne": "{count} foto/lote"
   },
   "it": {
@@ -260,7 +253,6 @@
     "freeQuotaWeek": "{amount} / settimana",
     "freeQuotaMonth": "{amount} / mese",
     "freeQuotaDays": "{amount} ogni {days} giorni",
-    "sharedTranslationQuota": "Testo e scrittura, traduzione di foto e domande di testo o foto all’assistente IA fuori dalle sessioni vocali condividono la stessa quota di traduzioni.",
     "photoBatchOne": "{count} foto/gruppo"
   },
   "pt-br": {
@@ -293,7 +285,6 @@
     "freeQuotaWeek": "{amount} / semana",
     "freeQuotaMonth": "{amount} / mês",
     "freeQuotaDays": "{amount} a cada {days} dias",
-    "sharedTranslationQuota": "Texto e escrita, tradução de fotos e perguntas com texto ou fotos ao assistente de IA (fora das sessões de voz) compartilham a mesma cota de traduções.",
     "photoBatchOne": "{count} foto/lote"
   },
   "fi": {
@@ -326,7 +317,6 @@
     "freeQuotaWeek": "{amount} / viikko",
     "freeQuotaMonth": "{amount} / kuukausi",
     "freeQuotaDays": "{amount} / {days} päivää",
-    "sharedTranslationQuota": "Teksti ja kirjoittaminen, kuvakäännökset sekä tekoälyavustajan teksti- ja kuvakysymykset puheyhteyden ulkopuolella käyttävät samaa käännöskiintiötä.",
     "photoBatchOne": "{count} kuva/erä"
   },
   "da": {
@@ -359,7 +349,6 @@
     "freeQuotaWeek": "{amount} / uge",
     "freeQuotaMonth": "{amount} / måned",
     "freeQuotaDays": "{amount} hver {days}. dag",
-    "sharedTranslationQuota": "Tekst og skrivning, fotooversættelse og tekst- og billedspørgsmål til AI-assistenten uden for stemmesessioner deler den samme oversættelseskvote.",
     "photoBatchOne": "{count} foto/batch"
   },
   "nl": {
@@ -392,7 +381,6 @@
     "freeQuotaWeek": "{amount} per week",
     "freeQuotaMonth": "{amount} / maand",
     "freeQuotaDays": "{amount} per {days} dagen",
-    "sharedTranslationQuota": "Tekst en schrijven, fotovertaling en tekst- en fotovragen aan de AI-assistent buiten spraaksessies delen hetzelfde tegoed aan vertaalbeurten.",
     "photoBatchOne": "{count} foto/batch"
   },
   "no": {
@@ -425,7 +413,6 @@
     "freeQuotaWeek": "{amount} / uke",
     "freeQuotaMonth": "{amount} / måned",
     "freeQuotaDays": "{amount} hver {days}. dag",
-    "sharedTranslationQuota": "Tekst og skriving, bildeoversettelse og tekst- og bildespørsmål til KI-assistenten utenom taleøkter deler samme oversettelseskvote.",
     "photoBatchOne": "{count} bilde/gruppe"
   },
   "sv": {
@@ -458,7 +445,6 @@
     "freeQuotaWeek": "{amount} / vecka",
     "freeQuotaMonth": "{amount} / månad",
     "freeQuotaDays": "{amount} per {days} dagar",
-    "sharedTranslationQuota": "Text och skrivande, fotoöversättning samt text- och bildfrågor till AI-assistenten utanför röstsamtal delar samma översättningskvot.",
     "photoBatchOne": "{count} foto/omgång"
   },
   "zh-cn": {
@@ -491,7 +477,6 @@
     "freeQuotaWeek": "每周 {amount}",
     "freeQuotaMonth": "每月 {amount}",
     "freeQuotaDays": "每 {days} 天 {amount}",
-    "sharedTranslationQuota": "文字翻译与写作、照片翻译，以及 AI 助手的文字与照片提问（语音连接期间除外）共用翻译次数。",
     "photoBatchOne": "{count} 张／批"
   },
   "id": {
@@ -524,7 +509,6 @@
     "freeQuotaWeek": "{amount} / minggu",
     "freeQuotaMonth": "{amount} / bulan",
     "freeQuotaDays": "{amount} setiap {days} hari",
-    "sharedTranslationQuota": "Teks dan penulisan, terjemahan foto, serta pertanyaan teks dan foto untuk Asisten AI di luar sesi suara memakai kuota terjemahan yang sama.",
     "photoBatchOne": "{count} foto／proses"
   },
   "vi": {
@@ -557,7 +541,6 @@
     "freeQuotaWeek": "{amount} / tuần",
     "freeQuotaMonth": "{amount} / tháng",
     "freeQuotaDays": "{amount} mỗi {days} ngày",
-    "sharedTranslationQuota": "Dịch văn bản và hỗ trợ viết, dịch ảnh và hỏi Trợ lý AI bằng văn bản hoặc ảnh ngoài phiên thoại dùng chung hạn mức lượt dịch.",
     "photoBatchOne": "{count} ảnh／đợt"
   },
   "th": {
@@ -590,7 +573,6 @@
     "freeQuotaWeek": "{amount} / สัปดาห์",
     "freeQuotaMonth": "{amount} / เดือน",
     "freeQuotaDays": "{amount} ทุก {days} วัน",
-    "sharedTranslationQuota": "การแปลข้อความและงานเขียน การแปลรูปภาพ และการถามผู้ช่วย AI ด้วยข้อความหรือรูปภาพนอกการสนทนาด้วยเสียง ใช้โควตาการแปลร่วมกัน",
     "photoBatchOne": "{count} รูป/ชุด"
   },
   "ru": {
@@ -623,7 +605,6 @@
     "freeQuotaWeek": "{amount} / неделю",
     "freeQuotaMonth": "{amount} / месяц",
     "freeQuotaDays": "{amount} / {days} дн.",
-    "sharedTranslationQuota": "Перевод текста и помощь с письмом, перевод по фото и вопросы ИИ-помощнику с текстом или фото вне голосовых сессий используют общий лимит переводов.",
     "photoBatchOne": "{count} фото/пакет"
   }
 }

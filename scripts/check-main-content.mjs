@@ -308,7 +308,7 @@ export async function checkMainContent() {
       assert.doesNotMatch(render(url).html, /data-developer-accuracy|98\.3%/, `Removed unverified accuracy panel: ${url}`);
     const pricingCopy = json("src/translations/marketing/pricing.json");
     const zhPricing = pricingCopy["zh-tw"];
-    const currentPricing = checkRendered("/pricing?lang=zh-tw", [copy.pricing.freeAllowance, copy.pricing.quotaNote, zhPricing.sharedTranslationQuota]);
+    const currentPricing = checkRendered("/pricing?lang=zh-tw", [copy.pricing.freeAllowance, copy.pricing.quotaNote]);
     const priceCards = (html) => [...html.matchAll(/<article\b[^>]*class="[^"]*mk-price-card[^"]*"[^>]*>([\s\S]*?)<\/article>/g)].map((match) => text(match[1]));
     const currentCards = priceCards(currentPricing);
     assert.equal(currentCards.length, 3, "Current pricing card count");
@@ -333,7 +333,6 @@ export async function checkMainContent() {
     for (const [label, value] of [[copy.pricing.voiceLabel, free.audioMinutes], [copy.pricing.chatVoiceLabel, free.voiceAgentMinutes]])
       assert.equal(rows.get(label)?.[0], `${zhPeriod} ${zhNumber.format(value)} 分鐘`, `Free minutes: ${label}`);
     const english = render("/pricing").html;
-    assert.ok(text(english).includes(pricingCopy.en.sharedTranslationQuota), "English shared Free quota note");
     assert.match(text(comparisonTable(english)), /\b1 photo per batch 10 photos per batch 10 photos per batch\b/, "English scan allowance singular and plural");
     for (const [index, tier, title] of [[1, "basic", copy.pricing.standardTitle], [2, "voice", copy.pricing.voiceTitle]]) {
       const plan = snapshot.plans[`com.gpt.langpt.${tier}.1month`];
