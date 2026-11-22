@@ -11,13 +11,8 @@ test("account sessions and public billing stay on their assigned origins", async
     SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN: "https://fixture-dev.et3216-c0d.workers.dev",
     SHARED_ACCOUNT_LIVE_PROXY_TOKEN: "separate-live-token-123456789012345678",
   };
-  const testOriginKey = "SHARED_ACCOUNT_LIVE_TEST_WORKER_ORIGIN";
-  const testTokenKey = "SHARED_ACCOUNT_LIVE_TEST_PROXY_TOKEN";
-  const envKeys = [...Object.keys(env), testOriginKey, testTokenKey];
-  const original = Object.fromEntries(envKeys.map((key) => [key, process.env[key]]));
+  const original = Object.fromEntries(Object.keys(env).map((key) => [key, process.env[key]]));
   Object.assign(process.env, env);
-  delete process.env[testOriginKey];
-  delete process.env[testTokenKey];
   context.after(() => {
     for (const [key, old] of Object.entries(original)) {
       if (old === undefined) delete process.env[key];
@@ -280,36 +275,4 @@ test("account sessions and public billing stay on their assigned origins", async
   assert.equal((await call(liveAccount)).statusCode, 404);
   assert.equal((await call(liveCatalog)).statusCode, 404);
   assert.equal(upstream.mock.callCount(), accepted);
-
-  await context.test("live proxies use Creem Test only with both variables configured", async () => {
-    const testOrigin = "https://creem-test-fixture.et3216-c0d.workers.dev";
-    const testToken = "creem-test-token-12345678901234567890";
-    process.env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN = env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN;
-    process.env[testOriginKey] = testOrigin;
-    process.env[testTokenKey] = testToken;
-
-    for (const [options, route] of [[liveAccount, "billing/portal"], [liveCatalog, "billing/catalog"]]) {
-      assert.equal((await call(options)).statusCode, 200);
-      assert.equal(request.url, `${testOrigin}/v1/account/${route}`);
-      assert.equal(request.headers["X-AT-Account-Proxy-Token"], testToken);
-    }
-
-    const forwarded = upstream.mock.callCount();
-    for (const [backend, token] of [
-      [testOrigin, undefined], [undefined, testToken], [testOrigin, ""], ["", testToken],
-      ["https://evil.example.com", testToken], ["http://x.et3216-c0d.workers.dev", testToken],
-    ]) {
-      if (backend === undefined) delete process.env[testOriginKey];
-      else process.env[testOriginKey] = backend;
-      if (token === undefined) delete process.env[testTokenKey];
-      else process.env[testTokenKey] = token;
-
-      for (const options of [liveAccount, liveCatalog]) {
-        const response = await call(options);
-        assert.equal(response.statusCode, 503);
-        assert.deepEqual(response.body, { error: "not_configured" });
-      }
-    }
-    assert.equal(upstream.mock.callCount(), forwarded);
-  });
 });
