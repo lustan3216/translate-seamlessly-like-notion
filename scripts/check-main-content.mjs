@@ -36,7 +36,7 @@ const text = (html) => html
 
 function sourceSnapshot() {
   const snapshot = json("src/data/main-pricing.json");
-  assert.equal(snapshot.sourceCommit, mainSourceCommit, "Pricing source commit");
+  assert.match(snapshot.sourceCommit, /^[a-f0-9]{40}$/, "Full pricing source commit");
   assert.match(snapshot.publicConfigSHA256, /^[a-f0-9]{64}$/, "Full public config SHA256");
   const planIds = ["free", ...["basic", "voice"].flatMap((tier) =>
     ["week", "month", "year"].map((period) => `com.gpt.langpt.${tier}.1${period}`))].sort();
@@ -77,9 +77,8 @@ function sourceSnapshot() {
     "ANYTRANSLATOR_APP_REPO must point to the App Git checkout");
   let scan = { free: 1, paid: 10 };
   if (hasAppRepo) {
-    const source = (file) => execFileSync("git", ["-C", appRepo, "show", `${mainSourceCommit}:${file}`], { maxBuffer: 16 * 1024 * 1024 });
+    const source = (file, commit = mainSourceCommit) => execFileSync("git", ["-C", appRepo, "show", `${commit}:${file}`], { maxBuffer: 16 * 1024 * 1024 });
     const raw = source("anytranslator-api/config/default-prompt.public.json");
-    assert.equal(sha256(raw), snapshot.publicConfigSHA256, "Pinned App public config bytes");
     const config = JSON.parse(raw.toString("utf8"));
     const ui = config.uiInformation;
     assert.deepEqual(ui.toneOptions.map(({ id, titles }) => [id, titles.zh_TW]), [
@@ -140,16 +139,21 @@ function sourceSnapshot() {
     assert.ok(guideSource.includes("我是你的 AI 語言助手，可以直接說，也可以打字跟我聊"), "Current AI language assistant intro");
     assert.ok(guideSource.includes("也可以透過以下兩種方式學語言："), "Learning-entry guide remains visible");
     // The fallback describes a fresh installation at the pinned source date.
-    const sourceTime = Date.parse(execFileSync("git", ["-C", appRepo, "show", "-s", "--format=%cI", mainSourceCommit], { encoding: "utf8" }).trim());
-    const rawFree = config.subscription.free;
-    const { scheduledPolicy, newInstallations } = rawFree;
-    const free = scheduledPolicy && sourceTime >= Date.parse(scheduledPolicy.effectiveAt)
-      ? { ...rawFree, ...scheduledPolicy }
-      : newInstallations && sourceTime >= Date.parse(newInstallations.createdAtOrAfter)
-        ? { ...rawFree, translateCount: newInstallations.translateCount }
-        : rawFree;
+    const pricingRaw = source("anytranslator-api/config/default-prompt.public.json", snapshot.sourceCommit);
+    assert.equal(sha256(pricingRaw), snapshot.publicConfigSHA256, "Pinned pricing public config bytes");
+    const { subscription } = JSON.parse(pricingRaw.toString("utf8"));
+    const sourceTime = Date.parse(execFileSync("git", ["-C", appRepo, "show", "-s", "--format=%cI", snapshot.sourceCommit], { encoding: "utf8" }).trim());
+    const { newInstallationPlan, scheduledPolicy, newInstallations, ...rawFree } = subscription.free;
+    let free = rawFree;
+    if (newInstallationPlan && sourceTime >= Date.parse(newInstallationPlan.createdAtOrAfter)) {
+      free = { ...rawFree, ...newInstallationPlan };
+    } else if (scheduledPolicy && sourceTime >= Date.parse(scheduledPolicy.effectiveAt)) {
+      free = { ...rawFree, ...scheduledPolicy };
+    } else if (newInstallations && sourceTime >= Date.parse(newInstallations.createdAtOrAfter)) {
+      free = { ...rawFree, translateCount: newInstallations.translateCount };
+    }
     const selected = Object.fromEntries(planIds.map((id) => {
-      const plan = id === "free" ? free : config.subscription[id];
+      const plan = id === "free" ? free : subscription[id];
       assert.ok(plan, `Missing source plan: ${id}`);
       return [id, Object.fromEntries(fields.filter((key) => Object.hasOwn(plan, key)).map((key) => [key, plan[key]]))];
     }));
@@ -162,7 +166,8 @@ function sourceSnapshot() {
     assert.ok(Number.isInteger(scan.free) && Number.isInteger(scan.paid), "Pinned Smart Scan limits");
     for (const icon of icons.icons)
       assert.equal(sha256(source(icon.source)), icon.sha256, `Pinned official icon bytes: ${icon.name}`);
-    console.log(`Main source verified from Git object ${mainSourceCommit}: full config SHA256, plan subset, Smart Scan limits, two official SVGs and current three-mode Chat entry flow. No working-tree v81 or live Production claims.`);
+    console.log(`Pricing source verified from Git object ${snapshot.sourceCommit}: public config SHA256 and fresh-installation plan quotas.`);
+    console.log(`Main content verified from Git object ${mainSourceCommit}: Smart Scan limits, two official SVGs and current three-mode Chat entry flow.`);
   } else {
     console.log("App Git checkout unavailable: pricing/icon snapshot schema and local output hashes checked only; pinned App source and Smart Scan constants remain unverified in this standalone checkout.");
   }

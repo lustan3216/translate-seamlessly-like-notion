@@ -1,14 +1,14 @@
 {
-  "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
-  "publicConfigSHA256": "15ecba386ea5e4a2f899a267aa192edc4ce1d033326451fbf1cc556c555e0ef6",
+  "sourceCommit": "51810726fc5217f85db8d0ad0342b735100d7fb7",
+  "publicConfigSHA256": "3548694c9fe367a64b8c362a7b828b3567637b5b3b5f7e734d447750bb7fd732",
   "plans": {
     "free": {
       "visible": false,
-      "translateCount": 15,
+      "translateCount": 50,
       "audioMinutes": 5,
-      "voiceAgentMinutes": 2,
-      "quotaPeriod": "week",
-      "periodDays": 1,
+      "voiceAgentMinutes": 3,
+      "quotaPeriod": "month",
+      "periodDays": 30,
       "helperCount": 1
     },
     "com.gpt.langpt.basic.1week": {

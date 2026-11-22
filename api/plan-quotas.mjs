@@ -13,11 +13,7 @@ function reply(res, status, body, cache = "private, no-store") {
 }
 
 function readPlan(plan, id) {
-  const { visible, audioMinutes, helperCount, quotaPeriod, periodDays, newInstallations } = plan ?? {};
-  const voiceAgentMinutes = plan?.voiceAgentMinutes ?? audioMinutes;
-  // A website visitor's installation would start now. Settings has already applied the scheduled policy.
-  const translateCount = id === "free" && Math.floor(Date.now() / 1_000) >= Date.parse(newInstallations?.createdAtOrAfter) / 1_000
-    ? newInstallations.translateCount : plan?.translateCount;
+  const { visible, translateCount, audioMinutes, voiceAgentMinutes, helperCount, quotaPeriod, periodDays } = plan ?? {};
   if (typeof visible !== "boolean"
     || ![translateCount, audioMinutes, voiceAgentMinutes, helperCount].every((value) => Number.isFinite(value) && value >= -1)
     || !["week", "month"].includes(quotaPeriod)
@@ -45,12 +41,13 @@ export default async function handler(req, res) {
         "Content-Type": "application/json",
         "X-Settings-Key": "anytranslator-settings-v1",
       },
-      body: JSON.stringify({ surface: "app", locale: "en_US" }),
+      body: JSON.stringify({ surface: "web", locale: "en_US" }),
       redirect: "error",
       signal: AbortSignal.timeout(4_000),
     });
-    if (!response.ok) throw new Error("Settings request failed");
-    const { subscription } = await response.json();
+    if (response.status !== 200) throw new Error("Settings request failed");
+    const { configVersion, subscription } = await response.json();
+    if (typeof configVersion !== "string" || !configVersion.trim()) throw new Error("Invalid settings version");
     plans = Object.fromEntries(planIds.map((id) => [id, readPlan(subscription?.[id], id)]));
   } catch {
     return reply(res, 502, { error: "settings_unavailable" });

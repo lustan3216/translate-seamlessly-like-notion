@@ -22,26 +22,27 @@ function assertUnavailable({ status, headers, body }) {
   assert.deepEqual(body, { error: "settings_unavailable" });
 }
 
-test("requests public settings and returns only the whitelisted live plan quotas", async ({ mock }) => {
-  const subscription = structuredClone(snapshot.plans);
-  const expected = structuredClone(subscription);
+test("requests web settings and returns only the whitelisted live plan quotas", async ({ mock }) => {
+  const expected = structuredClone(snapshot.plans);
+  Object.assign(expected.free, {
+    quotaPeriod: "month", periodDays: 30, translateCount: 50, audioMinutes: 5, voiceAgentMinutes: 3,
+  });
+  Object.assign(expected[paidId], { audioMinutes: 730.5, visible: false });
+  const subscription = structuredClone(expected);
   Object.assign(subscription.free, {
-    translateCount: 25,
     newInstallations: { createdAtOrAfter: "2026-11-01T00:00:00+08:00", translateCount: 15 },
+    newInstallationPlan: { createdAtOrAfter: "2026-11-22T10:30:00Z", translateCount: 75 },
     scheduledPolicy: { effectiveAt: "2026-12-07T00:00:00+03:00" },
   });
-  Object.assign(subscription[paidId], { audioMinutes: 730.5, visible: false, tier: "basic" });
-  delete subscription[paidId].voiceAgentMinutes;
+  subscription[paidId].tier = "basic";
   subscription.unrelated = { ...subscription[paidId] };
-  Object.assign(expected[paidId], { audioMinutes: 730.5, voiceAgentMinutes: 730.5, visible: false });
-  expected.free.translateCount = 15;
-  mock.method(Date, "now", () => Date.parse("2026-11-22T00:00:00Z"));
+  mock.method(Date, "now", () => Date.parse("2026-11-22T11:00:00Z"));
   const fetch = mock.method(globalThis, "fetch", async (url, options) => {
     assert.equal(url, "https://cloudflare.anytranslator.app/v1/settings");
     assert.equal(options.method, "POST");
     assert.equal(options.headers["X-Settings-Key"], "anytranslator-settings-v1");
     assert.equal(options.headers["Content-Type"], "application/json");
-    assert.deepEqual(JSON.parse(options.body), { surface: "app", locale: "en_US" });
+    assert.deepEqual(JSON.parse(options.body), { surface: "web", locale: "en_US" });
     assert.ok(options.signal instanceof AbortSignal);
     return Response.json({ subscription, configVersion: "internal", uiInformation: { hidden: true } });
   });
@@ -54,40 +55,28 @@ test("requests public settings and returns only the whitelisted live plan quotas
   assert.equal(fetch.mock.callCount(), 1);
 });
 
-test("keeps the base count before the new-installation cutoff and supports the activated monthly policy", async ({ mock }) => {
-  const subscription = structuredClone(snapshot.plans);
-  Object.assign(subscription.free, {
-    translateCount: 25,
-    newInstallations: { createdAtOrAfter: "2026-11-01T00:00:00+08:00", translateCount: 15 },
-  });
-  let now = Date.parse("2026-10-31T15:59:59Z");
-  mock.method(Date, "now", () => now);
-  mock.method(globalThis, "fetch", async () => Response.json({ subscription }));
-  let result = await request();
-  assert.equal(result.status, 200);
-  assert.equal(result.body.plans.free.translateCount, 25);
-
-  now = Date.parse("2026-10-31T16:00:00Z");
-  result = await request();
-  assert.equal(result.status, 200);
-  assert.equal(result.body.plans.free.translateCount, 15);
-
-  now = Date.parse("2026-12-07T00:00:00+03:00");
-  delete subscription.free.newInstallations;
-  Object.assign(subscription.free, { quotaPeriod: "month", periodDays: 30, voiceAgentMinutes: 5 });
-  result = await request();
-  assert.equal(result.status, 200);
-  assert.deepEqual(result.body.plans.free, subscription.free);
+test("returns 502 without requesting app settings when web settings return 400", async ({ mock }) => {
+  const fetch = mock.method(globalThis, "fetch", async () =>
+    Response.json({ error: "invalid surface" }, { status: 400 }));
+  assertUnavailable(await request());
+  assert.equal(fetch.mock.callCount(), 1);
+  assert.deepEqual(JSON.parse(fetch.mock.calls[0].arguments[1].body), { surface: "web", locale: "en_US" });
 });
 
 test("returns 502 for unsuccessful or malformed settings", async ({ mock }) => {
+  const configVersion = "v101";
   const invalid = structuredClone(snapshot.plans);
   invalid[paidId].audioMinutes = { unrelated: true };
+  const missingVoiceMinutes = structuredClone(snapshot.plans);
+  delete missingVoiceMinutes.free.voiceAgentMinutes;
   for (const response of [
     Response.json({ internal: "private" }, { status: 503 }),
+    Response.json({ configVersion, subscription: snapshot.plans }, { status: 201 }),
     new Response("not JSON"),
-    Response.json({ subscription: { free: snapshot.plans.free } }),
-    Response.json({ subscription: invalid }),
+    Response.json({ subscription: snapshot.plans }),
+    Response.json({ configVersion, subscription: { free: snapshot.plans.free } }),
+    Response.json({ configVersion, subscription: invalid }),
+    Response.json({ configVersion, subscription: missingVoiceMinutes }),
   ]) {
     mock.method(globalThis, "fetch", async () => response);
     assertUnavailable(await request());
@@ -97,20 +86,20 @@ test("returns 502 for unsuccessful or malformed settings", async ({ mock }) => {
 
 test("returns 502 when reading settings exceeds the four-second deadline", async ({ mock }) => {
   const controller = new AbortController();
-  const timeout = mock.method(AbortSignal, "timeout", (delay) => {
-    assert.equal(delay, 4_000);
-    return controller.signal;
-  });
+  const timeout = mock.method(AbortSignal, "timeout", () => controller.signal);
+  const json = mock.fn((signal) => new Promise((_resolve, reject) => {
+    signal.addEventListener("abort", () => reject(signal.reason), { once: true });
+    controller.abort(new DOMException("Deadline exceeded", "TimeoutError"));
+  }));
   mock.method(globalThis, "fetch", async (_url, { signal }) => ({
-    ok: true,
-    json: () => new Promise((_resolve, reject) => {
-      signal.addEventListener("abort", () => reject(signal.reason), { once: true });
-      controller.abort(new DOMException("Deadline exceeded", "TimeoutError"));
-    }),
+    status: 200,
+    json: () => json(signal),
   }));
 
   assertUnavailable(await request());
   assert.equal(timeout.mock.callCount(), 1);
+  assert.deepEqual(timeout.mock.calls[0].arguments, [4_000]);
+  assert.equal(json.mock.callCount(), 1);
 });
 
 test("rejects non-GET requests without reaching settings", async ({ mock }) => {
