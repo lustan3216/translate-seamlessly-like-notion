@@ -1,0 +1,242 @@
+[
+  {
+    "broken": 0,
+    "lang": "de-DE",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/agent",
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/photos",
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "lang": "ru-RU",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/document",
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "lang": "ja-JP",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/keyboard",
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/widget",
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "lang": "de-DE",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/use-cases",
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/blog",
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "lang": "ja-JP",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/about",
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "lang": "de-DE",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/affiliate",
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/download",
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "lang": "de-DE",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/agent",
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/photos",
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "lang": "ru-RU",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/document",
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "lang": "ja-JP",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/keyboard",
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/widget",
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "lang": "de-DE",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/use-cases",
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/blog",
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "lang": "ja-JP",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/about",
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "lang": "de-DE",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/affiliate",
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/download",
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "lang": "de-DE",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/agent",
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/photos",
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "lang": "ru-RU",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/document",
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "lang": "ja-JP",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/keyboard",
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/features/widget",
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "lang": "de-DE",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/use-cases",
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/blog",
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "lang": "ja-JP",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/about",
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "lang": "de-DE",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/affiliate",
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "lang": "zh-TW",
+    "oldImages": 0,
+    "overflow": false,
+    "path": "/download",
+    "width": 1440
+  }
+]

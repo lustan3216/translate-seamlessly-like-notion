@@ -1,0 +1,415 @@
+{
+  "sourceCommit": "53bdfc0f43ebe67047c7e575d3754f7ff3cc0487",
+  "checks": [
+    {
+      "h1": [
+        "說出你的想法。讓世界聽懂。"
+      ],
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/",
+      "width": 390
+    },
+    {
+      "h1": [
+        "翻譯、對話與學習，在同一個 App。"
+      ],
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features",
+      "width": 390
+    },
+    {
+      "h1": [
+        "Chat 對話與語言練習"
+      ],
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/chat",
+      "width": 390
+    },
+    {
+      "h1": [
+        "任何 App 翻譯：閱讀影片字幕與畫面文字。"
+      ],
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "width": 390
+    },
+    {
+      "h1": [
+        "表格翻譯：對照列與欄，看清每個數字。"
+      ],
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/table",
+      "width": 390
+    },
+    {
+      "h1": [
+        "免費開始，為更多對話留空間。"
+      ],
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/pricing",
+      "width": 390
+    },
+    {
+      "h1": [
+        "讓世界，少一點語言的距離。"
+      ],
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/about",
+      "width": 390
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog",
+      "width": 390
+    },
+    {
+      "h1": [
+        "你的日常，就是使用情境。"
+      ],
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/use-cases",
+      "width": 390
+    },
+    {
+      "h1": [
+        "看影片、讀網頁，也能對照翻譯。"
+      ],
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/use-cases/media",
+      "width": 390
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/chat-language-practice",
+      "width": 390
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/translate-other-apps",
+      "width": 390
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/voice-translation-and-dictation",
+      "width": 390
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/chat",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/table",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/pricing",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/use-cases/media",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/chat-language-practice",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/translate-other-apps",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/chat",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/table",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/pricing",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/use-cases/media",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/chat-language-practice",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/translate-other-apps",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features",
+      "width": 1024
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/chat",
+      "width": 1024
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "width": 1024
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/table",
+      "width": 1024
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/pricing",
+      "width": 1024
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog",
+      "width": 1024
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/use-cases/media",
+      "width": 1024
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/chat-language-practice",
+      "width": 1024
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/translate-other-apps",
+      "width": 1024
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features",
+      "width": 1440
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/chat",
+      "width": 1440
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "width": 1440
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/features/table",
+      "width": 1440
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/pricing",
+      "width": 1440
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog",
+      "width": 1440
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/use-cases/media",
+      "width": 1440
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/chat-language-practice",
+      "width": 1440
+    },
+    {
+      "h1Count": 1,
+      "offscreen": [],
+      "oldAgent": false,
+      "overflow": false,
+      "path": "/blog/translate-other-apps",
+      "width": 1440
+    }
+  ]
+}

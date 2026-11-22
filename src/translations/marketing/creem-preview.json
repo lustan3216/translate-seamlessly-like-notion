@@ -1,0 +1,173 @@
+{
+  "en": {
+    "title": "Web subscriptions",
+    "testMode": "Creem Test Mode. No real charges.",
+    "seePlans": "See plans",
+    "taxAtCheckout": "Applicable tax is calculated at checkout.",
+    "manageSubscription": "Manage subscription",
+    "quoteChanged": "The price changed. Review the updated price before continuing.",
+    "deletionBlocked": "Manage your Creem subscription before deleting this account."
+  },
+  "ko": {
+    "title": "웹 구독",
+    "testMode": "Creem 테스트 모드입니다. 실제 결제는 이루어지지 않습니다.",
+    "seePlans": "요금제 보기",
+    "taxAtCheckout": "적용되는 세금은 결제 시 계산됩니다.",
+    "manageSubscription": "구독 관리",
+    "quoteChanged": "가격이 변경되었습니다. 변경된 가격을 확인한 후 계속하세요.",
+    "deletionBlocked": "이 계정을 삭제하기 전에 Creem 구독을 관리하세요."
+  },
+  "ja": {
+    "title": "ウェブのサブスクリプション",
+    "testMode": "Creemのテストモードです。実際には請求されません。",
+    "seePlans": "プランを見る",
+    "taxAtCheckout": "適用される税金は決済時に計算されます。",
+    "manageSubscription": "サブスクリプションを管理",
+    "quoteChanged": "価格が変更されました。新しい価格を確認してから続行してください。",
+    "deletionBlocked": "このアカウントを削除する前に、Creemのサブスクリプションを管理してください。"
+  },
+  "fr": {
+    "title": "Abonnements sur le web",
+    "testMode": "Mode test de Creem. Aucun débit réel.",
+    "seePlans": "Voir les offres",
+    "taxAtCheckout": "Les taxes applicables sont calculées au paiement.",
+    "manageSubscription": "Gérer l’abonnement",
+    "quoteChanged": "Le prix a changé. Vérifiez le nouveau prix avant de continuer.",
+    "deletionBlocked": "Gérez votre abonnement Creem avant de supprimer ce compte."
+  },
+  "de": {
+    "title": "Web-Abos",
+    "testMode": "Creem-Testmodus. Es wird nichts abgebucht.",
+    "seePlans": "Abos ansehen",
+    "taxAtCheckout": "Anfallende Steuern werden beim Bezahlen berechnet.",
+    "manageSubscription": "Abo verwalten",
+    "quoteChanged": "Der Preis hat sich geändert. Prüfe den neuen Preis, bevor du fortfährst.",
+    "deletionBlocked": "Verwalte dein Creem-Abo, bevor du dieses Konto löschst."
+  },
+  "es": {
+    "title": "Suscripciones en la web",
+    "testMode": "Modo de prueba de Creem. No se realizan cargos reales.",
+    "seePlans": "Ver planes",
+    "taxAtCheckout": "Los impuestos aplicables se calculan al pagar.",
+    "manageSubscription": "Gestionar suscripción",
+    "quoteChanged": "El precio ha cambiado. Revisa el precio actualizado antes de continuar.",
+    "deletionBlocked": "Gestiona tu suscripción de Creem antes de eliminar esta cuenta."
+  },
+  "it": {
+    "title": "Abbonamenti sul web",
+    "testMode": "Modalità di prova Creem. Nessun addebito reale.",
+    "seePlans": "Vedi i piani",
+    "taxAtCheckout": "Le imposte applicabili sono calcolate al pagamento.",
+    "manageSubscription": "Gestisci abbonamento",
+    "quoteChanged": "Il prezzo è cambiato. Controlla il nuovo prezzo prima di continuare.",
+    "deletionBlocked": "Gestisci l’abbonamento Creem prima di eliminare questo account."
+  },
+  "pt-br": {
+    "title": "Assinaturas pela web",
+    "testMode": "Modo de teste da Creem. Nenhuma cobrança real.",
+    "seePlans": "Ver planos",
+    "taxAtCheckout": "Os impostos aplicáveis são calculados no checkout.",
+    "manageSubscription": "Gerenciar assinatura",
+    "quoteChanged": "O preço mudou. Confira o novo valor antes de continuar.",
+    "deletionBlocked": "Gerencie sua assinatura da Creem antes de excluir esta conta."
+  },
+  "fi": {
+    "title": "Verkkotilaukset",
+    "testMode": "Creemin testitila. Maksua ei veloiteta.",
+    "seePlans": "Katso tilausvaihtoehdot",
+    "taxAtCheckout": "Sovellettavat verot lasketaan maksun yhteydessä.",
+    "manageSubscription": "Hallitse tilausta",
+    "quoteChanged": "Hinta muuttui. Tarkista uusi hinta ennen kuin jatkat.",
+    "deletionBlocked": "Hallitse Creem-tilaustasi ennen tämän tilin poistamista."
+  },
+  "da": {
+    "title": "Abonnementer på nettet",
+    "testMode": "Creem-testtilstand. Ingen betaling trækkes.",
+    "seePlans": "Se abonnementer",
+    "taxAtCheckout": "Eventuelle skatter beregnes ved betaling.",
+    "manageSubscription": "Administrer abonnement",
+    "quoteChanged": "Prisen er ændret. Se den nye pris, før du fortsætter.",
+    "deletionBlocked": "Administrer dit Creem-abonnement, før du sletter denne konto."
+  },
+  "nl": {
+    "title": "Abonnementen op het web",
+    "testMode": "Creem-testmodus. Er wordt niets afgeschreven.",
+    "seePlans": "Bekijk abonnementen",
+    "taxAtCheckout": "Toepasselijke belastingen worden bij het afrekenen berekend.",
+    "manageSubscription": "Abonnement beheren",
+    "quoteChanged": "De prijs is gewijzigd. Controleer de nieuwe prijs voordat je doorgaat.",
+    "deletionBlocked": "Beheer je Creem-abonnement voordat je dit account verwijdert."
+  },
+  "no": {
+    "title": "Abonnementer på nett",
+    "testMode": "Creem-testmodus. Ingen betaling belastes.",
+    "seePlans": "Se abonnementer",
+    "taxAtCheckout": "Gjeldende avgifter beregnes ved betaling.",
+    "manageSubscription": "Administrer abonnement",
+    "quoteChanged": "Prisen har endret seg. Se den nye prisen før du fortsetter.",
+    "deletionBlocked": "Administrer Creem-abonnementet før du sletter denne kontoen."
+  },
+  "sv": {
+    "title": "Webbabonnemang",
+    "testMode": "Creems testläge. Ingen betalning dras.",
+    "seePlans": "Se abonnemang",
+    "taxAtCheckout": "Tillämpliga skatter beräknas vid betalning.",
+    "manageSubscription": "Hantera abonnemang",
+    "quoteChanged": "Priset har ändrats. Kontrollera det nya priset innan du fortsätter.",
+    "deletionBlocked": "Hantera ditt Creem-abonnemang innan du raderar det här kontot."
+  },
+  "zh-cn": {
+    "title": "网页订阅",
+    "testMode": "Creem 测试模式，不会实际扣款。",
+    "seePlans": "查看订阅方案",
+    "taxAtCheckout": "适用税费将在结账时计算。",
+    "manageSubscription": "管理订阅",
+    "quoteChanged": "价格已变更，请核对新价格后继续。",
+    "deletionBlocked": "请先管理你的 Creem 订阅，再删除此账号。"
+  },
+  "zh-tw": {
+    "title": "網頁訂閱",
+    "testMode": "Creem 測試模式，不會實際扣款。",
+    "seePlans": "查看訂閱方案",
+    "taxAtCheckout": "適用稅費會在結帳時計算。",
+    "manageSubscription": "管理訂閱",
+    "quoteChanged": "價格已變更，請核對新價格後再繼續。",
+    "deletionBlocked": "請先管理你的 Creem 訂閱，再刪除此帳號。"
+  },
+  "id": {
+    "title": "Langganan web",
+    "testMode": "Mode uji Creem. Tidak ada tagihan sungguhan.",
+    "seePlans": "Lihat paket",
+    "taxAtCheckout": "Pajak yang berlaku dihitung saat pembayaran.",
+    "manageSubscription": "Kelola langganan",
+    "quoteChanged": "Harga telah berubah. Periksa harga terbaru sebelum melanjutkan.",
+    "deletionBlocked": "Kelola langganan Creem sebelum menghapus akun ini."
+  },
+  "vi": {
+    "title": "Gói đăng ký trên web",
+    "testMode": "Chế độ thử nghiệm Creem. Không thu phí thật.",
+    "seePlans": "Xem các gói",
+    "taxAtCheckout": "Các khoản thuế áp dụng được tính khi thanh toán.",
+    "manageSubscription": "Quản lý gói đăng ký",
+    "quoteChanged": "Giá đã thay đổi. Hãy kiểm tra giá mới trước khi tiếp tục.",
+    "deletionBlocked": "Hãy quản lý gói đăng ký Creem trước khi xóa tài khoản này."
+  },
+  "th": {
+    "title": "แพ็กเกจสมาชิกบนเว็บ",
+    "testMode": "โหมดทดสอบของ Creem ไม่มีการเรียกเก็บเงินจริง",
+    "seePlans": "ดูแพ็กเกจ",
+    "taxAtCheckout": "ภาษีที่เกี่ยวข้องจะคำนวณตอนชำระเงิน",
+    "manageSubscription": "จัดการการสมัครสมาชิก",
+    "quoteChanged": "ราคามีการเปลี่ยนแปลง โปรดตรวจสอบราคาใหม่ก่อนดำเนินการต่อ",
+    "deletionBlocked": "จัดการการสมัครสมาชิก Creem ก่อนลบบัญชีนี้"
+  },
+  "ru": {
+    "title": "Подписки на сайте",
+    "testMode": "Тестовый режим Creem. Деньги не списываются.",
+    "seePlans": "Посмотреть тарифы",
+    "taxAtCheckout": "Применимые налоги рассчитываются при оплате.",
+    "manageSubscription": "Управление подпиской",
+    "quoteChanged": "Цена изменилась. Проверьте новую цену, прежде чем продолжить.",
+    "deletionBlocked": "Управляйте подпиской Creem перед удалением этого аккаунта."
+  }
+}

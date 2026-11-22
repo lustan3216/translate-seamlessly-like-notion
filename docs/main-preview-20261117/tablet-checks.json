@@ -1,0 +1,520 @@
+[
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/chat",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/screen-translation",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/text",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/photos",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/voice",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/menu",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/document",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/table",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/keyboard",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/helper",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/widget",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/travel",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/work",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/dining",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/study",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/messages",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/reading",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/media",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/pricing",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/download",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/about",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/affiliate",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/contact",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/support",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/chat-language-practice",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/translate-other-apps",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/scan-and-read-documents",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/voice-translation-and-dictation",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/read-a-menu",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/write-across-languages",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/learn-from-translations",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/anytranslator-on-mac",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/ios-translation-keyboard",
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/chat",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/screen-translation",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/text",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/photos",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/voice",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/menu",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/document",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/table",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/keyboard",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/helper",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/features/widget",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/travel",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/work",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/dining",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/study",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/messages",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/reading",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/use-cases/media",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/pricing",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/download",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/about",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/affiliate",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/contact",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/support",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/chat-language-practice",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/translate-other-apps",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/scan-and-read-documents",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/voice-translation-and-dictation",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/read-a-menu",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/write-across-languages",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/learn-from-translations",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/anytranslator-on-mac",
+    "width": 768
+  },
+  {
+    "broken": [],
+    "h1Count": 1,
+    "overflow": false,
+    "path": "/blog/ios-translation-keyboard",
+    "width": 768
+  }
+]

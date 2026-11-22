@@ -1,0 +1,1398 @@
+{
+  "capturedAt": "2026-11-17T19:23:31.491Z",
+  "reviewSource": "25040 with 18 verified native images; screen-text still pending",
+  "checks": [
+    {
+      "broken": [],
+      "h1": [
+        "你的隨身翻譯助理。看懂世界，放膽開口。"
+      ],
+      "overflow": false,
+      "path": "/",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "翻譯、對話與學習，在同一個 App。"
+      ],
+      "overflow": false,
+      "path": "/features",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "AI 助手"
+      ],
+      "overflow": false,
+      "path": "/features/chat",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "螢幕翻譯，看懂字幕與文字。"
+      ],
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "文字翻譯：意思清楚，語氣也合適。"
+      ],
+      "overflow": false,
+      "path": "/features/text",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "照片翻譯：譯文就在眼前的字上。"
+      ],
+      "overflow": false,
+      "path": "/features/photos",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "語音翻譯：雙方的話，都跟得上。"
+      ],
+      "overflow": false,
+      "path": "/features/voice",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "菜單掃描：從讀懂菜色，到給店員看點單。"
+      ],
+      "overflow": false,
+      "path": "/features/menu",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "文件掃描：依頁整理，保留段落與重點。"
+      ],
+      "overflow": false,
+      "path": "/features/document",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "表格翻譯：對照列與欄，看清每個數字。"
+      ],
+      "overflow": false,
+      "path": "/features/table",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "鍵盤翻譯：在原本的 App 裡準備回覆。"
+      ],
+      "overflow": false,
+      "path": "/features/keyboard",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "Helper 解說，拆解文法與用法。"
+      ],
+      "overflow": false,
+      "path": "/features/helper",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "學習 Widget，隨手複習。"
+      ],
+      "overflow": false,
+      "path": "/features/widget",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "你的日常，就是使用情境。"
+      ],
+      "overflow": false,
+      "path": "/use-cases",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "旅行，帶著想說的話出發。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/travel",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "跨語言工作，也能好好表達。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/work",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "下一道喜歡的菜，從讀懂開始。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/dining",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "把想說的話，練到能開口。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/study",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "語言不同，心意一樣靠近。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/messages",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "看懂標題，也看懂細節。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/reading",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "看影片、讀網頁，讓翻譯跟著你。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/media",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "免費開始，為更多對話留空間。"
+      ],
+      "overflow": false,
+      "path": "/pricing",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "下一段對話，從這裡開始。"
+      ],
+      "overflow": false,
+      "path": "/download",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "讓世界，少一點語言的距離。"
+      ],
+      "overflow": false,
+      "path": "/about",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "分享你喜歡的用法。"
+      ],
+      "overflow": false,
+      "path": "/affiliate",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "有想法，聊聊吧。"
+      ],
+      "overflow": false,
+      "path": "/contact",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "使用支援"
+      ],
+      "overflow": false,
+      "path": "/support",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "為每一段對話，多準備一點。"
+      ],
+      "overflow": false,
+      "path": "/blog",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "你的隨身外語教練：看圖、口譯、練開口"
+      ],
+      "overflow": false,
+      "path": "/blog/chat-language-practice",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "跨 App 看字幕、讀網頁"
+      ],
+      "overflow": false,
+      "path": "/blog/translate-other-apps",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "文件掃描：依頁整理，對照原文閱讀"
+      ],
+      "overflow": false,
+      "path": "/blog/scan-and-read-documents",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "語音功能怎麼選？"
+      ],
+      "overflow": false,
+      "path": "/blog/voice-translation-and-dictation",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "看懂外文菜單，再把點單整理好"
+      ],
+      "overflow": false,
+      "path": "/blog/read-a-menu",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "跨語言寫作：俄德變格與回覆語氣"
+      ],
+      "overflow": false,
+      "path": "/blog/write-across-languages",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "把練過的句子，帶進日常。"
+      ],
+      "overflow": false,
+      "path": "/blog/learn-from-translations",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "在 Mac 上使用 AnyTranslator 的方法"
+      ],
+      "overflow": false,
+      "path": "/blog/anytranslator-on-mac",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "用 iOS 翻譯鍵盤，把聊天接下去"
+      ],
+      "overflow": false,
+      "path": "/blog/ios-translation-keyboard",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "你的隨身翻譯助理。看懂世界，放膽開口。"
+      ],
+      "overflow": false,
+      "path": "/",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "翻譯、對話與學習，在同一個 App。"
+      ],
+      "overflow": false,
+      "path": "/features",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "AI 助手"
+      ],
+      "overflow": false,
+      "path": "/features/chat",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "螢幕翻譯，看懂字幕與文字。"
+      ],
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "文字翻譯：意思清楚，語氣也合適。"
+      ],
+      "overflow": false,
+      "path": "/features/text",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "照片翻譯：譯文就在眼前的字上。"
+      ],
+      "overflow": false,
+      "path": "/features/photos",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "語音翻譯：雙方的話，都跟得上。"
+      ],
+      "overflow": false,
+      "path": "/features/voice",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "菜單掃描：從讀懂菜色，到給店員看點單。"
+      ],
+      "overflow": false,
+      "path": "/features/menu",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "文件掃描：依頁整理，保留段落與重點。"
+      ],
+      "overflow": false,
+      "path": "/features/document",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "表格翻譯：對照列與欄，看清每個數字。"
+      ],
+      "overflow": false,
+      "path": "/features/table",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "鍵盤翻譯：在原本的 App 裡準備回覆。"
+      ],
+      "overflow": false,
+      "path": "/features/keyboard",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "Helper 解說，拆解文法與用法。"
+      ],
+      "overflow": false,
+      "path": "/features/helper",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "學習 Widget，隨手複習。"
+      ],
+      "overflow": false,
+      "path": "/features/widget",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "你的日常，就是使用情境。"
+      ],
+      "overflow": false,
+      "path": "/use-cases",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "旅行，帶著想說的話出發。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/travel",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "跨語言工作，也能好好表達。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/work",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "下一道喜歡的菜，從讀懂開始。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/dining",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "把想說的話，練到能開口。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/study",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "語言不同，心意一樣靠近。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/messages",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "看懂標題，也看懂細節。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/reading",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "看影片、讀網頁，讓翻譯跟著你。"
+      ],
+      "overflow": false,
+      "path": "/use-cases/media",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "免費開始，為更多對話留空間。"
+      ],
+      "overflow": false,
+      "path": "/pricing",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "下一段對話，從這裡開始。"
+      ],
+      "overflow": false,
+      "path": "/download",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "讓世界，少一點語言的距離。"
+      ],
+      "overflow": false,
+      "path": "/about",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "分享你喜歡的用法。"
+      ],
+      "overflow": false,
+      "path": "/affiliate",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "有想法，聊聊吧。"
+      ],
+      "overflow": false,
+      "path": "/contact",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "使用支援"
+      ],
+      "overflow": false,
+      "path": "/support",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "為每一段對話，多準備一點。"
+      ],
+      "overflow": false,
+      "path": "/blog",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "你的隨身外語教練：看圖、口譯、練開口"
+      ],
+      "overflow": false,
+      "path": "/blog/chat-language-practice",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "跨 App 看字幕、讀網頁"
+      ],
+      "overflow": false,
+      "path": "/blog/translate-other-apps",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "文件掃描：依頁整理，對照原文閱讀"
+      ],
+      "overflow": false,
+      "path": "/blog/scan-and-read-documents",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "語音功能怎麼選？"
+      ],
+      "overflow": false,
+      "path": "/blog/voice-translation-and-dictation",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "看懂外文菜單，再把點單整理好"
+      ],
+      "overflow": false,
+      "path": "/blog/read-a-menu",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "跨語言寫作：俄德變格與回覆語氣"
+      ],
+      "overflow": false,
+      "path": "/blog/write-across-languages",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "把練過的句子，帶進日常。"
+      ],
+      "overflow": false,
+      "path": "/blog/learn-from-translations",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "在 Mac 上使用 AnyTranslator 的方法"
+      ],
+      "overflow": false,
+      "path": "/blog/anytranslator-on-mac",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "用 iOS 翻譯鍵盤，把聊天接下去"
+      ],
+      "overflow": false,
+      "path": "/blog/ios-translation-keyboard",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "你的隨身翻譯助理。看懂世界，放膽開口。"
+      ],
+      "overflow": false,
+      "path": "/",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "AI 助手"
+      ],
+      "overflow": false,
+      "path": "/features/chat",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "螢幕翻譯，看懂字幕與文字。"
+      ],
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "文字翻譯：意思清楚，語氣也合適。"
+      ],
+      "overflow": false,
+      "path": "/features/text",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "照片翻譯：譯文就在眼前的字上。"
+      ],
+      "overflow": false,
+      "path": "/features/photos",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "語音翻譯：雙方的話，都跟得上。"
+      ],
+      "overflow": false,
+      "path": "/features/voice",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "菜單掃描：從讀懂菜色，到給店員看點單。"
+      ],
+      "overflow": false,
+      "path": "/features/menu",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "文件掃描：依頁整理，保留段落與重點。"
+      ],
+      "overflow": false,
+      "path": "/features/document",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "表格翻譯：對照列與欄，看清每個數字。"
+      ],
+      "overflow": false,
+      "path": "/features/table",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "鍵盤翻譯：在原本的 App 裡準備回覆。"
+      ],
+      "overflow": false,
+      "path": "/features/keyboard",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "Helper 解說，拆解文法與用法。"
+      ],
+      "overflow": false,
+      "path": "/features/helper",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "學習 Widget，隨手複習。"
+      ],
+      "overflow": false,
+      "path": "/features/widget",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "免費開始，為更多對話留空間。"
+      ],
+      "overflow": false,
+      "path": "/pricing",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "下一段對話，從這裡開始。"
+      ],
+      "overflow": false,
+      "path": "/download",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "有想法，聊聊吧。"
+      ],
+      "overflow": false,
+      "path": "/contact",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "為每一段對話，多準備一點。"
+      ],
+      "overflow": false,
+      "path": "/blog",
+      "pending": 0,
+      "theme": "",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": [
+        "你的隨身翻譯助理。看懂世界，放膽開口。"
+      ],
+      "overflow": false,
+      "path": "/",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "AI 助手"
+      ],
+      "overflow": false,
+      "path": "/features/chat",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "螢幕翻譯，看懂字幕與文字。"
+      ],
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "文字翻譯：意思清楚，語氣也合適。"
+      ],
+      "overflow": false,
+      "path": "/features/text",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "照片翻譯：譯文就在眼前的字上。"
+      ],
+      "overflow": false,
+      "path": "/features/photos",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "語音翻譯：雙方的話，都跟得上。"
+      ],
+      "overflow": false,
+      "path": "/features/voice",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "菜單掃描：從讀懂菜色，到給店員看點單。"
+      ],
+      "overflow": false,
+      "path": "/features/menu",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "文件掃描：依頁整理，保留段落與重點。"
+      ],
+      "overflow": false,
+      "path": "/features/document",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "表格翻譯：對照列與欄，看清每個數字。"
+      ],
+      "overflow": false,
+      "path": "/features/table",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "鍵盤翻譯：在原本的 App 裡準備回覆。"
+      ],
+      "overflow": false,
+      "path": "/features/keyboard",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "Helper 解說，拆解文法與用法。"
+      ],
+      "overflow": false,
+      "path": "/features/helper",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "學習 Widget，隨手複習。"
+      ],
+      "overflow": false,
+      "path": "/features/widget",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "免費開始，為更多對話留空間。"
+      ],
+      "overflow": false,
+      "path": "/pricing",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "下一段對話，從這裡開始。"
+      ],
+      "overflow": false,
+      "path": "/download",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "有想法，聊聊吧。"
+      ],
+      "overflow": false,
+      "path": "/contact",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "h1": [
+        "為每一段對話，多準備一點。"
+      ],
+      "overflow": false,
+      "path": "/blog",
+      "pending": 0,
+      "theme": "",
+      "width": 1440
+    }
+  ],
+  "narrow": [
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/chat",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/text",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/photos",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/voice",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/menu",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/document",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/table",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/keyboard",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/helper",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/widget",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/travel",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/work",
+      "width": 320
+    },
+    {
+      "h1Count": 0,
+      "overflow": false,
+      "path": "/use-cases/dining",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/study",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/messages",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/reading",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/media",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/pricing",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/download",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/about",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/affiliate",
+      "width": 320
+    },
+    {
+      "h1Count": 0,
+      "overflow": false,
+      "path": "/contact",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/support",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/chat-language-practice",
+      "width": 320
+    },
+    {
+      "h1Count": 0,
+      "overflow": false,
+      "path": "/blog/translate-other-apps",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/scan-and-read-documents",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/voice-translation-and-dictation",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/read-a-menu",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/write-across-languages",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/learn-from-translations",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/anytranslator-on-mac",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/ios-translation-keyboard",
+      "width": 320
+    }
+  ],
+  "languageInteraction": "390px light: zh-tw -> English -> zh-tw through actual radio menu",
+  "scope": "Native IAB; layout/source metrics and saved viewport screenshots; not official headless Taste Browser Gate"
+}

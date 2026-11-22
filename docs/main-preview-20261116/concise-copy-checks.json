@@ -1,0 +1,218 @@
+[
+  {
+    "mainLength": 2326,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "light",
+    "url": "/",
+    "width": 1440
+  },
+  {
+    "mainLength": 1295,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "light",
+    "url": "/features/chat",
+    "width": 1440
+  },
+  {
+    "mainLength": 981,
+    "maxParagraph": 86,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "light",
+    "url": "/features/screen-translation",
+    "width": 1440
+  },
+  {
+    "mainLength": 623,
+    "maxParagraph": 90,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "light",
+    "url": "/features/menu",
+    "width": 1440
+  },
+  {
+    "mainLength": 1010,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "light",
+    "url": "/pricing",
+    "width": 1440
+  },
+  {
+    "mainLength": 981,
+    "maxParagraph": 85,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "light",
+    "url": "/blog/chat-language-practice",
+    "width": 1440
+  },
+  {
+    "mainLength": 2324,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "light",
+    "url": "/",
+    "width": 390
+  },
+  {
+    "mainLength": 1294,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "light",
+    "url": "/features/chat",
+    "width": 390
+  },
+  {
+    "mainLength": 981,
+    "maxParagraph": 86,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "light",
+    "url": "/features/screen-translation",
+    "width": 390
+  },
+  {
+    "mainLength": 622,
+    "maxParagraph": 90,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "light",
+    "url": "/features/menu",
+    "width": 390
+  },
+  {
+    "mainLength": 1003,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "light",
+    "url": "/pricing",
+    "width": 390
+  },
+  {
+    "mainLength": 981,
+    "maxParagraph": 85,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "light",
+    "url": "/blog/chat-language-practice",
+    "width": 390
+  },
+  {
+    "mainLength": 2324,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "dark",
+    "url": "/",
+    "width": 390
+  },
+  {
+    "mainLength": 1294,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "dark",
+    "url": "/features/chat",
+    "width": 390
+  },
+  {
+    "mainLength": 981,
+    "maxParagraph": 86,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "dark",
+    "url": "/features/screen-translation",
+    "width": 390
+  },
+  {
+    "mainLength": 622,
+    "maxParagraph": 90,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "dark",
+    "url": "/features/menu",
+    "width": 390
+  },
+  {
+    "mainLength": 1003,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "dark",
+    "url": "/pricing",
+    "width": 390
+  },
+  {
+    "mainLength": 981,
+    "maxParagraph": 85,
+    "outsideText": [],
+    "pageWidth": 390,
+    "theme": "dark",
+    "url": "/blog/chat-language-practice",
+    "width": 390
+  },
+  {
+    "mainLength": 2326,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "dark",
+    "url": "/",
+    "width": 1440
+  },
+  {
+    "mainLength": 1295,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "dark",
+    "url": "/features/chat",
+    "width": 1440
+  },
+  {
+    "mainLength": 981,
+    "maxParagraph": 86,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "dark",
+    "url": "/features/screen-translation",
+    "width": 1440
+  },
+  {
+    "mainLength": 623,
+    "maxParagraph": 90,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "dark",
+    "url": "/features/menu",
+    "width": 1440
+  },
+  {
+    "mainLength": 1010,
+    "maxParagraph": 84,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "dark",
+    "url": "/pricing",
+    "width": 1440
+  },
+  {
+    "mainLength": 981,
+    "maxParagraph": 85,
+    "outsideText": [],
+    "pageWidth": 1440,
+    "theme": "dark",
+    "url": "/blog/chat-language-practice",
+    "width": 1440
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "label": {
+      "color": "rgb(104, 104, 101)",
+      "height": 19.1953125,
+      "width": 48,
+      "x": 184,
+      "y": 526.125
+    },
+    "panel": "menu",
+    "text": "菜單翻譯\n\n從一張菜單，\n到一份點單。\n\n看清菜名與加選項，整理好餐點，再給店員看原文點單。\n\n情境示範\n\nMENU\n\nLatte\n£3.50\nOat milk\n+ £0.40\n拿鐵 · 燕麥奶每杯加 £0.40\n原文點單列表\n合計 £7.80\nLatte\n× 2\n+ Oat milk",
+    "top": 140.1328125
+  },
+  {
+    "label": {
+      "color": "rgb(104, 104, 101)",
+      "height": 19.1953125,
+      "width": 48,
+      "x": 184,
+      "y": 2818.875
+    },
+    "panel": "reply",
+    "text": "文字翻譯與語氣\n\n看懂對方，\n再好好回覆。\n\n先理解訊息，寫下自己的回覆草稿，再翻成合適的語氣。確認後自行送出。\n\n情境示範\n收到的訊息\nCould we move our meeting to Friday?\n\n我們可以把會議改到週五嗎？\n\n自己的回覆，翻成英文\n\n週五可以，你哪個時間方便？\n\nFriday works for me.\nWhat time would suit you?",
+    "top": 2422.1875
+  },
+  {
+    "label": {
+      "color": "rgb(104, 104, 101)",
+      "height": 19.1953125,
+      "width": 48,
+      "x": 184,
+      "y": 522.6328125
+    },
+    "panel": "practice",
+    "text": "Chat 目標學習\n\n把點餐英文，\n放進場景對話。\n\n先在點餐語句單元練習，再到餐廳情境與 AI 服務生對話，依實際回答看回饋。\n\n情境示範\n旅遊目標\n點餐語句單元\n餐廳情境\n先練一句\nCould I see the menu, please?\n\n可以讓我看一下菜單嗎？\n\n換到餐廳情境，接著說\n\nOf course. What would you like to order?",
+    "top": 139.9375
+  }
+]

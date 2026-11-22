@@ -20,7 +20,7 @@ const SEO = ({
   title,
   description,
   keywords,
-  image = 'https://www.anytranslator.app/app-preview/screens/en/translate.png',
+  image,
   url,
   type = 'website',
   noIndex = false,
@@ -32,12 +32,13 @@ const SEO = ({
   const locale = localeForCode(currentLanguage.code);
 
   const siteTitle = 'AnyTranslator';
-  const defaultDescription = t('meta.description');
+  const defaultDescription = t('landing.textBody');
 
   const pageTitle = title ? `${title} | ${siteTitle}` : `${siteTitle} - Smart Translation App`;
   const pageDescription = description || defaultDescription;
   const canonicalUrl = getCanonicalUrl(url || pathname, currentLanguage.code);
-  const imageUrl = image.replace(/^https:\/\/(?:www\.)?anytranslator\.app/, SITE_URL);
+  const imageUrl = (image || `${SITE_URL}/app-preview/social-v2/${currentLanguage.code}.jpg`)
+    .replace(/^https:\/\/(?:www\.)?anytranslator\.app/, SITE_URL);
 
   return (
     <>

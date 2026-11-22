@@ -1,0 +1,652 @@
+{
+  "marketing": {
+    "hero.title": "Verden er stor.",
+    "hero.accent": "Lad ikke sproget stå i vejen.",
+    "nav.manifesto": "Vores manifest",
+    "hero.body": "Forstå menuen og bestil. Oversæt beskeden og svar. Tekst, billeder og videoundertekster sammen med naturlig AI-stemme og samtaletræning gør fremmedsprog brugbare i hverdagen.",
+    "feature.table": "Tabeloversættelse",
+    "home.featuresTitle": "11 værktøjer til oversættelse og læring, lige ved hånden.",
+    "home.featuresBody": "Læs menuer og dokumenter, besvar beskeder og øv dig i at tale. Alt samlet ét sted.",
+    "home.blogTitle": "Praktiske guides til at få mere ud af oversættelse.",
+    "download.macNote": "Se understøttede Mac-modeller og systemkrav i App Store. Oversættelsestastatur, læringswidget og oversættelse i andre apps er til iOS/iPadOS.",
+    "features.title": "Oversættelse, samtale og læring i én app.",
+    "features.body": "Forstå menuer, dokumenter og tabeller, svar på beskeder, følg videoer og øv tale med AI-assistenten. 11 værktøjer forbinder læsning, skrivning, lytning og tale.",
+    "pricing.allowance": "Se gratis forbrug i appen",
+    "pricing.more": "Vælg Standard eller Tale efter dit behov",
+    "pricing.manage": "Gendan køb i appen, og administrer fornyelse og opsigelse hos Apple. Forbrugskortet viser restsaldo og dato for opdatering.",
+    "pricing.voiceNote": "Taleoversættelse og videoundertekster deler taleminutter. Under AI-assistentens stemmeforbindelse bruger tekst, tale og billeder assistentminutter. Almindelige tekst- og billedspørgsmål samt skærmtekst bruger oversættelser. Se saldo og opdateringsdato i appen.",
+    "article.voice": "Hvilken talefunktion skal du vælge?",
+    "affiliate.processTitle": "Sådan foregår samarbejdet",
+    "faq.FreeQ": "Kan jeg prøve gratis?",
+    "faq.FreeA": "Prøv oversættelse, AI-assistent, tale og widgettens grundindhold gratis; se kvoter i appen. PRO giver flersidescanning, flere Helper-indstillinger og eget læringsindhold. Tale har desuden flere minutter.",
+    "faq.AgentQ": "Hvad er forskellen på AI-assistentens stemme og taleoversættelse?",
+    "faq.AgentA": "Brug taleoversættelse til samtaler ansigt til ansigt med tosprogede undertekster og naturlig AI-oplæsning. Brug AI-assistentens stemme til spørgsmål og taletræning: lyt til eksempler og øv videre. De har hver sin minutkvote.",
+    "voice.eyebrow": "Naturlig AI-stemme",
+    "voice.title": "Forstå ordene. Sig dem naturligt.",
+    "voice.body": "En ny generation af AI-stemmer giver naturlig intonation og rytme. Lyt til en sætning, gentag den, og bliv fortrolig med udtale og accent. Øv så samtalen med AI.",
+    "voice.action": "Udforsk taleoversættelse",
+    "faq.ScanQ": "Hvornår vælger jeg menu, dokument eller tabel?",
+    "faq.ScanA": "Menu lader dig vælge retter og tilvalg og vise bestillingen på originalsproget. Dokument ordner afsnit sidevis. Tabel bevarer rækker og kolonner. Gratis: 1 billede ad gangen. PRO: op til 10 pr. batch. Find resultaterne i scanningshistorikken.",
+    "faq.AccuracyQ": "Hvordan tjekker jeg russiske og tyske kasus og endelser?",
+    "faq.AccuracyA": "Brug Helpers Grammatik, Almindelige fejl og Ord for ord til russiske og tyske kasus og endelser. Skal originalsætningen ændres, så bed AI-assistenten korrekturlæse og forklare hvorfor.",
+    "article.work": "Skriv på tværs af sprog: russisk og tysk bøjning og svarenes tone",
+    "about.body": "Oversættelse, forklaring og øvelse hænger sammen, så du kan fokusere på samtalen.",
+    "about.story": "Når du forstår, kan du svare, spørge videre, bestille eller huske en sætning. AnyTranslator gør næste skridt lettere.",
+    "privacy.body": "Oversættelse og AI-funktioner behandles online. Se privatlivspolitikken om data og tilladelser.",
+    "affiliate.status": "Samarbejder aftales i øjeblikket individuelt. Indhold og vilkår for provision fastlægges særskilt.",
+    "download.iosNote": "Oversættelse af tekst, tale, billeder, menuer, dokumenter og tabeller samt AI-assistent, skærmoversættelse, tastatur og læringswidget.",
+    "download.ios": "Hent gratis til iOS",
+    "feature.chat": "AI-assistent",
+    "home.statement": "Fra at forstå en sætning til selv at tale.",
+    "home.statementBody": "Find hovedpointer i billeder, brug tolkning til at svare, og lyt til naturlige AI-eksempler før rejsen eller jobsamtalen. Feedback og repetition gør nyttige udtryk til en del af hverdagen.",
+    "case.study.title": "Øv det, du vil sige, til du kan sige det højt.",
+    "case.study.body": "Vælg et mål til rejse, arbejde eller hverdag, eller lav dine egne scenarier og mål. Tal med AI, se feedback, og øv igen, så de forberedte udtryk kommer i brug.",
+    "article.chat": "Din sprogcoach på farten: billeder, tolkning og taletræning",
+    "article.learning": "Tag de øvede sætninger med ind i hverdagen.",
+    "feature.screen-translation": "Oversættelse i enhver app",
+    "article.screen": "Undertekster og websider på tværs af apps",
+    "case.media.title": "Se videoer og læs websider med oversættelsen ved hånden.",
+    "case.media.body": "Videoen spiller videre, og du læser videre på siden. Sammenlign undertekster eller synlig tekst i billede i billede, og spørg AI-assistenten om sætninger, du vil forstå bedre."
+  },
+  "features": {
+    "text": {
+      "title": "Tekstoversættelse: klar mening og den rette tone.",
+      "summary": "Syv toner til beskeder og e-mails efter modtageren. Forstå russisk og tysk bøjning med Helper, og lad AI-assistenten korrekturlæse originalen.",
+      "heading": "Vælg tonen efter modtageren.",
+      "body": "Skriv høflige arbejdsanmodninger, tal naturligt med venner, eller forkort lange beskeder. Lyt til AI-udtalen og gem gode sætninger. Helper forklarer russiske og tyske kasus og endelser; AI-assistenten kan korrekturlæse.",
+      "steps": [
+        "Syv toner fra formelle breve til hverdagssnak.",
+        "Helper forklarer russisk og tysk bøjning, og AI-assistenten korrekturlæser originalsætningen efter behov.",
+        "Lyt til naturlig AI-udtale, gem sætninger, eller tag teksten med som kladde i AI-assistenten."
+      ],
+      "sections": [
+        {
+          "title": "Forstå russiske og tyske kasus og endelser",
+          "body": "Grammatik, almindelige fejl og ordanalyse forklarer russiske kasus samt tyske artikler og endelser på dit sprog. Forstå sammenhængen i sætningen, og vælg formulering."
+        },
+        {
+          "title": "Syv toner efter modtageren",
+          "body": "Automatisk, høflig, humoristisk, brev, venlig, kort og flirtende: en passende tone fra arbejde til internationale bekendtskaber.",
+          "items": [
+            "Automatisk: tilpasser tonen efter originaltekst og sammenhæng.",
+            "Høflig: til anmodninger, spørgsmål og arbejdsbeskeder.",
+            "Humoristisk: gør passende samtaler lidt lettere.",
+            "Brev: til e-mails og breve.",
+            "Venlig: naturlig og afslappet, som mellem bekendte.",
+            "Kort: forkorter formuleringen; tjek de vigtige oplysninger.",
+            "Flirtende: en legende og kærlig tone, når du møder mennesker på tværs af lande."
+          ]
+        },
+        {
+          "title": "Korrekturlæs russisk og tysk med forståelse for ændringerne",
+          "body": "Automatisk tone bevarer originalen, hvis hele teksten allerede er på målsproget. Tjek kasus, endelser og grammatik med Helper, eller bed AI-assistenten korrekturlæse originalsætningen."
+        }
+      ]
+    },
+    "photos": {
+      "title": "Billedoversættelse: oversættelsen direkte på ordene.",
+      "summary": "Skilte, etiketter og opslag: ret kameraet mod teksten, og læs oversættelsen på billedet.",
+      "heading": "Ret kameraet mod et fremmedsprog. Læs direkte på billedet.",
+      "body": "Ret kameraet mod skiltet, og læs oversættelsen på billedet. Tag et foto eller vælg fra biblioteket. Tryk på teksten for detaljer, mens omgivelsernes spor bevares.",
+      "steps": [
+        "Oversættelse i realtid oven på teksten gør skilte læselige.",
+        "Tag et foto eller vælg fra biblioteket, og oversæt billedets tekst.",
+        "Se oversættelsesdetaljer uden at miste originalbilledets kontekst."
+      ]
+    },
+    "voice": {
+      "title": "Taleoversættelse: følg med i begge sider af samtalen.",
+      "summary": "Tosprogede undertekster følger talen, og naturlig AI-stemme formidler dine ord. Fire tilstande hjælper begge med at forstå.",
+      "heading": "Lad oversættelsen formidle dine ord ansigt til ansigt.",
+      "body": "Spørg om vej, tjek ind eller tal sammen med tosprogede undertekster og naturlig AI-stemme, der formidler mening og tone. Fire lydtilstande passer til forskellige situationer. Se resuméet og genafspil oversættelser bagefter for at lære nyttige udtryk.",
+      "steps": [
+        "Tovejssamtale læser begge parters oversættelser; Tal for mig afspiller din.",
+        "Lyt privat bruger telefonens ørehøjttaler eller hovedtelefoner; Kun undertekster passer til stille steder.",
+        "Gennemgå samtalen, genafspil AI-oversættelser, og kopiér eller del hovedpunkterne fra resuméet."
+      ],
+      "sections": [
+        {
+          "title": "Naturlig AI-oplæsning med tone og rytme",
+          "body": "En ny generation af stemmemodeller skaber oversat tale med naturlig intonation og små følelsesnuancer efter indholdet. Brug den i samtalen og gentag bagefter for at blive fortrolig med udtale og accent."
+        }
+      ]
+    },
+    "menu": {
+      "title": "Menuscanning: fra at forstå retterne til at vise din bestilling.",
+      "summary": "Fotografér menuen, vælg retter, priser og tilvalg, og vis bestillingen på originalsproget.",
+      "heading": "Tag et billede af menuen, vælg, og vis personalet.",
+      "body": "Gør en fremmedsproget menu til retter, du kan vælge: navne, beskrivelser, priser og tilvalg samlet. Vælg antal og bemærkninger, vis originalbestillingen, og se kendte priser lagt sammen pr. valuta.",
+      "steps": [
+        "Retter, beskrivelser og priser bliver til overskuelige valg.",
+        "Vælg antal, størrelser, tilgængelige tilvalg og bemærkninger.",
+        "Vis originalbestillingen med kendte priser summeret pr. valuta."
+      ]
+    },
+    "document": {
+      "title": "Dokumentscanning: ordn sider og bevar afsnit og hovedpunkter.",
+      "summary": "Fotografér flere sider, og læs afsnit, lister og tabeller. Sammenlign med originalen, og genåbn fra historikken.",
+      "heading": "Struktur i lange dokumenter, overblik i læsningen.",
+      "body": "Opslag, rejsefoldere og flersidede papirer ordnes automatisk i overskrifter, afsnit og lister. Sammenlign med originaltekst og billeder, eller find dokumentet i historikken uden at behandle det igen.",
+      "steps": [
+        "Fotos ordnes sidevis med struktur i overskrifter, afsnit og lister.",
+        "Tryk for at sammenligne originaltekst og billede, så detaljer ikke overses.",
+        "Søg i scanningshistorikken, og find dokumentet igen."
+      ]
+    },
+    "keyboard": {
+      "title": "Tastaturoversættelse: forbered svaret i den app, du bruger.",
+      "summary": "Svar uden at skifte frem og tilbage. Skriv eller brug iOS-diktering, oversæt og skift tone i tekstfeltet, og send selv.",
+      "heading": "Skriv svaret færdigt i den samme app.",
+      "body": "Oversæt chat og arbejdsbeskeder, og juster tonen direkte i tekstfeltet. Skriv eller brug iOS-diktering. Udklipsholderen kan også oversættes og indsættes direkte.",
+      "steps": [
+        "Oversæt i tekstfeltet, erstat kladden, og skriv videre.",
+        "Skriv eller brug iOS-diktering, og vælg sprog og tone.",
+        "Oversæt udklipsholderen, kopiér, eller indsæt ved markøren."
+      ]
+    },
+    "helper": {
+      "title": "Helper forklarer grammatik og brug.",
+      "summary": "Lær russiske kasus og tyske endelser på dit sprog. Gem dine forklaringsønsker én gang og brug dem til nye sætninger.",
+      "heading": "Forstå udtrykkene, og lær at bruge dem.",
+      "body": "Kasus, endelser og sætningsmønstre i original og oversættelse forklares på dit sprog. Vælg grammatik, almindelige fejl eller ordanalyse. Gem fagområde, læringsmål og detaljeringsgrad som egne instruktioner til næste sætning.",
+      "steps": [
+        "Grammatik, almindelige fejl og ordanalyse viser, hvordan sætningen er bygget.",
+        "Udforsk synonymer, eksempler, underforstået mening og svarforslag.",
+        "Tilpas område, mål og dybde, og gem forklaringsinstruktionerne til genbrug."
+      ],
+      "sections": [
+        {
+          "title": "Forstå, hvorfor russisk og tysk bøjes",
+          "body": "Eksempler i kontekst: fra russisk instrumental til tysk dativ, og hvordan kasus, artikler og navneordsendelser ændres sammen.",
+          "items": [
+            "Russisk: Я говорю с мой друг. → Я говорю с моим другом. с i betydningen »sammen med« kræver instrumental, så både мой og друг får nye endelser.",
+            "Tysk: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit kræver dativ, og det svagt bøjede Kunde bliver til Kunden."
+          ]
+        },
+        {
+          "title": "Gem forklaringsinstruktioner til næste sætning",
+          "body": "Gem fx »Forklar russiske kasus på mit sprog« eller »Forklar tyske endelser«. Nye sætninger følger den velkendte forklaringsform, så du kan fokusere på det, du vil lære."
+        }
+      ]
+    },
+    "widget": {
+      "title": "Læringswidget: repetition lige ved hånden.",
+      "summary": "Din hjemmeskærm bliver et repetitionskort: læs udtryk, lyt til AI-udtale, og markér til repetition eller som lært. Vælg indhold, emne og niveau.",
+      "heading": "Gør små pauser til repetition.",
+      "body": "Lyt til AI-udtale fra hjemmeskærmen, gentag, og markér som lært. Fra låseskærmen åbner du appen; StandBy kan bruges, hvor det understøttes. Vælg ord, ordforbindelser, vendinger og sætninger med emne, niveau og egne instruktioner.",
+      "steps": [
+        "Læs udtryk, lyt til AI-udtale, og gentag fra hjemmeskærmen.",
+        "Markér til repetition eller som lært til næste læringsrunde.",
+        "Vælg indholdstype, emne og niveau, og tilføj egne instruktioner."
+      ]
+    },
+    "table": {
+      "title": "Tabeloversættelse: sammenlign rækker og kolonner, og forstå hvert tal.",
+      "summary": "Køreplaner og prislister bliver til rækker og kolonner. Rul vandret i brede tabeller og se tider, priser og enheder samlet.",
+      "heading": "Følg rækker og kolonner, og få styr på tallene.",
+      "body": "Læs selv talrige oplysninger som en tabel. Ordne køreplaner og prislister i rækker og kolonner og rul vandret i brede tabeller. Åbn originaltekst eller billede for at tjekke tider, beløb og enheder.",
+      "steps": [
+        "Række- og kolonnestrukturen gør tider og priser nemme at sammenligne.",
+        "Rul vandret og se alle felter og enheder i brede tabeller.",
+        "Se originaltekst og billede, og genåbn fra scanningshistorikken."
+      ]
+    },
+    "chat": {
+      "title": "AI-assistent",
+      "summary": "Find billeders hovedpunkter, få tolkning i realtid, og øv tale med naturlig AI-stemme. Din sprogcoach på rejsen, på arbejdet og i hverdagen.",
+      "heading": "Din sprogcoach på farten hjælper dig med at bruge sproget.",
+      "body": "Øv bestillinger før rejsen og formuleringer før arbejdet, eller spørg om et uklart billede. AI taler naturligt og viser eksempler. Tolkning i realtid og scenarietræning fører fra forståelse til mod på at tale.",
+      "steps": [
+        "Find hovedpunkter i billeder, og forstå skilte, beskeder og fotos.",
+        "Øv scenarier og mål til rejser, arbejde og hverdag.",
+        "Lyt til naturlige eksempler, gentag og øv igen, og gem nyttige udtryk."
+      ],
+      "sections": [
+        {
+          "title": "Spørg om billeder, og brug tolkning i øjeblikket",
+          "body": "Tilføj et foto af et skilt, opslag eller en besked, og lad AI samle hovedpunkter, påmindelser og næste skridt. Brug stemmechat eller tolkning i realtid, når sproget står i vejen.",
+          "items": [
+            "Stemmesamtale: spørg højt, og tal videre.",
+            "Tal engelsk med mig: gør øvelsen til naturlig samtale.",
+            "Tolk for mig i realtid: forbind forskellige sprog.",
+            "Lad AI forstå et foto: find hovedpunkter og næste skridt."
+          ]
+        },
+        {
+          "title": "Øv det sprog, du får brug for i livet",
+          "body": "Fra restaurant og lufthavn til jobsamtale og arbejde: vælg et scenarie til samtaletræning eller et mål til trinvis læring. Lav også egne scenarier og mål. Fokus er at svare højt og forberede den næste virkelige samtale.",
+          "items": [
+            "Scenarietræning: spil en rolle, og løs samtaleopgaver.",
+            "Måltræning: øv udtryk, og brug dem derefter i et scenarie.",
+            "Egen læring: tilpas scenarier eller mål til en bestemt anledning."
+          ]
+        },
+        {
+          "title": "Naturlige eksempler gør det lettere at tale",
+          "body": "Bed AI demonstrere langsommere, og øv udtale, accent og rytme. Brug derefter sætningerne i naturlig samtale, så øvelsen nærmer sig virkelig kommunikation."
+        },
+        {
+          "title": "Forstå feedback, og tal mere flydende næste gang",
+          "body": "Sammenlign originalen med naturlige formuleringer, lyt til eksempler, og læs årsagerne. Bed også om korrektur af korte russiske, tyske eller andre sætninger. Gem udtryk, gentag øvelser, og find samtaler i historikken før næste gang."
+        }
+      ]
+    },
+    "screen-translation": {
+      "title": "Skærmoversættelse gør undertekster og tekst forståelige.",
+      "summary": "Bliv ved videoen eller websiden, og læs undertekster og skærmtekst i billede i billede. Sammenlign original og oversættelse, og genlæs nyttige udtryk fra historikken.",
+      "heading": "Forstå indholdet i den app, du allerede bruger.",
+      "body": "Vælg den rette tilstand til lyden i en fremmedsproget video eller teksten på en webside. Billede i billede viser original og oversættelse sammen, så videoer, artikler og spilbeskeder kræver færre appskift.",
+      "steps": [
+        "Videoundertekster: gør afspillet tale til undertekster, du forstår.",
+        "Skærmtekst: læs synlig tekst på websider, i chats og spil.",
+        "Billede i billede og historik: sammenlign undervejs, og læs igen senere."
+      ],
+      "sections": [
+        {
+          "title": "Følg videoen med undertekster",
+          "body": "Oversæt lyd fra andre apps til undertekster med originalen ved siden af. Følg hovedpunkterne i videoer, livestreams og sproglæring på et kendt sprog, mens indholdet fortsætter."
+        },
+        {
+          "title": "Skærmtekst hjælper dig videre i læsningen",
+          "body": "Læs oversættelser af synlig tekst fra websider, chats, spil og dokumenter i billede i billede. Flyt vinduet hen til det ønskede afsnit, eller rul originalsiden videre."
+        },
+        {
+          "title": "Oversættelsen følger med, og nyttige udtryk gemmes",
+          "body": "Sammenlign oversættelse og original undervejs. Færdig originaltekst og oversættelse gemmes i historikken. Flyt selv et udtryk til AI-assistenten for at spørge om betydning eller øve brugen.",
+          "items": [
+            "Kræver iOS/iPadOS 16 eller nyere, billede i billede og internet. Beskyttet indhold kan muligvis ikke oversættes."
+          ]
+        }
+      ]
+    }
+  },
+  "workflows": {
+    "travel": [
+      "Brug taleoversættelse ved indtjekning, og bekræft værelsestype, depositum og udtjekningstid med undertekster.",
+      "Øv indtjekning og opfølgende spørgsmål med AI-assistenten før den rigtige samtale.",
+      "Fotografér opholdsregler som Dokument, tjek tider og gebyrer, og genåbn fra scanningshistorikken."
+    ],
+    "work": [
+      "Vælg arbejdsbeskedens tone efter modtageren: høflig anmodning eller kort svar.",
+      "Forstå russiske og tyske kasus og endelser med Helper, og lad AI-assistenten korrekturlæse originalen.",
+      "Giv baggrund for at sammenligne svar, og send det færdige svar fra den oprindelige app."
+    ],
+    "dining": [
+      "Gør menufotos til valgbare retter, vælg antal og tilvalg, og vis bestillingen på originalsproget.",
+      "Tal med personalet via taleoversættelse om portioner, ingredienser og tilberedning.",
+      "Øv opfølgende spørgsmål med AI-assistenten, og afklar allergibehov direkte med personalet."
+    ],
+    "messages": [
+      "Skift sprog og tone i det oprindelige tekstfelt uden at hoppe mellem apps.",
+      "Sammenlign lange beskeders oversættelse med originalen, lyt til udtale, og gem gode sætninger.",
+      "Giv AI-assistenten sammenhængen, og find et svar, der passer til situationen."
+    ],
+    "reading": [
+      "Vælg Dokument til opslag, foldere og flersidede papirer, og læs afsnit, lister og tabeller sidevis.",
+      "Vælg Tabel til køreplaner og prislister, rul vandret, og tjek originaltekst og enheder.",
+      "Tag svære sætninger med til tekstoversættelse, og lad Helper forklare brugen."
+    ],
+    "study": [
+      "Øv scenarier og sæt mål med AI-assistenten før næste virkelige samtale.",
+      "Forstå grammatik, ordforråd og eksempler med Helper, og afklar det svære.",
+      "Lyt til AI-udtale og gentag almindelige sætninger i læringswidgetten, når du har små pauser."
+    ],
+    "media": [
+      "Følg videoer med undertekster, læs websider med skærmtekst, og se original og oversættelse sammen.",
+      "Kopiér udtryk til AI-assistenten, spørg om betydning, sammenlign formuleringer, og øv igen.",
+      "Vælg en passende tone i tekstoversættelse, og brug det forståede indhold i dit svar."
+    ]
+  },
+  "articles": {
+    "voice.intro": "Til samtaler ansigt til ansigt: tosprogede undertekster og naturlig AI-oplæsning. Til eksempler og taletræning: AI-assistentens stemme. Vælg videoundertekster i Oversættelse i enhver app til videoer fra andre apps.",
+    "voice.tip": "Vælg begge parters sprog og lydtilstand før samtalen. Genafspil AI-oversættelsen, og øv intonation og rytme. Gennemgå samtale og resumé, og gem nyttige udtryk.",
+    "voice.limit": "Tovejssamtale er til samtaler ansigt til ansigt. Lyt privat bruger ørehøjttaler eller hovedtelefoner, og Kun undertekster passer, når lyd ikke kan afspilles. Start videoundertekster fra Oversættelse i enhver app. iOS afgør, hvilket indhold der kan optages.",
+    "menu.intro": "Vælg Menu under Organiser på fotosiden. Tilføj lige, tydelige billeder af hele siden for at ordne navne, ingredienser, portioner og priser som retter.",
+    "menu.tip": "Læs retter og priser, vælg antal, størrelser og tilgængelige tilvalg, og tilføj bemærkninger. Åbn originalbestillingen, og vis retter, valg og antal til personalet.",
+    "menu.limit": "Kendte priser summeres separat pr. valuta. Ukendte priser giver ingen sikker total. Bekræft ingredienser, allergener og tilberedning direkte med personalet, og vis derefter selv bestillingen.",
+    "work.intro": "Oversæt først russisk eller tysk for at forstå, og vælg så svarenes tone. Helper forklarer kasus og endelser. Bed udtrykkeligt AI-assistenten korrekturlæse originalsætningen.",
+    "work.tip": "Vælg tone efter modtager: Høflig til arbejdsanmodninger, Brev til e-mails og Venlig til bekendte. Brug Helper til svære sætninger, og giv AI-assistenten baggrund til at sammenligne svar.",
+    "work.limit": "Automatisk tone bevarer originalteksten, når hele teksten allerede er på målsproget. Skal kasus, endelser eller grammatik ændres, så forstå årsagen med Helper og bed udtrykkeligt AI-assistenten om korrektur.",
+    "mac.intro": "Oversæt tekst og spørg AI på Mac. Se først i App Store, om din model og dit system understøtter download.",
+    "mac.tip": "Efter download kan du oversætte tekst og bruge AI-assistenten. På fotosiden kan du vælge en billedfil eller indsætte et billede. Se kompatible modeller og systemkrav på enhedens butiksside.",
+    "mac.limit": "Oversættelsestastatur, widget og oversættelse i andre apps er primært til understøttede iPhone-/iPad-enheder. De tilgængelige funktioner fremgår af appen på hver platform.",
+    "keyboard.intro": "Tilføj tastaturet i iOS efter appens guide, og slå Fuld adgang til for onlineoversættelse. I understøttede felter kan du skrive eller bruge systemdiktering til en kladde og derefter oversætte og tilpasse tonen.",
+    "keyboard.tip": "Skriv kladden eller brug iOS' indbyggede diktering, og vælg sprog og tone. Værktøjerne kan også oversætte udklipsholderen, kopiere oversættelsen eller indsætte ved markøren.",
+    "keyboard.limit": "Tastatur og diktering afhænger af app, iOS og sprog. Skriv i stedet eller oversæt i hovedappen ved behov. Sprogpakker til indtastning kan hentes efter guiden.",
+    "chat.intro": "Brug AI-assistenten som din sprogcoach på farten: forstå billeder, få tolkning i realtid, eller øv tale til rejse og arbejde. Begynd med et spørgsmål, og tag forberedelsen med i hverdagen.",
+    "chat.tip": "Start med scenarier og mål som bestilling eller jobsamtale, eller lav dine egne. Bed AI demonstrere langsommere, øv intonation og rytme, fortsæt samtalen, se feedback, og gem sætninger til mere øvelse.",
+    "chat.limit": "Kræver internet og forbrugskvote samt mikrofontilladelse til tale. Funktioner afhænger af version, sprog og tjenestens status. Tjek kilder til vigtige oplysninger. Et brugerdefineret mål erstatter den eksisterende plan og fremgang. Se restsaldo i appen.",
+    "learning.intro": "Øv den næste samtale, du faktisk skal have. Vælg mål og scenarier med AI-assistenten, og gør sætningerne til dine egne gennem feedback og repetition.",
+    "learning.tip": "Fokusér på én situation ad gangen: svar først, og sammenlign med en naturlig formulering. Bed AI vise intonation og rytme, forstå brugen med Helper, og gentag med læringswidgetten.",
+    "learning.limit": "AI-træning kræver internet og forbrugskvote. Læringswidgetten kræver iOS 17 eller nyere. Eget indhold og indstillinger afhænger af abonnement.",
+    "screen.intro": "Hold oversættelsen synlig, når du ser video eller læser websider. Forstå lyd med undertekster og indhold med skærmtekst, og sammenlign i billede i billede. Vigtige udtryk kan genlæses senere.",
+    "screen.tip": "Brug undertekster til video og skærmtekst til websider. Flyt billede i billede-vinduet, eller rul originalsiden for at læse næste afsnit. Stop skærmudsendelsen bagefter, og find ønskede udtryk i historikken.",
+    "screen.limit": "Kræver iOS/iPadOS 16 eller nyere, billede i billede og internet. Beskyttet indhold kan muligvis ikke oversættes. Undertekster bruger taleminutter, skærmtekst bruger oversættelser. Se restsaldo i appen."
+  },
+  "scan": {
+    "title": "Menuer, dokumenter og tabeller med hver sin klare læsemåde.",
+    "body": "Menuer bliver til valgbare retter, dokumenter til afsnit og tabeller til rækker og kolonner. Skilte og etiketter oversættes direkte på billedet."
+  },
+  "documentArticle": {
+    "title": "Dokumentscanning: ordn siderne, og læs med originalen ved siden af",
+    "intro": "Vælg Dokument under Organiser på fotosiden til opslag, rejsefoldere og flersidede dokumenter. Tilføj billeder i rækkefølge. Sammenlign ordnede afsnit, lister og tabeller med originalen.",
+    "tip": "Tag tydelige billeder af siderne, tjek rækkefølgen, og send samlet. Tryk på tekst for originalen, eller åbn sidens originalbillede. Rul vandret i brede tabeller, og søg historikken efter titel eller indholdstype.",
+    "limit": "Vælg Menu til retter, Tabel til køreplaner og prislister og Dokument til andre sider. Sammenlign uklare steder med originalbilledet, eller tag et nyt foto."
+  },
+  "pricing": {
+    "standardTitle": "Standard",
+    "voiceTitle": "Tale",
+    "freeAllowance": "Hent gratis og prøv oversættelse, AI-assistent og tale. Se kvoter i appen.",
+    "freeScan": "Behandl 1 foto ad gangen",
+    "freeHelper": "Gem 1 brugerdefineret Helper-indstilling",
+    "standardWeeklyAllowance": "150 minutter taleoversættelse/videoundertekster og 10 minutter AI-assistentstemme om ugen.",
+    "standardMonthlyAllowance": "Måneds- og årsabonnementer: 600 minutter taleoversættelse/videoundertekster og 30 minutter AI-assistentstemme om måneden.",
+    "voiceWeeklyAllowance": "600 minutter taleoversættelse/videoundertekster og 45 minutter AI-assistentstemme om ugen.",
+    "voiceMonthlyAllowance": "Måneds- og årsabonnementer: 2.400 minutter taleoversættelse/videoundertekster og 135 minutter AI-assistentstemme om måneden.",
+    "unlimitedTranslations": "Betalte abonnementer har ubegrænsede oversættelser af tekst, billeder, skrevne AI-spørgsmål og skærmtekst.",
+    "scanAllowance": "Op til 10 fotos pr. batch",
+    "helperAllowance": "Nuværende betalte abonnementer kan gemme 5 Helper-indstillinger",
+    "widgetAllowance": "Vælg indhold, emne og niveau",
+    "annualQuotaNote": "Årlig betaling er faktureringsperioden; tale- og AI-assistentkvoter opdateres stadig månedligt.",
+    "quotaNote": "Almindelige tekst- og billedspørgsmål bruger oversættelser. Under AI-assistentens stemmeforbindelse deler tekst, tale og billeder assistentminutter. Videoundertekster og taleoversættelse deler taleminutter; skærmtekst bruger oversættelser.",
+    "legacyNote": "Ældre abonnementer og gratis planer kan have andre kvoter. Se saldo og næste opdatering på appens forbrugskort.",
+    "standardNote": "Hverdagsoversættelse, billedlæsning og sprogtræning med alle de almindelige værktøjer samlet.",
+    "voiceNote": "Mere tid til at tale med taleoversættelse, videoundertekster og AI-træning.",
+    "voiceLabel": "Taleoversættelse og videoundertekster",
+    "chatVoiceLabel": "AI-assistentens stemmesamtaler",
+    "aiTextLabel": "Tekst- og billedspørgsmål til AI-assistenten",
+    "freeWidget": "Grundlæggende repetition af ord og sætninger",
+    "scanLabel": "Scanning af menuer, dokumenter og tabeller",
+    "freeAccess": "Prøv gratis"
+  },
+  "extras": {
+    "homeScenarios": [
+      {
+        "id": "travel-and-dining",
+        "title": "Spørg og bestil på rejsen.",
+        "body": "Fra hotelreception til udenlandske spiseborde: spørg tydeligt og bestil sikkert.",
+        "scenarios": [
+          {
+            "id": "travel",
+            "context": "Spørg om vej · Hotelindtjekning · Transport",
+            "title": "Afklar opholdets detaljer på stedet.",
+            "body": "Spørg om værelsestype, depositum og udtjekning på dit eget sprog.",
+            "points": [
+              "Sammenlign tosprogede undertekster med det samme, og vælg mellem fire afspilningstilstande."
+            ],
+            "action": "Se taleoversættelse"
+          },
+          {
+            "id": "dining",
+            "context": "Restaurantbestilling · Kaffetilvalg · Bemærkninger til måltidet",
+            "title": "Forstå retterne, og bestil også tilvalg.",
+            "body": "Se navne, priser og tilvalg samlet, vælg antal, og vis originalbestillingen.",
+            "points": [
+              "Separate totaler pr. valuta giver overblik over bestillingen."
+            ],
+            "action": "Se menuscanning og bestilling"
+          }
+        ]
+      },
+      {
+        "id": "documents-and-tables",
+        "title": "Afsnit i dokumenter. Rækker og kolonner i tabeller.",
+        "body": "Forstå opholdsregler og køreplaner med den oprindelige struktur.",
+        "scenarios": [
+          {
+            "id": "documents",
+            "context": "Papir-opslag · Rejsefoldere · Opholdsregler",
+            "title": "Få overblik over selv mange papirer.",
+            "body": "Fotografér opslag, opholdsregler og foldere, og få tydelige afsnit.",
+            "points": [
+              "Behandl flere sider samlet, og sammenlign original og oversættelse."
+            ],
+            "action": "Se dokumentscanning"
+          },
+          {
+            "id": "tables",
+            "context": "Køreplaner · Billetpriser · Serviceprislister",
+            "title": "Sammenlign tætte tal med et blik.",
+            "body": "Afgange, priser og datoer står ordnet, så vigtige oplysninger er nemme at finde.",
+            "points": [
+              "Rækker og kolonner bevares; tryk for at tjekke originalen."
+            ],
+            "action": "Se tabeloversættelse"
+          }
+        ]
+      },
+      {
+        "id": "watch-read-and-reply",
+        "title": "Forstå videoer og beskeder uden afbrydelser.",
+        "body": "Indholdet bliver synligt, og svaret bliver i den samme samtale.",
+        "scenarios": [
+          {
+            "id": "media",
+            "context": "Fremmedsprogede videoer · Weblæsning · Spilvejledninger",
+            "title": "Følg videre med i det indhold, du holder af.",
+            "body": "Oversatte undertekster til video, skærmoversættelse til websider. Den app, du ser, forbliver synlig, mens oversættelsen følger indholdet.",
+            "points": [
+              "Flytbart billede i billede med valgfri undertekst- og teksttilstand."
+            ],
+            "action": "Se oversættelse i enhver app"
+          },
+          {
+            "id": "messages",
+            "context": "Arbejdsbeskeder · E-mailkladder · Svarenes tone",
+            "title": "Professionelle arbejdssvar, naturlig snak med venner.",
+            "body": "Oversæt og skift tone i den eksisterende samtale. Svar kunder klart og venner naturligt.",
+            "points": [
+              "Oversæt også udklipsholderen, og indsæt svaret direkte."
+            ],
+            "action": "Se iOS-oversættelsestastaturet"
+          }
+        ]
+      },
+      {
+        "id": "practice-and-remember",
+        "title": "Øv før jobsamtalen og rejsen.",
+        "body": "Bliv fortrolig med nyttige udtryk, og repetér i hverdagens pauser.",
+        "scenarios": [
+          {
+            "id": "practice",
+            "context": "Jobsamtale · Rejsesamtaler · Egne læringsmål",
+            "title": "Øv med AI før de vigtige øjeblikke.",
+            "body": "Jobsamtaler, indtjekning og bestillinger: AI-roller øver med dig. Spørg om et uklart foto, og tal videre med stemmen.",
+            "points": [
+              "Målbaseret læring med øjeblikkelig feedback fører fra udtryk til scenarier."
+            ],
+            "action": "Se AI-assistenten"
+          },
+          {
+            "id": "daily-learning",
+            "context": "Pendlerpauser · Repetition på hjemmeskærmen · Låseskærm",
+            "title": "Små pauser kan også bygge sprogkundskaber.",
+            "body": "Se de ord og sætninger, du vil lære, på hjemmeskærmen, lyt til udtale, og markér repetition. Gør ventetid til fremskridt.",
+            "points": [
+              "Vælg indhold, emne og niveau, og lær det, du faktisk får brug for."
+            ],
+            "action": "Se læringswidgetten"
+          }
+        ]
+      },
+      {
+        "id": "see-and-understand",
+        "title": "Forstå teksten og dens brug.",
+        "body": "Læs billedets tekst, og lad Helper forklare brugen.",
+        "scenarios": [
+          {
+            "id": "photos",
+            "context": "Vejskilte · Vareetiketter · Udstillingsopslag",
+            "title": "Ret kameraet mod teksten, og læs oversættelsen på originalbilledet.",
+            "body": "Vejskilte, vareetiketter og udstillingsopslag: ret kameraet mod dem, og se oversættelsen på originalbilledet.",
+            "points": [
+              "Foto, billedbibliotek og realtidsoversættelse hjælper dig med at læse det, du ser."
+            ],
+            "action": "Se billedoversættelse"
+          },
+          {
+            "id": "helper",
+            "context": "Russisk · Tysk · Grammatikrettelse og egne forklaringer",
+            "title": "Forstå både mening og grammatik.",
+            "body": "Lad Helper forklare russiske kasus og tyske endelser på dit sprog. Afklar grammatik, almindelige fejl og hvert ords brug.",
+            "points": [
+              "Gem fagområde og forklaringsønsker til din egen sproghjælper."
+            ],
+            "action": "Se Helper-forklaringer"
+          }
+        ]
+      }
+    ],
+    "stories": {
+      "sectionLabel": "Oversættelse i hverdagen",
+      "menu": {
+        "label": "Menuoversættelse",
+        "title": "Fra en menu\ntil en bestilling.",
+        "body": "Forstå retterne, og vælg tilvalg. Vis originalbestillingen til personalet, og bestil det, du har lyst til.",
+        "action": "Se, hvordan du bestiller"
+      },
+      "reply": {
+        "label": "Tekstoversættelse og tone",
+        "title": "Den rette mening.\nDen rette tone.",
+        "body": "Professionel, når det gælder, og venlig, når det passer. Syv toner får hver sætning til at lyde som dig.",
+        "action": "Udforsk tekstoversættelse"
+      },
+      "practice": {
+        "label": "AI-assistent",
+        "title": "Øv dine ord,\ntil de falder naturligt.",
+        "body": "Bestillinger, jobsamtaler og rejser: en AI-rolle er klar til at øve. Fra en enkelt sætning til en samtale, der fortsætter.",
+        "action": "Mød AI-assistenten"
+      },
+      "voice": {
+        "label": "Naturlig AI-stemme",
+        "title": "Forstå ordene.\nSig dem naturligt.",
+        "body": "En ny generation af AI-stemmer giver naturlig intonation og rytme. Lyt til en sætning, gentag den, og bliv fortrolig med udtale og accent. Øv så samtalen med AI.",
+        "action": "Udforsk taleoversættelse"
+      }
+    },
+    "manifesto": {
+      "seoTitle": "Vores manifest",
+      "seoDescription": "Et andet sprog bør ikke gøre livet mindre. AnyTranslator samler redskaber til forståelse, udtryk og øvelse for livet og studier i udlandet samt læring.",
+      "eyebrow": "Vores manifest",
+      "title": "Et andet sprog.\nEt lige så stort liv.",
+      "lead": "Langt hjemmefra fortjener du modet til at leve frit.",
+      "opening": "Du rejser til et andet land for at se mere af verden og finde flere muligheder.\nSproget bør ikke få dig til kun at leve forsigtigt, når du er fremme.",
+      "chapters": [
+        {
+          "title": "Langt hjemmefra bør ikke betyde langt fra dig selv.",
+          "paragraphs": [
+            "Du går rundt i supermarkedet og køber stadig det forkerte. Ved skranken hører du en lang forklaring, men forstår kun få ord og tør ikke spørge igen. I klassen har du et spørgsmål, men lader det alligevel blive usagt.",
+            "En formular, en besked fra skolen eller et lejedokument kan gøre en enkel dag tung. Du vil gøre tingene ordentligt, men skal finde mod bare for at begynde at tale.",
+            "Du mangler hverken tanker eller indsats. Nogle gange lader sproget bare dit rigtige jeg stå uden for samtalen."
+          ]
+        },
+        {
+          "title": "Livet udfordrer på mere end én måde.",
+          "paragraphs": [
+            "Det kan være en ulæselig menu, en talebesked fra udlejeren, en forklaring på et kontor eller et dokument, der kræver grundig læsning.",
+            "Derfor må hjælpen også have flere former. Et måltid, et svar eller en opgave bør ikke kræve, at du hopper mellem en række værktøjer.",
+            "AnyTranslator vil lægge de funktioner, du faktisk behøver, inden for rækkevidde. Hver færre blokering giver lidt mere sikkerhed i hverdagen."
+          ]
+        },
+        {
+          "title": "Fra at forstå en sætning til næste skridt.",
+          "paragraphs": [
+            "Fotografér etiketten, og vid, hvad du køber. Forstå retter og tilvalg, og bestil det ønskede. Ordne beskeder og dokumenter sidevis, så afsnit, rækker, kolonner og vigtige detaljer er til at finde.",
+            "Tosprogede undertekster og naturlig AI-stemme hjælper i samtalen ansigt til ansigt. Vælg en formel, venlig eller kort tone i beskeder, og få hele din mening frem.",
+            "Er du ikke klar til at tale, så øv først med AI-assistenten. Fra rejser og undervisning til jobsamtaler kan ordene langsomt blive velkendte. Forståelse, udtryk og læring hænger sammen i det samme liv."
+          ]
+        },
+        {
+          "title": "Alle sprog fortjener at blive forstået ordentligt.",
+          "paragraphs": [
+            "Sprog er mere end at bytte ord. Det svære kan være russiske og tyske kasus og endelser eller et udtryk, du først lærer at bruge i det lokale hverdagsliv.",
+            "Vi forbedrer fortsat kontekst, tone og forklaringer og tager også mindre sprogs behov alvorligt. Færre brugere betyder ikke mindre omtanke. Du skal både få en oversættelse og forstå, hvorfor man siger sådan."
+          ]
+        }
+      ],
+      "everydayEyebrow": "Fra hverdagens behov til brugbare funktioner",
+      "everydayTitle": "Fra hver tøven\ntil et muligt næste skridt.",
+      "scenarios": [
+        {
+          "title": "Forstå hverdagen",
+          "body": "Køb de rigtige varer, forstå menuen, og spørg før du beslutter dig.",
+          "linkLabels": [
+            "Billedoversættelse",
+            "Menuer og bestilling"
+          ]
+        },
+        {
+          "title": "Få de vigtige ting gjort",
+          "body": "Læs opslag, dokumenter og tabeller med bevaret struktur.",
+          "linkLabels": [
+            "Dokumentscanning",
+            "Tabeloversættelse"
+          ]
+        },
+        {
+          "title": "Sæt ord på dine tanker",
+          "body": "Forstå den anden, og øv dig før den rigtige samtale.",
+          "linkLabels": [
+            "Taleoversættelse",
+            "AI-assistent"
+          ]
+        }
+      ],
+      "closeEyebrow": "AnyTranslator",
+      "closeTitle": "Gør det fjerne\ntil din egen hverdag.",
+      "closeBody": "Spørg om det, du vil vide. Sig det, du vil sige.\nLad det fjerne være mere end et sted at nå frem til: et sted at leve frit.",
+      "aboutAction": "Læs vores manifest"
+    },
+    "reviews": {
+      "eyebrow": "Ægte anmeldelser fra App Store",
+      "title": "De har allerede\nlagt sprogbarrieren bag sig.",
+      "body": "Møder, sproglæring og hverdagens kommunikation. Hør brugernes oplevelser.",
+      "ratingAriaTemplate": "{rating} ud af 5 stjerner",
+      "sourceAriaTemplate": "Se anmeldelsen fra {name} i App Store",
+      "storefrontLabel": "Taiwan",
+      "translatedLabel": "Oversat fra traditionelt kinesisk",
+      "quotesById": {
+        "14792569759": "Det er svært at finde en oversættelsesapp, der er så præcis og har så mange funktioner.",
+        "14689800454": "Ret nyttig. Jeg abonnerede med det samme.",
+        "14634594658": "Sprogoversættelsen er meget praktisk til møder.",
+        "14634322888": "Det er så nemt at lære sprog med denne. Én app erstatter 3 eller 4 apps, og oversættelserne er præcise."
+      }
+    },
+    "askAi": {
+      "title": "Er AnyTranslator noget for dig?",
+      "body": "Giv AI dine behov, og sammenlign fra en anden vinkel.",
+      "actionTemplate": "Spørg {service}",
+      "prompt": "Vurder ud fra de offentlige oplysninger på {url}, om AnyTranslator passer til mine behov. Jeg vil vide mere om tekst- og taleoversættelse, menu- og dokumentscanning, AI-assistenten, sproglæring og priser. Spørg først til mine brugssituationer, og sammenlign derefter, hvor appen passer og ikke passer. Angiv tydeligt funktioner og priser, du ikke kan bekræfte, og tilføj kilder."
+    },
+    "theme": {
+      "darkMode": "Mørk tilstand",
+      "lightAction": "Skift til lys tilstand",
+      "darkAction": "Skift til mørk tilstand"
+    },
+    "macArt": {
+      "ariaLabel": "AnyTranslator-illustration til macOS-download med det rigtige appikon og teksten Mac App Store"
+    },
+    "pricingUnit": {
+      "perBatchTemplate": "{count} fotos/batch"
+    },
+    "imageAlt": {
+      "voice.primary": "Taleoversættelse: spørgsmål om museets lukketid og sidste adgang med engelske og danske undertekster.",
+      "text.primary": "Tekstoversættelse: engelsk besked om ændret tidspunkt oversat til russisk med grammatikforklaring på dansk.",
+      "helper.primary": "Helper-grammatik: betingelsesform, tid og kasus i en russisk arbejdsbesked forklaret på dansk.",
+      "photos.primary": "Billedoversættelse: dansk oversættelse oven på en ægte drikkemenu med engelsk original.",
+      "table.primary": "Tabeloversættelse: offentlig Zion-shuttleplan med tre datoperioder samt første og sidste afgang.",
+      "table.cell-source": "Tabellens originaltekst: første shuttleafgang åbnet med den tilsvarende engelske rækkeoverskrift.",
+      "document.primary": "Dokumentoversættelse: offentlig transportfolder fra parken ordnet i danske afsnit om cykling og kørsel.",
+      "document.original": "Originalbillede: den offentlige trespaltede tekst Getting Around, side 1/1 i samme dokument.",
+      "menu.primary": "Menuoversættelse: kaffe og priser med 2 valgte latte og en total på 7.80.",
+      "menu.options": "Menubestilling: latte/flat white med havremælk, antal 2 og total 7.80.",
+      "menu.staff": "Vis personalet: latte/flat white og havremælk på originalsproget, 2 bestillinger, i alt 7.80.",
+      "chat.primary": "AI-assistentens restaurantscenarie: tjenerens åbning på begynderengelsk, engelske nøglesætninger og danske opgaveforklaringer.",
+      "chat.chat-entry": "AI-assistentens samtaletilstande: intelligent samtale, måltræning og scenarietræning med valg af sprog og niveau før start.",
+      "keyboard.primary": "iOS-taster og AnyTranslators oversættelsesværktøjslinje med den igangværende arbejdsbesked på dansk bevaret.",
+      "widget.primary": "Forhåndsvisning af læringswidget: kinesisk kaffeeksempel og Pinyin, dansk oversættelse og brugstip samt repetitionsknapper.",
+      "screen-translation.primary": "Oversættelse af skærmtekst: et offentligt NPS-afsnit om kørsel i Preview med dansk resultat i billede i billede.",
+      "screen-translation.setup": "Indstillinger for oversættelse i andre apps: videoundertekster eller skærmtekst, dansk som mål og visning af originaltekst."
+    }
+  }
+}

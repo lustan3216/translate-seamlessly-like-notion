@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/features/document?lang=zh-tw",
+    "h1": "文件掃描，保留段落與表格。",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "path": "/features/menu?lang=zh-tw",
+    "h1": "菜單掃描：從讀懂菜色，到給店員看點單。",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "path": "/blog/scan-and-read-documents?lang=zh-tw",
+    "h1": "把文件各頁，整理成清楚的段落與表格",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "path": "/features/document?lang=zh-tw",
+    "h1": "文件掃描，保留段落與表格。",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "path": "/features/menu?lang=zh-tw",
+    "h1": "菜單掃描：從讀懂菜色，到給店員看點單。",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "path": "/blog/scan-and-read-documents?lang=zh-tw",
+    "h1": "把文件各頁，整理成清楚的段落與表格",
+    "scrollWidth": 320,
+    "width": 320
+  }
+]

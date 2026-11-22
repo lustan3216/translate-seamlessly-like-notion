@@ -1,0 +1,652 @@
+{
+  "marketing": {
+    "hero.title": "Die Welt ist groß.",
+    "hero.accent": "Lass Sprache nicht im Weg stehen.",
+    "nav.manifesto": "Unser Manifest",
+    "hero.body": "Speisekarte verstehen, bestellen. Nachricht übersetzen, antworten. Text, Fotos und Video-Untertitel, natürliche KI-Stimmen und Sprechübungen machen Fremdsprachen im Alltag nutzbar.",
+    "feature.table": "Tabellen übersetzen",
+    "home.featuresTitle": "11 Werkzeuge zum Übersetzen und Lernen. Immer dabei.",
+    "home.featuresBody": "Speisekarten, Dokumente, Nachrichten und Sprechübungen: alles, was du brauchst, in einer App.",
+    "home.blogTitle": "Praktische Anleitungen für bessere Übersetzungen.",
+    "download.macNote": "Kompatible Mac-Modelle und Systemanforderungen findest du im App Store. Übersetzungstastatur, Lern-Widget und Übersetzen in jeder App sind für iOS/iPadOS gedacht.",
+    "features.title": "Übersetzen, sprechen und lernen. In einer App.",
+    "features.body": "Speisekarten, Dokumente und Tabellen verstehen, Nachrichten beantworten, Videos folgen und mit dem KI-Assistenten sprechen üben. 11 Werkzeuge verbinden Lesen, Schreiben, Hören und Sprechen.",
+    "pricing.allowance": "Kostenlose Kontingente findest du in der App",
+    "pricing.more": "Wähle Standard oder Sprache passend zu deiner Nutzung",
+    "pricing.manage": "Käufe stellst du in der App wieder her; Verlängerung und Kündigung verwaltest du bei Apple. Die Nutzungskarte zeigt Restkontingent und Erneuerungsdatum.",
+    "pricing.voiceNote": "Sprachübersetzung und Video-Untertitel teilen sich Sprachminuten. In einer Sprachsitzung mit dem KI-Assistenten verbrauchen Text, Sprache und Fotos dessen Minuten. Außerhalb davon zählen Texte und Fotos im KI-Assistenten sowie Bildschirmtext als Übersetzungen. Guthaben und Erneuerungsdatum stehen in der App.",
+    "article.voice": "Welche Sprachfunktion passt zu mir?",
+    "affiliate.processTitle": "So läuft die Zusammenarbeit",
+    "faq.FreeQ": "Kann ich kostenlos anfangen?",
+    "faq.FreeA": "Teste Übersetzung, KI-Assistent, Sprache und grundlegende Widget-Inhalte kostenlos; Kontingente stehen in der App. PRO bietet mehrseitige Scans, mehr Helper-Einstellungen und eigene Lerninhalte. Der Sprachtarif enthält zusätzliche Minuten.",
+    "faq.AgentQ": "Was unterscheidet den KI-Sprachassistenten von der Sprachübersetzung?",
+    "faq.AgentA": "Für Gespräche vor Ort liefert die Sprachübersetzung zweisprachige Untertitel und natürliche KI-Stimmen. Zum Fragen oder Sprechenüben nutzt du den KI-Sprachassistenten: Beispiel anhören, selbst üben. Beide nutzen getrennte Minutenkontingente.",
+    "voice.eyebrow": "Natürliche KI-Stimmen",
+    "voice.title": "Verstehen. Und natürlich sprechen.",
+    "voice.body": "KI-Stimmen der neuen Generation bringen natürliche Betonung und Rhythmus mit. Hör einen Satz, sprich ihn nach und werde mit Aussprache und Akzent vertraut. Dann übst du im KI-Gespräch, selbst zu sprechen.",
+    "voice.action": "Sprachübersetzung entdecken",
+    "faq.ScanQ": "Speisekarte, Dokument oder Tabelle: Was wähle ich?",
+    "faq.ScanA": "Unter „Speisekarte“ wählst du Gerichte und Extras und zeigst die Bestellung im Original. „Dokument“ ordnet Absätze nach Seiten, „Tabelle“ erhält Zeilen und Spalten. Kostenlos 1 Foto pro Vorgang, mit PRO bis zu 10 pro Stapel. Ergebnisse findest du im Scanverlauf.",
+    "faq.AccuracyQ": "Wie prüfe ich Fälle und Endungen im Russischen und Deutschen?",
+    "faq.AccuracyA": "Helper erklärt mit „Grammatik“, „Häufige Fehler“ und „Wort-für-Wort-Analyse“ russische und deutsche Fälle und Endungen. Soll der Originalsatz korrigiert werden, bitte den KI-Assistenten um Korrektur und Erklärung.",
+    "article.work": "In anderen Sprachen schreiben: Deklinationen und der richtige Ton",
+    "about.body": "Übersetzung, Erklärung und Übung greifen ineinander, damit du dich aufs Gespräch konzentrieren kannst.",
+    "about.story": "Nach dem Verstehen antworten, nachfragen, bestellen oder sich einen Satz merken. AnyTranslator macht den nächsten Schritt leichter.",
+    "privacy.body": "Übersetzungen und KI-Funktionen werden online verarbeitet. Informationen zu Daten und Berechtigungen findest du in der Datenschutzerklärung.",
+    "affiliate.status": "Partnerschaften werden derzeit individuell vereinbart. Umfang und Provisionen klären wir gesondert.",
+    "download.iosNote": "Text, Sprache, Fotos, Speisekarten, Dokumente und Tabellen übersetzen. Dazu KI-Assistent, Bildschirmübersetzung, Tastatur und Lern-Widget.",
+    "download.ios": "Kostenlos für iOS laden",
+    "feature.chat": "KI-Assistent",
+    "home.statement": "Vom Verstehen zum Selbersprechen.",
+    "home.statementBody": "Fotos erschließen, mit Dolmetschen ins Gespräch finden und natürliche KI-Beispiele hören: So bereitest du dich auf Reisen oder Vorstellungsgespräche vor. Feedback und Wiederholung bringen nützliche Formulierungen in deinen Alltag.",
+    "case.study.title": "Übe deine Gedanken, bis du sie aussprechen kannst.",
+    "case.study.body": "Wähle ein Übungsziel für Reise, Beruf oder Alltag oder erstelle eigene Szenarien und Ziele. Sprich mit der KI, nutze Feedback und Wiederholungen und setze deine Vorbereitung ein.",
+    "article.chat": "Dein Sprachcoach für unterwegs: Fotos, Dolmetschen und Sprechübungen",
+    "article.learning": "Bring geübte Sätze in deinen Alltag.",
+    "feature.screen-translation": "Übersetzen in jeder App",
+    "article.screen": "Untertitel und Webseiten appübergreifend verstehen",
+    "case.media.title": "Videos schauen, Webseiten lesen. Die Übersetzung bleibt dabei.",
+    "case.media.body": "Das Video läuft, du liest weiter. Vergleiche Untertitel oder sichtbaren Text im Bild-in-Bild-Fenster. Schwierige Sätze kannst du anschließend mit dem KI-Assistenten vertiefen."
+  },
+  "features": {
+    "text": {
+      "title": "Textübersetzung: klarer Sinn, passender Ton.",
+      "summary": "Für Nachrichten und E-Mails stehen sieben Tonarten bereit. Helper erklärt russische und deutsche Deklinationen; der KI-Assistent prüft auf Wunsch den Originalsatz.",
+      "heading": "Für jeden Empfänger der passende Ton.",
+      "body": "Berufliche Anfragen höflich, unter Freunden natürlich, lange Nachrichten kürzer. Hör dir die KI-Aussprache an und speichere gute Sätze. Russische und deutsche Fälle und Endungen erklärt Helper; der KI-Assistent kann das Original korrigieren.",
+      "steps": [
+        "Sieben Tonarten, vom formellen Brief bis zum Alltagschat.",
+        "Helper erklärt russische und deutsche Deklinationen; der KI-Assistent korrigiert das Original auf Wunsch.",
+        "Natürliche KI-Aussprache hören, gute Sätze speichern oder als Entwurf zum KI-Assistenten mitnehmen."
+      ],
+      "sections": [
+        {
+          "title": "Russische und deutsche Fälle und Endungen verstehen",
+          "body": "Grammatik, häufige Fehler und Wort-für-Wort-Analyse erklären russische Fälle sowie deutsche Artikel und Endungen in deiner Sprache. Verstehe die Satzbeziehungen und entscheide dann, wie du dich ausdrücken möchtest."
+        },
+        {
+          "title": "Sieben Tonarten für unterschiedliche Empfänger",
+          "body": "Automatisch, Höflich, Humorvoll, Briefstil, Freundschaftlich, Knapp und Flirtend: für beruflichen Austausch ebenso wie internationale Kontakte.",
+          "items": [
+            "Automatisch: richtet den Ton nach Original und Kontext aus.",
+            "Höflich: für Bitten, Fragen und berufliche Nachrichten.",
+            "Humorvoll: lockert passende Gespräche auf.",
+            "Briefstil: für E-Mails und Briefe.",
+            "Freundschaftlich: natürlich und ungezwungen wie unter Bekannten.",
+            "Knapp: kürzt Formulierungen; wichtige Angaben anschließend prüfen.",
+            "Flirtend: verspielt und vertraut für internationale Bekanntschaften."
+          ]
+        },
+        {
+          "title": "Russisch und Deutsch korrigieren: erst verstehen, dann formulieren",
+          "body": "Im automatischen Ton bleibt ein vollständig in der Zielsprache verfasster Abschnitt unverändert. Für Fälle, Endungen und Grammatik nutze Helper oder bitte den KI-Assistenten um Korrektur des Originals."
+        }
+      ]
+    },
+    "photos": {
+      "title": "Fotoübersetzung: die Übersetzung direkt auf dem Bild.",
+      "summary": "Schilder, Etiketten und Aushänge: Kamera darauf richten und die Übersetzung auf dem Bild lesen.",
+      "heading": "Fremde Wörter im Blick. Die Übersetzung im Bild.",
+      "body": "Richte die Kamera auf fremdsprachige Beschriftungen und lies die Übersetzung direkt im Bild. Fotografiere oder wähle ein Foto; tippe für Details auf den Text. Die Umgebung als Verständnishilfe bleibt erhalten.",
+      "steps": [
+        "Live eingeblendete Übersetzung: Kamera aufs Schild richten und lesen.",
+        "Foto aufnehmen oder aus dem Album wählen, um den Text zu übersetzen.",
+        "Übersetzungsdetails öffnen und Hinweise im Originalbild behalten."
+      ]
+    },
+    "voice": {
+      "title": "Sprachübersetzung: beide Seiten verstehen.",
+      "summary": "Zweisprachige Untertitel folgen dem Gespräch, natürliche KI-Stimmen vermitteln deine Worte. Vier Modi helfen beim Verstehen und Verstandenwerden.",
+      "heading": "Im Gespräch vor Ort deine Worte vermitteln.",
+      "body": "Nach dem Weg fragen, einchecken, miteinander sprechen: Zweisprachige Untertitel und natürliche KI-Stimmen übertragen Sinn und Ton. Vier Audiomodi passen zur Situation. Danach Zusammenfassung ansehen, Übersetzung erneut hören und nützliche Formulierungen lernen.",
+      "steps": [
+        "Beidseitiges Gespräch liest beide Seiten vor; Für mich sprechen spielt deine Übersetzung ab.",
+        "Privat zuhören nutzt Hörer oder Kopfhörer; Nur Untertitel passt in ruhige Umgebungen.",
+        "Gespräch ansehen, KI-Übersetzung erneut hören und Kernaussagen kopieren oder teilen."
+      ],
+      "sections": [
+        {
+          "title": "Natürliche KI-Stimmen mit Ton und Rhythmus",
+          "body": "Sprachmodelle der neuen Generation erzeugen Übersetzungen mit natürlicher Betonung und feinen, zum Inhalt passenden Gefühlsnuancen. Nutze sie im Gespräch und sprich sie später nach, um Aussprache und Akzente kennenzulernen."
+        }
+      ]
+    },
+    "menu": {
+      "title": "Speisekarten scannen: verstehen, auswählen, Bestellung zeigen.",
+      "summary": "Speisekarte fotografieren, Gerichte, Preise und Extras klar auswählen und die Bestellung im Original zeigen.",
+      "heading": "Karte fotografieren, auswählen, dem Personal zeigen.",
+      "body": "Aus der fremdsprachigen Karte werden auswählbare Gerichte mit Namen, Beschreibungen, Preisen und verfügbaren Extras. Wähle Mengen und Hinweise und zeige die Bestellung im Original. Bekannte Preise werden je Währung addiert, damit du den Überblick behältst.",
+      "steps": [
+        "Namen, Beschreibungen und Preise werden zu übersichtlichen Gerichten.",
+        "Mengen, Größen, verfügbare Extras und Hinweise nach Wunsch wählen.",
+        "Originalbestellung zeigen; bekannte Preise werden je Währung addiert."
+      ]
+    },
+    "document": {
+      "title": "Dokumente scannen: Seiten ordnen, Struktur erhalten.",
+      "summary": "Mehrseitige Unterlagen fotografieren und als Absätze, Listen und Tabellen lesen. Originalvergleich und erneutes Öffnen im Verlauf sind dabei.",
+      "heading": "Lange Dokumente. Klar gegliedert.",
+      "body": "Aushänge, Reisebroschüren und mehrseitige Unterlagen werden automatisch zu klaren Überschriften, Absätzen und Listen. Vergleiche jederzeit Originaltext und Bild und öffne das Ergebnis später im Verlauf, ohne neu zu beginnen.",
+      "steps": [
+        "Mehrseitige Fotos werden der Reihe nach mit Überschriften, Absätzen und Listen aufbereitet.",
+        "Originaltext und Bild per Tipp vergleichen, auch bei langen Dokumenten.",
+        "Scanverlauf durchsuchen und Dokumente jederzeit wiederfinden."
+      ]
+    },
+    "keyboard": {
+      "title": "Übersetzungstastatur: in deiner App antworten.",
+      "summary": "Kein Appwechsel zum Antworten: tippe oder nutze die iOS-Diktierfunktion, übersetze im Eingabefeld, ändere den Ton und sende selbst.",
+      "heading": "Schreibe deine Antwort direkt in deiner App.",
+      "body": "Chats und berufliche Nachrichten direkt im Eingabefeld übersetzen und im Ton anpassen. Tippe oder diktiere mit iOS für natürliche, klare Antworten. Auch Inhalte der Zwischenablage lassen sich übersetzen und einfügen.",
+      "steps": [
+        "Im Eingabefeld übersetzen, Entwurf ersetzen und weiterschreiben.",
+        "Tippen oder mit iOS diktieren, dann Sprache und Ton wählen.",
+        "Zwischenablage übersetzen, kopieren oder an der Cursorposition einfügen."
+      ]
+    },
+    "helper": {
+      "title": "Helper erklärt Grammatik und Verwendung.",
+      "summary": "Russische Fälle und deutsche Endungen in deiner Sprache lernen. Eigene Erklärvorgaben einmal speichern und beim nächsten Satz wiederverwenden.",
+      "heading": "Wörter verstehen. Und richtig verwenden.",
+      "body": "Fälle, Endungen und Satzmuster aus Original und Übersetzung werden in deiner Sprache erklärt. Wähle Grammatik, häufige Fehler oder Wort-für-Wort-Analyse. Speichere Fachgebiet, Lernziel und Erklärungstiefe als eigene Anweisungen für weitere Sätze.",
+      "steps": [
+        "Grammatik, häufige Fehler und Wort-für-Wort-Analyse zeigen den Satzaufbau.",
+        "Synonyme, Beispielsätze, versteckte Bedeutungen und Antwortvorschläge ergänzen das Lernen.",
+        "Fachgebiet, Ziele und Tiefe festlegen und Erkläranweisungen wiederverwenden."
+      ],
+      "sections": [
+        {
+          "title": "Warum sich russische und deutsche Endungen ändern",
+          "body": "Beispiele im Kontext: Vom russischen Instrumental bis zum deutschen Dativ zeigen Fälle, Artikel und Substantivendungen ihr Zusammenspiel.",
+          "items": [
+            "Russisch: Я говорю с мой друг. → Я говорю с моим другом. с im Sinne von „mit“ verlangt den Instrumental; die Endungen von мой und друг ändern sich gemeinsam.",
+            "Deutsch: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit verlangt den Dativ; das schwach deklinierte Kunde wird zu Kunden."
+          ]
+        },
+        {
+          "title": "Erkläranweisungen speichern und wiederverwenden",
+          "body": "Speichere etwa „Erkläre russische Fälle in meiner Sprache“ oder „Erkläre deutsche Endungen“. Neue Sätze werden auf die vertraute Weise erklärt, damit du dich auf dein Lernziel konzentrieren kannst."
+        }
+      ]
+    },
+    "widget": {
+      "title": "Lern-Widget: nebenbei wiederholen.",
+      "summary": "Dein Home-Bildschirm wird zur Lernkarte: Wörter und Sätze lesen, KI-Aussprache hören, als Wiederholen oder Gelernt markieren. Inhalte, Themen und Schwierigkeit wählst du selbst.",
+      "heading": "Mach kleine Pausen zu Lernmomenten.",
+      "body": "Auf dem Home-Bildschirm KI-Aussprache hören, nachsprechen und Gelerntes markieren. Vom Sperrbildschirm führt ein Tipp in die App; bei Unterstützung geht auch StandBy. Wörter, Wortverbindungen, Redewendungen und Sätze passen zu deinen Themen, Niveaus und Anweisungen.",
+      "steps": [
+        "Wörter und Sätze lesen, KI-Aussprache hören und direkt vom Home-Bildschirm nachsprechen.",
+        "Mit Wiederholen oder Gelernt die nächste Lernrunde vorbereiten.",
+        "Inhaltstyp, Thema und Schwierigkeit wählen und eigene Anweisungen ergänzen."
+      ]
+    },
+    "table": {
+      "title": "Tabellen übersetzen: jede Zahl im Zusammenhang.",
+      "summary": "Fahrpläne und Preislisten bleiben in Zeilen und Spalten. Breite Tabellen lassen sich seitlich lesen, damit Zeiten, Preise und Einheiten zusammenbleiben.",
+      "heading": "Zeile für Zeile. Jede Zahl im Blick.",
+      "body": "Viele Zahlen und Spalten bleiben als Tabelle lesbar. Fahrpläne und Preislisten werden strukturiert aufbereitet; breite Tabellen lassen sich horizontal verschieben. Originaltext antippen oder zum Bild zurückkehren, um Zeiten, Beträge und Einheiten zu prüfen.",
+      "steps": [
+        "Zeilen und Spalten erhalten, damit Zeiten und Preise vergleichbar bleiben.",
+        "Breite Tabellen seitlich lesen und alle Felder und Einheiten erfassen.",
+        "Text und Originalbild vergleichen und den Scan jederzeit im Verlauf öffnen."
+      ]
+    },
+    "chat": {
+      "title": "KI-Assistent",
+      "summary": "Fotos verstehen, live dolmetschen und mit natürlicher KI-Stimme sprechen üben. Dein Sprachcoach begleitet Reisen, Beruf und Alltag.",
+      "heading": "Dein Sprachcoach für unterwegs. Damit du selbst sprichst.",
+      "body": "Vor der Reise Bestellen üben, vor der Arbeit Formulierungen vorbereiten oder direkt zu einem Foto fragen. Natürliche KI-Stimmen führen Gespräche und zeigen Formulierungen. Live-Dolmetschen und Szenarien helfen vom Verstehen zum mutigen Sprechen.",
+      "steps": [
+        "Wichtiges in Schildern, Nachrichten und Fotos erkennen.",
+        "Szenarien und Ziele üben, um auf Reisen, im Beruf und im Alltag zu sprechen.",
+        "Natürliche Beispiele hören, nachsprechen, wiederholen und nützliche Ausdrücke speichern."
+      ],
+      "sections": [
+        {
+          "title": "Fotos und Dolmetschen: frag, was gerade wichtig ist",
+          "body": "Füge Fotos von Schildern, Aushängen oder Nachrichten hinzu. Die KI fasst Wichtiges, Hinweise und nächste Schritte zusammen. Überwinde Sprachbarrieren im Sprachgespräch oder mit Live-Dolmetschen und stelle deine Fragen klar.",
+          "items": [
+            "Sprachgespräch: Frage laut und unterhalte dich weiter.",
+            "Sprich mit mir Englisch: übe in einem natürlichen Gespräch.",
+            "Dolmetsche live für mich: verbinde unterschiedliche Sprachen.",
+            "Foto für die KI: Wichtiges und nächste Schritte erkennen."
+          ]
+        },
+        {
+          "title": "Übe die Sprache, die dein Leben braucht",
+          "body": "Vom Restaurant und Flughafen bis zu Bewerbung und Beruf: Wähle Szenarien zum Sprechen und Ziele zum schrittweisen Lernen oder erstelle eigene. Antworte vor allem laut und bereite dich auf den nächsten echten Sprechanlass vor.",
+          "items": [
+            "Szenariotraining: eine Rolle übernehmen und Gesprächsaufgaben lösen.",
+            "Zieltraining: erst Formulierungen üben, dann im Szenario anwenden.",
+            "Eigenes Lernen: Szenario oder Ziel für einen bestimmten Anlass erstellen."
+          ]
+        },
+        {
+          "title": "Natürlich hören. Leichter sprechen.",
+          "body": "Bitte die KI um ein langsameres Beispiel und übe Aussprache, Akzent und Rhythmus. Verwende die Sätze danach im natürlichen Gespräch, damit jede Übung näher an echten Austausch rückt."
+        },
+        {
+          "title": "Feedback verstehen. Beim nächsten Mal flüssiger sprechen.",
+          "body": "Vergleiche Original und natürliche Formulierung, höre Beispiele und verstehe die Gründe. Die KI kann auch kurze russische, deutsche und andere Sätze korrigieren. Speichere nützliche Ausdrücke, übe erneut und lies Gespräche im Verlauf nach, um dich aufs nächste Sprechen vorzubereiten."
+        }
+      ]
+    },
+    "screen-translation": {
+      "title": "Bildschirmübersetzung für Untertitel und Text.",
+      "summary": "Bleib im Video oder auf der Webseite und lies Untertitel und Bildschirmtext per Bild-in-Bild. Vergleiche jederzeit Original und Übersetzung und finde nützliche Sätze im Verlauf wieder.",
+      "heading": "Bleib in deiner App. Verstehe den Inhalt.",
+      "body": "Fremdsprachiger Videoton und Webseitentext lassen sich im passenden Modus lesen. Bild-in-Bild zeigt Originalinhalt und Übersetzung zusammen. So unterbrechen Appwechsel Videos, Artikel und Spielnachrichten seltener.",
+      "steps": [
+        "Video-Untertitel: gesprochene Inhalte werden zu verständlichen Untertiteln.",
+        "Bildschirmtext: Webseiten, Chats und Spiele dort lesen, wo du gerade bist.",
+        "Bild-in-Bild und Verlauf: beim Ansehen vergleichen und später erneut lesen."
+      ],
+      "sections": [
+        {
+          "title": "Video-Untertitel: am Inhalt dranbleiben",
+          "body": "Audio aus anderen Apps wird zu übersetzten Untertiteln, auf Wunsch neben dem Original. Bei Videos, Livestreams und beim Sprachenlernen erfasst du die Kernaussagen in deiner Sprache, während der Inhalt weiterläuft."
+        },
+        {
+          "title": "Bildschirmtext: einfach weiterlesen",
+          "body": "Sichtbarer Text in Webseiten, Chats, Spielen und Dokumenten lässt sich übersetzt im Bild-in-Bild-Fenster lesen. Verschiebe es zum gewünschten Absatz oder scrolle die Originalseite weiter, um fremdsprachige Informationen leichter zu erfassen."
+        },
+        {
+          "title": "Bild-in-Bild begleitet dich. Nützliche Sätze bleiben.",
+          "body": "Die Übersetzung folgt dem Originalinhalt zum direkten Vergleich. Fertige Originaltexte und Übersetzungen bleiben im Verlauf. Öffne sie später oder übertrage interessante Formulierungen manuell an den KI-Assistenten, um Bedeutung und Verwendung zu üben.",
+          "items": [
+            "Benötigt iOS/iPadOS 16 oder neuer, Bild-in-Bild und Internet; geschützte Inhalte lassen sich möglicherweise nicht übersetzen."
+          ]
+        }
+      ]
+    }
+  },
+  "workflows": {
+    "travel": [
+      "Nutze beim Einchecken Sprachübersetzung und Untertitel, um Zimmerkategorie, Kaution und Abreisezeit zu bestätigen.",
+      "Übe Check-in und Rückfragen vorab mit dem KI-Assistenten, um vorbereitet zu sprechen.",
+      "Fotografiere Unterkunftshinweise als „Dokument“, damit Zeiten und Gebühren im Scanverlauf jederzeit auffindbar sind."
+    ],
+    "work": [
+      "Passe den Ton beruflicher Nachrichten an: höfliche Bitte oder knappe Antwort.",
+      "Lass Helper russische und deutsche Fälle und Endungen erklären und den KI-Assistenten danach das Original korrigieren.",
+      "Vergleiche Antworten mit Hintergrundinformationen und sende die fertige Antwort in deiner ursprünglichen App."
+    ],
+    "dining": [
+      "Mache aus Menüfotos auswählbare Gerichte, wähle Menge und Extras und zeige die Originalbestellung.",
+      "Frage das Personal per Sprachübersetzung nach Portionen, Zutaten und Zubereitung.",
+      "Übe Rückfragen mit dem KI-Assistenten und bestätige Allergieanforderungen direkt beim Personal."
+    ],
+    "messages": [
+      "Wechsle Sprache und Ton im ursprünglichen Eingabefeld, ohne zwischen Apps zu springen.",
+      "Vergleiche bei langen Nachrichten Original und Übersetzung, höre die Aussprache und speichere gute Sätze.",
+      "Gib dem KI-Assistenten den Zusammenhang, um eine passende Antwort zu finden."
+    ],
+    "reading": [
+      "Wähle „Dokument“ für Aushänge, Broschüren und mehrseitige Unterlagen und lies Absätze, Listen und Tabellen seitenweise.",
+      "Wähle „Tabelle“ für Fahrpläne und Preislisten, lies Spalten seitlich und vergleiche Original und Einheiten.",
+      "Übertrage schwierige Sätze in die Textübersetzung und lass Helper ihre Verwendung erklären."
+    ],
+    "study": [
+      "Übe mit dem KI-Assistenten Szenarien und Ziele für das nächste echte Gespräch.",
+      "Helper erklärt Grammatik, Wortschatz und Beispiele, damit du Schwierigkeiten verstehst.",
+      "Höre KI-Aussprache im Lern-Widget und sprich häufige Sätze nach, auch in kleinen Pausen."
+    ],
+    "media": [
+      "Folge Videos mit Untertiteln und Webseiten mit Bildschirmtext, während Original und Übersetzung sichtbar bleiben.",
+      "Kopiere Sätze in den KI-Assistenten, frage nach der Bedeutung, vergleiche Formulierungen und übe sie.",
+      "Wähle in der Textübersetzung den passenden Ton und nutze verstandene Inhalte für deine Antwort."
+    ]
+  },
+  "articles": {
+    "voice.intro": "Für Gespräche vor Ort nutzt du zweisprachige Untertitel und natürliche KI-Übersetzungsstimmen. Für Beispiele und Sprechübungen den KI-Sprachassistenten. Für Videos anderer Apps wählst du Video-Untertitel unter „Übersetzen in jeder App“.",
+    "voice.tip": "Wähle vor dem Gespräch beide Sprachen und den Audiomodus. Höre danach KI-Übersetzungen erneut und übe einen Satz mit Betonung und Rhythmus. Gespräch und Zusammenfassung helfen, nützliche Formulierungen zu behalten.",
+    "voice.limit": "Beidseitiges Gespräch eignet sich für persönliche Begegnungen. Privat zuhören nutzt Hörer oder Kopfhörer; Nur Untertitel passt, wenn Ton stören würde. Video-Untertitel startest du unter „Übersetzen in jeder App“; erfassbare Inhalte hängen von iOS ab.",
+    "menu.intro": "Wähle auf der Fotoseite unter „Aufbereiten“ die Option „Speisekarte“. Füge scharfe, frontal aufgenommene Fotos der ganzen Seite hinzu, um Namen, Zutaten, Portionsgrößen und Preise als Gerichte aufzubereiten.",
+    "menu.tip": "Lies Gerichte und Preise, wähle Menge, Größe oder verfügbare Extras und ergänze Hinweise. Öffne die Originalbestellung, um Gerichte, Optionen und Mengen gemeinsam dem Personal zu zeigen.",
+    "menu.limit": "Bekannte Preise werden je Währung addiert; bei unklaren Preisen gibt es keinen verbindlichen Gesamtbetrag. Bestätige Zutaten, Allergene und Zubereitung direkt beim Personal und zeige die Bestellung selbst vor.",
+    "work.intro": "Übersetze zunächst, um Russisch oder Deutsch zu verstehen, und wähle dann den Antwortton. Helper erklärt Fälle und Endungen. Für eine Korrektur des Originals bitte den KI-Assistenten ausdrücklich darum.",
+    "work.tip": "Wähle den Ton nach Empfänger: Höflich für berufliche Bitten, Briefstil für E-Mails, Freundschaftlich für Bekannte. Lass Helper schwierige Sätze erklären und gib dem KI-Assistenten Kontext, um Antworten zu vergleichen.",
+    "work.limit": "Automatisch erhält Abschnitte, die bereits vollständig in der Zielsprache sind. Wenn du Fälle, Endungen oder Grammatik ändern möchtest, nutze Helpers Erklärung und bitte den KI-Assistenten ausdrücklich um Korrektur.",
+    "mac.intro": "Auch auf dem Mac kannst du Texte übersetzen und die KI fragen. Prüfe zuerst im App Store, ob Modell und System den Download unterstützen.",
+    "mac.tip": "Nach dem Download kannst du Texte übersetzen und den KI-Assistenten nutzen. Auf der Fotoseite lassen sich Bilddateien auswählen oder Bilder einfügen. Kompatible Modelle und Systeme stehen auf der Store-Seite des Geräts.",
+    "mac.limit": "Übersetzungstastatur, Widget und Übersetzen in jeder App richten sich vor allem an unterstützte iPhones/iPads. Verfügbare Funktionen hängen von der jeweiligen Plattform und der installierten App ab.",
+    "keyboard.intro": "Füge nach der App-Anleitung die Tastatur in iOS hinzu und aktiviere vollen Zugriff für Online-Übersetzungen. In unterstützten Feldern kannst du tippen oder diktieren, dann übersetzen und den Ton anpassen.",
+    "keyboard.tip": "Erstelle den Entwurf per Tastatur oder nativer iOS-Diktierfunktion und wähle danach Sprache und Ton. Unter den Werkzeugen kannst du auch die Zwischenablage übersetzen, kopieren oder an der Cursorposition einfügen.",
+    "keyboard.limit": "Verfügbarkeit von Tastatur und Diktierfunktion hängt von App, iOS und Sprache ab. Tippe bei Bedarf oder nutze die Haupt-App. Eingabesprachpakete kannst du nach Anleitung herunterladen.",
+    "chat.intro": "Nutze den KI-Assistenten als mobilen Sprachcoach: Fotos verstehen, live dolmetschen oder Sprechen für Reise und Beruf üben. Beginne mit einer Frage und nimm deine Vorbereitung in den Alltag mit.",
+    "chat.tip": "Starte mit Szenarien und Zielen wie Bestellen oder Vorstellungsgesprächen oder erstelle eigene. Bitte die KI um langsame Beispiele, übe Betonung und Rhythmus, sprich weiter, lies Feedback und speichere gute Sätze zum Wiederholen.",
+    "chat.limit": "Benötigt Internet und Kontingent, für Sprache auch Mikrofonzugriff. Funktionen hängen von Version, Sprache und Dienststatus ab. Wichtige Angaben mit Quellen abgleichen. Eigene Ziele ersetzen bisherigen Plan und Fortschritt; Restkontingent steht in der App.",
+    "learning.intro": "Wenn du Sprache im Leben nutzen willst, übe das nächste echte Gespräch. Wähle mit dem KI-Assistenten Ziele und Szenarien und mache Sätze durch Feedback und Wiederholung zu deinen eigenen.",
+    "learning.tip": "Übe pro Runde einen Anlass: erst antworten, dann mit natürlicher Formulierung vergleichen. Lass Betonung und Rhythmus vormachen, verstehe die Verwendung mit Helper und wiederhole mit dem Lern-Widget, damit gute Sätze bleiben.",
+    "learning.limit": "KI-Übungen benötigen Internet und Kontingent. Das Lern-Widget benötigt iOS 17 oder neuer; eigene Inhalte und Einstellungen unterscheiden sich je Tarif.",
+    "screen.intro": "Bei Videos und Webseiten bleibt die Übersetzung im Blick. Untertitel erschließen den Ton, Bildschirmtext den Inhalt. Vergleiche per Bild-in-Bild und lies wichtige Sätze später erneut.",
+    "screen.tip": "Für Videos nutze Untertitel, für Webseiten Bildschirmtext. Verschiebe das Bild-in-Bild-Fenster oder scrolle die Originalseite für den nächsten Abschnitt. Beende danach die Bildschirmübertragung und öffne nützliche Stellen im Verlauf.",
+    "screen.limit": "Benötigt iOS/iPadOS 16 oder neuer, Bild-in-Bild und Internet; geschützte Inhalte sind möglicherweise nicht übersetzbar. Untertitel nutzen Sprachminuten, Bildschirmtext Übersetzungskontingent. Restkontingente stehen in der App."
+  },
+  "scan": {
+    "title": "Speisekarten, Dokumente, Tabellen. Jedes Format klar lesbar.",
+    "body": "Speisekarten werden zu auswählbaren Gerichten, Dokumente zu Absätzen, Tabellen behalten Zeilen und Spalten. Bei Schildern und Etiketten liest du die Übersetzung direkt im Bild."
+  },
+  "documentArticle": {
+    "title": "Dokumente scannen: Seiten ordnen und das Original vergleichen",
+    "intro": "Für Papieraushänge, Broschüren oder mehrseitige Dokumente wählst du auf der Fotoseite „Aufbereiten“ und „Dokument“. Füge Fotos der Reihe nach hinzu. Aufbereitete Absätze, Listen und Tabellen lassen sich jederzeit mit dem Original vergleichen.",
+    "tip": "Fotografiere jede Seite scharf und prüfe die Reihenfolge vor dem gemeinsamen Senden. Tippe beim Lesen auf Text für das Original oder öffne das jeweilige Seitenbild. Breite Tabellen lassen sich seitlich verschieben; den Verlauf kannst du nach Titel oder Inhaltstyp durchsuchen.",
+    "limit": "Wähle nach Inhalt: „Speisekarte“ für Gerichte, „Tabelle“ für zeilenweise Fahrpläne und Preislisten, „Dokument“ für andere Seiten. Vergleiche unscharfe Stellen mit dem Bild oder fotografiere erneut."
+  },
+  "pricing": {
+    "standardTitle": "Standard",
+    "voiceTitle": "Sprache",
+    "freeAllowance": "Kostenlos laden und Übersetzung, KI-Assistent und Sprache testen. Kontingente in der App.",
+    "freeScan": "1 Foto pro Vorgang aufbereiten",
+    "freeHelper": "1 eigene Helper-Konfiguration speichern",
+    "standardWeeklyAllowance": "Wöchentlich 150 Minuten Sprachübersetzung/Video-Untertitel und 10 Minuten KI-Assistent per Sprache.",
+    "standardMonthlyAllowance": "Monats- und Jahrestarife: monatlich 600 Minuten Sprachübersetzung/Video-Untertitel und 30 Minuten KI-Assistent per Sprache.",
+    "voiceWeeklyAllowance": "Wöchentlich 600 Minuten Sprachübersetzung/Video-Untertitel und 45 Minuten KI-Assistent per Sprache.",
+    "voiceMonthlyAllowance": "Monats- und Jahrestarife: monatlich 2.400 Minuten Sprachübersetzung/Video-Untertitel und 135 Minuten KI-Assistent per Sprache.",
+    "unlimitedTranslations": "Bezahlte Tarife bieten unbegrenzte Übersetzungen für Text, Fotos, Texteingaben beim KI-Assistenten und Bildschirmtext.",
+    "scanAllowance": "Bis zu 10 Fotos pro Stapel aufbereiten",
+    "helperAllowance": "Aktuelle Bezahltarife speichern 5 eigene Helper-Konfigurationen",
+    "widgetAllowance": "Inhalte, Themen und Schwierigkeit selbst wählen",
+    "annualQuotaNote": "Jährliche Zahlung betrifft den Abrechnungszeitraum; Sprach- und KI-Assistent-Kontingente werden weiterhin monatlich erneuert.",
+    "quotaNote": "Normale Texte und Fotos im KI-Assistenten zählen als Übersetzungen. In Sprachsitzungen teilen Text, Sprache und Fotos die KI-Assistent-Minuten. Video-Untertitel und Sprachübersetzung teilen Sprachminuten; Bildschirmtext zählt als Übersetzung.",
+    "legacyNote": "Bestehende Abos und kostenlose Tarife können andere Kontingente haben. Restkontingent und nächstes Erneuerungsdatum findest du auf der Nutzungskarte in der App.",
+    "standardNote": "Alltagsübersetzung, Fotos lesen und Sprachen üben: die wichtigsten Werkzeuge zusammen.",
+    "voiceNote": "Sprachübersetzung, Video-Untertitel und KI-Training: mehr Zeit zum Sprechen.",
+    "voiceLabel": "Sprachübersetzung und Video-Untertitel",
+    "chatVoiceLabel": "Sprachgespräche mit dem KI-Assistenten",
+    "aiTextLabel": "Text- und Fotofragen an den KI-Assistenten",
+    "freeWidget": "Grundlegende Wort- und Satzwiederholung",
+    "scanLabel": "Speisekarten · Dokumente · Tabellen scannen",
+    "freeAccess": "Kostenlos testen"
+  },
+  "extras": {
+    "homeScenarios": [
+      {
+        "id": "travel-and-dining",
+        "title": "Reisen und bestellen. Frag einfach.",
+        "body": "Von der Hotelrezeption bis zum fremden Restaurant: klar fragen, bewusst wählen.",
+        "scenarios": [
+          {
+            "id": "travel",
+            "context": "Wegbeschreibung · Hotel-Check-in · Verkehr",
+            "title": "Beim Einchecken die Details klären.",
+            "body": "Frage in deiner Sprache nach Zimmer, Kaution und Abreisezeit.",
+            "points": [
+              "Zweisprachige Live-Untertitel vergleichen und vier Wiedergabemodi passend wählen."
+            ],
+            "action": "Sprachübersetzung ansehen"
+          },
+          {
+            "id": "dining",
+            "context": "Restaurantbestellung · Kaffee-Extras · Essenswünsche",
+            "title": "Gerichte verstehen. Auch Extras klar bestellen.",
+            "body": "Namen, Preise und Extras zusammen sehen, Mengen wählen und die Originalbestellung zeigen.",
+            "points": [
+              "Verschiedene Währungen werden getrennt addiert, damit du sicherer bestellst."
+            ],
+            "action": "Menüscan und Bestellung ansehen"
+          }
+        ]
+      },
+      {
+        "id": "documents-and-tables",
+        "title": "Dokumente mit Absätzen. Tabellen mit Zeilen und Spalten.",
+        "body": "Unterkunftsregeln und Fahrpläne in ihrer ursprünglichen Struktur verstehen.",
+        "scenarios": [
+          {
+            "id": "documents",
+            "context": "Papieraushänge · Reisebroschüren · Unterkunftshinweise",
+            "title": "Viele Seiten. Trotzdem übersichtlich.",
+            "body": "Aushänge, Unterkunftshinweise und Broschüren fotografieren und als klare Absätze lesen.",
+            "points": [
+              "Mehrere Seiten gemeinsam verarbeiten und Original und Übersetzung vergleichen."
+            ],
+            "action": "Dokumentenscan ansehen"
+          },
+          {
+            "id": "tables",
+            "context": "Fahrpläne · Ticketpreise · Dienstleistungspreise",
+            "title": "Viele Zahlen. Auf einen Blick vergleichen.",
+            "body": "Abfahrten, Preise und Daten bleiben geordnet, damit du Wichtiges direkt findest.",
+            "points": [
+              "Zeilen und Spalten bleiben erhalten; per Tipp das Original prüfen."
+            ],
+            "action": "Tabellenübersetzung ansehen"
+          }
+        ]
+      },
+      {
+        "id": "watch-read-and-reply",
+        "title": "Videos und Nachrichten weiter verstehen.",
+        "body": "Der Inhalt bleibt im Blick, deine Antwort im ursprünglichen Gespräch.",
+        "scenarios": [
+          {
+            "id": "media",
+            "context": "Fremdsprachige Videos · Webseiten · Spielhinweise",
+            "title": "Lieblingsinhalte in anderen Sprachen verstehen.",
+            "body": "Übersetzte Untertitel für Videos, Bildschirmübersetzung für Webseiten. Deine App bleibt sichtbar, die Übersetzung folgt dem Inhalt.",
+            "points": [
+              "Bild-in-Bild verschieben und zwischen Untertiteln und Text wählen."
+            ],
+            "action": "Übersetzen in jeder App ansehen"
+          },
+          {
+            "id": "messages",
+            "context": "Arbeitsnachrichten · E-Mail-Entwürfe · Antwortton",
+            "title": "Professionell im Beruf. Natürlich unter Freunden.",
+            "body": "Übersetze und ändere den Ton im ursprünglichen Gespräch: klar für Kunden, ungezwungen für Freunde.",
+            "points": [
+              "Auch die Zwischenablage übersetzen und Antworten direkt einfügen."
+            ],
+            "action": "iOS-Übersetzungstastatur ansehen"
+          }
+        ]
+      },
+      {
+        "id": "practice-and-remember",
+        "title": "Vorstellungsgespräch und Reise: erst üben, dann sprechen.",
+        "body": "Nützliche Sätze vorbereiten und in Alltagspausen wiederholen.",
+        "scenarios": [
+          {
+            "id": "practice",
+            "context": "Bewerbungsgespräche · Sprechen auf Reisen · eigene Lernziele",
+            "title": "Wichtige Momente mit der KI sicher vorbereiten.",
+            "body": "Interview, Check-in, Bestellung: KI-Rollen üben mit dir. Bei unklaren Fotos nachfragen und per Sprache weitersprechen.",
+            "points": [
+              "Zieltraining und direktes Feedback führen von Sätzen zu echten Situationen."
+            ],
+            "action": "KI-Assistenten ansehen"
+          },
+          {
+            "id": "daily-learning",
+            "context": "Pendelzeiten · Lernen am Home-Bildschirm · Sperrbildschirm",
+            "title": "Auch kleine Pausen stärken deine Sprache.",
+            "body": "Wörter und Sätze stehen auf dem Home-Bildschirm bereit. Aussprache hören, Wiederholung markieren und Wartezeit nutzen.",
+            "points": [
+              "Inhalte, Themen und Schwierigkeit wählen und wirklich nützliche Sätze lernen."
+            ],
+            "action": "Lern-Widget ansehen"
+          }
+        ]
+      },
+      {
+        "id": "see-and-understand",
+        "title": "Wörter verstehen. Verwendung begreifen.",
+        "body": "Fotos zeigen den Text. Helper erklärt die Verwendung.",
+        "scenarios": [
+          {
+            "id": "photos",
+            "context": "Schilder · Produktetiketten · Ausstellungsaushänge",
+            "title": "Kamera darauf. Übersetzung im Originalbild.",
+            "body": "Schilder, Produktetiketten und Ausstellungsaushänge: Kamera darauf richten und die Übersetzung im Bild lesen.",
+            "points": [
+              "Foto, Album oder Live-Übersetzung: lies weiter, was vor dir steht."
+            ],
+            "action": "Fotoübersetzung ansehen"
+          },
+          {
+            "id": "helper",
+            "context": "Russisch · Deutsch · Grammatikprüfung und eigene Erklärungen",
+            "title": "Nicht nur den Sinn, auch die Grammatik verstehen.",
+            "body": "Helper erklärt russische Fälle und deutsche Endungen in deiner Sprache. Grammatik, häufige Fehler und Wortverwendung werden verständlich.",
+            "points": [
+              "Fachgebiet und Erklärvorlieben speichern und deinen eigenen Sprachhelfer gestalten."
+            ],
+            "action": "Helper-Erklärungen ansehen"
+          }
+        ]
+      }
+    ],
+    "stories": {
+      "sectionLabel": "Übersetzung im Alltag",
+      "menu": {
+        "label": "Speisekarten übersetzen",
+        "title": "Von der Karte\nzur Bestellung.",
+        "body": "Gerichte verstehen, Extras auswählen, Originalbestellung dem Personal zeigen. Bestelle, worauf du Lust hast.",
+        "action": "So funktioniert Bestellen"
+      },
+      "reply": {
+        "label": "Textübersetzung und Ton",
+        "title": "Der Sinn stimmt.\nDer Ton auch.",
+        "body": "Professionell, wenn es passt. Herzlich, wenn du willst. Sieben Tonarten, damit jeder Satz nach dir klingt.",
+        "action": "Textübersetzung entdecken"
+      },
+      "practice": {
+        "label": "KI-Assistent",
+        "title": "Übe deine Worte,\nbis sie von selbst kommen.",
+        "body": "Bestellen, Vorstellungsgespräch, Reise: KI-Rollen üben jederzeit mit dir. Von einem Satz zum echten Gespräch.",
+        "action": "KI-Assistenten kennenlernen"
+      },
+      "voice": {
+        "label": "Natürliche KI-Stimmen",
+        "title": "Verstehen.\nUnd natürlich sprechen.",
+        "body": "KI-Stimmen der neuen Generation bringen natürliche Betonung und Rhythmus. Hör einen Satz, sprich nach und werde mit Aussprache und Akzent vertraut. Dann übst du im KI-Gespräch, selbst zu sprechen.",
+        "action": "Sprachübersetzung entdecken"
+      }
+    },
+    "manifesto": {
+      "seoTitle": "Unser Manifest",
+      "seoDescription": "Eine andere Sprache sollte dein Leben nicht kleiner machen. AnyTranslator vereint Werkzeuge zum Verstehen, Ausdrücken und Üben für Auslandsleben, Studium und Lernen.",
+      "eyebrow": "Unser Manifest",
+      "title": "Andere Sprache.\nKein kleineres Leben.",
+      "lead": "Weit weg verdienst du den Mut, frei zu leben.",
+      "opening": "Wir ziehen in ein anderes Land, um mehr von der Welt zu sehen und mehr Möglichkeiten zu finden.\nNicht, um dort wegen der Sprache nur noch vorsichtig durchs Leben zu gehen.",
+      "chapters": [
+        {
+          "title": "Weit weg von zu Hause. Nicht weit weg von dir selbst.",
+          "paragraphs": [
+            "Du gehst mehrfach durch den Supermarkt und kaufst doch das Falsche. Am Schalter verstehst du nur Bruchstücke einer langen Erklärung und traust dich nicht nachzufragen. Im Unterricht hast du eine Frage, doch die Worte bleiben unausgesprochen.",
+            "Ein Formular, eine Schulmitteilung oder ein Mietdokument kann einen einfachen Tag schwer machen. Du willst alles richtig machen, musst aber schon Mut sammeln, um überhaupt anzufangen zu sprechen.",
+            "Dir fehlen weder Gedanken noch Einsatz. Manchmal hält die Sprache einfach dein wahres Ich aus dem Gespräch heraus."
+          ]
+        },
+        {
+          "title": "Das Leben stellt mehr als eine Art von Aufgabe.",
+          "paragraphs": [
+            "Eine unverständliche Speisekarte, eine Sprachnachricht vom Vermieter, die Erklärung einer Behörde oder ein Dokument, das du sorgfältig zu Ende lesen musst.",
+            "Darum braucht es mehr als eine Art von Hilfe. Für eine Mahlzeit, eine Antwort oder eine erledigte Angelegenheit solltest du nicht ständig zwischen vielen Werkzeugen wechseln müssen.",
+            "AnyTranslator möchte wirklich nötige Funktionen griffbereit vereinen. Eine Hürde weniger schafft mehr Vertrauen, das eigene Leben gut zu gestalten."
+          ]
+        },
+        {
+          "title": "Einen Satz verstehen. Den nächsten Schritt gehen.",
+          "paragraphs": [
+            "Fotografiere ein Etikett und verstehe deinen Einkauf. Lies Gerichte und Extras und bestelle, was du möchtest. Ordne Mitteilungen und Dokumente nach Seiten, damit Absätze, Spalten und wichtige Details auffindbar bleiben.",
+            "Im direkten Gespräch helfen zweisprachige Untertitel und natürliche KI-Stimmen, deine Gedanken zu vermitteln. Ob förmlich, freundlich oder knapp: Wähle den passenden Ton und sage vollständig, was du meinst.",
+            "Wenn du dich noch nicht traust, übe zuerst mit dem KI-Assistenten. Reise, Unterricht oder Vorstellungsgespräch: Mach deine Worte Schritt für Schritt vertraut. Verstehen, Ausdrücken und Lernen gehören endlich zum selben Alltag."
+          ]
+        },
+        {
+          "title": "Jede Sprache verdient sorgfältiges Verstehen.",
+          "paragraphs": [
+            "Sprache ist mehr als ausgetauschte Wörter. Schwierig sind vielleicht russische und deutsche Fälle und Endungen oder eine Wendung, die erst im Leben vor Ort verständlich wird.",
+            "Wir arbeiten weiter an Kontext, Ton und Erklärungen und denken auch an kleinere Sprachen. Weniger Sprecher bedeuten nicht weniger Sorgfalt. Damit du nicht nur eine Übersetzung erhältst, sondern auch verstehst, warum man etwas so sagt."
+          ]
+        }
+      ],
+      "everydayEyebrow": "Aus dem Leben heraus. Mit den richtigen Werkzeugen.",
+      "everydayTitle": "Aus jedem Zögern\nwird ein nächster Schritt.",
+      "scenarios": [
+        {
+          "title": "Den Alltag verstehen",
+          "body": "Das Richtige kaufen, die Karte verstehen und vor der Entscheidung nachfragen.",
+          "linkLabels": [
+            "Fotoübersetzung",
+            "Speisekarten und Bestellung"
+          ]
+        },
+        {
+          "title": "Wichtige Dinge erledigen",
+          "body": "Aushänge, Dokumente und Tabellen mit erhaltener Struktur Schritt für Schritt lesen.",
+          "linkLabels": [
+            "Dokumentenscan",
+            "Tabellenübersetzung"
+          ]
+        },
+        {
+          "title": "Die eigenen Worte aussprechen",
+          "body": "Andere verstehen und vor dem echten Gespräch einmal üben.",
+          "linkLabels": [
+            "Sprachübersetzung",
+            "KI-Assistent"
+          ]
+        }
+      ],
+      "closeEyebrow": "AnyTranslator",
+      "closeTitle": "Mach die Ferne\nzu deinem Alltag.",
+      "closeBody": "Frag, was du fragen willst. Sag, was du sagen willst.\nDie Ferne soll mehr als ein Reiseziel sein: ein Ort, an dem du frei leben kannst.",
+      "aboutAction": "Unser Manifest lesen"
+    },
+    "reviews": {
+      "eyebrow": "Echte Bewertungen aus dem App Store",
+      "title": "Sie haben die Sprachbarriere\nschon hinter sich gelassen.",
+      "body": "Meetings, Sprachenlernen und Alltag. Das sagen unsere Nutzer.",
+      "ratingAriaTemplate": "{rating} von 5 Sternen",
+      "sourceAriaTemplate": "Bewertung von {name} im App Store ansehen",
+      "storefrontLabel": "Taiwan",
+      "translatedLabel": "Aus dem traditionellen Chinesisch übersetzt",
+      "quotesById": {
+        "14792569759": "Eine so präzise Übersetzungs-App mit so vielen Funktionen ist schwer zu finden",
+        "14689800454": "Ziemlich praktisch, habe direkt ein Abo abgeschlossen",
+        "14634594658": "Die Übersetzung ist in Meetings recht hilfreich",
+        "14634322888": "So praktisch zum Sprachenlernen: Eine App ersetzt 3 oder 4 Apps und übersetzt sehr genau"
+      }
+    },
+    "askAi": {
+      "title": "Passt AnyTranslator zu dir?",
+      "body": "Beschreibe einer KI deine Bedürfnisse und vergleiche aus einem anderen Blickwinkel.",
+      "actionTemplate": "{service} fragen",
+      "prompt": "Hilf mir anhand der öffentlichen Informationen unter {url} einzuschätzen, ob AnyTranslator zu meinen Bedürfnissen passt. Mich interessieren Text- und Sprachübersetzung, Menü- und Dokumentenscans, KI-Assistent, Sprachenlernen und Preise. Frage zuerst nach meinen Nutzungssituationen und vergleiche dann, was dafür geeignet oder ungeeignet ist. Kennzeichne Funktionen oder Preise, die du nicht bestätigen kannst, ausdrücklich und nenne Quellen."
+    },
+    "theme": {
+      "darkMode": "Dunkler Modus",
+      "lightAction": "Zum hellen Modus wechseln",
+      "darkAction": "Zum dunklen Modus wechseln"
+    },
+    "macArt": {
+      "ariaLabel": "AnyTranslator-Markenillustration zum macOS-Download mit echtem App-Symbol und Mac-App-Store-Schriftzug"
+    },
+    "pricingUnit": {
+      "perBatchTemplate": "{count} Fotos/Stapel"
+    },
+    "imageAlt": {
+      "voice.primary": "Sprachübersetzung: Frage nach Museumsschließung und letztem Einlass mit englischen und deutschen Untertiteln.",
+      "text.primary": "Textübersetzung: russische Übersetzung einer englischen Terminverschiebung mit Grammatikerklärung auf Deutsch.",
+      "helper.primary": "Helper-Erklärung: Konditional, Zeit und Fälle einer russischen beruflichen Terminverschiebung auf Deutsch.",
+      "photos.primary": "Fotoübersetzung: deutsche Übersetzung auf einer echten Getränkekarte neben dem Original.",
+      "table.primary": "Tabellenübersetzung: öffentlicher Zion-Shuttle-Fahrplan mit drei Datumsbereichen sowie ersten und letzten Abfahrten.",
+      "table.cell-source": "Originalvergleich der Tabelle: geöffnete erste Shuttle-Abfahrt mit zugehöriger englischer Zeilenüberschrift.",
+      "document.primary": "Dokumentübersetzung: öffentliche Verkehrsbroschüre des Parks in deutschen Absätzen mit Fahrrad- und Autoinformationen.",
+      "document.original": "Originalbild des Dokuments: dreispaltiger öffentlicher Text „Getting Around“, Seite 1/1 desselben Dokuments.",
+      "menu.primary": "Menüübersetzung: geordnete Kaffeegetränke und Preise, 2 ausgewählte Latte und Gesamtbetrag 7.80.",
+      "menu.options": "Menübestellung: Latte/Flat White mit Hafermilch, Menge 2 und Gesamtbetrag 7.80.",
+      "menu.staff": "Dem Personal zeigen: Originalbestellung mit Latte/Flat White, Hafermilch und Menge 2, insgesamt 7.80.",
+      "chat.primary": "Restaurantszene des KI-Assistenten: englische Begrüßung eines Kellners auf Anfängerniveau mit Gesprächsaufgaben und Schlüsselsätzen.",
+      "chat.chat-entry": "Gesprächsmodi des KI-Assistenten: intelligentes Gespräch, Zieltraining und Szenariotraining; Sprach- und Schwierigkeitswahl vor dem Start.",
+      "keyboard.primary": "Native iOS-Tasten und AnyTranslator-Übersetzungsleiste mit erhaltenem Entwurf einer Arbeitsnachricht auf Deutsch.",
+      "widget.primary": "Vorschau des nativen Lern-Widgets: große Kaffeekarte mit chinesischem Satz, Pinyin, deutscher Übersetzung und Verwendungshinweisen sowie Wiederholungsbuttons.",
+      "screen-translation.primary": "Bildschirmübersetzung: öffentliches NPS-Dokument zum Autofahren in Preview, mit deutschem Ergebnis im Bild-in-Bild-Fenster.",
+      "screen-translation.setup": "Einstellungen für Übersetzen in jeder App: Video-Untertitel oder Bildschirmtext, Deutsch als Ziel und Anzeige des Originals."
+    }
+  }
+}

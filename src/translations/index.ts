@@ -21,6 +21,7 @@ import { landingTranslations } from './landing';
 import baseRefresh from './landing-refresh/base.json';
 import groupARefresh from './landing-refresh/group-a.json';
 import groupBRefresh from './landing-refresh/group-b.json';
+import { featureDetails } from '@/data/feature-details';
 
 export const landingRefreshTranslations: Record<string, Record<string, string>> = {
   ...baseRefresh,
@@ -52,9 +53,17 @@ export const translations: Record<string, Record<string, string>> = {
 };
 
 export const getTranslations = (languageCode: string): Record<string, string> => {
+  const detail = featureDetails[languageCode === 'en-gb' ? 'en' : languageCode];
+  const featureCopy = detail ? Object.fromEntries(Object.entries(detail.features).flatMap(([id, copy]) => [
+    [`landing.${id}Title`, copy.title],
+    [`landing.${id}Body`, copy.summary],
+    ...copy.steps.map((step, index) => [`landing.${id}Step${index + 1}`, step]),
+  ])) : {};
   return {
     ...(translations[languageCode] || translations['en']),
     ...(landingTranslations[languageCode] || landingTranslations['en']),
     ...(landingRefreshTranslations[languageCode] || landingRefreshTranslations.en),
+    ...featureCopy,
+    'landing.platform': 'iPhone · iPad',
   };
 };

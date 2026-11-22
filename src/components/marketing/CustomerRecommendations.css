@@ -1,0 +1,276 @@
+.mk-recommendations-heading {
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.marketing-site .mk-recommendations-heading h2 {
+  margin-block: 20px 24px;
+  font-size: clamp(36px, 4.1vw, 58px);
+  line-height: 1.2;
+}
+
+.mk-recommendations-heading h2 span {
+  color: var(--mk-muted);
+}
+
+.mk-recommendations-heading > p:last-child {
+  color: var(--mk-muted);
+}
+
+.mk-recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 52px;
+}
+
+.mk-recommendation-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+  margin: 0;
+  padding: 28px 24px;
+  border: 1px solid var(--mk-line);
+  border-radius: 24px;
+  background: var(--mk-bg);
+}
+
+.mk-recommendation-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--mk-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.mk-recommendation-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--mk-ink);
+}
+
+.mk-recommendation-card blockquote {
+  flex: 1;
+  min-height: 150px;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
+}
+
+.mk-recommendation-card figcaption {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  font-size: 13px;
+}
+
+.mk-recommendation-name {
+  color: var(--mk-ink);
+  font-size: 15px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.mk-recommendation-card figcaption a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--mk-muted);
+}
+
+.mk-recommendation-card figcaption a:hover {
+  color: var(--mk-ink);
+}
+
+.mk-recommendation-arrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+
+.mk-recommendation-card figcaption a:hover .mk-recommendation-arrow {
+  transform: translateX(3px);
+}
+
+.mk-ask-ai {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  padding: 80px 40px 150px;
+  margin-block: 48px;
+  border-radius: 32px;
+  background: var(--mk-surface);
+  text-align: center;
+}
+
+.mk-ask-ai::before {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background: url("/app-preview/backgrounds/abstract-mist-v3.webp") center 48% / cover;
+  opacity: 0.75;
+  content: "";
+}
+
+.mk-ask-ai::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: var(--mk-bg);
+  opacity: 0.58;
+  content: "";
+}
+
+.mk-ask-ai-content {
+  position: relative;
+  z-index: 1;
+}
+
+.marketing-site .mk-ask-ai h2 {
+  font-size: clamp(30px, 3.5vw, 48px);
+}
+
+.marketing-site .mk-ask-ai p {
+  margin-top: 20px;
+  color: var(--mk-muted);
+}
+
+.mk-ask-ai-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.mk-ask-ai-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 58px;
+  padding: 14px 22px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--mk-bg);
+  color: var(--mk-ink);
+  font-weight: 500;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.mk-ask-ai-links a:hover {
+  transform: translateY(-2px);
+  border-color: var(--mk-line);
+}
+
+.mk-ask-ai-links a:active {
+  transform: translateY(1px);
+}
+
+.mk-ask-ai-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.mk-ask-ai-arrow {
+  width: 16px;
+  height: 16px;
+}
+
+.mk-ask-ai-wordmark {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: -0.25em;
+  left: 0;
+  color: var(--mk-bg);
+  font-size: clamp(64px, 11.4vw, 158px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.065em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+:root[data-theme="dark"] .mk-ask-ai::before {
+  opacity: 0.16;
+}
+
+:root[data-theme="dark"] .mk-ask-ai::after {
+  opacity: 0.36;
+}
+
+:root[data-theme="dark"] .mk-ask-ai-wordmark {
+  color: var(--mk-ink);
+  opacity: 0.055;
+}
+
+@media (max-width: 1100px) {
+  .mk-recommendation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mk-recommendation-card blockquote {
+    min-height: 110px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mk-recommendation-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .mk-recommendation-card {
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .mk-recommendation-card blockquote {
+    min-height: 0;
+    font-size: 22px;
+  }
+
+  .mk-ask-ai {
+    padding: 48px 24px 92px;
+    margin-block: 24px;
+    border-radius: 24px;
+  }
+
+  .mk-ask-ai-links {
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .mk-ask-ai-links a {
+    width: 100%;
+    min-height: 52px;
+  }
+
+  .mk-ask-ai-wordmark {
+    font-size: clamp(42px, 11vw, 66px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mk-recommendation-arrow,
+  .mk-ask-ai-links a {
+    transition: none;
+  }
+
+  .mk-recommendation-card figcaption a:hover .mk-recommendation-arrow,
+  .mk-ask-ai-links a:hover,
+  .mk-ask-ai-links a:active {
+    transform: none;
+  }
+}

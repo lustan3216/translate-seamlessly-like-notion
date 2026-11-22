@@ -1,0 +1,652 @@
+{
+  "marketing": {
+    "hero.title": "O mundo é grande.",
+    "hero.accent": "Não deixe o idioma limitar você.",
+    "nav.manifesto": "Nosso manifesto",
+    "hero.body": "Entenda o cardápio e peça. Traduza a mensagem e responda. Texto, fotos e legendas, com voz de IA natural e prática: idiomas que funcionam na vida real.",
+    "feature.table": "Tradução de tabelas",
+    "home.featuresTitle": "11 ferramentas para traduzir e aprender. Sempre com você.",
+    "home.featuresBody": "Cardápios, documentos, mensagens e prática de conversação: tudo de que você precisa em um só lugar.",
+    "home.blogTitle": "Guias práticos para aproveitar melhor a tradução.",
+    "download.macNote": "Consulte os modelos de Mac e os requisitos do sistema na App Store. Teclado tradutor, widget de aprendizado e tradução em qualquer app são para iOS/iPadOS.",
+    "features.title": "Traduza, converse e aprenda em um só app.",
+    "features.body": "Entenda cardápios, documentos e tabelas, responda mensagens, acompanhe vídeos e pratique com o assistente de IA. 11 ferramentas conectam leitura, escrita, escuta e fala.",
+    "pricing.allowance": "Consulte as cotas gratuitas no app",
+    "pricing.more": "Escolha Padrão ou Voz conforme seu uso",
+    "pricing.manage": "Restaure compras no app e gerencie renovação e cancelamento pela Apple. O cartão de uso mostra o saldo e a data de renovação das cotas.",
+    "pricing.voiceNote": "Tradução de voz e legendas compartilham minutos de voz. Durante uma sessão de voz do assistente de IA, texto, voz e fotos usam os minutos dele. Fora da sessão, os textos e fotos do assistente e o texto na tela usam traduções. Consulte saldos e datas no app.",
+    "article.voice": "Qual recurso de voz escolher?",
+    "affiliate.processTitle": "Como funciona a parceria",
+    "faq.FreeQ": "Posso começar de graça?",
+    "faq.FreeA": "Experimente tradução, assistente de IA, voz e conteúdo básico do widget grátis; cotas no app. PRO inclui digitalização de várias páginas, mais ajustes do Helper e aprendizado personalizado. O plano Voz oferece mais minutos.",
+    "faq.AgentQ": "Qual a diferença entre voz do assistente de IA e tradução de voz?",
+    "faq.AgentA": "Em conversas presenciais, a tradução de voz oferece legendas bilíngues e uma voz de IA natural. Para perguntar ou praticar, use a voz do assistente de IA: ouça um exemplo e tente você. As cotas de minutos são separadas.",
+    "voice.eyebrow": "Voz de IA natural",
+    "voice.title": "Entenda. E fale com naturalidade.",
+    "voice.body": "A nova geração de voz de IA traz entonação e ritmo naturais. Ouça uma frase, repita e se familiarize com a pronúncia e o sotaque. Depois converse com a IA para soltar a voz.",
+    "voice.action": "Conhecer a tradução de voz",
+    "faq.ScanQ": "Cardápio, documento ou tabela: qual escolher?",
+    "faq.ScanA": "“Cardápio” permite escolher pratos e adicionais e mostrar o pedido original. “Documento” organiza parágrafos por página; “Tabela” preserva linhas e colunas. Grátis: 1 foto por envio; PRO: até 10 por lote. Recupere os resultados no histórico de digitalizações.",
+    "faq.AccuracyQ": "Como conferir casos e terminações em russo e alemão?",
+    "faq.AccuracyA": "Use “Gramática”, “Erros comuns” e “Análise palavra por palavra” do Helper para entender casos e terminações. Para alterar o original, peça ao assistente de IA que corrija e explique o motivo.",
+    "article.work": "Escrever entre idiomas: declinações e tom das respostas",
+    "about.body": "Tradução, explicação e prática conectadas para você focar na conversa.",
+    "about.story": "Depois de entender, responda, pergunte, faça um pedido ou guarde uma frase. AnyTranslator facilita cada próximo passo.",
+    "privacy.body": "Tradução e IA exigem processamento online. Consulte a política de privacidade para saber sobre dados e permissões.",
+    "affiliate.status": "As parcerias são negociadas individualmente. Atividades e comissões são definidas à parte.",
+    "download.iosNote": "Traduza texto, voz, fotos, cardápios, documentos e tabelas. Com assistente de IA, tradução de tela, teclado e widget de aprendizado.",
+    "download.ios": "Baixar grátis para iOS",
+    "feature.chat": "Assistente de IA",
+    "home.statement": "De entender uma frase a falar por conta própria.",
+    "home.statementBody": "Veja o essencial de uma foto, continue a conversa com interpretação e ouça exemplos naturais da IA para preparar viagens ou entrevistas. Com feedback e revisão, leve expressões úteis para o dia a dia.",
+    "case.study.title": "Pratique o que quer dizer até conseguir falar.",
+    "case.study.body": "Escolha um objetivo para viagem, trabalho ou cotidiano, ou crie seus próprios cenários e metas. Fale com a IA, veja o feedback, repita e coloque em prática o que preparou.",
+    "article.chat": "Seu professor de idiomas de bolso: fotos, interpretação e prática oral",
+    "article.learning": "Leve as frases que praticou para o dia a dia.",
+    "feature.screen-translation": "Tradução em qualquer app",
+    "article.screen": "Legendas e leitura da web entre apps",
+    "case.media.title": "Vídeos e páginas da web: a tradução vai com você.",
+    "case.media.body": "O vídeo continua e a leitura também. Compare legendas ou texto visível em Picture in Picture; para explorar uma frase, leve-a ao assistente de IA."
+  },
+  "features": {
+    "text": {
+      "title": "Tradução de texto: sentido claro, tom adequado.",
+      "summary": "Mensagens e e-mails com sete tons conforme a pessoa. Helper explica declinações russas e alemãs; o assistente de IA pode revisar o original.",
+      "heading": "Para cada pessoa, o tom certo.",
+      "body": "Pedidos educados no trabalho, conversa natural com amigos e mensagens longas mais curtas. Ouça a pronúncia da IA e salve boas frases. Helper explica casos e terminações; o assistente de IA pode corrigir o original.",
+      "steps": [
+        "Sete tons, da carta formal à conversa do dia a dia.",
+        "Helper explica as declinações russas e alemãs; o assistente de IA revisa o original quando solicitado.",
+        "Ouça a pronúncia natural da IA, salve frases ou leve-as como rascunho ao assistente de IA."
+      ],
+      "sections": [
+        {
+          "title": "Entenda casos e terminações russos e alemães",
+          "body": "Gramática, erros comuns e análise palavra por palavra explicam no seu idioma casos russos, artigos e terminações alemães. Entenda as relações da frase antes de escolher como se expressar."
+        },
+        {
+          "title": "Sete tons para diferentes pessoas",
+          "body": "Automático, Educado, Bem-humorado, Correspondência, Amigável, Conciso e Paquera: do trabalho a novas conexões internacionais, encontre o tom ideal.",
+          "items": [
+            "Automático: ajusta o tom ao original e ao contexto.",
+            "Educado: para pedidos, perguntas ou mensagens de trabalho.",
+            "Bem-humorado: deixa mais leves as conversas que combinam com humor.",
+            "Correspondência: para e-mails e cartas.",
+            "Amigável: natural e informal, como entre conhecidos.",
+            "Conciso: encurta o texto; confira depois as informações importantes.",
+            "Paquera: um tom divertido e carinhoso para conhecer pessoas de outros países."
+          ]
+        },
+        {
+          "title": "Revise russo e alemão entendendo o motivo",
+          "body": "O tom Automático preserva trechos já escritos inteiramente no idioma de destino. Para conferir casos, terminações ou gramática, use Helper ou peça ao assistente de IA que revise o original."
+        }
+      ]
+    },
+    "photos": {
+      "title": "Tradução de fotos: o significado sobre a imagem.",
+      "summary": "Placas, rótulos e avisos: aponte a câmera e leia a tradução direto na imagem.",
+      "heading": "Aponte para outro idioma. Leia na imagem.",
+      "body": "Enquadre um texto estrangeiro para ler a tradução na imagem. Tire ou escolha uma foto, toque no texto para ver detalhes e mantenha as pistas visuais ao redor.",
+      "steps": [
+        "Tradução sobreposta ao vivo: aponte para uma placa e leia.",
+        "Tire uma foto ou abra o álbum para traduzir o texto.",
+        "Veja os detalhes sem perder o contexto da imagem original."
+      ]
+    },
+    "voice": {
+      "title": "Tradução de voz: acompanhe os dois lados.",
+      "summary": "Legendas bilíngues seguem a fala e a voz natural da IA transmite sua mensagem. Quatro modos para entender e se fazer entender.",
+      "heading": "Pessoalmente, deixe a tradução levar sua mensagem.",
+      "body": "Peça informações, faça check-in ou converse: legendas bilíngues e voz natural da IA transmitem sentido e tom. Quatro modos de áudio se adaptam à situação. Depois, reveja o resumo e ouça as traduções para aprender expressões úteis.",
+      "steps": [
+        "Conversa bidirecional lê os dois lados; Fale por mim reproduz sua tradução.",
+        "Escuta privada usa o receptor ou fones; Somente legendas serve para locais silenciosos.",
+        "Reveja a conversa, ouça novamente a IA e copie ou compartilhe o essencial do resumo."
+      ],
+      "sections": [
+        {
+          "title": "Voz natural da IA, com tom e ritmo",
+          "body": "Modelos de voz de nova geração criam traduções com entonação natural e nuances de emoção conforme o conteúdo. Use para conversar e depois ouça e repita para se familiarizar com pronúncia e sotaques."
+        }
+      ]
+    },
+    "menu": {
+      "title": "Digitalização de cardápios: entenda, escolha, mostre o pedido.",
+      "summary": "Fotografe o cardápio, escolha pratos, preços e adicionais com clareza e mostre o pedido no idioma original.",
+      "heading": "Fotografe, escolha e mostre à equipe.",
+      "body": "Transforme um cardápio estrangeiro em pratos selecionáveis, com nomes, descrições, preços e adicionais disponíveis juntos. Escolha quantidades e observações e exiba o pedido original. Os preços conhecidos são somados por moeda para você acompanhar o total.",
+      "steps": [
+        "Nomes, descrições e preços organizados em pratos fáceis de escolher.",
+        "Escolha quantidades, tamanhos, adicionais disponíveis e observações a seu gosto.",
+        "Mostre o pedido original; preços conhecidos são somados por moeda."
+      ]
+    },
+    "document": {
+      "title": "Digitalização de documentos: páginas em ordem, estrutura preservada.",
+      "summary": "Fotografe documentos de várias páginas e leia parágrafos, listas e tabelas. Compare o original e reabra o resultado pelo histórico.",
+      "heading": "Documentos longos, leitura organizada.",
+      "body": "Avisos, folhetos e documentos de várias páginas viram títulos, parágrafos e listas claros. Compare texto e imagem originais quando quiser e recupere o resultado no histórico sem começar de novo.",
+      "steps": [
+        "Fotos de várias páginas seguem a ordem, com títulos, parágrafos e listas.",
+        "Toque para comparar texto e imagem originais, mesmo em documentos longos.",
+        "Busque no histórico de digitalizações para encontrar documentos quando precisar."
+      ]
+    },
+    "keyboard": {
+      "title": "Teclado tradutor: responda dentro do seu app.",
+      "summary": "Responda sem trocar de app: digite ou use o ditado nativo do iOS, traduza no campo, mude o tom e envie você.",
+      "heading": "Prepare a resposta onde você já escreve.",
+      "body": "Traduza conversas e mensagens de trabalho e ajuste o tom no campo habitual. Digite ou use o ditado do iOS para responder com naturalidade e objetividade. Traduza e insira também o conteúdo da área de transferência.",
+      "steps": [
+        "Traduza e substitua o rascunho no campo original para continuar escrevendo.",
+        "Digite ou dite com o iOS e escolha idioma e tom.",
+        "Traduza a área de transferência, copie o resultado ou insira no cursor."
+      ]
+    },
+    "helper": {
+      "title": "Helper explica gramática e uso.",
+      "summary": "Aprenda casos russos e terminações alemãs com explicações no seu idioma. Salve suas preferências uma vez e reutilize com outras frases.",
+      "heading": "Entenda as palavras. Aprenda a usá-las.",
+      "body": "Casos, terminações e estruturas do original e da tradução ganham explicações no seu idioma. Escolha gramática, erros comuns ou análise palavra por palavra. Salve área, objetivo e profundidade como instruções para continuar com novas frases.",
+      "steps": [
+        "Gramática, erros comuns e análise palavra por palavra revelam como uma frase se constrói.",
+        "Explore sinônimos, exemplos, sentidos implícitos e sugestões de resposta.",
+        "Personalize área, objetivos e profundidade e salve as instruções para reutilizar."
+      ],
+      "sections": [
+        {
+          "title": "Por que as declinações russas e alemãs mudam",
+          "body": "Exemplos em contexto: do instrumental russo ao dativo alemão, veja como casos, artigos e terminações dos substantivos mudam juntos.",
+          "items": [
+            "Russo: Я говорю с мой друг. → Я говорю с моим другом. с no sentido de “com” exige instrumental; as terminações de мой e друг mudam juntas.",
+            "Alemão: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit exige dativo; o substantivo de declinação fraca Kunde vira Kunden."
+          ]
+        },
+        {
+          "title": "Salve uma instrução e reutilize",
+          "body": "Salve “Explique os casos russos no meu idioma” ou “Explique as terminações alemãs”. As novas frases seguem seu jeito habitual de explicação para focar no que você quer aprender."
+        }
+      ]
+    },
+    "widget": {
+      "title": "Widget de aprendizado: revise a qualquer hora.",
+      "summary": "A Tela de Início vira um cartão de revisão: palavras, frases, voz da IA e marcações Revisar ou Memorizado. Você escolhe conteúdo, tema e dificuldade.",
+      "heading": "Transforme pequenas pausas em revisão.",
+      "body": "Na Tela de Início, ouça a IA, repita e marque o que memorizou. Um toque na Tela Bloqueada abre o app; também há Em Espera quando compatível. Palavras, combinações, expressões e frases com temas, níveis e instruções escolhidos por você.",
+      "steps": [
+        "Leia palavras e frases, ouça a IA e repita na Tela de Início.",
+        "Marque Revisar ou Memorizado para preparar a próxima rodada.",
+        "Escolha tipo de conteúdo, tema e dificuldade e adicione instruções próprias."
+      ]
+    },
+    "table": {
+      "title": "Tradução de tabelas: cada número no seu lugar.",
+      "summary": "Horários e preços continuam em linhas e colunas. Deslize tabelas largas para comparar horas, valores e unidades no contexto.",
+      "heading": "Siga linhas e colunas. Entenda cada número.",
+      "body": "Mesmo com muitos números e colunas, a tabela continua legível. Organize horários e preços e deslize tabelas largas na horizontal. Toque no texto original ou volte à imagem para conferir horas, valores e unidades.",
+      "steps": [
+        "Preserve linhas e colunas para comparar horários e preços.",
+        "Deslize tabelas largas para ler todos os campos e unidades.",
+        "Compare texto e imagem originais e reabra a digitalização pelo histórico."
+      ]
+    },
+    "chat": {
+      "title": "Assistente de IA",
+      "summary": "Entenda fotos, interprete ao vivo e pratique com voz de IA natural. Seu professor de idiomas acompanha viagens, trabalho e dia a dia.",
+      "heading": "Seu professor de bolso para usar o idioma de verdade.",
+      "body": "Pratique pedidos antes de viajar, prepare sua fala antes do trabalho ou pergunte sobre uma foto. Converse com voz de IA natural, ouça exemplos e use interpretação e cenários para passar de entender a ter coragem de falar.",
+      "steps": [
+        "Veja o essencial em placas, mensagens e fotos.",
+        "Pratique cenários e objetivos para falar em viagens, no trabalho e no dia a dia.",
+        "Ouça exemplos naturais, repita, pratique de novo e salve expressões úteis."
+      ],
+      "sections": [
+        {
+          "title": "Fotos e interpretação: pergunte o que precisa agora",
+          "body": "Adicione fotos de placas, avisos ou mensagens para a IA organizar pontos importantes, cuidados e próximos passos. Diante de uma barreira linguística, converse por voz ou use interpretação ao vivo para perguntar com clareza.",
+          "items": [
+            "Conversa por voz: pergunte falando e continue a conversa.",
+            "Converse comigo em inglês: transforme a prática em uma conversa natural.",
+            "Interprete para mim ao vivo: conecte idiomas diferentes na conversa.",
+            "Foto para a IA: identifique o essencial e o próximo passo."
+          ]
+        },
+        {
+          "title": "Pratique o idioma de que sua vida precisa",
+          "body": "Do restaurante e aeroporto à entrevista e ao trabalho: escolha cenários para conversar e objetivos para avançar, ou crie os seus. Responda principalmente em voz alta para preparar o próximo momento real.",
+          "items": [
+            "Prática de cenários: interprete um papel e cumpra tarefas de conversa.",
+            "Prática por objetivo: treine as frases e depois aplique em um cenário.",
+            "Aprendizado personalizado: crie um cenário ou objetivo para uma ocasião específica."
+          ]
+        },
+        {
+          "title": "Ouça naturalidade. Fale com mais facilidade.",
+          "body": "Peça à IA um exemplo mais lento e treine pronúncia, sotaque e ritmo. Depois use as frases em uma conversa natural para aproximar cada prática da comunicação real."
+        },
+        {
+          "title": "Entenda o feedback. Fale melhor na próxima vez.",
+          "body": "Compare o original com uma forma natural, ouça o exemplo e entenda o motivo. Peça também correções de frases curtas em russo, alemão e outros idiomas. Salve expressões, revise e releia conversas no histórico para preparar a próxima fala."
+        }
+      ]
+    },
+    "screen-translation": {
+      "title": "Tradução de tela: entenda legendas e texto.",
+      "summary": "Continue no vídeo ou na página e leia legendas e texto em Picture in Picture. Compare original e tradução e recupere frases úteis no histórico.",
+      "heading": "Fique no seu app. Entenda o conteúdo.",
+      "body": "Áudio de vídeos estrangeiros e texto da web têm o modo certo de leitura. Picture in Picture mostra conteúdo e tradução juntos para acompanhar vídeos, artigos e mensagens de jogos com menos interrupções entre apps.",
+      "steps": [
+        "Legendas de vídeo: transforme a fala em legendas que você entende.",
+        "Texto na tela: leia o que vê em páginas da web, conversas e jogos.",
+        "Picture in Picture e histórico: compare enquanto assiste e releia depois."
+      ],
+      "sections": [
+        {
+          "title": "Legendas de vídeo para acompanhar o conteúdo",
+          "body": "Traduza o áudio de outros apps em legendas e compare com o original. Acompanhe vídeos, transmissões e estudos no seu idioma enquanto o conteúdo continua."
+        },
+        {
+          "title": "Texto na tela para continuar lendo",
+          "body": "Leia em Picture in Picture a tradução do texto visível em páginas, conversas, jogos ou documentos. Mova a janela perto do trecho ou role a página para continuar lendo informações em outro idioma."
+        },
+        {
+          "title": "A tradução acompanha. As frases úteis ficam.",
+          "body": "Compare tradução e conteúdo original enquanto vê. Originais e traduções concluídos ficam no histórico. Reabra depois ou leve manualmente uma expressão ao assistente de IA para perguntar o significado e praticar o uso.",
+          "items": [
+            "Requer iOS/iPadOS 16 ou posterior, Picture in Picture e Internet; conteúdos protegidos podem não ser traduzidos."
+          ]
+        }
+      ]
+    }
+  },
+  "workflows": {
+    "travel": [
+      "No check-in, use tradução de voz e legendas para confirmar quarto, depósito e horário de saída.",
+      "Ensaie a chegada e perguntas com o assistente de IA para falar com mais preparo.",
+      "Fotografe as regras da hospedagem como “Documento” e recupere horários e cobranças no histórico."
+    ],
+    "work": [
+      "Adapte o tom das mensagens de trabalho: pedidos educados ou respostas concisas, conforme a pessoa.",
+      "Helper explica casos e terminações russos e alemães; peça depois ao assistente de IA para revisar o original.",
+      "Adicione contexto para comparar respostas e volte ao app original para enviar a escolhida."
+    ],
+    "dining": [
+      "Transforme fotos do cardápio em pratos selecionáveis, escolha quantidades e adicionais e mostre o pedido original.",
+      "Use tradução de voz para perguntar à equipe sobre porções, ingredientes e preparo.",
+      "Ensaie perguntas com o assistente de IA e confirme diretamente necessidades de alergia com a equipe."
+    ],
+    "messages": [
+      "Mude idioma e tom no campo original sem ficar trocando de app.",
+      "Em mensagens longas, compare o original, ouça a pronúncia e salve boas frases.",
+      "Dê o contexto ao assistente de IA para encontrar a resposta adequada ao momento."
+    ],
+    "reading": [
+      "Escolha “Documento” para avisos, folhetos e várias páginas; leia parágrafos, listas e tabelas por página.",
+      "Escolha “Tabela” para horários e preços, deslize pelas colunas e compare original e unidades.",
+      "Leve frases difíceis à tradução de texto e peça ao Helper para explicar o uso."
+    ],
+    "study": [
+      "Pratique cenários e defina objetivos com o assistente de IA para a próxima conversa real.",
+      "Esclareça gramática, vocabulário e exemplos com Helper para resolver suas dúvidas.",
+      "Ouça a IA e repita frases comuns com o widget de aprendizado, mesmo em pequenas pausas."
+    ],
+    "media": [
+      "Acompanhe vídeos com legendas e páginas com texto na tela, mantendo original e tradução visíveis.",
+      "Copie frases para o assistente de IA, pergunte o significado, compare formas e pratique.",
+      "Escolha o tom adequado na tradução de texto e use o que entendeu na resposta."
+    ]
+  },
+  "articles": {
+    "voice.intro": "Para conversar pessoalmente, use legendas bilíngues e voz de IA natural. Para ouvir exemplos e praticar, use a voz do assistente de IA. Para vídeos de outros apps, escolha legendas em “Tradução em qualquer app”.",
+    "voice.tip": "Antes de conversar, escolha os dois idiomas e o modo de áudio. Depois, ouça novamente a tradução da IA e repita uma frase com entonação e ritmo. Reveja conversa e resumo para guardar expressões úteis.",
+    "voice.limit": "Conversa bidirecional serve para interações presenciais. Escuta privada usa o receptor ou fones; Somente legendas evita áudio. As legendas de vídeo começam em “Tradução em qualquer app”; a captura depende do iOS.",
+    "menu.intro": "Em Fotos, abra “Organizar” e escolha “Cardápio”. Adicione uma foto nítida, de frente e da página inteira para organizar nomes, ingredientes, porções e preços em pratos.",
+    "menu.tip": "Leia pratos e preços, escolha quantidades, tamanhos ou adicionais disponíveis e acrescente observações. Abra o pedido original para mostrar à equipe pratos, opções e quantidades juntos.",
+    "menu.limit": "Preços conhecidos são somados por moeda; não há total definitivo se faltarem preços. Confirme ingredientes, alérgenos e preparo diretamente com a equipe e mostre você o pedido.",
+    "work.intro": "Traduza primeiro para entender russo ou alemão e depois escolha o tom. Helper explica casos e terminações; para revisar o original, peça expressamente ao assistente de IA.",
+    "work.tip": "Escolha o tom conforme a pessoa: Educado para pedidos de trabalho, Correspondência para e-mails e Amigável para conhecidos. Helper explica frases difíceis; adicione depois o contexto ao assistente de IA para comparar respostas.",
+    "work.limit": "O tom Automático preserva trechos escritos inteiramente no idioma de destino. Para alterar casos, terminações ou gramática, veja a explicação do Helper e peça expressamente uma correção ao assistente de IA.",
+    "mac.intro": "No Mac, você também traduz textos e pergunta à IA. Confira primeiro na App Store se o modelo e o sistema permitem o download.",
+    "mac.tip": "Depois de baixar, traduza textos e use o assistente de IA. Em Fotos, selecione arquivos de imagem ou cole imagens. Veja modelos e sistemas compatíveis na página da loja do dispositivo.",
+    "mac.limit": "Teclado tradutor, widget e tradução em qualquer app são voltados principalmente a iPhone/iPad compatíveis. Os recursos disponíveis dependem da plataforma e do app instalado.",
+    "keyboard.intro": "Siga o app para adicionar o teclado no iOS e ativar Acesso Total para tradução online. Em campos compatíveis, digite ou dite um rascunho e depois traduza e ajuste o tom.",
+    "keyboard.tip": "Prepare o rascunho digitando ou com o ditado nativo do iOS e escolha idioma e tom. Nas ferramentas, traduza também a área de transferência, copie a tradução ou insira no cursor.",
+    "keyboard.limit": "A disponibilidade do teclado e do ditado depende do app, iOS e idioma. Se necessário, digite ou volte ao app principal. Baixe pacotes do idioma de entrada conforme as instruções.",
+    "chat.intro": "Use o assistente de IA como professor de idiomas de bolso: entenda fotos, interprete ao vivo ou pratique para viagens e trabalho. Comece com uma pergunta e leve o preparo para a vida real.",
+    "chat.tip": "Comece com cenários e objetivos como pedir comida ou fazer uma entrevista, ou crie os seus. Peça exemplos mais lentos, pratique entonação e ritmo, converse, veja o feedback e salve frases para repetir.",
+    "chat.limit": "Requer conexão e cota; voz também exige permissão do microfone. Recursos dependem de versão, idioma e estado do serviço. Confira informações importantes. Objetivos personalizados substituem plano e progresso anteriores; saldo no app.",
+    "learning.intro": "Para usar um idioma na vida real, pratique a próxima conversa que vai acontecer. Escolha objetivos e cenários com o assistente de IA e use feedback e revisão para fazer as frases virarem suas.",
+    "learning.tip": "Foque em uma situação por vez: responda e compare uma forma natural. Peça exemplos de entonação e ritmo, esclareça o uso com Helper e repita com o widget para memorizar melhor.",
+    "learning.limit": "Prática com IA exige Internet e cota. O widget de aprendizado requer iOS 17 ou posterior; conteúdos e configurações personalizados variam por plano.",
+    "screen.intro": "Mantenha a tradução à vista ao assistir a vídeos ou ler páginas. As legendas traduzem o som e o texto na tela, a leitura. Compare em Picture in Picture e releia frases importantes depois.",
+    "screen.tip": "Use legendas em vídeos e texto na tela em páginas. Mova a janela ou role a página original para ler o próximo trecho. Ao terminar, pare a transmissão de tela e recupere o que importa no histórico.",
+    "screen.limit": "Requer iOS/iPadOS 16 ou posterior, Picture in Picture e Internet. Conteúdo protegido pode não ser traduzido. Legendas usam minutos de voz; texto na tela, traduções. Consulte o saldo no app."
+  },
+  "scan": {
+    "title": "Cardápios, documentos e tabelas. Cada formato com clareza.",
+    "body": "Cardápios viram pratos para escolher, documentos mantêm parágrafos e tabelas preservam linhas e colunas. Em placas e rótulos, leia a tradução na imagem."
+  },
+  "documentArticle": {
+    "title": "Digitalizar documentos: ordenar páginas e comparar o original",
+    "intro": "Para avisos em papel, folhetos ou documentos de várias páginas, abra “Organizar” e “Documento” em Fotos e adicione imagens em ordem. Após organizar parágrafos, listas e tabelas, compare o original quando quiser.",
+    "tip": "Fotografe cada página com nitidez e confira a ordem antes de enviar o lote. Toque no texto para ver o original ou volte à imagem de cada página. Deslize tabelas largas na horizontal e busque o histórico por título ou tipo de conteúdo.",
+    "limit": "Escolha pelo conteúdo: “Cardápio” para pratos, “Tabela” para horários e preços em linhas e colunas e “Documento” para outras páginas. Compare partes borradas com a imagem ou fotografe novamente."
+  },
+  "pricing": {
+    "standardTitle": "Padrão",
+    "voiceTitle": "Voz",
+    "freeAllowance": "Baixe grátis para experimentar tradução, assistente de IA e voz. Cotas no app.",
+    "freeScan": "Organize 1 foto por envio",
+    "freeHelper": "Salve 1 configuração personalizada do Helper",
+    "standardWeeklyAllowance": "Por semana: 150 minutos de tradução de voz/legendas de vídeo e 10 minutos de voz do assistente de IA.",
+    "standardMonthlyAllowance": "Planos mensais e anuais: por mês, 600 minutos de tradução de voz/legendas de vídeo e 30 minutos de voz do assistente de IA.",
+    "voiceWeeklyAllowance": "Por semana: 600 minutos de tradução de voz/legendas de vídeo e 45 minutos de voz do assistente de IA.",
+    "voiceMonthlyAllowance": "Planos mensais e anuais: por mês, 2.400 minutos de tradução de voz/legendas de vídeo e 135 minutos de voz do assistente de IA.",
+    "unlimitedTranslations": "Planos pagos incluem traduções ilimitadas de texto, fotos, texto no assistente de IA e texto na tela.",
+    "scanAllowance": "Organize até 10 fotos por lote",
+    "helperAllowance": "Os planos pagos atuais salvam 5 configurações personalizadas do Helper",
+    "widgetAllowance": "Escolha conteúdo, tema e dificuldade",
+    "annualQuotaNote": "O pagamento anual muda a cobrança; cotas de voz e do assistente de IA continuam renovadas mensalmente.",
+    "quotaNote": "Fora das sessões de voz, texto e fotos do assistente de IA usam traduções. Durante uma sessão de voz, texto, voz e fotos compartilham os minutos do assistente. Legendas e tradução de voz compartilham minutos de voz; texto na tela usa traduções.",
+    "legacyNote": "Assinaturas existentes e planos gratuitos podem ter outras cotas. Consulte saldo e próxima renovação no cartão de uso do app.",
+    "standardNote": "Tradução diária, leitura de fotos e prática de idiomas: suas ferramentas essenciais juntas.",
+    "voiceNote": "Tradução de voz, legendas e prática com IA: mais tempo para falar.",
+    "voiceLabel": "Tradução de voz e legendas de vídeo",
+    "chatVoiceLabel": "Conversa por voz com o assistente de IA",
+    "aiTextLabel": "Perguntas com texto e fotos ao assistente de IA",
+    "freeWidget": "Revisão básica de palavras e frases",
+    "scanLabel": "Digitalização de cardápios · documentos · tabelas",
+    "freeAccess": "Experimente grátis"
+  },
+  "extras": {
+    "homeScenarios": [
+      {
+        "id": "travel-and-dining",
+        "title": "Viaje e peça. Pergunte o que quiser.",
+        "body": "Da recepção do hotel à mesa do restaurante, pergunte e escolha com clareza.",
+        "scenarios": [
+          {
+            "id": "travel",
+            "context": "Direções · check-in · transporte",
+            "title": "Esclareça os detalhes ao chegar.",
+            "body": "Pergunte no seu idioma sobre quarto, depósito e horário de saída.",
+            "points": [
+              "Compare legendas bilíngues ao vivo e escolha entre quatro modos de áudio conforme a situação."
+            ],
+            "action": "Ver tradução de voz"
+          },
+          {
+            "id": "dining",
+            "context": "Restaurantes · adicionais de café · observações do pedido",
+            "title": "Entenda os pratos. Escolha até os adicionais.",
+            "body": "Nomes, preços e adicionais claros: escolha quantidades e mostre o pedido original.",
+            "points": [
+              "Moedas diferentes são somadas separadamente para pedir com mais confiança."
+            ],
+            "action": "Ver digitalização de cardápios e pedidos"
+          }
+        ]
+      },
+      {
+        "id": "documents-and-tables",
+        "title": "Documentos com parágrafos. Tabelas com linhas e colunas.",
+        "body": "Regras da hospedagem e horários sem perder a estrutura original.",
+        "scenarios": [
+          {
+            "id": "documents",
+            "context": "Avisos em papel · folhetos · regras da hospedagem",
+            "title": "Muitas páginas. Uma leitura organizada.",
+            "body": "Fotografe avisos, regras e folhetos para transformar tudo em parágrafos claros.",
+            "points": [
+              "Processe várias páginas em lote e compare original e tradução quando quiser."
+            ],
+            "action": "Ver digitalização de documentos"
+          },
+          {
+            "id": "tables",
+            "context": "Horários de transporte · tarifas · preços de serviços",
+            "title": "Tantos números, fáceis de comparar.",
+            "body": "Saídas, tarifas e datas bem organizadas para encontrar o essencial sem procurar por toda parte.",
+            "points": [
+              "Preserve linhas e colunas e confira o original com um toque."
+            ],
+            "action": "Ver tradução de tabelas"
+          }
+        ]
+      },
+      {
+        "id": "watch-read-and-reply",
+        "title": "Continue entendendo vídeos e mensagens.",
+        "body": "O conteúdo fica à vista e sua resposta, na conversa original.",
+        "scenarios": [
+          {
+            "id": "media",
+            "context": "Vídeos estrangeiros · leitura da web · instruções de jogos",
+            "title": "Entenda os conteúdos estrangeiros que você gosta.",
+            "body": "Legendas para vídeos, tradução de tela para páginas. Seu app continua visível e a tradução acompanha o conteúdo.",
+            "points": [
+              "Mova a janela e escolha entre legendas e texto."
+            ],
+            "action": "Ver tradução em qualquer app"
+          },
+          {
+            "id": "messages",
+            "context": "Mensagens de trabalho · rascunhos de e-mail · tom das respostas",
+            "title": "Profissional no trabalho. Natural com os amigos.",
+            "body": "Traduza e ajuste o tom na conversa: respostas claras aos clientes, papo natural com os amigos.",
+            "points": [
+              "Traduza também a área de transferência e insira a resposta diretamente."
+            ],
+            "action": "Ver teclado tradutor do iOS"
+          }
+        ]
+      },
+      {
+        "id": "practice-and-remember",
+        "title": "Entrevistas e viagens: pratique antes de falar.",
+        "body": "Prepare as frases úteis e revise nas pausas do dia.",
+        "scenarios": [
+          {
+            "id": "practice",
+            "context": "Entrevistas de emprego · conversa em viagens · objetivos próprios",
+            "title": "Prepare os momentos importantes com a IA.",
+            "body": "Entrevista, check-in, pedido: personagens de IA ensaiam com você. Pergunte sobre fotos e continue por voz.",
+            "points": [
+              "Objetivos e feedback na hora levam você das frases às situações."
+            ],
+            "action": "Ver assistente de IA"
+          },
+          {
+            "id": "daily-learning",
+            "context": "Deslocamentos · revisão na Tela de Início · Tela Bloqueada",
+            "title": "Poucos minutos também fazem o idioma crescer.",
+            "body": "Palavras e frases esperam na Tela de Início. Ouça, marque para revisar e transforme a espera em progresso.",
+            "points": [
+              "Escolha conteúdo, tema e dificuldade para aprender o que vai usar de verdade."
+            ],
+            "action": "Ver widget de aprendizado"
+          }
+        ]
+      },
+      {
+        "id": "see-and-understand",
+        "title": "Entenda as palavras e como usá-las.",
+        "body": "As fotos mostram o texto. Helper explica o uso.",
+        "scenarios": [
+          {
+            "id": "photos",
+            "context": "Placas · rótulos de produtos · avisos de exposições",
+            "title": "Aponte e leia a tradução no original.",
+            "body": "Placas, rótulos e avisos de exposições: aponte a câmera e a tradução aparece na imagem.",
+            "points": [
+              "Foto, álbum ou tradução ao vivo: continue lendo o que está ao redor."
+            ],
+            "action": "Ver tradução de fotos"
+          },
+          {
+            "id": "helper",
+            "context": "Russo · alemão · revisão gramatical e explicações próprias",
+            "title": "Entenda o sentido e também a gramática.",
+            "body": "Helper explica no seu idioma casos russos e terminações alemãs. Esclareça gramática, erros comuns e uso palavra por palavra.",
+            "points": [
+              "Salve sua área e preferências de explicação para criar seu próprio apoio linguístico."
+            ],
+            "action": "Ver explicações do Helper"
+          }
+        ]
+      }
+    ],
+    "stories": {
+      "sectionLabel": "Tradução no dia a dia",
+      "menu": {
+        "label": "Tradução de cardápios",
+        "title": "De um cardápio,\nao seu pedido.",
+        "body": "Entenda os pratos, escolha adicionais e mostre o pedido original à equipe. Peça o que der vontade.",
+        "action": "Como fazer um pedido"
+      },
+      "reply": {
+        "label": "Tradução de texto e tom",
+        "title": "Sentido certo.\nTom também.",
+        "body": "Profissional quando precisa, próximo quando você quer. Sete tons para cada frase ter a sua voz.",
+        "action": "Conhecer a tradução de texto"
+      },
+      "practice": {
+        "label": "Assistente de IA",
+        "title": "Pratique suas palavras\naté saírem naturalmente.",
+        "body": "Pedidos, entrevistas, viagens: personagens de IA praticam com você a qualquer hora. De uma frase a uma conversa de verdade.",
+        "action": "Conhecer o assistente de IA"
+      },
+      "voice": {
+        "label": "Voz de IA natural",
+        "title": "Entenda.\nE fale com naturalidade.",
+        "body": "A nova geração de voz de IA traz entonação e ritmo naturais. Ouça uma frase, repita e se familiarize com pronúncia e sotaque. Depois converse com a IA para soltar a voz.",
+        "action": "Conhecer a tradução de voz"
+      }
+    },
+    "manifesto": {
+      "seoTitle": "Nosso manifesto",
+      "seoDescription": "Outro idioma não deveria diminuir sua vida. AnyTranslator reúne ferramentas para entender, se expressar e praticar ao morar ou estudar fora e durante o aprendizado.",
+      "eyebrow": "Nosso manifesto",
+      "title": "Outro idioma.\nNão uma vida menor.",
+      "lead": "Longe de casa, você merece coragem para viver com liberdade.",
+      "opening": "Ir para outro país é conhecer mais do mundo e descobrir possibilidades.\nNão deveria significar viver com receio por causa do idioma.",
+      "chapters": [
+        {
+          "title": "Longe de casa, sem se afastar de quem você é.",
+          "paragraphs": [
+            "Você dá voltas no mercado e ainda compra o produto errado. No balcão, entende poucas palavras de uma longa explicação, mas fica sem graça de perguntar de novo. Na aula, surge uma dúvida e você acaba guardando para si.",
+            "Um formulário, um comunicado da escola ou um contrato de aluguel podem tornar difícil um dia simples. Você quer fazer tudo certo, mas até descobrir como começar a falar exige coragem.",
+            "Não faltam ideias nem esforço. Às vezes é o idioma que deixa quem você realmente é fora da conversa."
+          ]
+        },
+        {
+          "title": "A vida apresenta mais de um tipo de desafio.",
+          "paragraphs": [
+            "Pode ser um cardápio incompreensível, um áudio do proprietário, uma explicação no atendimento ou um documento que precisa ser lido com cuidado até o fim.",
+            "Por isso a ajuda também precisa ter várias formas. Comer, responder ou resolver uma tarefa não deveria exigir ficar alternando entre tantas ferramentas.",
+            "AnyTranslator quer deixar ao alcance da mão as funções que realmente importam. Um bloqueio a menos é um pouco mais de confiança para viver bem."
+          ]
+        },
+        {
+          "title": "Entender uma frase. Dar o próximo passo.",
+          "paragraphs": [
+            "Fotografe um rótulo para saber o que compra. Entenda pratos e adicionais para pedir o que deseja. Organize avisos e documentos por página para consultar parágrafos, colunas e detalhes importantes.",
+            "Pessoalmente, legendas bilíngues e voz de IA natural ajudam a transmitir sua mensagem. Formal, próximo ou conciso: escolha o tom e expresse toda a sua ideia.",
+            "Se ainda faltar coragem, pratique primeiro com o assistente de IA. Viagens, aulas ou entrevistas: ganhe familiaridade com suas palavras aos poucos. Entender, se expressar e aprender finalmente cabem na mesma vida."
+          ]
+        },
+        {
+          "title": "Todo idioma merece ser bem compreendido.",
+          "paragraphs": [
+            "Um idioma é mais do que trocar palavras. A dificuldade pode estar em casos e terminações do russo e do alemão, ou em uma expressão que só faz sentido na vida local.",
+            "Seguimos aprimorando contexto, tom e explicações sem esquecer os idiomas menos falados. Menos falantes não significa menos cuidado. Queremos oferecer uma tradução e ajudar você a entender por que se diz assim."
+          ]
+        }
+      ],
+      "everydayEyebrow": "Ferramentas que partem da vida real",
+      "everydayTitle": "De cada “não tenho coragem”,\num próximo passo.",
+      "scenarios": [
+        {
+          "title": "Entenda o cotidiano",
+          "body": "Compre o produto certo, leia o cardápio e pergunte antes de decidir.",
+          "linkLabels": [
+            "Tradução de fotos",
+            "Cardápios e pedidos"
+          ]
+        },
+        {
+          "title": "Resolva o que importa",
+          "body": "Avisos, documentos e tabelas mantêm a estrutura para ler passo a passo.",
+          "linkLabels": [
+            "Digitalização de documentos",
+            "Tradução de tabelas"
+          ]
+        },
+        {
+          "title": "Diga o que é seu",
+          "body": "Entenda o outro e ensaie antes de falar de verdade.",
+          "linkLabels": [
+            "Tradução de voz",
+            "Assistente de IA"
+          ]
+        }
+      ],
+      "closeEyebrow": "AnyTranslator",
+      "closeTitle": "Faça do distante\no seu dia a dia.",
+      "closeBody": "Pergunte o que quiser perguntar. Diga o que quiser dizer.\nQue o distante seja mais que um destino: um lugar onde viver à vontade.",
+      "aboutAction": "Ler nosso manifesto"
+    },
+    "reviews": {
+      "eyebrow": "Avaliações reais da App Store",
+      "title": "Eles já deixaram para trás\na barreira do idioma.",
+      "body": "Reuniões, aprendizado e comunicação diária. Veja o que dizem os usuários.",
+      "ratingAriaTemplate": "{rating} de 5",
+      "sourceAriaTemplate": "Ver a avaliação de {name} na App Store",
+      "storefrontLabel": "Taiwan",
+      "translatedLabel": "Traduzido do chinês tradicional",
+      "quotesById": {
+        "14792569759": "É difícil encontrar um app de tradução tão preciso e com tantas funções",
+        "14689800454": "Bem prático, assinei sem pensar duas vezes",
+        "14634594658": "A tradução é bastante útil em reuniões",
+        "14634322888": "É muito prático para aprender idiomas: um app substitui 3 ou 4 e traduz com muita precisão"
+      }
+    },
+    "askAi": {
+      "title": "AnyTranslator combina com você?",
+      "body": "Conte suas necessidades a uma IA e compare de outro ponto de vista.",
+      "actionTemplate": "Perguntar ao {service}",
+      "prompt": "Com base nas informações públicas de {url}, ajude-me a avaliar se AnyTranslator atende às minhas necessidades. Quero conhecer tradução de texto e voz, digitalização de cardápios e documentos, assistente de IA, aprendizado de idiomas e preços. Pergunte primeiro em quais situações eu usaria o app e compare depois os pontos adequados e inadequados para mim. Identifique claramente funções ou preços que não consiga confirmar e inclua as fontes."
+    },
+    "theme": {
+      "darkMode": "Modo escuro",
+      "lightAction": "Mudar para modo claro",
+      "darkAction": "Mudar para modo escuro"
+    },
+    "macArt": {
+      "ariaLabel": "Ilustração da marca para baixar AnyTranslator no macOS, com o ícone real do app e o texto Mac App Store"
+    },
+    "pricingUnit": {
+      "perBatchTemplate": "{count} fotos/lote"
+    },
+    "imageAlt": {
+      "voice.primary": "Tradução de voz: pergunta sobre fechamento e última entrada do museu, com legendas em inglês e português brasileiro.",
+      "text.primary": "Tradução de texto: versão russa de uma mensagem inglesa de reagendamento, com explicação gramatical em português brasileiro.",
+      "helper.primary": "Explicação do Helper: condicional, tempo e casos de uma mensagem profissional russa de reagendamento, em português brasileiro.",
+      "photos.primary": "Tradução de fotos: português brasileiro sobreposto em um cardápio real de bebidas, junto ao original.",
+      "table.primary": "Tradução de tabelas: horário público do ônibus de Zion com três períodos de datas e primeiras e últimas saídas.",
+      "table.cell-source": "Comparação da tabela original: primeira saída do ônibus aberta para ver o cabeçalho de linha correspondente em inglês.",
+      "document.primary": "Tradução de documento: folheto público de transporte do parque em parágrafos em português brasileiro, com informações de bicicleta e carro.",
+      "document.original": "Imagem original do documento: texto público “Getting Around” em três colunas, página 1/1 do mesmo documento.",
+      "menu.primary": "Tradução de cardápio: cafés e preços organizados, com 2 lattes selecionados e total de 7.80.",
+      "menu.options": "Pedido do cardápio: latte/flat white com leite de aveia, quantidade 2 e total de 7.80.",
+      "menu.staff": "Mostrar à equipe: pedido original de latte/flat white, leite de aveia e quantidade 2, total de 7.80.",
+      "chat.primary": "Cenário de restaurante do assistente de IA: abertura do garçom em inglês iniciante, com tarefas de conversa e frases-chave.",
+      "chat.chat-entry": "Modos do assistente de IA: conversa inteligente, prática por objetivo e por cenário; escolha de idioma e dificuldade antes de começar.",
+      "keyboard.primary": "Teclas nativas do iOS e barra de tradução AnyTranslator, preservando o rascunho de uma mensagem de trabalho em português brasileiro.",
+      "widget.primary": "Prévia do widget de aprendizado nativo: cartão grande sobre café com frase chinesa, pinyin, tradução e dicas em português brasileiro e botões de revisão.",
+      "screen-translation.primary": "Tradução da tela: documento público do NPS sobre direção no Preview, com resultado em português na janela PiP.",
+      "screen-translation.setup": "Ajustes de tradução em qualquer app: legendas de vídeo ou texto na tela, português brasileiro como destino e exibição do original."
+    }
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "marketing": {
+    "hero.title": "Världen är stor.",
+    "hero.accent": "Låt inte språket stå i vägen.",
+    "nav.manifesto": "Vårt manifest",
+    "hero.body": "Förstå menyn och beställ. Översätt meddelandet och svara. Text, foton och videoundertexter tillsammans med naturlig AI-röst och samtalsövning gör främmande språk användbara i vardagen.",
+    "feature.table": "Tabellöversättning",
+    "home.featuresTitle": "11 verktyg för översättning och lärande, alltid med dig.",
+    "home.featuresBody": "Läs menyer och dokument, svara på meddelanden och öva på att prata. Allt du behöver samlat.",
+    "home.blogTitle": "Praktiska guider för att få mer nytta av översättning.",
+    "download.macNote": "Se kompatibla Mac-modeller och systemkrav i App Store. Översättningstangentbord, inlärningswidget och översättning i andra appar är för iOS/iPadOS.",
+    "features.title": "Översättning, samtal och lärande i en app.",
+    "features.body": "Förstå menyer, dokument och tabeller, svara på meddelanden, följ videor och öva tal med AI-assistenten. 11 verktyg knyter ihop läsning, skrivande, lyssnande och tal.",
+    "pricing.allowance": "Se den kostnadsfria kvoten i appen",
+    "pricing.more": "Välj Standard eller Röst efter dina behov",
+    "pricing.manage": "Återställ köp i appen och hantera förnyelse och uppsägning hos Apple. Användningskortet visar återstående kvot och uppdateringsdatum.",
+    "pricing.voiceNote": "Talöversättning och videoundertexter delar talminuter. Under AI-assistentens röstanslutning använder text, tal och foton assistentminuter. Vanliga text- och bildfrågor samt skärmtext använder översättningar. Se saldo och uppdateringsdatum i appen.",
+    "article.voice": "Vilken röstfunktion ska du välja?",
+    "affiliate.processTitle": "Så fungerar samarbetet",
+    "faq.FreeQ": "Kan jag börja gratis?",
+    "faq.FreeA": "Prova översättning, AI-assistent, röst och widgetens grundinnehåll gratis; se kvoter i appen. PRO stöder flersidig skanning, fler Helper-inställningar och eget inlärningsinnehåll. Röst ger också fler minuter.",
+    "faq.AgentQ": "Vad skiljer AI-assistentens röst från talöversättning?",
+    "faq.AgentA": "Använd talöversättning ansikte mot ansikte med tvåspråkiga undertexter och naturlig AI-uppläsning. Använd AI-assistentens röst för frågor och talövning: lyssna på exempel och öva vidare. De använder separata minutkvoter.",
+    "voice.eyebrow": "Naturlig AI-röst",
+    "voice.title": "Förstå orden. Säg dem naturligt.",
+    "voice.body": "En ny generation AI-röster ger naturlig intonation och rytm. Lyssna på en mening och härma, bli bekant med uttal och accent och öva sedan samtal med AI.",
+    "voice.action": "Utforska talöversättning",
+    "faq.ScanQ": "När väljer jag meny, dokument eller tabell?",
+    "faq.ScanA": "Meny låter dig välja rätter och tillval och visa beställningen på originalspråket. Dokument ordnar stycken sida för sida. Tabell bevarar rader och kolumner. Gratis: 1 bild åt gången. PRO: upp till 10 per omgång. Hitta resultaten i skanningshistoriken.",
+    "faq.AccuracyQ": "Hur kontrollerar jag ryska och tyska kasus och ändelser?",
+    "faq.AccuracyA": "Använd Helpers Grammatik, Vanliga fel och Ord för ord för att förstå ryska och tyska kasus och ändelser. Om originalmeningen ska ändras ber du AI-assistenten korrekturläsa och förklara varför.",
+    "article.work": "Skriv över språkgränserna: rysk och tysk böjning och tonen i svaret",
+    "about.body": "Översättning, förklaring och övning hänger ihop så att du kan fokusera på kommunikationen.",
+    "about.story": "När du förstår kan du svara, fråga vidare, beställa eller minnas en mening. AnyTranslator gör nästa steg enklare.",
+    "privacy.body": "Översättning och AI-funktioner behandlas online. Se integritetspolicyn om data och behörigheter.",
+    "affiliate.status": "Samarbeten diskuteras för närvarande individuellt. Innehåll och provisionsvillkor bestäms separat.",
+    "download.iosNote": "Översättning av text, tal, foton, menyer, dokument och tabeller samt AI-assistent, skärmöversättning, tangentbord och inlärningswidget.",
+    "download.ios": "Hämta gratis för iOS",
+    "feature.chat": "AI-assistent",
+    "home.statement": "Från att förstå en mening till att prata själv.",
+    "home.statementBody": "Hitta huvudpunkter i foton, svara med tolkhjälp och lyssna på naturliga AI-exempel inför resan eller intervjun. Återkoppling och repetition tar användbara uttryck in i vardagen.",
+    "case.study.title": "Öva på det du vill säga tills du kan säga det högt.",
+    "case.study.body": "Välj ett mål för resor, arbete eller vardag, eller skapa egna scenarier och mål. Prata med AI, se återkoppling och öva igen så att dina förberedda uttryck kommer till användning.",
+    "article.chat": "Din språkcoach på språng: bilder, tolkning och talövning",
+    "article.learning": "Ta med de övade meningarna in i vardagen.",
+    "feature.screen-translation": "Översättning i alla appar",
+    "article.screen": "Undertexter och webbsidor över appgränserna",
+    "case.media.title": "Se videor och läs webbsidor med översättningen intill.",
+    "case.media.body": "Videon fortsätter och webbsidan är kvar. Jämför undertexter eller synlig text i bild-i-bild och fråga AI-assistenten om meningar du vill förstå bättre."
+  },
+  "features": {
+    "text": {
+      "title": "Textöversättning: tydlig betydelse och rätt ton.",
+      "summary": "Sju toner för meddelanden och mejl efter mottagaren. Förstå rysk och tysk böjning med Helper och låt AI-assistenten korrekturläsa originalmeningen.",
+      "heading": "Välj ton efter vem du skriver till.",
+      "body": "Skriv artiga arbetsförfrågningar, prata naturligt med vänner eller korta ned långa meddelanden. Lyssna på AI-uttal och spara bra meningar. Helper förklarar ryska och tyska kasus och ändelser; AI-assistenten hjälper med korrektur.",
+      "steps": [
+        "Sju toner från formella brev till vardagssamtal.",
+        "Helper förklarar rysk och tysk böjning, och AI-assistenten korrekturläser originalmeningen på begäran.",
+        "Lyssna på naturligt AI-uttal, spara meningar eller ta med text som utkast till AI-assistenten."
+      ],
+      "sections": [
+        {
+          "title": "Förstå ryska och tyska kasus och ändelser",
+          "body": "Grammatik, vanliga fel och ordanalys förklarar ryska kasus och tyska artiklar och ändelser på ditt språk. Förstå sambanden i meningen och välj sedan formulering."
+        },
+        {
+          "title": "Sju toner efter mottagaren",
+          "body": "Automatisk, artig, humoristisk, brev, vänlig, kortfattad och flirtig: en lämplig ton från arbete till internationella kontakter.",
+          "items": [
+            "Automatisk: anpassar tonen efter originaltext och sammanhang.",
+            "Artig: för förfrågningar, frågor och arbetsmeddelanden.",
+            "Humoristisk: lättar upp passande samtal.",
+            "Brev: för mejl och brev.",
+            "Vänlig: naturligt och avslappnat, som mellan bekanta.",
+            "Kortfattad: förkortar formuleringen; kontrollera viktig information.",
+            "Flirtig: lekfull och kärleksfull ton när du lär känna människor från andra länder."
+          ]
+        },
+        {
+          "title": "Ryskt och tyskt korrektur: förstå orsaken innan du väljer formulering",
+          "body": "Automatisk ton behåller originalet om hela texten redan är på målspråket. Kontrollera kasus, ändelser och grammatik med Helper eller be AI-assistenten korrekturläsa originalmeningen."
+        }
+      ]
+    },
+    "photos": {
+      "title": "Fotoöversättning: översättningen direkt på orden.",
+      "summary": "Skyltar, etiketter och anslag: rikta kameran och läs översättningen på bilden.",
+      "heading": "Rikta kameran mot främmande text och läs på bilden.",
+      "body": "Rikta kameran mot en skylt och läs översättningen direkt på bilden. Ta ett foto eller välj från biblioteket. Tryck på texten för detaljer och behåll ledtrådarna från omgivningen.",
+      "steps": [
+        "Översättning i realtid ovanpå texten gör skyltar läsbara direkt.",
+        "Ta ett foto eller välj från biblioteket och översätt texten i bilden.",
+        "Se översättningsdetaljer med originalbildens sammanhang kvar."
+      ]
+    },
+    "voice": {
+      "title": "Talöversättning: häng med i båda sidor av samtalet.",
+      "summary": "Tvåspråkiga undertexter följer talet och naturlig AI-röst förmedlar dina ord. Fyra lägen hjälper båda att förstå.",
+      "heading": "Låt översättningen förmedla dina ord ansikte mot ansikte.",
+      "body": "Fråga om vägen, checka in och samtala med tvåspråkiga undertexter och naturlig AI-röst som förmedlar betydelse och ton. Fyra ljudlägen för olika situationer. Läs sammanfattningen och spela upp översättningar efteråt för att lära användbara uttryck.",
+      "steps": [
+        "Tvåvägssamtal läser bådas översättningar; Tala åt mig spelar upp din.",
+        "Lyssna privat använder telefonens öronhögtalare eller hörlurar; Endast undertexter passar när det ska vara tyst.",
+        "Gå igenom samtalet, spela upp AI-översättningar och kopiera eller dela sammanfattningens huvudpunkter."
+      ],
+      "sections": [
+        {
+          "title": "Naturlig AI-uppläsning med ton och rytm",
+          "body": "En ny generation röstmodeller skapar översatt tal med naturlig intonation och små känslonyanser efter innehållet. Använd det i samtal och lyssna och härma senare för att bli bekant med uttal och accent."
+        }
+      ]
+    },
+    "menu": {
+      "title": "Menyskanning: från att förstå rätterna till att visa din beställning.",
+      "summary": "Fotografera menyn, välj rätter, priser och tillval och visa beställningen på originalspråket.",
+      "heading": "Ta bild av menyn, välj och visa personalen.",
+      "body": "Gör en meny på främmande språk till valbara rätter: namn, beskrivningar, priser och tillgängliga tillval samlas. Välj antal och kommentarer, visa originalbeställningen och se kända priser summerade per valuta.",
+      "steps": [
+        "Namn, beskrivningar och priser blir tydliga matval.",
+        "Välj antal, storlekar, tillgängliga tillval och kommentarer.",
+        "Visa originalbeställningen med kända priser summerade per valuta."
+      ]
+    },
+    "document": {
+      "title": "Dokumentskanning: ordna sidor, bevara stycken och huvudpunkter.",
+      "summary": "Fotografera flera sidor och läs stycken, listor och tabeller. Jämför med originalet och öppna igen från historiken.",
+      "heading": "Struktur i långa dokument, överblick i läsningen.",
+      "body": "Anslag, resebroschyrer och flersidiga papper ordnas automatiskt i rubriker, stycken och listor. Jämför med originaltext och bilder eller hitta dokumentet i historiken utan att bearbeta det igen.",
+      "steps": [
+        "Foton ordnas sida för sida med rubriker, stycken och listor bevarade.",
+        "Tryck för att jämföra originaltext och bild så att inga detaljer missas.",
+        "Sök i skanningshistoriken och hitta dokumentet igen."
+      ]
+    },
+    "keyboard": {
+      "title": "Tangentbordsöversättning: förbered svaret i appen du använder.",
+      "summary": "Svara utan att växla fram och tillbaka. Skriv eller använd iOS-diktering, översätt och byt ton i textfältet och skicka själv.",
+      "heading": "Skriv färdigt svaret i samma app.",
+      "body": "Översätt chattar och arbetsmeddelanden och justera tonen direkt i textfältet. Skriv eller använd iOS-diktering. Även urklipp kan översättas och infogas direkt.",
+      "steps": [
+        "Översätt i textfältet, ersätt utkastet och skriv vidare.",
+        "Skriv eller använd iOS-diktering och välj språk och ton.",
+        "Översätt urklipp, kopiera eller infoga vid markören."
+      ]
+    },
+    "helper": {
+      "title": "Helper förklarar grammatik och användning.",
+      "summary": "Lär dig ryska kasus och tyska ändelser på ditt språk. Spara egna förklaringsönskemål en gång och använd dem för nya meningar.",
+      "heading": "Förstå uttrycken och lär dig använda dem.",
+      "body": "Kasus, ändelser och meningsmönster i original och översättning förklaras på ditt språk. Välj grammatik, vanliga fel eller ordanalys. Spara fackområde, inlärningsmål och förklaringsdjup som egna instruktioner för nästa mening.",
+      "steps": [
+        "Grammatik, vanliga fel och ordanalys visar hur meningen är uppbyggd.",
+        "Utforska synonymer, exempel, underförstådd betydelse och svarsförslag.",
+        "Anpassa område, mål och djup och spara förklaringsinstruktionerna för återanvändning."
+      ],
+      "sections": [
+        {
+          "title": "Förstå varför ryska och tyska böjs",
+          "body": "Exempel i sitt sammanhang: från rysk instrumentalis till tysk dativ, och hur kasus, artiklar och substantivändelser ändras tillsammans.",
+          "items": [
+            "Ryska: Я говорю с мой друг. → Я говорю с моим другом. с i betydelsen ”tillsammans med” kräver instrumentalis, så både мой och друг får nya ändelser.",
+            "Tyska: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit kräver dativ; det svagt böjda Kunde blir Kunden."
+          ]
+        },
+        {
+          "title": "Spara förklaringsinstruktioner till nya meningar",
+          "body": "Spara till exempel ”Förklara ryska kasus på mitt språk” eller ”Förklara tyska ändelser”. Nya meningar får samma bekanta förklaringssätt, så att du kan fokusera på det du vill lära dig."
+        }
+      ]
+    },
+    "widget": {
+      "title": "Inlärningswidget: repetition nära till hands.",
+      "summary": "Hemskärmen blir ett repetitionskort: läs uttryck, lyssna på AI-uttal och markera för repetition eller som inlärt. Välj innehåll, ämne och nivå.",
+      "heading": "Gör små pauser till repetition.",
+      "body": "Lyssna på AI-uttal från hemskärmen, härma och markera som inlärt. Från låsskärmen öppnar du appen; Standby kan användas där det stöds. Välj ord, ordkombinationer, idiom och meningar samt ämne, nivå och egna instruktioner.",
+      "steps": [
+        "Läs uttryck, lyssna på AI-uttal och härma från hemskärmen.",
+        "Markera för repetition eller som inlärt inför nästa inlärningsrunda.",
+        "Välj innehållstyp, ämne och nivå och lägg till egna instruktioner."
+      ]
+    },
+    "table": {
+      "title": "Tabellöversättning: jämför rader och kolumner och förstå varje siffra.",
+      "summary": "Tidtabeller och prislistor blir rader och kolumner. Rulla vågrätt i breda tabeller och se tider, priser och enheter tillsammans.",
+      "heading": "Följ rader och kolumner och läs siffrorna tydligt.",
+      "body": "Läs även sifferrik information som tabell. Ordna tidtabeller och prislistor i rader och kolumner och rulla vågrätt i breda tabeller. Öppna originaltext eller bild för att kontrollera tider, belopp och enheter.",
+      "steps": [
+        "Rader och kolumner gör tider och priser lätta att jämföra.",
+        "Rulla vågrätt och se alla fält och enheter i breda tabeller.",
+        "Jämför originaltext och bild och öppna igen från skanningshistoriken."
+      ]
+    },
+    "chat": {
+      "title": "AI-assistent",
+      "summary": "Hitta huvudpunkter i bilder, få tolkning i realtid och öva tal med naturlig AI-röst. En språkcoach för resor, arbete och vardag.",
+      "heading": "Språkcoachen på språng hjälper dig att använda språket.",
+      "body": "Öva beställningar före resan och formuleringar före jobbet eller fråga om en oklar bild. AI samtalar naturligt och visar exempel. Realtidstolkning och scenarioövningar tar dig från förståelse till att våga prata.",
+      "steps": [
+        "Hitta huvudpunkter i foton och förstå skyltar, meddelanden och bilder.",
+        "Öva scenarier och mål för resor, arbete och vardag.",
+        "Lyssna på naturliga exempel, härma och öva igen samt spara användbara uttryck."
+      ],
+      "sections": [
+        {
+          "title": "Fråga om bilder och få tolkhjälp där du är",
+          "body": "Lägg till ett foto av en skylt, ett anslag eller meddelande och låt AI samla huvudpunkter, påminnelser och nästa steg. Använd röstchatt eller realtidstolkning när språket står i vägen.",
+          "items": [
+            "Röstsamtal: fråga högt och prata vidare.",
+            "Prata engelska med mig: gör övningen till ett naturligt samtal.",
+            "Tolka åt mig i realtid: knyt ihop olika språk.",
+            "Låt AI förstå ett foto: hitta huvudpunkter och nästa steg."
+          ]
+        },
+        {
+          "title": "Öva språket du behöver i ditt eget liv",
+          "body": "Från restaurang och flygplats till intervju och arbete: välj ett scenario för samtalsövning eller ett mål för stegvis lärande. Skapa också egna scenarier och mål. Fokus ligger på att svara högt och förbereda nästa riktiga samtal.",
+          "items": [
+            "Scenarioövning: spela en roll och slutför samtalsuppgifter.",
+            "Målövning: öva uttryck först och använd dem sedan i ett scenario.",
+            "Eget lärande: skapa scenarier eller mål för ett särskilt tillfälle."
+          ]
+        },
+        {
+          "title": "Naturliga exempel gör det lättare att prata",
+          "body": "Be AI visa exempel långsammare och öva uttal, accent och rytm. Använd sedan meningarna i naturliga samtal för att komma närmare verklig kommunikation."
+        },
+        {
+          "title": "Förstå återkopplingen och prata smidigare nästa gång",
+          "body": "Jämför originalet med naturliga formuleringar, lyssna på exempel och läs orsakerna. Be också om korrektur av korta ryska, tyska eller andra meningar. Spara uttryck, repetera och öppna samtal från historiken inför nästa gång."
+        }
+      ]
+    },
+    "screen-translation": {
+      "title": "Skärmöversättning gör undertexter och text begripliga.",
+      "summary": "Stanna i videon eller på webbsidan och läs undertexter och skärmtext i bild-i-bild. Jämför original och översättning och läs nyttiga uttryck igen från historiken.",
+      "heading": "Förstå innehållet i appen du redan använder.",
+      "body": "Välj rätt läge för ljudet i en främmande video eller texten på en webbsida. Bild-i-bild visar original och översättning tillsammans, så videor, artiklar och spelmeddelanden kräver färre appbyten.",
+      "steps": [
+        "Videoundertexter: gör uppspelat tal till undertexter du förstår.",
+        "Skärmtext: läs synlig text på webbsidor, i chattar och spel.",
+        "Bild-i-bild och historik: jämför under tiden och läs igen senare."
+      ],
+      "sections": [
+        {
+          "title": "Följ videon med undertexter",
+          "body": "Översätt ljud från andra appar till undertexter med originalet intill. Följ videor, livesändningar och språkinlärning på ett bekant språk medan innehållet fortsätter."
+        },
+        {
+          "title": "Läs vidare med skärmtext",
+          "body": "Läs översatt synlig text från webbsidor, chattar, spel och dokument i bild-i-bild. Flytta fönstret nära önskat stycke eller rulla vidare på originalsidan."
+        },
+        {
+          "title": "Översättningen följer med, nyttiga uttryck sparas",
+          "body": "Jämför översättning och original under tiden. Färdig originaltext och översättning sparas i historiken för senare läsning. Flytta själv ett uttryck till AI-assistenten för att fråga om betydelsen eller öva användningen.",
+          "items": [
+            "Kräver iOS/iPadOS 16 eller senare, bild-i-bild och internet. Skyddat innehåll kanske inte kan översättas."
+          ]
+        }
+      ]
+    }
+  },
+  "workflows": {
+    "travel": [
+      "Använd talöversättning vid incheckning och bekräfta rumstyp, deposition och utcheckningstid med undertexterna.",
+      "Öva incheckning och följdfrågor med AI-assistenten inför det riktiga samtalet.",
+      "Fotografera boenderegler som Dokument, kontrollera tider och avgifter och öppna igen från skanningshistoriken."
+    ],
+    "work": [
+      "Välj tonen i arbetsmeddelanden efter mottagaren: artiga förfrågningar eller korta svar.",
+      "Förstå ryska och tyska kasus och ändelser med Helper och låt AI-assistenten korrekturläsa originalet.",
+      "Ge bakgrund för att jämföra svar och gå tillbaka till den ursprungliga appen för att skicka."
+    ],
+    "dining": [
+      "Gör menyfoton till valbara rätter, välj antal och tillval och visa originalbeställningen.",
+      "Prata med personalen via talöversättning om portioner, ingredienser och tillagning.",
+      "Öva följdfrågor med AI-assistenten och bekräfta allergibehov direkt med personalen."
+    ],
+    "messages": [
+      "Byt språk och ton i det ursprungliga textfältet utan att hoppa mellan appar.",
+      "Jämför långa meddelanden med originaltexten, lyssna på uttal och spara bra meningar.",
+      "Ge AI-assistenten bakgrunden och hitta ett svar som passar situationen."
+    ],
+    "reading": [
+      "Välj Dokument för anslag, broschyrer och flersidiga papper och läs stycken, listor och tabeller sida för sida.",
+      "Välj Tabell för tidtabeller och prislistor, rulla vågrätt och kontrollera originaltext och enheter.",
+      "Ta svåra meningar till textöversättning och låt Helper förklara användningen."
+    ],
+    "study": [
+      "Öva scenarier och sätt mål med AI-assistenten inför nästa riktiga samtal.",
+      "Förstå grammatik, ord och exempel med Helper och red ut det svåra.",
+      "Lyssna på AI-uttal och härma vanliga meningar i inlärningswidgeten under korta pauser."
+    ],
+    "media": [
+      "Följ videor med undertexter och läs webbsidor med skärmtext, med original och översättning tillsammans.",
+      "Kopiera uttryck till AI-assistenten, fråga om betydelsen, jämför formuleringar och öva igen.",
+      "Välj en passande ton i textöversättning och använd det du förstått i ditt svar."
+    ]
+  },
+  "articles": {
+    "voice.intro": "För samtal ansikte mot ansikte: tvåspråkiga undertexter och naturlig AI-uppläsning. För exempel och talövning: AI-assistentens röst. Välj videoundertexter i Översättning i alla appar för videor från andra appar.",
+    "voice.tip": "Välj bådas språk och ljudläge före samtalet. Spela upp AI-översättningen igen och öva intonation och rytm. Gå igenom samtal och sammanfattning och spara nyttiga uttryck.",
+    "voice.limit": "Tvåvägssamtal passar ansikte mot ansikte. Lyssna privat använder öronhögtalare eller hörlurar; Endast undertexter passar när ljud inte kan spelas upp. Starta videoundertexter från Översättning i alla appar. iOS avgör vilket innehåll som kan fångas.",
+    "menu.intro": "Välj Meny under Ordna på fotosidan. Lägg till raka, tydliga foton av hela sidan för att ordna namn, ingredienser, portioner och priser som rätter.",
+    "menu.tip": "Läs rätter och priser, välj antal, storlekar och tillgängliga tillval och lägg till kommentarer. Öppna originalbeställningen och visa rätter, val och antal för personalen.",
+    "menu.limit": "Kända priser summeras separat per valuta. Okända priser ger ingen säker totalsumma. Bekräfta ingredienser, allergener och tillagning direkt med personalen och visa sedan beställningen själv.",
+    "work.intro": "Översätt först ryska eller tyska för att förstå och välj sedan svarets ton. Helper förklarar kasus och ändelser. Be uttryckligen AI-assistenten korrekturläsa originalmeningen.",
+    "work.tip": "Välj ton efter mottagare: Artig för arbetsförfrågningar, Brev för mejl och Vänlig för bekanta. Låt Helper förklara svåra meningar och ge AI-assistenten bakgrund för att jämföra svar.",
+    "work.limit": "Automatisk ton bevarar originalet när hela texten redan är på målspråket. För att ändra kasus, ändelser eller grammatik, förstå orsaken med Helper och be sedan uttryckligen AI-assistenten om korrektur.",
+    "mac.intro": "Översätt text och fråga AI även på Mac. Kontrollera först i App Store om din modell och ditt system stöder hämtning.",
+    "mac.tip": "Efter hämtningen kan du översätta text och använda AI-assistenten. På fotosidan kan du välja en bildfil eller klistra in en bild. Se kompatibla modeller och systemkrav på enhetens butikssida.",
+    "mac.limit": "Översättningstangentbord, widget och översättning i andra appar är främst för kompatibla iPhone-/iPad-enheter. Tillgängliga funktioner visas i appen på respektive plattform.",
+    "keyboard.intro": "Lägg till tangentbordet i iOS enligt appens guide och aktivera Full åtkomst för onlineöversättning. Skriv eller använd systemdiktering i kompatibla fält och översätt och justera sedan tonen.",
+    "keyboard.tip": "Skriv utkastet eller använd inbyggd iOS-diktering och välj språk och ton. Verktygen kan också översätta urklipp, kopiera översättningen eller infoga den vid markören.",
+    "keyboard.limit": "Tangentbord och diktering beror på app, iOS och språk. Skriv i stället eller översätt i huvudappen vid behov. Språkpaket för inmatning kan hämtas enligt guiden.",
+    "chat.intro": "Använd AI-assistenten som språkcoach på språng: förstå bilder, få realtidstolkning eller öva tal för resor och arbete. Börja med en fråga och ta med förberedelserna ut i vardagen.",
+    "chat.tip": "Börja med scenarier och mål som beställning eller jobbintervju, eller skapa egna. Be AI visa långsammare, öva intonation och rytm, fortsätt samtalet, se återkoppling och spara meningar för ny övning.",
+    "chat.limit": "Kräver nät och användningskvot samt mikrofonbehörighet för tal. Funktioner beror på version, språk och tjänstens status. Kontrollera viktiga uppgifter mot källorna. Egna mål ersätter befintlig plan och framsteg. Se återstående kvot i appen.",
+    "learning.intro": "Öva på nästa samtal du faktiskt ska ha. Välj mål och scenarier med AI-assistenten och gör meningarna till dina egna genom återkoppling och repetition.",
+    "learning.tip": "Fokusera på en situation åt gången: svara först och jämför med en naturlig formulering. Be AI visa intonation och rytm, förstå användningen med Helper och repetera med inlärningswidgeten.",
+    "learning.limit": "AI-övning kräver nät och användningskvot. Inlärningswidgeten kräver iOS 17 eller senare. Eget innehåll och inställningar beror på abonnemang.",
+    "screen.intro": "Ha översättningen synlig när du ser videor och läser webbsidor. Förstå ljud med undertexter och innehåll med skärmtext och jämför i bild-i-bild. Viktiga uttryck kan läsas igen senare.",
+    "screen.tip": "Använd undertexter för video och skärmtext för webbsidor. Flytta bild-i-bild-fönstret eller rulla originalsidan till nästa stycke. Stoppa skärmsändningen efteråt och öppna önskade uttryck från historiken.",
+    "screen.limit": "Kräver iOS/iPadOS 16 eller senare, bild-i-bild och nät. Skyddat innehåll kanske inte kan översättas. Undertexter använder talminuter; skärmtext använder översättningar. Se återstående kvot i appen."
+  },
+  "scan": {
+    "title": "Menyer, dokument och tabeller med varsitt tydligt lässätt.",
+    "body": "Menyer blir valbara rätter, dokument blir stycken och tabeller behåller rader och kolumner. Skyltar och etiketter översätts direkt på bilden."
+  },
+  "documentArticle": {
+    "title": "Dokumentskanning: ordna sidor och läs med originalet intill",
+    "intro": "Välj Dokument under Ordna på fotosidan för pappersanslag, resebroschyrer eller flersidiga dokument. Lägg till bilder i ordning. Jämför ordnade stycken, listor och tabeller med originalet.",
+    "tip": "Ta tydliga bilder av alla sidor, kontrollera ordningen och skicka tillsammans. Tryck på text för originalet eller öppna varje sidas originalbild. Rulla vågrätt i breda tabeller och sök historiken efter titel eller innehållstyp.",
+    "limit": "Välj Meny för rätter, Tabell för tidtabeller och prislistor och Dokument för övriga sidor. Jämför otydliga delar med originalbilden eller ta ett nytt foto."
+  },
+  "pricing": {
+    "standardTitle": "Standard",
+    "voiceTitle": "Röst",
+    "freeAllowance": "Hämta gratis och prova översättning, AI-assistent och tal. Se kvoter i appen.",
+    "freeScan": "Bearbeta 1 foto åt gången",
+    "freeHelper": "Spara 1 egen Helper-inställning",
+    "standardWeeklyAllowance": "150 minuter talöversättning/videoundertexter och 10 minuter AI-assistentröst per vecka.",
+    "standardMonthlyAllowance": "Månads- och årsabonnemang: 600 minuter talöversättning/videoundertexter och 30 minuter AI-assistentröst per månad.",
+    "voiceWeeklyAllowance": "600 minuter talöversättning/videoundertexter och 45 minuter AI-assistentröst per vecka.",
+    "voiceMonthlyAllowance": "Månads- och årsabonnemang: 2 400 minuter talöversättning/videoundertexter och 135 minuter AI-assistentröst per månad.",
+    "unlimitedTranslations": "Betalda abonnemang har obegränsade översättningar av text, foton, skrivna AI-frågor och skärmtext.",
+    "scanAllowance": "Upp till 10 foton per omgång",
+    "helperAllowance": "Nuvarande betalda abonnemang kan spara 5 Helper-inställningar",
+    "widgetAllowance": "Välj innehåll, ämne och nivå",
+    "annualQuotaNote": "Årlig betalning är faktureringsperioden; röst- och AI-assistentkvoter uppdateras ändå månadsvis.",
+    "quotaNote": "Vanliga text- och bildfrågor använder översättningar. Under AI-assistentens röstanslutning delar text, tal och foton assistentminuter. Videoundertexter och talöversättning delar talminuter; skärmtext använder översättningar.",
+    "legacyNote": "Äldre abonnemang och gratisplaner kan ha andra kvoter. Se saldo och nästa uppdatering på appens användningskort.",
+    "standardNote": "Vardagsöversättning, bildläsning och språkövning med de vanliga verktygen samlade.",
+    "voiceNote": "Mer tid att prata med talöversättning, videoundertexter och AI-övning.",
+    "voiceLabel": "Talöversättning och videoundertexter",
+    "chatVoiceLabel": "Röstsamtal med AI-assistenten",
+    "aiTextLabel": "Text- och bildfrågor till AI-assistenten",
+    "freeWidget": "Grundläggande repetition av ord och meningar",
+    "scanLabel": "Skanning av menyer, dokument och tabeller",
+    "freeAccess": "Prova gratis"
+  },
+  "extras": {
+    "homeScenarios": [
+      {
+        "id": "travel-and-dining",
+        "title": "Fråga och beställ på resan.",
+        "body": "Från hotellreception till utländska matbord: fråga tydligt och beställ det du vill ha.",
+        "scenarios": [
+          {
+            "id": "travel",
+            "context": "Fråga om vägen · Hotellincheckning · Transport",
+            "title": "Red ut boendedetaljerna på plats.",
+            "body": "Fråga om rumstyp, deposition och utcheckningstid på ditt eget språk.",
+            "points": [
+              "Jämför tvåspråkiga undertexter direkt och växla mellan fyra uppspelningslägen efter situationen."
+            ],
+            "action": "Se talöversättning"
+          },
+          {
+            "id": "dining",
+            "context": "Restaurangbeställning · Kaffetillval · Önskemål till maten",
+            "title": "Förstå rätterna och beställ även tillval tydligt.",
+            "body": "Se namn, priser och tillval tillsammans, välj antal och visa originalbeställningen.",
+            "points": [
+              "Separata summor per valuta ger överblick vid beställningen."
+            ],
+            "action": "Se menyskanning och beställning"
+          }
+        ]
+      },
+      {
+        "id": "documents-and-tables",
+        "title": "Stycken i dokument. Rader och kolumner i tabeller.",
+        "body": "Förstå boenderegler och tidtabeller med den ursprungliga strukturen.",
+        "scenarios": [
+          {
+            "id": "documents",
+            "context": "Pappersanslag · Resebroschyrer · Boenderegler",
+            "title": "Även många papper blir lättlästa.",
+            "body": "Fotografera anslag, boenderegler och broschyrer och få tydliga stycken.",
+            "points": [
+              "Bearbeta flera sidor tillsammans och jämför original och översättning."
+            ],
+            "action": "Se dokumentskanning"
+          },
+          {
+            "id": "tables",
+            "context": "Tidtabeller · Biljettpriser · Tjänsteprislistor",
+            "title": "Jämför täta siffror med en blick.",
+            "body": "Avgångar, priser och datum står ordnade så att viktiga uppgifter blir lätta att hitta.",
+            "points": [
+              "Rader och kolumner bevaras; tryck för att kontrollera originalet."
+            ],
+            "action": "Se tabellöversättning"
+          }
+        ]
+      },
+      {
+        "id": "watch-read-and-reply",
+        "title": "Förstå videor och meddelanden utan avbrott.",
+        "body": "Innehållet stannar i bild, svaret i den ursprungliga konversationen.",
+        "scenarios": [
+          {
+            "id": "media",
+            "context": "Videor på främmande språk · Webbläsning · Spelinstruktioner",
+            "title": "Fortsätt förstå innehållet du gillar.",
+            "body": "Översatta undertexter för videor och skärmöversättning för webbsidor. Appen du tittar på är kvar medan översättningen följer innehållet.",
+            "points": [
+              "Flyttbart bild-i-bild med val mellan undertext- och textläge."
+            ],
+            "action": "Se översättning i alla appar"
+          },
+          {
+            "id": "messages",
+            "context": "Arbetsmeddelanden · Mejlutkast · Svarston",
+            "title": "Professionella jobbsvar, naturligt prat med vänner.",
+            "body": "Översätt och byt ton i den befintliga konversationen. Svara kunder tydligt och vänner naturligt.",
+            "points": [
+              "Översätt även urklipp och infoga svaret direkt."
+            ],
+            "action": "Se översättningstangentbord för iOS"
+          }
+        ]
+      },
+      {
+        "id": "practice-and-remember",
+        "title": "Öva före intervjun och resan.",
+        "body": "Lär in uttrycken du vill använda och repetera i vardagens pauser.",
+        "scenarios": [
+          {
+            "id": "practice",
+            "context": "Jobbintervju · Resesamtal · Egna inlärningsmål",
+            "title": "Öva med AI inför viktiga ögonblick.",
+            "body": "Intervju, incheckning och beställning: AI-roller övar med dig. Fråga om ett oklart foto och fortsätt med rösten.",
+            "points": [
+              "Målbaserat lärande med direkt återkoppling tar dig från uttryck till scenarier."
+            ],
+            "action": "Se AI-assistenten"
+          },
+          {
+            "id": "daily-learning",
+            "context": "Pendlarpauser · Repetition på hemskärmen · Låsskärm",
+            "title": "Små pauser kan också bygga språkkunskaper.",
+            "body": "Se orden och meningarna du vill lära dig på hemskärmen, lyssna på uttal och markera för repetition. Gör väntan till framsteg.",
+            "points": [
+              "Välj innehåll, ämne och nivå och lär det du faktiskt behöver."
+            ],
+            "action": "Se inlärningswidgeten"
+          }
+        ]
+      },
+      {
+        "id": "see-and-understand",
+        "title": "Förstå texten och hur den används.",
+        "body": "Läs texten i foton och låt Helper förklara användningen.",
+        "scenarios": [
+          {
+            "id": "photos",
+            "context": "Vägskyltar · Produktetiketter · Utställningsanslag",
+            "title": "Rikta kameran och läs översättningen på originalbilden.",
+            "body": "Vägskyltar, produktetiketter och utställningsanslag: rikta kameran och se översättningen på originalbilden.",
+            "points": [
+              "Foto, bildbibliotek och realtidsöversättning hjälper dig att läsa texten framför dig."
+            ],
+            "action": "Se fotoöversättning"
+          },
+          {
+            "id": "helper",
+            "context": "Ryska · Tyska · Grammatikkorrektur och egna förklaringar",
+            "title": "Förstå både betydelsen och grammatiken.",
+            "body": "Låt Helper förklara ryska kasus och tyska ändelser på ditt språk. Red ut grammatik, vanliga fel och ordens användning.",
+            "points": [
+              "Spara fackområde och förklaringsönskemål för din egen språkhjälpare."
+            ],
+            "action": "Se Helper-förklaringar"
+          }
+        ]
+      }
+    ],
+    "stories": {
+      "sectionLabel": "Översättning i vardagen",
+      "menu": {
+        "label": "Menyöversättning",
+        "title": "Från en meny\ntill en beställning.",
+        "body": "Förstå rätterna och välj tillval. Visa originalbeställningen för personalen och beställ det du vill ha.",
+        "action": "Se hur du beställer"
+      },
+      "reply": {
+        "label": "Textöversättning och ton",
+        "title": "Rätt betydelse.\nRätt ton.",
+        "body": "Professionell när det behövs, vänlig när det passar. Sju toner får varje mening att låta som dina egna ord.",
+        "action": "Utforska textöversättning"
+      },
+      "practice": {
+        "label": "AI-assistent",
+        "title": "Öva på dina ord,\ntills de kommer naturligt.",
+        "body": "Beställningar, intervjuer och resor: en AI-roll är alltid redo att öva. Från en mening till ett samtal som fortsätter.",
+        "action": "Möt AI-assistenten"
+      },
+      "voice": {
+        "label": "Naturlig AI-röst",
+        "title": "Förstå orden.\nSäg dem naturligt.",
+        "body": "En ny generation AI-röster ger naturlig intonation och rytm. Lyssna på en mening och härma, bli bekant med uttal och accent och öva sedan samtal med AI.",
+        "action": "Utforska talöversättning"
+      }
+    },
+    "manifesto": {
+      "seoTitle": "Vårt manifest",
+      "seoDescription": "Ett annat språk ska inte göra livet mindre. AnyTranslator samlar verktyg för förståelse, uttryck och övning till livet och studier utomlands samt lärande.",
+      "eyebrow": "Vårt manifest",
+      "title": "Ett annat språk.\nEtt lika stort liv.",
+      "lead": "Långt hemifrån förtjänar du modet att leva fritt.",
+      "opening": "Du åker till ett annat land för att se mer av världen och hitta fler möjligheter.\nSpråket borde inte få dig att bara våga leva försiktigt när du kommer fram.",
+      "chapters": [
+        {
+          "title": "Långt hemifrån behöver inte betyda långt från dig själv.",
+          "paragraphs": [
+            "Du går runt i mataffären och köper ändå fel sak. Vid disken hör du en lång förklaring, förstår bara några ord och vågar inte fråga igen. På lektionen har du en fråga men låter den förbli osagd.",
+            "En blankett, ett skolmeddelande eller ett hyresdokument kan göra en enkel dag tung. Du vill göra rätt men behöver samla mod bara för att börja prata.",
+            "Du saknar varken tankar eller ansträngning. Ibland håller språket bara ditt verkliga jag utanför samtalet."
+          ]
+        },
+        {
+          "title": "Livet ställer mer än en sorts fråga.",
+          "paragraphs": [
+            "Det kan vara en obegriplig meny, ett röstmeddelande från hyresvärden, en förklaring på ett kontor eller ett dokument som måste läsas noga.",
+            "Därför måste hjälpen också ha flera former. En måltid, ett svar eller ett ärende ska inte kräva att du hoppar mellan flera verktyg.",
+            "AnyTranslator vill lägga funktionerna du faktiskt behöver inom räckhåll. Varje hinder mindre ger lite mer trygghet i vardagen."
+          ]
+        },
+        {
+          "title": "Från att förstå en mening till nästa steg.",
+          "paragraphs": [
+            "Fotografera etiketten och vet vad du köper. Förstå rätter och tillval och beställ tydligt. Ordna anslag och dokument sida för sida så att stycken, rader, kolumner och viktiga detaljer går att hitta.",
+            "Tvåspråkiga undertexter och naturlig AI-röst hjälper ansikte mot ansikte. Välj formell, vänlig eller kort ton i meddelanden och få fram hela din mening.",
+            "Om du inte vågar prata ännu, öva först med AI-assistenten. Från resor och lektioner till intervjuer blir orden gradvis mer bekanta. Förståelse, uttryck och lärande får plats i samma liv."
+          ]
+        },
+        {
+          "title": "Varje språk förtjänar att bli ordentligt förstått.",
+          "paragraphs": [
+            "Språk är mer än att byta ord. Det svåra kan vara ryska och tyska kasus och ändelser eller ett uttryck du först lär dig använda i det lokala vardagslivet.",
+            "Vi fortsätter förbättra sammanhang, ton och förklaringar och tar även mindre språks behov på allvar. Färre användare betyder inte mindre omsorg. Du ska få både en översättning och förståelse för varför man säger så."
+          ]
+        }
+      ],
+      "everydayEyebrow": "Från vardagsbehov till användbara funktioner",
+      "everydayTitle": "Från varje tvekan\ntill ett möjligt nästa steg.",
+      "scenarios": [
+        {
+          "title": "Förstå vardagen",
+          "body": "Köp rätt varor, förstå menyn och fråga innan du bestämmer dig.",
+          "linkLabels": [
+            "Fotoöversättning",
+            "Menyer och beställning"
+          ]
+        },
+        {
+          "title": "Få de viktiga sakerna gjorda",
+          "body": "Läs anslag, dokument och tabeller med bevarad struktur.",
+          "linkLabels": [
+            "Dokumentskanning",
+            "Tabellöversättning"
+          ]
+        },
+        {
+          "title": "Sätt ord på dina egna tankar",
+          "body": "Förstå den andra och öva före det riktiga samtalet.",
+          "linkLabels": [
+            "Talöversättning",
+            "AI-assistent"
+          ]
+        }
+      ],
+      "closeEyebrow": "AnyTranslator",
+      "closeTitle": "Gör det avlägsna\ntill din egen vardag.",
+      "closeBody": "Fråga det du vill fråga. Säg det du vill säga.\nLåt en avlägsen plats bli mer än ett resmål: en plats där du kan leva fritt.",
+      "aboutAction": "Läs vårt manifest"
+    },
+    "reviews": {
+      "eyebrow": "Äkta recensioner från App Store",
+      "title": "De har redan\nlämnat språkbarriären bakom sig.",
+      "body": "Möten, språkinlärning och vardagskommunikation. Hör vad användarna säger.",
+      "ratingAriaTemplate": "{rating} av 5 stjärnor",
+      "sourceAriaTemplate": "Se recensionen från {name} i App Store",
+      "storefrontLabel": "Taiwan",
+      "translatedLabel": "Översatt från traditionell kinesiska",
+      "quotesById": {
+        "14792569759": "Det är svårt att hitta en översättningsapp som är så träffsäker och har så många funktioner.",
+        "14689800454": "Väldigt användbar. Jag började prenumerera direkt.",
+        "14634594658": "Språköversättningen är mycket praktisk på möten.",
+        "14634322888": "Det är så enkelt att lära sig språk med den här. En app ersätter 3 eller 4 appar, och översättningarna är väldigt träffsäkra."
+      }
+    },
+    "askAi": {
+      "title": "Passar AnyTranslator dig?",
+      "body": "Berätta för AI vad du behöver och jämför ur en annan vinkel.",
+      "actionTemplate": "Fråga {service}",
+      "prompt": "Bedöm utifrån offentlig information på {url} om AnyTranslator passar mina behov. Jag vill veta mer om text- och talöversättning, meny- och dokumentskanning, AI-assistenten, språkinlärning och priser. Fråga först om mina användningssituationer och jämför sedan var appen passar och inte passar. Ange tydligt funktioner och priser som inte kan bekräftas och bifoga källor."
+    },
+    "theme": {
+      "darkMode": "Mörkt läge",
+      "lightAction": "Byt till ljust läge",
+      "darkAction": "Byt till mörkt läge"
+    },
+    "macArt": {
+      "ariaLabel": "AnyTranslator-illustration för macOS-hämtning med den riktiga appikonen och texten Mac App Store"
+    },
+    "pricingUnit": {
+      "perBatchTemplate": "{count} foton/omgång"
+    },
+    "imageAlt": {
+      "voice.primary": "Talöversättning: fråga om museets stängning och sista insläpp med engelska och svenska undertexter.",
+      "text.primary": "Textöversättning: engelskt meddelande om ändrad tid översatt till ryska med grammatikförklaring på svenska.",
+      "helper.primary": "Helper-grammatik: villkorsform, tid och kasus i ett ryskt arbetsmeddelande förklarade på svenska.",
+      "photos.primary": "Fotoöversättning: svensk översättning ovanpå en riktig dryckesmeny med engelsk originaltext.",
+      "table.primary": "Tabellöversättning: offentlig Zion-busstidtabell med tre datumperioder samt första och sista avgång.",
+      "table.cell-source": "Tabellens originaltext: information om första bussen öppnad med motsvarande engelska radrubrik.",
+      "document.primary": "Dokumentöversättning: offentlig transportbroschyr från parken ordnad i svenska stycken om cykling och bilkörning.",
+      "document.original": "Originalbild: den offentliga trespaltiga texten Getting Around, sida 1/1 i samma dokument.",
+      "menu.primary": "Menyöversättning: kaffedrycker och priser med 2 valda latte och totalt 7.80.",
+      "menu.options": "Menybeställning: latte/flat white med havremjölk, antal 2 och totalt 7.80.",
+      "menu.staff": "Visa personalen: latte/flat white och havremjölk på originalspråket, 2 portioner, totalt 7.80.",
+      "chat.primary": "AI-assistentens restaurangscenario: servitörens inledning på nybörjarengelska, engelska nyckelmeningar och svenska uppgiftsförklaringar.",
+      "chat.chat-entry": "AI-assistentens samtalslägen: smart samtal, målövning och scenarioövning med val av språk och nivå före start.",
+      "keyboard.primary": "iOS-tangenter och AnyTranslators översättningsverktygsfält med det pågående svenska arbetsmeddelandet bevarat.",
+      "widget.primary": "Förhandsvisning av inlärningswidget: kinesiskt kaffeexempel och Pinyin, svensk översättning och användningstips samt repetitionsknappar.",
+      "screen-translation.primary": "Skärmtextöversättning: ett offentligt NPS-avsnitt om bilkörning i Preview med svenskt resultat i bild i bild.",
+      "screen-translation.setup": "Inställningar för översättning i andra appar: videoundertexter eller skärmtext, svenska som mål och visning av originaltext."
+    }
+  }
+}

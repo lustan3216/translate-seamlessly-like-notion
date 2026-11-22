@@ -1,0 +1,166 @@
+[
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-768.webp",
+        "width": 294
+      }
+    ],
+    "label": "AI 助手",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-768.webp",
+        "width": 294
+      }
+    ],
+    "label": "任何 App 翻譯",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+        "width": 293.9921875
+      }
+    ],
+    "label": "文字翻譯與寫作",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-768.webp",
+        "width": 294
+      }
+    ],
+    "label": "菜單掃描與點餐",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+        "width": 293.9921875
+      }
+    ],
+    "label": "文件智慧掃描",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+        "width": 293.9921875
+      }
+    ],
+    "label": "即時語音翻譯",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
+        "width": 239.9140625
+      },
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-768.webp",
+        "width": 239.8515625
+      }
+    ],
+    "label": "AI 助手",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-768.webp",
+        "width": 239.8515625
+      }
+    ],
+    "label": "任何 App 翻譯",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/helper.webp",
+        "width": 239.9140625
+      },
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/text.webp",
+        "width": 239.9140625
+      }
+    ],
+    "label": "文字翻譯與寫作",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
+        "width": 239.9140625
+      },
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-768.webp",
+        "width": 239.8515625
+      }
+    ],
+    "label": "菜單掃描與點餐",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original-768.webp",
+        "width": 239.8515625
+      },
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
+        "width": 239.9140625
+      }
+    ],
+    "label": "文件智慧掃描",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "images": [
+      {
+        "loaded": true,
+        "src": "http://127.0.0.1:5178/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/voice.webp",
+        "width": 239.9140625
+      }
+    ],
+    "label": "即時語音翻譯",
+    "overflow": false,
+    "width": 1440
+  }
+]

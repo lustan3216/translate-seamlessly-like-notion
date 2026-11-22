@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-11-14T16:37:16.985Z",
+  "scope": "繁體中文本地review",
+  "browser": "Codex native IAB",
+  "checks": [
+    {
+      "columns": "384px 384px 384px",
+      "count": "3",
+      "images": [
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "table",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-table.webp",
+          "width": 320
+        },
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "original",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-original-768.webp",
+          "width": 320
+        },
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "header-original",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-header-original.webp",
+          "width": 320
+        }
+      ],
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "columns": "600px",
+      "count": "3",
+      "images": [
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "table",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-table.webp",
+          "width": 340
+        },
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "original",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-original-768.webp",
+          "width": 340
+        },
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "header-original",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-header-original.webp",
+          "width": 340
+        }
+      ],
+      "scrollWidth": 1024,
+      "width": 1024
+    },
+    {
+      "columns": "600px",
+      "count": "3",
+      "images": [
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "table",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-table.webp",
+          "width": 340
+        },
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "original",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-original-768.webp",
+          "width": 340
+        },
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "header-original",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-header-original.webp",
+          "width": 340
+        }
+      ],
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "columns": "350px",
+      "count": "3",
+      "images": [
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "table",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-table.webp",
+          "width": 302
+        },
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "original",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-original-768.webp",
+          "width": 302
+        },
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "header-original",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-header-original.webp",
+          "width": 302
+        }
+      ],
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "columns": "280px",
+      "count": "3",
+      "images": [
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "table",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-table.webp",
+          "width": 232
+        },
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "original",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-original-768.webp",
+          "width": 232
+        },
+        {
+          "broken": false,
+          "complete": true,
+          "shot": "header-original",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-zh-tw-review-r9-document2243/zh-tw/document-header-original.webp",
+          "width": 232
+        }
+      ],
+      "scrollWidth": 320,
+      "width": 320
+    }
+  ]
+}

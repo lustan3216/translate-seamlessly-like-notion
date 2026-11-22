@@ -1,0 +1,162 @@
+[
+  {
+    "atBottom": true,
+    "images": 24,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/",
+    "width": 390,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 3,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/pricing",
+    "width": 390,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 11,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/features/menu",
+    "width": 390,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 8,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/features/document",
+    "width": 390,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 10,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/features/chat",
+    "width": 390,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 7,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/features/voice",
+    "width": 390,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 14,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/features",
+    "width": 390,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 12,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/blog",
+    "width": 390,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 24,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/",
+    "width": 768,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 24,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/",
+    "width": 320,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 3,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/pricing",
+    "width": 320,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 24,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/",
+    "width": 1024,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 11,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/features/menu",
+    "width": 1024,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 5,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/manifesto",
+    "width": 1440,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 5,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/manifesto",
+    "width": 390,
+    "visibleBroken": []
+  },
+  {
+    "atBottom": true,
+    "images": 5,
+    "overflow": false,
+    "pending": [],
+    "unloaded": [],
+    "url": "/manifesto",
+    "width": 320,
+    "visibleBroken": []
+  }
+]

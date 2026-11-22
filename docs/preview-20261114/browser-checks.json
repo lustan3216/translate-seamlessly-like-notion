@@ -1,0 +1,318 @@
+{
+  "mobileRoutes": [
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/features"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/features/photos"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/features/keyboard"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/features/widget"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/use-cases"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/use-cases/travel"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/use-cases/work"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/use-cases/dining"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/use-cases/study"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/use-cases/messages"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/use-cases/reading"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/pricing"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/download"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/about"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/affiliate"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/contact"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/blog"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/blog/anytranslator-on-mac"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/support"
+    },
+    {
+      "badKeys": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/missing-page"
+    }
+  ],
+  "responsive": [
+    {
+      "broken": 0,
+      "heading": "Sag es auf deine Art.Verbinde dich mit der Welt.",
+      "lang": "de-DE",
+      "overflow": false,
+      "path": "/",
+      "width": 320
+    },
+    {
+      "broken": 0,
+      "heading": "一個 App，讓理解繼續。",
+      "lang": "zh-TW",
+      "overflow": false,
+      "path": "/features",
+      "width": 320
+    },
+    {
+      "broken": 0,
+      "heading": "Начните бесплатно. Оставьте место для большего.",
+      "lang": "ru-RU",
+      "overflow": false,
+      "path": "/pricing",
+      "width": 320
+    },
+    {
+      "broken": 0,
+      "heading": "次の会話は、ここから。",
+      "lang": "ja-JP",
+      "overflow": false,
+      "path": "/download",
+      "width": 320
+    },
+    {
+      "broken": 0,
+      "heading": "Worte für die Welt vor dir.",
+      "lang": "de-DE",
+      "overflow": false,
+      "path": "/blog",
+      "width": 320
+    },
+    {
+      "broken": 0,
+      "heading": "有想法，聊聊吧。",
+      "lang": "zh-TW",
+      "overflow": false,
+      "path": "/contact",
+      "width": 320
+    },
+    {
+      "broken": 0,
+      "heading": "Sag es auf deine Art.Verbinde dich mit der Welt.",
+      "lang": "de-DE",
+      "overflow": false,
+      "path": "/",
+      "width": 768
+    },
+    {
+      "broken": 0,
+      "heading": "一個 App，讓理解繼續。",
+      "lang": "zh-TW",
+      "overflow": false,
+      "path": "/features",
+      "width": 768
+    },
+    {
+      "broken": 0,
+      "heading": "Начните бесплатно. Оставьте место для большего.",
+      "lang": "ru-RU",
+      "overflow": false,
+      "path": "/pricing",
+      "width": 768
+    },
+    {
+      "broken": 0,
+      "heading": "次の会話は、ここから。",
+      "lang": "ja-JP",
+      "overflow": false,
+      "path": "/download",
+      "width": 768
+    },
+    {
+      "broken": 0,
+      "heading": "Worte für die Welt vor dir.",
+      "lang": "de-DE",
+      "overflow": false,
+      "path": "/blog",
+      "width": 768
+    },
+    {
+      "broken": 0,
+      "heading": "有想法，聊聊吧。",
+      "lang": "zh-TW",
+      "overflow": false,
+      "path": "/contact",
+      "width": 768
+    },
+    {
+      "broken": 0,
+      "heading": "Sag es auf deine Art.Verbinde dich mit der Welt.",
+      "lang": "de-DE",
+      "overflow": false,
+      "path": "/",
+      "width": 1024
+    },
+    {
+      "broken": 0,
+      "heading": "一個 App，讓理解繼續。",
+      "lang": "zh-TW",
+      "overflow": false,
+      "path": "/features",
+      "width": 1024
+    },
+    {
+      "broken": 0,
+      "heading": "Начните бесплатно. Оставьте место для большего.",
+      "lang": "ru-RU",
+      "overflow": false,
+      "path": "/pricing",
+      "width": 1024
+    },
+    {
+      "broken": 0,
+      "heading": "次の会話は、ここから。",
+      "lang": "ja-JP",
+      "overflow": false,
+      "path": "/download",
+      "width": 1024
+    },
+    {
+      "broken": 0,
+      "heading": "Worte für die Welt vor dir.",
+      "lang": "de-DE",
+      "overflow": false,
+      "path": "/blog",
+      "width": 1024
+    },
+    {
+      "broken": 0,
+      "heading": "有想法，聊聊吧。",
+      "lang": "zh-TW",
+      "overflow": false,
+      "path": "/contact",
+      "width": 1024
+    },
+    {
+      "broken": 0,
+      "heading": "Sag es auf deine Art.Verbinde dich mit der Welt.",
+      "lang": "de-DE",
+      "overflow": false,
+      "path": "/",
+      "width": 1440
+    },
+    {
+      "broken": 0,
+      "heading": "一個 App，讓理解繼續。",
+      "lang": "zh-TW",
+      "overflow": false,
+      "path": "/features",
+      "width": 1440
+    },
+    {
+      "broken": 0,
+      "heading": "Начните бесплатно. Оставьте место для большего.",
+      "lang": "ru-RU",
+      "overflow": false,
+      "path": "/pricing",
+      "width": 1440
+    },
+    {
+      "broken": 0,
+      "heading": "次の会話は、ここから。",
+      "lang": "ja-JP",
+      "overflow": false,
+      "path": "/download",
+      "width": 1440
+    },
+    {
+      "broken": 0,
+      "heading": "Worte für die Welt vor dir.",
+      "lang": "de-DE",
+      "overflow": false,
+      "path": "/blog",
+      "width": 1440
+    },
+    {
+      "broken": 0,
+      "heading": "有想法，聊聊吧。",
+      "lang": "zh-TW",
+      "overflow": false,
+      "path": "/contact",
+      "width": 1440
+    }
+  ]
+}

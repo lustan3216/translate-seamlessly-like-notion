@@ -1,0 +1,155 @@
+/* Extend the existing Typeless direction without changing shared marketing surfaces. */
+.mk-home-scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.mk-home-scenario {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 172px;
+  gap: 24px;
+  align-items: center;
+  padding: 32px;
+  border-radius: 20px;
+  background: var(--mk-surface);
+  min-width: 0;
+  transition: transform 0.2s;
+}
+.mk-home-scenario:hover {
+  transform: translateY(-2px);
+}
+.mk-home-scenario-copy {
+  min-width: 0;
+}
+.mk-home-scenario-context {
+  color: var(--mk-muted);
+  font-size: 13px;
+  margin-bottom: 16px !important;
+}
+.mk-home-scenario h3 {
+  font-size: 24px;
+  line-height: 1.35;
+  margin-bottom: 20px;
+}
+.mk-home-scenario-copy > p:not(.mk-home-scenario-context) {
+  font-size: 16px;
+  text-wrap: pretty;
+}
+.mk-home-scenario ul {
+  margin: 20px 0 24px;
+  padding-inline-start: 18px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--mk-muted);
+}
+.mk-home-scenario li + li {
+  margin-top: 10px;
+}
+.mk-home-scenario .mk-text-link {
+  min-height: 44px;
+  font-size: 14px;
+}
+.mk-home-scenario-art {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+  padding-block: 8px;
+}
+.marketing-site .mk-home-scenario-art > .native-app-screen {
+  width: 172px;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  transition: transform 0.25s;
+}
+.mk-home-scenario:hover .native-app-screen {
+  transform: scale(1.02);
+}
+.mk-home-scenario-art:has([data-native-capture-pending]) {
+  display: none;
+}
+.mk-home-scenario:has([data-native-capture-pending]) {
+  grid-template-columns: 1fr;
+}
+.mk-home-feature-index {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 32px;
+}
+.mk-home-feature-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 84px;
+  border-bottom: 1px solid var(--mk-line);
+  padding-block: 20px;
+  font-size: 17px;
+}
+.mk-home-feature-link > span:first-child {
+  width: 24px;
+  height: 24px;
+}
+.mk-home-feature-link > span:nth-child(2) {
+  flex: 1;
+}
+.mk-home-feature-link > .mk-arrow {
+  transition: transform 0.2s;
+}
+.mk-home-feature-link:hover > .mk-arrow {
+  transform: translateX(3px);
+}
+@media (min-width: 1024px) {
+  .mk-home-scenario-section > .mk-section-heading > p {
+    max-width: 390px;
+  }
+}
+@media (max-width: 1199px) {
+  .mk-home-scenario {
+    grid-template-columns: 1fr;
+    align-content: start;
+    padding: 28px;
+  }
+  .mk-home-scenario-art {
+    padding-top: 24px;
+    align-self: end;
+  }
+  .marketing-site .mk-home-scenario-art > .native-app-screen {
+    width: 240px;
+  }
+}
+@media (max-width: 767px) {
+  .marketing-site .mk-home-hero h1 {
+    font-size: clamp(30px, 8.5vw, 43px);
+  }
+  .mk-home-scenario-grid,
+  .mk-home-feature-index {
+    grid-template-columns: 1fr;
+  }
+  .mk-home-scenario {
+    padding: 24px;
+  }
+  .mk-home-scenario-context {
+    font-size: 12px;
+  }
+  .mk-home-scenario h3 {
+    font-size: 24px;
+  }
+  .mk-home-scenario-copy > p:not(.mk-home-scenario-context) {
+    font-size: 16px;
+  }
+  .mk-home-feature-link {
+    min-height: 72px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mk-home-scenario,
+  .mk-home-scenario .native-app-screen,
+  .mk-home-feature-link > .mk-arrow {
+    transition: none;
+  }
+  .mk-home-scenario:hover,
+  .mk-home-scenario:hover .native-app-screen,
+  .mk-home-feature-link:hover > .mk-arrow {
+    transform: none;
+  }
+}

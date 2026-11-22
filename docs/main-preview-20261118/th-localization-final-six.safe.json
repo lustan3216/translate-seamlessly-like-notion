@@ -1,0 +1,258 @@
+{
+  "locale": "th",
+  "policy": "ui-explanations-and-results-v1",
+  "ownedCompletedIds": [
+    "table",
+    "table-cell-source",
+    "document",
+    "chat-chat-entry",
+    "chat-chat-scenario",
+    "screen-translation-screen-text"
+  ],
+  "items": [
+    {
+      "id": "table",
+      "sourceRawSHA256": "3bf1acb5995bc43806bcfc8b74b668b7973e676c79003afc41acd7d79223d436",
+      "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
+      "editedPNG": "output/imagegen-localization-all/th/table.generated.png",
+      "editedSHA256": "4d4d73c995fa249a5b4d230b0eb08b57760af902e2636f60d4138a9a71b35ce3",
+      "publicWebP": "/app-preview/localized-ui/20261118/th/table.webp",
+      "output": {
+        "width": 852,
+        "height": 1846,
+        "bytes": 836204,
+        "sha256": "69324395d041e94f92685afb3cd058330255d6261415650e53e1a11b75bc6f9d",
+        "encoding": "lossless-webp-from-gpt-image-output",
+        "upscaled": false
+      },
+      "review": "output/imagegen-localization-all/th/table.review.json",
+      "status": "visually-accepted",
+      "attempts": 2
+    },
+    {
+      "id": "table-cell-source",
+      "sourceRawSHA256": "275aad9e20a56127730cbc3ef0fa81d32ef400390556744235b3b3beee6e4831",
+      "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
+      "editedPNG": "output/imagegen-localization-all/th/table-cell-source.generated.png",
+      "editedSHA256": "9dbbc3d8f36d71108619f369dceb5d7f828c91dee8bb8e39465e8ed8ce7eea04",
+      "publicWebP": "/app-preview/localized-ui/20261118/th/table-cell-source.webp",
+      "output": {
+        "width": 852,
+        "height": 1846,
+        "bytes": 893476,
+        "sha256": "47a8c060ce31b141636d851bf63c5ea35f4d4df5d19da26e9ff48cd5f1a8656f",
+        "encoding": "lossless-webp-from-gpt-image-output",
+        "upscaled": false
+      },
+      "review": "output/imagegen-localization-all/th/table-cell-source.review.json",
+      "status": "visually-accepted",
+      "attempts": 1
+    },
+    {
+      "id": "document",
+      "sourceRawSHA256": "47d0e1735aefa14040e610c6353ca4a81af6d643ab0fd524a5523d4e3a163ce5",
+      "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
+      "editedPNG": "output/imagegen-localization-all/th/document.generated.png",
+      "editedSHA256": "f6f155215e78411001a1b7d1a7e1a21304834fdb49c7c15b4632761f0d4690f4",
+      "publicWebP": "/app-preview/localized-ui/20261118/th/document.webp",
+      "output": {
+        "width": 852,
+        "height": 1846,
+        "bytes": 909318,
+        "sha256": "e941999c5ec2ee52b46a28a69b264300e646a4c62e89a685ec4f37edc944ffef",
+        "encoding": "lossless-webp-from-gpt-image-output",
+        "upscaled": false
+      },
+      "review": "output/imagegen-localization-all/th/document.review.json",
+      "status": "visually-accepted",
+      "attempts": 1
+    },
+    {
+      "id": "chat-chat-entry",
+      "sourceRawSHA256": "48f566c86bc7fd7d6e5f9ef4c0015ef233214ee94b89469b870ae8cc853dc21c",
+      "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
+      "editedPNG": "output/imagegen-localization-all/th/chat-chat-entry.generated.png",
+      "editedSHA256": "20dc7e1800f92bf11fa341167edadd0b0c9f99633f5140a7a124d159e07af2d2",
+      "publicWebP": "/app-preview/localized-ui/20261118/th/chat-chat-entry.webp",
+      "output": {
+        "width": 852,
+        "height": 1846,
+        "bytes": 841970,
+        "sha256": "e2a99f72fe56f50c860a8416f6c46b33a057b7b41d5fa410a4c17bac90eb519b",
+        "encoding": "lossless-webp-from-gpt-image-output",
+        "upscaled": false
+      },
+      "review": "output/imagegen-localization-all/th/chat-chat-entry.review.json",
+      "status": "visually-accepted",
+      "attempts": 1
+    },
+    {
+      "id": "chat-chat-scenario",
+      "sourceRawSHA256": "c4ca27222ae2e596c790458714ae82717da82a1d3efe3583bd06b8044c604570",
+      "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
+      "editedPNG": "output/imagegen-localization-all/th/chat-chat-scenario.generated.png",
+      "editedSHA256": "097f7a6c07e7a635d7946471d55dd802b74db1b9ab5a1c235f5f92490df8de17",
+      "publicWebP": "/app-preview/localized-ui/20261118/th/chat-chat-scenario.webp",
+      "output": {
+        "width": 852,
+        "height": 1846,
+        "bytes": 749790,
+        "sha256": "7aa977133ac70b54ac44a36885fe6b18e56067dffa4aeb6881940a8ec2be2ab8",
+        "encoding": "lossless-webp-from-gpt-image-output",
+        "upscaled": false
+      },
+      "review": "output/imagegen-localization-all/th/chat-chat-scenario.review.json",
+      "status": "visually-accepted",
+      "attempts": 1
+    },
+    {
+      "id": "screen-translation-screen-text",
+      "sourceRawSHA256": "752b37a8c865da36a12a01ee1d6570a01fd9f7f31310c5d2856ac9c259c6d38e",
+      "sourceCommit": "93faf63c25e8642d85909c0b3f3f99ecd2a93b3c",
+      "editedPNG": "output/imagegen-localization-all/th/screen-translation-screen-text.generated.png",
+      "editedSHA256": "fc67af01baff4aab1fbb514df5dfe5e989e40417cf802bf868d970dd4d22a989",
+      "publicWebP": "/app-preview/localized-ui/20261118/th/screen-translation-screen-text.webp",
+      "output": {
+        "width": 852,
+        "height": 1846,
+        "bytes": 930468,
+        "sha256": "21cc49d67d4383780f8605fdf8db34c111cf754693a77dd9caec272c183a79ee",
+        "encoding": "lossless-webp-from-gpt-image-output",
+        "upscaled": false
+      },
+      "review": "output/imagegen-localization-all/th/screen-translation-screen-text.review.json",
+      "status": "visually-accepted",
+      "attempts": 1
+    }
+  ],
+  "alt": "New actual PiP result primary; original setup moved to setup; no redundant screen-text key",
+  "limits": "Root owns global registry/browser/deployment; no new browser or device work by this subagent.",
+  "checkpoint": {
+    "status": "all-17-generated-and-visually-accepted",
+    "checkedAt": "2026-11-18T17:42:09.171799+00:00",
+    "accepted": 17,
+    "rejected": 0,
+    "checks": "Accepted full-policy reviews/mappings,PNG/WebP hashes,canonical source hashes,min720px,aspect,no-upscale passed. Root owns global merge/browser QA. Pending/rejected not adopted.",
+    "images": [
+      {
+        "id": "voice",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "text",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "helper",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "photos",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "table",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "table-cell-source",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "document",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "document-original",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "menu",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "menu-options",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "menu-staff",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "chat-chat-scenario",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "chat-chat-entry",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "keyboard",
+        "width": 759,
+        "height": 2071,
+        "displayCropBottom": 385,
+        "displayAspectError": 0.001186
+      },
+      {
+        "id": "widget",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "screen-translation-setup",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      },
+      {
+        "id": "screen-translation-screen-text",
+        "width": 852,
+        "height": 1846,
+        "displayCropBottom": 0,
+        "displayAspectError": 0.000358
+      }
+    ]
+  }
+}

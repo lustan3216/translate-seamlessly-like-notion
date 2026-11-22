@@ -1,0 +1,316 @@
+{
+  "en": {
+    "scan": {
+      "title": "A photo becomes something you can use.",
+      "body": "Use Live to read translated text over a sign or label. Switch to Organize for a menu you can choose from, or document pages with readable sections and tables. Each view serves a different task."
+    },
+    "practiceTitle": "Start with a real task.",
+    "features": {
+      "text": {
+        "title": "Text translation, with a tone that fits.",
+        "summary": "Translate a message, email or sentence, then choose how you want it to sound. Listen, copy or ask about the wording before you reply.",
+        "heading": "Prepare the words you want to send.",
+        "body": "Type or paste your text and select the source and target languages. Keep the tone automatic, or choose polite, humorous, letter, friendly or concise wording. Read the result, hear its pronunciation, copy it or save it as a favorite. The Chat button brings the translation into a conversation when you want to ask more.",
+        "steps": [
+          "Select your languages, then type or paste a message, email or sentence.",
+          "Choose the tone that fits your reply and review the translation.",
+          "Listen, copy or save the result, or open Chat to ask about the wording."
+        ]
+      },
+      "photos": {
+        "title": "Photo translation, right over the words.",
+        "summary": "Read signs, labels and notices without typing them out. Use the camera or a photo, with translated text placed over the image.",
+        "heading": "Read a sign while keeping its surroundings in view.",
+        "body": "Open Live in the Photo tab and select your languages. Point the camera at the text, take a photo or choose one from your library. The app recognizes text and displays translations over the image; tap a recognized text area to see its translation details. For a menu with ordering controls or a document with sections and tables, switch to Organize.",
+        "steps": [
+          "Open Photo, choose Live and select your languages.",
+          "Aim the camera at a sign or label, or take or choose a photo.",
+          "Read the translated text over the image and tap a text area for details."
+        ]
+      },
+      "voice": {
+        "title": "Voice translation for both sides of the conversation.",
+        "summary": "Follow speech with bilingual captions and translated audio. Choose two-way conversation, private listening, speaking for you or captions only.",
+        "heading": "Choose how you want to hear and be heard.",
+        "body": "Select both languages and an audio mode before turning on the microphone. Two-way conversation plays translations for both sides; private listening plays the translations you need; speaking for you plays your translated speech for the other person; captions only keeps automatic speech off. Read the original and translated captions as you talk. When the conversation ends, return to the transcript and automatic summary, replay translated speech, or copy and share the summary.",
+        "steps": [
+          "Select both languages and the audio mode that suits the situation.",
+          "Turn on the microphone and follow the bilingual captions and chosen audio output.",
+          "End the conversation to review its transcript and summary, then copy or share useful details."
+        ]
+      },
+      "agent": {
+        "title": "An AI conversation assistant that works from your goal.",
+        "summary": "Explain what you need to find out or arrange. Voice Agent helps you ask, follow up and check the details in a face-to-face conversation.",
+        "heading": "From explaining your goal to reviewing the outcome.",
+        "body": "Describe your goal and any limits by text or voice, then answer the assistant’s preparation questions. Once you confirm the task, the assistant helps you speak with the person in front of you and follows up on missing details while you follow the bilingual conversation. Request a summary when you need one. Review it yourself first; only after your approval does the assistant relay it to the other person for confirmation. You make the decisions.",
+        "steps": [
+          "Choose both languages, explain your goal and answer any preparation questions.",
+          "Confirm the task and let the assistant help you ask and follow up with the other person.",
+          "Request and review a summary, then approve what is relayed to the other person."
+        ]
+      },
+      "menu": {
+        "title": "Menu scanning, from reading dishes to showing your order.",
+        "summary": "Turn menu photos into translated dishes, options and prices. Choose your food, quantities and available add-ons, then show the order with the original menu wording.",
+        "heading": "Read the menu, choose your food and show staff.",
+        "body": "In Photo, choose Organize and add menu photos from the camera or your library. Review the translated dish names, descriptions, prices and available choices. Select dishes, quantities and options such as sizes or add-ons, and add a dining note when needed. The order view shows each dish’s original name and translated name, with original option names and quantities. Known prices are added up separately for each currency, without currency conversion; an unknown dish or option price prevents a definite total. Compare unclear details with the original photo and confirm them with staff. Free scans accept one photo; PRO accepts up to ten per batch.",
+        "steps": [
+          "Open Photo → Organize, select your languages and add clear photos of the menu.",
+          "Review dishes and prices, choose quantities and available options, and add a dining note if needed.",
+          "Check the order and any available totals, then show the original-language dishes and options to staff."
+        ]
+      },
+      "document": {
+        "title": "Document scanning that keeps paragraphs and tables readable.",
+        "summary": "Photograph a paper document, including multiple pages, and read it as organized sections, lists and tables. Compare with the original images and reopen saved scans from history.",
+        "heading": "Keep the document’s sections, paragraphs and table structure.",
+        "body": "In Photo, choose Organize, then photograph document pages in order or add their photos from your library. Submit them together to read the recognized content as a title, sections, paragraphs, numbered lists and tables with rows and columns. Switch back to each original page or tap text to check the source while reviewing dates, prices and other details. Search saved scans by title or content type in history and reopen them later. Free scans accept one photo; PRO accepts up to ten per batch. This workflow scans photographed pages; it is not a PDF or Word editor.",
+        "steps": [
+          "Open Photo → Organize, select your languages and add document-page photos in order: one on Free or up to ten with PRO.",
+          "Submit the pages together and read the organized sections, lists and tables.",
+          "Compare with the original pages, check source text and reopen the saved scan from history when needed."
+        ]
+      },
+      "keyboard": {
+        "title": "Translate your reply in the app you already use.",
+        "summary": "Use the iPhone or iPad keyboard to translate a draft and adjust its tone in a supported text field. Review the result before you send it.",
+        "heading": "Write, translate and check the reply in place.",
+        "body": "Follow the app’s guide to add the AnyTranslator keyboard and enable Full Access in iOS Settings for online translation. In a supported field, select the text you want to translate or prepare your draft, then choose the target language and tone. Translation replaces the selected text or the text iOS makes available to the keyboard. Clipboard translation uses a separate result card, where you can copy the result or insert it at the cursor. Some apps and secure fields restrict third-party keyboards.",
+        "steps": [
+          "Add the keyboard and enable Full Access by following the setup guide in the app.",
+          "In a supported text field, prepare or select your draft, switch keyboards and choose the target language and tone.",
+          "Translate the text, check the replacement and send it yourself; use the clipboard card to copy or insert a separate result."
+        ]
+      },
+      "chat": {
+        "title": "Keep asking with text and photos.",
+        "summary": "Bring a phrase, translation or photo into Chat. Ask what it means, request an example or work out how you want to reply.",
+        "heading": "Use the next question to understand the details.",
+        "body": "Write a question, add photos, or use the Chat button beside a text translation to continue with that wording. Ask about an unfamiliar expression, request another example or compare possible replies in the same conversation. Review the answer, copy useful wording and ask a follow-up when more context is needed. Chat helps you examine the content you provide; check important facts against the original.",
+        "steps": [
+          "Enter a question, add a photo or open Chat from a text translation.",
+          "Ask about the meaning, examples or a reply that fits your situation.",
+          "Review the answer, copy useful wording and continue with a follow-up question."
+        ]
+      },
+      "helper": {
+        "title": "Helper explanations that show how the words work.",
+        "summary": "Explore grammar, examples, word-by-word meaning and possible replies. Save your own explanation instructions and reuse them with new text.",
+        "heading": "Choose what to explain and how to explain it.",
+        "body": "On the text translation page, choose whether Helper explains the source text or the translation. Select a preset such as grammar, word-by-word analysis, examples, hidden meaning or reply suggestions, or save your own instruction for the explanation you need. Your saved settings can describe your field, learning goal or preferred level of detail. Free supports one Helper profile and PRO supports up to five. Custom knowledge here means reusable instructions, rather than an uploaded document knowledge base.",
+        "steps": [
+          "Translate some text and choose whether Helper should explain the original or the translation.",
+          "Choose an explanation preset or save your own instruction for the detail you need.",
+          "Read the explanation and reuse your saved settings when the text changes."
+        ]
+      },
+      "widget": {
+        "title": "Learning cards you can use from your Home Screen.",
+        "summary": "Review words and phrases, hear pronunciation and mark what you remember directly in the Home Screen Widget. Add a Lock Screen Widget for another way back to practice.",
+        "heading": "Listen and review without opening the app each time.",
+        "body": "Choose your learning and translation languages in the app, then follow the guide to add a Home Screen or Lock Screen Widget. Home Screen cards let you play pronunciation, choose review again or mark a card as remembered; your answers guide later reviews. Tapping a Lock Screen card opens it in the app and marks it for another review. Automatic content is available free. PRO lets you select content types, combine topics and difficulty levels, and add custom topic or difficulty instructions.",
+        "steps": [
+          "Choose your learning languages and follow the app’s guide to add a Home Screen or Lock Screen Widget.",
+          "Read a card and use its pronunciation control on the Home Screen.",
+          "Choose review again or remembered on the Home Screen; tap a Lock Screen card to open it and review again."
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "At hotel check-in, select your language and the staff’s language in voice translation. Use bilingual captions and the audio mode that fits the setting to discuss your room, deposit and check-out time.",
+        "If you need to ask for late check-out or clarify an extra charge, tell Voice Agent the goal and your limits. Confirm the task, let it help with follow-up questions, then review the summary before approving a relay to staff.",
+        "Photograph the hotel’s paper instructions in Organize. Read the sections and tables, compare check-out times or charges with the original image, and return to the saved scan during your stay."
+      ],
+      "work": [
+        "Paste a work message into text translation, choose the target language and a tone that suits the relationship. Check names, dates and commitments before copying the reply.",
+        "If a phrase still feels unclear, choose the original or translated text for Helper. Use hidden meaning, grammar or reply suggestions, or your saved instruction for the field you work in.",
+        "Bring the wording into Chat to compare a shorter reply with a more detailed one. Add the context the other person needs, review the final draft and send it through your usual communication app."
+      ],
+      "dining": [
+        "In Photo → Organize, add the menu pages and review translated dishes, options and prices. Choose quantities and available add-ons, add a dining note, then show the order with original dish and option names to staff.",
+        "Use voice translation to ask about a dish, portion size or ingredient that is still unclear. Select both languages and confirm the answer with the person serving you.",
+        "For a conversation with several conditions, explain your request to Voice Agent and let it help ask follow-up questions. Review the summary before it relays the details; the staff must confirm ingredients and preparation."
+      ],
+      "study": [
+        "Start with a word or sentence you have actually encountered. Choose it as Helper’s source and look at examples, word-by-word analysis or the most relevant grammar explanation.",
+        "Set your learning language and add the learning Widget to your Home Screen. Listen to cards and mark review again or remembered; PRO can tailor the content types, topics and difficulty.",
+        "Return to Chat with a phrase you want to use yourself. Ask for an example in a familiar situation, write your own version and ask what you could change."
+      ],
+      "messages": [
+        "In a supported messaging field, switch to the AnyTranslator keyboard, prepare or select your draft, then choose the target language and tone. Translate it in place and read it before sending.",
+        "For a longer message or a reply you want to examine more closely, paste the text into the main app. Compare the translation, adjust the tone and listen to the pronunciation before copying it back.",
+        "If you are unsure what the other person means or how your reply might sound, ask Chat with the relevant text and context. Review the suggestions and choose the wording you want to send."
+      ],
+      "reading": [
+        "Photograph a notice, brochure or document in Organize, adding its pages in order. Read the sections, lists and tables, and switch to the original page to check the detail you need.",
+        "For an unfamiliar expression, enter the relevant text on the text translation page and ask Helper for a usage note, grammar explanation or word-by-word analysis. Choose whether it explains the original or the translation.",
+        "Bring a passage or photo into Chat when you need to ask a specific question, such as which date applies or what a phrase refers to. Compare the answer with the original document before relying on an important detail."
+      ]
+    },
+    "documentArticle": {
+      "title": "Scan document pages into readable sections and tables",
+      "intro": "A paper notice, travel brochure or multi-page document often needs more than an image overlay. In Photo → Organize, add page photos in order and submit them together. The result organizes the recognized text into sections, paragraphs, lists and tables so you can find the information you need.",
+      "tip": "Choose the source and target languages, photograph each page clearly and check their order before submitting. Free accepts one photo per scan; PRO accepts up to ten. Read the organized result, tap text to check its source and switch back to the original page when reviewing a date, amount or table entry. Search history by title or content type to reopen the saved scan later.",
+      "limit": "This guide covers photographed pages from the camera or photo library. It does not describe PDF or Word import, editing or export. Recognition and interpretation can miss unclear text or complex layouts, so compare important details with the original pages."
+    }
+  },
+  "zh-tw": {
+    "scan": {
+      "title": "拍下來，整理成真正用得上的資訊。",
+      "body": "看路標、標籤，用「即時」把譯文放回圖片；讀菜單、查文件，切到「整理」，把照片變成可選餐點、清楚段落與表格。依眼前的需求，選擇合適的讀法。"
+    },
+    "practiceTitle": "從一個真實需求開始。",
+    "features": {
+      "text": {
+        "title": "文字翻譯：意思清楚，語氣也合適。",
+        "summary": "翻譯訊息、Email 或句子，再選擇適合對方的語氣。聽發音、複製回覆，或先問清楚措辭再傳送。",
+        "heading": "把想傳出去的話，準備到位。",
+        "body": "輸入或貼上內容，選擇原文與目標語言。語氣可以維持自動，也能選禮貌、幽默、書信、朋友或精簡。閱讀譯文、聆聽發音，再複製或收藏；想釐清一句話的用法，點 Chat 按鈕就能帶著譯文繼續問。",
+        "steps": [
+          "選擇原文與目標語言，輸入或貼上訊息、Email 或句子。",
+          "依回覆情境選擇語氣，檢查翻譯後的內容。",
+          "聽發音、複製或收藏結果，也能進入 Chat 追問措辭。"
+        ]
+      },
+      "photos": {
+        "title": "照片翻譯：譯文就在眼前的字上。",
+        "summary": "路標、標籤與公告，不必逐字輸入。透過鏡頭或照片，把翻譯直接顯示在圖片上。",
+        "heading": "看懂標示，也保留周圍的線索。",
+        "body": "在照片頁選擇「即時」與翻譯語言，把鏡頭對準文字，也能拍照或從相簿選圖。App 辨識文字後，將譯文覆蓋在圖片上；點辨識到的文字區域，可查看翻譯詳情。需要可選餐點的菜單，或有段落、表格的文件時，再切到「整理」。",
+        "steps": [
+          "打開照片頁，選擇「即時」與翻譯語言。",
+          "把鏡頭對準路標或標籤，也能拍照或從相簿選圖。",
+          "閱讀圖片上的譯文，點文字區域查看翻譯詳情。"
+        ]
+      },
+      "voice": {
+        "title": "語音翻譯：雙方的話，都跟得上。",
+        "summary": "用雙語字幕與譯文朗讀接住對話。依情境選擇雙向對話、私下聽、幫我說或只看字幕。",
+        "heading": "先選怎麼聽，再開始交談。",
+        "body": "選好雙方語言與聲音模式，再開啟麥克風。「雙向對話」為雙方播放譯文；「私下聽」只播放你需要的翻譯；「幫我說」只把你的話翻給對方聽；「只看字幕」則關閉自動朗讀。交談時對照原文與譯文字幕；結束後可回顧對話與自動摘要、重播譯文，並複製或分享摘要重點。",
+        "steps": [
+          "選擇雙方語言，以及符合現場情境的聲音模式。",
+          "開啟麥克風交談，對照雙語字幕與所選模式的聲音輸出。",
+          "結束後回顧對話與摘要，複製或分享需要留存的重點。"
+        ]
+      },
+      "agent": {
+        "title": "AI 對話助手：帶著你的目標，幫你問清楚。",
+        "summary": "說明想問清楚或辦好的事，讓 Voice Agent 協助現場開口、追問與核對細節。",
+        "heading": "從說明目標，到自己審閱對話結果。",
+        "body": "用文字或語音說明目標與限制，回答助手準備時的問題。確認任務後，助手協助你和眼前的人交談，追問尚未釐清的細節，你也能查看雙語對話。需要時請求總結，先由自己審閱；確認後，助手才把內容轉述給對方核對。最後的決定由你做。",
+        "steps": [
+          "選好雙方語言，說明目標，並補充助手準備時提出的問題。",
+          "確認任務後開始對話，讓助手協助開口與追問。",
+          "請求並審閱總結，確認後才轉述給對方核對。"
+        ]
+      },
+      "menu": {
+        "title": "菜單掃描：從讀懂菜色，到給店員看點單。",
+        "summary": "把菜單照片整理成有翻譯、選項與價格的餐點。選好份數與加選項目，再展示保留菜單原文的點餐清單。",
+        "heading": "讀菜單、選餐點，再把點單給店員看。",
+        "body": "在照片頁選擇「整理」，拍攝或從相簿加入菜單。先讀菜名、說明、價格與可用選項，再選餐點、份數、大小或加料，必要時加入用餐備註。點單畫面保留原文菜名、譯名、原文選項與份數，方便向店員表達。價格明確時，依不同幣別分開加總，不進行換匯；菜價或選項價格不明時，不會給出確定總額。模糊或不清楚的內容可回看原圖，再向店員確認。免費版每次可加入 1 張照片，PRO 每批最多 10 張。",
+        "steps": [
+          "打開照片頁的「整理」，選擇語言，拍攝或加入清楚的菜單照片。",
+          "查看菜色與價格，選擇份數、可用選項，必要時加入用餐備註。",
+          "核對點單與可計算的總價，再把原文餐點及選項給店員看。"
+        ]
+      },
+      "document": {
+        "title": "文件掃描，保留段落與表格。",
+        "summary": "拍下紙本文件，也能依序加入多頁，整理成清楚的分區、清單與表格。隨時對照原圖，並從歷史紀錄重新開啟。",
+        "heading": "保留文件的分區、段落與表格結構。",
+        "body": "在照片頁選擇「整理」，依序拍攝文件頁面，或從相簿加入各頁照片，整批送出。辨識內容會整理成標題、分區、段落、編號清單，以及保留列與欄的表格。閱讀日期、金額等細節時，可切回各頁原圖，或點文字查看原文。之後能在歷史紀錄依標題或內容類型搜尋，重新開啟已整理的掃描。免費版每次可加入 1 張照片，PRO 每批最多 10 張。這個流程處理拍下的文件頁面，並非 PDF 或 Word 編輯器。",
+        "steps": [
+          "打開照片頁的「整理」，選好語言並依序加入文件頁照片；免費版 1 張，PRO 最多 10 張。",
+          "整批送出後，閱讀整理好的分區、段落、清單與表格。",
+          "切回各頁原圖、點文字核對原文，需要時從歷史紀錄找回掃描。"
+        ]
+      },
+      "keyboard": {
+        "title": "鍵盤翻譯：在原本的 App 裡準備回覆。",
+        "summary": "在 iPhone 或 iPad 支援的輸入欄，打字或搭配 iOS 原生聽寫準備草稿，再以 AnyTranslator 鍵盤翻譯、調整語氣。檢查後自行傳送。",
+        "heading": "寫好、翻譯、檢查，都留在輸入欄。",
+        "body": "依 App 指引，在 iOS 設定加入 AnyTranslator 鍵盤並啟用完整取用，以使用線上翻譯。在支援的輸入欄選好輸入語言，先打字，或在系統提供聽寫時，用 iOS 原生聽寫把話語轉成文字。先檢查辨識內容，再選目標語言與語氣翻譯；可選取要翻譯的文字，譯文會替換選取文字，或 iOS 提供給鍵盤的欄位內容。剪貼簿翻譯使用獨立結果卡，可複製譯文或插入游標位置。部分 App 與安全欄位會限制第三方鍵盤或聽寫；系統聽寫的可用性也依 iOS、裝置、語言與設定而定。",
+        "steps": [
+          "依 App 設定指引，加入 AnyTranslator 鍵盤並啟用完整取用，以使用線上翻譯。",
+          "在支援欄位選好輸入語言，打字或在可用時使用 iOS 原生聽寫，先檢查草稿與辨識結果。",
+          "選擇目標語言與語氣，翻譯並檢查文字，再自行傳送；剪貼簿結果可另行複製或插入。"
+        ]
+      },
+      "chat": {
+        "title": "Chat：帶著文字與照片，把問題問清楚。",
+        "summary": "加入字句、譯文或照片，追問意思、索取例句，或一起想好適合這段對話的回覆。",
+        "heading": "用下一個問題，釐清還沒看懂的細節。",
+        "body": "輸入問題、加入照片，或點文字譯文旁的 Chat 按鈕，帶著那段內容繼續討論。在同一段對話中，釐清陌生用語、要求另一個例句，或比較不同回覆方式。閱讀回答後，複製用得上的措辭；需要更多背景就繼續追問。Chat 協助理解你提供的內容，重要資訊仍應和原文核對。",
+        "steps": [
+          "輸入問題、加入照片，或從文字翻譯開啟 Chat。",
+          "詢問字句意思、例句，或適合目前情境的回覆方式。",
+          "檢查回答，複製用得上的措辭，或繼續追問。"
+        ]
+      },
+      "helper": {
+        "title": "Helper 解說：知道意思，也懂字句怎麼用。",
+        "summary": "看文法、例句、逐詞解析與情境回覆。也能把自己的解說指示存起來，換一段文字繼續用。",
+        "heading": "選要解說的內容，也選解說的方法。",
+        "body": "在文字翻譯頁，選擇讓 Helper 解說原文或譯文。可用文法、逐詞解析、例句、隱含意思、情境回覆等預設，也能儲存自己的解說指示，說明專業領域、學習目標或喜歡的深度。免費版可儲存 1 組 Helper 設定，PRO 最多 5 組。這裡的自訂知識是可重用的指示設定，不是上傳文件建立的知識庫。",
+        "steps": [
+          "完成文字翻譯，選擇要解說原文或譯文。",
+          "選擇解說預設，或儲存符合需求的自訂指示。",
+          "閱讀解說；換一段內容時，繼續沿用已儲存的設定。"
+        ]
+      },
+      "widget": {
+        "title": "學習 Widget：在主畫面就能聽、看、複習。",
+        "summary": "不用每次打開 App，就能在主畫面閱讀詞句、聽發音，標記再複習或已記住。也能加入鎖定畫面，隨手回到練習。",
+        "heading": "直接聽發音，讓每次回答接上下一次複習。",
+        "body": "學習 Widget 需 iOS 17 或更新版本。先在 App 設定學習語言與翻譯語言，再依指引加入主畫面或鎖定畫面 Widget。主畫面的卡片可直接播放發音、選擇再複習或已記住，依回答安排後續複習；點鎖定畫面卡片會進入 App，並標記為再次複習。基本自動內容免費可用。PRO 可選內容類型、組合主題與難度，也能加入自訂主題或難度指示。",
+        "steps": [
+          "選好學習語言，依 App 指引加入主畫面或鎖定畫面 Widget。",
+          "閱讀卡片，在主畫面直接點發音按鈕聆聽。",
+          "在主畫面選擇再複習或已記住；點鎖定畫面卡片則進入 App 再次複習。"
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "辦理入住時，在語音翻譯選擇你與飯店人員的語言。用雙語字幕與適合現場的聲音模式，確認房型、押金與退房時間。",
+        "想爭取延後退房，或問清楚額外費用時，把目標與限制告訴 Voice Agent。確認任務後，讓助手協助追問；先審閱總結，再決定是否轉述給飯店人員。",
+        "把紙本住宿須知拍進「整理」，閱讀分區與表格，對照原圖核對退房時間或收費。住到一半需要再查，從歷史紀錄重新開啟。"
+      ],
+      "work": [
+        "把工作訊息貼進文字翻譯，選目標語言與適合彼此關係的語氣。複製回覆前，檢查姓名、日期與承諾事項。",
+        "遇到語意不明的說法，選擇讓 Helper 解說原文或譯文。用隱含意思、文法或情境回覆釐清，也能套用為工作領域儲存的解說指示。",
+        "把措辭帶到 Chat，比較精簡回覆與較完整的說法，補上對方需要的背景。確認最後草稿，再透過平常使用的通訊 App 傳送。"
+      ],
+      "dining": [
+        "在照片頁的「整理」加入菜單頁面，查看菜色、選項與價格的翻譯。選份數、可用加選項目並加入用餐備註，再把有原文菜名及選項的點單給店員看。",
+        "對菜色、份量或食材還有疑問時，選好雙方語言，用語音翻譯詢問，直接與店員確認回答。",
+        "遇到需要確認多項條件的對話，把需求交給 Voice Agent，讓助手協助逐一追問。先審閱總結再轉述；食材與烹調方式仍須由店員確認。"
+      ],
+      "study": [
+        "從真正遇過的一個詞或句子開始，選作 Helper 的解說內容。查看例句、逐詞解析，或最相關的文法說明。",
+        "設定學習語言，把學習 Widget 放到主畫面。聽卡片發音，依熟悉程度選再複習或已記住；PRO 可調整內容類型、主題與難度。",
+        "想把一句話變成自己會用的表達，就帶到 Chat。要求熟悉情境的例句，試寫自己的版本，再問問哪些地方可以調整。"
+      ],
+      "messages": [
+        "在支援的通訊輸入欄切換 AnyTranslator 鍵盤，寫好或選取草稿，選擇目標語言與語氣。直接翻譯替換，再讀一遍才傳送。",
+        "訊息較長，或想更仔細檢查時，把內容貼到主 App。對照譯文、調整語氣並聽發音，確認後再複製回原本的對話。",
+        "不確定對方話裡的意思，或擔心回覆聽起來不合適，就把相關文字與背景交給 Chat。檢查建議後，選擇你想傳達的措辭。"
+      ],
+      "reading": [
+        "用「整理」拍下公告、簡介或文件，依序加入各頁。閱讀分區、清單與表格，並切回原圖核對要找的細節。",
+        "碰到不熟的表達，將相關字句輸入文字翻譯頁，請 Helper 提供用法說明、文法或逐詞解析，並選擇解說原文或譯文。",
+        "需要問清特定問題，例如哪個日期適用、某個說法指的是什麼，就把段落或照片帶到 Chat。依重要細節採取行動前，再與原文件對照。"
+      ]
+    },
+    "documentArticle": {
+      "title": "把文件各頁，整理成清楚的段落與表格",
+      "intro": "紙本公告、旅遊簡介或多頁文件，往往需要的不只是把譯文蓋在照片上。在照片頁選擇「整理」，依序加入各頁照片並整批送出，將辨識內容整理成分區、段落、清單與表格，方便查找真正需要的資訊。",
+      "tip": "選擇原文與目標語言，清楚拍攝各頁，送出前先確認順序。免費版每次 1 張照片，PRO 最多 10 張。閱讀整理結果時，可點文字查看原文；核對日期、金額或表格項目時，切回對應的原圖。之後可在歷史紀錄依標題或內容類型搜尋，重新開啟掃描。",
+      "limit": "這篇指南介紹從相機或相簿加入文件頁照片的流程，不代表提供 PDF、Word 匯入、編輯或匯出。模糊文字與複雜版面可能造成辨識或理解錯誤，重要細節請搭配原始頁面核對。"
+    }
+  }
+}

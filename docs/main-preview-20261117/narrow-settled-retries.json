@@ -1,0 +1,247 @@
+{
+  "initial": [
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/chat",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/screen-translation",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/text",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/photos",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/voice",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/menu",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/document",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/table",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/keyboard",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/helper",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/features/widget",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/travel",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/work",
+      "width": 320
+    },
+    {
+      "h1Count": 0,
+      "overflow": false,
+      "path": "/use-cases/dining",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/study",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/messages",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/reading",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/media",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/pricing",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/download",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/about",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/affiliate",
+      "width": 320
+    },
+    {
+      "h1Count": 0,
+      "overflow": false,
+      "path": "/contact",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/support",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/chat-language-practice",
+      "width": 320
+    },
+    {
+      "h1Count": 0,
+      "overflow": false,
+      "path": "/blog/translate-other-apps",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/scan-and-read-documents",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/voice-translation-and-dictation",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/read-a-menu",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/write-across-languages",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/learn-from-translations",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/anytranslator-on-mac",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/ios-translation-keyboard",
+      "width": 320
+    }
+  ],
+  "retries": [
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/use-cases/dining",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/contact",
+      "width": 320
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "path": "/blog/translate-other-apps",
+      "width": 320
+    }
+  ],
+  "note": "Three immediate post-navigation reads preceded React rendering; waited for the real visible h1 and rechecked."
+}

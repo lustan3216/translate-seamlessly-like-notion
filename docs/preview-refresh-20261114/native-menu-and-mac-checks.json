@@ -1,0 +1,308 @@
+{
+  "checkedAt": "2026-11-14T16:07:43.482Z",
+  "browser": "Codex native IAB",
+  "galleryResponsive": [
+    {
+      "columns": "588px 588px",
+      "frames": [
+        {
+          "complete": true,
+          "corner": "13.5% / 6.25%",
+          "failed": false,
+          "rendered": 360,
+          "shot": "options",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-native-r7-menu-clean2243/zh-tw/menu-options.webp"
+        },
+        {
+          "complete": true,
+          "corner": "13.5% / 6.25%",
+          "failed": false,
+          "rendered": 360,
+          "shot": "staff",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-native-r7-menu-clean2243/zh-tw/menu-staff.webp"
+        }
+      ],
+      "galleryCount": 2,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "columns": "468px 468px",
+      "frames": [
+        {
+          "complete": true,
+          "corner": "13.5% / 6.25%",
+          "failed": false,
+          "rendered": 360,
+          "shot": "options",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-native-r7-menu-clean2243/zh-tw/menu-options.webp"
+        },
+        {
+          "complete": true,
+          "corner": "13.5% / 6.25%",
+          "failed": false,
+          "rendered": 360,
+          "shot": "staff",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-native-r7-menu-clean2243/zh-tw/menu-staff.webp"
+        }
+      ],
+      "galleryCount": 2,
+      "scrollWidth": 1024,
+      "width": 1024
+    },
+    {
+      "columns": "340px 340px",
+      "frames": [
+        {
+          "complete": true,
+          "corner": "13.5% / 6.25%",
+          "failed": false,
+          "rendered": 276,
+          "shot": "options",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-native-r7-menu-clean2243/zh-tw/menu-options.webp"
+        },
+        {
+          "complete": true,
+          "corner": "13.5% / 6.25%",
+          "failed": false,
+          "rendered": 276,
+          "shot": "staff",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-native-r7-menu-clean2243/zh-tw/menu-staff.webp"
+        }
+      ],
+      "galleryCount": 2,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "columns": "350px",
+      "frames": [
+        {
+          "complete": true,
+          "corner": "13.5% / 6.25%",
+          "failed": false,
+          "rendered": 302,
+          "shot": "options",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-native-r7-menu-clean2243/zh-tw/menu-options.webp"
+        },
+        {
+          "complete": true,
+          "corner": "13.5% / 6.25%",
+          "failed": false,
+          "rendered": 302,
+          "shot": "staff",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-native-r7-menu-clean2243/zh-tw/menu-staff.webp"
+        }
+      ],
+      "galleryCount": 2,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "columns": "280px",
+      "frames": [
+        {
+          "complete": true,
+          "corner": "13.5% / 6.25%",
+          "failed": false,
+          "rendered": 232,
+          "shot": "options",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-native-r7-menu-clean2243/zh-tw/menu-options.webp"
+        },
+        {
+          "complete": true,
+          "corner": "13.5% / 6.25%",
+          "failed": false,
+          "rendered": 232,
+          "shot": "staff",
+          "src": "http://127.0.0.1:5178/app-preview/native/20261114-native-r7-menu-clean2243/zh-tw/menu-staff.webp"
+        }
+      ],
+      "galleryCount": 2,
+      "scrollWidth": 320,
+      "width": 320
+    }
+  ],
+  "macButtons": [
+    {
+      "buttons": [
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "View Mac download options",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "Download for iOS",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "View Mac download options",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "Download for iOS",
+          "width": 280
+        }
+      ],
+      "lang": "en-US",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "buttons": [
+        {
+          "height": 63.796875,
+          "overflow": false,
+          "right": 300,
+          "text": "Voir les options de téléchargement pour Mac",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "Télécharger pour iOS",
+          "width": 280
+        },
+        {
+          "height": 63.796875,
+          "overflow": false,
+          "right": 300,
+          "text": "Voir les options de téléchargement pour Mac",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "Télécharger pour iOS",
+          "width": 280
+        }
+      ],
+      "lang": "fr-FR",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "buttons": [
+        {
+          "height": 63.796875,
+          "overflow": false,
+          "right": 300,
+          "text": "Downloadoptionen für Mac ansehen",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "Für iOS herunterladen",
+          "width": 280
+        },
+        {
+          "height": 63.796875,
+          "overflow": false,
+          "right": 300,
+          "text": "Downloadoptionen für Mac ansehen",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "Für iOS herunterladen",
+          "width": 280
+        }
+      ],
+      "lang": "de-DE",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "buttons": [
+        {
+          "height": 63.796875,
+          "overflow": false,
+          "right": 300,
+          "text": "Посмотреть варианты загрузки для Mac",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "Скачать для iOS",
+          "width": 280
+        },
+        {
+          "height": 63.796875,
+          "overflow": false,
+          "right": 300,
+          "text": "Посмотреть варианты загрузки для Mac",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "Скачать для iOS",
+          "width": 280
+        }
+      ],
+      "lang": "ru-RU",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "buttons": [
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "ดูตัวเลือกดาวน์โหลดสำหรับ Mac",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "ดาวน์โหลดสำหรับ iOS",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "ดูตัวเลือกดาวน์โหลดสำหรับ Mac",
+          "width": 280
+        },
+        {
+          "height": 48,
+          "overflow": false,
+          "right": 300,
+          "text": "ดาวน์โหลดสำหรับ iOS",
+          "width": 280
+        }
+      ],
+      "lang": "th-TH",
+      "scrollWidth": 320,
+      "width": 320
+    }
+  ],
+  "visualScreens": [
+    "native-menu-gallery-mobile-light.jpg",
+    "native-menu-gallery-desktop-dark.jpg"
+  ],
+  "note": "Initial responsive checks used 360px desktop gallery width; final desktop visual after 340px refinement fits between y88 and y889 at 1440x900. Screenshot sources are verified fresh device captures; missing locale images are pending, not passed."
+}

@@ -1,0 +1,652 @@
+{
+  "marketing": {
+    "hero.title": "Dunia begitu luas.",
+    "hero.accent": "Jangan biarkan bahasa membatasi.",
+    "nav.manifesto": "Yang kami yakini",
+    "hero.body": "Pahami menu, lalu pesan. Terjemahkan pesan, lalu balas. Teks, foto, subtitel video, suara AI alami, dan latihan percakapan—agar bahasa asing benar-benar berguna.",
+    "feature.table": "Terjemahan tabel",
+    "home.featuresTitle": "11 alat penerjemahan dan belajar, selalu siap dibawa.",
+    "home.featuresBody": "Baca menu dan dokumen, balas pesan, latih percakapan. Semua alat yang Anda butuhkan.",
+    "home.blogTitle": "Panduan praktis untuk memaksimalkan terjemahan.",
+    "download.macNote": "Model Mac dan persyaratan sistem mengikuti App Store. Keyboard terjemahan, Widget belajar, dan terjemahan di aplikasi lain tersedia untuk iOS／iPadOS.",
+    "features.title": "Terjemahan, percakapan, dan belajar dalam satu aplikasi.",
+    "features.body": "Pahami menu, dokumen, dan tabel. Balas pesan, ikuti video, lalu berlatih bicara bersama Asisten AI. 11 alat yang menghubungkan membaca, menulis, mendengar, dan berbicara.",
+    "pricing.allowance": "Lihat kuota gratis di aplikasi",
+    "pricing.more": "Pilih paket Standar atau Suara sesuai kebutuhan",
+    "pricing.manage": "Pulihkan pembelian di aplikasi; kelola perpanjangan dan pembatalan melalui Apple. Kartu penggunaan menampilkan sisa kuota dan tanggal pembaruan.",
+    "pricing.voiceNote": "Terjemahan suara dan subtitel video berbagi menit suara. Saat sesi suara Asisten AI aktif, teks, suara, dan foto memakai menit Asisten AI. Pertanyaan teks/foto biasa dan teks layar memakai kuota terjemahan. Lihat sisa kuota dan tanggal pembaruan di aplikasi.",
+    "article.voice": "Fitur suara mana yang tepat?",
+    "affiliate.processTitle": "Proses kemitraan",
+    "faq.FreeQ": "Bisa mencoba gratis?",
+    "faq.FreeA": "Coba terjemahan, Asisten AI, suara, dan konten dasar Widget secara gratis; lihat kuota di aplikasi. PRO mendukung pemindaian banyak halaman, lebih banyak pengaturan Helper, dan konten belajar khusus. Paket Suara menawarkan lebih banyak menit.",
+    "faq.AgentQ": "Apa beda suara Asisten AI dan terjemahan suara?",
+    "faq.AgentA": "Untuk percakapan langsung, gunakan terjemahan suara dengan subtitel dua bahasa dan suara AI alami. Untuk bertanya atau berlatih bicara, gunakan suara Asisten AI: dengarkan contoh, lalu coba. Keduanya memakai kuota menit terpisah.",
+    "voice.eyebrow": "Suara AI alami",
+    "voice.title": "Bukan sekadar paham. Bicara lebih alami.",
+    "voice.body": "Suara AI generasi baru dengan intonasi dan ritme alami. Dengarkan satu kalimat, tirukan, dan kenali pelafalan serta aksennya. Lalu berlatih percakapan dengan AI agar berani bicara.",
+    "voice.action": "Jelajahi terjemahan suara",
+    "faq.ScanQ": "Kapan memakai menu, dokumen, atau tabel?",
+    "faq.ScanA": "Gunakan Menu untuk memilih hidangan dan tambahan, lalu tampilkan pesanan dalam bahasa asli. Dokumen menata paragraf per halaman; Tabel menampilkan baris dan kolom. Gratis: 1 foto per proses. PRO: hingga 10 foto. Buka kembali hasilnya dari riwayat pindai.",
+    "faq.AccuracyQ": "Bagaimana memeriksa kasus dan akhiran Rusia atau Jerman?",
+    "faq.AccuracyA": "Gunakan Tata bahasa, Kesalahan umum, dan Analisis per kata di Helper untuk memahami kasus serta akhiran Rusia/Jerman. Untuk mengubah kalimat asli, minta Asisten AI mengoreksi dan menjelaskan alasannya.",
+    "article.work": "Menulis lintas bahasa: deklinasi Rusia/Jerman dan nada balasan",
+    "about.body": "Terjemahan, penjelasan, dan latihan terhubung, agar Anda fokus berkomunikasi.",
+    "about.story": "Setelah paham, ada balasan, pertanyaan, pesanan, atau kalimat yang ingin diingat. AnyTranslator memudahkan langkah berikutnya.",
+    "privacy.body": "Terjemahan dan fitur AI diproses secara online. Lihat kebijakan privasi untuk informasi data dan izin.",
+    "affiliate.status": "Saat ini kemitraan dibahas secara individual. Bentuk kerja sama dan pembagian komisi disepakati terpisah.",
+    "download.iosNote": "Terjemahan teks, suara, foto, menu, dokumen, dan tabel, ditambah Asisten AI, terjemahan layar, keyboard, serta Widget belajar.",
+    "download.ios": "Unduh gratis untuk iOS",
+    "feature.chat": "Asisten AI",
+    "home.statement": "Dari memahami kalimat, hingga berani mengucapkannya.",
+    "home.statementBody": "Pahami inti foto, sambung percakapan dengan penerjemahan lisan, lalu dengarkan contoh AI alami untuk latihan perjalanan atau wawancara. Umpan balik dan ulasan membantu Anda memakai ungkapan di kehidupan nyata.",
+    "case.study.title": "Latih yang ingin dikatakan, sampai bisa diucapkan.",
+    "case.study.body": "Pilih tujuan untuk perjalanan, pekerjaan, atau keseharian; buat situasi dan tujuan sendiri juga bisa. Bicara dengan AI, baca umpan balik, lalu ulangi agar siap memakai ungkapannya.",
+    "article.chat": "Pelatih bahasa saku: foto, penerjemahan lisan, dan latihan bicara",
+    "article.learning": "Bawa kalimat yang dilatih ke kehidupan sehari-hari.",
+    "feature.screen-translation": "Terjemahan di aplikasi lain",
+    "article.screen": "Baca subtitel dan web lintas aplikasi",
+    "case.media.title": "Tonton video dan baca web, sambil tetap memahami.",
+    "case.media.body": "Video tetap berjalan, halaman tetap terbuka. Bandingkan subtitel atau teks yang terlihat lewat Gambar dalam Gambar. Tanyakan kalimat yang menarik kepada Asisten AI."
+  },
+  "features": {
+    "text": {
+      "title": "Terjemahan teks: makna jelas, nada pas.",
+      "summary": "Pesan dan email dengan tujuh pilihan nada. Pahami deklinasi Rusia/Jerman bersama Helper, lalu minta Asisten AI mengoreksi kalimat asli.",
+      "heading": "Pilih nada yang pas untuk penerimanya.",
+      "body": "Permintaan kerja yang sopan, obrolan teman yang alami, atau pesan panjang yang ringkas. Dengarkan pelafalan AI dan simpan kalimat pilihan. Gunakan Helper atau koreksi Asisten AI untuk kasus dan akhiran Rusia/Jerman.",
+      "steps": [
+        "Tujuh nada, dari surat formal hingga obrolan sehari-hari.",
+        "Pahami deklinasi Rusia/Jerman dengan Helper; minta koreksi kalimat asli kepada Asisten AI.",
+        "Dengarkan suara AI alami, simpan kalimat, atau bawa ke draf Asisten AI."
+      ],
+      "sections": [
+        {
+          "title": "Pahami kasus dan akhiran Rusia/Jerman",
+          "body": "Tata bahasa, kesalahan umum, dan analisis per kata menjelaskan kasus Rusia serta artikel dan akhiran Jerman dalam bahasa Anda. Pahami hubungan antarkata, lalu pilih ungkapannya."
+        },
+        {
+          "title": "Tujuh nada untuk setiap penerima",
+          "body": "Otomatis, Sopan, Humor, Surat, Teman, Ringkas, dan Menggoda. Dari urusan kerja hingga berkenalan lintas negara, pilih gaya yang sesuai.",
+          "items": [
+            "Otomatis: menyesuaikan nada dengan teks dan konteks.",
+            "Sopan: untuk permintaan, pertanyaan, atau pesan kerja.",
+            "Humor: mencairkan percakapan yang sesuai.",
+            "Surat: untuk email atau surat.",
+            "Teman: alami dan santai, seperti berbicara dengan orang dekat.",
+            "Ringkas: mempersingkat kalimat; periksa kembali informasi penting.",
+            "Menggoda: ungkapan akrab dan jenaka untuk berkenalan lintas negara."
+          ]
+        },
+        {
+          "title": "Koreksi Rusia/Jerman: pahami alasan sebelum memilih",
+          "body": "Nada Otomatis mempertahankan teks jika seluruhnya sudah dalam bahasa tujuan. Periksa kasus, akhiran, atau tata bahasa Rusia/Jerman lewat Helper, atau minta Asisten AI mengoreksi kalimat asli."
+        }
+      ]
+    },
+    "photos": {
+      "title": "Terjemahan foto: arti langsung di atas tulisannya.",
+      "summary": "Arahkan kamera ke rambu, label, atau pengumuman. Terjemahan muncul di atas gambar.",
+      "heading": "Arahkan kamera, baca terjemahannya di gambar.",
+      "body": "Baca terjemahan yang menimpa tulisan asing. Ambil foto atau pilih dari album, lalu ketuk teks untuk melihat detail tanpa kehilangan petunjuk di sekitarnya.",
+      "steps": [
+        "Terjemahan langsung di gambar: arahkan ke rambu dan baca.",
+        "Ambil foto atau pilih dari album untuk menerjemahkan teks.",
+        "Ketuk detail terjemahan sambil tetap melihat gambar asli."
+      ]
+    },
+    "voice": {
+      "title": "Terjemahan suara: ikuti ucapan kedua pihak.",
+      "summary": "Subtitel dua bahasa mengikuti percakapan, suara AI alami menyampaikan maksud Anda. Empat mode untuk saling memahami.",
+      "heading": "Percakapan langsung, dibantu terjemahan.",
+      "body": "Bertanya arah, check-in, atau berbicara langsung: subtitel dua bahasa dan suara AI alami menyampaikan makna serta nada. Pilih empat mode suara; sesudahnya, baca ringkasan dan putar ulang terjemahan untuk belajar.",
+      "steps": [
+        "Percakapan dua arah membacakan kedua pihak; mode Bicara untuk saya memutar terjemahan ucapan Anda.",
+        "Dengar pribadi lewat lubang suara atau earphone; pilih subtitel saja di tempat tenang.",
+        "Tinjau percakapan, putar ulang suara AI, salin atau bagikan inti ringkasan."
+      ],
+      "sections": [
+        {
+          "title": "Suara AI alami, lengkap dengan nada dan ritme",
+          "body": "Model suara generasi baru menghasilkan intonasi alami dan nuansa emosi sesuai isi. Gunakan untuk berkomunikasi, lalu putar ulang dan tirukan agar pelafalan serta aksen asing makin akrab."
+        }
+      ]
+    },
+    "menu": {
+      "title": "Pindai menu: pahami hidangan, lalu tunjukkan pesanan.",
+      "summary": "Foto menu, pilih hidangan, harga, dan tambahan dengan jelas. Tunjukkan pesanan dalam bahasa asli kepada staf.",
+      "heading": "Foto menu, pilih, lalu tunjukkan kepada staf.",
+      "body": "Ubah menu asing menjadi hidangan yang bisa dipilih. Nama, penjelasan, harga, dan tambahan tersedia bersama. Pilih jumlah serta catatan, lalu tampilkan pesanan asli. Harga yang diketahui dijumlahkan per mata uang.",
+      "steps": [
+        "Nama, deskripsi, dan harga menjadi pilihan yang mudah dibaca.",
+        "Pilih jumlah, ukuran, tambahan yang tersedia, dan catatan.",
+        "Tampilkan pesanan asli; jumlahkan harga yang diketahui per mata uang."
+      ]
+    },
+    "document": {
+      "title": "Pindai dokumen: rapi per halaman, jelas per bagian.",
+      "summary": "Foto dokumen beberapa halaman, lalu baca sebagai paragraf, daftar, dan tabel. Bandingkan teks asli atau buka kembali dari riwayat.",
+      "heading": "Dokumen panjang, tetap mudah dibaca.",
+      "body": "Pengumuman, brosur wisata, dan dokumen beberapa halaman ditata menjadi judul, paragraf, dan daftar. Bandingkan teks atau foto asli kapan saja, lalu temukan lagi di riwayat tanpa mengulang proses.",
+      "steps": [
+        "Tata foto berurutan; pertahankan judul, paragraf, dan daftar.",
+        "Ketuk untuk membandingkan teks dan foto asli, termasuk detail tulisan panjang.",
+        "Cari riwayat pindai untuk membuka dokumen kapan saja."
+      ]
+    },
+    "keyboard": {
+      "title": "Keyboard terjemahan: siapkan balasan di aplikasi Anda.",
+      "summary": "Balas tanpa bolak-balik aplikasi. Ketik atau gunakan dikte bawaan iOS, terjemahkan dan ubah nada di kolom input, lalu kirim sendiri.",
+      "heading": "Tulis balasan di aplikasi yang sedang dipakai.",
+      "body": "Terjemahkan dan sesuaikan nada chat atau pesan kerja langsung di kolom input. Ketik atau gunakan dikte iOS untuk balasan alami dan ringkas. Terjemahkan serta sisipkan isi papan klip juga bisa.",
+      "steps": [
+        "Terjemahkan di kolom input, ganti draf, lalu lanjutkan balasan.",
+        "Ketik atau gunakan dikte iOS, kemudian pilih bahasa dan nada.",
+        "Terjemahkan papan klip, salin, atau sisipkan di posisi kursor."
+      ]
+    },
+    "helper": {
+      "title": "Helper mengurai tata bahasa dan pemakaian.",
+      "summary": "Pahami kasus Rusia dan akhiran Jerman dalam bahasa Anda. Simpan gaya penjelasan sekali, pakai lagi untuk kalimat berikutnya.",
+      "heading": "Pahami maknanya, pelajari cara memakainya.",
+      "body": "Kasus, akhiran, dan pola kalimat asli maupun terjemahan dijelaskan dalam bahasa Anda. Pilih tata bahasa, kesalahan umum, atau analisis per kata. Simpan bidang, tujuan belajar, dan kedalaman penjelasan sebagai instruksi pribadi.",
+      "steps": [
+        "Tata bahasa, kesalahan umum, dan analisis per kata mengurai struktur kalimat.",
+        "Jelajahi sinonim, contoh, makna tersirat, dan saran balasan.",
+        "Atur bidang, tujuan, dan kedalaman; simpan instruksi untuk dipakai ulang."
+      ],
+      "sections": [
+        {
+          "title": "Pahami alasan deklinasi Rusia/Jerman",
+          "body": "Contoh kontekstual: lihat perubahan kasus, artikel, dan akhiran nomina pada instrumental Rusia dan datif Jerman.",
+          "items": [
+            "Rusia: Я говорю с мой друг. → Я говорю с моим другом. с yang berarti ‘bersama’ memakai instrumental; akhiran мой dan друг ikut berubah.",
+            "Jerman: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit memakai datif; nomina lemah Kunde menjadi Kunden."
+          ]
+        },
+        {
+          "title": "Simpan instruksi, pakai untuk kalimat baru",
+          "body": "Simpan instruksi seperti ‘jelaskan kasus Rusia dalam bahasa Indonesia’ atau ‘jelaskan akhiran Jerman’. Kalimat baru mengikuti gaya yang sama agar Anda fokus pada yang ingin dipelajari."
+        }
+      ]
+    },
+    "widget": {
+      "title": "Widget belajar, ulas kapan saja.",
+      "summary": "Layar utama menjadi kartu ulasan: baca kata dan kalimat, dengarkan pelafalan AI, tandai untuk diulang atau sudah diingat. Pilih konten, topik, dan tingkat kesulitan sendiri.",
+      "heading": "Ubah waktu luang menjadi waktu mengulang.",
+      "body": "Ketuk di layar utama untuk mendengar suara AI, menirukan, mengulas, dan menandai yang sudah diingat. Dari layar kunci, buka aplikasi; gunakan StandBy jika didukung. Kata, kolokasi, idiom, dan kalimat mengikuti topik, tingkat, serta instruksi Anda.",
+      "steps": [
+        "Baca kata dan kalimat di layar utama, dengarkan dan tirukan AI.",
+        "Tandai untuk diulang／sudah diingat, lalu lanjutkan sesi berikutnya.",
+        "Pilih jenis ungkapan, topik, tingkat, dan instruksi khusus."
+      ]
+    },
+    "table": {
+      "title": "Terjemahan tabel: cocokkan baris dan kolom, pahami angkanya.",
+      "summary": "Jadwal dan daftar harga dalam baris serta kolom. Geser tabel lebar untuk membaca waktu, harga, dan satuan per baris.",
+      "heading": "Ikuti baris dan kolom, baca angka dengan jelas.",
+      "body": "Banyak angka dan kolom tetap bisa dibaca sebagai tabel. Tata jadwal atau daftar harga, geser ke samping untuk tabel lebar, lalu periksa teks atau foto asli untuk mencocokkan waktu, jumlah, dan satuan.",
+      "steps": [
+        "Pertahankan susunan baris dan kolom agar waktu serta harga mudah dibandingkan.",
+        "Geser tabel lebar untuk membaca kolom dan satuan lengkap.",
+        "Bandingkan teks dan foto asli, lalu buka lagi dari riwayat pindai."
+      ]
+    },
+    "chat": {
+      "title": "Asisten AI",
+      "summary": "Pahami inti foto, gunakan penerjemahan lisan langsung, dan latih bicara dengan suara AI alami. Pelatih bahasa untuk perjalanan, kerja, dan keseharian.",
+      "heading": "Pelatih bahasa saku untuk benar-benar memakainya.",
+      "body": "Latih pemesanan sebelum perjalanan atau ungkapan sebelum bekerja. Tanyakan foto yang tidak dipahami. Percakapan dan contoh AI alami, penerjemahan lisan, serta latihan situasi membantu Anda dari paham menjadi berani bicara.",
+      "steps": [
+        "Temukan inti foto untuk memahami rambu, pesan, dan gambar.",
+        "Latih situasi dan tujuan untuk perjalanan, pekerjaan, serta keseharian.",
+        "Dengarkan contoh alami, tirukan, ulangi, dan simpan ungkapan berguna."
+      ],
+      "sections": [
+        {
+          "title": "Foto atau penerjemahan lisan, tanyakan saat itu juga",
+          "body": "Tambahkan foto rambu, pengumuman, atau pesan. AI merangkum inti, hal yang perlu diperhatikan, dan langkah berikutnya. Saat bahasa berbeda, gunakan chat suara atau penerjemahan lisan langsung untuk menyampaikan pertanyaan.",
+          "items": [
+            "Percakapan suara: bertanya dengan bicara, lalu lanjut mengobrol.",
+            "Mengobrol dalam bahasa Inggris: berlatih lewat percakapan alami.",
+            "Penerjemahan lisan langsung: hubungkan percakapan beda bahasa.",
+            "Tunjukkan foto: temukan inti dan langkah berikutnya."
+          ]
+        },
+        {
+          "title": "Latih bahasa yang berguna untuk hidup Anda",
+          "body": "Dari restoran dan bandara hingga wawancara dan pekerjaan: pilih situasi untuk berlatih, atau tujuan untuk belajar bertahap. Buat situasi dan tujuan sendiri juga bisa. Utamakan menjawab dengan suara agar siap untuk percakapan nyata.",
+          "items": [
+            "Latihan situasi: mainkan peran dan selesaikan misi percakapan.",
+            "Latihan tujuan: pelajari ungkapan, lalu gunakan dalam situasi.",
+            "Belajar khusus: buat situasi atau tujuan untuk keperluan tertentu."
+          ]
+        },
+        {
+          "title": "Suara alami, lebih mudah mulai bicara",
+          "body": "Minta AI memberi contoh perlahan, lalu latih pelafalan, aksen, dan ritme. Pakai kalimat itu dalam percakapan alami agar latihan makin dekat dengan komunikasi nyata."
+        },
+        {
+          "title": "Pahami umpan balik, bicara lebih lancar berikutnya",
+          "body": "Bandingkan kalimat Anda dengan ungkapan alami, dengarkan contoh, dan pahami alasannya. Minta koreksi kalimat pendek Rusia, Jerman, dan lainnya. Simpan ungkapan, ulangi latihan, dan buka percakapan di riwayat untuk persiapan berikutnya."
+        }
+      ]
+    },
+    "screen-translation": {
+      "title": "Terjemahan layar, pahami subtitel dan teks.",
+      "summary": "Tetap di video atau web yang sedang dibuka. Baca subtitel dan teks layar melalui Gambar dalam Gambar, bandingkan teks asli, lalu buka ungkapan berguna dari riwayat.",
+      "heading": "Tetap di aplikasi Anda, pahami isinya.",
+      "body": "Audio video asing atau tulisan di web: pilih mode yang sesuai. Gambar dalam Gambar menampilkan konten asli dan terjemahan bersama, mengurangi jeda berpindah aplikasi saat menonton, membaca, atau bermain.",
+      "steps": [
+        "Subtitel video: ubah suara yang diputar menjadi teks yang dipahami.",
+        "Teks layar: baca tulisan yang terlihat di web, chat, dan game.",
+        "Gambar dalam Gambar dan riwayat: bandingkan sekarang, baca lagi nanti."
+      ],
+      "sections": [
+        {
+          "title": "Subtitel video, ikuti isinya",
+          "body": "Terjemahkan audio dari aplikasi lain menjadi subtitel bersama teks asli. Saat menonton video, siaran langsung, atau belajar bahasa, tangkap inti dalam bahasa yang akrab sambil terus menonton."
+        },
+        {
+          "title": "Teks layar, lanjutkan membaca",
+          "body": "Baca terjemahan teks yang terlihat di web, chat, game, atau dokumen lewat Gambar dalam Gambar. Geser dekat paragraf yang diinginkan atau gulir halaman asli untuk membaca bagian berikutnya."
+        },
+        {
+          "title": "Terjemahan menemani, ungkapan tersimpan",
+          "body": "Bandingkan sambil melihat konten asli. Teks asli dan terjemahan yang selesai tersimpan di riwayat untuk dibaca ulang. Bawa ungkapan secara manual ke Asisten AI untuk menanyakan makna atau berlatih pemakaiannya.",
+          "items": [
+            "Memerlukan iOS／iPadOS 16 ke atas, Gambar dalam Gambar, dan internet. Konten terlindungi mungkin tidak dapat diterjemahkan."
+          ]
+        }
+      ]
+    }
+  },
+  "workflows": {
+    "travel": [
+      "Saat check-in, gunakan terjemahan suara dan subtitel untuk memastikan tipe kamar, deposit, dan waktu check-out.",
+      "Latih check-in dan pertanyaan lanjutan bersama Asisten AI sebelum bicara langsung.",
+      "Foto aturan penginapan sebagai Dokumen; periksa waktu dan biaya, lalu buka dari riwayat pindai."
+    ],
+    "work": [
+      "Sesuaikan nada pesan kerja dengan penerima, dari permintaan sopan hingga balasan ringkas.",
+      "Pahami kasus serta akhiran Rusia/Jerman dengan Helper, lalu minta koreksi kalimat asli kepada Asisten AI.",
+      "Sertakan konteks untuk membandingkan balasan; kirim di aplikasi asal saat siap."
+    ],
+    "dining": [
+      "Ubah foto menu menjadi pilihan hidangan, atur jumlah dan tambahan, lalu tampilkan pesanan asli.",
+      "Gunakan terjemahan suara untuk menanyakan porsi, bahan, dan cara memasak kepada staf.",
+      "Latih pertanyaan dengan Asisten AI; pastikan kebutuhan alergi langsung kepada staf."
+    ],
+    "messages": [
+      "Ubah bahasa dan nada di kolom input asli tanpa bolak-balik aplikasi.",
+      "Bandingkan pesan panjang dengan teks asli lewat terjemahan teks; dengarkan dan simpan ungkapan.",
+      "Berikan konteks kepada Asisten AI untuk menemukan balasan yang sesuai."
+    ],
+    "reading": [
+      "Pilih Dokumen untuk pengumuman, brosur, dan berkas beberapa halaman; baca paragraf, daftar, serta tabel per halaman.",
+      "Pilih Tabel untuk jadwal dan daftar harga; geser, cocokkan baris/kolom, teks asli, serta satuannya.",
+      "Bawa kalimat sulit ke terjemahan teks dan pahami pemakaiannya lewat Helper."
+    ],
+    "study": [
+      "Latih situasi dan tentukan tujuan bersama Asisten AI untuk percakapan nyata berikutnya.",
+      "Pahami tata bahasa, kosakata, dan contoh dengan Helper untuk mengatasi kebingungan.",
+      "Dengarkan pelafalan AI dan tirukan kalimat di Widget belajar; jadikan waktu luang sebagai latihan."
+    ],
+    "media": [
+      "Ikuti video dengan subtitel dan baca web dengan teks layar, sambil melihat konten asli.",
+      "Salin ungkapan ke Asisten AI, tanyakan arti, bandingkan gaya, lalu latih lagi.",
+      "Pilih nada di terjemahan teks agar isi yang dipahami bisa dipakai untuk membalas."
+    ]
+  },
+  "articles": {
+    "voice.intro": "Untuk percakapan langsung, gunakan subtitel dua bahasa dan suara AI alami. Untuk contoh dan latihan bicara, gunakan suara Asisten AI. Untuk video di aplikasi lain, pilih subtitel pada Terjemahan di aplikasi lain.",
+    "voice.tip": "Pilih bahasa kedua pihak dan mode suara sebelum mulai. Sesudahnya, putar ulang suara AI dan ikuti intonasi serta ritmenya. Baca percakapan dan ringkasan untuk menyimpan ungkapan berguna.",
+    "voice.limit": "Percakapan dua arah cocok untuk tatap muka. Dengarkan pribadi lewat lubang suara atau earphone; pilih subtitel saja jika tidak bisa memutar suara. Mulai subtitel video dari Terjemahan di aplikasi lain. Konten yang bisa ditangkap bergantung pada iOS.",
+    "menu.intro": "Pada halaman Foto, pilih Atur lalu Menu. Tambahkan foto lurus, jelas, dan mencakup seluruh halaman untuk menata nama hidangan, bahan, porsi, serta harga.",
+    "menu.tip": "Baca hidangan dan harga, pilih jumlah, ukuran, atau tambahan yang tersedia, lalu tambahkan catatan. Buka pesanan asli untuk memperlihatkan hidangan, opsi, dan jumlah kepada staf.",
+    "menu.limit": "Harga yang diketahui dijumlahkan per mata uang; harga yang tidak jelas tidak menghasilkan total pasti. Pastikan bahan, alergen, dan cara memasak langsung kepada staf sebelum menampilkan pesanan.",
+    "work.intro": "Terjemahkan Rusia atau Jerman untuk memahami, lalu pilih nada balasan. Helper menjelaskan kasus dan akhiran; minta koreksi kalimat asli secara jelas kepada Asisten AI.",
+    "work.tip": "Sesuaikan dengan penerima: Sopan untuk permintaan kerja, Surat untuk email, Teman untuk orang dekat. Pahami kalimat sulit lewat Helper, lalu sertakan konteks untuk membandingkan balasan dengan Asisten AI.",
+    "work.limit": "Nada Otomatis mempertahankan teks yang seluruhnya sudah dalam bahasa tujuan. Untuk memperbaiki kasus, akhiran, atau tata bahasa, pahami alasannya dengan Helper dan minta koreksi secara jelas kepada Asisten AI.",
+    "mac.intro": "Terjemahkan teks dan tanyakan kepada AI di Mac juga. Periksa dukungan model dan sistem Anda di App Store terlebih dahulu.",
+    "mac.tip": "Setelah mengunduh, gunakan terjemahan teks dan Asisten AI; pada halaman Foto, pilih file gambar atau tempelkan gambar. Lihat model yang kompatibel dan syarat sistem di halaman toko perangkat tersebut.",
+    "mac.limit": "Keyboard terjemahan, Widget, dan Terjemahan di aplikasi lain terutama untuk iPhone／iPad yang didukung. Fitur tiap platform mengikuti tampilan aplikasi yang tersedia.",
+    "keyboard.intro": "Ikuti petunjuk aplikasi untuk menambahkan keyboard di iOS dan mengaktifkan Akses Penuh agar dapat menerjemahkan secara online. Pada kolom yang didukung, ketik atau gunakan dikte sistem untuk membuat draf, lalu terjemahkan dan sesuaikan nada.",
+    "keyboard.tip": "Buat draf dengan mengetik atau dikte bawaan iOS, lalu pilih bahasa dan nada. Alat juga dapat menerjemahkan papan klip, menyalin terjemahan, atau menyisipkannya di posisi kursor.",
+    "keyboard.limit": "Dukungan keyboard dan dikte berbeda menurut aplikasi, iOS, dan bahasa. Bila perlu, ketik atau kembali ke aplikasi utama untuk menerjemahkan. Unduh paket bahasa input sesuai petunjuk.",
+    "chat.intro": "Jadikan Asisten AI pelatih bahasa saku: pahami foto, gunakan penerjemahan lisan langsung, atau latih bicara untuk perjalanan dan kerja. Mulai dari satu pertanyaan, lalu bawa persiapan ke kehidupan nyata.",
+    "chat.tip": "Mulai dari situasi dan tujuan seperti memesan makanan atau wawancara, atau buat sendiri. Minta contoh perlahan, ikuti intonasi dan ritme, lalu mengobrol, baca umpan balik, simpan kalimat, dan latih lagi.",
+    "chat.limit": "Memerlukan internet dan kuota; suara memerlukan izin mikrofon. Fitur mengikuti versi, bahasa, dan status layanan. Verifikasi sumber informasi penting. Tujuan khusus mengganti rencana serta progres sebelumnya. Lihat sisa kuota di aplikasi.",
+    "learning.intro": "Agar bahasa berguna sehari-hari, latih percakapan yang benar-benar akan Anda hadapi. Pilih tujuan dan situasi bersama Asisten AI, lalu gunakan umpan balik serta ulasan untuk menjadikan kalimat sebagai ungkapan Anda sendiri.",
+    "learning.tip": "Fokus pada satu situasi setiap kali. Jawab, lalu bandingkan dengan ungkapan alami. Minta contoh intonasi dan ritme dari AI, pahami pemakaian lewat Helper, dan ulangi melalui Widget belajar agar kalimat lebih melekat.",
+    "learning.limit": "Latihan AI memerlukan internet dan kuota. Widget belajar memerlukan iOS 17 ke atas; konten serta pengaturan khusus mengikuti paket.",
+    "screen.intro": "Tonton video atau baca web dengan terjemahan di depan Anda. Pahami suara lewat subtitel dan tulisan lewat teks layar, lalu bandingkan dengan Gambar dalam Gambar. Ungkapan penting bisa dibaca lagi nanti.",
+    "screen.tip": "Gunakan subtitel untuk video, teks layar untuk web. Geser Gambar dalam Gambar atau gulir halaman asli untuk bagian berikutnya. Hentikan siaran layar setelah selesai; buka ungkapan yang ingin diulang dari riwayat.",
+    "screen.limit": "Memerlukan iOS／iPadOS 16 ke atas, Gambar dalam Gambar, dan internet. Konten terlindungi mungkin tidak bisa diterjemahkan. Subtitel memakai menit suara; teks layar memakai kuota terjemahan. Lihat sisa kuota di aplikasi."
+  },
+  "scan": {
+    "title": "Menu, dokumen, tabel—cara baca yang sesuai.",
+    "body": "Menu menjadi hidangan yang bisa dipilih, dokumen menjadi paragraf, tabel tetap berbaris dan berkolom. Rambu serta label diterjemahkan langsung di gambar."
+  },
+  "documentArticle": {
+    "title": "Pindai dokumen: tata per halaman, baca bersama teks asli",
+    "intro": "Untuk pengumuman, brosur wisata, atau dokumen beberapa halaman, pilih Atur lalu Dokumen pada halaman Foto dan tambahkan foto berurutan. Sesudah paragraf, daftar, dan tabel ditata, bandingkan teks asli kapan saja.",
+    "tip": "Foto tiap halaman dengan jelas dan periksa urutan sebelum mengirim sekaligus. Ketuk teks untuk melihat aslinya atau kembali ke foto tiap halaman. Geser tabel lebar; cari riwayat berdasarkan judul atau jenis konten.",
+    "limit": "Pilih jenis sesuai isi: Menu untuk makanan, Tabel untuk jadwal dan daftar harga berbaris/berkolom, Dokumen untuk halaman lainnya. Cocokkan bagian buram dengan foto asli atau ambil ulang."
+  },
+  "pricing": {
+    "standardTitle": "Standar",
+    "voiceTitle": "Suara",
+    "freeAllowance": "Unduh gratis untuk mencoba terjemahan, Asisten AI, dan suara. Lihat kuota di aplikasi.",
+    "freeScan": "Atur 1 foto per proses",
+    "freeHelper": "Simpan 1 pengaturan khusus Helper",
+    "standardWeeklyAllowance": "Setiap minggu: 150 menit terjemahan suara／subtitel video dan 10 menit suara Asisten AI.",
+    "standardMonthlyAllowance": "Paket bulanan dan tahunan: 600 menit terjemahan suara／subtitel video dan 30 menit suara Asisten AI per bulan.",
+    "voiceWeeklyAllowance": "Setiap minggu: 600 menit terjemahan suara／subtitel video dan 45 menit suara Asisten AI.",
+    "voiceMonthlyAllowance": "Paket bulanan dan tahunan: 2.400 menit terjemahan suara／subtitel video dan 135 menit suara Asisten AI per bulan.",
+    "unlimitedTranslations": "Paket berbayar menawarkan terjemahan tanpa batas untuk teks, foto, input teks Asisten AI, dan teks layar.",
+    "scanAllowance": "Atur hingga 10 foto per proses",
+    "helperAllowance": "Paket berbayar saat ini dapat menyimpan 5 pengaturan khusus Helper",
+    "widgetAllowance": "Pilih konten, topik, dan tingkat kesulitan",
+    "annualQuotaNote": "Tahunan adalah periode pembayaran; kuota suara dan Asisten AI tetap diperbarui setiap bulan.",
+    "quotaNote": "Teks dan foto Asisten AI biasa memakai kuota terjemahan. Saat sesi suara aktif, teks, suara, dan foto berbagi menit Asisten AI. Subtitel video dan terjemahan suara berbagi menit suara; teks layar memakai kuota terjemahan.",
+    "legacyNote": "Langganan lama dan paket gratis mungkin memiliki kuota berbeda. Lihat sisa kuota dan tanggal pembaruan berikutnya di kartu penggunaan aplikasi.",
+    "standardNote": "Terjemahan harian, membaca foto, dan latihan bahasa. Semua alat penting dalam satu tempat.",
+    "voiceNote": "Terjemahan suara, subtitel video, dan latihan AI. Lebih banyak waktu untuk bicara.",
+    "voiceLabel": "Terjemahan suara dan subtitel video",
+    "chatVoiceLabel": "Percakapan suara Asisten AI",
+    "aiTextLabel": "Pertanyaan teks dan foto Asisten AI",
+    "freeWidget": "Ulasan dasar kata dan kalimat",
+    "scanLabel": "Pindai menu・dokumen・tabel",
+    "freeAccess": "Coba gratis"
+  },
+  "extras": {
+    "homeScenarios": [
+      {
+        "id": "travel-and-dining",
+        "title": "Bepergian dan memesan, tanyakan sesuka Anda.",
+        "body": "Dari resepsionis hotel hingga meja makan di negeri asing, bertanya dan memesan dengan jelas.",
+        "scenarios": [
+          {
+            "id": "travel",
+            "context": "Petunjuk arah・check-in hotel・transportasi",
+            "title": "Pastikan detail check-in saat itu juga.",
+            "body": "Tanyakan tipe kamar, deposit, dan waktu check-out dalam bahasa Anda.",
+            "points": [
+              "Bandingkan subtitel dua bahasa dan pilih empat mode pemutaran sesuai situasi."
+            ],
+            "action": "Lihat terjemahan suara"
+          },
+          {
+            "id": "dining",
+            "context": "Pesan di restoran・tambahan kopi・catatan pesanan",
+            "title": "Pahami hidangan, termasuk tambahannya.",
+            "body": "Lihat nama, harga, dan tambahan sekaligus; pilih jumlah, lalu tampilkan pesanan asli.",
+            "points": [
+              "Total dipisahkan per mata uang agar pesanan lebih mudah dipahami."
+            ],
+            "action": "Lihat pindai menu dan pesanan"
+          }
+        ]
+      },
+      {
+        "id": "documents-and-tables",
+        "title": "Dokumen berparagraf, tabel berbaris dan berkolom.",
+        "body": "Baca aturan penginapan dan jadwal transportasi sesuai susunan aslinya.",
+        "scenarios": [
+          {
+            "id": "documents",
+            "context": "Pengumuman cetak・brosur wisata・aturan penginapan",
+            "title": "Dokumen banyak, bacaan tetap teratur.",
+            "body": "Foto pengumuman, aturan penginapan, atau brosur wisata untuk ditata menjadi paragraf jelas.",
+            "points": [
+              "Proses beberapa halaman sekaligus dan bandingkan teks asli serta terjemahan kapan saja."
+            ],
+            "action": "Lihat pindai dokumen"
+          },
+          {
+            "id": "tables",
+            "context": "Jadwal transportasi・tarif tiket・daftar harga layanan",
+            "title": "Angka yang padat, mudah dibandingkan.",
+            "body": "Jadwal, tarif, dan tanggal tersusun rapi agar informasi penting mudah ditemukan.",
+            "points": [
+              "Pertahankan baris dan kolom; ketuk untuk memeriksa teks asli."
+            ],
+            "action": "Lihat terjemahan tabel"
+          }
+        ]
+      },
+      {
+        "id": "watch-read-and-reply",
+        "title": "Video dan pesan, terus dipahami.",
+        "body": "Konten tetap di depan Anda, balasan tetap di percakapan asal.",
+        "scenarios": [
+          {
+            "id": "media",
+            "context": "Video asing・membaca web・panduan game",
+            "title": "Terus nikmati konten asing favorit.",
+            "body": "Subtitel terjemahan untuk video, terjemahan layar untuk web. Tetap di aplikasi yang ditonton, terjemahan mengikuti isinya.",
+            "points": [
+              "Geser Gambar dalam Gambar dan pilih mode subtitel atau teks."
+            ],
+            "action": "Lihat terjemahan di aplikasi lain"
+          },
+          {
+            "id": "messages",
+            "context": "Pesan kerja・draf email・nada balasan",
+            "title": "Profesional saat kerja, alami bersama teman.",
+            "body": "Terjemahkan dan ubah nada di percakapan asal. Balas klien dengan lugas, mengobrol dengan teman secara alami.",
+            "points": [
+              "Terjemahkan papan klip dan sisipkan balasan langsung."
+            ],
+            "action": "Lihat keyboard terjemahan iOS"
+          }
+        ]
+      },
+      {
+        "id": "practice-and-remember",
+        "title": "Wawancara dan perjalanan, latihan sebelum bicara.",
+        "body": "Latih ungkapan yang akan dipakai, lalu ulangi di sela hari.",
+        "scenarios": [
+          {
+            "id": "practice",
+            "context": "Wawancara kerja・percakapan perjalanan・tujuan belajar khusus",
+            "title": "Sebelum momen penting, berlatih dengan AI.",
+            "body": "Latih wawancara, check-in, atau pemesanan bersama peran AI. Tanyakan foto yang membingungkan, lalu lanjutkan lewat suara.",
+            "points": [
+              "Belajar bertujuan dengan umpan balik langsung, dari ungkapan hingga situasi."
+            ],
+            "action": "Lihat Asisten AI"
+          },
+          {
+            "id": "daily-learning",
+            "context": "Waktu perjalanan・ulasan layar utama・layar kunci",
+            "title": "Waktu senggang pun menambah kemampuan bahasa.",
+            "body": "Lihat ungkapan di layar utama, dengarkan pelafalan, dan tandai ulasan. Ubah waktu menunggu menjadi kesempatan belajar.",
+            "points": [
+              "Pilih konten, topik, dan tingkat untuk belajar yang benar-benar berguna."
+            ],
+            "action": "Lihat Widget belajar"
+          }
+        ]
+      },
+      {
+        "id": "see-and-understand",
+        "title": "Pahami tulisannya, pahami pemakaiannya.",
+        "body": "Baca teks lewat foto, pelajari pemakaian lewat Helper.",
+        "scenarios": [
+          {
+            "id": "photos",
+            "context": "Rambu・label produk・pengumuman pameran",
+            "title": "Arahkan kamera, terjemahan muncul di foto.",
+            "body": "Arahkan kamera ke rambu, label produk, atau pengumuman pameran untuk membaca terjemahan di gambar asli.",
+            "points": [
+              "Ambil foto, pilih album, atau terjemahkan langsung tulisan di depan Anda."
+            ],
+            "action": "Lihat terjemahan foto"
+          },
+          {
+            "id": "helper",
+            "context": "Rusia・Jerman・koreksi tata bahasa dan penjelasan khusus",
+            "title": "Paham makna, juga tata bahasanya.",
+            "body": "Urai kasus Rusia dan akhiran Jerman bersama Helper. Pahami tata bahasa, kesalahan umum, dan pemakaian setiap kata.",
+            "points": [
+              "Simpan bidang dan preferensi penjelasan untuk asisten bahasa pribadi."
+            ],
+            "action": "Lihat penjelasan Helper"
+          }
+        ]
+      }
+    ],
+    "stories": {
+      "sectionLabel": "Terjemahan untuk keseharian",
+      "menu": {
+        "label": "Terjemahan menu",
+        "title": "Dari foto menu,\nmenjadi pesanan.",
+        "body": "Pahami hidangan, pilih tambahan. Tunjukkan pesanan asli kepada staf dan pesan yang Anda inginkan.",
+        "action": "Lihat cara memesan"
+      },
+      "reply": {
+        "label": "Terjemahan teks dan nada",
+        "title": "Makna tersampaikan,\nnada pun sesuai.",
+        "body": "Profesional saat perlu, ramah saat tepat. Tujuh nada agar setiap kalimat terasa seperti ucapan Anda.",
+        "action": "Jelajahi terjemahan teks"
+      },
+      "practice": {
+        "label": "Asisten AI",
+        "title": "Latih yang ingin dikatakan,\nhingga mengalir alami.",
+        "body": "Pesan makanan, wawancara, perjalanan—peran AI siap menemani latihan. Dari satu kalimat hingga percakapan yang berlanjut.",
+        "action": "Kenali Asisten AI"
+      },
+      "voice": {
+        "label": "Suara AI alami",
+        "title": "Bukan sekadar paham.\nBicara lebih alami.",
+        "body": "Suara AI generasi baru dengan intonasi dan ritme alami. Dengarkan satu kalimat, tirukan, dan kenali pelafalan serta aksennya. Lalu berlatih percakapan dengan AI agar berani bicara.",
+        "action": "Jelajahi terjemahan suara"
+      }
+    },
+    "manifesto": {
+      "seoTitle": "Yang kami yakini",
+      "seoDescription": "Bahasa yang berbeda tidak seharusnya mempersempit hidup. AnyTranslator menyatukan alat untuk memahami, mengungkapkan, dan berlatih selama tinggal di luar negeri, kuliah, atau belajar.",
+      "eyebrow": "Yang kami yakini",
+      "title": "Bahasa berbeda,\nhidup tetap luas.",
+      "lead": "Jauh dari rumah, Anda layak berani hidup dengan leluasa.",
+      "opening": "Kita pergi ke negara lain untuk melihat lebih banyak dunia dan membuka kemungkinan.\nBukan untuk tiba di sana lalu hidup serba hati-hati hanya karena bahasa.",
+      "chapters": [
+        {
+          "title": "Jauh dari rumah, jangan jauh dari diri sendiri.",
+          "paragraphs": [
+            "Berkeliling supermarket berkali-kali, tetapi tetap membeli barang yang salah. Petugas berbicara panjang, Anda hanya menangkap beberapa kata dan sungkan bertanya lagi. Ada pertanyaan di kelas, tetapi akhirnya ditelan sendiri.",
+            "Satu formulir, surat dari kampus, atau kontrak sewa dapat membuat hari biasa terasa berat. Anda ingin menyelesaikan semuanya dengan baik, tetapi untuk mulai bicara saja perlu keberanian.",
+            "Bukan berarti Anda tak punya gagasan atau kurang berusaha. Kadang, bahasa meninggalkan diri Anda yang sebenarnya di luar percakapan."
+          ]
+        },
+        {
+          "title": "Hidup tidak bertanya dengan satu cara saja.",
+          "paragraphs": [
+            "Bisa berupa menu yang tak terbaca, pesan suara pemilik rumah, penjelasan petugas, atau dokumen yang harus dipahami hingga akhir.",
+            "Karena itu, bantuan pun tidak cukup satu jenis. Anda tak seharusnya berpindah-pindah alat hanya untuk makan, membalas pesan, atau menyelesaikan satu urusan.",
+            "AnyTranslator ingin menaruh fitur yang benar-benar dibutuhkan dalam jangkauan. Satu hambatan berkurang, sedikit kepercayaan diri bertambah untuk menjalani hari."
+          ]
+        },
+        {
+          "title": "Pahami satu kalimat, ambil langkah berikutnya.",
+          "paragraphs": [
+            "Foto label agar tahu apa yang dibeli. Pahami nama hidangan dan tambahan untuk memesan dengan jelas. Tata pengumuman serta dokumen per halaman agar paragraf, tabel, dan detail penting mudah diperiksa.",
+            "Dalam percakapan langsung, subtitel dua bahasa dan suara AI alami membantu menyampaikan maksud. Untuk pesan formal, ramah, atau ringkas, pilih nada yang sesuai dan sampaikan pikiran Anda dengan utuh.",
+            "Belum berani bicara? Latih dulu bersama Asisten AI. Dari perjalanan dan kelas hingga wawancara, biasakan yang ingin Anda katakan. Memahami, mengungkapkan, dan belajar terhubung dalam kehidupan yang sama."
+          ]
+        },
+        {
+          "title": "Setiap bahasa layak dipahami dengan sungguh-sungguh.",
+          "paragraphs": [
+            "Bahasa bukan sekadar mengganti kata. Kesulitannya bisa berupa kasus dan akhiran Rusia/Jerman, atau ungkapan yang baru terasa tepat setelah mengenal kehidupan setempat.",
+            "Kami terus memperbaiki konteks, nada, dan penjelasan, serta memperhatikan kebutuhan bahasa dengan sedikit penutur. Pengguna lebih sedikit bukan alasan untuk mengurangi perhatian. Agar Anda bukan hanya mendapat terjemahan, tetapi juga memahami alasannya."
+          ]
+        }
+      ],
+      "everydayEyebrow": "Dari kehidupan nyata, lahir fitur yang tepat",
+      "everydayTitle": "Ubah setiap keraguan,\nmenjadi langkah berikutnya.",
+      "scenarios": [
+        {
+          "title": "Jalani hari dengan mengerti",
+          "body": "Beli barang yang tepat, baca menu, tanyakan sebelum memutuskan.",
+          "linkLabels": [
+            "Terjemahan foto",
+            "Menu dan pesanan"
+          ]
+        },
+        {
+          "title": "Selesaikan urusan penting",
+          "body": "Pahami pengumuman, dokumen, dan tabel sesuai strukturnya.",
+          "linkLabels": [
+            "Pindai dokumen",
+            "Terjemahan tabel"
+          ]
+        },
+        {
+          "title": "Sampaikan suara Anda",
+          "body": "Pahami lawan bicara dan berlatih sebelum percakapan sesungguhnya.",
+          "linkLabels": [
+            "Terjemahan suara",
+            "Asisten AI"
+          ]
+        }
+      ],
+      "closeEyebrow": "AnyTranslator",
+      "closeTitle": "Jadikan tempat jauh,\nbagian dari keseharian Anda.",
+      "closeBody": "Tanyakan yang ingin ditanyakan, katakan yang ingin dikatakan.\nAgar tempat jauh bukan sekadar tujuan kedatangan, melainkan tempat hidup dengan leluasa.",
+      "aboutAction": "Baca yang kami yakini"
+    },
+    "reviews": {
+      "eyebrow": "Ulasan asli dari App Store",
+      "title": "Mereka sudah melampaui\nhambatan bahasa.",
+      "body": "Rapat, belajar bahasa, komunikasi harian. Dengarkan pengalaman pengguna.",
+      "ratingAriaTemplate": "{rating} dari 5 bintang",
+      "sourceAriaTemplate": "Lihat ulasan {name} di App Store",
+      "storefrontLabel": "Taiwan",
+      "translatedLabel": "Diterjemahkan dari Mandarin Tradisional",
+      "quotesById": {
+        "14792569759": "Sulit menemukan aplikasi terjemahan yang akurat sekaligus punya fitur sebanyak ini.",
+        "14689800454": "Sangat berguna. Langsung berlangganan.",
+        "14634594658": "Cukup membantu untuk menerjemahkan bahasa saat rapat.",
+        "14634322888": "Belajar bahasa jadi praktis. Satu aplikasi menggantikan 3–4 aplikasi, dan terjemahannya akurat."
+      }
+    },
+    "askAi": {
+      "title": "Apakah AnyTranslator cocok untuk Anda?",
+      "body": "Ceritakan kebutuhan Anda kepada AI dan bandingkan dari sudut lain.",
+      "actionTemplate": "Tanya {service}",
+      "prompt": "Berdasarkan informasi publik di {url}, bantu nilai apakah AnyTranslator cocok dengan kebutuhan saya. Saya ingin tahu tentang terjemahan teks dan suara, pindai menu dan dokumen, Asisten AI, belajar bahasa, serta harganya. Tanyakan situasi penggunaan saya terlebih dahulu, lalu bandingkan sisi yang cocok dan tidak cocok. Jelaskan fitur atau harga yang belum dapat dipastikan dan sertakan sumber."
+    },
+    "theme": {
+      "darkMode": "Mode gelap",
+      "lightAction": "Beralih ke mode terang",
+      "darkAction": "Beralih ke mode gelap"
+    },
+    "macArt": {
+      "ariaLabel": "Ilustrasi merek unduhan macOS AnyTranslator dengan ikon aplikasi asli dan tulisan Mac App Store"
+    },
+    "pricingUnit": {
+      "perBatchTemplate": "{count} foto／proses"
+    },
+    "imageAlt": {
+      "voice.primary": "Terjemahan suara: menanyakan jam tutup dan batas masuk museum, dengan subtitel Inggris dan Indonesia.",
+      "text.primary": "Terjemahan teks: pesan penjadwalan ulang berbahasa Inggris diterjemahkan ke Rusia dengan penjelasan tata bahasa dalam bahasa Indonesia.",
+      "helper.primary": "Penjelasan Helper: mengurai kondisi, waktu, dan kasus dalam pesan kerja Rusia tentang perubahan jadwal, menggunakan bahasa Indonesia.",
+      "photos.primary": "Terjemahan foto: terjemahan Indonesia di atas menu minuman nyata, dibandingkan dengan teks Inggris.",
+      "table.primary": "Terjemahan tabel: jadwal publik shuttle Zion dengan tiga rentang tanggal serta waktu keberangkatan pertama dan terakhir.",
+      "table.cell-source": "Perbandingan teks tabel: membuka info shuttle pertama untuk melihat judul baris berbahasa Inggris.",
+      "document.primary": "Terjemahan dokumen: panduan transportasi taman publik ditata dalam paragraf bahasa Indonesia, termasuk info sepeda dan berkendara.",
+      "document.original": "Gambar dokumen asli: teks publik Getting Around dalam tiga kolom, menampilkan halaman 1／1 dari dokumen yang sama.",
+      "menu.primary": "Terjemahan menu: daftar kopi dan harga, dengan pilihan 2 latte serta total 7.80.",
+      "menu.options": "Pesanan menu: latte／flat white dengan susu oat, jumlah 2, dan total 7.80.",
+      "menu.staff": "Tampilan untuk staf: pesanan asli latte／flat white dengan susu oat, jumlah 2, total 7.80.",
+      "chat.primary": "Situasi restoran Asisten AI: pembukaan pelayan dalam bahasa Inggris pemula, dengan tugas percakapan dan ungkapan kunci.",
+      "chat.chat-entry": "Mode percakapan Asisten AI: percakapan pintar, latihan tujuan, dan latihan situasi, dimulai setelah memilih bahasa serta tingkat.",
+      "keyboard.primary": "Tombol native iOS dan bilah terjemahan AnyTranslator, dengan draf pesan kerja Indonesia tetap di kolom input.",
+      "widget.primary": "Pratinjau Widget belajar native: kartu kopi dengan kalimat Mandarin, Pinyin, arti dan petunjuk pemakaian dalam bahasa Indonesia, serta tombol ulasan.",
+      "screen-translation.primary": "Terjemahan teks layar: panduan berkendara taman berbahasa Inggris di Preview, dengan terjemahan Indonesia dalam Gambar dalam Gambar.",
+      "screen-translation.setup": "Pengaturan terjemahan di aplikasi lain: memilih subtitel video atau teks layar, bahasa tujuan Indonesia, dan tampilan teks asli."
+    }
+  }
+}

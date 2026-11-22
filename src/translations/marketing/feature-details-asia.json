@@ -1,0 +1,944 @@
+{
+  "ja": {
+    "scan": {
+      "title": "写真を、使える情報に。",
+      "body": "標識やラベルを読むときは「ライブ」で画像上の翻訳を確認。料理を選べるメニューや、見出し・表が読みやすい書類には「整理」を使います。目的に合わせて表示を切り替えられます。"
+    },
+    "practiceTitle": "実際に必要なことから始めましょう。",
+    "features": {
+      "text": {
+        "title": "伝えたいことに、ふさわしい言い方を。",
+        "summary": "メッセージやメール、文章を翻訳し、相手に合う語調を選択。発音を聞く、コピーする、表現について質問するなど、返信前に確認できます。",
+        "heading": "送る言葉を、きちんと整える。",
+        "body": "文章を入力または貼り付け、原文と翻訳先の言語を選びます。語調は自動のままでも、丁寧・ユーモア・手紙・友達・簡潔から選んでも構いません。翻訳を読み、発音を聞き、コピーやお気に入りへの保存ができます。もっと詳しく知りたいときは、チャットボタンで翻訳を会話に引き継げます。",
+        "steps": [
+          "原文と翻訳先の言語を選び、メッセージやメール、文章を入力または貼り付けます。",
+          "返信の場面に合う語調を選び、翻訳を確認します。",
+          "発音を聞く、コピーする、保存するほか、チャットで表現について質問できます。"
+        ]
+      },
+      "photos": {
+        "title": "写真の文字に、翻訳を重ねて。",
+        "summary": "標識やラベル、お知らせを一文字ずつ入力する必要はありません。カメラや写真を使って、画像上に翻訳を表示できます。",
+        "heading": "周囲の手がかりも見ながら、標識を読む。",
+        "body": "写真タブで「ライブ」を開き、言語を選びます。文字にカメラを向ける、写真を撮る、ライブラリから選ぶ方法が使えます。アプリが文字を認識して画像上に翻訳を表示し、認識された文字の領域をタップすると翻訳の詳細を確認できます。注文用の操作があるメニューや、見出し・表のある書類には「整理」に切り替えます。",
+        "steps": [
+          "写真タブを開き、「ライブ」と翻訳する言語を選びます。",
+          "標識やラベルにカメラを向けるか、写真を撮影・選択します。",
+          "画像上の翻訳を読み、文字の領域をタップして詳細を確認します。"
+        ]
+      },
+      "voice": {
+        "title": "会話する二人のための音声翻訳。",
+        "summary": "二言語の字幕と翻訳音声で会話を追えます。双方向の会話、自分だけで聞く、代わりに話す、字幕のみから選べます。",
+        "heading": "どう聞くか、どう伝えるかを選ぶ。",
+        "body": "マイクをオンにする前に、双方の言語と音声モードを選びます。双方向の会話では双方に翻訳を再生し、自分だけで聞くモードでは自分に必要な翻訳を再生します。代わりに話すモードは自分の発言を翻訳して相手に再生し、字幕のみでは自動読み上げを行いません。話しながら原文と翻訳の字幕を確認できます。終了後は会話の記録と自動要約を見返し、翻訳音声の再生や要約のコピー・共有ができます。",
+        "steps": [
+          "双方の言語と、場面に合う音声モードを選びます。",
+          "マイクをオンにし、二言語の字幕と選択した音声出力で会話を追います。",
+          "終了後に記録と要約を確認し、必要な内容をコピー・共有します。"
+        ]
+      },
+      "agent": {
+        "title": "目的に沿って会話を手伝うAIアシスタント。",
+        "summary": "確認したいことや手配したいことを伝えると、音声エージェントが対面での質問、追加確認、詳細の整理を手伝います。",
+        "heading": "目的を伝えるところから、結果の確認まで。",
+        "body": "目的と条件を文字や音声で伝え、準備のための質問に答えます。タスクを確認すると、アシスタントが目の前の相手との会話を手伝い、不足している点を追加で質問します。その間、二言語で会話を確認できます。必要なときに要約を依頼し、まず自分で内容を確認します。承認した後にだけ、アシスタントが相手へ伝えて確認を求めます。判断するのはあなたです。",
+        "steps": [
+          "双方の言語を選び、目的を伝えて準備の質問に答えます。",
+          "タスクを確認し、相手への質問や追加確認をアシスタントに手伝ってもらいます。",
+          "要約を依頼して内容を確認し、相手に伝える内容を承認します。"
+        ]
+      },
+      "menu": {
+        "title": "メニューを読むところから、注文を見せるところまで。",
+        "summary": "メニューの写真から、料理・選択肢・価格を翻訳して整理。料理、数量、選べる追加項目を決め、メニューの原文を残した注文内容を見せられます。",
+        "heading": "メニューを読み、料理を選び、店員に見せる。",
+        "body": "写真タブで「整理」を選び、カメラやライブラリからメニューの写真を追加します。翻訳された料理名、説明、価格、選択肢を確認し、料理や数量、サイズ・追加項目などを選びます。必要に応じて注文の備考も追加できます。注文画面では各料理の原文名と翻訳名に加え、選択肢の原文名と数量を表示します。判明している価格は通貨ごとに合計し、通貨換算は行いません。料理や選択肢に不明な価格がある場合、確定した合計は出せません。不明な点は元の写真と比較し、店員に確認してください。無料では1枚、PROでは1回に最大10枚を読み取れます。",
+        "steps": [
+          "写真 → 整理を開き、言語を選んで鮮明なメニュー写真を追加します。",
+          "料理や価格を確認し、数量と選択肢を決め、必要なら備考を加えます。",
+          "注文内容と表示可能な合計を確認し、原文の料理名・選択肢を店員に見せます。"
+        ]
+      },
+      "document": {
+        "title": "段落や表を読みやすく整える書類スキャン。",
+        "summary": "複数ページを含む紙の書類を撮影し、見出し・リスト・表として読み進められます。元の画像と比較し、保存済みのスキャンを履歴から開き直せます。",
+        "heading": "見出し、段落、表の構造を保って読む。",
+        "body": "写真タブで「整理」を選び、書類のページを順番に撮影するか、ライブラリから写真を追加します。まとめて送信すると、認識した内容をタイトル、見出し、段落、番号付きリスト、行と列のある表として読めます。日付や価格などを確認するときは、各ページの元画像に戻るか文字をタップして原文を確かめられます。保存済みのスキャンは履歴でタイトルやコンテンツの種類から検索し、後から開き直せます。無料では1枚、PROでは1回に最大10枚に対応します。撮影したページを読み取る機能で、PDFやWordの編集機能ではありません。",
+        "steps": [
+          "写真 → 整理を開き、言語を選んでページの写真を順番に追加します。無料では1枚、PROでは最大10枚です。",
+          "ページをまとめて送信し、整理された見出し・リスト・表を読みます。",
+          "元のページや原文と比較し、必要なときは履歴から保存済みのスキャンを開きます。"
+        ]
+      },
+      "keyboard": {
+        "title": "いつものアプリで、そのまま返信を翻訳。",
+        "summary": "iPhoneやiPadのキーボードで、対応する入力欄の下書きを翻訳し、語調を調整できます。送信前に結果を確認しましょう。",
+        "heading": "同じ入力欄で書き、翻訳し、確認する。",
+        "body": "アプリの案内に沿ってAnyTranslatorキーボードを追加し、オンライン翻訳のためにiOS設定でフルアクセスを許可します。対応する入力欄で翻訳したい文章を選択するか下書きを用意し、翻訳先の言語と語調を選びます。選択した文章、またはiOSがキーボードに提供する文章が翻訳に置き換わります。クリップボード翻訳は別の結果カードに表示され、コピーするかカーソル位置に挿入できます。一部のアプリや保護された入力欄では、他社製キーボードが制限されます。",
+        "steps": [
+          "アプリ内の設定ガイドに沿ってキーボードを追加し、フルアクセスを許可します。",
+          "対応する入力欄で下書きを用意・選択し、キーボードを切り替えて言語と語調を選びます。",
+          "翻訳で置き換わった文章を確認し、自分で送信します。クリップボードの結果カードからは別途コピー・挿入できます。"
+        ]
+      },
+      "chat": {
+        "title": "文章や写真から、続けて質問。",
+        "summary": "フレーズや翻訳、写真をチャットに持ち込み、意味を尋ねたり、例文を頼んだり、返信の言い方を考えたりできます。",
+        "heading": "もう一つの質問で、細かな意味まで理解する。",
+        "body": "質問を書く、写真を追加する、文字翻訳の横のチャットボタンからその表現について会話を続ける方法があります。同じ会話の中で、知らない表現の意味や別の例を尋ね、返信の候補を比較できます。回答を確認して役立つ言い方をコピーし、説明が足りなければ追加で質問します。チャットは提供した内容を理解するための補助です。重要な事実は原文と照らし合わせてください。",
+        "steps": [
+          "質問を入力する、写真を追加する、または文字翻訳からチャットを開きます。",
+          "意味や例文、状況に合う返信について尋ねます。",
+          "回答を確認し、役立つ表現をコピーして追加の質問を続けます。"
+        ]
+      },
+      "helper": {
+        "title": "言葉の仕組みまでわかるHelperの解説。",
+        "summary": "文法、例文、一語ずつの意味、返信の候補を確認。自分で作った解説の指示を保存し、新しい文章にも使えます。",
+        "heading": "何を、どう解説してほしいかを選ぶ。",
+        "body": "文字翻訳のページで、Helperの解説対象を原文か翻訳文から選びます。文法、一語ずつの分析、例文、隠れた意味、返信の提案などのプリセットを選ぶほか、必要な解説を得るための指示を保存できます。保存する設定には、専門分野、学習目標、詳しさの好みなどを含められます。無料ではHelperの設定を1件、PROでは最大5件使えます。ここでのカスタム知識は繰り返し使える指示を指し、アップロードした書類のナレッジベースではありません。",
+        "steps": [
+          "文章を翻訳し、Helperが原文と翻訳文のどちらを解説するか選びます。",
+          "解説プリセットを選ぶか、必要な説明の指示を保存します。",
+          "解説を読み、文章が変わっても保存した設定を再利用します。"
+        ]
+      },
+      "widget": {
+        "title": "ホーム画面で使える学習カード。",
+        "summary": "ホーム画面のウィジェットから直接、単語やフレーズを復習し、発音を聞き、覚えた内容を記録できます。ロック画面にも追加すれば、練習に戻る入口が増えます。",
+        "heading": "毎回アプリを開かずに、聞いて復習。",
+        "body": "アプリで学習する言語と翻訳先の言語を選び、案内に沿ってホーム画面やロック画面にウィジェットを追加します。ホーム画面のカードでは発音を再生し、もう一度復習するか、覚えたかを選べます。回答はその後の復習に反映されます。ロック画面のカードをタップするとアプリで開き、再度復習する対象になります。自動で選ばれるコンテンツは無料です。PROではコンテンツの種類を選び、テーマと難易度を組み合わせ、テーマや難易度について独自の指示も追加できます。",
+        "steps": [
+          "学習する言語を選び、アプリの案内に沿ってホーム画面やロック画面にウィジェットを追加します。",
+          "ホーム画面でカードを読み、発音ボタンを使います。",
+          "ホーム画面で再度復習するか覚えたかを選びます。ロック画面のカードはタップしてアプリで開き、もう一度復習します。"
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "ホテルのチェックインでは、音声翻訳で自分とスタッフの言語を選びます。二言語の字幕と場面に合う音声モードを使って、部屋、保証金、チェックアウト時刻を確認できます。",
+        "チェックアウトの延長を頼む、追加料金を確認するときは、目的と条件を音声エージェントに伝えます。タスクを確認して追加質問を手伝ってもらい、要約を確認してからスタッフに伝える内容を承認します。",
+        "ホテルの紙の案内を「整理」で撮影します。見出しや表を読み、チェックアウト時刻や料金を元画像と比較し、滞在中に保存したスキャンを見返せます。"
+      ],
+      "work": [
+        "仕事のメッセージを文字翻訳に貼り付け、翻訳先の言語と関係に合う語調を選びます。返信をコピーする前に、名前、日付、約束した内容を確認します。",
+        "曖昧な表現があれば、Helperの対象を原文か翻訳文から選びます。隠れた意味、文法、返信の提案や、仕事の分野に合わせて保存した指示を使えます。",
+        "チャットに表現を持ち込み、短い返信と詳しい返信を比較します。相手に必要な背景を加え、最終案を確認し、いつもの連絡用アプリから送ります。"
+      ],
+      "dining": [
+        "写真 → 整理でメニューのページを追加し、翻訳された料理・選択肢・価格を確認します。数量や追加項目を選び、備考を加えて、原文の料理名や選択肢を含む注文を店員に見せます。",
+        "料理や量、食材がまだわからなければ音声翻訳で質問します。双方の言語を選び、対応している店員に答えを確認します。",
+        "条件がいくつもある相談は音声エージェントに依頼を説明し、追加質問を手伝ってもらいます。詳細を伝えてもらう前に要約を確認し、食材と調理方法は必ず店員に確かめます。"
+      ],
+      "study": [
+        "実際に出会った単語や文章から始めます。Helperの解説対象に選び、例文、一語ずつの分析、必要な文法解説を確認します。",
+        "学習する言語を設定し、ホーム画面に学習ウィジェットを追加します。カードの発音を聞き、再度復習するか覚えたかを選べます。PROでは内容の種類・テーマ・難易度も調整できます。",
+        "自分で使いたい表現をチャットに持ち込みます。身近な場面の例文を頼み、自分でも書いて、どこを変えるとよいか尋ねます。"
+      ],
+      "messages": [
+        "対応するメッセージ入力欄でAnyTranslatorキーボードに切り替え、下書きを用意または選択します。翻訳先の言語と語調を選んでその場で翻訳し、送信前に読み返します。",
+        "長いメッセージや、もっと丁寧に検討したい返信は、メインアプリに貼り付けます。翻訳を比較し、語調を調整して発音を聞いてからコピーして戻します。",
+        "相手の意図や返信の響きが気になるときは、関連する文章と背景を添えてチャットで質問します。提案を確認し、自分が送りたい言い方を選びます。"
+      ],
+      "reading": [
+        "「整理」でお知らせ、パンフレット、書類を撮影し、ページを順番に追加します。見出し・リスト・表を読み、必要な詳細は元のページに切り替えて確認します。",
+        "知らない表現は該当部分を文字翻訳に入力し、Helperに用法や文法、一語ずつの分析を尋ねます。原文と翻訳文のどちらを解説するか選べます。",
+        "どの日付が適用されるか、ある表現が何を指すかなど、具体的に聞きたいときは文章や写真をチャットへ。重要な情報を使う前に、回答を元の書類と比較します。"
+      ]
+    },
+    "documentArticle": {
+      "title": "書類のページを、読みやすい見出しと表に整理",
+      "intro": "紙のお知らせ、旅行パンフレット、複数ページの書類は、画像上の翻訳だけでは読みづらいことがあります。写真 → 整理でページの写真を順番に追加し、まとめて送信。認識した文字を見出し、段落、リスト、表に整理して、必要な情報を探しやすくします。",
+      "tip": "原文と翻訳先の言語を選び、各ページを鮮明に撮影して送信前に順序を確認します。無料では1回1枚、PROでは最大10枚に対応します。整理された結果を読み、文字をタップして原文を確認。日付、金額、表の項目は元のページに戻って照合します。保存したスキャンは、履歴でタイトルやコンテンツの種類から検索して開き直せます。",
+      "limit": "このガイドはカメラや写真ライブラリから追加したページの写真が対象です。PDFやWordの読み込み・編集・書き出しについての説明ではありません。不鮮明な文字や複雑なレイアウトでは認識や解釈に誤りが生じることがあるため、重要な内容は元のページと比較してください。"
+    }
+  },
+  "ko": {
+    "scan": {
+      "title": "사진을 바로 활용할 수 있는 정보로.",
+      "body": "표지판이나 라벨은 ‘실시간’으로 이미지 위에 번역을 띄워 읽으세요. 음식을 고를 수 있는 메뉴나 문단과 표가 정리된 문서는 ‘정리’로 전환하세요. 필요한 작업에 맞춰 보기를 선택할 수 있습니다."
+    },
+    "practiceTitle": "실제로 필요한 일부터 시작하세요.",
+    "features": {
+      "text": {
+        "title": "뜻도 말투도 상황에 맞는 텍스트 번역.",
+        "summary": "메시지, 이메일, 문장을 번역하고 원하는 말투를 선택하세요. 답장하기 전에 발음을 듣거나 복사하고, 표현에 관해 물어볼 수 있습니다.",
+        "heading": "보내고 싶은 말을 미리 다듬으세요.",
+        "body": "텍스트를 입력하거나 붙여 넣고 원문과 번역 언어를 선택하세요. 말투는 자동으로 두거나 정중함, 유머, 편지, 친구, 간결함 중에서 고를 수 있습니다. 번역을 읽고 발음을 들은 뒤 복사하거나 즐겨찾기에 저장하세요. 더 물어보고 싶으면 채팅 버튼으로 번역 내용을 대화에 가져갈 수 있습니다.",
+        "steps": [
+          "언어를 선택하고 메시지, 이메일, 문장을 입력하거나 붙여 넣으세요.",
+          "답장 상황에 맞는 말투를 고르고 번역을 확인하세요.",
+          "듣기, 복사, 저장을 이용하거나 채팅에서 표현을 더 물어보세요."
+        ]
+      },
+      "photos": {
+        "title": "사진 속 글자 위에 바로 보이는 번역.",
+        "summary": "표지판, 라벨, 안내문을 일일이 입력하지 않아도 됩니다. 카메라나 사진으로 이미지 위에 번역을 표시하세요.",
+        "heading": "주변 상황을 함께 보며 표지판을 읽으세요.",
+        "body": "사진 탭에서 ‘실시간’을 열고 언어를 선택하세요. 글자에 카메라를 비추거나 사진을 찍고, 보관함에서 사진을 선택할 수도 있습니다. 앱이 글자를 인식해 이미지 위에 번역을 표시합니다. 인식된 텍스트 영역을 누르면 번역의 세부 내용을 확인할 수 있습니다. 주문 기능이 있는 메뉴나 문단과 표로 읽을 문서는 ‘정리’로 전환하세요.",
+        "steps": [
+          "사진 탭을 열고 ‘실시간’과 번역 언어를 선택하세요.",
+          "표지판이나 라벨에 카메라를 비추거나 사진을 찍거나 선택하세요.",
+          "이미지 위의 번역을 읽고 텍스트 영역을 눌러 세부 내용을 보세요."
+        ]
+      },
+      "voice": {
+        "title": "대화하는 양쪽 모두를 위한 음성 번역.",
+        "summary": "이중 언어 자막과 번역 음성으로 대화를 따라가세요. 양방향 대화, 나만 듣기, 대신 말하기, 자막만 보기 중에서 선택할 수 있습니다.",
+        "heading": "어떻게 듣고 전달할지 먼저 정하세요.",
+        "body": "마이크를 켜기 전에 양쪽 언어와 음성 모드를 선택하세요. 양방향 대화는 두 사람 모두에게 번역을 재생하고, 나만 듣기는 나에게 필요한 번역을 재생합니다. 대신 말하기는 내 말을 번역해 상대방에게 들려주며, 자막만 보기는 자동 음성 재생을 끕니다. 대화 중에는 원문과 번역 자막을 함께 확인할 수 있습니다. 대화가 끝나면 기록과 자동 요약을 다시 보고, 번역 음성을 재생하거나 요약을 복사하고 공유할 수 있습니다.",
+        "steps": [
+          "양쪽 언어와 상황에 맞는 음성 모드를 선택하세요.",
+          "마이크를 켜고 이중 언어 자막과 선택한 음성 출력으로 대화를 따라가세요.",
+          "대화를 종료한 뒤 기록과 요약을 확인하고 필요한 내용을 복사하거나 공유하세요."
+        ]
+      },
+      "agent": {
+        "title": "목표에 맞춰 대화를 돕는 AI 도우미.",
+        "summary": "알아보거나 요청할 일을 설명하세요. 음성 에이전트가 대면 대화에서 질문하고 추가로 확인하며 세부 내용을 살피도록 도와줍니다.",
+        "heading": "목표 설명부터 결과 확인까지.",
+        "body": "텍스트나 음성으로 목표와 조건을 설명하고 도우미의 준비 질문에 답하세요. 작업을 확인하면 도우미가 앞에 있는 상대방과 이야기하고 빠진 내용을 추가로 질문하도록 도와줍니다. 대화는 두 언어로 확인할 수 있습니다. 필요할 때 요약을 요청하고 먼저 직접 검토하세요. 승인한 뒤에만 도우미가 상대방에게 전달해 확인을 요청합니다. 결정은 직접 내립니다.",
+        "steps": [
+          "양쪽 언어를 선택하고 목표를 설명한 뒤 준비 질문에 답하세요.",
+          "작업을 확인하고 도우미의 도움을 받아 상대방에게 질문하고 추가로 확인하세요.",
+          "요약을 요청해 검토한 다음 상대방에게 전달할 내용을 승인하세요."
+        ]
+      },
+      "menu": {
+        "title": "메뉴 읽기부터 주문 보여주기까지.",
+        "summary": "메뉴 사진을 번역된 음식, 옵션, 가격으로 정리하세요. 음식과 수량, 제공되는 추가 옵션을 고른 뒤 메뉴 원문을 유지한 주문 내용을 보여줄 수 있습니다.",
+        "heading": "메뉴를 읽고 음식을 골라 직원에게 보여주세요.",
+        "body": "사진에서 ‘정리’를 선택하고 카메라나 보관함에서 메뉴 사진을 추가하세요. 번역된 음식 이름, 설명, 가격과 선택지를 확인할 수 있습니다. 음식과 수량, 크기나 추가 구성 등을 선택하고 필요하면 식사 관련 메모를 남기세요. 주문 화면에는 각 음식의 원문 이름과 번역 이름, 옵션의 원문 이름과 수량이 표시됩니다. 확인된 가격은 통화별로 따로 합산하며 환산하지 않습니다. 음식이나 옵션의 가격이 불명확하면 확정 합계를 낼 수 없습니다. 모호한 내용은 원본 사진과 비교하고 직원에게 확인하세요. 무료는 한 번에 사진 1장, PRO는 최대 10장을 지원합니다.",
+        "steps": [
+          "사진 → 정리에서 언어를 선택하고 선명한 메뉴 사진을 추가하세요.",
+          "음식과 가격을 확인하고 수량과 가능한 옵션을 고른 뒤 필요하면 메모를 추가하세요.",
+          "주문과 표시 가능한 합계를 확인하고 원문 음식 이름과 옵션을 직원에게 보여주세요."
+        ]
+      },
+      "document": {
+        "title": "문단과 표를 읽기 좋게 정리하는 문서 스캔.",
+        "summary": "여러 페이지의 종이 문서를 촬영해 구획, 목록, 표로 읽으세요. 원본 이미지와 비교하고 저장한 스캔을 기록에서 다시 열 수 있습니다.",
+        "heading": "문서의 구획과 문단, 표 구조를 살려 읽으세요.",
+        "body": "사진에서 ‘정리’를 선택한 뒤 문서 페이지를 순서대로 촬영하거나 보관함에서 사진을 추가하세요. 한꺼번에 제출하면 인식한 내용을 제목, 구획, 문단, 번호 목록, 행과 열이 있는 표로 읽을 수 있습니다. 날짜나 가격 등을 검토할 때 각 원본 페이지로 돌아가거나 텍스트를 눌러 원문을 확인하세요. 저장된 스캔은 기록에서 제목이나 콘텐츠 유형으로 검색해 나중에 다시 열 수 있습니다. 무료는 사진 1장, PRO는 한 번에 최대 10장을 지원합니다. 촬영한 페이지를 스캔하는 기능이며 PDF나 Word 편집기는 아닙니다.",
+        "steps": [
+          "사진 → 정리에서 언어를 선택하고 페이지 사진을 순서대로 추가하세요. 무료는 1장, PRO는 최대 10장입니다.",
+          "페이지를 함께 제출하고 정리된 구획, 목록, 표를 읽으세요.",
+          "원본 페이지와 텍스트를 대조하고 필요할 때 기록에서 저장된 스캔을 다시 여세요."
+        ]
+      },
+      "keyboard": {
+        "title": "지금 쓰는 앱에서 답장을 번역하세요.",
+        "summary": "iPhone이나 iPad 키보드로 지원되는 입력란의 초안을 번역하고 말투를 조정하세요. 보내기 전에 결과를 확인할 수 있습니다.",
+        "heading": "같은 입력란에서 작성하고 번역하고 확인하세요.",
+        "body": "앱의 안내에 따라 AnyTranslator 키보드를 추가하고 온라인 번역을 위해 iOS 설정에서 전체 접근을 허용하세요. 지원되는 입력란에서 번역할 텍스트를 선택하거나 초안을 준비한 뒤 번역 언어와 말투를 고르세요. 선택한 텍스트 또는 iOS가 키보드에 제공하는 텍스트가 번역으로 바뀝니다. 클립보드 번역은 별도의 결과 카드에 표시되며 복사하거나 커서 위치에 삽입할 수 있습니다. 일부 앱과 보안 입력란은 타사 키보드를 제한합니다.",
+        "steps": [
+          "앱의 설정 안내에 따라 키보드를 추가하고 전체 접근을 허용하세요.",
+          "지원되는 입력란에서 초안을 작성하거나 선택하고 키보드를 바꾼 뒤 언어와 말투를 고르세요.",
+          "번역 후 바뀐 내용을 확인하고 직접 보내세요. 클립보드 카드는 별도의 결과를 복사하거나 삽입할 때 사용합니다."
+        ]
+      },
+      "chat": {
+        "title": "텍스트와 사진으로 계속 물어보세요.",
+        "summary": "표현이나 번역, 사진을 채팅에 가져와 의미를 묻고 예시를 요청하거나 답장할 말을 함께 생각할 수 있습니다.",
+        "heading": "다음 질문으로 세부 내용까지 이해하세요.",
+        "body": "질문을 쓰거나 사진을 추가하고, 텍스트 번역 옆의 채팅 버튼으로 해당 표현에 관해 대화를 이어갈 수도 있습니다. 같은 대화에서 생소한 표현을 묻고 다른 예시를 요청하거나 답장 후보를 비교하세요. 답변을 검토해 쓸 만한 표현을 복사하고 맥락이 더 필요하면 추가로 질문하세요. 채팅은 제공한 내용을 살펴보도록 돕는 기능입니다. 중요한 사실은 원본과 대조하세요.",
+        "steps": [
+          "질문을 입력하거나 사진을 추가하고, 텍스트 번역에서 채팅을 열 수도 있습니다.",
+          "의미, 예시, 상황에 맞는 답장에 관해 질문하세요.",
+          "답변을 검토하고 필요한 표현을 복사한 뒤 후속 질문을 이어가세요."
+        ]
+      },
+      "helper": {
+        "title": "표현의 원리까지 알려주는 Helper 설명.",
+        "summary": "문법과 예시, 단어별 뜻, 답장 후보를 살펴보세요. 나만의 설명 지침을 저장해 새 텍스트에도 다시 쓸 수 있습니다.",
+        "heading": "무엇을 어떻게 설명할지 선택하세요.",
+        "body": "텍스트 번역 페이지에서 Helper가 원문과 번역 중 무엇을 설명할지 선택하세요. 문법, 단어별 분석, 예시, 숨은 뜻, 답장 제안 같은 프리셋을 고르거나 필요한 설명을 위한 지침을 직접 저장할 수 있습니다. 저장한 설정에는 전문 분야, 학습 목표, 원하는 설명의 깊이를 담을 수 있습니다. 무료는 Helper 프로필 1개, PRO는 최대 5개를 지원합니다. 여기서 맞춤 지식은 재사용 가능한 지침을 뜻하며 업로드한 문서 기반 지식 저장소는 아닙니다.",
+        "steps": [
+          "텍스트를 번역하고 Helper가 원문과 번역 중 무엇을 설명할지 선택하세요.",
+          "설명 프리셋을 고르거나 필요한 세부 내용을 위한 지침을 저장하세요.",
+          "설명을 읽고 텍스트가 바뀌어도 저장한 설정을 다시 활용하세요."
+        ]
+      },
+      "widget": {
+        "title": "홈 화면에서 바로 쓰는 학습 카드.",
+        "summary": "홈 화면 위젯에서 단어와 표현을 복습하고 발음을 들으며 기억한 내용을 표시하세요. 잠금 화면 위젯도 추가해 연습으로 돌아오는 경로를 늘릴 수 있습니다.",
+        "heading": "매번 앱을 열지 않고 듣고 복습하세요.",
+        "body": "앱에서 학습 언어와 번역 언어를 선택한 다음 안내에 따라 홈 화면이나 잠금 화면 위젯을 추가하세요. 홈 화면 카드에서는 발음을 재생하고 다시 복습하거나 기억했다고 표시할 수 있으며, 답변은 이후 복습에 반영됩니다. 잠금 화면 카드를 누르면 앱에서 열리고 다시 복습할 대상으로 표시됩니다. 자동 콘텐츠는 무료로 제공됩니다. PRO에서는 콘텐츠 유형을 선택하고 주제와 난이도를 조합하며 주제나 난이도에 관한 맞춤 지침을 추가할 수 있습니다.",
+        "steps": [
+          "학습 언어를 선택하고 앱의 안내에 따라 홈 화면 또는 잠금 화면 위젯을 추가하세요.",
+          "홈 화면에서 카드를 읽고 발음 버튼을 사용하세요.",
+          "홈 화면에서 다시 복습 또는 기억함을 선택하세요. 잠금 화면 카드는 눌러 앱에서 열고 다시 복습합니다."
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "호텔 체크인 때 음성 번역에서 내 언어와 직원의 언어를 선택하세요. 이중 언어 자막과 상황에 맞는 음성 모드로 객실, 보증금, 체크아웃 시간을 이야기할 수 있습니다.",
+        "늦은 체크아웃이나 추가 요금 확인이 필요하면 음성 에이전트에 목표와 조건을 알려주세요. 작업을 확인하고 후속 질문을 도움받은 뒤 요약을 검토해 직원에게 전달할 내용을 승인하세요.",
+        "호텔의 종이 안내문을 ‘정리’에서 촬영하세요. 구획과 표를 읽고 체크아웃 시간이나 요금을 원본 이미지와 비교하며 숙박 중에 저장된 스캔을 다시 볼 수 있습니다."
+      ],
+      "work": [
+        "업무 메시지를 텍스트 번역에 붙여 넣고 번역 언어와 관계에 맞는 말투를 선택하세요. 답장을 복사하기 전에 이름, 날짜, 약속한 내용을 확인하세요.",
+        "표현이 여전히 모호하면 Helper의 설명 대상을 원문이나 번역으로 선택하세요. 숨은 뜻, 문법, 답장 제안 또는 업무 분야에 맞춰 저장한 지침을 활용할 수 있습니다.",
+        "표현을 채팅으로 가져와 짧은 답장과 자세한 답장을 비교하세요. 상대에게 필요한 맥락을 더하고 최종 초안을 검토한 뒤 평소 쓰는 소통 앱에서 보내세요."
+      ],
+      "dining": [
+        "사진 → 정리에 메뉴 페이지를 추가하고 번역된 음식과 옵션, 가격을 확인하세요. 수량과 추가 옵션을 고르고 메모를 더한 뒤 원문 음식 이름과 옵션이 담긴 주문을 직원에게 보여주세요.",
+        "여전히 궁금한 음식, 양, 재료는 음성 번역으로 물어보세요. 양쪽 언어를 선택하고 담당 직원에게 답변을 확인하세요.",
+        "조건이 여러 개인 요청은 음성 에이전트에 설명하고 후속 질문을 도움받으세요. 세부 내용을 전달하기 전에 요약을 검토하고 재료와 조리법은 직원에게 확인받아야 합니다."
+      ],
+      "study": [
+        "실제로 마주친 단어나 문장부터 시작하세요. Helper의 설명 대상으로 선택하고 예시, 단어별 분석, 필요한 문법 설명을 살펴보세요.",
+        "학습 언어를 설정하고 홈 화면에 학습 위젯을 추가하세요. 카드의 발음을 듣고 다시 복습하거나 기억했다고 표시하세요. PRO는 콘텐츠 유형, 주제, 난이도를 조정할 수 있습니다.",
+        "직접 쓰고 싶은 표현을 채팅에 가져오세요. 익숙한 상황의 예시를 요청하고 자신의 문장을 쓴 뒤 무엇을 바꾸면 좋을지 물어보세요."
+      ],
+      "messages": [
+        "지원되는 메시지 입력란에서 AnyTranslator 키보드로 전환해 초안을 작성하거나 선택하세요. 번역 언어와 말투를 고르고 그 자리에서 번역한 뒤 보내기 전에 읽어보세요.",
+        "긴 메시지나 더 꼼꼼히 살펴볼 답장은 메인 앱에 붙여 넣으세요. 번역을 비교하고 말투를 조정하며 발음을 들은 뒤 다시 복사하세요.",
+        "상대의 뜻이나 내 답장의 느낌이 확실하지 않다면 관련 텍스트와 맥락을 담아 채팅에 질문하세요. 제안을 검토하고 직접 보낼 표현을 선택하세요."
+      ],
+      "reading": [
+        "‘정리’에서 안내문, 안내 책자, 문서를 촬영하고 페이지를 순서대로 추가하세요. 구획과 목록, 표를 읽고 필요한 세부 내용은 원본 페이지에서 확인하세요.",
+        "생소한 표현은 텍스트 번역 페이지에 입력하고 Helper에 용법, 문법 설명, 단어별 분석을 요청하세요. 원문과 번역 중 어느 쪽을 설명할지도 선택할 수 있습니다.",
+        "어느 날짜가 적용되는지, 특정 표현이 무엇을 가리키는지처럼 구체적으로 물으려면 글이나 사진을 채팅에 가져오세요. 중요한 세부 정보를 믿고 사용하기 전에 답변을 원본 문서와 비교하세요."
+      ]
+    },
+    "documentArticle": {
+      "title": "문서 페이지를 읽기 좋은 구획과 표로 스캔하기",
+      "intro": "종이 안내문이나 여행 책자, 여러 페이지의 문서는 이미지 위 번역만으로 읽기 어려울 수 있습니다. 사진 → 정리에서 페이지 사진을 순서대로 추가해 함께 제출하세요. 인식한 텍스트를 구획, 문단, 목록, 표로 정리해 필요한 정보를 찾도록 돕습니다.",
+      "tip": "원문과 번역 언어를 선택하고 각 페이지를 선명하게 촬영한 뒤 제출 전에 순서를 확인하세요. 무료는 한 번에 사진 1장, PRO는 최대 10장입니다. 정리된 결과를 읽고 텍스트를 눌러 원문을 확인하세요. 날짜, 금액, 표의 항목을 검토할 때는 원본 페이지로 돌아가 대조하세요. 나중에 기록에서 제목이나 콘텐츠 유형으로 검색해 저장된 스캔을 다시 열 수 있습니다.",
+      "limit": "이 안내는 카메라나 사진 보관함에서 가져온 페이지 사진을 다룹니다. PDF나 Word 가져오기, 편집, 내보내기를 설명하는 내용은 아닙니다. 흐릿한 글자나 복잡한 레이아웃은 인식과 해석에서 빠질 수 있으니 중요한 세부 내용은 원본 페이지와 대조하세요."
+    }
+  },
+  "zh-cn": {
+    "scan": {
+      "title": "拍下来，变成真正用得上的信息。",
+      "body": "看路标、标签，用“即时”在图片上阅读译文；选餐或读文件，切到“整理”，查看可选择的菜品，或条理清晰的段落与表格。根据任务选择合适的视图。"
+    },
+    "practiceTitle": "从一个真实需求开始。",
+    "features": {
+      "text": {
+        "title": "文字翻译：意思清楚，语气也合适。",
+        "summary": "翻译消息、邮件或句子，再选择合适的语气。回复前，可以听发音、复制，或先问清楚措辞。",
+        "heading": "把准备发送的话，先整理到位。",
+        "body": "输入或粘贴内容，选择原文与目标语言。语气可以保持自动，也能选择礼貌、幽默、书信、朋友或精简。阅读译文、听发音，再复制或收藏。想继续了解某种表达，点击聊天按钮就能带着译文继续提问。",
+        "steps": [
+          "选择原文与目标语言，输入或粘贴消息、邮件或句子。",
+          "根据回复的场景选择语气，检查译文。",
+          "听发音、复制或收藏结果，也可以打开聊天追问措辞。"
+        ]
+      },
+      "photos": {
+        "title": "照片翻译：译文就在图片的文字上。",
+        "summary": "路标、标签和公告，不必逐字输入。使用相机或照片，将译文直接显示在图片上。",
+        "heading": "读懂标示，也保留周围的线索。",
+        "body": "在照片页打开“即时”，选择翻译语言。将镜头对准文字、拍照，或从图库选图。应用识别文字后，会把译文显示在图片上；点击识别出的文字区域，可以查看翻译详情。需要带点餐操作的菜单，或包含段落、表格的文件时，切换到“整理”。",
+        "steps": [
+          "打开照片页，选择“即时”和翻译语言。",
+          "将镜头对准路标或标签，也可以拍照或选择照片。",
+          "阅读图片上的译文，点击文字区域查看详情。"
+        ]
+      },
+      "voice": {
+        "title": "语音翻译：跟上双方的对话。",
+        "summary": "用双语字幕和翻译语音理解对话。根据场景选择双向对话、私下听、帮我说或只看字幕。",
+        "heading": "先选怎么听、怎么说，再开始交谈。",
+        "body": "开启麦克风前，选择双方语言和音频模式。双向对话为双方播放译文；私下听播放你需要的翻译；帮我说将你的话翻译后播放给对方；只看字幕则关闭自动朗读。交谈时，可以同时查看原文与译文字幕。结束后，返回查看对话记录和自动摘要、重播翻译语音，或复制、分享摘要。",
+        "steps": [
+          "选择双方语言和适合当前场景的音频模式。",
+          "开启麦克风，通过双语字幕和所选音频输出跟上对话。",
+          "结束后查看对话记录和摘要，再复制或分享有用的内容。"
+        ]
+      },
+      "agent": {
+        "title": "围绕你的目标协助对话的 AI 助手。",
+        "summary": "说明你想了解或安排的事情。语音代理协助你在面对面交谈中提问、追问和核实细节。",
+        "heading": "从说明目标，到确认沟通结果。",
+        "body": "用文字或语音描述目标和限制条件，再回答助手的准备问题。确认任务后，助手会协助你与面前的人交谈，并追问遗漏的细节，你可以通过双语对话跟进。需要时请求摘要，并先自行检查。只有得到你批准后，助手才会转述给对方确认。决定权在你手中。",
+        "steps": [
+          "选择双方语言，说明目标，并回答准备问题。",
+          "确认任务，让助手协助你向对方提问和追问。",
+          "请求并检查摘要，再批准要转述给对方的内容。"
+        ]
+      },
+      "menu": {
+        "title": "菜单扫描：从读懂菜品到展示订单。",
+        "summary": "将菜单照片整理成翻译后的菜品、选项和价格。选择食物、数量和可用的加料，再展示保留菜单原文的点餐内容。",
+        "heading": "读菜单、选餐点，再给店员看。",
+        "body": "在照片页选择“整理”，通过相机或图库添加菜单照片。查看翻译后的菜名、说明、价格和可选项，再选择菜品、数量、规格或加料，需要时添加用餐备注。点单页面保留原文菜名、译名、原文选项与份数，方便向店员表达。已知价格按币种分别相加，不进行货币换算；菜品或选项价格未知时，无法给出确定的合计。不清楚的细节请对照原图，并向店员确认。免费版每次支持 1 张照片，PRO 每批最多 10 张。",
+        "steps": [
+          "打开照片 → 整理，选择翻译语言，添加清晰的菜单照片。",
+          "查看菜品与价格，选择数量和可用选项，需要时添加用餐备注。",
+          "检查订单和可显示的合计，再向店员展示原文菜名和选项。"
+        ]
+      },
+      "document": {
+        "title": "文件扫描，保留段落与表格。",
+        "summary": "拍摄纸质文件，包括多页文件，整理成章节、列表和表格来阅读。可以对照原图，并从历史记录重新打开已保存的扫描。",
+        "heading": "保留文件的章节、段落和表格结构。",
+        "body": "在照片页选择“整理”，按顺序拍摄文件页面，或从图库添加页面照片。一起提交后，识别内容会整理为标题、章节、段落、编号列表，以及带行列的表格。核对日期、价格等细节时，可以切回每页原图，或点击文字查看原文。在历史记录中按标题或内容类型搜索已保存的扫描，以后可以重新打开。免费版每次支持 1 张照片，PRO 每批最多 10 张。这项流程用于扫描拍摄的页面，并非 PDF 或 Word 编辑器。",
+        "steps": [
+          "打开照片 → 整理，选择语言，按顺序添加页面照片：免费版 1 张，PRO 最多 10 张。",
+          "一起提交页面，阅读整理后的章节、列表和表格。",
+          "对照原始页面、查看原文，需要时从历史记录重新打开已保存的扫描。"
+        ]
+      },
+      "keyboard": {
+        "title": "在常用的应用里，直接翻译回复。",
+        "summary": "使用 iPhone 或 iPad 键盘，在支持的输入框中翻译草稿、调整语气，并在发送前检查结果。",
+        "heading": "在原处撰写、翻译，再检查回复。",
+        "body": "按照应用内指引添加 AnyTranslator 键盘，并在 iOS 设置中开启“允许完全访问”，以使用在线翻译。在支持的输入框中选中要翻译的文字或写好草稿，再选择目标语言和语气。翻译会替换选中的文字，或 iOS 提供给键盘的文字。剪贴板翻译使用独立的结果卡片，可以复制结果或插入光标位置。部分应用和安全输入框会限制第三方键盘。",
+        "steps": [
+          "按照应用内的设置指引添加键盘，并开启“允许完全访问”。",
+          "在支持的输入框中准备或选中草稿，切换键盘，选择目标语言和语气。",
+          "翻译并检查替换后的内容，再自行发送；也可用剪贴板卡片复制或插入独立的翻译结果。"
+        ]
+      },
+      "chat": {
+        "title": "带着文字和照片，继续问下去。",
+        "summary": "将短语、译文或照片带入聊天。询问含义、索取例句，或一起斟酌如何回复。",
+        "heading": "用下一个问题，弄清更多细节。",
+        "body": "输入问题、添加照片，或点击文字翻译旁的聊天按钮，带着当前措辞继续对话。可以在同一段对话中询问陌生表达、要求更多例子，或比较不同回复。检查答案、复制有用的措辞；背景还不够时，继续追问。聊天帮助你理解所提供的内容，重要事实仍应与原文核对。",
+        "steps": [
+          "输入问题、添加照片，或从文字翻译打开聊天。",
+          "询问含义、例句，或适合当前情境的回复。",
+          "检查答案，复制有用的措辞，再继续追问。"
+        ]
+      },
+      "helper": {
+        "title": "Helper 解说：不只翻译，也看懂表达方式。",
+        "summary": "了解语法、例句、逐词含义与回复建议。保存自己的解说指令，换一段文字也能重复使用。",
+        "heading": "选择解释什么，以及如何解释。",
+        "body": "在文字翻译页选择 Helper 解释原文还是译文。可以选语法、逐词分析、例句、言外之意或回复建议等预设，也能保存自己的指令来获得所需解说。保存的设置可以描述专业领域、学习目标或偏好的详细程度。免费版支持 1 个 Helper 配置，PRO 最多 5 个。这里的自定义知识指可复用的指令，并非上传文档建立的知识库。",
+        "steps": [
+          "翻译一段文字，并选择让 Helper 解释原文还是译文。",
+          "选择解说预设，或保存适合所需细节的自定义指令。",
+          "阅读解说，文字变化后继续复用已保存的设置。"
+        ]
+      },
+      "widget": {
+        "title": "在主屏幕直接使用的学习卡片。",
+        "summary": "直接在主屏幕小组件复习单词和短语、听发音、标记记住的内容。添加锁定屏幕小组件，也能多一个返回练习的入口。",
+        "heading": "不必每次打开应用，也能听发音和复习。",
+        "body": "在应用中选择学习语言与翻译语言，再按照指引添加主屏幕或锁定屏幕小组件。主屏幕卡片可以播放发音、选择再复习或标记已记住；回答会影响之后的复习安排。点击锁定屏幕卡片会在应用中打开，并标记为需要再次复习。自动内容免费提供。PRO 可以选择内容类型、组合主题与难度，还能添加自定义主题或难度指令。",
+        "steps": [
+          "选择学习语言，按照应用指引添加主屏幕或锁定屏幕小组件。",
+          "在主屏幕阅读卡片，使用发音按钮。",
+          "在主屏幕选择再复习或已记住；点击锁定屏幕卡片，在应用中打开并再次复习。"
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "酒店入住时，在语音翻译中选择自己与工作人员的语言。用双语字幕和适合现场的音频模式，沟通房间、押金与退房时间。",
+        "需要申请延迟退房或核对额外收费时，向语音代理说明目标和限制条件。确认任务，让它协助追问，再检查摘要并批准转述给工作人员的内容。",
+        "用“整理”拍摄酒店的纸质说明。阅读章节和表格，将退房时间、费用与原图核对，入住期间也能返回已保存的扫描。"
+      ],
+      "work": [
+        "将工作消息粘贴到文字翻译，选择目标语言和适合双方关系的语气。复制回复前，核对姓名、日期和承诺内容。",
+        "仍有不清楚的表达时，选择让 Helper 解释原文或译文。使用言外之意、语法、回复建议，或适合你工作领域的已保存指令。",
+        "将措辞带入聊天，比较简短和详细的回复。补充对方需要的背景，检查最终草稿，再用平常的沟通应用发送。"
+      ],
+      "dining": [
+        "在照片 → 整理添加菜单页面，查看翻译后的菜品、选项与价格。选择数量和可用加料，添加用餐备注，再向店员展示包含原文菜名与选项的订单。",
+        "菜品、分量或食材仍不清楚时，用语音翻译提问。选择双方语言，并向接待你的店员确认答复。",
+        "有多项条件的沟通，可以向语音代理说明请求，让它协助追问。转述细节前先检查摘要；食材和做法必须由店员确认。"
+      ],
+      "study": [
+        "从实际遇到的单词或句子开始。将它选为 Helper 的解释对象，查看例句、逐词分析或最相关的语法说明。",
+        "设置学习语言，将学习小组件添加到主屏幕。听卡片发音，选择再复习或已记住；PRO 可以调整内容类型、主题和难度。",
+        "将想亲自使用的表达带回聊天。要求一个熟悉场景的例句，写出自己的版本，再问哪些地方可以改。"
+      ],
+      "messages": [
+        "在支持的消息输入框切换到 AnyTranslator 键盘，写好或选中草稿，再选择目标语言与语气。直接翻译，并在发送前阅读检查。",
+        "更长的消息，或想仔细斟酌的回复，可以粘贴到主应用。比较译文、调整语气、听发音，再复制回去。",
+        "不确定对方的意思或自己的回复听起来如何时，带着相关文字与背景向聊天提问。检查建议，再选择要发送的措辞。"
+      ],
+      "reading": [
+        "用“整理”拍摄公告、宣传册或文件，按顺序添加页面。阅读章节、列表和表格，切回原始页面核对所需细节。",
+        "遇到不熟悉的表达，将相关文字输入文字翻译页，请 Helper 解释用法、语法或逐词分析，并选择解释原文还是译文。",
+        "需要具体询问适用日期、某个表达所指内容等问题时，将段落或照片带入聊天。依赖重要细节前，请先将答案与原文件核对。"
+      ]
+    },
+    "documentArticle": {
+      "title": "把文件页面扫描成易读的章节和表格",
+      "intro": "纸质公告、旅行手册或多页文件，往往需要比图片叠加译文更清晰的读法。在照片 → 整理中按顺序添加页面照片，一起提交。识别出的文字会整理为章节、段落、列表和表格，便于找到所需信息。",
+      "tip": "选择原文与目标语言，清晰拍摄每页，并在提交前检查顺序。免费版每次扫描支持 1 张照片，PRO 最多 10 张。阅读整理结果，点击文字核对原文；检查日期、金额或表格项目时，切回原始页面。以后可在历史记录按标题或内容类型搜索，重新打开已保存的扫描。",
+      "limit": "本指南适用于通过相机或图库添加的页面照片，不涉及 PDF 或 Word 导入、编辑或导出。模糊文字和复杂布局可能造成识别或理解遗漏，重要细节请与原始页面核对。"
+    }
+  },
+  "id": {
+    "scan": {
+      "title": "Ubah foto menjadi informasi yang bisa dipakai.",
+      "body": "Gunakan Langsung untuk membaca terjemahan di atas papan atau label. Beralih ke Rapikan untuk menu yang bisa dipilih, atau halaman dokumen dengan bagian dan tabel yang mudah dibaca. Setiap tampilan membantu tugas yang berbeda."
+    },
+    "practiceTitle": "Mulai dari kebutuhan nyata.",
+    "features": {
+      "text": {
+        "title": "Terjemahan teks dengan nada yang sesuai.",
+        "summary": "Terjemahkan pesan, email, atau kalimat, lalu pilih nada yang kamu inginkan. Dengarkan, salin, atau tanyakan pilihan katanya sebelum membalas.",
+        "heading": "Siapkan kata-kata yang ingin kamu kirim.",
+        "body": "Ketik atau tempel teks, lalu pilih bahasa sumber dan tujuan. Biarkan nadanya otomatis atau pilih gaya sopan, humor, surat, ramah, atau ringkas. Baca hasilnya, dengarkan pengucapannya, salin, atau simpan sebagai favorit. Tombol Obrolan membawa terjemahan ke percakapan saat kamu ingin bertanya lebih lanjut.",
+        "steps": [
+          "Pilih bahasa, lalu ketik atau tempel pesan, email, atau kalimat.",
+          "Pilih nada yang sesuai untuk balasanmu dan periksa terjemahannya.",
+          "Dengarkan, salin, atau simpan hasilnya, atau buka Obrolan untuk menanyakan pilihan kata."
+        ]
+      },
+      "photos": {
+        "title": "Terjemahan foto tepat di atas tulisannya.",
+        "summary": "Baca papan, label, dan pengumuman tanpa mengetiknya satu per satu. Gunakan kamera atau foto untuk menampilkan terjemahan di atas gambar.",
+        "heading": "Baca papan sambil tetap melihat sekelilingnya.",
+        "body": "Buka Langsung di tab Foto dan pilih bahasa. Arahkan kamera ke teks, ambil foto, atau pilih dari perpustakaan foto. Aplikasi mengenali teks dan menampilkan terjemahan di atas gambar; ketuk area teks yang dikenali untuk melihat detail terjemahannya. Untuk menu dengan kontrol pesanan atau dokumen dengan bagian dan tabel, beralih ke Rapikan.",
+        "steps": [
+          "Buka Foto, pilih Langsung, dan tentukan bahasa.",
+          "Arahkan kamera ke papan atau label, atau ambil maupun pilih foto.",
+          "Baca terjemahan di atas gambar dan ketuk area teks untuk melihat detail."
+        ]
+      },
+      "voice": {
+        "title": "Terjemahan suara untuk kedua pihak dalam percakapan.",
+        "summary": "Ikuti ucapan melalui takarir dua bahasa dan audio terjemahan. Pilih percakapan dua arah, dengarkan secara pribadi, bicara untukmu, atau hanya takarir.",
+        "heading": "Pilih cara mendengar dan menyampaikan ucapan.",
+        "body": "Pilih kedua bahasa dan mode audio sebelum menyalakan mikrofon. Percakapan dua arah memutar terjemahan bagi kedua pihak; dengarkan secara pribadi memutar terjemahan yang kamu butuhkan; bicara untukmu memutar terjemahan ucapanmu bagi lawan bicara; hanya takarir menonaktifkan ucapan otomatis. Baca takarir asli dan terjemahan selama berbicara. Setelah percakapan berakhir, lihat kembali transkrip dan ringkasan otomatis, putar ulang suara terjemahan, atau salin dan bagikan ringkasannya.",
+        "steps": [
+          "Pilih kedua bahasa dan mode audio yang sesuai dengan situasi.",
+          "Nyalakan mikrofon dan ikuti takarir dua bahasa serta keluaran audio yang dipilih.",
+          "Akhiri percakapan untuk memeriksa transkrip dan ringkasannya, lalu salin atau bagikan detail yang berguna."
+        ]
+      },
+      "agent": {
+        "title": "Asisten percakapan AI yang berangkat dari tujuanmu.",
+        "summary": "Jelaskan hal yang perlu diketahui atau diatur. Agen Suara membantu bertanya, menindaklanjuti, dan memeriksa detail dalam percakapan tatap muka.",
+        "heading": "Dari menjelaskan tujuan hingga meninjau hasil.",
+        "body": "Jelaskan tujuan dan batasan melalui teks atau suara, lalu jawab pertanyaan persiapan dari asisten. Setelah kamu mengonfirmasi tugas, asisten membantu berbicara dengan orang di depanmu dan menanyakan detail yang belum lengkap, sementara kamu mengikuti percakapan dua bahasa. Minta ringkasan saat diperlukan. Tinjau sendiri terlebih dahulu; hanya setelah kamu menyetujui, asisten meneruskannya kepada lawan bicara untuk dikonfirmasi. Kamu yang mengambil keputusan.",
+        "steps": [
+          "Pilih kedua bahasa, jelaskan tujuanmu, dan jawab pertanyaan persiapan.",
+          "Konfirmasikan tugas dan biarkan asisten membantu bertanya serta menindaklanjuti dengan lawan bicara.",
+          "Minta dan tinjau ringkasan, lalu setujui isi yang akan diteruskan kepada lawan bicara."
+        ]
+      },
+      "menu": {
+        "title": "Pindai menu, dari membaca hidangan hingga menunjukkan pesanan.",
+        "summary": "Ubah foto menu menjadi hidangan, pilihan, dan harga yang diterjemahkan. Pilih makanan, jumlah, dan tambahan yang tersedia, lalu tunjukkan pesanan dengan tetap menyertakan teks asli menu.",
+        "heading": "Baca menu, pilih makanan, lalu tunjukkan kepada staf.",
+        "body": "Di Foto, pilih Rapikan dan tambahkan foto menu dari kamera atau perpustakaan foto. Periksa nama hidangan, deskripsi, harga, dan pilihan yang sudah diterjemahkan. Pilih hidangan, jumlah, serta opsi seperti ukuran atau tambahan, dan masukkan catatan makan jika diperlukan. Tampilan pesanan menampilkan nama asli dan terjemahan setiap hidangan, serta nama opsi dalam bahasa asli dan jumlah pesanan. Harga yang diketahui dijumlahkan terpisah untuk setiap mata uang, tanpa konversi; harga hidangan atau opsi yang tidak diketahui membuat total pasti tidak dapat ditentukan. Bandingkan detail yang belum jelas dengan foto asli dan konfirmasikan kepada staf. Paket gratis menerima satu foto; PRO hingga sepuluh foto per batch.",
+        "steps": [
+          "Buka Foto → Rapikan, pilih bahasa, dan tambahkan foto menu yang jelas.",
+          "Periksa hidangan dan harga, pilih jumlah serta opsi yang tersedia, dan tambahkan catatan makan bila perlu.",
+          "Periksa pesanan dan total yang tersedia, lalu tunjukkan hidangan serta opsi dalam bahasa aslinya kepada staf."
+        ]
+      },
+      "document": {
+        "title": "Pindai dokumen dengan paragraf dan tabel yang mudah dibaca.",
+        "summary": "Foto dokumen kertas, termasuk beberapa halaman, dan baca sebagai bagian, daftar, serta tabel yang tertata. Bandingkan dengan gambar asli dan buka lagi hasil yang tersimpan dari riwayat.",
+        "heading": "Pertahankan bagian, paragraf, dan struktur tabel dokumen.",
+        "body": "Di Foto, pilih Rapikan, lalu foto halaman dokumen secara berurutan atau tambahkan fotonya dari perpustakaan. Kirim bersama untuk membaca hasil pengenalan sebagai judul, bagian, paragraf, daftar bernomor, serta tabel dengan baris dan kolom. Kembali ke setiap halaman asli atau ketuk teks untuk memeriksa sumbernya saat meninjau tanggal, harga, dan detail lain. Cari hasil yang tersimpan berdasarkan judul atau jenis konten di riwayat dan buka lagi nanti. Paket gratis menerima satu foto; PRO hingga sepuluh foto per batch. Alur ini memindai halaman yang difoto, bukan menyunting PDF atau Word.",
+        "steps": [
+          "Buka Foto → Rapikan, pilih bahasa, dan tambahkan foto halaman secara berurutan: satu pada paket gratis atau hingga sepuluh dengan PRO.",
+          "Kirim semua halaman bersama dan baca bagian, daftar, serta tabel yang tertata.",
+          "Bandingkan dengan halaman asli, periksa teks sumber, dan buka kembali hasil yang tersimpan dari riwayat bila perlu."
+        ]
+      },
+      "keyboard": {
+        "title": "Terjemahkan balasan di aplikasi yang sudah kamu gunakan.",
+        "summary": "Gunakan papan ketik iPhone atau iPad untuk menerjemahkan draf dan mengatur nadanya dalam kolom yang didukung. Periksa hasilnya sebelum mengirim.",
+        "heading": "Tulis, terjemahkan, dan periksa balasan di tempat yang sama.",
+        "body": "Ikuti panduan aplikasi untuk menambahkan papan ketik AnyTranslator dan mengaktifkan Akses Penuh di Pengaturan iOS untuk terjemahan daring. Dalam kolom yang didukung, pilih teks yang akan diterjemahkan atau siapkan draf, lalu pilih bahasa tujuan dan nada. Terjemahan menggantikan teks yang dipilih atau teks yang disediakan iOS untuk papan ketik. Terjemahan papan klip memakai kartu hasil terpisah, tempat kamu bisa menyalin hasil atau menyisipkannya di kursor. Sebagian aplikasi dan kolom aman membatasi papan ketik pihak ketiga.",
+        "steps": [
+          "Tambahkan papan ketik dan aktifkan Akses Penuh dengan mengikuti panduan penyiapan dalam aplikasi.",
+          "Dalam kolom yang didukung, siapkan atau pilih draf, ganti papan ketik, lalu pilih bahasa tujuan dan nada.",
+          "Terjemahkan teks, periksa penggantinya, lalu kirim sendiri; gunakan kartu papan klip untuk menyalin atau menyisipkan hasil terpisah."
+        ]
+      },
+      "chat": {
+        "title": "Terus bertanya lewat teks dan foto.",
+        "summary": "Bawa frasa, terjemahan, atau foto ke Obrolan. Tanyakan artinya, minta contoh, atau pikirkan cara membalas.",
+        "heading": "Pahami detail melalui pertanyaan berikutnya.",
+        "body": "Tulis pertanyaan, tambahkan foto, atau gunakan tombol Obrolan di samping terjemahan teks untuk melanjutkan dengan susunan kata tersebut. Tanyakan ungkapan yang belum dikenal, minta contoh lain, atau bandingkan beberapa balasan dalam percakapan yang sama. Periksa jawaban, salin ungkapan yang berguna, dan tanyakan lebih lanjut jika konteksnya belum cukup. Obrolan membantu menelaah konten yang kamu berikan; periksa fakta penting dengan sumber aslinya.",
+        "steps": [
+          "Masukkan pertanyaan, tambahkan foto, atau buka Obrolan dari terjemahan teks.",
+          "Tanyakan makna, contoh, atau balasan yang sesuai dengan situasimu.",
+          "Periksa jawaban, salin ungkapan yang berguna, dan lanjutkan dengan pertanyaan berikutnya."
+        ]
+      },
+      "helper": {
+        "title": "Penjelasan Helper untuk memahami cara kerja kata.",
+        "summary": "Pelajari tata bahasa, contoh, makna per kata, dan kemungkinan balasan. Simpan instruksi penjelasanmu sendiri untuk dipakai lagi pada teks baru.",
+        "heading": "Pilih apa yang dijelaskan dan bagaimana menjelaskannya.",
+        "body": "Di halaman terjemahan teks, pilih apakah Helper menjelaskan teks sumber atau terjemahannya. Pilih preset seperti tata bahasa, analisis per kata, contoh, makna tersirat, atau saran balasan, atau simpan instruksi sendiri untuk penjelasan yang dibutuhkan. Pengaturan tersimpan dapat menyebutkan bidang, tujuan belajar, atau tingkat detail yang kamu inginkan. Paket gratis mendukung satu profil Helper dan PRO hingga lima. Pengetahuan kustom di sini berarti instruksi yang bisa dipakai ulang, bukan basis pengetahuan dari dokumen unggahan.",
+        "steps": [
+          "Terjemahkan teks dan pilih apakah Helper menjelaskan teks asli atau terjemahannya.",
+          "Pilih preset penjelasan atau simpan instruksi sendiri untuk detail yang dibutuhkan.",
+          "Baca penjelasan dan gunakan kembali pengaturan tersimpan saat teks berubah."
+        ]
+      },
+      "widget": {
+        "title": "Kartu belajar langsung dari Layar Utama.",
+        "summary": "Ulangi kata dan frasa, dengarkan pengucapan, dan tandai yang sudah diingat langsung di Widget Layar Utama. Tambahkan Widget Layar Terkunci sebagai jalan lain untuk kembali berlatih.",
+        "heading": "Dengarkan dan ulangi tanpa selalu membuka aplikasi.",
+        "body": "Pilih bahasa belajar dan terjemahan di aplikasi, lalu ikuti panduan untuk menambahkan Widget Layar Utama atau Layar Terkunci. Kartu Layar Utama memungkinkan kamu memutar pengucapan, memilih ulangi lagi, atau menandai sudah ingat; jawabanmu memandu ulasan berikutnya. Mengetuk kartu Layar Terkunci membukanya di aplikasi dan menandainya untuk diulang lagi. Konten otomatis tersedia gratis. PRO memungkinkan pemilihan jenis konten, gabungan topik dan tingkat kesulitan, serta instruksi topik atau kesulitan kustom.",
+        "steps": [
+          "Pilih bahasa belajar dan ikuti panduan aplikasi untuk menambahkan Widget Layar Utama atau Layar Terkunci.",
+          "Baca kartu dan gunakan kontrol pengucapannya di Layar Utama.",
+          "Pilih ulangi lagi atau sudah ingat di Layar Utama; ketuk kartu Layar Terkunci untuk membukanya dan mengulang lagi."
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "Saat check-in hotel, pilih bahasamu dan bahasa staf dalam terjemahan suara. Gunakan takarir dua bahasa dan mode audio yang sesuai untuk membahas kamar, deposit, dan waktu check-out.",
+        "Untuk meminta check-out lebih lambat atau memperjelas biaya tambahan, beri tahu Agen Suara tujuan dan batasanmu. Konfirmasikan tugas, minta bantuannya bertanya lebih lanjut, lalu periksa ringkasan sebelum menyetujui penerusannya kepada staf.",
+        "Foto petunjuk kertas hotel melalui Rapikan. Baca bagian dan tabelnya, bandingkan waktu check-out atau biaya dengan gambar asli, dan buka lagi hasil tersimpan selama menginap."
+      ],
+      "work": [
+        "Tempel pesan kerja ke terjemahan teks, pilih bahasa tujuan dan nada yang sesuai dengan hubungan. Periksa nama, tanggal, dan komitmen sebelum menyalin balasan.",
+        "Jika frasa masih kurang jelas, pilih teks asli atau terjemahan untuk Helper. Gunakan makna tersirat, tata bahasa, saran balasan, atau instruksi yang disimpan untuk bidang kerjamu.",
+        "Bawa susunan kata ke Obrolan untuk membandingkan balasan singkat dengan yang lebih rinci. Tambahkan konteks yang dibutuhkan penerima, periksa draf akhir, lalu kirim melalui aplikasi komunikasi yang biasa dipakai."
+      ],
+      "dining": [
+        "Di Foto → Rapikan, tambahkan halaman menu dan periksa terjemahan hidangan, pilihan, serta harga. Pilih jumlah dan tambahan yang tersedia, tambahkan catatan makan, lalu tunjukkan pesanan dengan nama hidangan serta opsi asli kepada staf.",
+        "Gunakan terjemahan suara untuk menanyakan hidangan, ukuran porsi, atau bahan yang masih kurang jelas. Pilih kedua bahasa dan konfirmasikan jawaban dengan orang yang melayanimu.",
+        "Untuk percakapan dengan beberapa syarat, jelaskan permintaan kepada Agen Suara dan biarkan ia membantu bertanya lebih lanjut. Periksa ringkasan sebelum detail diteruskan; staf harus mengonfirmasi bahan serta cara penyiapannya."
+      ],
+      "study": [
+        "Mulai dengan kata atau kalimat yang benar-benar kamu temui. Pilih sebagai sumber Helper dan lihat contoh, analisis per kata, atau penjelasan tata bahasa yang paling relevan.",
+        "Atur bahasa belajar dan tambahkan Widget belajar ke Layar Utama. Dengarkan kartu dan tandai ulangi lagi atau sudah ingat; PRO bisa menyesuaikan jenis konten, topik, dan kesulitan.",
+        "Kembali ke Obrolan dengan frasa yang ingin kamu gunakan sendiri. Minta contoh dalam situasi yang dikenal, tulis versimu, lalu tanyakan apa yang bisa diubah."
+      ],
+      "messages": [
+        "Dalam kolom pesan yang didukung, ganti ke papan ketik AnyTranslator, siapkan atau pilih draf, lalu pilih bahasa tujuan dan nada. Terjemahkan di tempat dan baca sebelum mengirim.",
+        "Untuk pesan panjang atau balasan yang ingin diperiksa lebih dekat, tempel teks ke aplikasi utama. Bandingkan terjemahan, atur nada, dan dengarkan pengucapan sebelum menyalinnya kembali.",
+        "Jika belum yakin dengan maksud lawan bicara atau kesan balasanmu, tanyakan kepada Obrolan dengan teks dan konteks yang relevan. Periksa saran dan pilih susunan kata yang ingin dikirim."
+      ],
+      "reading": [
+        "Foto pengumuman, brosur, atau dokumen melalui Rapikan dengan halaman berurutan. Baca bagian, daftar, dan tabel, lalu beralih ke halaman asli untuk memeriksa detail yang dibutuhkan.",
+        "Untuk ungkapan yang belum dikenal, masukkan teks terkait pada halaman terjemahan teks dan minta catatan penggunaan, penjelasan tata bahasa, atau analisis per kata kepada Helper. Pilih apakah ia menjelaskan teks asli atau terjemahan.",
+        "Bawa paragraf atau foto ke Obrolan jika ada pertanyaan khusus, seperti tanggal mana yang berlaku atau rujukan suatu frasa. Bandingkan jawaban dengan dokumen asli sebelum mengandalkan detail penting."
+      ]
+    },
+    "documentArticle": {
+      "title": "Pindai halaman dokumen menjadi bagian dan tabel yang mudah dibaca",
+      "intro": "Pengumuman kertas, brosur perjalanan, atau dokumen beberapa halaman sering membutuhkan lebih dari terjemahan di atas gambar. Di Foto → Rapikan, tambahkan foto halaman secara berurutan dan kirim bersama. Teks yang dikenali disusun menjadi bagian, paragraf, daftar, dan tabel agar informasi yang dibutuhkan mudah ditemukan.",
+      "tip": "Pilih bahasa sumber dan tujuan, foto setiap halaman dengan jelas, dan periksa urutannya sebelum mengirim. Paket gratis menerima satu foto per pemindaian; PRO hingga sepuluh. Baca hasil yang tersusun, ketuk teks untuk memeriksa sumbernya, dan kembali ke halaman asli saat meninjau tanggal, jumlah, atau isi tabel. Cari berdasarkan judul atau jenis konten di riwayat untuk membuka lagi hasil yang tersimpan.",
+      "limit": "Panduan ini mencakup halaman yang difoto melalui kamera atau perpustakaan foto. Panduan ini tidak menjelaskan impor, penyuntingan, atau ekspor PDF maupun Word. Pengenalan dan penafsiran dapat melewatkan teks yang kurang jelas atau tata letak rumit, jadi bandingkan detail penting dengan halaman asli."
+    }
+  },
+  "vi": {
+    "scan": {
+      "title": "Biến ảnh thành thông tin bạn có thể sử dụng.",
+      "body": "Dùng Trực tiếp để đọc bản dịch ngay trên biển báo hoặc nhãn. Chuyển sang Sắp xếp để xem thực đơn có thể chọn món, hoặc trang tài liệu với các mục và bảng dễ đọc. Mỗi chế độ phục vụ một nhu cầu khác nhau."
+    },
+    "practiceTitle": "Bắt đầu từ một nhu cầu thực tế.",
+    "features": {
+      "text": {
+        "title": "Dịch văn bản với giọng điệu phù hợp.",
+        "summary": "Dịch tin nhắn, email hoặc câu văn, rồi chọn giọng điệu bạn muốn. Nghe phát âm, sao chép hoặc hỏi về cách diễn đạt trước khi trả lời.",
+        "heading": "Chuẩn bị những lời bạn muốn gửi.",
+        "body": "Nhập hoặc dán văn bản và chọn ngôn ngữ nguồn, ngôn ngữ đích. Giữ giọng điệu tự động hoặc chọn lịch sự, hài hước, thư từ, thân thiện hay ngắn gọn. Đọc kết quả, nghe phát âm, sao chép hoặc lưu vào mục yêu thích. Nút Trò chuyện đưa bản dịch vào cuộc hội thoại khi bạn muốn hỏi thêm.",
+        "steps": [
+          "Chọn ngôn ngữ, rồi nhập hoặc dán tin nhắn, email hay câu văn.",
+          "Chọn giọng điệu phù hợp với câu trả lời và kiểm tra bản dịch.",
+          "Nghe, sao chép hoặc lưu kết quả, hoặc mở Trò chuyện để hỏi về cách diễn đạt."
+        ]
+      },
+      "photos": {
+        "title": "Dịch ảnh ngay trên những dòng chữ.",
+        "summary": "Đọc biển báo, nhãn và thông báo mà không cần gõ lại. Dùng máy ảnh hoặc ảnh có sẵn để hiển thị bản dịch trên hình.",
+        "heading": "Đọc biển báo mà vẫn thấy ngữ cảnh xung quanh.",
+        "body": "Mở Trực tiếp trong thẻ Ảnh và chọn ngôn ngữ. Hướng máy ảnh vào văn bản, chụp ảnh hoặc chọn ảnh từ thư viện. Ứng dụng nhận dạng chữ và hiển thị bản dịch trên hình; chạm vào vùng chữ đã nhận dạng để xem chi tiết bản dịch. Với thực đơn có thao tác chọn món hoặc tài liệu có các mục và bảng, hãy chuyển sang Sắp xếp.",
+        "steps": [
+          "Mở Ảnh, chọn Trực tiếp và chọn ngôn ngữ.",
+          "Hướng máy ảnh vào biển báo hoặc nhãn, hoặc chụp hay chọn ảnh.",
+          "Đọc bản dịch trên hình và chạm vào vùng chữ để xem chi tiết."
+        ]
+      },
+      "voice": {
+        "title": "Dịch giọng nói cho cả hai phía của cuộc trò chuyện.",
+        "summary": "Theo dõi lời nói bằng phụ đề song ngữ và âm thanh bản dịch. Chọn hội thoại hai chiều, nghe riêng, nói giúp bạn hoặc chỉ phụ đề.",
+        "heading": "Chọn cách nghe và cách truyền đạt lời nói.",
+        "body": "Chọn cả hai ngôn ngữ và chế độ âm thanh trước khi bật micrô. Hội thoại hai chiều phát bản dịch cho cả hai phía; nghe riêng phát các bản dịch bạn cần; nói giúp bạn phát lời nói đã dịch của bạn cho người đối diện; chỉ phụ đề tắt đọc tự động. Khi trò chuyện, bạn có thể đọc cả phụ đề gốc và bản dịch. Sau khi kết thúc, xem lại bản chép lời và tóm tắt tự động, phát lại giọng đọc bản dịch hoặc sao chép, chia sẻ phần tóm tắt.",
+        "steps": [
+          "Chọn cả hai ngôn ngữ và chế độ âm thanh phù hợp với tình huống.",
+          "Bật micrô và theo dõi phụ đề song ngữ cùng đầu ra âm thanh đã chọn.",
+          "Kết thúc để xem lại bản chép lời và tóm tắt, rồi sao chép hoặc chia sẻ chi tiết hữu ích."
+        ]
+      },
+      "agent": {
+        "title": "Trợ lý hội thoại AI làm việc theo mục tiêu của bạn.",
+        "summary": "Giải thích điều bạn cần tìm hiểu hoặc sắp xếp. Trợ lý giọng nói giúp đặt câu hỏi, hỏi tiếp và kiểm tra chi tiết trong cuộc trò chuyện trực tiếp.",
+        "heading": "Từ giải thích mục tiêu đến xem lại kết quả.",
+        "body": "Mô tả mục tiêu và các giới hạn bằng văn bản hoặc giọng nói, rồi trả lời câu hỏi chuẩn bị của trợ lý. Sau khi bạn xác nhận nhiệm vụ, trợ lý giúp trò chuyện với người trước mặt và hỏi tiếp về các chi tiết còn thiếu, trong khi bạn theo dõi hội thoại song ngữ. Yêu cầu tóm tắt khi cần và tự kiểm tra trước. Chỉ sau khi bạn phê duyệt, trợ lý mới truyền đạt cho người kia để xác nhận. Bạn là người quyết định.",
+        "steps": [
+          "Chọn cả hai ngôn ngữ, giải thích mục tiêu và trả lời câu hỏi chuẩn bị.",
+          "Xác nhận nhiệm vụ và để trợ lý giúp đặt câu hỏi, hỏi tiếp với người đối diện.",
+          "Yêu cầu và kiểm tra tóm tắt, rồi phê duyệt nội dung sẽ truyền đạt cho người kia."
+        ]
+      },
+      "menu": {
+        "title": "Quét thực đơn, từ đọc món ăn đến trình bày đơn gọi món.",
+        "summary": "Biến ảnh thực đơn thành món ăn, tùy chọn và giá đã dịch. Chọn món, số lượng và phần thêm có sẵn, rồi hiển thị yêu cầu gọi món kèm nguyên văn thực đơn.",
+        "heading": "Đọc thực đơn, chọn món và cho nhân viên xem.",
+        "body": "Trong Ảnh, chọn Sắp xếp và thêm ảnh thực đơn từ máy ảnh hoặc thư viện. Kiểm tra tên món, mô tả, giá và các lựa chọn đã dịch. Chọn món, số lượng, tùy chọn như kích cỡ hay phần thêm, và thêm ghi chú ăn uống nếu cần. Màn hình gọi món hiển thị tên gốc và tên đã dịch của từng món, cùng tên tùy chọn bằng ngôn ngữ gốc và số lượng. Các giá đã biết được cộng riêng theo từng loại tiền, không quy đổi; nếu giá món hoặc tùy chọn chưa rõ thì không thể đưa ra tổng chắc chắn. Đối chiếu chi tiết chưa rõ với ảnh gốc và xác nhận với nhân viên. Gói miễn phí nhận một ảnh; PRO nhận tối đa mười ảnh mỗi lượt.",
+        "steps": [
+          "Mở Ảnh → Sắp xếp, chọn ngôn ngữ và thêm ảnh thực đơn rõ nét.",
+          "Kiểm tra món và giá, chọn số lượng, tùy chọn có sẵn và thêm ghi chú nếu cần.",
+          "Kiểm tra đơn và tổng tiền có thể hiển thị, rồi cho nhân viên xem món cùng tùy chọn bằng ngôn ngữ gốc."
+        ]
+      },
+      "document": {
+        "title": "Quét tài liệu, giữ đoạn văn và bảng dễ đọc.",
+        "summary": "Chụp tài liệu giấy, kể cả nhiều trang, để đọc thành các mục, danh sách và bảng được sắp xếp. Đối chiếu với ảnh gốc và mở lại bản quét đã lưu từ lịch sử.",
+        "heading": "Giữ cấu trúc các mục, đoạn văn và bảng của tài liệu.",
+        "body": "Trong Ảnh, chọn Sắp xếp, rồi chụp từng trang theo thứ tự hoặc thêm ảnh từ thư viện. Gửi các trang cùng nhau để đọc nội dung nhận dạng dưới dạng tiêu đề, các mục, đoạn văn, danh sách đánh số và bảng có hàng, cột. Chuyển về từng trang gốc hoặc chạm vào chữ để kiểm tra nguồn khi xem ngày tháng, giá và các chi tiết khác. Tìm bản quét đã lưu theo tiêu đề hoặc loại nội dung trong lịch sử để mở lại sau. Gói miễn phí nhận một ảnh; PRO nhận tối đa mười ảnh mỗi lượt. Quy trình này quét trang đã chụp, không phải trình biên tập PDF hay Word.",
+        "steps": [
+          "Mở Ảnh → Sắp xếp, chọn ngôn ngữ và thêm ảnh trang tài liệu theo thứ tự: một ảnh với gói miễn phí hoặc tối đa mười ảnh với PRO.",
+          "Gửi các trang cùng nhau và đọc các mục, danh sách, bảng đã được sắp xếp.",
+          "Đối chiếu trang gốc, kiểm tra văn bản nguồn và mở lại bản quét từ lịch sử khi cần."
+        ]
+      },
+      "keyboard": {
+        "title": "Dịch câu trả lời ngay trong ứng dụng đang dùng.",
+        "summary": "Dùng bàn phím iPhone hoặc iPad để dịch bản nháp và điều chỉnh giọng điệu trong ô nhập được hỗ trợ. Kiểm tra kết quả trước khi gửi.",
+        "heading": "Viết, dịch và kiểm tra câu trả lời ngay tại chỗ.",
+        "body": "Làm theo hướng dẫn để thêm bàn phím AnyTranslator và bật Cho phép truy cập đầy đủ trong Cài đặt iOS cho dịch trực tuyến. Trong ô được hỗ trợ, chọn văn bản cần dịch hoặc chuẩn bị bản nháp, rồi chọn ngôn ngữ đích và giọng điệu. Bản dịch thay thế văn bản đã chọn hoặc phần văn bản iOS cung cấp cho bàn phím. Dịch bảng nhớ tạm dùng một thẻ kết quả riêng, nơi bạn có thể sao chép hoặc chèn kết quả tại con trỏ. Một số ứng dụng và ô nhập bảo mật hạn chế bàn phím bên thứ ba.",
+        "steps": [
+          "Thêm bàn phím và bật Cho phép truy cập đầy đủ theo hướng dẫn thiết lập trong ứng dụng.",
+          "Trong ô nhập được hỗ trợ, chuẩn bị hoặc chọn bản nháp, chuyển bàn phím và chọn ngôn ngữ đích cùng giọng điệu.",
+          "Dịch, kiểm tra phần thay thế và tự gửi; dùng thẻ bảng nhớ tạm để sao chép hoặc chèn kết quả riêng."
+        ]
+      },
+      "chat": {
+        "title": "Tiếp tục đặt câu hỏi bằng văn bản và ảnh.",
+        "summary": "Đưa cụm từ, bản dịch hoặc ảnh vào Trò chuyện. Hỏi ý nghĩa, yêu cầu ví dụ hoặc tìm cách bạn muốn trả lời.",
+        "heading": "Hiểu rõ chi tiết qua câu hỏi tiếp theo.",
+        "body": "Viết câu hỏi, thêm ảnh hoặc dùng nút Trò chuyện cạnh bản dịch văn bản để tiếp tục với cách diễn đạt đó. Hỏi về cụm từ chưa quen, yêu cầu ví dụ khác hoặc so sánh các câu trả lời trong cùng một cuộc hội thoại. Kiểm tra đáp án, sao chép cách diễn đạt hữu ích và hỏi tiếp khi cần thêm ngữ cảnh. Trò chuyện giúp bạn xem xét nội dung đã cung cấp; hãy đối chiếu dữ kiện quan trọng với bản gốc.",
+        "steps": [
+          "Nhập câu hỏi, thêm ảnh hoặc mở Trò chuyện từ bản dịch văn bản.",
+          "Hỏi về ý nghĩa, ví dụ hoặc câu trả lời phù hợp với tình huống.",
+          "Kiểm tra đáp án, sao chép cách diễn đạt hữu ích và tiếp tục hỏi thêm."
+        ]
+      },
+      "helper": {
+        "title": "Lời giải thích của Helper cho thấy cách từ ngữ hoạt động.",
+        "summary": "Tìm hiểu ngữ pháp, ví dụ, nghĩa từng từ và các cách trả lời. Lưu chỉ dẫn giải thích riêng để dùng lại với văn bản mới.",
+        "heading": "Chọn nội dung cần giải thích và cách giải thích.",
+        "body": "Trên trang dịch văn bản, chọn để Helper giải thích văn bản nguồn hay bản dịch. Chọn mẫu như ngữ pháp, phân tích từng từ, ví dụ, hàm ý hoặc gợi ý trả lời, hoặc lưu chỉ dẫn riêng cho lời giải thích bạn cần. Cài đặt đã lưu có thể mô tả lĩnh vực, mục tiêu học tập hay mức độ chi tiết mong muốn. Gói miễn phí hỗ trợ một hồ sơ Helper và PRO hỗ trợ tối đa năm hồ sơ. Kiến thức tùy chỉnh ở đây là chỉ dẫn có thể dùng lại, không phải kho tri thức từ tài liệu tải lên.",
+        "steps": [
+          "Dịch văn bản và chọn để Helper giải thích bản gốc hay bản dịch.",
+          "Chọn mẫu giải thích hoặc lưu chỉ dẫn riêng cho chi tiết bạn cần.",
+          "Đọc lời giải thích và dùng lại cài đặt đã lưu khi văn bản thay đổi."
+        ]
+      },
+      "widget": {
+        "title": "Thẻ học dùng ngay từ Màn hình chính.",
+        "summary": "Ôn từ và cụm từ, nghe phát âm và đánh dấu nội dung đã nhớ ngay trong tiện ích Màn hình chính. Thêm tiện ích Màn hình khóa để có thêm lối quay lại luyện tập.",
+        "heading": "Nghe và ôn mà không phải mở ứng dụng mỗi lần.",
+        "body": "Chọn ngôn ngữ học và ngôn ngữ dịch trong ứng dụng, rồi làm theo hướng dẫn để thêm tiện ích Màn hình chính hoặc Màn hình khóa. Thẻ trên Màn hình chính cho phép phát âm, chọn ôn lại hoặc đánh dấu đã nhớ; câu trả lời được dùng để sắp xếp lần ôn sau. Chạm vào thẻ Màn hình khóa sẽ mở thẻ trong ứng dụng và đánh dấu để ôn lại. Nội dung tự động được cung cấp miễn phí. PRO cho phép chọn loại nội dung, kết hợp chủ đề và độ khó, đồng thời thêm chỉ dẫn tùy chỉnh về chủ đề hoặc độ khó.",
+        "steps": [
+          "Chọn ngôn ngữ học và làm theo hướng dẫn để thêm tiện ích Màn hình chính hoặc Màn hình khóa.",
+          "Đọc thẻ và dùng nút phát âm trên Màn hình chính.",
+          "Chọn ôn lại hoặc đã nhớ trên Màn hình chính; chạm thẻ Màn hình khóa để mở và ôn lại."
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "Khi nhận phòng khách sạn, chọn ngôn ngữ của bạn và của nhân viên trong dịch giọng nói. Dùng phụ đề song ngữ và chế độ âm thanh phù hợp để trao đổi về phòng, tiền đặt cọc và giờ trả phòng.",
+        "Nếu cần xin trả phòng muộn hoặc làm rõ phụ phí, hãy cho Trợ lý giọng nói biết mục tiêu và giới hạn. Xác nhận nhiệm vụ, nhờ hỗ trợ hỏi tiếp, rồi kiểm tra tóm tắt trước khi phê duyệt truyền đạt cho nhân viên.",
+        "Chụp hướng dẫn giấy của khách sạn bằng Sắp xếp. Đọc các mục và bảng, đối chiếu giờ trả phòng hoặc chi phí với ảnh gốc, và quay lại bản quét đã lưu trong thời gian lưu trú."
+      ],
+      "work": [
+        "Dán tin nhắn công việc vào dịch văn bản, chọn ngôn ngữ đích và giọng điệu phù hợp với mối quan hệ. Kiểm tra tên, ngày tháng và cam kết trước khi sao chép câu trả lời.",
+        "Nếu cụm từ vẫn chưa rõ, chọn bản gốc hoặc bản dịch cho Helper. Dùng hàm ý, ngữ pháp, gợi ý trả lời hoặc chỉ dẫn đã lưu cho lĩnh vực công việc của bạn.",
+        "Đưa cách diễn đạt vào Trò chuyện để so sánh câu trả lời ngắn với câu chi tiết hơn. Thêm ngữ cảnh người nhận cần, kiểm tra bản nháp cuối rồi gửi qua ứng dụng liên lạc thường dùng."
+      ],
+      "dining": [
+        "Trong Ảnh → Sắp xếp, thêm trang thực đơn và kiểm tra món, tùy chọn, giá đã dịch. Chọn số lượng và phần thêm có sẵn, thêm ghi chú rồi cho nhân viên xem đơn với tên món và tùy chọn gốc.",
+        "Dùng dịch giọng nói để hỏi về món ăn, khẩu phần hoặc nguyên liệu chưa rõ. Chọn cả hai ngôn ngữ và xác nhận câu trả lời với người phục vụ.",
+        "Với cuộc trò chuyện có nhiều điều kiện, giải thích yêu cầu cho Trợ lý giọng nói để được hỗ trợ hỏi tiếp. Kiểm tra tóm tắt trước khi truyền đạt chi tiết; nhân viên phải xác nhận nguyên liệu và cách chế biến."
+      ],
+      "study": [
+        "Bắt đầu với từ hoặc câu bạn thực sự gặp. Chọn làm nội dung nguồn cho Helper và xem ví dụ, phân tích từng từ hoặc phần giải thích ngữ pháp phù hợp nhất.",
+        "Đặt ngôn ngữ học và thêm tiện ích học tập vào Màn hình chính. Nghe thẻ và đánh dấu ôn lại hoặc đã nhớ; PRO có thể điều chỉnh loại nội dung, chủ đề và độ khó.",
+        "Quay lại Trò chuyện với cụm từ bạn muốn tự dùng. Yêu cầu ví dụ trong tình huống quen thuộc, viết phiên bản của mình rồi hỏi có thể thay đổi điều gì."
+      ],
+      "messages": [
+        "Trong ô nhắn tin được hỗ trợ, chuyển sang bàn phím AnyTranslator, chuẩn bị hoặc chọn bản nháp, rồi chọn ngôn ngữ đích và giọng điệu. Dịch tại chỗ và đọc lại trước khi gửi.",
+        "Với tin nhắn dài hoặc câu trả lời muốn xem kỹ hơn, dán văn bản vào ứng dụng chính. So sánh bản dịch, chỉnh giọng điệu và nghe phát âm trước khi sao chép trở lại.",
+        "Nếu chưa chắc ý của người kia hoặc cảm giác câu trả lời của mình, hỏi Trò chuyện với văn bản và ngữ cảnh liên quan. Kiểm tra gợi ý và chọn cách diễn đạt bạn muốn gửi."
+      ],
+      "reading": [
+        "Chụp thông báo, tờ giới thiệu hoặc tài liệu trong Sắp xếp, thêm các trang theo thứ tự. Đọc các mục, danh sách và bảng, rồi chuyển về trang gốc để kiểm tra chi tiết cần thiết.",
+        "Với cách diễn đạt chưa quen, nhập phần văn bản liên quan vào trang dịch văn bản và hỏi Helper về cách dùng, ngữ pháp hoặc phân tích từng từ. Chọn giải thích bản gốc hay bản dịch.",
+        "Đưa đoạn văn hoặc ảnh vào Trò chuyện khi cần hỏi cụ thể, chẳng hạn ngày nào được áp dụng hoặc cụm từ đang nói đến điều gì. Đối chiếu câu trả lời với tài liệu gốc trước khi dựa vào chi tiết quan trọng."
+      ]
+    },
+    "documentArticle": {
+      "title": "Quét trang tài liệu thành các mục và bảng dễ đọc",
+      "intro": "Thông báo giấy, tài liệu du lịch hoặc tài liệu nhiều trang thường cần nhiều hơn bản dịch phủ lên ảnh. Trong Ảnh → Sắp xếp, thêm ảnh trang theo thứ tự và gửi cùng nhau. Nội dung nhận dạng được sắp thành các mục, đoạn văn, danh sách và bảng để bạn tìm được thông tin cần thiết.",
+      "tip": "Chọn ngôn ngữ nguồn và đích, chụp rõ từng trang rồi kiểm tra thứ tự trước khi gửi. Gói miễn phí nhận một ảnh mỗi lần quét; PRO nhận tối đa mười ảnh. Đọc kết quả đã sắp xếp, chạm chữ để kiểm tra nguồn và trở lại trang gốc khi xem ngày tháng, số tiền hoặc ô trong bảng. Tìm theo tiêu đề hoặc loại nội dung trong lịch sử để mở lại bản quét sau này.",
+      "limit": "Hướng dẫn này áp dụng cho ảnh trang lấy từ máy ảnh hoặc thư viện ảnh. Nội dung không mô tả nhập, chỉnh sửa hay xuất PDF hoặc Word. Nhận dạng và diễn giải có thể bỏ sót chữ mờ hoặc bố cục phức tạp, nên hãy đối chiếu chi tiết quan trọng với trang gốc."
+    }
+  },
+  "th": {
+    "scan": {
+      "title": "เปลี่ยนภาพถ่ายให้เป็นข้อมูลที่นำไปใช้ได้จริง",
+      "body": "ใช้โหมดสดเพื่ออ่านคำแปลบนป้ายหรือฉลาก เปลี่ยนเป็นจัดเรียงเมื่อต้องการเมนูที่เลือกอาหารได้ หรือหน้าเอกสารที่แบ่งหัวข้อและตารางให้อ่านง่าย แต่ละมุมมองเหมาะกับงานที่ต่างกัน"
+    },
+    "practiceTitle": "เริ่มจากสิ่งที่ต้องใช้จริง",
+    "features": {
+      "text": {
+        "title": "แปลข้อความด้วยน้ำเสียงที่เหมาะสม",
+        "summary": "แปลข้อความ อีเมล หรือประโยค แล้วเลือกน้ำเสียงที่ต้องการ ฟังการออกเสียง คัดลอก หรือถามเรื่องถ้อยคำก่อนตอบกลับ",
+        "heading": "เตรียมคำที่ต้องการส่งให้พร้อม",
+        "body": "พิมพ์หรือวางข้อความ แล้วเลือกภาษาต้นฉบับและภาษาปลายทาง ใช้น้ำเสียงอัตโนมัติหรือเลือกแบบสุภาพ อารมณ์ขัน จดหมาย เป็นกันเอง หรือกระชับ อ่านผล ฟังการออกเสียง คัดลอก หรือบันทึกเป็นรายการโปรด เมื่อต้องการถามต่อ ปุ่มแชตจะนำคำแปลไปยังบทสนทนาได้",
+        "steps": [
+          "เลือกภาษา แล้วพิมพ์หรือวางข้อความ อีเมล หรือประโยค",
+          "เลือกน้ำเสียงที่เหมาะกับการตอบกลับและตรวจคำแปล",
+          "ฟัง คัดลอก หรือบันทึกผล หรือเปิดแชตเพื่อถามเรื่องถ้อยคำ"
+        ]
+      },
+      "photos": {
+        "title": "แปลภาพโดยวางคำแปลบนตัวอักษร",
+        "summary": "อ่านป้าย ฉลาก และประกาศได้โดยไม่ต้องพิมพ์ตาม ใช้กล้องหรือภาพถ่ายเพื่อแสดงคำแปลบนภาพ",
+        "heading": "อ่านป้ายพร้อมเห็นบริบทโดยรอบ",
+        "body": "เปิดโหมดสดในแท็บภาพถ่ายแล้วเลือกภาษา เล็งกล้องไปที่ข้อความ ถ่ายภาพ หรือเลือกภาพจากคลัง แอปจะอ่านข้อความและแสดงคำแปลบนภาพ แตะบริเวณข้อความที่ตรวจพบเพื่อดูรายละเอียดคำแปล หากต้องการเมนูที่มีตัวเลือกสั่งอาหารหรือเอกสารที่แบ่งหัวข้อและตาราง ให้เปลี่ยนเป็นจัดเรียง",
+        "steps": [
+          "เปิดภาพถ่าย เลือกสด แล้วเลือกภาษา",
+          "เล็งกล้องไปที่ป้ายหรือฉลาก หรือถ่ายและเลือกภาพที่ต้องการ",
+          "อ่านคำแปลบนภาพ แล้วแตะบริเวณข้อความเพื่อดูรายละเอียด"
+        ]
+      },
+      "voice": {
+        "title": "แปลเสียงให้ทั้งสองฝ่ายในบทสนทนา",
+        "summary": "ติดตามคำพูดด้วยคำบรรยายสองภาษาและเสียงแปล เลือกสนทนาสองทาง ฟังส่วนตัว พูดแทนคุณ หรือดูเฉพาะคำบรรยาย",
+        "heading": "เลือกวิธีฟังและวิธีให้ผู้อื่นได้ยิน",
+        "body": "เลือกภาษาของทั้งสองฝ่ายและโหมดเสียงก่อนเปิดไมโครโฟน สนทนาสองทางจะเล่นคำแปลให้ทั้งสองฝ่าย ฟังส่วนตัวจะเล่นคำแปลที่คุณต้องการ พูดแทนคุณจะเล่นคำแปลคำพูดของคุณให้อีกฝ่าย ส่วนดูเฉพาะคำบรรยายจะปิดการอ่านออกเสียงอัตโนมัติ ระหว่างคุยสามารถอ่านคำบรรยายต้นฉบับและคำแปลได้ เมื่อจบ ให้กลับมาดูบันทึกบทสนทนาและสรุปอัตโนมัติ เล่นเสียงแปลซ้ำ หรือคัดลอกและแชร์สรุป",
+        "steps": [
+          "เลือกภาษาของทั้งสองฝ่ายและโหมดเสียงที่เหมาะกับสถานการณ์",
+          "เปิดไมโครโฟนแล้วติดตามคำบรรยายสองภาษาและเสียงตามช่องทางที่เลือก",
+          "จบบทสนทนาเพื่อดูบันทึกและสรุป แล้วคัดลอกหรือแชร์รายละเอียดที่เป็นประโยชน์"
+        ]
+      },
+      "agent": {
+        "title": "ผู้ช่วยสนทนา AI ที่เริ่มจากเป้าหมายของคุณ",
+        "summary": "อธิบายสิ่งที่ต้องการทราบหรือจัดการ ผู้ช่วยเสียงจะช่วยถาม ถามต่อ และตรวจรายละเอียดในการสนทนาต่อหน้า",
+        "heading": "ตั้งแต่อธิบายเป้าหมายจนถึงตรวจผลลัพธ์",
+        "body": "บอกเป้าหมายและข้อจำกัดด้วยข้อความหรือเสียง แล้วตอบคำถามเตรียมการของผู้ช่วย เมื่อยืนยันงานแล้ว ผู้ช่วยจะช่วยพูดคุยกับคนตรงหน้าและถามรายละเอียดที่ยังขาด ขณะที่คุณติดตามบทสนทนาสองภาษา ขอให้สรุปได้เมื่อจำเป็นและตรวจเนื้อหาด้วยตัวเองก่อน ผู้ช่วยจะถ่ายทอดให้อีกฝ่ายยืนยันหลังจากคุณอนุมัติเท่านั้น คุณเป็นผู้ตัดสินใจ",
+        "steps": [
+          "เลือกภาษาทั้งสองฝ่าย อธิบายเป้าหมาย และตอบคำถามเตรียมการ",
+          "ยืนยันงานแล้วให้ผู้ช่วยช่วยถามและถามต่อกับอีกฝ่าย",
+          "ขอสรุปและตรวจเนื้อหา จากนั้นอนุมัติสิ่งที่จะถ่ายทอดให้อีกฝ่าย"
+        ]
+      },
+      "menu": {
+        "title": "สแกนเมนู ตั้งแต่อ่านอาหารจนถึงแสดงรายการสั่ง",
+        "summary": "เปลี่ยนภาพเมนูเป็นรายการอาหาร ตัวเลือก และราคาที่แปลแล้ว เลือกอาหาร จำนวน และรายการเพิ่มเติมที่มี แล้วแสดงรายการสั่งอาหารโดยคงข้อความต้นฉบับจากเมนูไว้",
+        "heading": "อ่านเมนู เลือกอาหาร แล้วให้พนักงานดู",
+        "body": "ในภาพถ่าย เลือกจัดเรียงแล้วเพิ่มภาพเมนูจากกล้องหรือคลังภาพ ตรวจชื่ออาหาร คำอธิบาย ราคา และตัวเลือกที่แปลแล้ว เลือกอาหาร จำนวน และตัวเลือก เช่น ขนาดหรือรายการเพิ่มเติม พร้อมใส่หมายเหตุเรื่องอาหารหากจำเป็น หน้ารายการสั่งจะแสดงชื่ออาหารแต่ละจานทั้งต้นฉบับและคำแปล พร้อมชื่อตัวเลือกต้นฉบับและจำนวน ราคาที่ทราบจะรวมแยกตามสกุลเงินโดยไม่แปลงค่า หากราคาอาหารหรือตัวเลือกไม่ชัดเจน จะระบุยอดรวมที่แน่นอนไม่ได้ เปรียบเทียบรายละเอียดที่ไม่ชัดกับภาพต้นฉบับและยืนยันกับพนักงาน แบบฟรีรองรับหนึ่งภาพต่อครั้ง ส่วน PRO รองรับสูงสุดสิบภาพต่อชุด",
+        "steps": [
+          "เปิดภาพถ่าย → จัดเรียง เลือกภาษา และเพิ่มภาพเมนูที่ชัดเจน",
+          "ตรวจอาหารและราคา เลือกจำนวนกับตัวเลือกที่มี และใส่หมายเหตุหากจำเป็น",
+          "ตรวจรายการสั่งและยอดรวมที่แสดงได้ แล้วให้พนักงานดูชื่ออาหารและตัวเลือกในภาษาต้นฉบับ"
+        ]
+      },
+      "document": {
+        "title": "สแกนเอกสารให้ย่อหน้าและตารางอ่านง่าย",
+        "summary": "ถ่ายเอกสารกระดาษ รวมถึงหลายหน้า แล้วอ่านเป็นหัวข้อ รายการ และตารางที่จัดเรียงไว้ เปรียบเทียบกับภาพต้นฉบับและเปิดงานสแกนที่บันทึกจากประวัติได้",
+        "heading": "รักษาโครงสร้างหัวข้อ ย่อหน้า และตารางของเอกสาร",
+        "body": "ในภาพถ่าย เลือกจัดเรียง แล้วถ่ายหน้าเอกสารตามลำดับหรือเพิ่มภาพจากคลัง ส่งพร้อมกันเพื่ออ่านเนื้อหาที่ตรวจพบในรูปแบบชื่อเรื่อง หัวข้อ ย่อหน้า รายการลำดับเลข และตารางที่มีแถวกับคอลัมน์ กลับไปดูหน้าเดิมหรือแตะข้อความเพื่อตรวจต้นฉบับขณะทบทวนวันที่ ราคา และรายละเอียดอื่น ค้นงานสแกนที่บันทึกด้วยชื่อเรื่องหรือประเภทเนื้อหาในประวัติแล้วเปิดใหม่ภายหลังได้ แบบฟรีรองรับหนึ่งภาพ ส่วน PRO รองรับสูงสุดสิบภาพต่อชุด ขั้นตอนนี้สแกนหน้าที่ถ่ายภาพไว้ ไม่ใช่เครื่องมือแก้ไข PDF หรือ Word",
+        "steps": [
+          "เปิดภาพถ่าย → จัดเรียง เลือกภาษา และเพิ่มภาพหน้าเอกสารตามลำดับ แบบฟรีหนึ่งภาพ หรือสูงสุดสิบภาพด้วย PRO",
+          "ส่งหน้าต่าง ๆ พร้อมกัน แล้วอ่านหัวข้อ รายการ และตารางที่จัดเรียงไว้",
+          "เปรียบเทียบกับหน้าเดิม ตรวจข้อความต้นฉบับ และเปิดงานสแกนจากประวัติอีกครั้งเมื่อต้องการ"
+        ]
+      },
+      "keyboard": {
+        "title": "แปลคำตอบในแอปที่คุณใช้อยู่แล้ว",
+        "summary": "ใช้คีย์บอร์ด iPhone หรือ iPad แปลฉบับร่างและปรับน้ำเสียงในช่องข้อความที่รองรับ ตรวจผลก่อนส่งได้",
+        "heading": "เขียน แปล และตรวจคำตอบในที่เดิม",
+        "body": "ทำตามคำแนะนำในแอปเพื่อเพิ่มคีย์บอร์ด AnyTranslator และเปิดอนุญาตการเข้าถึงแบบเต็มในการตั้งค่า iOS สำหรับการแปลออนไลน์ ในช่องที่รองรับ เลือกข้อความที่ต้องการแปลหรือเตรียมฉบับร่าง แล้วเลือกภาษาปลายทางกับน้ำเสียง คำแปลจะแทนที่ข้อความที่เลือกหรือข้อความที่ iOS เปิดให้คีย์บอร์ดเข้าถึง การแปลคลิปบอร์ดใช้การ์ดผลลัพธ์แยก ซึ่งคัดลอกผลหรือแทรกที่เคอร์เซอร์ได้ บางแอปและช่องกรอกที่ปลอดภัยจำกัดคีย์บอร์ดของบุคคลที่สาม",
+        "steps": [
+          "เพิ่มคีย์บอร์ดและเปิดอนุญาตการเข้าถึงแบบเต็มตามคู่มือตั้งค่าในแอป",
+          "ในช่องที่รองรับ เตรียมหรือเลือกฉบับร่าง เปลี่ยนคีย์บอร์ด แล้วเลือกภาษาปลายทางและน้ำเสียง",
+          "แปลข้อความ ตรวจข้อความที่แทนที่ แล้วส่งด้วยตัวเอง ใช้การ์ดคลิปบอร์ดเพื่อคัดลอกหรือแทรกผลลัพธ์แยก"
+        ]
+      },
+      "chat": {
+        "title": "ถามต่อได้ด้วยข้อความและภาพถ่าย",
+        "summary": "นำวลี คำแปล หรือภาพเข้าแชต ถามความหมาย ขอตัวอย่าง หรือช่วยกันหาถ้อยคำตอบกลับที่ต้องการ",
+        "heading": "เข้าใจรายละเอียดด้วยคำถามถัดไป",
+        "body": "เขียนคำถาม เพิ่มภาพ หรือใช้ปุ่มแชตข้างคำแปลข้อความเพื่อถามต่อเกี่ยวกับถ้อยคำนั้น ถามสำนวนที่ไม่คุ้น ขอตัวอย่างเพิ่มเติม หรือเปรียบเทียบคำตอบในบทสนทนาเดียวกัน ตรวจคำตอบ คัดลอกถ้อยคำที่ใช้ได้ และถามต่อเมื่อต้องการบริบทเพิ่ม แชตช่วยพิจารณาเนื้อหาที่คุณให้มา ข้อเท็จจริงสำคัญควรตรวจเทียบกับต้นฉบับ",
+        "steps": [
+          "ป้อนคำถาม เพิ่มภาพ หรือเปิดแชตจากคำแปลข้อความ",
+          "ถามความหมาย ตัวอย่าง หรือคำตอบที่เหมาะกับสถานการณ์",
+          "ตรวจคำตอบ คัดลอกถ้อยคำที่เป็นประโยชน์ แล้วถามต่อ"
+        ]
+      },
+      "helper": {
+        "title": "คำอธิบายจาก Helper ที่ช่วยให้เข้าใจวิธีใช้คำ",
+        "summary": "เรียนรู้ไวยากรณ์ ตัวอย่าง ความหมายทีละคำ และแนวทางตอบกลับ บันทึกคำสั่งอธิบายของคุณเพื่อใช้ซ้ำกับข้อความใหม่",
+        "heading": "เลือกว่าจะอธิบายอะไรและอธิบายอย่างไร",
+        "body": "บนหน้าแปลข้อความ เลือกให้ Helper อธิบายต้นฉบับหรือคำแปล เลือกรูปแบบสำเร็จ เช่น ไวยากรณ์ วิเคราะห์ทีละคำ ตัวอย่าง ความหมายแฝง หรือคำแนะนำตอบกลับ หรือบันทึกคำสั่งของตัวเองสำหรับคำอธิบายที่ต้องการ การตั้งค่าที่บันทึกระบุสาขางาน เป้าหมายเรียนรู้ หรือระดับรายละเอียดที่ชอบได้ แบบฟรีรองรับหนึ่งโปรไฟล์ Helper และ PRO รองรับสูงสุดห้าโปรไฟล์ ความรู้ที่กำหนดเองในที่นี้หมายถึงคำสั่งที่นำกลับมาใช้ได้ ไม่ใช่ฐานความรู้จากเอกสารที่อัปโหลด",
+        "steps": [
+          "แปลข้อความแล้วเลือกว่า Helper ควรอธิบายต้นฉบับหรือคำแปล",
+          "เลือกรูปแบบคำอธิบายสำเร็จ หรือบันทึกคำสั่งสำหรับรายละเอียดที่ต้องการ",
+          "อ่านคำอธิบายและใช้การตั้งค่าที่บันทึกซ้ำเมื่อเปลี่ยนข้อความ"
+        ]
+      },
+      "widget": {
+        "title": "การ์ดเรียนรู้ที่ใช้ได้จากหน้าจอโฮม",
+        "summary": "ทบทวนคำและวลี ฟังการออกเสียง และทำเครื่องหมายสิ่งที่จำได้จากวิดเจ็ตหน้าจอโฮมโดยตรง เพิ่มวิดเจ็ตหน้าจอล็อกเพื่อเป็นอีกทางกลับไปฝึก",
+        "heading": "ฟังและทบทวนโดยไม่ต้องเปิดแอปทุกครั้ง",
+        "body": "เลือกภาษาเรียนและภาษาแปลในแอป แล้วทำตามคู่มือเพื่อเพิ่มวิดเจ็ตหน้าจอโฮมหรือหน้าจอล็อก การ์ดหน้าจอโฮมให้เล่นเสียง เลือกทบทวนอีกครั้ง หรือทำเครื่องหมายว่าจำได้ คำตอบจะใช้จัดการทบทวนครั้งต่อไป เมื่อแตะการ์ดหน้าจอล็อกจะเปิดในแอปและทำเครื่องหมายให้ทบทวนอีกครั้ง เนื้อหาอัตโนมัติใช้ได้ฟรี PRO ให้เลือกประเภทเนื้อหา ผสมหัวข้อกับระดับความยาก และเพิ่มคำสั่งกำหนดหัวข้อหรือความยากเอง",
+        "steps": [
+          "เลือกภาษาเรียนแล้วทำตามคู่มือในแอปเพื่อเพิ่มวิดเจ็ตหน้าจอโฮมหรือหน้าจอล็อก",
+          "อ่านการ์ดและใช้ปุ่มออกเสียงบนหน้าจอโฮม",
+          "เลือกทบทวนอีกครั้งหรือจำได้บนหน้าจอโฮม แตะการ์ดหน้าจอล็อกเพื่อเปิดแล้วทบทวนอีกครั้ง"
+        ]
+      }
+    },
+    "workflows": {
+      "travel": [
+        "ตอนเช็กอินโรงแรม เลือกภาษาของคุณและพนักงานในการแปลเสียง ใช้คำบรรยายสองภาษาและโหมดเสียงที่เหมาะกับสถานที่เพื่อคุยเรื่องห้องพัก เงินมัดจำ และเวลาเช็กเอาต์",
+        "หากต้องการเช็กเอาต์ช้าหรือสอบถามค่าใช้จ่ายเพิ่ม ให้บอกเป้าหมายและข้อจำกัดกับผู้ช่วยเสียง ยืนยันงาน ให้ช่วยถามต่อ แล้วตรวจสรุปก่อนอนุมัติให้ถ่ายทอดแก่พนักงาน",
+        "ถ่ายคำแนะนำบนกระดาษของโรงแรมในจัดเรียง อ่านหัวข้อและตาราง เทียบเวลาเช็กเอาต์หรือค่าใช้จ่ายกับภาพต้นฉบับ และกลับมาดูงานสแกนที่บันทึกระหว่างเข้าพัก"
+      ],
+      "work": [
+        "วางข้อความงานในการแปลข้อความ เลือกภาษาปลายทางและน้ำเสียงที่เหมาะกับความสัมพันธ์ ตรวจชื่อ วันที่ และข้อผูกพันก่อนคัดลอกคำตอบ",
+        "หากวลียังไม่ชัด ให้เลือกต้นฉบับหรือคำแปลเป็นเนื้อหาสำหรับ Helper ใช้ความหมายแฝง ไวยากรณ์ คำแนะนำตอบกลับ หรือคำสั่งที่บันทึกไว้สำหรับสาขางานของคุณ",
+        "นำถ้อยคำเข้าแชตเพื่อเทียบคำตอบสั้นกับแบบละเอียด เพิ่มบริบทที่อีกฝ่ายต้องรู้ ตรวจฉบับร่างสุดท้าย แล้วส่งผ่านแอปสื่อสารที่ใช้อยู่"
+      ],
+      "dining": [
+        "ในภาพถ่าย → จัดเรียง เพิ่มหน้าเมนูและตรวจคำแปลอาหาร ตัวเลือก และราคา เลือกจำนวนกับรายการเพิ่มเติม ใส่หมายเหตุ แล้วแสดงรายการสั่งพร้อมชื่ออาหารและตัวเลือกต้นฉบับให้พนักงานดู",
+        "ใช้การแปลเสียงถามเรื่องอาหาร ขนาดเสิร์ฟ หรือวัตถุดิบที่ยังไม่ชัด เลือกภาษาทั้งสองฝ่ายและยืนยันคำตอบกับพนักงานที่ให้บริการ",
+        "เมื่อมีเงื่อนไขหลายอย่าง ให้อธิบายคำขอกับผู้ช่วยเสียงเพื่อช่วยถามต่อ ตรวจสรุปก่อนให้ถ่ายทอดรายละเอียด โดยพนักงานต้องยืนยันวัตถุดิบและวิธีปรุง"
+      ],
+      "study": [
+        "เริ่มจากคำหรือประโยคที่พบจริง เลือกเป็นต้นฉบับให้ Helper แล้วดูตัวอย่าง การวิเคราะห์ทีละคำ หรือคำอธิบายไวยากรณ์ที่เกี่ยวข้องที่สุด",
+        "ตั้งภาษาเรียนแล้วเพิ่มวิดเจ็ตเรียนรู้บนหน้าจอโฮม ฟังการ์ดและทำเครื่องหมายทบทวนอีกครั้งหรือจำได้ PRO ปรับประเภทเนื้อหา หัวข้อ และความยากได้",
+        "กลับเข้าแชตพร้อมวลีที่อยากใช้เอง ขอตัวอย่างในสถานการณ์คุ้นเคย เขียนแบบของคุณ แล้วถามว่าปรับตรงไหนได้บ้าง"
+      ],
+      "messages": [
+        "ในช่องข้อความที่รองรับ เปลี่ยนเป็นคีย์บอร์ด AnyTranslator เตรียมหรือเลือกฉบับร่าง แล้วเลือกภาษาปลายทางกับน้ำเสียง แปลในที่เดิมและอ่านก่อนส่ง",
+        "สำหรับข้อความยาวหรือคำตอบที่อยากตรวจให้ละเอียด ให้วางในแอปหลัก เปรียบเทียบคำแปล ปรับน้ำเสียง และฟังการออกเสียงก่อนคัดลอกกลับ",
+        "หากไม่แน่ใจว่าอีกฝ่ายหมายถึงอะไรหรือคำตอบจะฟังดูอย่างไร ให้ถามแชตพร้อมข้อความและบริบทที่เกี่ยวข้อง ตรวจคำแนะนำแล้วเลือกถ้อยคำที่ต้องการส่ง"
+      ],
+      "reading": [
+        "ถ่ายประกาศ แผ่นพับ หรือเอกสารในจัดเรียง โดยเพิ่มหน้าตามลำดับ อ่านหัวข้อ รายการ และตาราง แล้วกลับไปหน้าเดิมเพื่อตรวจรายละเอียดที่ต้องการ",
+        "หากเจอสำนวนไม่คุ้น ให้ป้อนข้อความที่เกี่ยวข้องในหน้าแปลข้อความ แล้วขอคำแนะนำการใช้ คำอธิบายไวยากรณ์ หรือวิเคราะห์ทีละคำจาก Helper เลือกได้ว่าจะอธิบายต้นฉบับหรือคำแปล",
+        "นำข้อความบางส่วนหรือภาพเข้าแชตเมื่อต้องการถามเฉพาะเจาะจง เช่น ใช้วันที่ใดหรือวลีนั้นอ้างถึงอะไร เทียบคำตอบกับเอกสารต้นฉบับก่อนนำรายละเอียดสำคัญไปใช้"
+      ]
+    },
+    "documentArticle": {
+      "title": "สแกนหน้าเอกสารเป็นหัวข้อและตารางที่อ่านง่าย",
+      "intro": "ประกาศบนกระดาษ แผ่นพับท่องเที่ยว หรือเอกสารหลายหน้าอาจต้องการมากกว่าคำแปลทับบนภาพ ในภาพถ่าย → จัดเรียง เพิ่มภาพหน้าตามลำดับแล้วส่งพร้อมกัน ระบบจัดข้อความที่อ่านได้เป็นหัวข้อ ย่อหน้า รายการ และตารางเพื่อให้หาข้อมูลที่ต้องการได้",
+      "tip": "เลือกภาษาต้นฉบับและปลายทาง ถ่ายแต่ละหน้าให้ชัด แล้วตรวจลำดับก่อนส่ง แบบฟรีรับหนึ่งภาพต่อการสแกน ส่วน PRO รับสูงสุดสิบภาพ อ่านผลที่จัดเรียง แตะข้อความเพื่อตรวจที่มา และกลับไปหน้าเดิมเมื่อดูวันที่ จำนวนเงิน หรือข้อมูลในตาราง ค้นประวัติด้วยชื่อเรื่องหรือประเภทเนื้อหาเพื่อเปิดงานสแกนที่บันทึกอีกครั้ง",
+      "limit": "คู่มือนี้ครอบคลุมหน้าที่ถ่ายภาพจากกล้องหรือคลังภาพ ไม่ได้อธิบายการนำเข้า แก้ไข หรือส่งออก PDF หรือ Word การอ่านและตีความอาจพลาดข้อความไม่ชัดหรือรูปแบบซับซ้อน จึงควรเทียบรายละเอียดสำคัญกับหน้าเอกสารต้นฉบับ"
+    }
+  }
+}

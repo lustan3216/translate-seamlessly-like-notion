@@ -1,0 +1,302 @@
+[
+  {
+    "path": "/features/document?lang=zh-tw",
+    "width": 1440,
+    "height": 900,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 2,
+    "scrollWidth": 1440,
+    "title": "文件掃描：段落、清單與表格，整理好再閱讀。"
+  },
+  {
+    "path": "/features/menu?lang=zh-tw",
+    "width": 1440,
+    "height": 900,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 3,
+    "scrollWidth": 1440,
+    "title": "菜單掃描：從讀懂菜色，到給店員看點單。"
+  },
+  {
+    "path": "/features/text?lang=zh-tw",
+    "width": 1440,
+    "height": 900,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 1,
+    "scrollWidth": 1440,
+    "title": "文字翻譯：意思清楚，語氣也合適。"
+  },
+  {
+    "path": "/blog/scan-and-read-documents?lang=de",
+    "width": 1440,
+    "height": 900,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 4,
+    "scrollWidth": 1440,
+    "title": "Dokumentseiten in lesbare Abschnitte und Tabellen umwandeln"
+  },
+  {
+    "path": "/?lang=nl",
+    "width": 1440,
+    "height": 900,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 23,
+    "scrollWidth": 1440,
+    "title": "Zeg het op jouw manier.Maak contact met de wereld."
+  },
+  {
+    "path": "/pricing?lang=ru",
+    "width": 1440,
+    "height": 900,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 0,
+    "scrollWidth": 1440,
+    "title": "Начните бесплатно. Оставьте место для большего."
+  },
+  {
+    "path": "/features/document?lang=zh-tw",
+    "width": 1024,
+    "height": 768,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 2,
+    "scrollWidth": 1024,
+    "title": "文件掃描：段落、清單與表格，整理好再閱讀。"
+  },
+  {
+    "path": "/features/menu?lang=zh-tw",
+    "width": 1024,
+    "height": 768,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 3,
+    "scrollWidth": 1024,
+    "title": "菜單掃描：從讀懂菜色，到給店員看點單。"
+  },
+  {
+    "path": "/features/text?lang=zh-tw",
+    "width": 1024,
+    "height": 768,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 1,
+    "scrollWidth": 1024,
+    "title": "文字翻譯：意思清楚，語氣也合適。"
+  },
+  {
+    "path": "/blog/scan-and-read-documents?lang=de",
+    "width": 1024,
+    "height": 768,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 4,
+    "scrollWidth": 1024,
+    "title": "Dokumentseiten in lesbare Abschnitte und Tabellen umwandeln"
+  },
+  {
+    "path": "/?lang=nl",
+    "width": 1024,
+    "height": 768,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 23,
+    "scrollWidth": 1024,
+    "title": "Zeg het op jouw manier.Maak contact met de wereld."
+  },
+  {
+    "path": "/pricing?lang=ru",
+    "width": 1024,
+    "height": 768,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 0,
+    "scrollWidth": 1024,
+    "title": "Начните бесплатно. Оставьте место для большего."
+  },
+  {
+    "path": "/features/document?lang=zh-tw",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 2,
+    "scrollWidth": 768,
+    "title": "文件掃描：段落、清單與表格，整理好再閱讀。"
+  },
+  {
+    "path": "/features/menu?lang=zh-tw",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 3,
+    "scrollWidth": 768,
+    "title": "菜單掃描：從讀懂菜色，到給店員看點單。"
+  },
+  {
+    "path": "/features/text?lang=zh-tw",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 1,
+    "scrollWidth": 768,
+    "title": "文字翻譯：意思清楚，語氣也合適。"
+  },
+  {
+    "path": "/blog/scan-and-read-documents?lang=de",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 4,
+    "scrollWidth": 768,
+    "title": "Dokumentseiten in lesbare Abschnitte und Tabellen umwandeln"
+  },
+  {
+    "path": "/?lang=nl",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 23,
+    "scrollWidth": 768,
+    "title": "Zeg het op jouw manier.Maak contact met de wereld."
+  },
+  {
+    "path": "/pricing?lang=ru",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 0,
+    "scrollWidth": 768,
+    "title": "Начните бесплатно. Оставьте место для большего."
+  },
+  {
+    "path": "/features/document?lang=zh-tw",
+    "width": 390,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 2,
+    "scrollWidth": 390,
+    "title": "文件掃描：段落、清單與表格，整理好再閱讀。"
+  },
+  {
+    "path": "/features/menu?lang=zh-tw",
+    "width": 390,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 3,
+    "scrollWidth": 390,
+    "title": "菜單掃描：從讀懂菜色，到給店員看點單。"
+  },
+  {
+    "path": "/features/text?lang=zh-tw",
+    "width": 390,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 1,
+    "scrollWidth": 390,
+    "title": "文字翻譯：意思清楚，語氣也合適。"
+  },
+  {
+    "path": "/blog/scan-and-read-documents?lang=de",
+    "width": 390,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 4,
+    "scrollWidth": 390,
+    "title": "Dokumentseiten in lesbare Abschnitte und Tabellen umwandeln"
+  },
+  {
+    "path": "/?lang=nl",
+    "width": 390,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 23,
+    "scrollWidth": 390,
+    "title": "Zeg het op jouw manier.Maak contact met de wereld."
+  },
+  {
+    "path": "/pricing?lang=ru",
+    "width": 390,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 0,
+    "scrollWidth": 390,
+    "title": "Начните бесплатно. Оставьте место для большего."
+  },
+  {
+    "path": "/features/document?lang=zh-tw",
+    "width": 320,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 2,
+    "scrollWidth": 320,
+    "title": "文件掃描：段落、清單與表格，整理好再閱讀。"
+  },
+  {
+    "path": "/features/menu?lang=zh-tw",
+    "width": 320,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 3,
+    "scrollWidth": 320,
+    "title": "菜單掃描：從讀懂菜色，到給店員看點單。"
+  },
+  {
+    "path": "/features/text?lang=zh-tw",
+    "width": 320,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 1,
+    "scrollWidth": 320,
+    "title": "文字翻譯：意思清楚，語氣也合適。"
+  },
+  {
+    "path": "/blog/scan-and-read-documents?lang=de",
+    "width": 320,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 4,
+    "scrollWidth": 320,
+    "title": "Dokumentseiten in lesbare Abschnitte und Tabellen umwandeln"
+  },
+  {
+    "path": "/?lang=nl",
+    "width": 320,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 23,
+    "scrollWidth": 320,
+    "title": "Zeg het op jouw manier.Maak contact met de wereld."
+  },
+  {
+    "path": "/pricing?lang=ru",
+    "width": 320,
+    "height": 844,
+    "brokenImages": [],
+    "h1": 1,
+    "pending": 0,
+    "scrollWidth": 320,
+    "title": "Начните бесплатно. Оставьте место для большего."
+  }
+]

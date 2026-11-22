@@ -26,7 +26,7 @@ const Index = () => {
       <SEO
         title={t("landing.seoTitle")}
         description={t("landing.seoDescription")}
-        image={`https://www.anytranslator.app/app-preview/social/${currentLanguage.code}.jpg`}
+        image={`https://www.anytranslator.app/app-preview/social-v2/${currentLanguage.code}.jpg`}
         url="/"
       />
       <JsonLd data={organizationSchema} />

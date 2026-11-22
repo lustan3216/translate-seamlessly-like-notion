@@ -1,0 +1,62 @@
+[
+  {
+    "panel": "menu",
+    "sample": {
+      "x": 177,
+      "y": 535,
+      "width": 3,
+      "height": 3
+    },
+    "background": [
+      244,
+      241,
+      236
+    ],
+    "foreground": [
+      104,
+      104,
+      101
+    ],
+    "contrast": 4.961852555956554
+  },
+  {
+    "panel": "reply",
+    "sample": {
+      "x": 177,
+      "y": 547,
+      "width": 3,
+      "height": 3
+    },
+    "background": [
+      229,
+      236,
+      229
+    ],
+    "foreground": [
+      104,
+      104,
+      101
+    ],
+    "contrast": 4.648075591363787
+  },
+  {
+    "panel": "practice",
+    "sample": {
+      "x": 177,
+      "y": 533,
+      "width": 3,
+      "height": 3
+    },
+    "background": [
+      238,
+      243,
+      237
+    ],
+    "foreground": [
+      104,
+      104,
+      101
+    ],
+    "contrast": 4.97212406190839
+  }
+]
