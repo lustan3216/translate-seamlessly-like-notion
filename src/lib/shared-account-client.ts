@@ -53,7 +53,9 @@ export function visitCreem(value: string, checkout = false) {
   const url = new URL(value);
   const liveCheckout = url.origin === "https://checkout.creem.io"
     ? /^\/ch_[A-Za-z0-9_-]+\/?$/.test(url.pathname)
-    : /^\/payment\/ch_[A-Za-z0-9_-]+\/?$/.test(url.pathname);
+    : /^\/payment\/ch_[A-Za-z0-9_-]+\/?$/.test(url.pathname)
+      // shortcut: the live site sells through Creem Test Mode until Creem Live approval; drop this line with the Vercel test vars.
+      || /^\/test\/checkout\/prod_[A-Za-z0-9_-]+\/ch_[A-Za-z0-9_-]+\/?$/.test(url.pathname);
   const livePortal = /^\/portal\/cust_[A-Za-z0-9_-]+\/?$/.test(url.pathname)
     || /^\/my-orders\/login\/[A-Za-z0-9_-]{8,256}\/?$/.test(url.pathname);
   const urlAllowed = sharedAccountPreviewEnabled
