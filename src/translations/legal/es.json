@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. Todos los derechos reservados.",
       "webSubscriptionTitle": "Suscripciones web a través de Creem",
       "webSubscriptionMerchant": "Cuando se ofrecen suscripciones web, Creem es el vendedor oficial (Merchant of Record) y gestiona los pagos y los recibos. AnyTranslator presta el servicio y ofrece asistencia.",
-      "webSubscriptionRenewal": "Antes de pagar, comprueba las funciones, los límites de uso, el precio, la moneda, los impuestos aplicables, el ciclo de facturación y las condiciones de renovación. Las suscripciones se renuevan automáticamente hasta que las canceles. Solo incluyen acceso a la aplicación los planes que así lo indican expresamente al pagar. Los planes exclusivos para la web se usan en el navegador.",
-      "webSubscriptionCancel": "Para gestionar o cancelar tu suscripción, abre la sección de facturación de tu cuenta web de AnyTranslator y accede al portal de clientes de Creem.",
+      "webSubscriptionRenewal": "Antes de pagar, comprueba las funciones, los límites de uso, el precio, la moneda, los impuestos aplicables, el ciclo de facturación y las condiciones de renovación. Las suscripciones se renuevan automáticamente hasta que las canceles. Todos los planes de suscripción contratados a través de Creem incluyen acceso a la aplicación. Tras el pago, usa un dispositivo que tenga instalada la aplicación para abrir el enlace del correo de activación de AnyTranslator y activar tu suscripción en la aplicación.",
+      "webSubscriptionCancel": "Para gestionar o cancelar tu suscripción, usa el enlace del correo con el recibo de Creem para acceder al portal de clientes de Creem o ponte en contacto con el servicio de asistencia.",
       "webSubscriptionRefund": "Para solicitar un reembolso, escribe a {support}. Creem tramita los reembolsos conforme a sus condiciones para compradores y a la legislación aplicable.",
       "creemBuyerTerms": "Condiciones de Creem para compradores"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. Todos los derechos reservados.",
       "webAccountTitle": "Cuentas web y datos de pago de Creem",
       "webAccountData": "Si creas una cuenta web, tratamos el identificador de cuenta, el nombre visible, el identificador y la clave pública de tu llave de acceso, y los datos de sesión para ofrecer y proteger el acceso. La clave privada permanece en tu autenticador.",
-      "webSubscriptionData": "Creem recoge los datos de facturación y pago al realizar el pedido. Recibimos la información necesaria del pedido y la suscripción, como identificadores, plan, periodo de facturación y estado, para activar el acceso, gestionar las suscripciones y prestar asistencia. El pago web no envía el número de tarjeta a AnyTranslator. Si tu plan incluye acceso a la aplicación, utilizamos la dirección de correo que facilitas al pagar en Creem para enviarte un enlace de verificación de un solo uso.",
+      "webSubscriptionData": "Creem recoge los datos de facturación y pago al realizar el pedido. Recibimos la información necesaria del pedido y la suscripción, como identificadores, plan, periodo de facturación y estado, para activar el acceso, gestionar las suscripciones y prestar asistencia. El pago web no envía el número de tarjeta a AnyTranslator. Para todos los planes, utilizamos la dirección de correo electrónico que facilitas al pagar a través de Creem para enviarte un enlace de un solo uso con el que activar tu suscripción en la aplicación.",
       "creemPrivacyNotice": "Aviso de privacidad de Creem"
     }
   }

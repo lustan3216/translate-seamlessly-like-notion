@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. Bảo lưu mọi quyền.",
       "webSubscriptionTitle": "Gói đăng ký trên web qua Creem",
       "webSubscriptionMerchant": "Khi có gói đăng ký trên web, Creem là bên bán chịu trách nhiệm giao dịch (Merchant of Record) và xử lý việc thanh toán, cấp biên nhận. AnyTranslator cung cấp dịch vụ và hỗ trợ.",
-      "webSubscriptionRenewal": "Trước khi thanh toán, hãy kiểm tra tính năng, hạn mức, giá, đơn vị tiền tệ, thuế áp dụng, chu kỳ thanh toán và điều khoản gia hạn. Gói đăng ký tự động gia hạn cho đến khi bạn hủy. Chỉ những gói nêu rõ quyền truy cập ứng dụng khi thanh toán mới bao gồm quyền này. Các gói chỉ dành cho web được sử dụng trong trình duyệt.",
-      "webSubscriptionCancel": "Để quản lý hoặc hủy gói đăng ký, hãy mở mục thanh toán trong tài khoản web AnyTranslator của bạn và truy cập cổng thông tin dành cho khách hàng của Creem.",
+      "webSubscriptionRenewal": "Trước khi thanh toán, hãy kiểm tra tính năng, hạn mức, giá, đơn vị tiền tệ, thuế áp dụng, chu kỳ thanh toán và điều khoản gia hạn. Gói đăng ký tự động gia hạn cho đến khi bạn hủy. Tất cả các gói đăng ký mua qua Creem đều bao gồm quyền truy cập ứng dụng. Sau khi thanh toán, trên thiết bị đã cài đặt ứng dụng, hãy mở liên kết trong email kích hoạt do AnyTranslator gửi để kích hoạt gói đăng ký trong ứng dụng.",
+      "webSubscriptionCancel": "Để quản lý hoặc hủy gói đăng ký, hãy truy cập cổng thông tin dành cho khách hàng của Creem qua liên kết trong email biên nhận do Creem gửi hoặc liên hệ bộ phận hỗ trợ.",
       "webSubscriptionRefund": "Để yêu cầu hoàn tiền, hãy liên hệ {support}. Creem xử lý hoàn tiền theo điều khoản dành cho người mua và luật hiện hành.",
       "creemBuyerTerms": "Điều khoản dành cho người mua của Creem"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. Bảo lưu mọi quyền.",
       "webAccountTitle": "Tài khoản web và dữ liệu thanh toán của Creem",
       "webAccountData": "Nếu bạn tạo tài khoản web, chúng tôi xử lý mã tài khoản, tên hiển thị, mã thông tin xác thực và khóa công khai của khóa truy cập, cùng dữ liệu phiên để cung cấp và bảo vệ quyền truy cập. Khóa riêng tư được giữ trong trình xác thực của bạn.",
-      "webSubscriptionData": "Creem thu thập thông tin lập hóa đơn và thanh toán khi bạn thanh toán. Chúng tôi nhận thông tin cần thiết về đơn hàng và gói đăng ký, như mã định danh, gói, kỳ thanh toán và trạng thái, để kích hoạt quyền truy cập, quản lý gói đăng ký và hỗ trợ. Quy trình thanh toán trên web không gửi số thẻ cho AnyTranslator. Đối với gói có quyền truy cập ứng dụng, chúng tôi dùng địa chỉ email bạn cung cấp khi thanh toán qua Creem để gửi liên kết xác minh dùng một lần.",
+      "webSubscriptionData": "Creem thu thập thông tin lập hóa đơn và thanh toán khi bạn thanh toán. Chúng tôi nhận thông tin cần thiết về đơn hàng và gói đăng ký, như mã định danh, gói, kỳ thanh toán và trạng thái, để kích hoạt quyền truy cập, quản lý gói đăng ký và hỗ trợ. Quy trình thanh toán trên web không gửi số thẻ cho AnyTranslator. Đối với tất cả các gói đăng ký, chúng tôi sử dụng địa chỉ email bạn cung cấp khi thanh toán qua Creem để gửi liên kết dùng một lần, qua đó bạn có thể kích hoạt gói đăng ký trong ứng dụng.",
       "creemPrivacyNotice": "Thông báo về quyền riêng tư của Creem"
     }
   }

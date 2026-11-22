@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. Seluruh hak dilindungi.",
       "webSubscriptionTitle": "Langganan web melalui Creem",
       "webSubscriptionMerchant": "Jika langganan web tersedia, Creem bertindak sebagai penjual tercatat (Merchant of Record) dan menangani pembayaran serta tanda terima. AnyTranslator menyediakan layanan dan dukungan.",
-      "webSubscriptionRenewal": "Sebelum membayar, periksa fitur, batas penggunaan, harga, mata uang, pajak yang berlaku, periode tagihan, dan ketentuan perpanjangan. Langganan diperpanjang secara otomatis sampai dibatalkan. Akses aplikasi hanya disertakan jika dinyatakan secara jelas pada penawaran saat pembayaran. Paket khusus web dapat digunakan di browser.",
-      "webSubscriptionCancel": "Untuk mengelola atau membatalkan langganan, buka bagian penagihan pada akun web AnyTranslator Anda, lalu masuk ke Portal Pelanggan Creem.",
+      "webSubscriptionRenewal": "Sebelum membayar, periksa fitur, batas penggunaan, harga, mata uang, pajak yang berlaku, periode tagihan, dan ketentuan perpanjangan. Langganan diperpanjang secara otomatis sampai dibatalkan. Semua paket langganan yang dibeli melalui Creem mencakup akses ke aplikasi. Setelah pembayaran, buka tautan dalam email aktivasi dari AnyTranslator dengan perangkat yang telah dipasangi aplikasi untuk mengaktifkan langganan Anda di aplikasi.",
+      "webSubscriptionCancel": "Untuk mengelola atau membatalkan langganan, buka Portal Pelanggan Creem melalui tautan dalam email tanda terima dari Creem atau hubungi layanan dukungan.",
       "webSubscriptionRefund": "Hubungi {support} untuk mengajukan pengembalian dana. Creem memproses pengembalian dana sesuai ketentuan pembeli dan hukum yang berlaku.",
       "creemBuyerTerms": "Ketentuan Pembeli Creem"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. Seluruh hak dilindungi.",
       "webAccountTitle": "Akun web dan data pembayaran Creem",
       "webAccountData": "Jika Anda membuat akun web, kami memproses ID akun, nama tampilan, ID kredensial dan kunci publik passkey, serta data sesi untuk menyediakan dan mengamankan akses. Kunci privat passkey tetap disimpan oleh autentikator Anda.",
-      "webSubscriptionData": "Creem mengumpulkan data penagihan dan pembayaran saat proses pembayaran. Kami menerima informasi pesanan dan langganan yang diperlukan, seperti ID, paket, periode penagihan dan status, untuk mengaktifkan akses, mengelola langganan, serta memberikan dukungan. Nomor kartu tidak dikirimkan ke AnyTranslator melalui pembayaran web. Untuk paket yang menyertakan akses aplikasi, kami menggunakan alamat email yang Anda berikan saat pembayaran melalui Creem untuk mengirim tautan verifikasi sekali pakai.",
+      "webSubscriptionData": "Creem mengumpulkan data penagihan dan pembayaran saat proses pembayaran. Kami menerima informasi pesanan dan langganan yang diperlukan, seperti ID, paket, periode penagihan dan status, untuk mengaktifkan akses, mengelola langganan, serta memberikan dukungan. Nomor kartu tidak dikirimkan ke AnyTranslator melalui pembayaran web. Untuk semua paket, kami menggunakan alamat email yang Anda berikan saat pembayaran melalui Creem untuk mengirimkan tautan sekali pakai guna mengaktifkan langganan Anda di aplikasi.",
       "creemPrivacyNotice": "Pemberitahuan Privasi Creem"
     }
   }

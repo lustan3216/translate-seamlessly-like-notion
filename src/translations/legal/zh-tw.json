@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. 保留所有權利。",
       "webSubscriptionTitle": "透過 Creem 訂閱網頁服務",
       "webSubscriptionMerchant": "開放網頁訂閱時，Creem 是收款商家，負責處理付款及收據。AnyTranslator 提供訂閱服務及客服。",
-      "webSubscriptionRenewal": "付款前請確認方案功能、用量限制、金額、幣別、適用稅費、計費週期和續訂條件。定期訂閱會在您取消前自動續訂。只有結帳時明確標示可使用 App 的方案，才包含 App 使用權限。僅限網頁版的方案可在瀏覽器使用。",
-      "webSubscriptionCancel": "如需管理或取消訂閱，請開啟 AnyTranslator 網頁帳號的帳務區，前往 Creem 客戶入口。",
+      "webSubscriptionRenewal": "付款前請確認方案功能、用量限制、金額、幣別、適用稅費、計費週期和續訂條件。定期訂閱會在您取消前自動續訂。所有透過 Creem 購買的訂閱方案均包含 App 使用權限。付款後，請在已安裝 App 的裝置上開啟 AnyTranslator 寄送的開通信中的連結，即可在 App 內開通訂閱。",
+      "webSubscriptionCancel": "如需管理或取消訂閱，請透過 Creem 寄來的收據信中的連結前往 Creem 客戶入口，或聯絡客服。",
       "webSubscriptionRefund": "如需申請退款，請聯絡 {support}。Creem 依買家條款及適用法律處理退款。",
       "creemBuyerTerms": "Creem 買家條款"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. 保留所有權利。",
       "webAccountTitle": "網頁帳號與 Creem 付款資料",
       "webAccountData": "若您建立網頁帳號，我們會處理帳號識別碼、顯示名稱、通行密鑰的憑證識別碼與公開金鑰，以及工作階段資料，以提供並保護帳號存取。通行密鑰的私密金鑰由您的驗證工具保管。",
-      "webSubscriptionData": "Creem 在結帳時蒐集帳務及付款資料。我們接收必要的訂單與訂閱資訊，例如識別碼、方案、計費期間與狀態，以開通權益、管理訂閱及提供客服。網頁結帳不會將卡號傳給 AnyTranslator。若方案包含 App 使用權限，我們會使用你在 Creem 結帳時提供的電子郵件地址，寄送一次性的 App 使用權限驗證連結。",
+      "webSubscriptionData": "Creem 在結帳時蒐集帳務及付款資料。我們接收必要的訂單與訂閱資訊，例如識別碼、方案、計費期間與狀態，以開通權益、管理訂閱及提供客服。網頁結帳不會將卡號傳給 AnyTranslator。對於所有方案，我們都會使用您在 Creem 結帳時提供的電子郵件地址，寄送用於在 App 內開通訂閱的一次性連結。",
       "creemPrivacyNotice": "Creem 隱私聲明"
     }
   }

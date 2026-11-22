@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. Alle rechten voorbehouden.",
       "webSubscriptionTitle": "Webabonnementen via Creem",
       "webSubscriptionMerchant": "Als webabonnementen worden aangeboden, is Creem de officiële verkoper (Merchant of Record) en handelt Creem betalingen en ontvangstbewijzen af. AnyTranslator levert de dienst en biedt ondersteuning.",
-      "webSubscriptionRenewal": "Controleer vóór betaling de functies, gebruikslimieten, prijs, valuta, toepasselijke belastingen, factureringsperiode en verlengingsvoorwaarden. Abonnementen worden automatisch verlengd totdat je ze opzegt. Alleen abonnementen waarbij toegang tot de app uitdrukkelijk wordt vermeld bij het afrekenen, bieden die toegang. Abonnementen voor alleen de webversie zijn beschikbaar in de browser.",
-      "webSubscriptionCancel": "Om je abonnement te beheren of op te zeggen, open je het factureringsgedeelte van je AnyTranslator-webaccount en ga je naar het Creem-klantenportaal.",
+      "webSubscriptionRenewal": "Controleer vóór betaling de functies, gebruikslimieten, prijs, valuta, toepasselijke belastingen, factureringsperiode en verlengingsvoorwaarden. Abonnementen worden automatisch verlengd totdat je ze opzegt. Bij alle abonnementen die je via Creem afsluit, is toegang tot de app inbegrepen. Open na betaling de link in de activeringsmail van AnyTranslator op een apparaat waarop de app is geïnstalleerd om je abonnement in de app te activeren.",
+      "webSubscriptionCancel": "Gebruik de link in de e-mail met je betalingsbewijs van Creem om naar het Creem-klantenportaal te gaan en je abonnement te beheren of op te zeggen. Je kunt ook contact opnemen met de klantenservice.",
       "webSubscriptionRefund": "Neem voor een terugbetaling contact op via {support}. Creem verwerkt terugbetalingen volgens zijn kopersvoorwaarden en de toepasselijke wetgeving.",
       "creemBuyerTerms": "Kopersvoorwaarden van Creem"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. Alle rechten voorbehouden.",
       "webAccountTitle": "Webaccounts en betaalgegevens van Creem",
       "webAccountData": "Als je een webaccount aanmaakt, verwerken wij je account-ID, weergavenaam, de identificator en openbare sleutel van je toegangssleutel en sessiegegevens om toegang te bieden en te beveiligen. De privésleutel blijft bij je authenticator.",
-      "webSubscriptionData": "Creem verzamelt facturerings- en betaalgegevens bij het afrekenen. Wij ontvangen de noodzakelijke bestel- en abonnementsgegevens, zoals identificatoren, abonnementstype, factureringsperiode en status, om toegang te activeren, abonnementen te beheren en ondersteuning te bieden. De webbetaling stuurt geen kaartnummer naar AnyTranslator. Bij abonnementen met toegang tot de app gebruiken we het e-mailadres dat je bij het afrekenen via Creem opgeeft om je een eenmalige verificatielink te sturen.",
+      "webSubscriptionData": "Creem verzamelt facturerings- en betaalgegevens bij het afrekenen. Wij ontvangen de noodzakelijke bestel- en abonnementsgegevens, zoals identificatoren, abonnementstype, factureringsperiode en status, om toegang te activeren, abonnementen te beheren en ondersteuning te bieden. De webbetaling stuurt geen kaartnummer naar AnyTranslator. Voor alle abonnementen gebruiken we het e-mailadres dat je bij het afrekenen via Creem opgeeft om je een eenmalige link te sturen waarmee je je abonnement in de app kunt activeren.",
       "creemPrivacyNotice": "Privacyverklaring van Creem"
     }
   }

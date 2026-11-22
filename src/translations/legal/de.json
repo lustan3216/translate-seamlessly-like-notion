@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. Alle Rechte vorbehalten.",
       "webSubscriptionTitle": "Webabonnements über Creem",
       "webSubscriptionMerchant": "Wenn Webabonnements angeboten werden, ist Creem der vertragliche Verkäufer (Merchant of Record) und wickelt Zahlungen und Belege ab. AnyTranslator erbringt den Dienst und bietet Produktsupport.",
-      "webSubscriptionRenewal": "Prüfe vor der Zahlung Funktionen, Nutzungslimits, Preis, Währung, anfallende Steuern, Abrechnungsintervall und Verlängerungsbedingungen. Abonnements verlängern sich automatisch, bis du sie kündigst. Der App-Zugang ist nur in Tarifen enthalten, bei denen er beim Bezahlen ausdrücklich angegeben ist. Reine Webtarife sind im Browser verfügbar.",
-      "webSubscriptionCancel": "Öffne zum Verwalten oder Kündigen den Abrechnungsbereich deines AnyTranslator-Webkontos und rufe dort das Creem-Kundenportal auf.",
+      "webSubscriptionRenewal": "Prüfe vor der Zahlung Funktionen, Nutzungslimits, Preis, Währung, anfallende Steuern, Abrechnungsintervall und Verlängerungsbedingungen. Abonnements verlängern sich automatisch, bis du sie kündigst. Alle über Creem erworbenen Abonnements beinhalten den Zugang zur App. Öffne nach der Zahlung auf einem Gerät, auf dem die App installiert ist, den Link in der Aktivierungs-E-Mail von AnyTranslator, um dein Abonnement in der App zu aktivieren.",
+      "webSubscriptionCancel": "Um dein Abonnement zu verwalten oder zu kündigen, nutze den Link in der E-Mail mit deinem Creem-Zahlungsbeleg, um zum Creem-Kundenportal zu gelangen, oder wende dich an den Support.",
       "webSubscriptionRefund": "Wende dich für eine Rückerstattung an {support}. Creem bearbeitet Rückerstattungen nach seinen Käuferbedingungen und dem anwendbaren Recht.",
       "creemBuyerTerms": "Creem-Käuferbedingungen"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. Alle Rechte vorbehalten.",
       "webAccountTitle": "Webkonten und Zahlungsdaten bei Creem",
       "webAccountData": "Wenn du ein Webkonto erstellst, verarbeiten wir zur Bereitstellung und Absicherung des Zugangs deine Konto-ID, deinen Anzeigenamen, die Kennung und den öffentlichen Schlüssel deines Passkeys sowie Sitzungsdaten. Der private Schlüssel bleibt bei deiner Authentifizierungslösung.",
-      "webSubscriptionData": "Creem erhebt beim Bezahlen Abrechnungs- und Zahlungsdaten. Wir erhalten die benötigten Bestell- und Abonnementdaten wie Kennungen, Tarif, Abrechnungszeitraum und Status, um den Zugang freizuschalten, Abonnements zu verwalten und Support zu leisten. Beim Web-Checkout wird keine Kartennummer an AnyTranslator übermittelt. Bei Tarifen mit App-Zugang verwenden wir die E-Mail-Adresse, die du beim Bezahlen bei Creem angibst, um dir einen einmalig nutzbaren Bestätigungslink für den App-Zugang zu senden.",
+      "webSubscriptionData": "Creem erhebt beim Bezahlen Abrechnungs- und Zahlungsdaten. Wir erhalten die benötigten Bestell- und Abonnementdaten wie Kennungen, Tarif, Abrechnungszeitraum und Status, um den Zugang freizuschalten, Abonnements zu verwalten und Support zu leisten. Beim Web-Checkout wird keine Kartennummer an AnyTranslator übermittelt. Für alle Tarife verwenden wir die E-Mail-Adresse, die du beim Bezahlen bei Creem angibst, um dir einen einmalig nutzbaren Link zur Aktivierung deines Abonnements in der App zu senden.",
       "creemPrivacyNotice": "Creem-Datenschutzhinweise"
     }
   }

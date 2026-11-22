@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. All rights reserved.",
       "webSubscriptionTitle": "Web subscriptions through Creem",
       "webSubscriptionMerchant": "When web subscriptions are available, Creem is the merchant of record and handles payment and receipts. AnyTranslator provides and supports the service.",
-      "webSubscriptionRenewal": "Check the features, limits, price, currency, applicable taxes, billing period and renewal terms before you pay. Recurring subscriptions renew unless cancelled. Only plans that explicitly list App access at checkout include it. Web-only plans are available in the browser.",
-      "webSubscriptionCancel": "To manage or cancel your subscription, open the billing section of your AnyTranslator web account and choose the Creem Customer Portal.",
+      "webSubscriptionRenewal": "Check the features, limits, price, currency, applicable taxes, billing period and renewal terms before you pay. Recurring subscriptions renew unless cancelled. All subscription plans purchased through Creem include access to the App. After payment, open the link in the activation email from AnyTranslator on a device with the App installed to activate your subscription in the App.",
+      "webSubscriptionCancel": "To manage or cancel your subscription, use the link in your Creem receipt email to access the Creem Customer Portal, or contact support.",
       "webSubscriptionRefund": "To request a refund, contact {support}. Creem processes refunds under its Buyer Terms and applicable law.",
       "creemBuyerTerms": "Creem Buyer Terms"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. All rights reserved.",
       "webAccountTitle": "Web accounts and Creem payment data",
       "webAccountData": "If you create a web account, we use your account ID, display name, passkey credential ID and public key, and session data to provide and secure access. Your passkey private key stays with your authenticator.",
-      "webSubscriptionData": "Creem collects billing and payment data at checkout. We receive limited order and subscription information, such as identifiers, plan, billing period and status, to activate access, manage subscriptions and provide support. The web checkout does not send card numbers to AnyTranslator. For plans that include App access, we use the email address you provide at Creem checkout to send you a one-time App access verification link.",
+      "webSubscriptionData": "Creem collects billing and payment data at checkout. We receive limited order and subscription information, such as identifiers, plan, billing period and status, to activate access, manage subscriptions and provide support. The web checkout does not send card numbers to AnyTranslator. For all plans, we use the email address you provide at Creem checkout to send you a one-time link to activate your subscription in the App.",
       "creemPrivacyNotice": "Creem Privacy Notice"
     }
   }

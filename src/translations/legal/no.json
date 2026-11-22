@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. Alle rettigheter forbeholdt.",
       "webSubscriptionTitle": "Nettabonnementer via Creem",
       "webSubscriptionMerchant": "Når nettabonnementer tilbys, er Creem den registrerte selgeren (Merchant of Record) og håndterer betalinger og kvitteringer. AnyTranslator leverer tjenesten og gir brukerstøtte.",
-      "webSubscriptionRenewal": "Sjekk funksjoner, bruksgrenser, pris, valuta, gjeldende avgifter, faktureringsintervall og fornyelsesvilkår før du betaler. Abonnementer fornyes automatisk til du sier dem opp. Tilgang til appen er bare inkludert i abonnementer der det står uttrykkelig ved betaling. Abonnementer som bare gjelder nettversjonen, brukes i nettleseren.",
-      "webSubscriptionCancel": "For å administrere eller si opp abonnementet åpner du faktureringsdelen i AnyTranslator-nettkontoen din og går til Creems kundeportal.",
+      "webSubscriptionRenewal": "Sjekk funksjoner, bruksgrenser, pris, valuta, gjeldende avgifter, faktureringsintervall og fornyelsesvilkår før du betaler. Abonnementer fornyes automatisk til du sier dem opp. Alle abonnementer som kjøpes via Creem, inkluderer tilgang til appen. Etter at du har betalt, åpner du lenken i e-posten om aktivering fra AnyTranslator på en enhet der appen er installert. Da aktiveres abonnementet i appen.",
+      "webSubscriptionCancel": "Du kan administrere eller si opp abonnementet i Creems kundeportal ved å følge lenken i kvitteringen du får på e-post fra Creem. Du kan også kontakte brukerstøtte.",
       "webSubscriptionRefund": "Kontakt {support} for å be om refusjon. Creem behandler refusjoner i samsvar med kjøpervilkårene sine og gjeldende lov.",
       "creemBuyerTerms": "Creems kjøpervilkår"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. Alle rettigheter forbeholdt.",
       "webAccountTitle": "Nettkontoer og betalingsopplysninger fra Creem",
       "webAccountData": "Hvis du oppretter en nettkonto, behandler vi konto-ID, visningsnavn, tilgangsnøkkelens identifikator og offentlige nøkkel samt øktdata for å gi og sikre tilgang. Den private nøkkelen blir hos autentiseringsløsningen din.",
-      "webSubscriptionData": "Creem samler inn fakturerings- og betalingsopplysninger ved betaling. Vi mottar nødvendige ordre- og abonnementsopplysninger, som identifikatorer, abonnementstype, faktureringsperiode og status, for å aktivere tilgang, administrere abonnementer og gi brukerstøtte. Nettbetalingen sender ikke kortnumre til AnyTranslator. For abonnementer som inkluderer tilgang til appen, bruker vi e-postadressen du oppgir ved betaling hos Creem til å sende en engangslenke for å bekrefte tilgangen.",
+      "webSubscriptionData": "Creem samler inn fakturerings- og betalingsopplysninger ved betaling. Vi mottar nødvendige ordre- og abonnementsopplysninger, som identifikatorer, abonnementstype, faktureringsperiode og status, for å aktivere tilgang, administrere abonnementer og gi brukerstøtte. Nettbetalingen sender ikke kortnumre til AnyTranslator. For alle abonnementer bruker vi e-postadressen du oppgir når du betaler via Creem, til å sende deg en engangslenke for å aktivere abonnementet i appen.",
       "creemPrivacyNotice": "Creems personvernerklæring"
     }
   }

@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. Kaikki oikeudet pidätetään.",
       "webSubscriptionTitle": "Verkkotilaukset Creemin kautta",
       "webSubscriptionMerchant": "Kun verkkotilauksia on tarjolla, Creem toimii rekisteröitynä myyjänä (Merchant of Record) ja käsittelee maksut ja kuitit. AnyTranslator toimittaa palvelun ja tarjoaa tuotetukea.",
-      "webSubscriptionRenewal": "Tarkista ennen maksamista ominaisuudet, käyttörajat, hinta, valuutta, sovellettavat verot, laskutusväli ja uusimisehdot. Tilaukset uusiutuvat automaattisesti, kunnes ne peruutetaan. Sovelluksen käyttö sisältyy vain tilauksiin, joissa se mainitaan erikseen kassalla. Vain verkkokäyttöön tarkoitetut tilaukset toimivat selaimessa.",
-      "webSubscriptionCancel": "Voit hallinnoida tai peruuttaa tilauksen avaamalla Creemin asiakasportaalin AnyTranslator-verkkotilisi laskutusosiosta.",
+      "webSubscriptionRenewal": "Tarkista ennen maksamista ominaisuudet, käyttörajat, hinta, valuutta, sovellettavat verot, laskutusväli ja uusimisehdot. Tilaukset uusiutuvat automaattisesti, kunnes ne peruutetaan. Kaikki Creemin kautta ostetut tilaukset sisältävät sovelluksen käyttöoikeuden. Kun olet maksanut, avaa AnyTranslatorin lähettämässä aktivointisähköpostissa oleva linkki laitteella, johon sovellus on asennettu, niin tilauksesi aktivoituu sovelluksessa.",
+      "webSubscriptionCancel": "Voit hallita tai peruuttaa tilauksesi Creemin asiakasportaalissa. Pääset portaaliin Creemin lähettämässä kuittisähköpostissa olevasta linkistä. Voit myös ottaa yhteyttä asiakastukeen.",
       "webSubscriptionRefund": "Jos haluat pyytää hyvitystä, ota yhteyttä osoitteeseen {support}. Creem käsittelee hyvitykset ostajaehtojensa ja sovellettavan lain mukaisesti.",
       "creemBuyerTerms": "Creemin ostajaehdot"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. Kaikki oikeudet pidätetään.",
       "webAccountTitle": "Verkkotilit ja Creemin maksutiedot",
       "webAccountData": "Jos luot verkkotilin, käsittelemme tilitunnistetta, näyttönimeä, pääsyavaimen tunnistetta ja julkista avainta sekä istuntotietoja tilin käyttöä ja suojaamista varten. Yksityinen avain jää käyttämääsi todentimeen.",
-      "webSubscriptionData": "Creem kerää laskutus- ja maksutiedot maksun yhteydessä. Saamme käyttöoikeuden aktivointia, tilausten hallintaa ja asiakastukea varten tarvittavat tilaus- ja tilaajasuhdetiedot, kuten tunnisteet, tilauspaketin, laskutusjakson ja tilan. Verkkomaksusta ei lähetetä korttinumeroa AnyTranslatorille. Jos tilaukseen sisältyy sovelluksen käyttö, lähetämme kertakäyttöisen vahvistuslinkin sähköpostiosoitteeseen, jonka annat Creemin kassalla.",
+      "webSubscriptionData": "Creem kerää laskutus- ja maksutiedot maksun yhteydessä. Saamme käyttöoikeuden aktivointia, tilausten hallintaa ja asiakastukea varten tarvittavat tilaus- ja tilaajasuhdetiedot, kuten tunnisteet, tilauspaketin, laskutusjakson ja tilan. Verkkomaksusta ei lähetetä korttinumeroa AnyTranslatorille. Käytämme kaikissa tilauksissa Creemin kassalla antamaasi sähköpostiosoitetta lähettääksemme sinulle kertakäyttöisen linkin, jolla voit aktivoida tilauksesi sovelluksessa.",
       "creemPrivacyNotice": "Creemin tietosuojailmoitus"
     }
   }

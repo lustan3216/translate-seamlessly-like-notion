@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. Tutti i diritti riservati.",
       "webSubscriptionTitle": "Abbonamenti web tramite Creem",
       "webSubscriptionMerchant": "Quando sono disponibili abbonamenti web, Creem è il venditore ufficiale (Merchant of Record) e gestisce pagamenti e ricevute. AnyTranslator fornisce il servizio e l’assistenza.",
-      "webSubscriptionRenewal": "Prima di pagare, verifica funzionalità, limiti di utilizzo, prezzo, valuta, imposte applicabili, frequenza di addebito e condizioni di rinnovo. Gli abbonamenti si rinnovano automaticamente fino alla disdetta. L’accesso all’app è incluso solo nei piani che lo indicano espressamente al momento del pagamento. I piani riservati al web si usano nel browser.",
-      "webSubscriptionCancel": "Per gestire o disdire l’abbonamento, apri la sezione di fatturazione del tuo account web AnyTranslator e accedi al portale clienti di Creem.",
+      "webSubscriptionRenewal": "Prima di pagare, verifica funzionalità, limiti di utilizzo, prezzo, valuta, imposte applicabili, frequenza di addebito e condizioni di rinnovo. Gli abbonamenti si rinnovano automaticamente fino alla disdetta. Tutti i piani di abbonamento acquistati tramite Creem includono l’accesso all’app. Dopo il pagamento, apri il link nell’email di attivazione di AnyTranslator su un dispositivo su cui è installata l’app per attivare l’abbonamento nell’app.",
+      "webSubscriptionCancel": "Per gestire o disdire l’abbonamento, usa il link nell’email con la ricevuta di Creem per accedere al portale clienti di Creem oppure contatta l’assistenza.",
       "webSubscriptionRefund": "Per richiedere un rimborso scrivi a {support}. Creem gestisce i rimborsi in base alle condizioni per gli acquirenti e alla legge applicabile.",
       "creemBuyerTerms": "Condizioni di Creem per gli acquirenti"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. Tutti i diritti riservati.",
       "webAccountTitle": "Account web e dati di pagamento Creem",
       "webAccountData": "Se crei un account web, trattiamo l’ID account, il nome visualizzato, l’identificativo e la chiave pubblica della passkey e i dati di sessione per fornire e proteggere l’accesso. La chiave privata resta nel tuo sistema di autenticazione.",
-      "webSubscriptionData": "Creem raccoglie i dati di fatturazione e di pagamento durante il checkout. Riceviamo le informazioni necessarie su ordine e abbonamento, come identificativi, piano, periodo di fatturazione e stato, per attivare l’accesso, gestire gli abbonamenti e fornire assistenza. Il checkout web non trasmette il numero di carta ad AnyTranslator. Per i piani che includono l’accesso all’app, usiamo l’indirizzo email fornito al momento del pagamento su Creem per inviarti un link di verifica monouso.",
+      "webSubscriptionData": "Creem raccoglie i dati di fatturazione e di pagamento durante il checkout. Riceviamo le informazioni necessarie su ordine e abbonamento, come identificativi, piano, periodo di fatturazione e stato, per attivare l’accesso, gestire gli abbonamenti e fornire assistenza. Il checkout web non trasmette il numero di carta ad AnyTranslator. Per tutti i piani, usiamo l’indirizzo email che fornisci quando paghi tramite Creem per inviarti un link monouso per attivare l’abbonamento nell’app.",
       "creemPrivacyNotice": "Informativa sulla privacy di Creem"
     }
   }

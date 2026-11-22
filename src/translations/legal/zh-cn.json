@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. 保留所有权利。",
       "webSubscriptionTitle": "通过 Creem 订阅网页服务",
       "webSubscriptionMerchant": "提供网页订阅时，Creem 作为收款商家负责处理付款和收据。AnyTranslator 提供订阅服务和客服。",
-      "webSubscriptionRenewal": "付款前请确认方案功能、用量限制、金额、币种、适用税费、计费周期和续订条款。定期订阅将在您取消前自动续订。只有在结账时明确标注可使用 App 的方案才包含 App 使用权限。仅限网页版的方案可在浏览器中使用。",
-      "webSubscriptionCancel": "如需管理或取消订阅，请打开 AnyTranslator 网页帐号的账单页面，进入 Creem 客户门户。",
+      "webSubscriptionRenewal": "付款前请确认方案功能、用量限制、金额、币种、适用税费、计费周期和续订条款。定期订阅将在您取消前自动续订。所有通过 Creem 购买的订阅方案均包含 App 使用权限。付款后，请在已安装 App 的设备上打开 AnyTranslator 发送的开通邮件中的链接，即可在 App 内开通订阅。",
+      "webSubscriptionCancel": "如需管理或取消订阅，请通过 Creem 收据邮件中的链接进入 Creem 客户门户，或联系客服。",
       "webSubscriptionRefund": "如需申请退款，请联系 {support}。Creem 根据买家条款和适用法律处理退款。",
       "creemBuyerTerms": "Creem 买家条款"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. 保留所有权利。",
       "webAccountTitle": "网页帐号与 Creem 付款数据",
       "webAccountData": "如果您创建网页帐号，我们会处理帐号标识符、显示名称、通行密钥的凭据标识符与公钥，以及会话数据，以提供并保护帐号访问。通行密钥的私钥由您的验证工具保管。",
-      "webSubscriptionData": "Creem 在结账时收集账单与付款数据。我们接收必要的订单和订阅信息，例如标识符、方案、计费期间和状态，用于开通权益、管理订阅和提供客服。网页结账不会将卡号发送给 AnyTranslator。如果方案包含 App 使用权限，我们会使用你在 Creem 结账时提供的电子邮箱地址，发送一次性的 App 使用权限验证链接。",
+      "webSubscriptionData": "Creem 在结账时收集账单与付款数据。我们接收必要的订单和订阅信息，例如标识符、方案、计费期间和状态，用于开通权益、管理订阅和提供客服。网页结账不会将卡号发送给 AnyTranslator。对于所有方案，我们都会使用您在 Creem 结账时提供的电子邮箱地址，向您发送用于在 App 内开通订阅的一次性链接。",
       "creemPrivacyNotice": "Creem 隐私声明"
     }
   }

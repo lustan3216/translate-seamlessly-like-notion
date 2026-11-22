@@ -56,8 +56,8 @@
       "t049": "© 2026 Shiny Technology Co., Ltd. Alla rättigheter förbehållna.",
       "webSubscriptionTitle": "Webbabonnemang via Creem",
       "webSubscriptionMerchant": "När webbabonnemang erbjuds är Creem den registrerade säljaren (Merchant of Record) och hanterar betalningar och kvitton. AnyTranslator tillhandahåller tjänsten och ger support.",
-      "webSubscriptionRenewal": "Kontrollera funktioner, användningsgränser, pris, valuta, tillämpliga skatter, faktureringsintervall och förnyelsevillkor innan du betalar. Abonnemang förnyas automatiskt tills du säger upp det. Tillgång till appen ingår endast i abonnemang där det uttryckligen anges vid betalningen. Abonnemang för enbart webben används i webbläsaren.",
-      "webSubscriptionCancel": "Hantera eller säg upp abonnemanget genom att öppna faktureringsdelen av ditt AnyTranslator-webbkonto och gå till Creems kundportal.",
+      "webSubscriptionRenewal": "Kontrollera funktioner, användningsgränser, pris, valuta, tillämpliga skatter, faktureringsintervall och förnyelsevillkor innan du betalar. Abonnemang förnyas automatiskt tills du säger upp det. Alla abonnemang som köps via Creem ger tillgång till appen. När du har betalat öppnar du länken i aktiveringsmejlet från AnyTranslator på en enhet där appen är installerad för att aktivera abonnemanget i appen.",
+      "webSubscriptionCancel": "Du kan hantera eller säga upp ditt abonnemang i Creems kundportal via länken i e-postmeddelandet med kvittot från Creem. Du kan också kontakta supporten.",
       "webSubscriptionRefund": "Kontakta {support} för att begära en återbetalning. Creem hanterar återbetalningar enligt sina köparvillkor och gällande lag.",
       "creemBuyerTerms": "Creems köparvillkor"
     }
@@ -144,7 +144,7 @@
       "t075": "© 2026 Shiny Technology Co., Ltd. Alla rättigheter förbehållna.",
       "webAccountTitle": "Webbkonton och betalningsdata hos Creem",
       "webAccountData": "Om du skapar ett webbkonto behandlar vi konto-ID, visningsnamn, åtkomstnyckelns identifierare och offentliga nyckel samt sessionsdata för att ge och skydda åtkomsten. Den privata nyckeln stannar hos din autentiseringslösning.",
-      "webSubscriptionData": "Creem samlar in fakturerings- och betalningsuppgifter vid betalning. Vi får de beställnings- och abonnemangsuppgifter som behövs, som identifierare, abonnemangstyp, faktureringsperiod och status, för att aktivera åtkomst, hantera abonnemang och ge support. Webbetalningen skickar inte kortnummer till AnyTranslator. För abonnemang som inkluderar tillgång till appen använder vi e-postadressen du anger i Creems kassa för att skicka en verifieringslänk för engångsbruk.",
+      "webSubscriptionData": "Creem samlar in fakturerings- och betalningsuppgifter vid betalning. Vi får de beställnings- och abonnemangsuppgifter som behövs, som identifierare, abonnemangstyp, faktureringsperiod och status, för att aktivera åtkomst, hantera abonnemang och ge support. Webbetalningen skickar inte kortnummer till AnyTranslator. För alla abonnemang använder vi e-postadressen du anger i Creems kassa för att skicka en länk som du kan använda en gång för att aktivera abonnemanget i appen.",
       "creemPrivacyNotice": "Creems integritetsmeddelande"
     }
   }
