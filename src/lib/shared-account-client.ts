@@ -1,3 +1,4 @@
+import { applyCreemReferral } from "./creem-referral.mjs";
 import { sharedAccountPreviewEnabled } from "./shared-account-preview";
 
 export class AccountRequestError extends Error {
@@ -61,5 +62,6 @@ export function visitCreem(value: string, checkout = false) {
       : url.protocol === "https:" && (url.hostname === "creem.io" || url.hostname.endsWith(".creem.io"))
     : creemOrigins.has(url.origin) && (checkout ? liveCheckout : livePortal);
   if (!urlAllowed || url.username || url.password) throw new Error("request_failed");
+  applyCreemReferral(url, checkout);
   window.location.assign(url.href);
 }
