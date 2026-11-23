@@ -49,21 +49,14 @@ test("ignores invalid tokens without replacing a valid referral", (context) => {
   assert.equal(checkout.searchParams.get("creem_ref"), "a");
 });
 
-test("expires the referral at 90 days", (context) => {
+test("keeps sending an older stored referral so Creem decides whether it is eligible", (context) => {
   mockWindow(context);
-  let now = Date.UTC(2026, 8, 1);
-  context.mock.method(Date, "now", () => now);
-  landWith("a");
-
-  now += 90 * 24 * 60 * 60 * 1000 - 1;
-  const fresh = new URL(checkoutUrl);
-  applyCreemReferral(fresh, true);
-  assert.equal(fresh.searchParams.get("creem_ref"), "a");
-
-  now += 1;
-  const expired = new URL(checkoutUrl);
-  applyCreemReferral(expired, true);
-  assert.equal(expired.href, checkoutUrl);
+  window.localStorage.setItem("anytranslator.creem.referral", JSON.stringify({
+    token: "old-valid-token", capturedAt: Date.now() - 180 * 24 * 60 * 60 * 1000,
+  }));
+  const checkout = new URL(checkoutUrl);
+  applyCreemReferral(checkout, true);
+  assert.equal(checkout.searchParams.get("creem_ref"), "old-valid-token");
 });
 
 test("leaves checkout unchanged when storage access, reads, or writes throw", (context) => {

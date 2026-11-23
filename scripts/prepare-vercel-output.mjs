@@ -5,6 +5,7 @@ import { copyFile, lstat, mkdir, mkdtemp, readFile, readdir, rm, symlink, writeF
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { readAffiliate } from '../api/plan-quotas.mjs';
 import { writeLiveAccountFunction } from './prepare-vercel-account-function.mjs';
 
 const websiteRoot = fileURLToPath(new URL('../', import.meta.url));
@@ -113,6 +114,8 @@ async function prepare(root, liveBilling = false) {
     assert.ok((await lstat(source)).isFile(), `Missing pricing runtime input: ${file}`);
     return [file, source];
   })));
+  const { affiliate } = await json(pricingSources.get('src/data/main-pricing.json'));
+  assert.deepEqual(affiliate, readAffiliate(affiliate), 'The packaged affiliate snapshot must contain only public settings.');
   for (const file of distFiles.filter((name) => /\.(?:html|js|css)$/i.test(name))) {
     const text = (await readFile(inside(dist, file), 'utf8')).replaceAll('\\/', '/');
     for (const prefix of retiredPrefixes)
@@ -189,6 +192,8 @@ async function selfTest() {
   try {
     const routes = [{ handle: 'filesystem' }, { src: '/.*', dest: '/404.html', status: 404 }];
     for (const file of Object.values(pricingFunctions).flat()) await put(file, file);
+    const affiliate = { commissionPercent: 25, commissionMonths: 12, attributionDays: 180, joinUrl: 'https://affiliates.creem.io/join/example' };
+    await put('src/data/main-pricing.json', JSON.stringify({ plans: {}, affiliate }));
     await put('vercel.json', JSON.stringify({ routes }));
     await put('src/data/native-product-screens.json', JSON.stringify({ 'zh-tw': { chat: { src: native, srcSet: `${responsive} 768w, ${native} 1290w`, gallery: [{ src: gallery }] } } }));
     await put('src/data/localized-ui-screens.json', JSON.stringify({ en: [{ src: edit, sourceNative: native }] }));
@@ -215,6 +220,7 @@ async function selfTest() {
     const quotaFunction = inside(functionsRoot, 'plan-quotas.func');
     assert.deepEqual(await filesIn(quotaFunction), ['.vc-config.json', 'api/plan-quotas.mjs', 'src/data/main-pricing.json']);
     assert.equal((await json(inside(quotaFunction, '.vc-config.json'))).handler, 'api/plan-quotas.mjs');
+    assert.deepEqual((await json(inside(quotaFunction, 'src/data/main-pricing.json'))).affiliate, affiliate);
     for (const file of excluded) assert.equal(await readFile(inside(root, `dist/${file}`), 'utf8'), 'must not publish', 'Never remove dist/private source files.');
     for (const file of ['index.html', 'assets/app.js', 'assets/styles.css']) {
       for (const prefix of retiredPrefixes) {

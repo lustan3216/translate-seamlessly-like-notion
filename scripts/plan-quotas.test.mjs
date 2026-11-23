@@ -22,7 +22,7 @@ function assertUnavailable({ status, headers, body }) {
   assert.deepEqual(body, { error: "settings_unavailable" });
 }
 
-test("requests web settings and returns only the whitelisted live plan quotas", async ({ mock }) => {
+test("requests web settings once and returns only whitelisted live quotas and affiliate settings", async ({ mock }) => {
   const expected = structuredClone(snapshot.plans);
   Object.assign(expected.free, {
     quotaPeriod: "month", periodDays: 30, translateCount: 50, audioMinutes: 5, voiceAgentMinutes: 3,
@@ -36,6 +36,10 @@ test("requests web settings and returns only the whitelisted live plan quotas", 
   });
   subscription[paidId].tier = "basic";
   subscription.unrelated = { ...subscription[paidId] };
+  const affiliate = {
+    commissionPercent: 17, commissionMonths: 6, attributionDays: 90,
+    joinUrl: "https://affiliates.creem.io/join/example", internal: true,
+  };
   mock.method(Date, "now", () => Date.parse("2026-11-22T11:00:00Z"));
   const fetch = mock.method(globalThis, "fetch", async (url, options) => {
     assert.equal(url, "https://cloudflare.anytranslator.app/v1/settings");
@@ -44,14 +48,15 @@ test("requests web settings and returns only the whitelisted live plan quotas", 
     assert.equal(options.headers["Content-Type"], "application/json");
     assert.deepEqual(JSON.parse(options.body), { surface: "web", locale: "en_US" });
     assert.ok(options.signal instanceof AbortSignal);
-    return Response.json({ subscription, configVersion: "internal", uiInformation: { hidden: true } });
+    return Response.json({ subscription, affiliate, configVersion: "internal", uiInformation: { hidden: true } });
   });
 
   const { status, headers, body } = await request();
   assert.equal(status, 200);
   assert.equal(headers.get("cache-control"), "public, s-maxage=300, stale-while-revalidate=3600");
   assert.equal(headers.get("content-type"), "application/json; charset=utf-8");
-  assert.deepEqual(body, { plans: expected });
+  const { internal, ...expectedAffiliate } = affiliate;
+  assert.deepEqual(body, { plans: expected, affiliate: expectedAffiliate });
   assert.equal(fetch.mock.callCount(), 1);
 });
 
@@ -65,20 +70,39 @@ test("returns 502 without requesting app settings when web settings return 400",
 
 test("returns 502 for unsuccessful or malformed settings", async ({ mock }) => {
   const configVersion = "v101";
+  const { affiliate } = snapshot;
   const invalid = structuredClone(snapshot.plans);
   invalid[paidId].audioMinutes = { unrelated: true };
   const missingVoiceMinutes = structuredClone(snapshot.plans);
   delete missingVoiceMinutes.free.voiceAgentMinutes;
   for (const response of [
     Response.json({ internal: "private" }, { status: 503 }),
-    Response.json({ configVersion, subscription: snapshot.plans }, { status: 201 }),
+    Response.json({ configVersion, subscription: snapshot.plans, affiliate }, { status: 201 }),
     new Response("not JSON"),
-    Response.json({ subscription: snapshot.plans }),
-    Response.json({ configVersion, subscription: { free: snapshot.plans.free } }),
-    Response.json({ configVersion, subscription: invalid }),
-    Response.json({ configVersion, subscription: missingVoiceMinutes }),
+    Response.json({ subscription: snapshot.plans, affiliate }),
+    Response.json({ configVersion, subscription: { free: snapshot.plans.free }, affiliate }),
+    Response.json({ configVersion, subscription: invalid, affiliate }),
+    Response.json({ configVersion, subscription: missingVoiceMinutes, affiliate }),
   ]) {
     mock.method(globalThis, "fetch", async () => response);
+    assertUnavailable(await request());
+    mock.restoreAll();
+  }
+});
+
+test("returns 502 for missing or invalid affiliate settings, including invalid join domains", async ({ mock }) => {
+  const invalid = [
+    ["commissionPercent", 0], ["commissionPercent", 101], ["commissionPercent", 2.5],
+    ["commissionMonths", 0], ["commissionMonths", 121], ["commissionMonths", "12"],
+    ["attributionDays", 0], ["attributionDays", 366], ["attributionDays", 1.5],
+    ["joinUrl", "http://affiliates.creem.io/join/anytranslator"],
+    ["joinUrl", "https://affiliates.creem.io.example/join/anytranslator"],
+    ["joinUrl", "https://affiliates.creem.io/other"],
+  ].map(([field, value]) => ({ ...snapshot.affiliate, [field]: value }));
+  for (const affiliate of [undefined, ...invalid]) {
+    mock.method(globalThis, "fetch", async () => Response.json({
+      configVersion: "v103", subscription: snapshot.plans, affiliate,
+    }));
     assertUnavailable(await request());
     mock.restoreAll();
   }

@@ -1,4 +1,4 @@
-import { Fragment, useState, type FormEvent } from "react";
+import { Fragment, useEffect, useState, type FormEvent } from "react";
 import { Link, Navigate, useParams, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import MarketingShell, {
@@ -20,6 +20,8 @@ import JsonLd, {
 } from "@/components/JsonLd";
 import { currentMainCopies, getCurrentMainCopy } from "@/data/current-copy";
 import { getHomeScenarioGroups } from "@/data/home-scenarios";
+import { localeForCode } from "@/lib/site-config.mjs";
+import currentPricing from "@/data/main-pricing.json";
 import screenTranslationExample from "@/data/screen-translation-example.json";
 import { ProductStoryPanels } from "@/components/marketing/ProductStoryPanels";
 import MacDownloadArt from "@/components/marketing/MacDownloadArt";
@@ -669,46 +671,126 @@ export function AboutPage() {
     </MarketingShell>
   );
 }
-export function AffiliatePage() {
-  const { m, href, currentLanguage } = useMarketing();
+const affiliateFaqGroups = [
+  ["joining", ["Join"]],
+  ["links", ["Tracking", "AppStore"]],
+  ["commission", ["Commission", "PlanChange", "Refund"]],
+  ["payouts", ["Payout", "Verify", "Fees"]],
+  ["rules", ["SelfReferral", "Promote"]],
+  ["referred", ["ReferredPrice", "ReferredApp"]],
+] as const;
+const affiliatePayoutGuide = "https://docs.creem.io/features/affiliate-program#requesting-payouts";
+
+function AffiliateReferralLink() {
   return (
-    <MarketingShell>
-      <Head title={m("nav.affiliate")} description={m("affiliate.body")} />
-      <PageIntro
-        eyebrow={m("nav.affiliate")}
-        title={m("affiliate.title")}
-        body={m("affiliate.body")}
-      />
-      <section className="mk-wrap mk-partner-panel mk-mint">
-        <div>
-          <h2>{m("affiliate.who")}</h2>
-          <p>{m("affiliate.how")}</p>
-          <Link
-            className="mk-button"
-            to={`${href("/contact")}${href("/contact").includes("?") ? "&" : "?"}topic=partnership`}
-          >
-            {m("affiliate.cta")}
-            <Arrow />
-          </Link>
+    <div className="mk-affiliate-fragment mk-affiliate-referral">
+      <HugeIcon name="link-01" />
+      <bdi dir="ltr">anytranslator.app/?creem_ref=…</bdi>
+      <span className="mk-affiliate-control"><HugeIcon name="copy-01" /></span>
+    </div>
+  );
+}
+export function AffiliatePage() {
+  const { m, currentLanguage, copy } = useMarketing();
+  const [affiliate, setAffiliate] = useState(currentPricing.affiliate);
+  useEffect(() => {
+    const controller = new AbortController();
+    void fetch("/api/plan-quotas", { signal: controller.signal })
+      .then((response) => response.ok ? response.json() : null)
+      .then((data) => {
+        const live = data?.affiliate;
+        if (!controller.signal.aborted && Object.entries(currentPricing.affiliate).every(
+          ([key, fallback]) => typeof live?.[key] === typeof fallback,
+        )) setAffiliate(live);
+      })
+      .catch(() => { /* Keep the prerendered settings when the request fails. */ });
+    return () => controller.abort();
+  }, []);
+  const { joinUrl, commissionPercent, commissionMonths, attributionDays } = affiliate;
+  const terms = {
+    percent: commissionPercent,
+    months: commissionMonths,
+    days: attributionDays,
+    joinUrl: joinUrl.replace(/^https:\/\//, ""),
+  };
+  const affiliateText = (key: string) => m(`affiliate.${key}`).replace(
+    /\{(\w+)\}/g, (placeholder, name: keyof typeof terms) => String(terms[name] ?? placeholder),
+  );
+  const currency = new Intl.NumberFormat(localeForCode(currentLanguage.code).tag, { style: "currency", currency: "USD" });
+  const exampleMonthlyPriceCents = 999;
+  const creemAffiliatePlatformFee = 0.02;
+  const exampleCommissionCents = Math.round(exampleMonthlyPriceCents * (1 - creemAffiliatePlatformFee) * commissionPercent / 100);
+  const cta = (
+    <a href={joinUrl} target="_blank" rel="noopener noreferrer" className="mk-button">
+      {affiliateText("cta")}<Arrow />
+    </a>
+  );
+  const steps = [
+    <AffiliateReferralLink />,
+    <div className="mk-affiliate-fragment mk-affiliate-share">
+      <HugeIcon name="share-01" />{affiliateText("step2Title")}
+    </div>,
+    <div className="mk-affiliate-fragment mk-affiliate-ledger">
+      <HugeIcon name="coins-01" />
+      <div>
+        <span>{copy.pricing.standardTitle} · {affiliateText("monthly")}</span>
+        <bdi>{currency.format(exampleMonthlyPriceCents / 100)}</bdi>
+      </div>
+      <strong><bdi>+{currency.format(exampleCommissionCents / 100)}</bdi></strong>
+    </div>,
+  ];
+  return (
+    <MarketingShell close={false}>
+      <Head title={affiliateText("eyebrow")} description={affiliateText("body")} />
+      <header className="mk-page-intro mk-wrap mk-partner-panel" data-enter>
+        <div className="mk-affiliate-copy">
+          <p className="mk-eyebrow">{affiliateText("eyebrow")}</p>
+          <h1>{affiliateText("title")}</h1>
+          <p className="mk-lead">{affiliateText("body")}</p>
+          {cta}
         </div>
-        <div className={`mk-partner-screens ${photoForFeature("widget", currentLanguage.code)}`}>
-          <AppScreen feature="widget" />
-          <AppScreen feature="text" />
+        <div className={`mk-partner-screens ${photoForFeature("text", currentLanguage.code)}`}>
+          <AppScreen feature="text" priority />
+          <div className="mk-affiliate-stats" aria-hidden="true">
+            <AffiliateReferralLink />
+            <div className="mk-affiliate-fragment mk-affiliate-commission">
+              <HugeIcon name="coins-01" />
+              <div><strong><bdi>+{commissionPercent}%</bdi></strong><span>{affiliateText("duration")}</span></div>
+            </div>
+          </div>
         </div>
+      </header>
+      <section className="mk-section mk-wrap mk-affiliate-process">
+        <h2 className="mk-section-title">{affiliateText("processTitle")}</h2>
+        <ol className="mk-feature-grid mk-affiliate-steps" role="list">
+          {steps.map((visual, index) => (
+            <li className="mk-affiliate-step" key={index}>
+              <h3>{affiliateText(`step${index + 1}Title`)}</h3>
+              <p>{affiliateText(`step${index + 1}`)}</p>
+              <div className="mk-affiliate-example" aria-hidden="true">{visual}</div>
+            </li>
+          ))}
+        </ol>
+        {cta}
       </section>
-      <section className="mk-section mk-wrap mk-editorial">
-        <h2>{m("affiliate.processTitle")}</h2>
-        <div>
-          <ol className="mk-step-list">
-            {[1, 2, 3].map((i) => (
-              <li key={i}>
-                <span>0{i}</span>
-                {m(`affiliate.step${i}`)}
-              </li>
+      <section className="mk-section mk-wrap mk-faq mk-affiliate-faq">
+        <h2>{affiliateText("faqTitle")}</h2>
+        {affiliateFaqGroups.map(([group, topics]) => (
+          <div className="mk-affiliate-faq-group" key={group}>
+            <h3>{affiliateText(`faqGroup.${group}`)}</h3>
+            {topics.map((topic) => (
+              <details name="affiliate-faq" key={topic}>
+                <summary>{affiliateText(`faq${topic}.question`)}<HugeIcon name="arrow-down-01-round" /></summary>
+                <p>
+                  {affiliateText(`faq${topic}.answer`)}
+                  {topic === "Payout" && (
+                    <> <a href={affiliatePayoutGuide} target="_blank" rel="noopener noreferrer">{affiliateText("faqPayout.guide")}</a></>
+                  )}
+                </p>
+              </details>
             ))}
-          </ol>
-          <p>{m("affiliate.status")}</p>
-        </div>
+          </div>
+        ))}
       </section>
     </MarketingShell>
   );

@@ -27,13 +27,25 @@ function readPlan(plan, id) {
   };
 }
 
+export function readAffiliate(affiliate) {
+  const { commissionPercent, commissionMonths, attributionDays, joinUrl } = affiliate ?? {};
+  const integerInRange = (value, max) => Number.isInteger(value) && value >= 1 && value <= max;
+  if (!integerInRange(commissionPercent, 100)
+    || !integerInRange(commissionMonths, 120)
+    || !integerInRange(attributionDays, 365)
+    || typeof joinUrl !== "string" || !joinUrl.startsWith("https://affiliates.creem.io/join/")) {
+    throw new Error("Invalid affiliate settings");
+  }
+  return { commissionPercent, commissionMonths, attributionDays, joinUrl };
+}
+
 export default async function handler(req, res) {
   if (req.method !== "GET") {
     res.setHeader("Allow", "GET");
     return reply(res, 405, { error: "method_not_allowed" });
   }
 
-  let plans;
+  let body;
   try {
     const response = await fetch(settingsUrl, {
       method: "POST",
@@ -46,11 +58,14 @@ export default async function handler(req, res) {
       signal: AbortSignal.timeout(4_000),
     });
     if (response.status !== 200) throw new Error("Settings request failed");
-    const { configVersion, subscription } = await response.json();
+    const { configVersion, subscription, affiliate } = await response.json();
     if (typeof configVersion !== "string" || !configVersion.trim()) throw new Error("Invalid settings version");
-    plans = Object.fromEntries(planIds.map((id) => [id, readPlan(subscription?.[id], id)]));
+    body = {
+      plans: Object.fromEntries(planIds.map((id) => [id, readPlan(subscription?.[id], id)])),
+      affiliate: readAffiliate(affiliate),
+    };
   } catch {
     return reply(res, 502, { error: "settings_unavailable" });
   }
-  return reply(res, 200, { plans }, successCache);
+  return reply(res, 200, body, successCache);
 }

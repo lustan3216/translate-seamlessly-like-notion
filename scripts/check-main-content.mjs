@@ -5,6 +5,7 @@ import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createServer } from "vite";
+import { readAffiliate } from "../api/plan-quotas.mjs";
 import { SITE_LOCALES, SITE_ROUTES, localesForPath } from "../src/lib/site-config.mjs";
 import { marketingCatalog, features, cases, articles, relatedFeatures } from "../src/data/marketing-content.mjs";
 import { mainSourceCommit, currentMainFeatures, currentMainCases, currentMainArticles, currentMainRelated } from "../src/data/main-current.mjs";
@@ -38,6 +39,7 @@ function sourceSnapshot() {
   const snapshot = json("src/data/main-pricing.json");
   assert.match(snapshot.sourceCommit, /^[a-f0-9]{40}$/, "Full pricing source commit");
   assert.match(snapshot.publicConfigSHA256, /^[a-f0-9]{64}$/, "Full public config SHA256");
+  assert.deepEqual(snapshot.affiliate, readAffiliate(snapshot.affiliate), "Affiliate snapshot must contain only the public settings");
   const planIds = ["free", ...["basic", "voice"].flatMap((tier) =>
     ["week", "month", "year"].map((period) => `com.gpt.langpt.${tier}.1${period}`))].sort();
   assert.deepEqual(Object.keys(snapshot.plans).sort(), planIds, "Current plan snapshot coverage");
@@ -141,7 +143,8 @@ function sourceSnapshot() {
     // The fallback describes a fresh installation at the pinned source date.
     const pricingRaw = source("anytranslator-api/config/default-prompt.public.json", snapshot.sourceCommit);
     assert.equal(sha256(pricingRaw), snapshot.publicConfigSHA256, "Pinned pricing public config bytes");
-    const { subscription } = JSON.parse(pricingRaw.toString("utf8"));
+    const { subscription, affiliate } = JSON.parse(pricingRaw.toString("utf8"));
+    assert.deepEqual(snapshot.affiliate, readAffiliate(affiliate), "Affiliate snapshot must match the pinned public settings");
     const sourceTime = Date.parse(execFileSync("git", ["-C", appRepo, "show", "-s", "--format=%cI", snapshot.sourceCommit], { encoding: "utf8" }).trim());
     const { newInstallationPlan, scheduledPolicy, newInstallations, ...rawFree } = subscription.free;
     let free = rawFree;
@@ -166,7 +169,7 @@ function sourceSnapshot() {
     assert.ok(Number.isInteger(scan.free) && Number.isInteger(scan.paid), "Pinned Smart Scan limits");
     for (const icon of icons.icons)
       assert.equal(sha256(source(icon.source)), icon.sha256, `Pinned official icon bytes: ${icon.name}`);
-    console.log(`Pricing source verified from Git object ${snapshot.sourceCommit}: public config SHA256 and fresh-installation plan quotas.`);
+    console.log(`Pricing source verified from Git object ${snapshot.sourceCommit}: public config SHA256, fresh-installation plan quotas and affiliate settings.`);
     console.log(`Main content verified from Git object ${mainSourceCommit}: Smart Scan limits, two official SVGs and current three-mode Chat entry flow.`);
   } else {
     console.log("App Git checkout unavailable: pricing/icon snapshot schema and local output hashes checked only; pinned App source and Smart Scan constants remain unverified in this standalone checkout.");

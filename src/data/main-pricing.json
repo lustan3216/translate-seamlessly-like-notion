@@ -1,10 +1,16 @@
 {
-  "sourceCommit": "51810726fc5217f85db8d0ad0342b735100d7fb7",
-  "publicConfigSHA256": "3548694c9fe367a64b8c362a7b828b3567637b5b3b5f7e734d447750bb7fd732",
+  "sourceCommit": "a404f94be5c0a2839b9756b1f2f630c2d0e9b97c",
+  "publicConfigSHA256": "801afe3cbdfe7174b65df37c7af912811f33f8feb5cf06d1c49ce5e4a8e65ffb",
+  "affiliate": {
+    "commissionPercent": 25,
+    "commissionMonths": 12,
+    "attributionDays": 180,
+    "joinUrl": "https://affiliates.creem.io/join/anytranslator"
+  },
   "plans": {
     "free": {
       "visible": false,
-      "translateCount": 50,
+      "translateCount": 30,
       "audioMinutes": 5,
       "voiceAgentMinutes": 3,
       "quotaPeriod": "month",

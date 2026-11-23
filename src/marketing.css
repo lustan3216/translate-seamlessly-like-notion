@@ -1041,36 +1041,158 @@ html[data-theme] body {
   flex-shrink: 0;
 }
 .mk-partner-panel {
-  border-radius: 28px;
-  padding: 56px 64px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  overflow: hidden;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(28px, 4vw, 64px);
+  min-height: calc(100svh - 88px);
+  padding-block: 48px;
+  text-align: start;
 }
-.mk-partner-panel > div:first-child {
-  padding-block: 32px 56px;
+.mk-partner-panel h1 {
+  font-size: clamp(40px, 4.3vw, 64px);
+  hyphens: auto;
+  overflow-wrap: anywhere;
 }
-.mk-partner-panel p {
-  margin-top: 24px;
-  color: var(--mk-muted);
+.mk-affiliate-copy .mk-lead {
+  margin-inline: 0 !important;
 }
-.mk-partner-panel .mk-button {
+.mk-partner-panel .mk-button,
+.mk-affiliate-process .mk-button {
   margin-top: 32px;
 }
-.mk-partner-screens {
-  display: flex;
+.marketing-site .mk-partner-screens.mk-photo-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  align-items: center;
   gap: 16px;
-  height: 440px;
+  padding: clamp(16px, 2vw, 32px);
+}
+.marketing-site .mk-partner-screens > .native-app-screen {
+  justify-self: center;
+  width: min(100%, 232px);
+  height: auto;
+  border-radius: 18px;
+  clip-path: none;
+}
+.mk-affiliate-stats {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
+  gap: 16px;
+  min-width: 0;
 }
-.mk-partner-screens img {
-  width: 48%;
-  border: 5px solid #222;
-  border-radius: 26px;
+.mk-affiliate-fragment {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--mk-line);
+  border-radius: 14px;
+  background: var(--mk-bg);
+  font-size: 13px;
+  line-height: 1.4;
 }
-.mk-partner-screens img + img {
-  margin-top: 64px;
+.mk-affiliate-referral bdi {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.mk-affiliate-control {
+  display: grid;
+  place-items: center;
+  flex: none;
+  border-inline-start: 1px solid var(--mk-line);
+  padding-inline-start: 8px;
+}
+.mk-affiliate-commission {
+  align-self: flex-end;
+}
+.mk-affiliate-commission span:not([aria-hidden]),
+.mk-affiliate-ledger bdi {
+  display: block;
+}
+.mk-affiliate-commission strong {
+  font-size: 24px;
+  font-weight: 600;
+}
+.mk-affiliate-process {
+  display: grid;
+  grid-template: auto 1fr auto / minmax(0, 1fr);
+  min-height: calc(100svh - 88px);
+  padding-block: clamp(48px, 8svh, 96px);
+  border-top: 1px solid var(--mk-line);
+}
+.mk-affiliate-process > .mk-button {
+  justify-self: start;
+  align-self: end;
+}
+.mk-affiliate-steps.mk-feature-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mk-affiliate-step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  padding: clamp(16px, 2vw, 28px);
+  border-radius: 20px;
+  background: var(--mk-surface);
+}
+.mk-affiliate-example {
+  flex: 1;
+  display: grid;
+  place-items: center start;
+  min-height: 116px;
+}
+.mk-affiliate-example .mk-affiliate-fragment {
+  min-height: 64px;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+.mk-affiliate-share {
+  width: fit-content;
+  border-radius: 999px;
+  font-weight: 500;
+}
+.mk-affiliate-ledger > div {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.mk-affiliate-ledger strong {
+  align-self: end;
+  flex: none;
+}
+.mk-affiliate-faq {
+  align-content: start;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(24px, 4svh, 40px);
+  padding-block: clamp(48px, 8svh, 96px);
+}
+.mk-affiliate-faq h2 {
+  margin-top: 0;
+}
+.mk-affiliate-faq-group > h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.mk-affiliate-faq-group summary {
+  min-height: 56px;
+  padding-block: 10px;
+}
+.mk-affiliate-faq-group p {
+  max-width: 76ch;
+  overflow-wrap: anywhere;
+}
+.marketing-site .mk-affiliate-faq-group p a {
+  color: var(--mk-ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 .mk-contact {
   display: grid;
@@ -1298,6 +1420,15 @@ html[data-theme] body {
 @media (max-width: 1100px) {
   .mk-wrap {
     width: calc(100% - 64px);
+  }
+  .marketing-site .mk-partner-screens.mk-photo-stage {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .mk-affiliate-stats {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
   }
   .mk-nav-links {
     gap: 20px;
@@ -1727,17 +1858,26 @@ html[data-theme] body {
     border-radius: 16px;
   }
   .mk-partner-panel {
-    grid-template-columns: 1fr;
-    padding: 32px 28px 0;
+    grid-template-columns: minmax(0, 1fr);
+    padding-block: 32px;
     gap: 32px;
+    min-height: calc(100svh - 72px);
   }
-  .mk-partner-panel > div:first-child {
-    padding: 0;
+  .mk-partner-panel h1 {
+    font-size: clamp(36px, 6vw, 52px);
   }
-  .mk-partner-screens {
-    height: 320px;
-    max-width: 360px;
-    margin: auto;
+  .mk-partner-panel .mk-button,
+  .mk-affiliate-process .mk-button {
+    width: 100%;
+  }
+  .marketing-site .mk-partner-screens > .native-app-screen {
+    width: min(100%, 196px);
+  }
+  .mk-affiliate-process {
+    min-height: calc(100svh - 72px);
+  }
+  .mk-affiliate-steps.mk-feature-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
   .mk-contact {
     grid-template-columns: 1fr;
@@ -2179,13 +2319,11 @@ html[data-theme] body {
 .mk-statement {
   padding-bottom: 56px;
 }
-.mk-statement-pair,
-.mk-partner-screens {
+.mk-statement-pair {
   height: auto;
   align-items: center;
 }
-.mk-statement-pair img + img,
-.mk-partner-screens img + img {
+.mk-statement-pair img + img {
   margin-top: 0;
 }
 .mk-case-visual,
@@ -2229,9 +2367,6 @@ html[data-theme] body {
 }
 .mk-about-art > img:not([alt="AnyTranslator"]) {
   align-self: center;
-}
-.mk-partner-panel {
-  padding-bottom: 40px;
 }
 .mk-platform-art {
   position: relative;
@@ -2339,7 +2474,6 @@ html[data-theme] body {
 .mk-blog-art:has([data-native-capture-pending]),
 .mk-article-art:has([data-native-capture-pending]),
 .mk-about-art:has([data-native-capture-pending]),
-.mk-partner-screens:has([data-native-capture-pending]),
 .mk-platform-art:has([data-native-capture-pending]) {
   display: none;
 }
@@ -2362,9 +2496,6 @@ html[data-theme] body {
 }
 .mk-statement:has([data-native-capture-pending]) {
   padding-bottom: 64px;
-}
-.mk-partner-panel:has([data-native-capture-pending]) {
-  grid-template-columns: 1fr;
 }
 .native-app-screen {
   display: block;
