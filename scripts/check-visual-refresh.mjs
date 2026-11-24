@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { readFileSync, realpathSync, statSync } from "node:fs";
+import { sep } from "node:path";
 import sharp from "sharp";
 import { SITE_LOCALES } from "../src/lib/site-config.mjs";
 
@@ -116,6 +117,41 @@ assert.ok(
   "Do not claim pending captures in structured data.",
 );
 assert.ok(seo.includes("/app-preview/social-v2/"));
+
+const publicAssets = new URL("public/", root);
+const publicPath = `${realpathSync(publicAssets)}${sep}`;
+const isRecord = (value) => value && typeof value === "object" && !Array.isArray(value);
+const checkDemoAsset = (src, maxBytes, label) => {
+  assert.ok(typeof src === "string" && /^\/(?!\/)[^\\?#\s]+$/.test(src), `Expected a local public path for ${label}: ${src}`);
+  const file = new URL(`.${src}`, publicAssets);
+  assert.ok(file.href.startsWith(publicAssets.href), `Asset must be inside public/ for ${label}: ${src}`);
+  const info = statSync(file, { throwIfNoEntry: false });
+  assert.ok(info?.isFile(), `Missing public file for ${label}: ${src}`);
+  assert.ok(realpathSync(file).startsWith(publicPath), `Asset must resolve inside public/ for ${label}: ${src}`);
+  assert.ok(info.size <= maxBytes, `${label} exceeds ${maxBytes} bytes (${info.size}): ${src}`);
+};
+const screenFeatureType = screen.match(/export type ScreenFeature\s*=\s*([^;]+);/);
+assert.ok(screenFeatureType, "AppScreen must declare ScreenFeature.");
+const screenFeatures = new Set([...screenFeatureType[1].matchAll(/"([^"]+)"/g)].map(([, feature]) => feature));
+assert.ok(screenFeatures.size > 0, "ScreenFeature must contain feature names.");
+const demoVideos = json("src/data/app-demo-videos.json");
+assert.ok(isRecord(demoVideos), "App demo videos must be grouped by locale.");
+let videoCount = 0;
+for (const [locale, entries] of Object.entries(demoVideos)) {
+  assert.ok(locale === "zh-tw" || locale === "en", `Unknown App demo video locale: ${locale}`);
+  assert.ok(isRecord(entries), `App demo videos for ${locale} must be grouped by feature.`);
+  for (const [feature, entry] of Object.entries(entries)) {
+    const label = `${locale}/${feature}`;
+    assert.ok(screenFeatures.has(feature), `Unknown App demo video feature: ${label}`);
+    assert.ok(isRecord(entry), `Expected an App demo video entry for ${label}.`);
+    assert.match(entry.src ?? "", /\.mp4$/, `Expected an MP4 file for ${label}.`);
+    checkDemoAsset(entry.src, 3_000_000, `${label} video`);
+    checkDemoAsset(entry.poster, 200_000, `${label} poster`);
+    videoCount += 1;
+  }
+}
+console.log(`App demo video checks passed: ${videoCount} configured entries.`);
+
 await import("./check-localized-ui-images.mjs");
 console.log(
   "Brand/source checks passed: 19 original localized brand cards, no active rejected or obsolete imagery. Native screenshot coverage is checked separately.",

@@ -307,6 +307,7 @@ export function HomePage() {
             {(["text", "menu", "document"].includes(demo) || demo === "chat") && (
               <div className="mk-demo-back">
                 <AppScreen
+                  still
                   feature={demo === "text" ? "helper" : demo}
                   shotId={demo === "chat" ? "chat-entry" : demo === "menu" ? "options" : demo === "document" ? "original" : undefined}
                 />
