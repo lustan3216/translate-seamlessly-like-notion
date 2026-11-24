@@ -1,1 +1,111 @@
-{"zh-tw": {}, "en": {}}
+{
+  "zh-tw": {
+    "screen-translation": {
+      "src": "/app-preview/videos/20261124/zh-tw/screen-translation.mp4",
+      "poster": "/app-preview/videos/20261124/zh-tw/screen-translation-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "在 Safari 開日文網頁，子母畫面即時顯示中文譯文"
+    },
+    "text": {
+      "src": "/app-preview/videos/20261124/zh-tw/text.mp4",
+      "poster": "/app-preview/videos/20261124/zh-tw/text-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "輸入中文訊息翻成英文，再切換成朋友語氣"
+    },
+    "photos": {
+      "src": "/app-preview/videos/20261124/zh-tw/photos.mp4",
+      "poster": "/app-preview/videos/20261124/zh-tw/photos-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "日文告示照片直接疊上中文譯文，點一下看原文"
+    },
+    "menu": {
+      "src": "/app-preview/videos/20261124/zh-tw/menu.mp4",
+      "poster": "/app-preview/videos/20261124/zh-tw/menu-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "日本餐廳菜單整理成品項，加點後給店員看"
+    },
+    "document": {
+      "src": "/app-preview/videos/20261124/zh-tw/document.mp4",
+      "poster": "/app-preview/videos/20261124/zh-tw/document-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "日文公告整理成段落，點段落對照原文"
+    },
+    "table": {
+      "src": "/app-preview/videos/20261124/zh-tw/table.mp4",
+      "poster": "/app-preview/videos/20261124/zh-tw/table-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "公車時刻表整理成表格，橫向滑動並點標題看原文"
+    },
+    "chat": {
+      "src": "/app-preview/videos/20261124/zh-tw/chat.mp4",
+      "poster": "/app-preview/videos/20261124/zh-tw/chat-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "在 AI 助手練習餐廳點餐對話"
+    },
+    "helper": {
+      "src": "/app-preview/videos/20261124/zh-tw/helper.mp4",
+      "poster": "/app-preview/videos/20261124/zh-tw/helper-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "俄文句子翻譯後用中文拆解文法"
+    }
+  },
+  "en": {
+    "screen-translation": {
+      "src": "/app-preview/videos/20261124/en/screen-translation.mp4",
+      "poster": "/app-preview/videos/20261124/en/screen-translation-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "A Japanese web page in Safari with English captions in Picture in Picture"
+    },
+    "text": {
+      "src": "/app-preview/videos/20261124/en/text.mp4",
+      "poster": "/app-preview/videos/20261124/en/text-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "A message translated into Japanese, then switched to a friendly tone"
+    },
+    "photos": {
+      "src": "/app-preview/videos/20261124/en/photos.mp4",
+      "poster": "/app-preview/videos/20261124/en/photos-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "A Japanese sign photo with the English translation over the text"
+    },
+    "menu": {
+      "src": "/app-preview/videos/20261124/en/menu.mp4",
+      "poster": "/app-preview/videos/20261124/en/menu-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "A Japanese menu organised into dishes, then shown to staff"
+    },
+    "document": {
+      "src": "/app-preview/videos/20261124/en/document.mp4",
+      "poster": "/app-preview/videos/20261124/en/document-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "A Japanese notice organised into paragraphs with the original on tap"
+    },
+    "table": {
+      "src": "/app-preview/videos/20261124/en/table.mp4",
+      "poster": "/app-preview/videos/20261124/en/table-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "A bus timetable organised into a table you can scroll and check"
+    },
+    "helper": {
+      "src": "/app-preview/videos/20261124/en/helper.mp4",
+      "poster": "/app-preview/videos/20261124/en/helper-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "A Russian sentence translated with a grammar breakdown in English"
+    }
+  }
+}
