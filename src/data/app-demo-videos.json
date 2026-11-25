@@ -5,7 +5,7 @@
       "poster": "/app-preview/videos/20261124/zh-tw/screen-translation-poster.webp",
       "width": 720,
       "height": 1560,
-      "alt": "在 Safari 開日文網頁，子母畫面即時顯示中文譯文"
+      "alt": "螢幕翻譯兩種模式：Safari 播日文影片時子母畫面出現雙語字幕，再切到畫面文字翻譯日文網頁"
     },
     "text": {
       "src": "/app-preview/videos/20261124/zh-tw/text.mp4",
@@ -70,14 +70,14 @@
       "poster": "/app-preview/videos/20261124/en/screen-translation-poster.webp",
       "width": 720,
       "height": 1560,
-      "alt": "A Japanese web page in Safari with English captions in Picture in Picture"
+      "alt": "Screen translation in two modes: captions for a Japanese video in Safari, then on-screen text of a Japanese web page"
     },
     "text": {
       "src": "/app-preview/videos/20261124/en/text.mp4",
       "poster": "/app-preview/videos/20261124/en/text-poster.webp",
       "width": 720,
       "height": 1560,
-      "alt": "A message translated into Japanese, then switched to a friendly tone"
+      "alt": "A late check-in message translated into Japanese, then switched from a casual to a polite tone"
     },
     "photos": {
       "src": "/app-preview/videos/20261124/en/photos.mp4",
