@@ -47,7 +47,7 @@
       "poster": "/app-preview/videos/20261124/zh-tw/chat-poster.webp",
       "width": 720,
       "height": 1560,
-      "alt": "在 AI 助手練習餐廳點餐對話"
+      "alt": "問 AI 助理京都居酒屋點餐日文，再用菜單照片問哪些不是生食，最後練習點餐對話"
     },
     "helper": {
       "src": "/app-preview/videos/20261124/zh-tw/helper.mp4",
@@ -55,6 +55,13 @@
       "width": 720,
       "height": 1560,
       "alt": "俄文句子翻譯後用中文拆解文法"
+    },
+    "voice": {
+      "src": "/app-preview/videos/20261124/zh-tw/voice.mp4",
+      "poster": "/app-preview/videos/20261124/zh-tw/voice-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "在日本餐廳門口用即時語音翻譯，日文與中文雙語字幕即時出現"
     }
   },
   "en": {
@@ -106,6 +113,20 @@
       "width": 720,
       "height": 1560,
       "alt": "A Russian sentence translated with a grammar breakdown in English"
+    },
+    "chat": {
+      "src": "/app-preview/videos/20261124/en/chat.mp4",
+      "poster": "/app-preview/videos/20261124/en/chat-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "Asking the AI assistant for izakaya phrases, which dishes on a menu photo have no raw fish, then a line to read to staff"
+    },
+    "voice": {
+      "src": "/app-preview/videos/20261124/en/voice.mp4",
+      "poster": "/app-preview/videos/20261124/en/voice-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "Live voice translation between Japanese and English at a restaurant, with captions in both languages"
     }
   }
 }
