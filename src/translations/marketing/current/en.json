@@ -173,23 +173,23 @@
           "items": [
             {
               "title": "Add a menu photo",
-              "body": "In Photos, choose Organise, then Menu, add a photo and tap the scan arrow.",
-              "image": { "src": "/app-preview/videos/20261124/en/menu-step-1.webp", "width": 720, "height": 1560 }
+              "body": "Pick Organise → Menu, then scan.",
+              "image": { "src": "/app-preview/videos/20261124/en/menu-step-1.webp", "width": 720, "height": 576 }
             },
             {
-              "title": "Read the translated menu",
-              "body": "After scanning, browse dish names, descriptions and prices by menu section.",
-              "image": { "src": "/app-preview/videos/20261124/en/menu-step-2.webp", "width": 720, "height": 1560 }
+              "title": "Read the translation",
+              "body": "Browse dishes, details and prices.",
+              "image": { "src": "/app-preview/videos/20261124/en/menu-step-2.webp", "width": 720, "height": 830 }
             },
             {
-              "title": "Choose quantities and extras",
-              "body": "Set the quantity with plus and minus, then choose any available sizes or extras.",
-              "image": { "src": "/app-preview/videos/20261124/en/menu-step-3.webp", "width": 720, "height": 1560 }
+              "title": "Choose dishes",
+              "body": "Set quantities and pick extras.",
+              "image": { "src": "/app-preview/videos/20261124/en/menu-step-3.webp", "width": 720, "height": 730 }
             },
             {
               "title": "Show staff your order",
-              "body": "Tap Show Staff to open the order in the menu’s original language.",
-              "image": { "src": "/app-preview/videos/20261124/en/menu-step-4.webp", "width": 720, "height": 1560 }
+              "body": "Tap Show Staff for the original.",
+              "image": { "src": "/app-preview/videos/20261124/en/menu-step-4.webp", "width": 720, "height": 720 }
             }
           ]
         },

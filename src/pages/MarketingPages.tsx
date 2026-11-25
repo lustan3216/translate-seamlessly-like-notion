@@ -490,7 +490,7 @@ export function FeaturePage() {
       {steps ? (
         <section className="mk-section mk-wrap mk-feature-guide">
           <h2 className="mk-section-title">{steps.title}</h2>
-          <ol className="mk-feature-guide-steps" role="list">
+          <ol className="mk-feature-guide-steps" role="list" aria-label={steps.title} tabIndex={0}>
             {steps.items.map((step, index) => (
               <li key={step.image.src}>
                 <div className="mk-feature-guide-step-copy">
@@ -498,9 +498,7 @@ export function FeaturePage() {
                   <h3>{step.title}</h3>
                   <p>{step.body}</p>
                 </div>
-                <div className="mk-feature-guide-step-screen">
-                  <img {...step.image} className="native-app-screen" alt="" loading="lazy" decoding="async" />
-                </div>
+                <img {...step.image} className="native-app-screen" alt="" loading="lazy" decoding="async" />
               </li>
             ))}
           </ol>

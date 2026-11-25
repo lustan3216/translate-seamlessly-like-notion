@@ -173,23 +173,23 @@
           "items": [
             {
               "title": "加入菜單照片",
-              "body": "在照片頁選「整理」和「菜單」，加入照片，再按箭頭掃描。",
-              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-1.webp", "width": 720, "height": 1560 }
+              "body": "選「整理」和「菜單」再掃描。",
+              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-1.webp", "width": 720, "height": 576 }
             },
             {
               "title": "查看翻譯後的菜色",
-              "body": "掃描後，按菜單分類查看菜名、說明和價格。",
-              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-2.webp", "width": 720, "height": 1560 }
+              "body": "查看菜名、說明和價格。",
+              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-2.webp", "width": 720, "height": 768 }
             },
             {
               "title": "選份數和加料",
-              "body": "用加減按鈕選份數，有尺寸或加料時也可以一起選。",
-              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-3.webp", "width": 720, "height": 1560 }
+              "body": "選份數及可用的加料。",
+              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-3.webp", "width": 720, "height": 790 }
             },
             {
               "title": "給店員看點單",
-              "body": "點「給店員看」，開啟菜單原文的點單畫面。",
-              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-4.webp", "width": 720, "height": 1560 }
+              "body": "點「給店員看」顯示原文。",
+              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-4.webp", "width": 720, "height": 494 }
             }
           ]
         },
