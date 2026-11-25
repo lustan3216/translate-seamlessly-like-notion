@@ -1,116 +1,211 @@
 {
   "en": {
-    "title": "Payment complete",
+    "confirmingTitle": "Confirming your payment",
+    "paidTitle": "Payment confirmed",
+    "paidInstructions": "We’re sending your activation email.",
+    "title": "Activation email sent",
     "instructions": "We sent an activation email to the address you used at checkout. Open it on your iPhone and tap “Activate in AnyTranslator.”",
     "resend": "Didn’t get the email? Resend",
-    "resent": "Email resent"
+    "resent": "Resend request received",
+    "processingTitle": "Still processing",
+    "processingInstructions": "Check your inbox again in a little while. If the email doesn’t arrive, request a resend or contact support."
   },
   "ko": {
-    "title": "결제 완료",
+    "confirmingTitle": "결제를 확인하는 중입니다",
+    "paidTitle": "결제가 확인되었습니다",
+    "paidInstructions": "활성화 이메일을 보내는 중입니다.",
+    "title": "활성화 이메일을 보냈습니다",
     "instructions": "결제에 사용한 주소로 활성화 이메일을 보냈습니다. iPhone에서 이메일을 열고 ‘AnyTranslator에서 활성화’를 탭하세요.",
     "resend": "이메일이 안 왔나요? 다시 보내기",
-    "resent": "이메일을 다시 보냈습니다"
+    "resent": "재발송 요청을 받았습니다",
+    "processingTitle": "아직 처리 중입니다",
+    "processingInstructions": "잠시 후 받은편지함을 확인해 주세요. 이메일이 오지 않으면 재발송을 요청하거나 고객 지원에 문의해 주세요."
   },
   "ja": {
-    "title": "お支払い完了",
+    "confirmingTitle": "お支払いを確認しています",
+    "paidTitle": "お支払いを確認しました",
+    "paidInstructions": "有効化メールを送信しています。",
+    "title": "有効化メールを送信しました",
     "instructions": "決済時に使ったアドレスへ有効化メールを送りました。iPhoneでメールを開き、「AnyTranslatorで有効化」をタップしてください。",
     "resend": "メールが届かない場合は再送",
-    "resent": "メールを再送しました"
+    "resent": "再送リクエストを受け付けました",
+    "processingTitle": "処理に時間がかかっています",
+    "processingInstructions": "しばらくしてから受信トレイをご確認ください。メールが届かない場合は、再送をリクエストするか、サポートにお問い合わせください。"
   },
   "fr": {
-    "title": "Paiement effectué",
+    "confirmingTitle": "Vérification de votre paiement",
+    "paidTitle": "Paiement confirmé",
+    "paidInstructions": "Votre e-mail d’activation est en cours d’envoi.",
+    "title": "E-mail d’activation envoyé",
     "instructions": "L’e-mail d’activation a été envoyé à l’adresse utilisée pour le paiement. Ouvrez-le sur votre iPhone et touchez « Activer dans AnyTranslator ».",
     "resend": "E-mail non reçu ? Renvoyer",
-    "resent": "E-mail renvoyé"
+    "resent": "Demande de renvoi reçue",
+    "processingTitle": "Traitement toujours en cours",
+    "processingInstructions": "Consultez votre boîte de réception dans un instant. Si vous ne recevez pas l’e-mail, demandez un nouvel envoi ou contactez l’assistance."
   },
   "de": {
-    "title": "Zahlung abgeschlossen",
+    "confirmingTitle": "Deine Zahlung wird geprüft",
+    "paidTitle": "Zahlung bestätigt",
+    "paidInstructions": "Deine Aktivierungs-E-Mail wird gerade versendet.",
+    "title": "Aktivierungs-E-Mail gesendet",
     "instructions": "Die Aktivierungs-E-Mail ging an deine beim Bezahlen verwendete Adresse. Öffne sie auf deinem iPhone und tippe auf „In AnyTranslator aktivieren“.",
     "resend": "Keine E-Mail erhalten? Erneut senden",
-    "resent": "E-Mail erneut gesendet"
+    "resent": "Anfrage zum erneuten Versand erhalten",
+    "processingTitle": "Noch in Bearbeitung",
+    "processingInstructions": "Schau in Kürze noch einmal in deinen Posteingang. Wenn keine E-Mail ankommt, fordere sie erneut an oder wende dich an den Support."
   },
   "es": {
-    "title": "Pago completado",
+    "confirmingTitle": "Estamos confirmando tu pago",
+    "paidTitle": "Pago confirmado",
+    "paidInstructions": "Estamos enviando tu correo de activación.",
+    "title": "Correo de activación enviado",
     "instructions": "Enviamos el correo de activación a la dirección que usaste al pagar. Ábrelo en tu iPhone y toca «Activar en AnyTranslator».",
     "resend": "¿No te llegó el correo? Reenviar",
-    "resent": "Correo reenviado"
+    "resent": "Solicitud de reenvío recibida",
+    "processingTitle": "Seguimos procesando tu solicitud",
+    "processingInstructions": "Vuelve a revisar tu bandeja de entrada en un momento. Si no llega el correo, solicita un reenvío o ponte en contacto con el equipo de soporte."
   },
   "it": {
-    "title": "Pagamento completato",
+    "confirmingTitle": "Stiamo verificando il tuo pagamento",
+    "paidTitle": "Pagamento confermato",
+    "paidInstructions": "Stiamo inviando la tua e-mail di attivazione.",
+    "title": "E-mail di attivazione inviata",
     "instructions": "Abbiamo inviato l’e-mail di attivazione all’indirizzo usato per il pagamento. Aprila sul tuo iPhone e tocca «Attiva in AnyTranslator».",
     "resend": "E-mail non ricevuta? Invia di nuovo",
-    "resent": "E-mail inviata di nuovo"
+    "resent": "Richiesta di reinvio ricevuta",
+    "processingTitle": "Elaborazione ancora in corso",
+    "processingInstructions": "Controlla di nuovo la posta tra poco. Se l’e-mail non arriva, chiedi un nuovo invio o contatta l’assistenza."
   },
   "pt-br": {
-    "title": "Pagamento concluído",
+    "confirmingTitle": "Estamos confirmando seu pagamento",
+    "paidTitle": "Pagamento confirmado",
+    "paidInstructions": "Estamos enviando seu e-mail de ativação.",
+    "title": "E-mail de ativação enviado",
     "instructions": "Enviamos o e-mail de ativação para o endereço usado no pagamento. Abra-o no iPhone e toque em “Ativar no AnyTranslator”.",
     "resend": "Não recebeu o e-mail? Reenviar",
-    "resent": "E-mail reenviado"
+    "resent": "Solicitação de reenvio recebida",
+    "processingTitle": "Ainda em processamento",
+    "processingInstructions": "Confira sua caixa de entrada daqui a pouco. Se o e-mail não chegar, solicite o reenvio ou entre em contato com o suporte."
   },
   "fi": {
-    "title": "Maksu suoritettu",
+    "confirmingTitle": "Tarkistamme maksuasi",
+    "paidTitle": "Maksu vahvistettu",
+    "paidInstructions": "Aktivointiviestiäsi lähetetään.",
+    "title": "Aktivointiviesti lähetetty",
     "instructions": "Lähetimme aktivointiviestin maksussa käyttämääsi sähköpostiosoitteeseen. Avaa viesti iPhonessa ja napauta ”Aktivoi AnyTranslatorissa”.",
     "resend": "Eikö viesti tullut? Lähetä uudelleen",
-    "resent": "Viesti lähetetty uudelleen"
+    "resent": "Uudelleenlähetyspyyntö vastaanotettu",
+    "processingTitle": "Käsittely on vielä kesken",
+    "processingInstructions": "Tarkista sähköpostisi hetken kuluttua. Jos viestiä ei näy, pyydä lähettämään se uudelleen tai ota yhteyttä tukeen."
   },
   "da": {
-    "title": "Betaling gennemført",
+    "confirmingTitle": "Vi kontrollerer din betaling",
+    "paidTitle": "Betaling bekræftet",
+    "paidInstructions": "Din aktiveringsmail er ved at blive sendt.",
+    "title": "Aktiveringsmail sendt",
     "instructions": "Vi har sendt en aktiveringsmail til adressen, du brugte ved betaling. Åbn mailen på din iPhone, og tryk på »Aktivér i AnyTranslator«.",
     "resend": "Ingen mail? Send igen",
-    "resent": "Mail sendt igen"
+    "resent": "Anmodning om at sende igen modtaget",
+    "processingTitle": "Behandlingen er stadig i gang",
+    "processingInstructions": "Tjek din indbakke igen om lidt. Hvis mailen ikke kommer, kan du bede om at få den sendt igen eller kontakte support."
   },
   "nl": {
-    "title": "Betaling voltooid",
+    "confirmingTitle": "We controleren je betaling",
+    "paidTitle": "Betaling bevestigd",
+    "paidInstructions": "Je activatiemail wordt verzonden.",
+    "title": "Activatiemail verstuurd",
     "instructions": "We hebben de activatiemail naar het e-mailadres gestuurd waarmee je hebt betaald. Open de mail op je iPhone en tik op ‘Activeren in AnyTranslator’.",
     "resend": "Geen e-mail ontvangen? Opnieuw sturen",
-    "resent": "E-mail opnieuw verstuurd"
+    "resent": "Verzoek om opnieuw te versturen ontvangen",
+    "processingTitle": "Nog in behandeling",
+    "processingInstructions": "Kijk over een tijdje opnieuw in je inbox. Als de e-mail niet aankomt, vraag dan om een nieuwe verzending of neem contact op met de klantenservice."
   },
   "no": {
-    "title": "Betaling fullført",
+    "confirmingTitle": "Vi kontrollerer betalingen din",
+    "paidTitle": "Betalingen er bekreftet",
+    "paidInstructions": "Aktiveringsmailen din sendes nå.",
+    "title": "Aktiveringsmail sendt",
     "instructions": "Vi har sendt en aktiveringsmail til adressen du brukte ved betaling. Åpne e-posten på iPhone og trykk på «Aktiver i AnyTranslator».",
     "resend": "Ingen e-post? Send på nytt",
-    "resent": "E-post sendt på nytt"
+    "resent": "Forespørsel om å sende på nytt mottatt",
+    "processingTitle": "Fortsatt under behandling",
+    "processingInstructions": "Sjekk innboksen igjen om en liten stund. Hvis e-posten ikke kommer, kan du be om å få den sendt på nytt eller kontakte kundestøtte."
   },
   "sv": {
-    "title": "Betalningen är klar",
+    "confirmingTitle": "Vi kontrollerar din betalning",
+    "paidTitle": "Betalningen är bekräftad",
+    "paidInstructions": "Ditt aktiveringsmejl håller på att skickas.",
+    "title": "Aktiveringsmejlet har skickats",
     "instructions": "Vi har skickat ett aktiveringsmejl till adressen du använde vid betalningen. Öppna mejlet på din iPhone och tryck på ”Aktivera i AnyTranslator”.",
     "resend": "Inget mejl? Skicka igen",
-    "resent": "Mejlet har skickats igen"
+    "resent": "Begäran om att skicka om mejlet har tagits emot",
+    "processingTitle": "Behandlingen pågår fortfarande",
+    "processingInstructions": "Titta i inkorgen igen om en liten stund. Om mejlet inte kommer kan du be att få det skickat igen eller kontakta supporten."
   },
   "zh-cn": {
-    "title": "付款完成",
+    "confirmingTitle": "正在确认付款",
+    "paidTitle": "付款已确认",
+    "paidInstructions": "开通邮件正在发送。",
+    "title": "开通邮件已发送",
     "instructions": "开通邮件已发送到你付款时使用的邮箱。在 iPhone 上打开邮件，轻点「在 AnyTranslator 开通」。",
     "resend": "没收到邮件？重新发送",
-    "resent": "已重新发送"
+    "resent": "已收到重新发送申请",
+    "processingTitle": "还在处理中",
+    "processingInstructions": "请稍后查看邮箱。如果没有收到邮件，可以申请重新发送或联系客服。"
   },
   "zh-tw": {
-    "title": "付款完成",
+    "confirmingTitle": "正在確認付款",
+    "paidTitle": "付款已確認",
+    "paidInstructions": "開通信寄送中。",
+    "title": "開通信已寄出",
     "instructions": "開通信已寄到你付款時用的信箱。在 iPhone 上打開信，點「在 AnyTranslator 開通」。",
     "resend": "沒收到信？重新寄送",
-    "resent": "已重新寄送"
+    "resent": "已收到重寄申請",
+    "processingTitle": "還在處理",
+    "processingInstructions": "請稍後查看信箱。若沒收到信，可以申請重寄或聯絡客服。"
   },
   "id": {
-    "title": "Pembayaran selesai",
+    "confirmingTitle": "Sedang mengonfirmasi pembayaran Anda",
+    "paidTitle": "Pembayaran telah dikonfirmasi",
+    "paidInstructions": "Email aktivasi Anda sedang dikirim.",
+    "title": "Email aktivasi telah dikirim",
     "instructions": "Email aktivasi sudah dikirim ke alamat yang Anda gunakan saat membayar. Buka email di iPhone dan ketuk “Aktifkan di AnyTranslator”.",
     "resend": "Belum menerima email? Kirim ulang",
-    "resent": "Email telah dikirim ulang"
+    "resent": "Permintaan pengiriman ulang diterima",
+    "processingTitle": "Masih diproses",
+    "processingInstructions": "Periksa kembali kotak masuk Anda beberapa saat lagi. Jika email belum tiba, minta pengiriman ulang atau hubungi tim dukungan."
   },
   "vi": {
-    "title": "Thanh toán hoàn tất",
+    "confirmingTitle": "Đang xác nhận thanh toán của bạn",
+    "paidTitle": "Đã xác nhận thanh toán",
+    "paidInstructions": "Email kích hoạt của bạn đang được gửi.",
+    "title": "Đã gửi email kích hoạt",
     "instructions": "Email kích hoạt đã được gửi tới địa chỉ bạn dùng khi thanh toán. Mở email trên iPhone và chạm vào “Kích hoạt trong AnyTranslator”.",
     "resend": "Chưa nhận được email? Gửi lại",
-    "resent": "Đã gửi lại email"
+    "resent": "Đã nhận yêu cầu gửi lại",
+    "processingTitle": "Vẫn đang xử lý",
+    "processingInstructions": "Vui lòng kiểm tra lại hộp thư đến sau ít phút. Nếu chưa nhận được email, bạn có thể yêu cầu gửi lại hoặc liên hệ bộ phận hỗ trợ."
   },
   "th": {
-    "title": "ชำระเงินเรียบร้อย",
+    "confirmingTitle": "กำลังตรวจสอบการชำระเงินของคุณ",
+    "paidTitle": "ยืนยันการชำระเงินแล้ว",
+    "paidInstructions": "กำลังส่งอีเมลเปิดใช้งาน",
+    "title": "ส่งอีเมลเปิดใช้งานแล้ว",
     "instructions": "เราส่งอีเมลเปิดใช้งานไปยังที่อยู่ที่คุณใช้ชำระเงินแล้ว เปิดอีเมลบน iPhone แล้วแตะ “เปิดใช้งานใน AnyTranslator”",
     "resend": "ไม่ได้รับอีเมลใช่ไหม ส่งอีกครั้ง",
-    "resent": "ส่งอีเมลอีกครั้งแล้ว"
+    "resent": "ได้รับคำขอให้ส่งอีเมลอีกครั้งแล้ว",
+    "processingTitle": "ยังอยู่ระหว่างดำเนินการ",
+    "processingInstructions": "โปรดกลับมาตรวจสอบกล่องจดหมายอีกครั้งในภายหลัง หากไม่ได้รับอีเมล คุณสามารถขอให้ส่งใหม่หรือติดต่อฝ่ายช่วยเหลือ"
   },
   "ru": {
-    "title": "Оплата завершена",
+    "confirmingTitle": "Проверяем ваш платёж",
+    "paidTitle": "Платёж подтверждён",
+    "paidInstructions": "Отправляем письмо для активации.",
+    "title": "Письмо для активации отправлено",
     "instructions": "Письмо для активации отправлено на адрес, указанный при оплате. Откройте письмо на iPhone и нажмите «Активировать в AnyTranslator».",
     "resend": "Не получили письмо? Отправить ещё раз",
-    "resent": "Письмо отправлено повторно"
+    "resent": "Запрос на повторную отправку получен",
+    "processingTitle": "Обработка ещё не завершена",
+    "processingInstructions": "Проверьте почту чуть позже. Если письмо не придёт, запросите повторную отправку или обратитесь в службу поддержки."
   }
 }

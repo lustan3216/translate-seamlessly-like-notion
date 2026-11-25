@@ -154,6 +154,7 @@ async function prepare(root, liveBilling = false) {
     { src: '^/api/account/billing/catalog$', dest: '/api/account-catalog?account_route=billing/catalog' },
     { src: '^/api/account/billing/guest-checkout$', dest: '/api/account-catalog?account_route=billing/guest-checkout' },
     { src: '^/api/account/billing/guest-resend$', dest: '/api/account-catalog?account_route=billing/guest-resend' },
+    { src: '^/api/account/billing/guest-status$', dest: '/api/account-catalog?account_route=billing/guest-status' },
     ...vercel.routes,
   ] : vercel.routes;
   const config = { version: 3, routes };
@@ -213,10 +214,14 @@ async function selfTest() {
       { src: '^/api/account/billing/catalog$', dest: '/api/account-catalog?account_route=billing/catalog' },
       { src: '^/api/account/billing/guest-checkout$', dest: '/api/account-catalog?account_route=billing/guest-checkout' },
       { src: '^/api/account/billing/guest-resend$', dest: '/api/account-catalog?account_route=billing/guest-resend' },
+      { src: '^/api/account/billing/guest-status$', dest: '/api/account-catalog?account_route=billing/guest-status' },
       ...routes,
     ]);
     const functionsRoot = inside(root, 'output/vercel-release/.vercel/output/functions/api');
     assert.deepEqual((await readdir(functionsRoot)).sort(), ['account-catalog.func', 'asc-prices.func', 'plan-quotas.func']);
+    const catalogFunction = inside(functionsRoot, 'account-catalog.func');
+    assert.equal(await readFile(inside(catalogFunction, 'handler.mjs'), 'utf8'), 'export { liveCatalogProxy as default } from "./proxy.mjs";\n');
+    assert.equal(await hash(inside(catalogFunction, 'proxy.mjs')), await hash(inside(websiteRoot, 'scripts/vercel-account-preview-proxy.mjs')));
     const quotaFunction = inside(functionsRoot, 'plan-quotas.func');
     assert.deepEqual(await filesIn(quotaFunction), ['.vc-config.json', 'api/plan-quotas.mjs', 'src/data/main-pricing.json']);
     assert.equal((await json(inside(quotaFunction, '.vc-config.json'))).handler, 'api/plan-quotas.mjs');

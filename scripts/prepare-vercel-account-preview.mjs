@@ -21,6 +21,7 @@ const preview = await mkdtemp(path.join(tmpdir(), `anytranslator-vercel-${mode}-
 const output = path.join(preview, ".vercel", "output");
 const staticRoot = path.join(output, "static");
 const proxy = path.join(output, "functions", "api", "account-preview.func");
+const quotaFunction = "functions/api/plan-quotas.func";
 const presentationAssets = live ? ["app-preview/icons"] : [
   "app-preview/backgrounds/abstract-mist-v3.webp",
   "app-preview/examples/screen-translation-safari.webp",
@@ -94,6 +95,14 @@ try {
     .replace(/<!-- Crisp Chat Support -->\s*<script\b[^>]*>[\s\S]*?<\/script>/, "")
     .replace(/<link\b[^>]*\bhref="https:\/\/[^\"]+"[^>]*>\s*/g, ""));
   await copyPresentationAssets();
+  await cp(path.join(production, quotaFunction), path.join(output, quotaFunction), {
+    recursive: true,
+    async filter(file) {
+      const entry = await lstat(file);
+      if (!entry.isDirectory() && !entry.isFile()) throw new Error(`Unexpected quota function input: ${file}`);
+      return true;
+    },
+  });
   if (live) await writeLiveAccountFunction(output, "account-live");
   else {
     await mkdir(proxy, { recursive: true });

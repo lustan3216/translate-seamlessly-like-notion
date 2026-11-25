@@ -71,6 +71,210 @@
   margin-inline: auto;
 }
 
+.mk-subscription {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.mk-subscription-current,
+.mk-subscription-benefits,
+.mk-subscription-option {
+  background: var(--mk-surface);
+  border-radius: 16px;
+}
+
+.mk-subscription-current {
+  padding: 16px;
+}
+
+.mk-subscription-current > strong {
+  margin-inline-end: 8px;
+}
+
+.mk-subscription-benefits {
+  display: grid;
+  margin: 0;
+  padding: 0 16px;
+  list-style: none;
+}
+
+.mk-subscription-benefits li {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  gap: 12px;
+  padding-block: 12px;
+}
+
+.mk-subscription-benefits li > div {
+  display: grid;
+  gap: 2px;
+}
+
+.mk-subscription-benefits li + li {
+  border-block-start: 1px solid var(--mk-line);
+}
+
+.mk-subscription-benefits li > div > span,
+.mk-subscription-option-copy > span:not(.mk-subscription-badges, .mk-subscription-price) {
+  color: var(--mk-muted);
+  font-size: 0.9em;
+}
+
+.mk-subscription-tiers {
+  display: flex;
+  justify-self: center;
+  gap: 4px;
+  max-width: 100%;
+  padding: 4px;
+  border-radius: 24px;
+  background: var(--mk-surface);
+}
+
+.mk-subscription-tiers button {
+  min-width: 0;
+  min-height: 44px;
+  padding: 6px 16px;
+  border-radius: 22px;
+  color: var(--mk-muted);
+  overflow-wrap: anywhere;
+}
+
+.mk-subscription-tiers button[aria-pressed="true"] {
+  color: var(--mk-ink);
+  background: var(--mk-bg);
+}
+
+.mk-subscription-options {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.mk-subscription-option {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid transparent;
+}
+
+.mk-subscription-option:has(input:checked) {
+  border-color: var(--mk-focus);
+}
+
+.mk-subscription-tiers button:focus-visible,
+.mk-subscription-option:has(input:focus-visible) {
+  outline: 2px solid var(--mk-focus);
+  outline-offset: 2px;
+}
+
+.mk-subscription-option input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.mk-subscription-option input:disabled {
+  cursor: default;
+}
+
+.mk-subscription-mark {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  margin-block-start: 3px;
+  border-radius: 50%;
+  background: var(--mk-line);
+}
+
+.mk-subscription-mark > span {
+  visibility: hidden;
+}
+
+.mk-subscription-option input:checked + .mk-subscription-mark {
+  background: var(--mk-ink);
+  color: var(--mk-bg);
+}
+
+.mk-subscription-option input:checked + .mk-subscription-mark > span {
+  visibility: visible;
+}
+
+.mk-subscription-option-copy {
+  display: grid;
+  gap: 2px;
+}
+
+.mk-subscription-badge {
+  justify-self: start;
+  padding: 2px 9px;
+  border-radius: 20px;
+  background: var(--mk-mint);
+  font-size: 0.8em;
+}
+
+.mk-subscription-badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.mk-subscription-price {
+  font-size: 1.45rem;
+  line-height: 1.4;
+}
+
+.mk-subscription-price small {
+  color: var(--mk-muted);
+  font-size: 0.85rem;
+}
+
+.mk-subscription-primary {
+  position: sticky;
+  z-index: 1;
+  bottom: 0;
+  padding: 8px 0 max(8px, env(safe-area-inset-bottom));
+  background: var(--mk-bg);
+}
+
+.mk-subscription-primary .mk-button {
+  width: 100%;
+  min-height: 52px;
+}
+
+.mk-subscription-secondary .mk-button {
+  min-height: 44px;
+}
+
+.mk-subscription-dialog {
+  width: min(calc(100% - 32px), 420px);
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  border-radius: 16px;
+}
+
+.mk-subscription-dialog button {
+  height: auto;
+  min-height: 44px;
+  max-width: 100%;
+  margin: 0;
+  white-space: normal;
+}
+
 .mk-billing-return-page {
   max-width: 544px;
   padding-block-start: clamp(32px, 5vw, 60px);

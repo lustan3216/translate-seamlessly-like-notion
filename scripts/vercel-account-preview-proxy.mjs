@@ -4,19 +4,24 @@ const liveWorker = "https://cloudflare.anytranslator.app";
 const liveAccountHost = "account.anytranslator.app";
 const billingCatalog = "billing/catalog";
 const guestResend = "billing/guest-resend";
-const guestBillingRoutes = new Set(["billing/guest-checkout", guestResend]);
+const guestStatus = "billing/guest-status";
+const guestPostRoutes = new Set(["billing/guest-checkout", guestResend]);
+const subscriptionWrites = new Set(["billing/change-plan", "billing/cancel-pending-change", "billing/cancel", "billing/resume"]);
+const billingAccountPosts = new Set(["billing/checkout", ...subscriptionWrites]);
 const livePostRoutes = new Set(["email-access", "email-access/request"]);
-const getRoutes = new Set(["session", "billing/status"]);
+const getRoutes = new Set([billingCatalog, guestStatus, "session", "billing/status"]);
 const postRoutes = new Set([
   "passkeys/register/options", "passkeys/register/verify",
   "passkeys/login/options", "passkeys/login/verify",
   "pair/preview", "pair/approve", "logout", "delete",
-  "billing/portal", "billing/app-link", ...guestBillingRoutes,
+  "billing/portal", "billing/app-link", ...billingAccountPosts, ...guestPostRoutes,
 ]);
 const prefix = "/api/account/";
 const jsonType = "application/json";
 const maxBodyBytes = 64 * 1024;
 const ownedCookie = /^__Host-at_(?:session|flow)=/;
+const sessionCookie = /^__Host-at_session=[A-Za-z0-9_-]{43}$/;
+const idempotencyPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const setCookie = /^__Host-at_(?:session|flow)=(?:[A-Za-z0-9_-]{43})?; Max-Age=\d+; Path=\/; HttpOnly; Secure; SameSite=Strict$/;
 
 /** @param {string | undefined} origin */
@@ -28,13 +33,19 @@ function routeFromPath(url = "", functionPath) {
   const delimiter = url.indexOf("?");
   const pathname = delimiter === -1 ? url : url.slice(0, delimiter);
   const query = new URLSearchParams(delimiter === -1 ? "" : url.slice(delimiter + 1));
-  const rewritten = query.size === 1 ? query.get("account_route") : null;
-  if (pathname.startsWith(prefix)) {
-    const route = pathname.slice(prefix.length);
-    // Vercel may keep the original pathname and append the rewrite parameter.
-    return delimiter === -1 || rewritten === route ? route : null;
+  const rewritten = query.get("account_route");
+  const direct = pathname.startsWith(prefix);
+  const route = direct ? pathname.slice(prefix.length) : pathname === functionPath ? rewritten : null;
+  if (!route) return null;
+
+  // Vercel may keep the original pathname and append the rewrite parameter.
+  if (route === guestStatus) {
+    const checkoutId = query.get("checkoutId");
+    if (!checkoutId?.trim() || query.size !== (rewritten === null ? 1 : 2)
+      || (rewritten !== null && rewritten !== route)) return null;
+    return { route, search: `?${new URLSearchParams({ checkoutId })}` };
   }
-  return pathname === functionPath ? rewritten : null;
+  return (direct && delimiter === -1) || (query.size === 1 && rewritten === route) ? { route, search: "" } : null;
 }
 
 function reply(res, status, error) {
@@ -55,11 +66,13 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
   }
   if (!backend) return reply(res, 503, "not_configured");
 
-  const route = routeFromPath(req.url, functionPath);
-  const catalog = route === billingCatalog;
-  if (publicBilling && !catalog && !guestBillingRoutes.has(route)) return reply(res, 404, "not_found");
+  const destination = routeFromPath(req.url, functionPath);
+  if (!destination) return reply(res, 404, "not_found");
+  const { route, search } = destination;
+  const publicRoute = route === billingCatalog || route === guestStatus || guestPostRoutes.has(route);
+  if (publicBilling && !publicRoute) return reply(res, 404, "not_found");
   const canPost = postRoutes.has(route) || (vercelEnvironment === "production" && livePostRoutes.has(route));
-  const method = catalog || getRoutes.has(route) ? "GET" : canPost ? "POST" : null;
+  const method = getRoutes.has(route) ? "GET" : canPost ? "POST" : null;
   if (!method) return reply(res, 404, "not_found");
   if (req.method !== method) {
     res.setHeader("Allow", method);
@@ -78,10 +91,20 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
   if (vercelEnvironment === "production" && typeof visitorIp === "string" && isIP(visitorIp)) {
     headers["X-AT-Account-Client-IP"] = visitorIp;
   }
-  const forwardCookies = !catalog && !guestBillingRoutes.has(route);
+  const forwardCookies = !publicRoute;
   if (forwardCookies) {
     const cookies = req.headers.cookie?.split(";").map((value) => value.trim()).filter((value) => ownedCookie.test(value));
+    if (billingAccountPosts.has(route) && !cookies?.some((cookie) => sessionCookie.test(cookie))) {
+      return reply(res, 401, "sign_in_required");
+    }
     if (cookies?.length) headers.Cookie = cookies.join("; ");
+  }
+  if (subscriptionWrites.has(route)) {
+    const key = req.headers["idempotency-key"];
+    if (typeof key !== "string" || !idempotencyPattern.test(key)) {
+      return reply(res, 400, "creem_invalid_idempotency_key");
+    }
+    headers["Idempotency-Key"] = key;
   }
 
   try {
@@ -100,7 +123,7 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
       body = Buffer.concat(chunks);
       headers["Content-Type"] = jsonType;
     }
-    const response = await fetch(`${backend}/v1/account/${route}`, {
+    const response = await fetch(`${backend}/v1/account/${route}${search}`, {
       method, headers, body, redirect: "manual", signal: AbortSignal.timeout(50_000),
     });
     if (route === guestResend && response.status === 202) {

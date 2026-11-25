@@ -40,6 +40,13 @@ test("account sessions and public billing stay on their assigned origins", async
     if (url.endsWith("/billing/guest-resend")) {
       return new Response(null, { status: 202, headers });
     }
+    if (new URL(url).pathname.endsWith("/billing/guest-status")) {
+      return Response.json({ state: "delivered" }, { headers });
+    }
+    if (url.endsWith("/billing/cancel-pending-change") && upstreamStatus === 202) {
+      return Response.json({ subscription: { pendingChange: { offerId: "standard-monthly", effectiveAt: null } },
+        operationPending: true }, { status: 202, headers });
+    }
     const payload = url.endsWith("/billing/catalog")
       ? { offers, guestCheckoutEnabled: true }
       : url.endsWith("/billing/guest-checkout")
@@ -254,6 +261,114 @@ test("account sessions and public billing stay on their assigned origins", async
     assert.equal(request.url, "https://cloudflare.anytranslator.app/v1/account/billing/guest-resend");
     assert.equal(request.body.toString(), guestResend.body.toString());
   }
+
+  const directStatus = "/api/account/billing/guest-status";
+  const statusQuery = "checkoutId=ch_fixture%2Btest";
+  const statusRewrite = "account_route=billing%2Fguest-status";
+  for (const { options, domain, environment, functionPath } of [
+    { options: liveCatalog, domain: "https://cloudflare.anytranslator.app", environment: "production", functionPath: "/api/account-catalog" },
+    { options: liveAccount, domain: "https://cloudflare.anytranslator.app", environment: "production", functionPath: "/api/account-live" },
+    { options: { headers: { cookie: accountCookie } }, domain: env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN,
+      environment: "preview", functionPath: "/api/account-preview" },
+  ]) {
+    process.env.VERCEL_ENV = environment;
+    for (const url of [
+      `${directStatus}?${statusQuery}`,
+      `${directStatus}?${statusQuery}&${statusRewrite}`,
+      `${functionPath}?${statusRewrite}&${statusQuery}`,
+    ]) {
+      const response = await call({ ...options, method: "GET", url, headers: { ...options.headers, origin: undefined } });
+      assert.equal(response.statusCode, 200);
+      assert.deepEqual(response.body, { state: "delivered" });
+      assert.equal(response.headers["cache-control"], "private, no-store");
+      assert.equal(response.headers["set-cookie"], undefined);
+      assert.equal(request.url, `${domain}/v1/account/billing/guest-status?${statusQuery}`);
+      assert.equal(request.method, "GET");
+      assert.equal(request.body, undefined);
+      assert.equal(request.headers.Cookie, undefined);
+      assert.equal(request.headers.Origin, environment === "preview" ? origin : "https://account.anytranslator.app");
+    }
+    const attempted = upstream.mock.callCount();
+    const url = `${directStatus}?${statusQuery}`;
+    const wrongMethod = await call({ ...options, url, method: "POST" });
+    assert.equal(wrongMethod.statusCode, 405);
+    assert.equal(wrongMethod.headers.allow, "GET");
+    assert.equal((await call({ ...options, url, method: "GET", headers: { ...options.headers, "sec-fetch-site": "cross-site" } })).statusCode, 403);
+    for (const invalid of [
+      directStatus,
+      `${directStatus}?checkoutId=`,
+      `${directStatus}?${statusQuery}&checkoutId=other`,
+      `${directStatus}?${statusQuery}&other=unexpected`,
+      `${directStatus}?${statusQuery}&account_route=billing%2Fstatus`,
+      `${functionPath}?${statusRewrite}&${statusRewrite}&${statusQuery}`,
+    ]) {
+      assert.equal((await call({ ...options, method: "GET", url: invalid })).statusCode, 404, invalid);
+    }
+    assert.equal(upstream.mock.callCount(), attempted);
+  }
+  process.env.VERCEL_ENV = "production";
+
+  const accountWrites = [
+    ["checkout", { offer: offers[1], locale: "zh-tw" }],
+    ["change-plan", { offer: offers[4] }],
+    ["cancel-pending-change", {}],
+    ["cancel", {}],
+    ["resume", {}],
+  ];
+  for (const [operation, payload] of accountWrites) {
+    const route = `billing/${operation}`;
+    const url = `/api/account/${route}`;
+    const body = Buffer.from(JSON.stringify(payload));
+    const key = "01234567-89ab-4def-8901-23456789abcd";
+    const requestKey = operation !== "checkout" ? key : undefined;
+    assert.equal((await call({ ...publicCheckout, url, body })).statusCode, 404);
+    for (const [envName, options, functionPath, backend] of [
+      ["production", liveAccount, "/api/account-live", "https://cloudflare.anytranslator.app"],
+      ["preview", { headers: { cookie: accountCookie } }, "/api/account-preview", env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN],
+    ]) {
+      process.env.VERCEL_ENV = envName;
+      const scopedHeaders = { ...options.headers, cookie: `unrelated=discard; ${accountCookie}`, "idempotency-key": key };
+      for (const incoming of [url, `${functionPath}?account_route=${encodeURIComponent(route)}`]) {
+        const response = await call({ ...options, url: incoming, body, headers: scopedHeaders });
+        assert.equal(response.statusCode, 200);
+        assert.equal(response.headers["cache-control"], "private, no-store");
+        assert.equal(request.url, `${backend}/v1/account/${route}`);
+        assert.equal(request.headers.Cookie, accountCookie);
+        assert.equal(request.headers["Idempotency-Key"], requestKey);
+        assert.deepEqual(JSON.parse(request.body), payload);
+      }
+      const calls = upstream.mock.callCount();
+      const get = await call({ ...options, url, method: "GET" });
+      assert.equal(get.statusCode, 405);
+      assert.equal(get.headers.allow, "POST");
+      for (const origin of [undefined, "https://foreign.example"]) {
+        assert.equal((await call({ ...options, url, body, headers: { ...scopedHeaders, origin } })).statusCode, 403);
+      }
+      assert.equal((await call({ ...options, url, body, headers: { ...scopedHeaders, "sec-fetch-site": "cross-site" } })).statusCode, 403);
+      for (const cookie of [undefined, "unrelated=discard", "__Host-at_session=invalid", "__Host-at_flow=flow"]) {
+        assert.equal((await call({ ...options, url, body, headers: { ...scopedHeaders, cookie } })).statusCode, 401);
+      }
+      if (requestKey) {
+        for (const key of [undefined, "invalid", [requestKey, requestKey]]) {
+          assert.equal((await call({ ...options, url, body, headers: { ...scopedHeaders, "idempotency-key": key } })).statusCode, 400);
+        }
+      }
+      assert.equal(upstream.mock.callCount(), calls);
+      upstreamStatus = 401;
+      assert.equal((await call({ ...options, url, body, headers: scopedHeaders })).statusCode, 401);
+      if (operation === "cancel-pending-change") {
+        upstreamStatus = 202;
+        const response = await call({ ...options, url, body, headers: scopedHeaders });
+        assert.equal(response.statusCode, 202);
+        assert.equal(response.body.operationPending, true);
+        assert.equal(response.body.subscription.pendingChange.offerId, "standard-monthly");
+        assert.equal(request.headers["Idempotency-Key"], key);
+      }
+      upstreamStatus = 200;
+    }
+    process.env.VERCEL_ENV = "production";
+  }
+
   const accepted = upstream.mock.callCount();
   assert.equal((await call({ ...guestResend, method: "GET" })).statusCode, 405);
   assert.equal((await call({ ...guestResend, headers: { ...guestResend.headers, origin: undefined } })).statusCode, 403);

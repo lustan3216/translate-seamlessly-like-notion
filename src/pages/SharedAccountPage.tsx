@@ -2,7 +2,9 @@ import { useEffect, useRef, useState, type FormEvent, type ReactNode } from "rea
 import { Helmet } from "react-helmet-async";
 import { useLocation, useNavigate } from "react-router-dom";
 import MarketingShell, { useMarketing } from "@/components/marketing/MarketingShell";
-import { accountRequest, AccountRequestError, clearStoredCheckoutAttempt, visitCreem } from "@/lib/shared-account-client";
+import {
+  accountRequest, AccountRequestError, clearStoredCheckoutAttempt, isAccountCheckoutReturn, type AccountBilling,
+} from "@/lib/shared-account-client";
 import { createPasskey, getPasskey, type LoginOptions, type RegistrationOptions } from "@/lib/passkeys";
 import { sharedAccountCopy } from "@/translations/marketing/shared-account";
 import { isLiveAccountHost, sharedAccountLiveAccountEnabled, sharedAccountPreviewEnabled, useCreemOffer } from "@/lib/shared-account-preview";
@@ -11,15 +13,10 @@ import { guestCheckoutCopy } from "@/translations/marketing/shared-account-guest
 import appClaimCopy from "@/translations/marketing/app-claim.json";
 import creemCopy from "@/translations/marketing/creem-preview.json";
 import BillingReturnPage from "./BillingReturnPage";
+import AccountSubscription from "./AccountSubscription";
 import "./SharedAccountPage.css";
 
 type Account = { id: string; display_name: string };
-type Entitlement = { source: string; plan: string; expiresAt: string; status: string };
-type Billing = {
-  entitlement: Entitlement | null;
-  hasPortal?: boolean;
-  appClaimEmailEnabled?: boolean;
-};
 type Pairing = { confirmation_code: string; expires_at_ms: number };
 type EmailAccessResult = { account: Account } | {
   error: "creem_web_link_unavailable" | "creem_web_account_conflict" | "request_failed";
@@ -58,7 +55,7 @@ export default function SharedAccountPage() {
   const { search } = useLocation();
   const params = new URLSearchParams(search);
   const checkoutId = params.get("checkout_id");
-  return params.get("billing") === "return" && checkoutId
+  return params.get("billing") === "return" && checkoutId && !isAccountCheckoutReturn(checkoutId)
     ? <BillingReturnPage key={checkoutId} checkoutId={checkoutId} />
     : <AccountManagement />;
 }
@@ -68,7 +65,7 @@ function AccountSkeleton({ className = "" }: { className?: string }) {
 }
 
 function AccountManagement() {
-  const { currentLanguage, copy, href } = useMarketing();
+  const { currentLanguage } = useMarketing();
   const location = useLocation();
   const navigate = useNavigate();
   const messages = sharedAccountCopy(currentLanguage.code);
@@ -76,10 +73,10 @@ function AccountManagement() {
   const email = appClaimCopy[currentLanguage.code as keyof typeof appClaimCopy];
   const webPricing = creemCopy[currentLanguage.code];
   const guest = guestCheckoutCopy[currentLanguage.code];
-  const { webEmailAccessEnabled } = useCreemOffer();
-  const manageSubscription = sharedAccountPreviewEnabled ? messages.portal : webPricing.manageSubscription;
+  const catalog = useCreemOffer();
+  const { webEmailAccessEnabled } = catalog;
   const [account, setAccount] = useState<Account | null>();
-  const [billing, setBilling] = useState<Billing>();
+  const [billing, setBilling] = useState<AccountBilling>();
   const [pair, setPair] = useState<Pairing>();
   const [pairProblem, setPairProblem] = useState<"expired" | "failed">();
   const [pairRefresh, setPairRefresh] = useState(0);
@@ -166,7 +163,7 @@ function AccountManagement() {
     let timer: number | undefined;
     let attempts = 0;
     function loadBilling() {
-      accountRequest<Billing>("/billing/status", undefined, controller.signal)
+      accountRequest<AccountBilling>("/billing/status", undefined, controller.signal)
         .then((status) => {
           if (controller.signal.aborted) return;
           // On checkout return, allow the provider webhook to finish before showing a pending payment.
@@ -300,6 +297,7 @@ function AccountManagement() {
     : error === "pairing_unavailable" ? messages.pairExpired
     : ["billing_needs_attention", "account_has_active_billing", "billing_cancellation_required"].includes(error)
       ? sharedAccountPreviewEnabled ? messages.billingBlock : webPricing.deletionBlocked
+    : error === "creem_quote_changed" ? webPricing.quoteChanged
     : error === "passkey_cancelled" ? messages.passkeyCancelled
     : error === "sign_in_required" ? messages.signIn
     : messages.error;
@@ -371,14 +369,6 @@ function AccountManagement() {
                 ) : billing === undefined ? <AccountSkeleton />
                   : (
                       <>
-                        {billing.entitlement && (
-                          <>
-                            <p><strong>{copy.pricing.standardTitle}</strong></p>
-                            {expiry && Number.isFinite(expiry.getTime()) && (
-                              <p>{messages.paidUntil.replace("{date}", new Intl.DateTimeFormat(currentLanguage.code, { dateStyle: "medium" }).format(expiry))}</p>
-                            )}
-                          </>
-                        )}
                         {allowAccountUse && billingReturn && !billing.entitlement && (
                           <>
                             <p role="status">{delivery.paymentPending}</p>
@@ -386,17 +376,8 @@ function AccountManagement() {
                               onClick={() => setRefresh((value) => value + 1)}>{messages.retry}</button>
                           </>
                         )}
-                        <div className="mk-account-actions">
-                          {allowAccountUse && !billingReturn && !paidAccess && (
-                            <a className="mk-button" href={href("/pricing")}>{messages.choosePlan}</a>
-                          )}
-                          {(billing.entitlement || billing.hasPortal) && (
-                            <button className="mk-button mk-button-secondary" type="button" disabled={busy} onClick={() => void run(async () => {
-                              const data = await accountRequest<{ portalUrl: string }>("/billing/portal", {});
-                              visitCreem(data.portalUrl);
-                            })}>{manageSubscription}</button>
-                          )}
-                        </div>
+                        <AccountSubscription key={account.id} accountId={account.id} billing={billing} catalog={catalog} busy={busy}
+                          allowActions={allowAccountUse} allowCheckout={!billingReturn} run={run} onBillingChange={setBilling} />
                       </>
                     )}
               </AccountSection>}

@@ -68,6 +68,39 @@ test("returns 502 without requesting app settings when web settings return 400",
   assert.deepEqual(JSON.parse(fetch.mock.calls[0].arguments[1].body), { surface: "web", locale: "en_US" });
 });
 
+test("retains the public offer-to-plan mapping and whitelists App benefit fields", async ({ mock }) => {
+  const features = [
+    { id: "translation", quotaKey: "translateCount", internal: "omit" },
+    { id: "smartScan", maxPhotosPerBatch: 17 },
+    { id: "multilingualSubtitles", maxLanguages: 4, internal: "omit" },
+    { id: "futureFeature", quotaKey: "not_a_quota", maxLanguages: -1 },
+    { id: "unexpected string with spaces", unrelated: true },
+  ];
+  const offer = { plan: "standard", period: "monthly", productId: paidId };
+  mock.method(globalThis, "fetch", async () => Response.json({
+    configVersion: "v104",
+    subscription: { ...snapshot.plans, [paidId]: { ...snapshot.plans[paidId], features, groupLevel: 4 },
+      "com.gpt.langpt.voice.1month": { ...snapshot.plans["com.gpt.langpt.voice.1month"], groupLevel: 0 } },
+    affiliate: snapshot.affiliate,
+    billingOffers: {
+      "standard-monthly": { ...offer, internal: "omit" },
+      "standard-weekly": { ...offer, period: "weekly", productId: "missing-product" },
+      "voice-monthly": { ...offer, plan: "voice", productId: "free" },
+    },
+  }));
+  const response = await request();
+  assert.equal(response.status, 200);
+  assert.deepEqual(response.body.billingOffers, { "standard-monthly": offer });
+  assert.equal(response.body.plans[paidId].groupLevel, 4);
+  assert.equal(response.body.plans["com.gpt.langpt.voice.1month"].groupLevel, undefined);
+  assert.deepEqual(response.body.plans[paidId].features, [
+    { id: "translation", quotaKey: "translateCount" },
+    { id: "smartScan", maxPhotosPerBatch: 17 },
+    { id: "multilingualSubtitles", maxLanguages: 4 },
+    { id: "futureFeature" },
+  ]);
+});
+
 test("returns 502 for unsuccessful or malformed settings", async ({ mock }) => {
   const configVersion = "v101";
   const { affiliate } = snapshot;
