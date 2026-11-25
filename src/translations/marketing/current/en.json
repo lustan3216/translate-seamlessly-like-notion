@@ -166,7 +166,69 @@
         "Dish names, descriptions and prices become easy-to-browse choices.",
         "Choose quantities, sizes, available extras and notes to suit you.",
         "Show your original-language order, with known prices totalled by currency."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "How to use",
+          "items": [
+            {
+              "title": "Add a menu photo",
+              "body": "In Photos, choose Organise, then Menu, add a photo and tap the scan arrow.",
+              "image": { "src": "/app-preview/videos/20261124/en/menu-step-1.webp", "width": 720, "height": 1560 }
+            },
+            {
+              "title": "Read the translated menu",
+              "body": "After scanning, browse dish names, descriptions and prices by menu section.",
+              "image": { "src": "/app-preview/videos/20261124/en/menu-step-2.webp", "width": 720, "height": 1560 }
+            },
+            {
+              "title": "Choose quantities and extras",
+              "body": "Set the quantity with plus and minus, then choose any available sizes or extras.",
+              "image": { "src": "/app-preview/videos/20261124/en/menu-step-3.webp", "width": 720, "height": 1560 }
+            },
+            {
+              "title": "Show staff your order",
+              "body": "Tap Show Staff to open the order in the menu’s original language.",
+              "image": { "src": "/app-preview/videos/20261124/en/menu-step-4.webp", "width": 720, "height": 1560 }
+            }
+          ]
+        },
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "Check the original menu text",
+              "body": "Tap a dish to see its original name, description and listed price."
+            },
+            {
+              "title": "Add an order note",
+              "body": "Add a request to your order so staff can see it when you show them."
+            },
+            {
+              "title": "See totals by currency",
+              "body": "When all selected dishes and extras have known prices, each currency has its own total."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Dining abroad",
+              "body": "Read the dishes and prices on a local menu before you decide what to order."
+            },
+            {
+              "title": "Choosing extras at a café",
+              "body": "Choose how many coffees you want, then check what milk options or extras are available."
+            },
+            {
+              "title": "Ordering for friends",
+              "body": "Put everyone’s dishes, quantities and notes together in one order."
+            }
+          ]
+        },
+        "faq": ["Scan", "Free"]
+      }
     },
     "document": {
       "title": "Document scanning: organised by page, with structure intact.",
@@ -177,7 +239,19 @@
         "Organise photos in page order, keeping headings, paragraphs and lists.",
         "Tap to compare source text and images, so details are easier to check.",
         "Search scan history to find your document again."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "View the original photo",
+              "body": "Tap the photo icon in the top right of a scan result to open the original photo and compare it with the corresponding page.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Keyboard translation: prepare replies in the App you're using.",
@@ -681,18 +755,14 @@
       "helper.primary": "Helper grammar explanation: Russian conditional phrasing, times and cases in a work rescheduling message, explained in English.",
       "photos.primary": "Photo translation: Traditional Chinese text overlays on a real drinks menu, alongside the English source.",
       "table.primary": "Table translation: a public Zion shuttle timetable with three date ranges and first and last departure times.",
-      "table.cell-source": "Table source comparison: opening a first-departure cell to see its English row heading.",
       "document.primary": "Document translation: a public park transport guide organized into English paragraphs, covering cycling and driving.",
       "document.original": "Original document image: the three-column Getting Around leaflet, showing page 1 of 1 of the same document.",
       "menu.primary": "Menu translation: coffee drinks and prices, with 2 selected lattes and a total of 7.80.",
-      "menu.options": "Menu ordering: selecting 2 lattes/flat whites with oat milk, with a total of 7.80.",
-      "menu.staff": "Show staff: original-language latte/flat white and oat milk order for 2, totalling 7.80.",
       "chat.primary": "AI assistant restaurant scenario: a beginner English waiter opening, with conversation tasks and key phrases.",
       "chat.chat-entry": "AI assistant modes: Smart conversation, Goal practice and Scenario practice; choose a language and difficulty before starting.",
       "keyboard.primary": "Native iOS keys and the AnyTranslator translation toolbar, with an English work-message draft in the composer.",
       "widget.primary": "Native Learning Widget preview: a large coffee card with a Chinese sentence, Pinyin, English gloss and usage tip, plus review controls.",
-      "screen-translation.primary": "Screen text translation: a public English park-driving guide in Preview, with a Traditional Chinese picture-in-picture translation.",
-      "screen-translation.setup": "Any App translation setup: video subtitles or screen text, English target language, and original-text display settings."
+      "screen-translation.primary": "Screen text translation: a public English park-driving guide in Preview, with a Traditional Chinese picture-in-picture translation."
     }
   }
 }

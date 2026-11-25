@@ -11,8 +11,8 @@ function checkRequiredNativeImageGate() {
     const [locale, feature, shotId] = identity.split('/');
     return { locale, feature, shotId };
   });
-  assert.ok(hasRequiredNativeImages(captures), 'All 19 required identities can be complete.');
-  assert.ok(!hasRequiredNativeImages(captures.filter((capture) => captureIdentity(capture) !== 'zh-tw/screen-translation/screen-text')), '11 primaries with only 7 gallery shots must stay partial.');
+  assert.ok(hasRequiredNativeImages(captures), 'The original capture batch can be complete.');
+  assert.ok(!hasRequiredNativeImages(captures.filter((capture) => captureIdentity(capture) !== 'zh-tw/screen-translation/screen-text')), 'An original capture batch with a missing supplementary capture must stay partial.');
   assert.ok(!hasRequiredNativeImages([...captures, captures[0]]), 'A duplicate cannot replace a required image.');
   assert.ok(!hasRequiredNativeImages([...captures, { locale: 'zh-tw', feature: 'chat', shotId: 'extra' }]), 'Unexpected images cannot pass the exact review set.');
 }
@@ -41,7 +41,6 @@ function checkPublishedNativeSelection(captures, index) {
       assert.equal(published?.src, selected.src, `Publish the reviewed native ${shotId} screenshot for ${feature}.`);
       assert.equal(published.alt, selected.alt, `Published description must match the actual ${shotId} screenshot.`);
       assert.ok(!published.gallery?.some((capture) => capture.src === selected.src), `The displayed ${feature} image must not repeat in its gallery.`);
-      if (feature === 'screen-translation') assert.ok(published.gallery?.some((capture) => capture.shotId === 'setup'), 'The actual screen-text result must retain the verified setup screenshot in its gallery.');
     } else {
       assert.equal(published, undefined, `Missing reviewed ${feature} screenshot must not fall back to the withheld example.`);
     }
@@ -61,6 +60,11 @@ async function check() {
   const manifest = await json('public/app-preview/native/manifest.json', { status: 'awaiting-capture', captures: [] });
   const index = await json('src/data/native-product-screens.json', {});
   assert.ok(Array.isArray(manifest.captures), 'Native manifest must contain captures[].');
+  const publishedImages = Object.values(index).flatMap((entries) => Object.values(entries).flatMap((entry) => [entry, ...(entry.gallery ?? [])]));
+  const publishedSources = new Set(publishedImages.map(({ src }) => src));
+  // The manifest retains capture receipts even when a supplementary WebP leaves the site.
+  const retainedCaptures = manifest.captures.filter((capture) => captureShotId(capture) === 'primary' || publishedSources.has(capture.src));
+  const retainedSources = new Set(retainedCaptures.map(({ src }) => src));
   assert.equal(nativeLocales.length, 19); assert.equal(requiredNativeFeatures.length, 11); assert.ok(nativeFeatures.includes('table') && nativeFeatures.includes('screen-translation') && !nativeFeatures.includes('agent'));
   const required = requiredNativeLocales.length * requiredNativeFeatures.length;
   const verified = new Set();
@@ -114,6 +118,12 @@ async function check() {
     }
     assert.ok(typeof capture.src === 'string' && capture.src.startsWith('/app-preview/native/') && !capture.src.split('/').includes('..'), `Native image cannot point to an old asset or another locale: ${id}`);
     assert.ok(capture.src.endsWith(`/${capture.locale}/${stem}.webp`), `Native path must match its exact locale, feature and shotId: ${id}`);
+    assert.equal(digest(await decodedRGB(screenBytes)), capture.originalRGBSHA256, `Original RGB proof differs from the preserved PNG: ${id}`);
+    verifiedImages.add(id);
+    if (['current-main', 'verified-review-source'].includes(captureFreshness(capture))) verifiedReviewImages.add(id);
+    if (captureShotId(capture) === 'primary') verified.add(label(capture.locale, capture.feature));
+    if (captureShotId(capture) === 'primary' && captureFreshness(capture) === 'current-main') currentMain.add(label(capture.locale, capture.feature));
+    if (!retainedSources.has(capture.src)) continue;
     const bytes = await readFile(path.join(websiteRoot, 'public', capture.src));
     assert.equal(bytes.length, capture.bytes, `WebP byte count mismatch: ${id}`);
     assert.equal(digest(bytes), capture.sha256, `WebP hash mismatch: ${id}`);
@@ -121,7 +131,6 @@ async function check() {
     const output = await validateNativeWebp(bytes, screenBytes, nativeMaxWidth, id);
     assert.equal(output.width, capture.width); assert.equal(output.height, capture.height);
     assert.equal(output.decodedRGBSHA256, capture.decodedRGBSHA256, `Output RGB proof differs from the verified source raster: ${id}`);
-    assert.equal(digest(await decodedRGB(screenBytes)), capture.originalRGBSHA256, `Original RGB proof differs from the preserved PNG: ${id}`);
     assert.equal(capture.fullResolutionPixelPreserved, capture.originalWidth <= nativeMaxWidth, `Incorrect native pixel-preservation claim: ${id}`);
     if (capture.fullResolutionPixelPreserved) assert.equal(capture.decodedRGBSHA256, capture.originalRGBSHA256, `Native resolution WebP pixels must match the raw PNG exactly: ${id}`);
     const temporary = capture.captureMethod === 'iphone-mirroring';
@@ -142,12 +151,8 @@ async function check() {
     }
     const srcSet = capture.responsiveVariants.length ? `${capture.responsiveVariants[0].src} ${capture.responsiveVariants[0].width}w, ${capture.src} ${capture.width}w` : undefined;
     assert.equal(capture.srcSet, srcSet, `srcSet must reference exactly the verified responsive and full images: ${id}`);
-    verifiedImages.add(id);
-    if (['current-main', 'verified-review-source'].includes(captureFreshness(capture))) verifiedReviewImages.add(id);
-    if (captureShotId(capture) === 'primary') verified.add(label(capture.locale, capture.feature));
-    if (captureShotId(capture) === 'primary' && captureFreshness(capture) === 'current-main') currentMain.add(label(capture.locale, capture.feature));
   }
-  assert.deepEqual(index, buildNativeIndex(manifest.captures), 'Native primary/gallery index differs from verified captures or contains a fallback.');
+  assert.deepEqual(index, buildNativeIndex(retainedCaptures), 'Native primary/gallery index differs from the selected verified captures or contains a fallback.');
   checkPublishedNativeSelection(manifest.captures, index);
   if (manifest.captures.length) {
     assert.equal(manifest.requiredCaptureCount, required, 'Required coverage must match the explicitly authorized locales and all features.');
@@ -170,14 +175,13 @@ async function check() {
     assert.equal(coverage.verifiedReviewImageCount, verifiedReviewImages.size, 'Verified review count must include only the explicitly approved actual sources.');
   }
   const replacements = manifest.captures.filter(({ replacementRequired }) => replacementRequired);
-  console.log(`Native source metadata/bytes: ${verified.size}/${required} draft primary captures and ${verifiedImages.size - verified.size} gallery images validated (${nativeCaptureScope}; requiredLocales=${JSON.stringify(requiredNativeLocales)} × ${requiredNativeFeatures.length} features).`);
+  console.log(`Native capture records: ${verified.size}/${required} primary and ${verifiedImages.size - verified.size} supplementary source records validated (${nativeCaptureScope}). Native WebP files verified: ${retainedCaptures.length}; source-only records: ${verifiedImages.size - retainedCaptures.length}.`);
   console.log(`Independent artifact source receipts: ${coverage.sourceVerifiedCaptureCount} primary captures, ${coverage.sourceVerifiedImageCount} total images.`);
   console.log(`Current main ${targetSourceCommit}: ${currentMain.size}/${required} primary captures, ${coverage.currentMainImageCount}/${verifiedImages.size} preserved images; ${coverage.historicalDraftCaptureCount} historical draft primaries and ${coverage.historicalDraftImageCount} historical images.`);
-  const publishedImages = Object.values(index).flatMap((entries) => Object.values(entries).flatMap((entry) => [entry, ...(entry.gallery ?? [])]));
-  console.log(`Published native App images: ${new Set(publishedImages.map((entry) => entry.src)).size} distinct screenshots; attributed photo/video examples stay withheld from the page index.`);
-  if (coverage.verifiedReviewImageCount !== undefined) console.log(`Verified native review: ${coverage.verifiedReviewImageCount}/19 images; actual source counts ${JSON.stringify(manifest.captureSourceImageCounts)}. Additional-source images are not relabelled as the content baseline.`);
+  console.log(`Published native App images: ${publishedSources.size} distinct screenshots; attributed photo/video examples stay withheld from the page index.`);
+  if (coverage.verifiedReviewImageCount !== undefined) console.log(`Verified native review: ${coverage.verifiedReviewImageCount}/${requiredCurrentImages.size} original captures; actual source counts ${JSON.stringify(manifest.captureSourceImageCounts)}. Additional-source images are not relabelled as the content baseline.`);
   console.log(`Deferred locales: ${deferredNativeLocales.length}; no fallback and no claim of completed screenshots for those locales.`);
-  assert.deepEqual(verifiedReviewImages, requiredCurrentImages, `Native review requires all 19 exact zh-tw primary/gallery identities; missing: ${[...requiredCurrentImages].filter((id) => !verifiedReviewImages.has(id)).join(', ') || 'none'}.`);
+  assert.deepEqual(verifiedReviewImages, requiredCurrentImages, `Original native review requires the exact capture receipts; missing: ${[...requiredCurrentImages].filter((id) => !verifiedReviewImages.has(id)).join(', ') || 'none'}.`);
   if (currentMissing.length || coverage.staleImageCount || replacements.length) {
     console.error(`Incomplete current-main capture set: ${required - currentMain.size} current-source primary captures missing, ${coverage.staleImageCount} active images are historical/source-unverified/low-resolution, ${replacements.length} temporary Mirroring captures need replacement; status=${manifest.status || 'unknown'}.`);
     for (const entry of currentMissing) console.error(`- current main missing ${entry.locale}: ${entry.features.join(', ')}`);

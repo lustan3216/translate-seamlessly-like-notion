@@ -23,8 +23,16 @@ function compare(value, reference, label) {
     assert.equal(value.length, reference.length, `Missing list items: ${label}`);
     reference.forEach((item, index) => compare(value[index], item, `${label}.${index}`));
   } else {
-    assert.deepEqual(Object.keys(value).sort(), Object.keys(reference).sort(), `Translation key coverage: ${label}`);
-    for (const key of Object.keys(reference)) compare(value[key], reference[key], `${label}.${key}`);
+    const optionalGuide = /^[^.]+\.features\.[^.]+$/.test(label);
+    const requiredKeys = (object) => Object.keys(object).filter((key) => !optionalGuide || key !== "guide").sort();
+    assert.deepEqual(requiredKeys(value), requiredKeys(reference), `Translation key coverage: ${label}`);
+    for (const key of requiredKeys(reference)) compare(value[key], reference[key], `${label}.${key}`);
+    if (optionalGuide && Object.hasOwn(value, "guide")) {
+      for (const [key, block] of Object.entries(value.guide)) {
+        assert.ok(["steps", "abilities", "situations", "faq"].includes(key), `Unknown guide block: ${label}.${key}`);
+        compare(block, reference.guide?.[key] ?? block, `${label}.guide.${key}`);
+      }
+    }
   }
 }
 assert.deepEqual(Object.keys(returnCopy).sort(), SITE_LOCALES.map(({ code }) => code).sort(), "Payment return locale coverage");
@@ -68,7 +76,21 @@ try {
     assert.equal((home.html.match(/data-home-scenario=/g) || []).length, 10, `All everyday scenarios: ${locale.code}`);
     for (const feature of catalog.features) {
       const detail = copy.features[feature.id];
-      check(`/features/${feature.id}`, [detail.title, detail.heading, detail.body, ...detail.steps, ...(detail.sections || []).flatMap((section) => [section.title, section.body, ...(section.items || [])])]);
+      const guide = detail.guide;
+      const hasGuideSteps = Boolean(guide?.steps?.items.length);
+      const stepsAndGuide = [
+        ...(hasGuideSteps ? [] : detail.steps),
+        ...[guide?.steps, guide?.abilities, guide?.situations].flatMap((section) => section?.items.length
+          ? [section.title, ...section.items.flatMap((item) => [item.title, item.body])]
+          : []),
+        ...(guide?.faq ?? []).flatMap((topic) => [copy.marketing[`faq.${topic}Q`], copy.marketing[`faq.${topic}A`]].filter(Boolean)),
+      ];
+      const { html } = check(`/features/${feature.id}`, [detail.title, detail.heading, detail.body, ...stepsAndGuide, ...(detail.sections || []).flatMap((section) => [section.title, section.body, ...(section.items || [])])]);
+      assert.equal(html.includes('class="mk-step-list"'), !hasGuideSteps, `Feature step layout: ${locale.code}/${feature.id}`);
+      assert.equal((html.match(/<summary>/g) ?? []).length, guide?.faq?.length ?? 0, `Feature FAQ topics: ${locale.code}/${feature.id}`);
+      for (const { image } of guide?.steps?.items ?? []) {
+        assert.ok(html.includes(`src="${image.src}"`), `Missing step image: ${locale.code}/${feature.id}: ${image.src}`);
+      }
     }
     for (const item of catalog.cases) check(`/use-cases/${item.id}`, copy.workflows[item.id]);
     for (const article of catalog.articles) check(`/blog/${article.slug}`, ["intro", "tip", "limit"].map((part) => article.id === "document" ? copy.documentArticle[part] : copy.articles[`${article.id}.${part}`]));

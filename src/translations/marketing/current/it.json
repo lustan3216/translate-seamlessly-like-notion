@@ -177,7 +177,19 @@
         "Le foto di più pagine restano in ordine, con titoli, paragrafi ed elenchi.",
         "Tocca per confrontare testo e immagine originali, anche nei documenti lunghi.",
         "Cerca nella cronologia delle scansioni e ritrova i documenti quando servono."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Cosa puoi fare",
+          "items": [
+            {
+              "title": "Visualizza la foto originale",
+              "body": "Tocca l’icona della foto in alto a destra nel risultato della scansione per aprire la foto originale e confrontarla con la pagina corrispondente.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Tastiera di traduzione: rispondi nella tua app.",
@@ -681,18 +693,14 @@
       "helper.primary": "Spiegazione Helper: condizionale, tempo e casi di un messaggio professionale russo per spostare un appuntamento, in italiano.",
       "photos.primary": "Traduzione di foto: italiano sovrapposto a un vero menu di bevande, con l’originale.",
       "table.primary": "Traduzione di tabelle: orario pubblico della navetta di Zion con tre intervalli di date e prime e ultime corse.",
-      "table.cell-source": "Confronto della tabella originale: prima corsa della navetta aperta per vedere l’intestazione di riga inglese corrispondente.",
       "document.primary": "Traduzione di documento: opuscolo pubblico sui trasporti del parco in paragrafi italiani, con informazioni per bici e auto.",
       "document.original": "Immagine originale del documento: testo pubblico «Getting Around» su tre colonne, pagina 1/1 dello stesso documento.",
       "menu.primary": "Traduzione menu: caffè e prezzi organizzati, con 2 Latte selezionati e totale di 7.80.",
-      "menu.options": "Ordine dal menu: Latte/Flat White con latte d’avena, quantità 2 e totale di 7.80.",
-      "menu.staff": "Mostra al personale: ordine originale di Latte/Flat White, latte d’avena e quantità 2, totale di 7.80.",
       "chat.primary": "Scenario ristorante dell’assistente IA: saluto del cameriere in inglese per principianti, con compiti di conversazione e frasi chiave.",
       "chat.chat-entry": "Modalità dell’assistente IA: conversazione intelligente, pratica per obiettivo e per scenario; scelta di lingua e difficoltà prima di iniziare.",
       "keyboard.primary": "Tasti nativi iOS e barra di traduzione AnyTranslator, con la bozza di un messaggio di lavoro in italiano conservata.",
       "widget.primary": "Anteprima del widget di apprendimento nativo: grande scheda sul caffè con frase cinese, pinyin, traduzione e consigli in italiano e pulsanti di ripasso.",
-      "screen-translation.primary": "Traduzione dello schermo: documento pubblico NPS sulla guida in Preview, con risultato in italiano nella finestra PiP.",
-      "screen-translation.setup": "Impostazioni di traduzione in qualsiasi app: sottotitoli video o testo sullo schermo, italiano come destinazione e visualizzazione dell’originale."
+      "screen-translation.primary": "Traduzione dello schermo: documento pubblico NPS sulla guida in Preview, con risultato in italiano nella finestra PiP."
     }
   }
 }

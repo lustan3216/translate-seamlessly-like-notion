@@ -177,7 +177,19 @@
         "Kuvat järjestyvät sivuittain, ja otsikoiden, kappaleiden ja luetteloiden rakenne säilyy.",
         "Vertaa napauttamalla alkuperäistekstiin ja kuvaan, jotta yksityiskohdat eivät jää huomaamatta.",
         "Hae skannaushistoriasta tarvitsemasi asiakirja."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "Katso alkuperäinen kuva",
+              "body": "Avaa alkuperäinen valokuva napauttamalla skannaustuloksen oikean yläkulman kuvapainiketta ja vertaa sitä vastaavaan sivuun.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Näppäimistökäännös: valmistele vastaus käyttämässäsi apissa.",
@@ -681,18 +693,14 @@
       "helper.primary": "Helperin kielioppiselitys: venäjän työviestin ehtomuoto, aika ja sijamuodot selitettyinä suomeksi.",
       "photos.primary": "Kuvakäännös: suomenkielinen käännöspeite oikean juomalistan englanninkielisen tekstin päällä.",
       "table.primary": "Taulukkokäännös: Zionin bussien julkinen aikataulu, kolme ajanjaksoa sekä ensimmäiset ja viimeiset lähdöt.",
-      "table.cell-source": "Taulukon alkuperäisteksti: ensimmäisen bussin tiedot avattuna vastaavan englanninkielisen riviotsikon tarkistamiseksi.",
       "document.primary": "Asiakirjakäännös: julkinen puiston liikenne-esite suomenkielisiksi kappaleiksi jäsennettynä sekä pyöräily- ja ajo-ohjeet.",
       "document.original": "Alkuperäiskuva: Getting Around -esitteen kolmen sarakkeen alkuperäisteksti, saman asiakirjan sivu 1/1.",
       "menu.primary": "Ruokalistakäännös: kahvijuomat ja hinnat, valittuna 2 lattea, yhteensä 7.80.",
-      "menu.options": "Ruokalistatilaus: latte/flat white kauramaidolla, määrä 2 ja yhteensä 7.80.",
-      "menu.staff": "Näytä henkilökunnalle: alkuperäiskielinen latte/flat white- ja kauramaitotilaus, määrä 2, yhteensä 7.80.",
       "chat.primary": "Tekoälyavustajan ravintolatilanne: tarjoilijan aloitus aloittelijan englannilla, englanninkieliset avainlauseet ja suomenkieliset tehtäväohjeet.",
       "chat.chat-entry": "Tekoälyavustajan keskustelutilat: älykäs keskustelu, tavoiteharjoittelu ja tilanneharjoittelu, kielen ja vaikeuden valinta ennen aloitusta.",
       "keyboard.primary": "iOS:n alkuperäiset näppäimet ja AnyTranslatorin käännöstyökalurivi; kesken oleva suomenkielinen työviestiluonnos säilyy.",
       "widget.primary": "Oppimiswidgetin esikatselu: kiinankielinen kahviesimerkki ja Pinyin, suomenkielinen käännös ja käyttövinkki sekä kertauspainikkeet.",
-      "screen-translation.primary": "Näyttötekstin käännös: julkinen NPS:n ajo-ohje Preview-appissa ja suomenkielinen kuva kuvassa -tulos.",
-      "screen-translation.setup": "Muiden appien käännösasetukset: videotekstitykset tai näytön teksti, suomi kohdekielenä ja alkuperäistekstin näyttö."
+      "screen-translation.primary": "Näyttötekstin käännös: julkinen NPS:n ajo-ohje Preview-appissa ja suomenkielinen kuva kuvassa -tulos."
     }
   }
 }

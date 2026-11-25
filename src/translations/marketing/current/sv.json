@@ -177,7 +177,19 @@
         "Foton ordnas sida för sida med rubriker, stycken och listor bevarade.",
         "Tryck för att jämföra originaltext och bild så att inga detaljer missas.",
         "Sök i skanningshistoriken och hitta dokumentet igen."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Det här kan du göra",
+          "items": [
+            {
+              "title": "Visa originalfotot",
+              "body": "Tryck på fotoikonen uppe till höger i skanningsresultatet för att öppna originalfotot och jämföra det med motsvarande sida.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Tangentbordsöversättning: förbered svaret i appen du använder.",
@@ -681,18 +693,14 @@
       "helper.primary": "Helper-grammatik: villkorsform, tid och kasus i ett ryskt arbetsmeddelande förklarade på svenska.",
       "photos.primary": "Fotoöversättning: svensk översättning ovanpå en riktig dryckesmeny med engelsk originaltext.",
       "table.primary": "Tabellöversättning: offentlig Zion-busstidtabell med tre datumperioder samt första och sista avgång.",
-      "table.cell-source": "Tabellens originaltext: information om första bussen öppnad med motsvarande engelska radrubrik.",
       "document.primary": "Dokumentöversättning: offentlig transportbroschyr från parken ordnad i svenska stycken om cykling och bilkörning.",
       "document.original": "Originalbild: den offentliga trespaltiga texten Getting Around, sida 1/1 i samma dokument.",
       "menu.primary": "Menyöversättning: kaffedrycker och priser med 2 valda latte och totalt 7.80.",
-      "menu.options": "Menybeställning: latte/flat white med havremjölk, antal 2 och totalt 7.80.",
-      "menu.staff": "Visa personalen: latte/flat white och havremjölk på originalspråket, 2 portioner, totalt 7.80.",
       "chat.primary": "AI-assistentens restaurangscenario: servitörens inledning på nybörjarengelska, engelska nyckelmeningar och svenska uppgiftsförklaringar.",
       "chat.chat-entry": "AI-assistentens samtalslägen: smart samtal, målövning och scenarioövning med val av språk och nivå före start.",
       "keyboard.primary": "iOS-tangenter och AnyTranslators översättningsverktygsfält med det pågående svenska arbetsmeddelandet bevarat.",
       "widget.primary": "Förhandsvisning av inlärningswidget: kinesiskt kaffeexempel och Pinyin, svensk översättning och användningstips samt repetitionsknappar.",
-      "screen-translation.primary": "Skärmtextöversättning: ett offentligt NPS-avsnitt om bilkörning i Preview med svenskt resultat i bild i bild.",
-      "screen-translation.setup": "Inställningar för översättning i andra appar: videoundertexter eller skärmtext, svenska som mål och visning av originaltext."
+      "screen-translation.primary": "Skärmtextöversättning: ett offentligt NPS-avsnitt om bilkörning i Preview med svenskt resultat i bild i bild."
     }
   }
 }

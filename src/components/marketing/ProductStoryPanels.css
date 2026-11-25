@@ -46,7 +46,6 @@
 .mk-story-screen { min-width: 0; width: 328px; }
 .marketing-site .mk-story-screen > .native-app-screen {
   width: 100%;
-  filter: drop-shadow(0 20px 22px #17252228);
 }
 .mk-story-panel--reply .mk-story-art { min-height: 570px; }
 @media (max-width: 1199px) {

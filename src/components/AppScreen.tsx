@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ComponentPropsWithoutRef, type CSSProperties } from "react";
+import { useEffect, useId, useRef, type ComponentPropsWithoutRef, type CSSProperties } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import appDemoVideos from "@/data/app-demo-videos.json";
 import nativeScreens from "@/data/native-product-screens.json";
@@ -32,11 +32,19 @@ const screens: Record<
 > = nativeScreens;
 const localizedScreens: Record<string, Array<NativeScreen & { sourceNative: string; kind: string; displayCropBottom?: number }>> = localizedUiScreens;
 
-function AppDemoVideo({ priority, ...props }: ComponentPropsWithoutRef<"video"> & { priority: boolean }) {
+function AppDemoVideo({ className, width, height, priority, ...props }: ComponentPropsWithoutRef<"video"> & {
+  width: number;
+  height: number;
+  priority: boolean;
+}) {
   const ref = useRef<HTMLVideoElement>(null);
+  const ring = useRef<SVGPathElement>(null);
+  const paint = useId();
   useEffect(() => {
     const video = ref.current;
-    if (!video || !("IntersectionObserver" in window)) return;
+    const outline = ring.current;
+    const screen = video?.parentElement;
+    if (!video || !outline || !screen || !("IntersectionObserver" in window)) return;
 
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     let inView = false;
@@ -61,19 +69,31 @@ function AppDemoVideo({ priority, ...props }: ComponentPropsWithoutRef<"video"> 
     observer.observe(video);
     reducedMotion.addEventListener("change", onMotionChange);
 
-    // The frame fills clockwise from top centre at an even speed along the edge, so the angle is
-    // taken from the point at that share of the perimeter, not from the share of a turn.
     let frame = 0;
+    let outlineWidth = 0;
+    let outlineHeight = 0;
     const drawProgress = () => {
       const share = video.duration > 0 ? video.currentTime / video.duration : 0;
-      const w = video.offsetWidth, h = video.offsetHeight;
-      let d = share * 2 * (w + h), x = 0, y = -h / 2;
-      for (const [dx, dy, length] of [[1, 0, w / 2], [0, 1, h], [-1, 0, w], [0, -1, h], [1, 0, w / 2]]) {
-        const step = Math.min(d, length);
-        x += dx * step; y += dy * step; d -= step;
+      const w = screen.clientWidth;
+      const h = screen.clientHeight;
+      if (w !== outlineWidth || h !== outlineHeight) {
+        outlineWidth = w;
+        outlineHeight = h;
+        const inset = 2;
+        const right = w - inset;
+        const bottom = h - inset;
+        const rx = Math.max(0, w * 0.135 - inset);
+        const ry = Math.max(0, h * 0.0625 - inset);
+        // Start at the top centre and trace clockwise in CSS pixels, including the corners.
+        outline.setAttribute("d", [
+          `M ${w / 2} ${inset} H ${right - rx}`,
+          `A ${rx} ${ry} 0 0 1 ${right} ${inset + ry} V ${bottom - ry}`,
+          `A ${rx} ${ry} 0 0 1 ${right - rx} ${bottom} H ${inset + rx}`,
+          `A ${rx} ${ry} 0 0 1 ${inset} ${bottom - ry} V ${inset + ry}`,
+          `A ${rx} ${ry} 0 0 1 ${inset + rx} ${inset} Z`,
+        ].join(" "));
       }
-      const angle = share >= 1 ? 360 : ((Math.atan2(x, -y) * 180) / Math.PI + 360) % 360;
-      video.style.setProperty("--app-demo-progress", `${angle}deg`);
+      outline.setAttribute("stroke-dasharray", `${share} 1`);
       if (!video.paused) frame = requestAnimationFrame(drawProgress);
     };
     const onPlay = () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(drawProgress); };
@@ -91,16 +111,44 @@ function AppDemoVideo({ priority, ...props }: ComponentPropsWithoutRef<"video"> 
   }, []);
 
   return (
-    <video
-      {...props}
-      className={`${props.className ?? ""} app-demo-video`}
-      ref={ref}
-      muted
-      playsInline
-      loop
-      preload={priority ? "metadata" : "none"}
-      data-image-source="app-demo-video"
-    />
+    <span className={`${className ?? ""} app-demo-frame`} style={{ "--app-demo-ratio": width / height } as CSSProperties}>
+      <video
+        {...props}
+        className="app-demo-video"
+        width={width}
+        height={height}
+        ref={ref}
+        muted
+        playsInline
+        loop
+        preload={priority ? "metadata" : "none"}
+        data-image-source="app-demo-video"
+      />
+      <svg className="app-demo-progress" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id={`${paint}-progress`} x1="12%" y1="0%" x2="68%" y2="100%">
+            <stop offset="0%" stopColor="#3b82f6" />
+            <stop offset="50%" stopColor="#8b5cf6" />
+            <stop offset="100%" stopColor="#ec4899" />
+          </linearGradient>
+          <filter id={`${paint}-glow`}>
+            <feGaussianBlur stdDeviation="1.65" />
+            <feComponentTransfer><feFuncA type="linear" slope="0.32" /></feComponentTransfer>
+            <feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge>
+          </filter>
+        </defs>
+        <path
+          ref={ring}
+          fill="none"
+          stroke={`url(#${paint}-progress)`}
+          strokeWidth="2.25"
+          strokeLinecap="round"
+          pathLength="1"
+          strokeDasharray="0 1"
+          filter={`url(#${paint}-glow)`}
+        />
+      </svg>
+    </span>
   );
 }
 
@@ -182,30 +230,4 @@ const AppScreen = ({
   );
 };
 
-export function AppScreenGallery({
-  feature,
-  className = "",
-}: {
-  feature: ScreenFeature;
-  className?: string;
-}) {
-  const { currentLanguage, t } = useLanguage();
-  const shots = (screens[currentLanguage.code] || screens["zh-tw"])?.[feature]?.gallery;
-  if (!shots?.length) return null;
-  const title = t(`landing.${feature}Title`);
-  return (
-    <div
-      className={`mk-native-gallery ${className}`}
-      data-count={shots.length}
-      role="group"
-      aria-label={title}
-    >
-      {shots.map((shot) => (
-        <div className="mk-native-gallery-item mk-photo-stage mk-photo-stage--shore" key={shot.shotId}>
-          <AppScreen feature={feature} shotId={shot.shotId} />
-        </div>
-      ))}
-    </div>
-  );
-}
 export default AppScreen;

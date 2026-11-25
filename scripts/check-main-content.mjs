@@ -288,7 +288,6 @@ export async function checkMainContent() {
 
     // Check the real data adapters and rendered text, not only the JSON inputs.
     const { featureDetails } = await server.ssrLoadModule("/src/data/feature-details.ts");
-    for (const id of known) assert.deepEqual(featureDetails["zh-tw"].features[id], copy.features[id], `Feature adapter: ${id}`);
     const { render } = await server.ssrLoadModule("/src/entry-server.tsx");
     const checkRendered = (url, required) => {
       const result = render(url);
@@ -306,8 +305,9 @@ export async function checkMainContent() {
     };
     checkRendered("/?lang=zh-tw", zh.features.map(({ id }) => marketing[`feature.${id}`]));
     for (const feature of zh.features) {
-      const detail = copy.features[feature.id];
-      checkRendered(`/features/${feature.id}?lang=zh-tw`, [detail.title, detail.body, ...detail.steps, ...(detail.sections ?? []).flatMap((section) => [section.title, section.body, ...(section.items ?? [])])]);
+      const { guide, ...detail } = featureDetails["zh-tw"].features[feature.id];
+      assert.deepEqual(detail, copy.features[feature.id], `Feature adapter: ${feature.id}`);
+      checkRendered(`/features/${feature.id}?lang=zh-tw`, [detail.title, detail.body, ...(guide?.steps?.items.length ? [] : detail.steps), ...(detail.sections ?? []).flatMap((section) => [section.title, section.body, ...(section.items ?? [])])]);
     }
     for (const item of zh.cases) checkRendered(`/use-cases/${item.id}?lang=zh-tw`, copy.workflows[item.id]);
     for (const article of zh.articles)

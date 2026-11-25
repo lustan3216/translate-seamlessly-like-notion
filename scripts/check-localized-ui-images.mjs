@@ -12,6 +12,10 @@ const sha = (bytes) => createHash("sha256").update(bytes).digest("hex");
 const registry = json("src/data/localized-ui-screens.json");
 const adopted = json("output/imagegen-localization-220/adopted.json");
 const native = json("public/app-preview/native/manifest.json");
+const index = json("src/data/native-product-screens.json");
+const sourcesFor = (entries) => Object.values(entries).flatMap((screen) =>
+  [screen.src, ...(screen.gallery || []).map((shot) => shot.src)]);
+const publishedSources = new Set(Object.values(index).flatMap(sourcesFor));
 const approvedKeyboard = registry["zh-tw"]?.find((image) => native.captures.some((capture) => capture.src === image.sourceNative && capture.feature === "keyboard"));
 const seen = new Set();
 let count = 0;
@@ -22,6 +26,7 @@ for (const [locale, images] of Object.entries(registry)) {
     assert.equal(image.kind, "gpt-image-ui-edit");
     assert.match(image.src, /^\/app-preview\/localized-ui\/[a-z0-9/-]+\.webp$/);
     assert.match(image.sourceNative, /^\/app-preview\/native\/[a-z0-9/-]+\.webp$/);
+    assert.ok(publishedSources.has(image.sourceNative), `Localized image refers to an unselected native source: ${image.sourceNative}`);
     const identity = `${locale}:${image.sourceNative}`;
     assert.ok(!seen.has(identity), "Each locale/source pair can have only one approved derivative.");
     seen.add(identity);
@@ -67,9 +72,8 @@ for (const [locale, images] of Object.entries(registry)) {
   }
 }
 if (process.argv.includes("--complete")) {
-  const index = json("src/data/native-product-screens.json")["zh-tw"];
   const shared = new Set(json("src/data/shared-example-screens.json"));
-  const sources = Object.values(index).flatMap((screen) => [screen.src, ...(screen.gallery || []).map((shot) => shot.src)]);
+  const sources = sourcesFor(index["zh-tw"]);
   for (const { code } of SITE_LOCALES.filter(({ code }) => code !== "zh-tw"))
     for (const source of sources)
       assert.ok(shared.has(source) || registry[code]?.some((image) => image.sourceNative === source), `Missing reviewed localized image: ${code}:${source}`);

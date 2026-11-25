@@ -166,7 +166,69 @@
         "菜名、說明與價格，整理成好選的餐點。",
         "份數、大小、可用加料與備註，按喜好選。",
         "展示原文點單，已知價格按幣別加總。"
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "使用步驟",
+          "items": [
+            {
+              "title": "加入菜單照片",
+              "body": "在照片頁選「整理」和「菜單」，加入照片，再按箭頭掃描。",
+              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-1.webp", "width": 720, "height": 1560 }
+            },
+            {
+              "title": "查看翻譯後的菜色",
+              "body": "掃描後，按菜單分類查看菜名、說明和價格。",
+              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-2.webp", "width": 720, "height": 1560 }
+            },
+            {
+              "title": "選份數和加料",
+              "body": "用加減按鈕選份數，有尺寸或加料時也可以一起選。",
+              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-3.webp", "width": 720, "height": 1560 }
+            },
+            {
+              "title": "給店員看點單",
+              "body": "點「給店員看」，開啟菜單原文的點單畫面。",
+              "image": { "src": "/app-preview/videos/20261124/zh-tw/menu-step-4.webp", "width": 720, "height": 1560 }
+            }
+          ]
+        },
+        "abilities": {
+          "title": "主要功能",
+          "items": [
+            {
+              "title": "對照菜單原文",
+              "body": "點一下菜色，就能查看原文菜名、說明和標示價格。"
+            },
+            {
+              "title": "加上點餐備註",
+              "body": "在點單寫下用餐需求，展示點單時給店員看。"
+            },
+            {
+              "title": "依幣別加總",
+              "body": "所選餐點和加料的價格都明確時，依幣別分開加總。"
+            }
+          ]
+        },
+        "situations": {
+          "title": "使用情境",
+          "items": [
+            {
+              "title": "在國外餐廳用餐",
+              "body": "先看懂當地菜單上的菜名和價格，再決定要點什麼。"
+            },
+            {
+              "title": "在咖啡店選加料",
+              "body": "選好杯數，再看這杯咖啡有哪些牛奶或加料可選。"
+            },
+            {
+              "title": "幫同行朋友點餐",
+              "body": "把大家選的餐點、份數和備註放在同一張點單。"
+            }
+          ]
+        },
+        "faq": ["Scan", "Free"]
+      }
     },
     "document": {
       "title": "文件掃描：依頁整理，保留段落與重點。",
@@ -177,7 +239,19 @@
         "多頁照片依序整理，標題、段落、清單保留結構。",
         "點一下對照原文與原圖，長文也不怕看漏。",
         "搜尋掃描歷史，需要的文件隨時找回。"
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "主要功能",
+          "items": [
+            {
+              "title": "查看原圖",
+              "body": "點掃描結果右上角的照片圖示，就能開啟原圖，和對應頁面對照。",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "鍵盤翻譯：在原本的 App 裡準備回覆。",
@@ -681,18 +755,14 @@
       "helper.primary": "Helper 文法解說：以繁中解析俄文商務改期訊息的條件語氣、時間與格位。",
       "photos.primary": "照片翻譯：真實飲品菜單上的繁中譯文覆蓋，對照英文原文。",
       "table.primary": "表格翻譯：錫安接駁車公開時刻表，對照三個日期區間與首末班時間。",
-      "table.cell-source": "表格原文對照：點開接駁車首班資訊，查看對應的英文列標題。",
       "document.primary": "文件翻譯：將公開園區交通簡介整理成繁中段落，對照自行車與駕車資訊。",
       "document.original": "文件原圖對照：Getting Around 三欄公開原文，顯示同份文件第 1／1 頁。",
       "menu.primary": "菜單翻譯：整理咖啡飲品與價格，顯示已選拿鐵 2 份及合計 7.80。",
-      "menu.options": "菜單點餐：拿鐵／馥芮白加燕麥奶，選擇 2 份並查看合計 7.80。",
-      "menu.staff": "給店員看：用原文展示拿鐵／馥芮白、燕麥奶與 2 份點單，合計 7.80。",
       "chat.primary": "AI 助手餐廳場景：初級英文服務生開場，搭配對話任務與關鍵句。",
       "chat.chat-entry": "AI 助手對話模式：智慧對話、目標練習與場景練習，選好語言與難度後開始。",
       "keyboard.primary": "iOS 原生鍵位與 AnyTranslator 翻譯工具列，保留輸入中的繁中工作訊息草稿。",
       "widget.primary": "原生學習 Widget 預覽：大尺寸咖啡例句卡，顯示中英對照、用法提示與複習按鈕。",
-      "screen-translation.primary": "螢幕文字翻譯：Preview 的園區駕車原文與繁中子母畫面結果。",
-      "screen-translation.setup": "任何 App 翻譯設定：選擇影片字幕或畫面文字，設定繁中目標與原文顯示。"
+      "screen-translation.primary": "螢幕文字翻譯：Preview 的園區駕車原文與繁中子母畫面結果。"
     }
   }
 }

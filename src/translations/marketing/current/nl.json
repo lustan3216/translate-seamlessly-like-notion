@@ -177,7 +177,19 @@
         "Foto's worden op paginavolgorde geordend met behoud van koppen, alinea's en lijsten.",
         "Tik om brontekst en foto te vergelijken, zodat details niet verloren gaan.",
         "Zoek je document terug in de scangeschiedenis."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "Bekijk de originele foto",
+              "body": "Tik rechtsboven in het scanresultaat op het fotopictogram om de originele foto te openen en die met de bijbehorende pagina te vergelijken.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Toetsenbordvertaling: bereid je antwoord voor in je huidige app.",
@@ -681,18 +693,14 @@
       "helper.primary": "Helper-grammatica: voorwaardelijke vorm, tijd en naamvallen in een Russisch werkbericht uitgelegd in het Nederlands.",
       "photos.primary": "Fotovertaling: Nederlandse vertaaloverlay op een echte drankenkaart, naast het Engelse origineel.",
       "table.primary": "Tabelvertaling: openbare Zion-shuttledienstregeling met drie datumperiodes en eerste en laatste vertrektijden.",
-      "table.cell-source": "Brontabel: informatie over de eerste shuttle geopend met het bijbehorende Engelse rijlabel.",
       "document.primary": "Documentvertaling: openbare parkvervoersfolder in Nederlandse alinea's met fiets- en rijinformatie.",
       "document.original": "Bronfoto: openbare tekst Getting Around in drie kolommen, pagina 1/1 van hetzelfde document.",
       "menu.primary": "Menuvertaling: koffiedranken en prijzen, met 2 geselecteerde lattes en totaal 7.80.",
-      "menu.options": "Menubestelling: latte/flat white met havermelk, aantal 2 en totaal 7.80.",
-      "menu.staff": "Tonen aan personeel: bestelling in de brontaal van latte/flat white en havermelk, 2 porties, totaal 7.80.",
       "chat.primary": "Restaurantscenario van de AI-assistent: opening van een ober op beginnersniveau Engels, Engelse sleutelzinnen en Nederlandse taakuitleg.",
       "chat.chat-entry": "Gespreksmodi van de AI-assistent: slim gesprek, doeloefening en scenario-oefening, met taal- en niveaukeuze vóór de start.",
       "keyboard.primary": "Native iOS-toetsen en de vertaalwerkbalk van AnyTranslator, met behoud van het Nederlandse werkbericht dat wordt getypt.",
       "widget.primary": "Voorbeeld van de leerwidget: Chinees koffievoorbeeld en Pinyin, Nederlandse vertaling en gebruikstip en herhaalknoppen.",
-      "screen-translation.primary": "Schermtekstvertaling: een openbare NPS-tekst over autorijden in Preview met Nederlands resultaat in beeld-in-beeld.",
-      "screen-translation.setup": "Instellingen voor vertaling in andere apps: video-ondertitels of schermtekst, Nederlands als doeltaal en weergave van de brontekst."
+      "screen-translation.primary": "Schermtekstvertaling: een openbare NPS-tekst over autorijden in Preview met Nederlands resultaat in beeld-in-beeld."
     }
   }
 }

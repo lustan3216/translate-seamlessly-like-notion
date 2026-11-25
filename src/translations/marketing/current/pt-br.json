@@ -177,7 +177,19 @@
         "Fotos de várias páginas seguem a ordem, com títulos, parágrafos e listas.",
         "Toque para comparar texto e imagem originais, mesmo em documentos longos.",
         "Busque no histórico de digitalizações para encontrar documentos quando precisar."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "O que você pode fazer",
+          "items": [
+            {
+              "title": "Ver a foto original",
+              "body": "Toque no ícone de foto no canto superior direito do resultado da digitalização para abrir a foto original e compará-la com a página correspondente.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Teclado tradutor: responda dentro do seu app.",
@@ -681,18 +693,14 @@
       "helper.primary": "Explicação do Helper: condicional, tempo e casos de uma mensagem profissional russa de reagendamento, em português brasileiro.",
       "photos.primary": "Tradução de fotos: português brasileiro sobreposto em um cardápio real de bebidas, junto ao original.",
       "table.primary": "Tradução de tabelas: horário público do ônibus de Zion com três períodos de datas e primeiras e últimas saídas.",
-      "table.cell-source": "Comparação da tabela original: primeira saída do ônibus aberta para ver o cabeçalho de linha correspondente em inglês.",
       "document.primary": "Tradução de documento: folheto público de transporte do parque em parágrafos em português brasileiro, com informações de bicicleta e carro.",
       "document.original": "Imagem original do documento: texto público “Getting Around” em três colunas, página 1/1 do mesmo documento.",
       "menu.primary": "Tradução de cardápio: cafés e preços organizados, com 2 lattes selecionados e total de 7.80.",
-      "menu.options": "Pedido do cardápio: latte/flat white com leite de aveia, quantidade 2 e total de 7.80.",
-      "menu.staff": "Mostrar à equipe: pedido original de latte/flat white, leite de aveia e quantidade 2, total de 7.80.",
       "chat.primary": "Cenário de restaurante do assistente de IA: abertura do garçom em inglês iniciante, com tarefas de conversa e frases-chave.",
       "chat.chat-entry": "Modos do assistente de IA: conversa inteligente, prática por objetivo e por cenário; escolha de idioma e dificuldade antes de começar.",
       "keyboard.primary": "Teclas nativas do iOS e barra de tradução AnyTranslator, preservando o rascunho de uma mensagem de trabalho em português brasileiro.",
       "widget.primary": "Prévia do widget de aprendizado nativo: cartão grande sobre café com frase chinesa, pinyin, tradução e dicas em português brasileiro e botões de revisão.",
-      "screen-translation.primary": "Tradução da tela: documento público do NPS sobre direção no Preview, com resultado em português na janela PiP.",
-      "screen-translation.setup": "Ajustes de tradução em qualquer app: legendas de vídeo ou texto na tela, português brasileiro como destino e exibição do original."
+      "screen-translation.primary": "Tradução da tela: documento público do NPS sobre direção no Preview, com resultado em português na janela PiP."
     }
   }
 }

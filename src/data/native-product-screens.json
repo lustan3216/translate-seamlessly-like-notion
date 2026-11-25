@@ -40,18 +40,7 @@
       "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
       "freshness": "current-main",
       "srcSet": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-768.webp 768w, /app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp 1290w",
-      "alt": "表格翻譯：錫安接駁車公開時刻表，對照三個日期區間與首末班時間。",
-      "gallery": [
-        {
-          "shotId": "cell-source",
-          "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-          "width": 1290,
-          "height": 2796,
-          "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
-          "freshness": "current-main",
-          "alt": "表格原文對照：點開接駁車首班資訊，查看對應的英文列標題。"
-        }
-      ]
+      "alt": "表格翻譯：錫安接駁車公開時刻表，對照三個日期區間與首末班時間。"
     },
     "document": {
       "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document.webp",
@@ -80,27 +69,7 @@
       "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
       "freshness": "current-main",
       "srcSet": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-768.webp 768w, /app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp 1290w",
-      "alt": "菜單翻譯：整理咖啡飲品與價格，顯示已選拿鐵 2 份及合計 7.80。",
-      "gallery": [
-        {
-          "shotId": "options",
-          "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-          "width": 1290,
-          "height": 2796,
-          "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
-          "freshness": "current-main",
-          "alt": "菜單點餐：拿鐵／馥芮白加燕麥奶，選擇 2 份並查看合計 7.80。"
-        },
-        {
-          "shotId": "staff",
-          "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
-          "width": 1290,
-          "height": 2796,
-          "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
-          "freshness": "current-main",
-          "alt": "給店員看：用原文展示拿鐵／馥芮白、燕麥奶與 2 份點單，合計 7.80。"
-        }
-      ]
+      "alt": "菜單翻譯：整理咖啡飲品與價格，顯示已選拿鐵 2 份及合計 7.80。"
     },
     "chat": {
       "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-scenario.webp",
@@ -146,19 +115,7 @@
       "sourceCommit": "93faf63c25e8642d85909c0b3f3f99ecd2a93b3c",
       "freshness": "verified-review-source",
       "srcSet": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text-768.webp 768w, /app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-screen-text.webp 1290w",
-      "alt": "螢幕文字翻譯：Preview 的園區駕車段落與繁中子母畫面結果。",
-      "gallery": [
-        {
-          "shotId": "setup",
-          "src": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-          "width": 1290,
-          "height": 2796,
-          "sourceCommit": "25040c54255b2f7dd073965a749f19ec378e9677",
-          "freshness": "current-main",
-          "srcSet": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup-768.webp 768w, /app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp 1290w",
-          "alt": "任何 App 翻譯設定：選擇影片字幕或畫面文字，設定繁中目標與原文顯示。"
-        }
-      ]
+      "alt": "螢幕文字翻譯：Preview 的園區駕車段落與繁中子母畫面結果。"
     }
   }
 }

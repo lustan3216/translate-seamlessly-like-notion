@@ -177,7 +177,19 @@
         "Bilder ordnes sidevis med strukturen i overskrifter, avsnitt og lister bevart.",
         "Trykk for å sammenligne originaltekst og bilde, så du ikke overser detaljer.",
         "Søk i skannehistorikken og finn dokumentet igjen."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Dette kan du gjøre",
+          "items": [
+            {
+              "title": "Se originalbildet",
+              "body": "Trykk på bildeikonet øverst til høyre i skanneresultatet for å åpne originalbildet og sammenligne det med den tilsvarende siden.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Tastaturoversettelse: gjør svaret klart i appen du bruker.",
@@ -681,18 +693,14 @@
       "helper.primary": "Helper-grammatikk: betingelsesform, tid og kasus i en russisk jobbmelding forklart på norsk.",
       "photos.primary": "Bildeoversettelse: norsk oversettelse over en ekte drikkemeny med engelsk originaltekst.",
       "table.primary": "Tabelloversettelse: offentlig Zion-shuttlerute med tre datoperioder og første og siste avgang.",
-      "table.cell-source": "Tabellens originaltekst: første shuttleavgang åpnet med den tilsvarende engelske radoverskriften.",
       "document.primary": "Dokumentoversettelse: offentlig transportbrosjyre fra parken ordnet i norske avsnitt om sykling og kjøring.",
       "document.original": "Originalbilde: den offentlige trespaltede teksten Getting Around, side 1/1 i samme dokument.",
       "menu.primary": "Menyoversettelse: kaffedrikker og priser med 2 valgte latte og totalsum 7.80.",
-      "menu.options": "Menybestilling: latte/flat white med havremelk, antall 2 og totalsum 7.80.",
-      "menu.staff": "Vis betjeningen: latte/flat white og havremelk på originalspråket, 2 porsjoner, totalt 7.80.",
       "chat.primary": "KI-assistentens restaurantscenario: servitørens åpning på begynnerengelsk, engelske nøkkelsetninger og norske oppgaveforklaringer.",
       "chat.chat-entry": "KI-assistentens samtalemoduser: smart samtale, måløving og scenarioøving, med valg av språk og nivå før start.",
       "keyboard.primary": "iOS-taster og AnyTranslators oversettelsesverktøylinje med det pågående norske jobbmeldingsutkastet bevart.",
       "widget.primary": "Forhåndsvisning av læringswidget: kinesisk kaffeeksempel og Pinyin, norsk oversettelse og brukstips samt repetisjonsknapper.",
-      "screen-translation.primary": "Oversettelse av skjermtekst: et offentlig NPS-avsnitt om bilkjøring i Preview med norsk resultat i bilde-i-bilde.",
-      "screen-translation.setup": "Innstillinger for oversettelse i andre apper: videoteksting eller skjermtekst, norsk som mål og visning av originaltekst."
+      "screen-translation.primary": "Oversettelse av skjermtekst: et offentlig NPS-avsnitt om bilkjøring i Preview med norsk resultat i bilde-i-bilde."
     }
   }
 }

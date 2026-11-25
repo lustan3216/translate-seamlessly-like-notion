@@ -177,7 +177,19 @@
         "Mehrseitige Fotos werden der Reihe nach mit Überschriften, Absätzen und Listen aufbereitet.",
         "Originaltext und Bild per Tipp vergleichen, auch bei langen Dokumenten.",
         "Scanverlauf durchsuchen und Dokumente jederzeit wiederfinden."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "Originalfoto ansehen",
+              "body": "Tippe im Scanergebnis oben rechts auf das Fotosymbol, um das Originalfoto zu öffnen und mit der entsprechenden Seite zu vergleichen.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Übersetzungstastatur: in deiner App antworten.",
@@ -681,18 +693,14 @@
       "helper.primary": "Helper-Erklärung: Konditional, Zeit und Fälle einer russischen beruflichen Terminverschiebung auf Deutsch.",
       "photos.primary": "Fotoübersetzung: deutsche Übersetzung auf einer echten Getränkekarte neben dem Original.",
       "table.primary": "Tabellenübersetzung: öffentlicher Zion-Shuttle-Fahrplan mit drei Datumsbereichen sowie ersten und letzten Abfahrten.",
-      "table.cell-source": "Originalvergleich der Tabelle: geöffnete erste Shuttle-Abfahrt mit zugehöriger englischer Zeilenüberschrift.",
       "document.primary": "Dokumentübersetzung: öffentliche Verkehrsbroschüre des Parks in deutschen Absätzen mit Fahrrad- und Autoinformationen.",
       "document.original": "Originalbild des Dokuments: dreispaltiger öffentlicher Text „Getting Around“, Seite 1/1 desselben Dokuments.",
       "menu.primary": "Menüübersetzung: geordnete Kaffeegetränke und Preise, 2 ausgewählte Latte und Gesamtbetrag 7.80.",
-      "menu.options": "Menübestellung: Latte/Flat White mit Hafermilch, Menge 2 und Gesamtbetrag 7.80.",
-      "menu.staff": "Dem Personal zeigen: Originalbestellung mit Latte/Flat White, Hafermilch und Menge 2, insgesamt 7.80.",
       "chat.primary": "Restaurantszene des KI-Assistenten: englische Begrüßung eines Kellners auf Anfängerniveau mit Gesprächsaufgaben und Schlüsselsätzen.",
       "chat.chat-entry": "Gesprächsmodi des KI-Assistenten: intelligentes Gespräch, Zieltraining und Szenariotraining; Sprach- und Schwierigkeitswahl vor dem Start.",
       "keyboard.primary": "Native iOS-Tasten und AnyTranslator-Übersetzungsleiste mit erhaltenem Entwurf einer Arbeitsnachricht auf Deutsch.",
       "widget.primary": "Vorschau des nativen Lern-Widgets: große Kaffeekarte mit chinesischem Satz, Pinyin, deutscher Übersetzung und Verwendungshinweisen sowie Wiederholungsbuttons.",
-      "screen-translation.primary": "Bildschirmübersetzung: öffentliches NPS-Dokument zum Autofahren in Preview, mit deutschem Ergebnis im Bild-in-Bild-Fenster.",
-      "screen-translation.setup": "Einstellungen für Übersetzen in jeder App: Video-Untertitel oder Bildschirmtext, Deutsch als Ziel und Anzeige des Originals."
+      "screen-translation.primary": "Bildschirmübersetzung: öffentliches NPS-Dokument zum Autofahren in Preview, mit deutschem Ergebnis im Bild-in-Bild-Fenster."
     }
   }
 }

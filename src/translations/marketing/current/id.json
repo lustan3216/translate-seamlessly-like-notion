@@ -177,7 +177,19 @@
         "Tata foto berurutan; pertahankan judul, paragraf, dan daftar.",
         "Ketuk untuk membandingkan teks dan foto asli, termasuk detail tulisan panjang.",
         "Cari riwayat pindai untuk membuka dokumen kapan saja."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "Lihat foto asli",
+              "body": "Ketuk ikon foto di kanan atas hasil pindai untuk membuka foto asli dan membandingkannya dengan halaman yang sesuai.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Keyboard terjemahan: siapkan balasan di aplikasi Anda.",
@@ -681,18 +693,14 @@
       "helper.primary": "Penjelasan Helper: mengurai kondisi, waktu, dan kasus dalam pesan kerja Rusia tentang perubahan jadwal, menggunakan bahasa Indonesia.",
       "photos.primary": "Terjemahan foto: terjemahan Indonesia di atas menu minuman nyata, dibandingkan dengan teks Inggris.",
       "table.primary": "Terjemahan tabel: jadwal publik shuttle Zion dengan tiga rentang tanggal serta waktu keberangkatan pertama dan terakhir.",
-      "table.cell-source": "Perbandingan teks tabel: membuka info shuttle pertama untuk melihat judul baris berbahasa Inggris.",
       "document.primary": "Terjemahan dokumen: panduan transportasi taman publik ditata dalam paragraf bahasa Indonesia, termasuk info sepeda dan berkendara.",
       "document.original": "Gambar dokumen asli: teks publik Getting Around dalam tiga kolom, menampilkan halaman 1／1 dari dokumen yang sama.",
       "menu.primary": "Terjemahan menu: daftar kopi dan harga, dengan pilihan 2 latte serta total 7.80.",
-      "menu.options": "Pesanan menu: latte／flat white dengan susu oat, jumlah 2, dan total 7.80.",
-      "menu.staff": "Tampilan untuk staf: pesanan asli latte／flat white dengan susu oat, jumlah 2, total 7.80.",
       "chat.primary": "Situasi restoran Asisten AI: pembukaan pelayan dalam bahasa Inggris pemula, dengan tugas percakapan dan ungkapan kunci.",
       "chat.chat-entry": "Mode percakapan Asisten AI: percakapan pintar, latihan tujuan, dan latihan situasi, dimulai setelah memilih bahasa serta tingkat.",
       "keyboard.primary": "Tombol native iOS dan bilah terjemahan AnyTranslator, dengan draf pesan kerja Indonesia tetap di kolom input.",
       "widget.primary": "Pratinjau Widget belajar native: kartu kopi dengan kalimat Mandarin, Pinyin, arti dan petunjuk pemakaian dalam bahasa Indonesia, serta tombol ulasan.",
-      "screen-translation.primary": "Terjemahan teks layar: panduan berkendara taman berbahasa Inggris di Preview, dengan terjemahan Indonesia dalam Gambar dalam Gambar.",
-      "screen-translation.setup": "Pengaturan terjemahan di aplikasi lain: memilih subtitel video atau teks layar, bahasa tujuan Indonesia, dan tampilan teks asli."
+      "screen-translation.primary": "Terjemahan teks layar: panduan berkendara taman berbahasa Inggris di Preview, dengan terjemahan Indonesia dalam Gambar dalam Gambar."
     }
   }
 }

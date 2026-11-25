@@ -177,7 +177,19 @@
         "Fotos ordnes sidevis med struktur i overskrifter, afsnit og lister.",
         "Tryk for at sammenligne originaltekst og billede, så detaljer ikke overses.",
         "Søg i scanningshistorikken, og find dokumentet igen."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Det kan du gøre",
+          "items": [
+            {
+              "title": "Se det originale foto",
+              "body": "Tryk på fotoikonet øverst til højre i scanningsresultatet for at åbne det originale foto og sammenligne det med den tilsvarende side.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Tastaturoversættelse: forbered svaret i den app, du bruger.",
@@ -681,18 +693,14 @@
       "helper.primary": "Helper-grammatik: betingelsesform, tid og kasus i en russisk arbejdsbesked forklaret på dansk.",
       "photos.primary": "Billedoversættelse: dansk oversættelse oven på en ægte drikkemenu med engelsk original.",
       "table.primary": "Tabeloversættelse: offentlig Zion-shuttleplan med tre datoperioder samt første og sidste afgang.",
-      "table.cell-source": "Tabellens originaltekst: første shuttleafgang åbnet med den tilsvarende engelske rækkeoverskrift.",
       "document.primary": "Dokumentoversættelse: offentlig transportfolder fra parken ordnet i danske afsnit om cykling og kørsel.",
       "document.original": "Originalbillede: den offentlige trespaltede tekst Getting Around, side 1/1 i samme dokument.",
       "menu.primary": "Menuoversættelse: kaffe og priser med 2 valgte latte og en total på 7.80.",
-      "menu.options": "Menubestilling: latte/flat white med havremælk, antal 2 og total 7.80.",
-      "menu.staff": "Vis personalet: latte/flat white og havremælk på originalsproget, 2 bestillinger, i alt 7.80.",
       "chat.primary": "AI-assistentens restaurantscenarie: tjenerens åbning på begynderengelsk, engelske nøglesætninger og danske opgaveforklaringer.",
       "chat.chat-entry": "AI-assistentens samtaletilstande: intelligent samtale, måltræning og scenarietræning med valg af sprog og niveau før start.",
       "keyboard.primary": "iOS-taster og AnyTranslators oversættelsesværktøjslinje med den igangværende arbejdsbesked på dansk bevaret.",
       "widget.primary": "Forhåndsvisning af læringswidget: kinesisk kaffeeksempel og Pinyin, dansk oversættelse og brugstip samt repetitionsknapper.",
-      "screen-translation.primary": "Oversættelse af skærmtekst: et offentligt NPS-afsnit om kørsel i Preview med dansk resultat i billede i billede.",
-      "screen-translation.setup": "Indstillinger for oversættelse i andre apps: videoundertekster eller skærmtekst, dansk som mål og visning af originaltekst."
+      "screen-translation.primary": "Oversættelse af skærmtekst: et offentligt NPS-afsnit om kørsel i Preview med dansk resultat i billede i billede."
     }
   }
 }

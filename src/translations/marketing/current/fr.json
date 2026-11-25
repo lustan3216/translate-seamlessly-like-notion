@@ -177,7 +177,19 @@
         "Les photos de plusieurs pages gardent l’ordre, les titres, paragraphes et listes.",
         "Touchez pour comparer texte et image d’origine, même dans un long document.",
         "Recherchez dans l’historique des scans pour retrouver vos documents."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "Voir la photo d’origine",
+              "body": "Touchez l’icône de photo en haut à droite du résultat du scan pour ouvrir la photo d’origine et la comparer à la page correspondante.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Clavier de traduction : répondez dans votre app.",
@@ -681,18 +693,14 @@
       "helper.primary": "Explications Helper : conditionnel, temps et cas d’un message professionnel russe de report, expliqués en français.",
       "photos.primary": "Traduction de photos : traduction française superposée à un vrai menu de boissons, avec la carte originale.",
       "table.primary": "Traduction de tableaux : horaires publics de la navette de Zion, avec trois périodes et les premiers et derniers départs.",
-      "table.cell-source": "Comparaison du tableau original : ouverture du premier départ de la navette pour voir l’en-tête de ligne anglais correspondant.",
       "document.primary": "Traduction de document : brochure publique de transport du parc organisée en paragraphes français, avec informations vélo et voiture.",
       "document.original": "Image du document original : texte public « Getting Around » sur trois colonnes, page 1/1 du même document.",
       "menu.primary": "Traduction de menu : cafés et prix organisés, avec 2 lattes sélectionnés et un total de 7.80.",
-      "menu.options": "Commande depuis le menu : latte/flat white avec lait d’avoine, quantité 2 et total de 7.80.",
-      "menu.staff": "Montrer au personnel : commande originale de latte/flat white, lait d’avoine et quantité 2, total de 7.80.",
       "chat.primary": "Scène restaurant de l’assistant IA : accueil du serveur en anglais débutant, avec missions de dialogue et phrases clés.",
       "chat.chat-entry": "Modes de conversation de l’assistant IA : dialogue intelligent, pratique par objectif et par scène ; choix de langue et de difficulté avant de commencer.",
       "keyboard.primary": "Touches natives iOS et barre de traduction AnyTranslator, avec le brouillon de message professionnel en français conservé.",
       "widget.primary": "Aperçu du widget d’apprentissage natif : grande fiche de café avec phrase chinoise, pinyin, traduction et conseil d’usage en français, et boutons de révision.",
-      "screen-translation.primary": "Traduction de l’écran : document public du NPS sur la conduite dans Preview, avec résultat en français dans une fenêtre PiP.",
-      "screen-translation.setup": "Réglages de traduction dans toute app : sous-titres vidéo ou texte à l’écran, français comme langue cible et affichage de l’original."
+      "screen-translation.primary": "Traduction de l’écran : document public du NPS sur la conduite dans Preview, avec résultat en français dans une fenêtre PiP."
     }
   }
 }

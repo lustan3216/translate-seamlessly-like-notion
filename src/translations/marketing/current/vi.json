@@ -177,7 +177,19 @@
         "Sắp xếp ảnh theo trang, giữ cấu trúc tiêu đề, đoạn và danh sách.",
         "Chạm đối chiếu văn bản và ảnh gốc, không bỏ sót chi tiết dài.",
         "Tìm lịch sử quét để mở lại tài liệu khi cần."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "Xem ảnh gốc",
+              "body": "Chạm vào biểu tượng ảnh ở góc trên bên phải của kết quả quét để mở ảnh gốc và đối chiếu với trang tương ứng.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Bàn phím dịch: chuẩn bị trả lời ngay trong ứng dụng.",
@@ -681,18 +693,14 @@
       "helper.primary": "Helper giải thích ngữ pháp: phân tích thức điều kiện, thời gian và cách của tin nhắn đổi lịch công việc tiếng Nga bằng tiếng Việt.",
       "photos.primary": "Dịch ảnh: bản dịch tiếng Việt phủ lên thực đơn đồ uống thật, đối chiếu nguyên văn tiếng Anh.",
       "table.primary": "Dịch bảng: lịch xe đưa đón Zion công khai, đối chiếu ba khoảng ngày cùng chuyến đầu và cuối.",
-      "table.cell-source": "Đối chiếu nguyên văn bảng: mở thông tin chuyến xe đầu để xem tiêu đề hàng tiếng Anh tương ứng.",
       "document.primary": "Dịch tài liệu: sắp xếp giới thiệu giao thông công viên công khai thành đoạn tiếng Việt, đối chiếu thông tin xe đạp và ô tô.",
       "document.original": "Đối chiếu ảnh tài liệu gốc: nguyên văn Getting Around công khai gồm ba cột, hiển thị trang 1／1 của cùng tài liệu.",
       "menu.primary": "Dịch thực đơn: sắp xếp cà phê và giá, hiển thị đã chọn 2 latte cùng tổng 7.80.",
-      "menu.options": "Gọi món: latte／flat white thêm sữa yến mạch, chọn 2 phần và xem tổng 7.80.",
-      "menu.staff": "Đưa nhân viên xem: hiển thị đơn nguyên văn latte／flat white, sữa yến mạch, 2 phần, tổng 7.80.",
       "chat.primary": "Tình huống nhà hàng Trợ lý AI: lời mở đầu của nhân viên bằng tiếng Anh sơ cấp, kèm nhiệm vụ hội thoại và câu trọng tâm.",
       "chat.chat-entry": "Chế độ hội thoại Trợ lý AI: trò chuyện thông minh, luyện mục tiêu, luyện tình huống; chọn ngôn ngữ và độ khó rồi bắt đầu.",
       "keyboard.primary": "Các phím gốc iOS và thanh công cụ dịch AnyTranslator, giữ bản nháp tin nhắn công việc tiếng Việt trong ô nhập.",
       "widget.primary": "Xem trước Widget học tập gốc: thẻ cà phê có câu tiếng Trung, Pinyin, nghĩa và gợi ý dùng bằng tiếng Việt, cùng nút ôn tập.",
-      "screen-translation.primary": "Dịch chữ trên màn hình: hướng dẫn lái xe trong công viên bằng tiếng Anh trên Preview, kèm bản dịch tiếng Việt trong cửa sổ hình trong hình.",
-      "screen-translation.setup": "Cài đặt dịch trong ứng dụng khác: chọn phụ đề video hoặc chữ trên màn hình, đặt đích tiếng Việt và hiển thị bản gốc."
+      "screen-translation.primary": "Dịch chữ trên màn hình: hướng dẫn lái xe trong công viên bằng tiếng Anh trên Preview, kèm bản dịch tiếng Việt trong cửa sổ hình trong hình."
     }
   }
 }

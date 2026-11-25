@@ -67,13 +67,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/en/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/en/document.webp",
       "width": 852,
       "height": 1846,
@@ -85,20 +78,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/en/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/en/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -124,13 +103,6 @@
       "displayCropBottom": 385
     },
     {
-      "src": "/app-preview/localized-ui/20261118/en/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/en/screen-translation-screen-text.webp",
       "width": 852,
       "height": 1846,
@@ -151,21 +123,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/fr/menu-options.webp",
-      "width": 759,
-      "height": 2072,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit",
-      "displayCropBottom": 427
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/fr/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -204,13 +161,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/fr/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/fr/document.webp",
       "width": 852,
       "height": 1846,
@@ -236,13 +186,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/fr/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -291,20 +234,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/fi/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/fi/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/fi/widget.webp",
       "width": 852,
       "height": 1846,
@@ -323,13 +252,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/photos.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/fi/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -367,13 +289,6 @@
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
       "kind": "gpt-image-ui-edit",
       "displayCropBottom": 384
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/fi/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
     },
     {
       "src": "/app-preview/localized-ui/20261118/fi/screen-translation-screen-text.webp",
@@ -435,31 +350,10 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/zh-cn/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/zh-cn/menu.webp",
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/zh-cn/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/zh-cn/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -491,13 +385,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/zh-cn/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/zh-cn/screen-translation-screen-text.webp",
       "width": 852,
       "height": 1846,
@@ -526,14 +413,6 @@
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
       "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/ja/menu-options.webp",
-      "width": 759,
-      "height": 2072,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit",
-      "displayCropBottom": 427
     },
     {
       "src": "/app-preview/localized-ui/20261118/ja/text.webp",
@@ -578,13 +457,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/ja/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/ja/chat-chat-scenario.webp",
       "width": 852,
       "height": 1846,
@@ -605,20 +477,6 @@
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
       "kind": "gpt-image-ui-edit",
       "displayCropBottom": 352
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/ja/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/ja/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
     },
     {
       "src": "/app-preview/localized-ui/20261118/ja/screen-translation-screen-text.webp",
@@ -665,20 +523,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/de/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/de/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/de/widget.webp",
       "width": 852,
       "height": 1846,
@@ -690,13 +534,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/de/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -736,13 +573,6 @@
       "displayCropBottom": 385
     },
     {
-      "src": "/app-preview/localized-ui/20261118/de/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/de/screen-translation-screen-text.webp",
       "width": 852,
       "height": 1846,
@@ -756,13 +586,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/da/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -784,20 +607,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/da/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/da/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -858,13 +667,6 @@
       "displayCropBottom": 353
     },
     {
-      "src": "/app-preview/localized-ui/20261118/da/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/da/screen-translation-screen-text.webp",
       "width": 852,
       "height": 1846,
@@ -902,13 +704,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/ko/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/ko/document.webp",
       "width": 852,
       "height": 1846,
@@ -927,20 +722,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/ko/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/ko/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -970,13 +751,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/ko/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1031,20 +805,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/es/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/es/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/es/widget.webp",
       "width": 852,
       "height": 1846,
@@ -1056,13 +816,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/es/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1091,13 +844,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/chat-chat-entry.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/es/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1153,13 +899,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/it/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/it/document.webp",
       "width": 852,
       "height": 1846,
@@ -1178,20 +917,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/it/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/it/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1221,13 +946,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/it/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1275,13 +993,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/nl/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/nl/document.webp",
       "width": 852,
       "height": 1846,
@@ -1300,20 +1011,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/nl/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/nl/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1343,13 +1040,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/nl/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1397,13 +1087,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/no/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/no/document.webp",
       "width": 852,
       "height": 1846,
@@ -1422,20 +1105,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/no/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/no/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1465,13 +1134,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/widget.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/no/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1533,13 +1195,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/sv/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/sv/document.webp",
       "width": 852,
       "height": 1846,
@@ -1551,20 +1206,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/sv/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/sv/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1588,13 +1229,6 @@
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
       "kind": "gpt-image-ui-edit",
       "displayCropBottom": 352
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/sv/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
     },
     {
       "src": "/app-preview/localized-ui/20261118/sv/screen-translation-screen-text.webp",
@@ -1634,13 +1268,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/id/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/id/document.webp",
       "width": 852,
       "height": 1846,
@@ -1659,20 +1286,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/id/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/id/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1710,13 +1323,6 @@
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
       "kind": "gpt-image-ui-edit",
       "displayCropBottom": 360
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/id/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
     },
     {
       "src": "/app-preview/localized-ui/20261118/id/screen-translation-screen-text.webp",
@@ -1763,13 +1369,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/ru/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/ru/document.webp",
       "width": 852,
       "height": 1846,
@@ -1788,20 +1387,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/ru/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/ru/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1834,13 +1419,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/ru/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/ru/screen-translation-screen-text.webp",
       "width": 852,
       "height": 1846,
@@ -1861,20 +1439,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/pt-br/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/pt-br/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1903,13 +1467,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/pt-br/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -1956,13 +1513,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/pt-br/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/pt-br/screen-translation-screen-text.webp",
       "width": 852,
       "height": 1846,
@@ -1983,13 +1533,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/document-original.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/vi/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -2028,13 +1571,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/vi/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/vi/document.webp",
       "width": 852,
       "height": 1846,
@@ -2046,13 +1582,6 @@
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/vi/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
       "kind": "gpt-image-ui-edit"
     },
     {
@@ -2076,13 +1605,6 @@
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/keyboard.webp",
       "kind": "gpt-image-ui-edit",
       "displayCropBottom": 418
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/vi/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
     },
     {
       "src": "/app-preview/localized-ui/20261118/vi/screen-translation-screen-text.webp",
@@ -2136,20 +1658,6 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/th/menu-options.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-options.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/th/menu-staff.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/menu-staff.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/th/keyboard.webp",
       "width": 759,
       "height": 2071,
@@ -2165,24 +1673,10 @@
       "kind": "gpt-image-ui-edit"
     },
     {
-      "src": "/app-preview/localized-ui/20261118/th/screen-translation-setup.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/screen-translation-setup.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
       "src": "/app-preview/localized-ui/20261118/th/table.webp",
       "width": 852,
       "height": 1846,
       "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table.webp",
-      "kind": "gpt-image-ui-edit"
-    },
-    {
-      "src": "/app-preview/localized-ui/20261118/th/table-cell-source.webp",
-      "width": 852,
-      "height": 1846,
-      "sourceNative": "/app-preview/native/20261117-zh-tw-main25040-r5/zh-tw/table-cell-source.webp",
       "kind": "gpt-image-ui-edit"
     },
     {

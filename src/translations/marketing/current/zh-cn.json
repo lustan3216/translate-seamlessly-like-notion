@@ -177,7 +177,19 @@
         "多页照片依序整理，标题、段落、清单保留结构。",
         "点一下对照原文与原图，长文也不怕看漏。",
         "搜索扫描历史，需要的文档随时找回。"
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "主要功能",
+          "items": [
+            {
+              "title": "查看原图",
+              "body": "点扫描结果右上角的照片图标，打开原图，与对应页面对照。",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "键盘翻译：在原本的 App 里准备回复。",
@@ -681,18 +693,14 @@
       "helper.primary": "Helper 语法解说：以简体中文解析俄文商务改期消息的条件语气、时间与格位。",
       "photos.primary": "照片翻译：真实饮品菜单上的简体中文译文覆盖，对照英文原文。",
       "table.primary": "表格翻译：锡安接驳车公开时刻表，对照三个日期区间与首末班时间。",
-      "table.cell-source": "表格原文对照：点开接驳车首班信息，查看对应的英文行标题。",
       "document.primary": "文档翻译：将公开园区交通简介整理成简体中文段落，对照自行车与驾车信息。",
       "document.original": "文档原图对照：Getting Around 三栏公开原文，显示同份文档第 1／1 页。",
       "menu.primary": "菜单翻译：整理咖啡饮品与价格，显示已选拿铁 2 份及合计 7.80。",
-      "menu.options": "菜单点餐：拿铁／馥芮白加燕麦奶，选择 2 份并查看合计 7.80。",
-      "menu.staff": "给店员看：用原文展示拿铁／馥芮白、燕麦奶与 2 份点单，合计 7.80。",
       "chat.primary": "AI 助手餐厅场景：初级英文服务生开场，搭配对话任务与关键句。",
       "chat.chat-entry": "AI 助手对话模式：智能对话、目标练习与场景练习，选好语言与难度后开始。",
       "keyboard.primary": "iOS 原生键位与 AnyTranslator 翻译工具栏，保留输入中的简体中文工作消息草稿。",
       "widget.primary": "原生学习 Widget 预览：咖啡例句卡显示中英例句、拼音与简体中文用法提示，以及复习按钮。",
-      "screen-translation.primary": "屏幕文字翻译：Preview 的园区驾车原文与简体中文画中画结果。",
-      "screen-translation.setup": "任何 App 翻译设置：选择视频字幕或画面文字，设置简体中文目标与原文显示。"
+      "screen-translation.primary": "屏幕文字翻译：Preview 的园区驾车原文与简体中文画中画结果。"
     }
   }
 }

@@ -7,7 +7,7 @@ import MarketingShell, {
   DownloadButtons,
 } from "@/components/marketing/MarketingShell";
 import SEO from "@/components/SEO";
-import AppScreen, { AppScreenGallery, type ScreenFeature } from "@/components/AppScreen";
+import AppScreen, { type ScreenFeature } from "@/components/AppScreen";
 import HugeIcon from "@/components/HugeIcon";
 import PricingPlans from "@/components/marketing/PricingPlans";
 import { sharedAccountPreviewEnabled } from "@/lib/shared-account-preview";
@@ -225,8 +225,10 @@ function ArticleGrid({
     </div>
   );
 }
-export function FAQ() {
-  const { t, m, currentLanguage } = useMarketing();
+export function FAQ({ topics = faqTopics }: {
+  topics?: ReadonlyArray<(typeof faqTopics)[number]>;
+}) {
+  const { t, m } = useMarketing();
   const faqText = (topic: string, part: string) => {
     const key = `faq.${topic}${part}`;
     return m(key) !== key ? m(key) : t(`landing.faq${topic}${part}`);
@@ -238,7 +240,7 @@ export function FAQ() {
         <h2>{m("faq.title")}</h2>
       </div>
       <div>
-        {faqTopics.map((topic) => (
+        {topics.map((topic) => (
           <details key={topic}>
             <summary>
               {faqText(topic, "Q")}
@@ -309,7 +311,7 @@ export function HomePage() {
                 <AppScreen
                   still
                   feature={demo === "text" ? "helper" : demo}
-                  shotId={demo === "chat" ? "chat-entry" : demo === "menu" ? "options" : demo === "document" ? "original" : undefined}
+                  shotId={demo === "chat" ? "chat-entry" : demo === "document" ? "original" : undefined}
                 />
               </div>
             )}
@@ -451,6 +453,8 @@ export function FeaturePage() {
   const feature = features.find((x) => x.id === id);
   if (!feature) return <MissingPage />;
   const copy = details.features[feature.id];
+  const guide = copy.guide;
+  const steps = guide?.steps?.items.length ? guide.steps : undefined;
   return (
     <MarketingShell>
       <Head title={copy.title} description={copy.summary} />
@@ -467,24 +471,64 @@ export function FeaturePage() {
           <p className="mk-eyebrow">{m(`feature.${id}`)}</p>
           <h2>{copy.heading}</h2>
           <p>{copy.body}</p>
-          <ol className="mk-step-list">
-            {copy.steps.map((step, index) => (
-              <li key={step}>
-                <span>0{index + 1}</span>
-                {step}
-              </li>
-            ))}
-          </ol>
+          {!steps && (
+            <ol className="mk-step-list">
+              {copy.steps.map((step, index) => (
+                <li key={step}>
+                  <span>0{index + 1}</span>
+                  {step}
+                </li>
+              ))}
+            </ol>
+          )}
           <Link className="mk-text-link" to={href("/download")}>
             {m("nav.download")}
             <Arrow />
           </Link>
         </div>
       </section>
-      <AppScreenGallery feature={id as ScreenFeature} className="mk-wrap" />
-      {id === "menu" && <ProductStoryPanels panel="menu" />}
-      {id === "text" && <ProductStoryPanels panel="reply" />}
-      {id === "chat" && <ProductStoryPanels panel="practice" />}
+      {steps ? (
+        <section className="mk-section mk-wrap mk-feature-guide">
+          <h2 className="mk-section-title">{steps.title}</h2>
+          <ol className="mk-feature-guide-steps" role="list">
+            {steps.items.map((step, index) => (
+              <li key={step.image.src}>
+                <div className="mk-feature-guide-step-copy">
+                  <p className="mk-eyebrow" aria-hidden="true">0{index + 1}</p>
+                  <h3>{step.title}</h3>
+                  <p>{step.body}</p>
+                </div>
+                <div className="mk-feature-guide-step-screen">
+                  <img {...step.image} className="native-app-screen" alt="" loading="lazy" decoding="async" />
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ) : (
+        <>
+          {id === "menu" && <ProductStoryPanels panel="menu" />}
+          {id === "text" && <ProductStoryPanels panel="reply" />}
+          {id === "chat" && <ProductStoryPanels panel="practice" />}
+        </>
+      )}
+      {[guide?.abilities, guide?.situations].map((section) => section?.items.length ? (
+        <section className="mk-section mk-wrap mk-feature-guide-copy" key={section.title}>
+          <h2 className="mk-section-title">{section.title}</h2>
+          <div className="mk-feature-grid mk-workflow" data-count={section.items.length}>
+            {section.items.map((item) => (
+              <article className="mk-feature-guide-card" key={item.title}>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </div>
+                {item.shotId && <AppScreen feature={feature.id as ScreenFeature} shotId={item.shotId} />}
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null)}
+      {guide?.faq?.length ? <FAQ topics={guide.faq} /> : null}
       {copy.sections?.length ? (
         <section className="mk-section mk-wrap mk-feature-modules">
           <div className="mk-workflow">
@@ -1009,9 +1053,6 @@ export function ArticlePage() {
               <AppScreen feature={article.feature as ScreenFeature} alt={m(`article.${article.id}`)} />
             )}
           </div>
-          {article.id !== "mac" && (
-            <AppScreenGallery feature={article.feature as ScreenFeature} className="mk-article-gallery" />
-          )}
           {articleTools.map((tool) => (
             <section id={`article-${tool}`} key={tool}>
               <h2>{m(`feature.${tool}`)}</h2>

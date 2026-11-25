@@ -177,7 +177,19 @@
         "Fotos de varias páginas ordenadas con títulos, párrafos y listas.",
         "Toca para comparar texto e imagen originales, incluso en documentos largos.",
         "Busca en el historial de escaneos y recupera tus documentos."
-      ]
+      ],
+      "guide": {
+        "abilities": {
+          "title": "Qué puedes hacer",
+          "items": [
+            {
+              "title": "Ver la foto original",
+              "body": "Toca el icono de foto en la esquina superior derecha del resultado del escaneo para abrir la foto original y compararla con la página correspondiente.",
+              "shotId": "original"
+            }
+          ]
+        }
+      }
     },
     "keyboard": {
       "title": "Teclado traductor: responde desde tu app.",
@@ -681,18 +693,14 @@
       "helper.primary": "Explicación de Helper: condicional, tiempo y casos de un mensaje profesional ruso para cambiar una cita, en español.",
       "photos.primary": "Traducción de fotos: español superpuesto en una carta real de bebidas, junto al original.",
       "table.primary": "Traducción de tablas: horario público de los autobuses de Zion con tres periodos de fechas y primeras y últimas salidas.",
-      "table.cell-source": "Comparación con la tabla original: primera salida del autobús abierta para consultar su encabezado de fila en inglés.",
       "document.primary": "Traducción de documento: folleto público de transporte del parque en párrafos españoles, con información de bicicleta y coche.",
       "document.original": "Imagen original del documento: texto público «Getting Around» en tres columnas, página 1/1 del mismo documento.",
       "menu.primary": "Traducción de carta: cafés y precios organizados, con 2 lattes seleccionados y total de 7.80.",
-      "menu.options": "Pedido de la carta: latte/flat white con leche de avena, cantidad 2 y total de 7.80.",
-      "menu.staff": "Mostrar al personal: pedido original de latte/flat white, leche de avena y cantidad 2, total de 7.80.",
       "chat.primary": "Escena de restaurante del asistente de IA: saludo del camarero en inglés de nivel inicial, con tareas de conversación y frases clave.",
       "chat.chat-entry": "Modos del asistente de IA: conversación inteligente, práctica por objetivos y por escenas; elección de idioma y dificultad antes de empezar.",
       "keyboard.primary": "Teclas nativas de iOS y barra de traducción de AnyTranslator, con el borrador de mensaje de trabajo en español conservado.",
       "widget.primary": "Vista del widget de aprendizaje nativo: ficha grande de café con frase china, pinyin, traducción y consejos en español, y botones de repaso.",
-      "screen-translation.primary": "Traducción de pantalla: documento público del NPS sobre conducción en Preview, con resultado en español en una ventana PiP.",
-      "screen-translation.setup": "Ajustes de traducción en cualquier app: subtítulos de vídeo o texto en pantalla, español como destino y visualización del original."
+      "screen-translation.primary": "Traducción de pantalla: documento público del NPS sobre conducción en Preview, con resultado en español en una ventana PiP."
     }
   }
 }
