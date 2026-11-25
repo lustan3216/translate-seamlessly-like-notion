@@ -2396,10 +2396,11 @@ html[data-theme] body {
 /* Demo videos: the padding ring is a progress bar drawn behind the video (AppDemoVideo sets the angle).
    Recorded clips carry no window pixels to clip, and cover keeps a near-phone box from showing the ring through letterboxing. */
 .marketing-site .native-app-screen.app-demo-video {
-  padding: 2.5px;
+  padding: 4px;
   clip-path: none;
   object-fit: cover;
-  background: conic-gradient(var(--mk-muted), var(--mk-ink) var(--app-demo-progress, 0deg), var(--mk-line) 0) border-box;
+  /* Owner 2026-11-25: a coloured blue → purple → pink line, readable on light and dark stages. */
+  background: conic-gradient(#3b82f6, #8b5cf6 calc(var(--app-demo-progress, 0deg) / 2), #ec4899 var(--app-demo-progress, 0deg), var(--mk-line) 0) border-box;
 }
 @media (prefers-reduced-motion: reduce) {
   .marketing-site .native-app-screen.app-demo-video {
