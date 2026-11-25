@@ -18,7 +18,6 @@ type Entitlement = { source: string; plan: string; expiresAt: string; status: st
 type Billing = {
   entitlement: Entitlement | null;
   hasPortal?: boolean;
-  translationEnabled?: boolean;
   appClaimEmailEnabled?: boolean;
 };
 type Pairing = { confirmation_code: string; expires_at_ms: number };
@@ -69,7 +68,7 @@ function AccountSkeleton({ className = "" }: { className?: string }) {
 }
 
 function AccountManagement() {
-  const { currentLanguage, languages, copy, href } = useMarketing();
+  const { currentLanguage, copy, href } = useMarketing();
   const location = useLocation();
   const navigate = useNavigate();
   const messages = sharedAccountCopy(currentLanguage.code);
@@ -94,12 +93,8 @@ function AccountManagement() {
   const [feedback, setFeedback] = useState("");
   const [busy, setBusy] = useState(false);
   const [refresh, setRefresh] = useState(0);
-  const [target, setTarget] = useState(currentLanguage.code === "en" ? "zh-tw" : currentLanguage.code);
-  const [text, setText] = useState("");
-  const [translation, setTranslation] = useState<{ text: string; language: string } | null>(null);
   const lock = useRef(false);
   const displayName = useRef<HTMLInputElement>(null);
-  const result = useRef<HTMLParagraphElement>(null);
   const handlingEmailFragment = useRef(false);
   const fragment = new URLSearchParams(location.hash.slice(1));
   const pairCode = sharedAccountPreviewEnabled ? fragment.get("pair") : null;
@@ -143,8 +138,6 @@ function AccountManagement() {
       if (!active) return;
       if ("account" in result) {
         setAccount(result.account);
-        setTranslation(null);
-        setText("");
         setEmailReauthentication(false);
         clearStoredCheckoutAttempt();
       } else {
@@ -216,10 +209,6 @@ function AccountManagement() {
   }, [pair, pairApproved]);
 
   useEffect(() => {
-    if (translation) result.current?.focus();
-  }, [translation]);
-
-  useEffect(() => {
     if (account && location.hash === "#delete") document.getElementById("delete")?.focus();
   }, [account, location.hash]);
 
@@ -257,15 +246,12 @@ function AccountManagement() {
     const data = await accountRequest<{ account: Account }>(`${prefix}/verify`, { credential });
     if (account && account.id !== data.account.id) setConfirmDeletion(false);
     setAccount(data.account);
-    setTranslation(null);
   }
 
   function signOut() {
     return run(async () => {
       await accountRequest("/logout", {});
       setAccount(null);
-      setText("");
-      setTranslation(null);
     });
   }
 
@@ -280,8 +266,6 @@ function AccountManagement() {
         throw failure;
       }
       setAccount(null);
-      setText("");
-      setTranslation(null);
       setConfirmDeletion(false);
       setEmailReauthentication(false);
       setFeedback("deleted");
@@ -309,17 +293,6 @@ function AccountManagement() {
     });
   }
 
-  function sendTranslation(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    return run(async () => {
-      setTranslation(null);
-      const { translation: output } = await accountRequest<{ translation: string }>("/translate", {
-        text: text.trim(), source_language: "auto", target_language: target === "no" ? "nb" : target,
-      });
-      setTranslation({ text: output, language: target });
-    });
-  }
-
   const errorText = error === "recent_passkey_required" ? messages.reauthenticate
     : error === "recent_email_access_required" ? guest.reauthenticate
     : error === "creem_web_link_unavailable" ? guest.linkUnavailable
@@ -328,7 +301,6 @@ function AccountManagement() {
     : ["billing_needs_attention", "account_has_active_billing", "billing_cancellation_required"].includes(error)
       ? sharedAccountPreviewEnabled ? messages.billingBlock : webPricing.deletionBlocked
     : error === "passkey_cancelled" ? messages.passkeyCancelled
-    : error === "web_text_quota_exceeded" ? messages.quotaReached
     : error === "sign_in_required" ? messages.signIn
     : messages.error;
   const expiry = billing?.entitlement ? new Date(billing.entitlement.expiresAt) : null;
@@ -440,26 +412,6 @@ function AccountManagement() {
                   )}
                 </AccountSection>
               )}
-              {allowAccountUse && (sharedAccountPreviewEnabled || billing?.translationEnabled) && <AccountSection id="account-translate" title={messages.translateTitle}>
-                <form onSubmit={sendTranslation}>
-                  <div className="mk-field">
-                    <label htmlFor="account-text">{messages.sourceText}</label>
-                    <textarea id="account-text" maxLength={billing?.entitlement ? 5000 : 800} rows={4} value={text} onChange={(event) => setText(event.target.value)} required dir="auto" />
-                  </div>
-                  <div className="mk-field">
-                    <label htmlFor="account-target">{messages.targetLanguage}</label>
-                    <select id="account-target" value={target} onChange={(event) => setTarget(event.target.value)}>
-                      {languages.map(({ code, nativeName }) => <option key={code} value={code} lang={code}>{nativeName}</option>)}
-                    </select>
-                  </div>
-                  <button className="mk-button" type="submit" disabled={busy || !text.trim()}>{messages.translateAction}</button>
-                </form>
-                {translation && (
-                  <p className="mk-account-translation" role="group" tabIndex={-1} ref={result} lang={translation.language} dir="auto" aria-label={messages.translation}>
-                    {translation.text}
-                  </p>
-                )}
-              </AccountSection>}
               <AccountSection id="delete" title={messages.deleteAccount}>
                 {confirmDeletion ? (
                   <>

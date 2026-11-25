@@ -11,7 +11,7 @@ const postRoutes = new Set([
   "passkeys/register/options", "passkeys/register/verify",
   "passkeys/login/options", "passkeys/login/verify",
   "pair/preview", "pair/approve", "logout", "delete",
-  "translate", "billing/portal", "billing/app-link", ...guestBillingRoutes,
+  "billing/portal", "billing/app-link", ...guestBillingRoutes,
 ]);
 const prefix = "/api/account/";
 const jsonType = "application/json";

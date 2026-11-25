@@ -44,4 +44,4 @@ The production packaging script stays separate. The local proxy fixture runs wit
 
 If test billing is enabled in the Dev Worker, set the Creem Test Mode success URL to the selected account origin plus `/account?billing=return`. On return, the account page reloads subscription status while waiting for the test webhook. Use a known test account when verifying the customer portal and cancellation. The Apple storefront pricing page continues using its own pricing source.
 
-Use the signed-in text form to check the Dev translation route. Account deletion requires a recent passkey verification and a resolved test subscription. It removes the shared sign-in and linked installations from the account while Apple continues to manage its subscriptions.
+Account deletion requires a recent passkey verification and a resolved test subscription. It removes the shared sign-in and linked installations from the account while Apple continues to manage its subscriptions.

@@ -35,8 +35,7 @@
   transform: none;
 }
 
-.mk-account-notice,
-.mk-account-translation {
+.mk-account-notice {
   width: 100%;
   padding: 14px 16px;
   border-radius: 12px;
@@ -45,11 +44,6 @@
 
 .mk-account-notice .mk-button {
   margin-top: 12px;
-}
-
-.mk-account-translation {
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
 }
 
 .mk-account-actions {

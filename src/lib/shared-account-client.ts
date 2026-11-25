@@ -10,7 +10,7 @@ export async function accountRequest<T>(path: string, body?: object, signal?: Ab
   const cancel = () => timeout.abort();
   signal?.addEventListener("abort", cancel, { once: true });
   if (signal?.aborted) cancel();
-  const timer = window.setTimeout(cancel, path === "/translate" ? 50_000 : 20_000);
+  const timer = window.setTimeout(cancel, 20_000);
   try {
     const response = await fetch(`/api/account${path}`, {
       method: body ? "POST" : "GET",
