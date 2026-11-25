@@ -2393,6 +2393,20 @@ html[data-theme] body {
   clip-path: inset(0 0.3% 0.14% round 13.5% / 6.25%);
   object-fit: contain;
 }
+/* Demo videos: the padding ring is a progress bar drawn behind the video (AppDemoVideo sets the angle).
+   Recorded clips carry no window pixels to clip, and cover keeps a near-phone box from showing the ring through letterboxing. */
+.marketing-site .native-app-screen.app-demo-video {
+  padding: 2.5px;
+  clip-path: none;
+  object-fit: cover;
+  background: conic-gradient(var(--mk-muted), var(--mk-ink) var(--app-demo-progress, 0deg), var(--mk-line) 0) border-box;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marketing-site .native-app-screen.app-demo-video {
+    padding: 0;
+    background: none;
+  }
+}
 @media (min-width: 1024px) {
   .mk-feature-stage > .native-app-screen {
     width: 360px;

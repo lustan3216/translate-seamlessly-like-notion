@@ -60,10 +60,32 @@ function AppDemoVideo({ priority, ...props }: ComponentPropsWithoutRef<"video"> 
     });
     observer.observe(video);
     reducedMotion.addEventListener("change", onMotionChange);
+
+    // The frame fills clockwise from top centre at an even speed along the edge, so the angle is
+    // taken from the point at that share of the perimeter, not from the share of a turn.
+    let frame = 0;
+    const drawProgress = () => {
+      const share = video.duration > 0 ? video.currentTime / video.duration : 0;
+      const w = video.offsetWidth, h = video.offsetHeight;
+      let d = share * 2 * (w + h), x = 0, y = -h / 2;
+      for (const [dx, dy, length] of [[1, 0, w / 2], [0, 1, h], [-1, 0, w], [0, -1, h], [1, 0, w / 2]]) {
+        const step = Math.min(d, length);
+        x += dx * step; y += dy * step; d -= step;
+      }
+      const angle = share >= 1 ? 360 : ((Math.atan2(x, -y) * 180) / Math.PI + 360) % 360;
+      video.style.setProperty("--app-demo-progress", `${angle}deg`);
+      if (!video.paused) frame = requestAnimationFrame(drawProgress);
+    };
+    const onPlay = () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(drawProgress); };
+    video.addEventListener("play", onPlay);
+    video.addEventListener("seeked", drawProgress);
     return () => {
       observer.disconnect();
       observer.takeRecords();
       reducedMotion.removeEventListener("change", onMotionChange);
+      video.removeEventListener("play", onPlay);
+      video.removeEventListener("seeked", drawProgress);
+      cancelAnimationFrame(frame);
       video.pause();
     };
   }, []);
@@ -71,6 +93,7 @@ function AppDemoVideo({ priority, ...props }: ComponentPropsWithoutRef<"video"> 
   return (
     <video
       {...props}
+      className={`${props.className ?? ""} app-demo-video`}
       ref={ref}
       muted
       playsInline
