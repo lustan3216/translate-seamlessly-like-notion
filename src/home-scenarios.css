@@ -6,10 +6,10 @@
 }
 .mk-home-scenario {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 172px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 1fr auto;
   gap: 24px;
-  align-items: center;
-  padding: 32px;
+  padding: 28px;
   border-radius: 20px;
   background: var(--mk-surface);
   min-width: 0;
@@ -56,7 +56,7 @@
   padding-block: 8px;
 }
 .marketing-site .mk-home-scenario-art > .native-app-screen {
-  width: 172px;
+  width: 320px;
   max-width: 100%;
   height: auto;
   max-height: none;
@@ -69,7 +69,7 @@
   display: none;
 }
 .mk-home-scenario:has([data-native-capture-pending]) {
-  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 .mk-home-feature-index {
   display: grid;
@@ -103,30 +103,17 @@
     max-width: 390px;
   }
 }
-@media (max-width: 1199px) {
-  .mk-home-scenario {
-    grid-template-columns: 1fr;
-    align-content: start;
-    padding: 28px;
-  }
-  .mk-home-scenario-art {
-    padding-top: 24px;
-    align-self: end;
-  }
-  .marketing-site .mk-home-scenario-art > .native-app-screen {
-    width: 240px;
+@media (max-width: 863px) {
+  .mk-home-scenario-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 @media (max-width: 767px) {
   .marketing-site .mk-home-hero h1 {
     font-size: clamp(30px, 8.5vw, 43px);
   }
-  .mk-home-scenario-grid,
   .mk-home-feature-index {
     grid-template-columns: 1fr;
-  }
-  .mk-home-scenario {
-    padding: 24px;
   }
   .mk-home-scenario-context {
     font-size: 12px;
