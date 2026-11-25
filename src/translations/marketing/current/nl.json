@@ -97,37 +97,71 @@
   "features": {
     "text": {
       "title": "Tekstvertaling: duidelijke betekenis, passende toon.",
-      "summary": "Zeven tonen voor berichten en e-mails, afgestemd op de ontvanger. Begrijp Russische en Duitse verbuigingen met Helper en laat de AI-assistent de bronzin nakijken.",
+      "summary": "Zes tonen voor berichten en e-mails, afgestemd op de ontvanger. Begrijp Russische en Duitse verbuigingen met Helper en laat de AI-assistent de bronzin nakijken.",
       "heading": "Kies de toon die bij de ontvanger past.",
       "body": "Formuleer werkverzoeken beleefd, praat natuurlijk met vrienden of kort lange berichten in. Luister naar AI-uitspraak en bewaar goede zinnen. Helper verklaart Russische en Duitse naamvallen en uitgangen; de AI-assistent helpt met correcties.",
       "steps": [
-        "Zeven tonen, van formele brieven tot dagelijkse gesprekken.",
+        "Zes tonen, van formele brieven tot dagelijkse gesprekken.",
         "Helper legt Russische en Duitse verbuigingen uit; de AI-assistent kijkt de bronzin op verzoek na.",
         "Luister naar natuurlijke AI-uitspraak, bewaar zinnen of neem tekst mee als concept voor de AI-assistent."
       ],
-      "sections": [
-        {
-          "title": "Begrijp Russische en Duitse naamvallen en uitgangen",
-          "body": "Grammatica, veelgemaakte fouten en woordanalyse verklaren Russische naamvallen en Duitse lidwoorden en uitgangen in je eigen taal. Begrijp de verbanden en kies dan je formulering."
-        },
-        {
-          "title": "Zeven tonen voor verschillende ontvangers",
-          "body": "Automatisch, beleefd, humoristisch, brief, vriendelijk, beknopt en flirterig: een passende toon voor werk en internationale contacten.",
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
           "items": [
-            "Automatisch: stemt de toon af op brontekst en context.",
-            "Beleefd: voor verzoeken, vragen en werkberichten.",
-            "Humoristisch: maakt geschikte gesprekken wat luchtiger.",
-            "Brief: voor e-mails en brieven.",
-            "Vriendelijk: natuurlijk en ontspannen, zoals onder bekenden.",
-            "Beknopt: verkort de formulering; controleer belangrijke informatie.",
-            "Flirterig: speels en lief voor internationale contacten."
+            {
+              "title": "Voer de brontekst in",
+              "body": "Kies de talen en typ of plak de tekst."
+            },
+            {
+              "title": "Lees de vertaling",
+              "body": "Lees de vertaling onder je tekst."
+            },
+            {
+              "title": "Kies een toon",
+              "body": "Open de toonkeuze en kies een stijl."
+            },
+            {
+              "title": "Gebruik de nieuwe formulering",
+              "body": "Controleer de betekenis en kopieer of bewaar de tekst."
+            }
           ]
         },
-        {
-          "title": "Russisch en Duits nakijken: begrijp eerst waarom iets verandert",
-          "body": "De automatische toon behoudt de brontekst als die volledig in de doeltaal staat. Controleer naamvallen, uitgangen en grammatica met Helper of vraag de AI-assistent de oorspronkelijke zin na te kijken."
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "Zes tonen voor verschillende situaties",
+              "body": "‘Automatisch’ volgt de context, ‘Beleefd’ past bij verzoeken en ‘Humor’ maakt het gesprek luchtiger. ‘Formeel’ past bij zakelijke e-mails, ‘Informeel’ bij alledaagse gesprekken en ‘Bondig’ maakt de tekst korter."
+            },
+            {
+              "title": "Begrijp Russische en Duitse grammatica",
+              "body": "Gebruik ‘Grammatica’, ‘Veelgemaakte fouten’ en ‘Woord voor woord’ onder ‘Aangepaste kennis’ voor naamvallen, lidwoorden en uitgangen. Vraag de AI-assistent om je bronzin na te kijken."
+            },
+            {
+              "title": "Behoud tekst die al in de doeltaal is",
+              "body": "Met ‘Automatisch’ blijft een hele passage ongewijzigd als die al in de doeltaal staat."
+            },
+            {
+              "title": "Luister, bewaar of kopieer",
+              "body": "Beluister de uitspraak van de AI, bewaar nuttige uitdrukkingen of kopieer de vertaling naar de AI-assistent."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Schrijf een verzoek voor je werk",
+              "body": "Gebruik ‘Beleefd’ of ‘Formeel’ voor verzoeken aan collega’s of klanten."
+            },
+            {
+              "title": "Antwoord een vriend",
+              "body": "Vergelijk een lang bericht met het origineel en gebruik ‘Informeel’ voor je antwoord."
+            }
+          ]
         }
-      ]
+      }
     },
     "photos": {
       "title": "Fotovertaling: de vertaling direct op de woorden.",
@@ -138,7 +172,64 @@
         "Live vertaaloverlay: richt op een bord en lees meteen.",
         "Maak een foto of kies uit je bibliotheek en vertaal de tekst erin.",
         "Bekijk vertaaldetails met behoud van de oorspronkelijke beeldcontext."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
+          "items": [
+            {
+              "title": "Maak of kies een foto",
+              "body": "Fotografeer de tekst of kies een afbeelding."
+            },
+            {
+              "title": "Lees de vertaling op de foto",
+              "body": "Lees de vertaling op de plek van de tekst in de afbeelding."
+            },
+            {
+              "title": "Tik op tekst voor details",
+              "body": "Tik op een regel om het origineel en de vertaling te vergelijken."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "Vertaal live tekst in beeld",
+              "body": "Richt de camera op leesbare tekst en bekijk de vertaling op dezelfde plek in beeld."
+            },
+            {
+              "title": "Vertaal een foto",
+              "body": "Maak een foto of kies er een uit je fotobibliotheek. De vertaling verschijnt direct op de foto, in de oorspronkelijke context."
+            },
+            {
+              "title": "Vergelijk een tekstblok",
+              "body": "Tik op een tekstblok om in de details het origineel met de vertaling te vergelijken."
+            },
+            {
+              "title": "Zoom in op de foto",
+              "body": "Beweeg twee vingers uit elkaar om kleine letters op een foto groter te zien."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Lees onderweg een bord",
+              "body": "Richt je camera op een bord en lees de vertaling op dezelfde plek in beeld."
+            },
+            {
+              "title": "Controleer een productetiket",
+              "body": "Fotografeer het etiket en tik op de regel die je wilt controleren."
+            },
+            {
+              "title": "Lees een opgeslagen mededeling",
+              "body": "Open de foto van een mededeling uit je fotobibliotheek en lees de vertaling op de foto."
+            }
+          ]
+        }
+      }
     },
     "voice": {
       "title": "Spraakvertaling: volg beide kanten van het gesprek.",
@@ -150,12 +241,59 @@
         "Privé luisteren gebruikt de telefoonhoorn of koptelefoon; Alleen ondertitels past bij stille situaties.",
         "Bekijk het gesprek, beluister AI-vertalingen opnieuw en kopieer of deel de hoofdpunten uit de samenvatting."
       ],
-      "sections": [
-        {
-          "title": "Natuurlijke AI-vertaling met toon en ritme",
-          "body": "Een nieuwe generatie spraakmodellen maakt vertaalde spraak met natuurlijke intonatie en subtiele emotie passend bij de inhoud. Gebruik het in gesprekken en spreek het later na om uitspraak en accenten te leren kennen."
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
+          "items": [
+            {
+              "title": "Stel beide talen in",
+              "body": "Kies beide talen en tik op de microfoon."
+            },
+            {
+              "title": "Lees beide kanten van het gesprek",
+              "body": "Lees elke regel mee in de oorspronkelijke taal en in de vertaling."
+            },
+            {
+              "title": "Beluister een regel opnieuw",
+              "body": "Tik op het luidsprekerpictogram naast een vertaling."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "Laat vertalingen voorlezen",
+              "body": "‘Gesprek in twee richtingen’ kan beide kanten voorlezen. ‘Spreek voor mij’ speelt alleen jouw vertaalde zinnen af."
+            },
+            {
+              "title": "Luister privé of lees mee",
+              "body": "Gebruik ‘Privé luisteren’ via de oorspeaker of een koptelefoon, of kies ‘Alleen ondertitels’."
+            },
+            {
+              "title": "Luister naar natuurlijke AI-spraak",
+              "body": "Luister naar de intonatie en het ritme. Speel een regel opnieuw af om vertrouwd te raken met de uitspraak en het accent."
+            },
+            {
+              "title": "Bekijk de samenvatting",
+              "body": "Bekijk het gesprek later opnieuw en kopieer of deel de samenvatting."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Check in bij een hotel",
+              "body": "Laat je kamertype, de borg en de uitchecktijd bevestigen."
+            },
+            {
+              "title": "Stel vragen aan het restaurantpersoneel",
+              "body": "Vraag naar porties, ingrediënten of hoe een gerecht wordt bereid."
+            }
+          ]
         }
-      ]
+      }
     },
     "menu": {
       "title": "Menu's scannen: van gerechten begrijpen naar je bestelling tonen.",
@@ -166,7 +304,64 @@
         "Namen, beschrijvingen en prijzen worden overzichtelijke gerechtkeuzes.",
         "Kies aantallen, formaten, beschikbare extra's en opmerkingen.",
         "Toon de bestelling in de brontaal, met bekende prijzen per valuta opgeteld."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
+          "items": [
+            {
+              "title": "Scan de menukaart",
+              "body": "Kies ‘Menu’ onder ‘Ordenen’, voeg een foto toe en start de scan."
+            },
+            {
+              "title": "Lees de vertaling",
+              "body": "Bekijk gerechten, details en prijzen."
+            },
+            {
+              "title": "Kies gerechten",
+              "body": "Geef de aantallen op en kies extra’s."
+            },
+            {
+              "title": "Toon je bestelling aan het personeel",
+              "body": "Tik op ‘Aan personeel tonen’ om het origineel te zien."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "Controleer de oorspronkelijke menutekst",
+              "body": "Tik op een gerecht om de oorspronkelijke naam, beschrijving en vermelde prijs te zien."
+            },
+            {
+              "title": "Voeg een opmerking toe aan je bestelling",
+              "body": "Voeg een verzoek toe aan je bestelling, zodat het personeel het ziet wanneer je de bestelling laat zien."
+            },
+            {
+              "title": "Bekijk totalen per valuta",
+              "body": "Zijn de prijzen van alle gekozen gerechten en extra’s bekend? Dan zie je een totaal per valuta."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Uit eten in het buitenland",
+              "body": "Bekijk de gerechten en prijzen op een lokale menukaart voordat je beslist wat je bestelt."
+            },
+            {
+              "title": "Extra’s kiezen bij de koffie",
+              "body": "Kies hoeveel koffie je wilt bestellen en bekijk welke melksoorten of extra’s beschikbaar zijn."
+            },
+            {
+              "title": "Voor vrienden bestellen",
+              "body": "Zet ieders gerechten, aantallen en opmerkingen samen in één bestelling."
+            }
+          ]
+        }
+      }
     },
     "document": {
       "title": "Documenten scannen: orden per pagina, behoud alinea's en hoofdzaken.",
@@ -179,13 +374,50 @@
         "Zoek je document terug in de scangeschiedenis."
       ],
       "guide": {
+        "steps": {
+          "title": "Zo werkt het",
+          "items": [
+            {
+              "title": "Scan een document",
+              "body": "Kies ‘Document’ onder ‘Ordenen’, voeg de paginafoto’s op volgorde toe en start de scan."
+            },
+            {
+              "title": "Lees de vertaling",
+              "body": "Volg de koppen, alinea’s en lijsten."
+            },
+            {
+              "title": "Controleer de brontekst",
+              "body": "Tik op een vertaalde alinea om het origineel te zien."
+            }
+          ]
+        },
         "abilities": {
           "title": "Wat je kunt doen",
           "items": [
             {
               "title": "Bekijk de originele foto",
-              "body": "Tik rechtsboven in het scanresultaat op het fotopictogram om de originele foto te openen en die met de bijbehorende pagina te vergelijken.",
-              "shotId": "original"
+              "body": "Tik rechtsboven in het scanresultaat op het fotopictogram om de originele foto te openen en die met de bijbehorende pagina te vergelijken."
+            },
+            {
+              "title": "Scan meerdere pagina’s tegelijk",
+              "body": "Voeg de foto’s van je pagina’s op volgorde toe en laat ze in één keer ordenen."
+            },
+            {
+              "title": "Open een eerdere scan opnieuw",
+              "body": "Zoek op titel of type in de scangeschiedenis en open het document opnieuw."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Lees een gedrukte mededeling",
+              "body": "Orden de mededeling in alinea’s en lijsten in de oorspronkelijke leesvolgorde."
+            },
+            {
+              "title": "Controleer de huisregels",
+              "body": "Scan de gedrukte huisregels en open ze later opnieuw om tijden of kosten na te kijken."
             }
           ]
         }
@@ -200,7 +432,56 @@
         "Vertaal in het tekstveld, vervang het concept en schrijf verder.",
         "Typ of dicteer met iOS en kies taal en toon.",
         "Vertaal klembordtekst, kopieer of voeg in bij de cursor."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
+          "items": [
+            {
+              "title": "Schakel het toetsenbord in",
+              "body": "Volg de handleiding in de app om het toetsenbord toe te voegen en ‘Geef volledige toegang’ in te schakelen."
+            },
+            {
+              "title": "Wissel van toetsenbord",
+              "body": "Gebruik in een ondersteund tekstveld de wereldboltoets om ‘AnyTranslator’ te kiezen."
+            },
+            {
+              "title": "Vertaal een concept",
+              "body": "Typ je tekst, kies de doeltaal en tik op ‘Vertalen’."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "Vertaal in hetzelfde veld",
+              "body": "Vervang je concept door de vertaling en schrijf verder in dezelfde app."
+            },
+            {
+              "title": "Pas de toon aan",
+              "body": "Kies een toon om de tekst in het veld opnieuw te vertalen."
+            },
+            {
+              "title": "Vertaal tekst van het klembord",
+              "body": "Gebruik de toetsenbordfuncties om gekopieerde tekst te vertalen. Kopieer het resultaat of voeg het in op de plek van de cursor."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Antwoord in een berichtenapp",
+              "body": "Wissel van taal in een ondersteund tekstveld voor berichten en controleer de vertaling voordat je het bericht verstuurt."
+            },
+            {
+              "title": "Schrijf een bericht voor je werk",
+              "body": "Kies een toon die past bij de lezer, bijvoorbeeld voor een beleefd verzoek of een kort antwoord."
+            }
+          ]
+        }
+      }
     },
     "helper": {
       "title": "Helper verklaart grammatica en gebruik.",
@@ -212,20 +493,59 @@
         "Verken synoniemen, voorbeeldzinnen, impliciete betekenissen en antwoordsuggesties.",
         "Kies vakgebied, doelen en diepgang en bewaar uitleg-instructies voor hergebruik."
       ],
-      "sections": [
-        {
-          "title": "Begrijp waarom Russisch en Duits verbuigen",
-          "body": "Voorbeelden in context: van de Russische instrumentalis tot de Duitse datief. Zie hoe naamvallen, lidwoorden en zelfstandig-naamwoorduitgangen samen veranderen.",
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
           "items": [
-            "Russisch: Я говорю с мой друг. → Я говорю с моим другом. с in de betekenis 'samen met' vraagt de instrumentalis, dus zowel мой als друг krijgt een andere uitgang.",
-            "Duits: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit vraagt de datief; de zwak verbogen vorm van Kunde is Kunden."
+            {
+              "title": "Voer een zin in",
+              "body": "Typ of plak de zin in ‘Tekstvertaling’."
+            },
+            {
+              "title": "Kies een uitleg",
+              "body": "Kies onder ‘Aangepaste kennis’ een instructie zoals ‘Grammatica’."
+            },
+            {
+              "title": "Lees hoe de zin in elkaar zit",
+              "body": "Lees waarom bepaalde vormen, uitgangen of constructies worden gebruikt."
+            }
           ]
         },
-        {
-          "title": "Bewaar uitleg-instructies voor de volgende zin",
-          "body": "Sla bijvoorbeeld 'Leg Russische naamvallen uit in mijn taal' of 'Verklaar Duitse uitgangen' op. Nieuwe zinnen krijgen dezelfde vertrouwde uitleg, zodat je je kunt richten op wat je wilt leren."
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "Bekijk de grammatica en fouten",
+              "body": "Kies ‘Grammatica’, ‘Veelgemaakte fouten’ of ‘Woord voor woord’ om te zien hoe een zin in elkaar zit."
+            },
+            {
+              "title": "Verken woorden en voorbeelden",
+              "body": "Gebruik synoniemen, voorbeeldzinnen of impliciete betekenissen om te zien hoe formuleringen veranderen met de context."
+            },
+            {
+              "title": "Wissel tussen origineel en vertaling",
+              "body": "Wissel onder ‘Aangepaste kennis’ van tekstbron om het origineel of de vertaling te laten uitleggen."
+            },
+            {
+              "title": "Bewaar instructies voor later",
+              "body": "Bewaar een instructie voor je onderwerp, leerdoel of gewenste diepgang en gebruik die opnieuw bij nieuwe zinnen."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Bestudeer de Russische instrumentalis",
+              "body": "Gebruik с моим другом om te zien waarom с de instrumentalis vereist en hoe мой en друг veranderen."
+            },
+            {
+              "title": "Controleer Duitse uitgangen in de datief",
+              "body": "Vergelijk in mit dem Kunden het lidwoord in de datief en de uitgang van een zwak zelfstandig naamwoord."
+            }
+          ]
         }
-      ]
+      }
     },
     "widget": {
       "title": "Leerwidget: herhalen binnen handbereik.",
@@ -236,7 +556,60 @@
         "Lees uitdrukkingen, luister naar AI-uitspraak en spreek na vanaf je beginscherm.",
         "Markeer voor herhaling of als geleerd voor de volgende leerronde.",
         "Kies inhoudstype, onderwerp en niveau en voeg eigen instructies toe."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
+          "items": [
+            {
+              "title": "Voeg de widget toe aan je beginscherm",
+              "body": "Volg de handleiding in de app om de ‘Leerwidget’ toe te voegen."
+            },
+            {
+              "title": "Lees en luister",
+              "body": "Lees de kaart en tik op de luidspreker om de uitdrukking te horen."
+            },
+            {
+              "title": "Geef aan of je de kaart kent",
+              "body": "Kies ‘Herhalen’ of ‘Weet ik’ om te bepalen wanneer de kaart terugkomt."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "Luister op het beginscherm",
+              "body": "Gebruik de luidspreker op de kaart om de uitspraak te horen en die na te zeggen."
+            },
+            {
+              "title": "Houd je herhalingen bij",
+              "body": "Geef aan dat je een kaart kent of nog eens wilt oefenen. Zo verandert het moment van de volgende herhaling."
+            },
+            {
+              "title": "Kies wat je wilt herhalen",
+              "body": "Kies in de instellingen inhoudstypen, onderwerpen en moeilijkheid. Voeg eigen instructies toe als die optie beschikbaar is."
+            },
+            {
+              "title": "Open een kaart op het toegangsscherm",
+              "body": "Tik op de kaart op het toegangsscherm om de bijbehorende uitdrukking in de app te openen."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Herhaal als je even tijd hebt",
+              "body": "Luister naar een nuttige uitdrukking en zeg die na terwijl je op de bus wacht."
+            },
+            {
+              "title": "Bereid een gesprek voor",
+              "body": "Herhaal woordenschat per onderwerp en oefen de uitdrukkingen hardop."
+            }
+          ]
+        }
+      }
     },
     "table": {
       "title": "Tabellen vertalen: vergelijk rijen en kolommen en begrijp elk getal.",
@@ -247,7 +620,60 @@
         "Rijen en kolommen houden tijden en prijzen vergelijkbaar.",
         "Scrol brede tabellen horizontaal om alle velden en eenheden te zien.",
         "Vergelijk brontekst en foto's en open opnieuw vanuit de scangeschiedenis."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
+          "items": [
+            {
+              "title": "Scan een tabel",
+              "body": "Kies ‘Tabel’ onder ‘Ordenen’, voeg een foto toe en start de scan."
+            },
+            {
+              "title": "Volg rijen en kolommen",
+              "body": "Gebruik de kolomkoppen om tijden, prijzen of eenheden bij de juiste rij te vinden."
+            },
+            {
+              "title": "Scrol zijwaarts in een brede tabel",
+              "body": "Veeg opzij om de overige kolommen te zien."
+            },
+            {
+              "title": "Controleer de oorspronkelijke tekst",
+              "body": "Tik op een kop of op een cel met brontekst om het origineel te controleren."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "Behoud de tabelstructuur",
+              "body": "Kolomkoppen, rijlabels en gegevenskolommen blijven apart, zodat je ze makkelijk kunt vergelijken."
+            },
+            {
+              "title": "Houd rijlabels in beeld",
+              "body": "Bij een brede tabel blijft de eerste kolom staan terwijl je opzij scrolt."
+            },
+            {
+              "title": "Vergelijk met de volledige foto",
+              "body": "Tik rechtsboven op het fotopictogram om de originele foto van de pagina te openen."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Bekijk dienstregelingen",
+              "body": "Vergelijk vertrektijden per route en scrol zo nodig naar de volgende kolom."
+            },
+            {
+              "title": "Vergelijk prijzen van tickets en diensten",
+              "body": "Vergelijk prijzen, ticketsoorten en vermelde eenheden aan de hand van de rijen en kolommen."
+            }
+          ]
+        }
+      }
     },
     "chat": {
       "title": "AI-assistent",
@@ -259,35 +685,67 @@
         "Oefen scenario's en doelen voor reizen, werk en dagelijkse gesprekken.",
         "Luister naar natuurlijke voorbeelden, spreek na en oefen opnieuw. Bewaar bruikbare uitdrukkingen."
       ],
-      "sections": [
-        {
-          "title": "Vraag over foto's en laat ter plekke tolken",
-          "body": "Voeg een foto van een bord, mededeling of bericht toe. AI ordent hoofdpunten, aandachtspunten en vervolgstappen. Gebruik spraakchat of live tolken om je vragen duidelijk te stellen bij een taalbarrière.",
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
           "items": [
-            "Spraakgesprek: vraag hardop en praat verder.",
-            "Praat Engels met mij: maak van oefenen een natuurlijk gesprek.",
-            "Tolk live voor mij: verbind verschillende talen.",
-            "Laat AI een foto begrijpen: vind hoofdzaken en vervolgstappen."
+            {
+              "title": "Geef de context",
+              "body": "Zeg waar je naartoe gaat en wat je wilt oefenen."
+            },
+            {
+              "title": "Bekijk de voorbeelden",
+              "body": "Lees de voorbeelden en kies er een waarover je iets wilt vragen."
+            },
+            {
+              "title": "Stel een vraag over een foto",
+              "body": "Voeg een foto toe en vertel wat je wilt weten."
+            },
+            {
+              "title": "Vraag om een zin die je kunt gebruiken",
+              "body": "Vraag om een zin die bij de foto en het gesprek past."
+            }
           ]
         },
-        {
-          "title": "Oefen de taal die je in je leven nodig hebt",
-          "body": "Van restaurant en luchthaven tot sollicitatie en werk: kies een scenario om gesprekken te oefenen of een doel om stapsgewijs te leren. Maak ook eigen scenario's en doelen. Hardop antwoorden staat centraal als voorbereiding op het volgende echte gesprek.",
+        "abilities": {
+          "title": "Wat je kunt doen",
           "items": [
-            "Scenario-oefening: speel een rol en voltooi gesprekstaken.",
-            "Doeloefening: oefen eerst uitdrukkingen en gebruik ze daarna in een scenario.",
-            "Eigen leerroute: maak een scenario of doel voor een specifieke gelegenheid."
+            {
+              "title": "Gesprek in de chat",
+              "body": "Typ of stuur een foto. Als spraak beschikbaar is, kun je hardop iets vragen, de AI laten tolken of vragen om een langzamer voorbeeld."
+            },
+            {
+              "title": "Haal de hoofdpunten uit een foto",
+              "body": "Stuur een foto van een bord, mededeling of bericht en vraag naar hoofdpunten, aandachtspunten of vervolgstappen."
+            },
+            {
+              "title": "Oefen een situatie of werk aan een doel",
+              "body": "Geef in de chat de rol, de situatie en het doel op. Begin met één uitdrukking en gebruik die daarna in een gesprek."
+            },
+            {
+              "title": "Vergelijk formuleringen en lees terug",
+              "body": "Vraag de AI om correcties in een korte Russische of Duitse zin uit te leggen. Kopieer nuttige formuleringen of open de chat opnieuw vanuit je geschiedenis."
+            }
           ]
         },
-        {
-          "title": "Natuurlijke voorbeelden maken spreken makkelijker",
-          "body": "Vraag AI langzamer voor te doen en oefen uitspraak, accent en ritme. Gebruik de zinnen daarna in een natuurlijk gesprek om dichter bij echte communicatie te komen."
-        },
-        {
-          "title": "Begrijp feedback en spreek de volgende keer soepeler",
-          "body": "Vergelijk originele en natuurlijke formuleringen, luister naar voorbeelden en lees de redenen. Vraag ook correcties van korte Russische, Duitse of andere zinnen. Bewaar uitdrukkingen, herhaal oefeningen en bekijk gesprekken in de geschiedenis ter voorbereiding."
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Oefen voor een reis",
+              "body": "Oefen inchecken bij een hotel of iets bestellen en vraag de assistent om de andere persoon te spelen."
+            },
+            {
+              "title": "Oefen een sollicitatiegesprek",
+              "body": "Vraag de AI om de interviewer te spelen. Oefen je antwoorden en stel vragen als je ergens vastloopt."
+            },
+            {
+              "title": "Bereid een antwoord op een bericht voor",
+              "body": "Geef de assistent de context en vraag om mogelijke antwoorden te vergelijken."
+            }
+          ]
         }
-      ]
+      }
     },
     "screen-translation": {
       "title": "Schermvertaling maakt ondertitels en tekst begrijpelijk.",
@@ -299,23 +757,67 @@
         "Schermtekst: lees zichtbare tekst op webpagina's, in chats en games.",
         "Beeld-in-beeld en geschiedenis: vergelijk tijdens het kijken en lees later opnieuw."
       ],
-      "sections": [
-        {
-          "title": "Volg de video met ondertitels",
-          "body": "Vertaal audio uit andere apps naar ondertitels met de bron erbij. Volg video's, livestreams en taallessen in een vertrouwde taal terwijl de inhoud doorgaat."
-        },
-        {
-          "title": "Lees verder met schermtekst",
-          "body": "Lees vertalingen van zichtbare tekst in webpagina's, chats, games of documenten in beeld-in-beeld. Sleep het venster naar de gewenste alinea of scrol de oorspronkelijke pagina verder."
-        },
-        {
-          "title": "De vertaling blijft bij je, nuttige zinnen blijven bewaard",
-          "body": "Vergelijk de vertaling met de oorspronkelijke inhoud tijdens het kijken. Afgeronde brontekst en vertaling worden bewaard in de geschiedenis. Zet een uitdrukking zelf over naar de AI-assistent om naar de betekenis te vragen of het gebruik te oefenen.",
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
           "items": [
-            "Vereist iOS/iPadOS 16 of nieuwer, beeld-in-beeld en internet. Beschermde inhoud kan mogelijk niet worden vertaald."
+            {
+              "title": "Kies een modus",
+              "body": "Kies ‘Video-ondertitels’ of ‘Schermtekst’."
+            },
+            {
+              "title": "Start de schermuitzending",
+              "body": "Tik op ‘Starten’ en bevestig in iOS met ‘Start uitzending’."
+            },
+            {
+              "title": "Lees mee met de ondertitels",
+              "body": "Ga terug naar de video en lees de ondertitels in het beeld-in-beeldvenster."
+            },
+            {
+              "title": "Lees verder terwijl je scrolt",
+              "body": "Gebruik ‘Schermtekst’ en scrol verder op de oorspronkelijke pagina."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "Video-ondertitels",
+              "body": "Vertaal het geluid van video’s of livestreams in andere apps. Zet ‘Origineel tonen’ aan om te vergelijken."
+            },
+            {
+              "title": "Zichtbare schermtekst",
+              "body": "Lees in het beeld-in-beeldvenster de vertaling van zichtbare tekst op webpagina’s, in chats, games of documenten."
+            },
+            {
+              "title": "Vergelijk in beeld-in-beeld",
+              "body": "Zet het beeld-in-beeldvenster naast de oorspronkelijke inhoud. Hiervoor heb je iOS of iPadOS 16 of nieuwer en internet nodig. Beveiligde inhoud kan mogelijk niet worden vertaald."
+            },
+            {
+              "title": "Geschiedenis en verder oefenen",
+              "body": "Lees het origineel en de vertaling terug in de geschiedenis. Kopieer een regel naar de AI-assistent om naar het gebruik te vragen of ermee te oefenen."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Bekijk video’s en livestreams",
+              "body": "Laat de video doorspelen en lees mee met de ondertitels of vergelijk ze tijdens het leren met het origineel."
+            },
+            {
+              "title": "Lees een webpagina",
+              "body": "Zet het vertaalvenster naast een passage en lees verder terwijl je scrolt."
+            },
+            {
+              "title": "Volg chats of games",
+              "body": "Lees zichtbare berichten met ‘Schermtekst’ en blijf in de oorspronkelijke app."
+            }
           ]
         }
-      ]
+      }
     }
   },
   "workflows": {
@@ -566,7 +1068,7 @@
       "reply": {
         "label": "Tekstvertaling en toon",
         "title": "De juiste betekenis.\nDe passende toon.",
-        "body": "Professioneel waar nodig, vriendelijk wanneer het past. Zeven tonen laten elke zin als jouw eigen woorden klinken.",
+        "body": "Professioneel waar nodig, vriendelijk wanneer het past. Zes tonen laten elke zin als jouw eigen woorden klinken.",
         "action": "Ontdek tekstvertaling"
       },
       "practice": {

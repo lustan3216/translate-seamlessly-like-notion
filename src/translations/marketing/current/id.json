@@ -97,37 +97,71 @@
   "features": {
     "text": {
       "title": "Terjemahan teks: makna jelas, nada pas.",
-      "summary": "Pesan dan email dengan tujuh pilihan nada. Pahami deklinasi Rusia/Jerman bersama Helper, lalu minta Asisten AI mengoreksi kalimat asli.",
+      "summary": "Pesan dan email dengan enam pilihan nada. Pahami deklinasi Rusia/Jerman bersama Helper, lalu minta Asisten AI mengoreksi kalimat asli.",
       "heading": "Pilih nada yang pas untuk penerimanya.",
       "body": "Permintaan kerja yang sopan, obrolan teman yang alami, atau pesan panjang yang ringkas. Dengarkan pelafalan AI dan simpan kalimat pilihan. Gunakan Helper atau koreksi Asisten AI untuk kasus dan akhiran Rusia/Jerman.",
       "steps": [
-        "Tujuh nada, dari surat formal hingga obrolan sehari-hari.",
+        "Enam nada, dari surat formal hingga obrolan sehari-hari.",
         "Pahami deklinasi Rusia/Jerman dengan Helper; minta koreksi kalimat asli kepada Asisten AI.",
         "Dengarkan suara AI alami, simpan kalimat, atau bawa ke draf Asisten AI."
       ],
-      "sections": [
-        {
-          "title": "Pahami kasus dan akhiran Rusia/Jerman",
-          "body": "Tata bahasa, kesalahan umum, dan analisis per kata menjelaskan kasus Rusia serta artikel dan akhiran Jerman dalam bahasa Anda. Pahami hubungan antarkata, lalu pilih ungkapannya."
-        },
-        {
-          "title": "Tujuh nada untuk setiap penerima",
-          "body": "Otomatis, Sopan, Humor, Surat, Teman, Ringkas, dan Menggoda. Dari urusan kerja hingga berkenalan lintas negara, pilih gaya yang sesuai.",
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
           "items": [
-            "Otomatis: menyesuaikan nada dengan teks dan konteks.",
-            "Sopan: untuk permintaan, pertanyaan, atau pesan kerja.",
-            "Humor: mencairkan percakapan yang sesuai.",
-            "Surat: untuk email atau surat.",
-            "Teman: alami dan santai, seperti berbicara dengan orang dekat.",
-            "Ringkas: mempersingkat kalimat; periksa kembali informasi penting.",
-            "Menggoda: ungkapan akrab dan jenaka untuk berkenalan lintas negara."
+            {
+              "title": "Masukkan teks asli",
+              "body": "Pilih bahasa, lalu ketik atau tempel teks."
+            },
+            {
+              "title": "Baca terjemahan",
+              "body": "Baca terjemahan di bawah teks Anda."
+            },
+            {
+              "title": "Pilih nada",
+              "body": "Buka pilihan nada, lalu pilih gaya yang sesuai."
+            },
+            {
+              "title": "Gunakan terjemahan baru",
+              "body": "Periksa maknanya, lalu salin atau simpan."
+            }
           ]
         },
-        {
-          "title": "Koreksi Rusia/Jerman: pahami alasan sebelum memilih",
-          "body": "Nada Otomatis mempertahankan teks jika seluruhnya sudah dalam bahasa tujuan. Periksa kasus, akhiran, atau tata bahasa Rusia/Jerman lewat Helper, atau minta Asisten AI mengoreksi kalimat asli."
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "Enam nada untuk berbagai situasi",
+              "body": "“Otomatis” mengikuti konteks, “Sopan” cocok untuk permintaan, dan “Humor” mencairkan suasana. “Surat” cocok untuk email, “Santai” untuk obrolan sehari-hari, dan “Ringkas” mempersingkat kalimat."
+            },
+            {
+              "title": "Pahami tata bahasa Rusia dan Jerman",
+              "body": "Gunakan “Tata bahasa”, “Kesalahan umum”, dan “Kata per kata” di “Pengetahuan Kustom” untuk memahami kasus, kata sandang, dan akhiran. Minta Asisten AI memeriksa kalimat asli Anda."
+            },
+            {
+              "title": "Pertahankan teks yang sudah dalam bahasa tujuan",
+              "body": "“Otomatis” mempertahankan seluruh teks jika sejak awal sudah dalam bahasa tujuan."
+            },
+            {
+              "title": "Dengarkan, simpan, atau salin",
+              "body": "Putar pelafalan AI, simpan ungkapan yang berguna, atau salin terjemahan ke Asisten AI."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Tulis permintaan kerja",
+              "body": "Gunakan “Sopan” atau “Surat” saat meminta sesuatu kepada rekan kerja atau klien."
+            },
+            {
+              "title": "Balas pesan teman",
+              "body": "Bandingkan pesan panjang dengan teks aslinya, lalu gunakan “Santai” untuk membalas."
+            }
+          ]
         }
-      ]
+      }
     },
     "photos": {
       "title": "Terjemahan foto: arti langsung di atas tulisannya.",
@@ -138,7 +172,64 @@
         "Terjemahan langsung di gambar: arahkan ke rambu dan baca.",
         "Ambil foto atau pilih dari album untuk menerjemahkan teks.",
         "Ketuk detail terjemahan sambil tetap melihat gambar asli."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
+          "items": [
+            {
+              "title": "Ambil atau pilih foto",
+              "body": "Foto teksnya atau pilih gambar."
+            },
+            {
+              "title": "Baca terjemahan di gambar",
+              "body": "Baca terjemahan langsung di posisi teks pada gambar."
+            },
+            {
+              "title": "Ketuk teks untuk melihat detail",
+              "body": "Ketuk satu baris untuk membandingkan teks asli dan terjemahannya."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "Terjemahkan teks langsung lewat kamera",
+              "body": "Arahkan kamera ke teks yang terbaca dan lihat terjemahan di tempat teks itu muncul."
+            },
+            {
+              "title": "Terjemahkan foto",
+              "body": "Ambil foto atau pilih dari album. Terjemahan muncul di atas gambar dengan bagian sekitarnya tetap terlihat."
+            },
+            {
+              "title": "Bandingkan satu blok teks",
+              "body": "Ketuk satu blok teks untuk membandingkan teks asli dan terjemahannya di tampilan detail."
+            },
+            {
+              "title": "Perbesar foto",
+              "body": "Rentangkan dua jari untuk memperbesar tulisan kecil di foto."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Baca rambu saat bepergian",
+              "body": "Arahkan kamera ke rambu dan baca terjemahan sambil melihat konteks di sekitarnya."
+            },
+            {
+              "title": "Periksa label produk",
+              "body": "Foto labelnya dan ketuk baris yang ingin diperiksa."
+            },
+            {
+              "title": "Baca pengumuman yang disimpan",
+              "body": "Buka foto pengumuman dari album dan baca terjemahan yang tampil di atasnya."
+            }
+          ]
+        }
+      }
     },
     "voice": {
       "title": "Terjemahan suara: ikuti ucapan kedua pihak.",
@@ -150,12 +241,59 @@
         "Dengar pribadi lewat lubang suara atau earphone; pilih subtitel saja di tempat tenang.",
         "Tinjau percakapan, putar ulang suara AI, salin atau bagikan inti ringkasan."
       ],
-      "sections": [
-        {
-          "title": "Suara AI alami, lengkap dengan nada dan ritme",
-          "body": "Model suara generasi baru menghasilkan intonasi alami dan nuansa emosi sesuai isi. Gunakan untuk berkomunikasi, lalu putar ulang dan tirukan agar pelafalan serta aksen asing makin akrab."
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
+          "items": [
+            {
+              "title": "Pilih bahasa kedua pihak",
+              "body": "Pilih kedua bahasa, lalu ketuk mikrofon."
+            },
+            {
+              "title": "Baca ucapan kedua pihak",
+              "body": "Ikuti tiap baris teks asli dan terjemahannya."
+            },
+            {
+              "title": "Putar ulang satu kalimat",
+              "body": "Ketuk ikon pengeras suara di samping terjemahan."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "Perdengarkan terjemahan",
+              "body": "“Percakapan dua arah” bisa membacakan terjemahan kedua pihak. “Bicara untuk saya” hanya memutar terjemahan ucapan Anda."
+            },
+            {
+              "title": "Dengarkan sendiri atau baca teks",
+              "body": "Pilih “Dengarkan secara pribadi” untuk mendengarkan lewat lubang suara ponsel atau headphone, atau pilih “Hanya teks”."
+            },
+            {
+              "title": "Dengarkan suara AI yang alami",
+              "body": "Dengarkan intonasi dan ritmenya. Putar ulang satu kalimat agar terbiasa dengan pelafalan dan aksennya."
+            },
+            {
+              "title": "Tinjau ringkasan",
+              "body": "Lihat lagi percakapan setelah selesai, lalu salin atau bagikan ringkasannya."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Check-in hotel",
+              "body": "Pastikan tipe kamar, deposit, dan waktu check-out."
+            },
+            {
+              "title": "Bertanya kepada staf restoran",
+              "body": "Tanyakan ukuran porsi, bahan, atau cara memasak hidangan kepada staf."
+            }
+          ]
         }
-      ]
+      }
     },
     "menu": {
       "title": "Pindai menu: pahami hidangan, lalu tunjukkan pesanan.",
@@ -166,7 +304,64 @@
         "Nama, deskripsi, dan harga menjadi pilihan yang mudah dibaca.",
         "Pilih jumlah, ukuran, tambahan yang tersedia, dan catatan.",
         "Tampilkan pesanan asli; jumlahkan harga yang diketahui per mata uang."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
+          "items": [
+            {
+              "title": "Pindai menu",
+              "body": "Di “Rapikan”, pilih “Menu”, tambahkan foto, lalu mulai pindai."
+            },
+            {
+              "title": "Baca terjemahan",
+              "body": "Lihat hidangan, detail, dan harganya."
+            },
+            {
+              "title": "Pilih hidangan",
+              "body": "Tentukan jumlah dan pilih tambahan."
+            },
+            {
+              "title": "Tunjukkan pesanan ke pelayan",
+              "body": "Ketuk “Tunjukkan ke pelayan” untuk menampilkan pesanan dalam bahasa aslinya."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "Periksa teks asli menu",
+              "body": "Ketuk hidangan untuk melihat nama asli, deskripsi, dan harga yang tercantum."
+            },
+            {
+              "title": "Tambahkan catatan pesanan",
+              "body": "Tulis permintaan di pesanan agar staf bisa membacanya saat Anda menunjukkan pesanan."
+            },
+            {
+              "title": "Lihat total per mata uang",
+              "body": "Jika harga semua hidangan dan tambahan yang dipilih diketahui, total ditampilkan terpisah untuk setiap mata uang."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Makan di luar negeri",
+              "body": "Baca daftar hidangan dan harga pada menu setempat sebelum memutuskan pesanan."
+            },
+            {
+              "title": "Pilih tambahan di kedai kopi",
+              "body": "Tentukan jumlah cangkir kopi, lalu lihat pilihan susu atau tambahan yang tersedia."
+            },
+            {
+              "title": "Pesan untuk teman",
+              "body": "Gabungkan hidangan, jumlah, dan catatan semua orang dalam satu pesanan."
+            }
+          ]
+        }
+      }
     },
     "document": {
       "title": "Pindai dokumen: rapi per halaman, jelas per bagian.",
@@ -179,13 +374,50 @@
         "Cari riwayat pindai untuk membuka dokumen kapan saja."
       ],
       "guide": {
+        "steps": {
+          "title": "Cara pakai",
+          "items": [
+            {
+              "title": "Pindai dokumen",
+              "body": "Di “Rapikan”, pilih “Dokumen”, tambahkan foto halaman secara berurutan, lalu mulai pindai."
+            },
+            {
+              "title": "Baca terjemahan",
+              "body": "Baca sesuai susunan judul, paragraf, dan daftar."
+            },
+            {
+              "title": "Periksa teks asli",
+              "body": "Ketuk paragraf terjemahan untuk melihat teks aslinya."
+            }
+          ]
+        },
         "abilities": {
           "title": "Yang bisa dilakukan",
           "items": [
             {
               "title": "Lihat foto asli",
-              "body": "Ketuk ikon foto di kanan atas hasil pindai untuk membuka foto asli dan membandingkannya dengan halaman yang sesuai.",
-              "shotId": "original"
+              "body": "Ketuk ikon foto di kanan atas hasil pindai untuk membuka foto asli dan membandingkannya dengan halaman yang sesuai."
+            },
+            {
+              "title": "Pindai beberapa halaman sekaligus",
+              "body": "Tambahkan foto halaman secara berurutan dan rapikan semuanya sekaligus."
+            },
+            {
+              "title": "Buka kembali hasil pindai",
+              "body": "Cari berdasarkan judul atau jenis di riwayat pindai, lalu buka kembali dokumennya."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Baca pengumuman cetak",
+              "body": "Tata pengumuman menjadi paragraf dan daftar sesuai urutan bacaan aslinya."
+            },
+            {
+              "title": "Periksa aturan penginapan",
+              "body": "Pindai aturan penginapan yang dicetak, lalu buka kembali untuk memeriksa waktu atau biaya."
             }
           ]
         }
@@ -200,7 +432,56 @@
         "Terjemahkan di kolom input, ganti draf, lalu lanjutkan balasan.",
         "Ketik atau gunakan dikte iOS, kemudian pilih bahasa dan nada.",
         "Terjemahkan papan klip, salin, atau sisipkan di posisi kursor."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
+          "items": [
+            {
+              "title": "Aktifkan papan ketik",
+              "body": "Ikuti panduan dalam aplikasi untuk menambahkan papan ketik dan mengaktifkan “Izinkan Akses Penuh”."
+            },
+            {
+              "title": "Ganti papan ketik",
+              "body": "Di kolom input yang didukung, gunakan tombol bergambar globe untuk memilih AnyTranslator."
+            },
+            {
+              "title": "Terjemahkan draf",
+              "body": "Ketik teks, pilih bahasa tujuan, lalu ketuk “Terjemahkan”."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "Terjemahkan di kolom yang sama",
+              "body": "Ganti draf dengan terjemahan dan lanjutkan mengetik di aplikasi yang sedang dipakai."
+            },
+            {
+              "title": "Sesuaikan nada",
+              "body": "Pilih nada untuk menerjemahkan ulang teks di kolom input."
+            },
+            {
+              "title": "Terjemahkan teks dari papan klip",
+              "body": "Gunakan alat di papan ketik untuk menerjemahkan teks yang disalin. Salin hasilnya atau sisipkan di posisi kursor."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Balas di aplikasi pesan",
+              "body": "Ganti bahasa di kolom pesan yang didukung, lalu periksa terjemahannya sebelum dikirim."
+            },
+            {
+              "title": "Tulis pesan kerja",
+              "body": "Pilih nada yang sesuai dengan pembaca, misalnya untuk permintaan yang sopan atau balasan singkat."
+            }
+          ]
+        }
+      }
     },
     "helper": {
       "title": "Helper mengurai tata bahasa dan pemakaian.",
@@ -212,20 +493,59 @@
         "Jelajahi sinonim, contoh, makna tersirat, dan saran balasan.",
         "Atur bidang, tujuan, dan kedalaman; simpan instruksi untuk dipakai ulang."
       ],
-      "sections": [
-        {
-          "title": "Pahami alasan deklinasi Rusia/Jerman",
-          "body": "Contoh kontekstual: lihat perubahan kasus, artikel, dan akhiran nomina pada instrumental Rusia dan datif Jerman.",
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
           "items": [
-            "Rusia: Я говорю с мой друг. → Я говорю с моим другом. с yang berarti ‘bersama’ memakai instrumental; akhiran мой dan друг ikut berubah.",
-            "Jerman: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit memakai datif; nomina lemah Kunde menjadi Kunden."
+            {
+              "title": "Masukkan kalimat",
+              "body": "Ketik atau tempel kalimat di “Terjemahan Teks”."
+            },
+            {
+              "title": "Pilih penjelasan",
+              "body": "Di “Pengetahuan Kustom”, pilih instruksi seperti “Tata bahasa”."
+            },
+            {
+              "title": "Pahami cara kalimat disusun",
+              "body": "Baca alasan di balik penggunaan bentuk kata, akhiran, atau struktur kalimat."
+            }
           ]
         },
-        {
-          "title": "Simpan instruksi, pakai untuk kalimat baru",
-          "body": "Simpan instruksi seperti ‘jelaskan kasus Rusia dalam bahasa Indonesia’ atau ‘jelaskan akhiran Jerman’. Kalimat baru mengikuti gaya yang sama agar Anda fokus pada yang ingin dipelajari."
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "Urai tata bahasa dan kesalahan",
+              "body": "Pilih “Tata bahasa”, “Kesalahan umum”, atau “Kata per kata” untuk memahami susunan kalimat."
+            },
+            {
+              "title": "Pelajari kata dan contohnya",
+              "body": "Gunakan “Sinonim”, “Contoh”, atau “Makna tersembunyi” untuk melihat bagaimana pilihan kata berubah sesuai konteks."
+            },
+            {
+              "title": "Beralih antara teks asli dan terjemahan",
+              "body": "Ubah sumber teks di “Pengetahuan Kustom” untuk menjelaskan teks asli atau terjemahannya."
+            },
+            {
+              "title": "Simpan instruksi untuk dipakai lagi",
+              "body": "Simpan instruksi sesuai bidang, tujuan belajar, atau tingkat detail yang diinginkan, lalu pakai lagi untuk kalimat baru."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Pelajari kasus instrumental dalam bahasa Rusia",
+              "body": "Gunakan с моим другом untuk melihat mengapa с diikuti kasus instrumental dan bagaimana мой dan друг berubah."
+            },
+            {
+              "title": "Periksa akhiran datif dalam bahasa Jerman",
+              "body": "Gunakan mit dem Kunden untuk membandingkan kata sandang datif dan akhiran kata benda berdeklinasi lemah."
+            }
+          ]
         }
-      ]
+      }
     },
     "widget": {
       "title": "Widget belajar, ulas kapan saja.",
@@ -236,7 +556,60 @@
         "Baca kata dan kalimat di layar utama, dengarkan dan tirukan AI.",
         "Tandai untuk diulang／sudah diingat, lalu lanjutkan sesi berikutnya.",
         "Pilih jenis ungkapan, topik, tingkat, dan instruksi khusus."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
+          "items": [
+            {
+              "title": "Tambahkan ke Layar Utama",
+              "body": "Ikuti panduan dalam aplikasi untuk menambahkan “Widget Belajar”."
+            },
+            {
+              "title": "Baca dan dengarkan",
+              "body": "Baca kartu dan ketuk pengeras suara untuk mendengar ungkapannya."
+            },
+            {
+              "title": "Tandai hasil ulasan",
+              "body": "Pilih “Ulangi” atau “Hafal” untuk menjadwalkan kapan kartu muncul lagi."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "Dengarkan dari Layar Utama",
+              "body": "Ketuk pengeras suara di kartu untuk mendengar pelafalan, lalu tirukan."
+            },
+            {
+              "title": "Catat progres ulasan",
+              "body": "Tandai kartu sebagai sudah hafal atau perlu diulang untuk memperbarui jadwalnya."
+            },
+            {
+              "title": "Pilih yang ingin diulas",
+              "body": "Di pengaturan, pilih jenis konten, topik, dan tingkat kesulitan. Tambahkan instruksi khusus jika tersedia."
+            },
+            {
+              "title": "Buka kartu di Layar Terkunci",
+              "body": "Ketuk kartu di Layar Terkunci untuk membuka ungkapan terkait di aplikasi."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Ulas di waktu luang",
+              "body": "Dengarkan dan tirukan ungkapan yang berguna sambil menunggu bus."
+            },
+            {
+              "title": "Siapkan diri untuk percakapan",
+              "body": "Ulas kosakata berdasarkan topik dan latih pengucapan dengan bersuara."
+            }
+          ]
+        }
+      }
     },
     "table": {
       "title": "Terjemahan tabel: cocokkan baris dan kolom, pahami angkanya.",
@@ -247,7 +620,60 @@
         "Pertahankan susunan baris dan kolom agar waktu serta harga mudah dibandingkan.",
         "Geser tabel lebar untuk membaca kolom dan satuan lengkap.",
         "Bandingkan teks dan foto asli, lalu buka lagi dari riwayat pindai."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
+          "items": [
+            {
+              "title": "Pindai tabel",
+              "body": "Di “Rapikan”, pilih “Tabel”, tambahkan foto, lalu mulai pindai."
+            },
+            {
+              "title": "Baca sesuai baris dan kolom",
+              "body": "Gunakan judul kolom untuk mencocokkan waktu, harga, atau satuan dengan barisnya."
+            },
+            {
+              "title": "Gulir tabel lebar ke samping",
+              "body": "Geser ke samping untuk melihat kolom yang belum terlihat."
+            },
+            {
+              "title": "Periksa isi tabel dalam bahasa asli",
+              "body": "Ketuk judul kolom atau sel yang berisi teks sumber untuk memeriksa teks aslinya."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "Pertahankan struktur tabel",
+              "body": "Judul kolom, label baris, dan kolom data tetap terpisah agar mudah dibandingkan."
+            },
+            {
+              "title": "Label baris tetap terlihat",
+              "body": "Pada tabel lebar, kolom pertama tetap di tempatnya saat Anda menggeser ke samping."
+            },
+            {
+              "title": "Bandingkan dengan foto lengkap",
+              "body": "Ketuk ikon foto di kanan atas untuk membuka foto halaman asli."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Periksa jadwal transportasi",
+              "body": "Bandingkan jam keberangkatan menurut rute dan geser ke kolom berikutnya jika perlu."
+            },
+            {
+              "title": "Bandingkan harga tiket dan layanan",
+              "body": "Baca baris dan kolom untuk membandingkan harga, jenis tiket, dan satuan yang tercantum."
+            }
+          ]
+        }
+      }
     },
     "chat": {
       "title": "Asisten AI",
@@ -259,35 +685,67 @@
         "Latih situasi dan tujuan untuk perjalanan, pekerjaan, serta keseharian.",
         "Dengarkan contoh alami, tirukan, ulangi, dan simpan ungkapan berguna."
       ],
-      "sections": [
-        {
-          "title": "Foto atau penerjemahan lisan, tanyakan saat itu juga",
-          "body": "Tambahkan foto rambu, pengumuman, atau pesan. AI merangkum inti, hal yang perlu diperhatikan, dan langkah berikutnya. Saat bahasa berbeda, gunakan chat suara atau penerjemahan lisan langsung untuk menyampaikan pertanyaan.",
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
           "items": [
-            "Percakapan suara: bertanya dengan bicara, lalu lanjut mengobrol.",
-            "Mengobrol dalam bahasa Inggris: berlatih lewat percakapan alami.",
-            "Penerjemahan lisan langsung: hubungkan percakapan beda bahasa.",
-            "Tunjukkan foto: temukan inti dan langkah berikutnya."
+            {
+              "title": "Beri konteks",
+              "body": "Ceritakan ke mana Anda akan pergi dan apa yang ingin dilatih."
+            },
+            {
+              "title": "Lihat contoh",
+              "body": "Baca contoh dan pilih satu yang ingin ditanyakan."
+            },
+            {
+              "title": "Tanyakan tentang foto",
+              "body": "Lampirkan foto dan sebutkan apa yang ingin Anda ketahui."
+            },
+            {
+              "title": "Minta ungkapan yang bisa dipakai",
+              "body": "Minta satu kalimat yang sesuai dengan foto dan percakapan."
+            }
           ]
         },
-        {
-          "title": "Latih bahasa yang berguna untuk hidup Anda",
-          "body": "Dari restoran dan bandara hingga wawancara dan pekerjaan: pilih situasi untuk berlatih, atau tujuan untuk belajar bertahap. Buat situasi dan tujuan sendiri juga bisa. Utamakan menjawab dengan suara agar siap untuk percakapan nyata.",
+        "abilities": {
+          "title": "Yang bisa dilakukan",
           "items": [
-            "Latihan situasi: mainkan peran dan selesaikan misi percakapan.",
-            "Latihan tujuan: pelajari ungkapan, lalu gunakan dalam situasi.",
-            "Belajar khusus: buat situasi atau tujuan untuk keperluan tertentu."
+            {
+              "title": "Mode percakapan",
+              "body": "Ketik atau kirim foto. Jika suara tersedia, tanyakan dengan suara, minta bantuan penerjemahan lisan, atau minta contoh yang diucapkan lebih pelan."
+            },
+            {
+              "title": "Temukan inti dari foto",
+              "body": "Kirim foto rambu, pengumuman, atau pesan, lalu tanyakan poin penting, hal yang perlu diingat, atau langkah berikutnya."
+            },
+            {
+              "title": "Berlatih untuk situasi atau tujuan",
+              "body": "Tentukan peran, situasi, dan tujuan dalam obrolan. Mulai dengan satu ungkapan, lalu gunakan dalam percakapan."
+            },
+            {
+              "title": "Bandingkan ungkapan dan tinjau lagi",
+              "body": "Minta AI menjelaskan koreksi pada kalimat pendek berbahasa Rusia atau Jerman. Salin ungkapan yang berguna atau buka kembali obrolan dari riwayat."
+            }
           ]
         },
-        {
-          "title": "Suara alami, lebih mudah mulai bicara",
-          "body": "Minta AI memberi contoh perlahan, lalu latih pelafalan, aksen, dan ritme. Pakai kalimat itu dalam percakapan alami agar latihan makin dekat dengan komunikasi nyata."
-        },
-        {
-          "title": "Pahami umpan balik, bicara lebih lancar berikutnya",
-          "body": "Bandingkan kalimat Anda dengan ungkapan alami, dengarkan contoh, dan pahami alasannya. Minta koreksi kalimat pendek Rusia, Jerman, dan lainnya. Simpan ungkapan, ulangi latihan, dan buka percakapan di riwayat untuk persiapan berikutnya."
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Berlatih sebelum bepergian",
+              "body": "Latih check-in hotel atau memesan makanan dengan meminta asisten berperan sebagai lawan bicara."
+            },
+            {
+              "title": "Latihan wawancara",
+              "body": "Minta AI berperan sebagai pewawancara. Latih jawaban dan tanyakan bagian yang terasa sulit."
+            },
+            {
+              "title": "Siapkan balasan pesan",
+              "body": "Beri tahu konteksnya kepada asisten dan minta perbandingan beberapa pilihan balasan."
+            }
+          ]
         }
-      ]
+      }
     },
     "screen-translation": {
       "title": "Terjemahan layar, pahami subtitel dan teks.",
@@ -299,23 +757,67 @@
         "Teks layar: baca tulisan yang terlihat di web, chat, dan game.",
         "Gambar dalam Gambar dan riwayat: bandingkan sekarang, baca lagi nanti."
       ],
-      "sections": [
-        {
-          "title": "Subtitel video, ikuti isinya",
-          "body": "Terjemahkan audio dari aplikasi lain menjadi subtitel bersama teks asli. Saat menonton video, siaran langsung, atau belajar bahasa, tangkap inti dalam bahasa yang akrab sambil terus menonton."
-        },
-        {
-          "title": "Teks layar, lanjutkan membaca",
-          "body": "Baca terjemahan teks yang terlihat di web, chat, game, atau dokumen lewat Gambar dalam Gambar. Geser dekat paragraf yang diinginkan atau gulir halaman asli untuk membaca bagian berikutnya."
-        },
-        {
-          "title": "Terjemahan menemani, ungkapan tersimpan",
-          "body": "Bandingkan sambil melihat konten asli. Teks asli dan terjemahan yang selesai tersimpan di riwayat untuk dibaca ulang. Bawa ungkapan secara manual ke Asisten AI untuk menanyakan makna atau berlatih pemakaiannya.",
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
           "items": [
-            "Memerlukan iOS／iPadOS 16 ke atas, Gambar dalam Gambar, dan internet. Konten terlindungi mungkin tidak dapat diterjemahkan."
+            {
+              "title": "Pilih mode",
+              "body": "Pilih “Teks video” atau “Teks layar”."
+            },
+            {
+              "title": "Mulai siaran layar",
+              "body": "Ketuk “Mulai”, lalu konfirmasi “Mulai Penyiaran” di iOS."
+            },
+            {
+              "title": "Ikuti subtitel",
+              "body": "Kembali ke video dan baca subtitel di Gambar dalam Gambar."
+            },
+            {
+              "title": "Terus baca sambil menggulir",
+              "body": "Gunakan “Teks layar” dan gulir halaman asli untuk melanjutkan membaca."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "Teks video",
+              "body": "Terjemahkan audio video atau siaran langsung di aplikasi lain. Aktifkan “Tampilkan teks asli” untuk membandingkannya."
+            },
+            {
+              "title": "Teks yang terlihat di layar",
+              "body": "Baca terjemahan teks yang terlihat di halaman web, obrolan, game, atau dokumen melalui Gambar dalam Gambar."
+            },
+            {
+              "title": "Bandingkan lewat Gambar dalam Gambar",
+              "body": "Geser Gambar dalam Gambar ke sisi konten asli. Perlu iOS atau iPadOS 16 ke atas dan koneksi internet. Konten yang dilindungi mungkin tidak bisa diterjemahkan."
+            },
+            {
+              "title": "Riwayat dan latihan lanjutan",
+              "body": "Lihat kembali teks asli dan terjemahannya di riwayat. Salin satu baris ke Asisten AI untuk menanyakan penggunaannya atau berlatih."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Tonton video dan siaran langsung",
+              "body": "Terus putar video sambil membaca subtitel untuk mengikuti isinya atau membandingkan dengan teks asli saat belajar."
+            },
+            {
+              "title": "Baca halaman web",
+              "body": "Geser jendela terjemahan ke samping bagian yang ingin dibaca, lalu lanjutkan sambil menggulir."
+            },
+            {
+              "title": "Ikuti obrolan atau game",
+              "body": "Baca pesan yang terlihat dengan “Teks layar” sambil tetap berada di aplikasi yang sama."
+            }
           ]
         }
-      ]
+      }
     }
   },
   "workflows": {
@@ -566,7 +1068,7 @@
       "reply": {
         "label": "Terjemahan teks dan nada",
         "title": "Makna tersampaikan,\nnada pun sesuai.",
-        "body": "Profesional saat perlu, ramah saat tepat. Tujuh nada agar setiap kalimat terasa seperti ucapan Anda.",
+        "body": "Profesional saat perlu, ramah saat tepat. Enam nada agar setiap kalimat terasa seperti ucapan Anda.",
         "action": "Jelajahi terjemahan teks"
       },
       "practice": {

@@ -97,37 +97,71 @@
   "features": {
     "text": {
       "title": "Textübersetzung: klarer Sinn, passender Ton.",
-      "summary": "Für Nachrichten und E-Mails stehen sieben Tonarten bereit. Helper erklärt russische und deutsche Deklinationen; der KI-Assistent prüft auf Wunsch den Originalsatz.",
+      "summary": "Für Nachrichten und E-Mails stehen sechs Tonlagen bereit. Helper erklärt russische und deutsche Deklinationen; der KI-Assistent prüft auf Wunsch den Originalsatz.",
       "heading": "Für jeden Empfänger der passende Ton.",
       "body": "Berufliche Anfragen höflich, unter Freunden natürlich, lange Nachrichten kürzer. Hör dir die KI-Aussprache an und speichere gute Sätze. Russische und deutsche Fälle und Endungen erklärt Helper; der KI-Assistent kann das Original korrigieren.",
       "steps": [
-        "Sieben Tonarten, vom formellen Brief bis zum Alltagschat.",
+        "Sechs Tonlagen, vom formellen Brief bis zum Alltagschat.",
         "Helper erklärt russische und deutsche Deklinationen; der KI-Assistent korrigiert das Original auf Wunsch.",
         "Natürliche KI-Aussprache hören, gute Sätze speichern oder als Entwurf zum KI-Assistenten mitnehmen."
       ],
-      "sections": [
-        {
-          "title": "Russische und deutsche Fälle und Endungen verstehen",
-          "body": "Grammatik, häufige Fehler und Wort-für-Wort-Analyse erklären russische Fälle sowie deutsche Artikel und Endungen in deiner Sprache. Verstehe die Satzbeziehungen und entscheide dann, wie du dich ausdrücken möchtest."
-        },
-        {
-          "title": "Sieben Tonarten für unterschiedliche Empfänger",
-          "body": "Automatisch, Höflich, Humorvoll, Briefstil, Freundschaftlich, Knapp und Flirtend: für beruflichen Austausch ebenso wie internationale Kontakte.",
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
           "items": [
-            "Automatisch: richtet den Ton nach Original und Kontext aus.",
-            "Höflich: für Bitten, Fragen und berufliche Nachrichten.",
-            "Humorvoll: lockert passende Gespräche auf.",
-            "Briefstil: für E-Mails und Briefe.",
-            "Freundschaftlich: natürlich und ungezwungen wie unter Bekannten.",
-            "Knapp: kürzt Formulierungen; wichtige Angaben anschließend prüfen.",
-            "Flirtend: verspielt und vertraut für internationale Bekanntschaften."
+            {
+              "title": "Original eingeben",
+              "body": "Wähle die Sprachen und tippe den Text ein oder füge ihn ein."
+            },
+            {
+              "title": "Übersetzung lesen",
+              "body": "Lies die Übersetzung unter deinem Text."
+            },
+            {
+              "title": "Ton wählen",
+              "body": "Öffne die Tonauswahl und wähle einen Stil."
+            },
+            {
+              "title": "Neue Formulierung verwenden",
+              "body": "Prüfe die Bedeutung und kopiere oder speichere den Text."
+            }
           ]
         },
-        {
-          "title": "Russisch und Deutsch korrigieren: erst verstehen, dann formulieren",
-          "body": "Im automatischen Ton bleibt ein vollständig in der Zielsprache verfasster Abschnitt unverändert. Für Fälle, Endungen und Grammatik nutze Helper oder bitte den KI-Assistenten um Korrektur des Originals."
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "Sechs Tonlagen für verschiedene Anlässe",
+              "body": "„Automatisch“ richtet sich nach dem Kontext, „Höflich“ passt zu Bitten und „Humor“ lockert das Gespräch auf. „Brief“ passt zu E-Mails, „Locker“ klingt ungezwungen und „Prägnant“ kürzt den Text."
+            },
+            {
+              "title": "Russische und deutsche Grammatik verstehen",
+              "body": "Nutze „Grammatik“, „Häufige Fehler“ und „Wort für Wort“ unter „Eigenes Wissen“, um Fälle, Artikel und Endungen zu verstehen. Bitte den KI-Assistenten, deinen Originalsatz zu korrigieren."
+            },
+            {
+              "title": "Text in der Zielsprache beibehalten",
+              "body": "Mit „Automatisch“ bleibt ein ganzer Abschnitt unverändert, wenn er bereits in der Zielsprache verfasst ist."
+            },
+            {
+              "title": "Anhören, speichern oder kopieren",
+              "body": "Lass dir den Text von der KI vorsprechen, speichere nützliche Ausdrücke oder kopiere die Übersetzung in den KI-Assistenten."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "Eine Bitte für die Arbeit formulieren",
+              "body": "Wähle „Höflich“ oder „Brief“ für Bitten an Kollegen oder Kunden."
+            },
+            {
+              "title": "Einem Freund antworten",
+              "body": "Vergleiche eine lange Nachricht mit dem Original und wähle „Locker“ für deine Antwort."
+            }
+          ]
         }
-      ]
+      }
     },
     "photos": {
       "title": "Fotoübersetzung: die Übersetzung direkt auf dem Bild.",
@@ -138,7 +172,64 @@
         "Live eingeblendete Übersetzung: Kamera aufs Schild richten und lesen.",
         "Foto aufnehmen oder aus dem Album wählen, um den Text zu übersetzen.",
         "Übersetzungsdetails öffnen und Hinweise im Originalbild behalten."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
+          "items": [
+            {
+              "title": "Foto aufnehmen oder auswählen",
+              "body": "Fotografiere den Text oder wähle ein Bild aus."
+            },
+            {
+              "title": "Eingeblendete Übersetzung lesen",
+              "body": "Lies die Übersetzung direkt an der entsprechenden Stelle im Bild."
+            },
+            {
+              "title": "Text antippen und Details ansehen",
+              "body": "Tippe auf eine Zeile, um Original und Übersetzung zu vergleichen."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "Text im Kamerabild live übersetzen",
+              "body": "Richte die Kamera auf gut lesbaren Text und sieh dir die Übersetzung direkt an der entsprechenden Stelle an."
+            },
+            {
+              "title": "Ein Foto übersetzen",
+              "body": "Nimm ein Foto auf oder wähle eins aus deinem Album. Die Übersetzung wird direkt im Bild eingeblendet."
+            },
+            {
+              "title": "Einen Textblock vergleichen",
+              "body": "Tippe auf einen Textblock, um in den Details das Original mit der Übersetzung zu vergleichen."
+            },
+            {
+              "title": "Foto vergrößern",
+              "body": "Ziehe zwei Finger auseinander, um Kleingedrucktes auf einem Foto zu vergrößern."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "Unterwegs ein Schild lesen",
+              "body": "Richte die Kamera auf ein Schild und lies die Übersetzung direkt im Bild."
+            },
+            {
+              "title": "Ein Produktetikett prüfen",
+              "body": "Fotografiere das Etikett und tippe auf die Zeile, die du prüfen möchtest."
+            },
+            {
+              "title": "Einen gespeicherten Aushang lesen",
+              "body": "Öffne das Foto eines Aushangs aus deinem Album und lies die eingeblendete Übersetzung."
+            }
+          ]
+        }
+      }
     },
     "voice": {
       "title": "Sprachübersetzung: beide Seiten verstehen.",
@@ -150,12 +241,59 @@
         "Privat zuhören nutzt Hörer oder Kopfhörer; Nur Untertitel passt in ruhige Umgebungen.",
         "Gespräch ansehen, KI-Übersetzung erneut hören und Kernaussagen kopieren oder teilen."
       ],
-      "sections": [
-        {
-          "title": "Natürliche KI-Stimmen mit Ton und Rhythmus",
-          "body": "Sprachmodelle der neuen Generation erzeugen Übersetzungen mit natürlicher Betonung und feinen, zum Inhalt passenden Gefühlsnuancen. Nutze sie im Gespräch und sprich sie später nach, um Aussprache und Akzente kennenzulernen."
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
+          "items": [
+            {
+              "title": "Beide Sprachen einstellen",
+              "body": "Wähle beide Sprachen und tippe auf das Mikrofon."
+            },
+            {
+              "title": "Beide Seiten des Gesprächs mitlesen",
+              "body": "Lies jede Zeile im Original und in der Übersetzung mit."
+            },
+            {
+              "title": "Eine Zeile erneut anhören",
+              "body": "Tippe auf das Lautsprechersymbol neben einer Übersetzung."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "Übersetzungen laut vorlesen lassen",
+              "body": "„Gespräch in beide Richtungen“ kann beide Seiten vorlesen. „Für mich sprechen“ spielt nur deine übersetzten Sätze ab."
+            },
+            {
+              "title": "Privat zuhören oder mitlesen",
+              "body": "Nutze „Privat hören“ über die Hörmuschel oder mit Kopfhörern oder wähle „Nur Untertitel“."
+            },
+            {
+              "title": "Natürliche KI-Stimmen hören",
+              "body": "Achte auf Tonfall und Rhythmus. Spiele eine Zeile erneut ab, um dich mit Aussprache und Akzent vertraut zu machen."
+            },
+            {
+              "title": "Die Zusammenfassung ansehen",
+              "body": "Sieh dir das Gespräch später noch einmal an und kopiere oder teile die Zusammenfassung."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "Im Hotel einchecken",
+              "body": "Lass dir Zimmertyp, Kaution und Check-out-Zeit bestätigen."
+            },
+            {
+              "title": "Im Restaurant nachfragen",
+              "body": "Frage das Personal nach der Portionsgröße, den Zutaten oder der Zubereitung eines Gerichts."
+            }
+          ]
         }
-      ]
+      }
     },
     "menu": {
       "title": "Speisekarten scannen: verstehen, auswählen, Bestellung zeigen.",
@@ -166,7 +304,64 @@
         "Namen, Beschreibungen und Preise werden zu übersichtlichen Gerichten.",
         "Mengen, Größen, verfügbare Extras und Hinweise nach Wunsch wählen.",
         "Originalbestellung zeigen; bekannte Preise werden je Währung addiert."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
+          "items": [
+            {
+              "title": "Speisekarte scannen",
+              "body": "Wähle unter „Ordnen“ die Option „Speisekarte“, füge ein Foto hinzu und starte den Scan."
+            },
+            {
+              "title": "Übersetzung lesen",
+              "body": "Sieh dir Gerichte, Details und Preise an."
+            },
+            {
+              "title": "Gerichte auswählen",
+              "body": "Lege die Mengen fest und wähle Extras."
+            },
+            {
+              "title": "Dem Personal die Bestellung zeigen",
+              "body": "Tippe auf „Dem Personal zeigen“, um das Original anzuzeigen."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "Originaltext der Speisekarte prüfen",
+              "body": "Tippe auf ein Gericht, um den Originalnamen, die Beschreibung und den angegebenen Preis zu sehen."
+            },
+            {
+              "title": "Eine Anmerkung zur Bestellung hinzufügen",
+              "body": "Füge einen Wunsch hinzu, den das Personal beim Vorzeigen der Bestellung sehen kann."
+            },
+            {
+              "title": "Gesamtbeträge nach Währung ansehen",
+              "body": "Wenn die Preise aller ausgewählten Gerichte und Extras bekannt sind, wird der Gesamtbetrag für jede Währung getrennt angezeigt."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "Im Ausland essen gehen",
+              "body": "Lies die Gerichte und Preise auf der Speisekarte vor Ort, bevor du entscheidest, was du bestellst."
+            },
+            {
+              "title": "Im Café Extras auswählen",
+              "body": "Wähle, wie viele Tassen Kaffee du möchtest, und sieh nach, welche Milchsorten oder Extras es gibt."
+            },
+            {
+              "title": "Für Freunde mitbestellen",
+              "body": "Fasse alle Gerichte, Mengen und Anmerkungen in einer Bestellung zusammen."
+            }
+          ]
+        }
+      }
     },
     "document": {
       "title": "Dokumente scannen: Seiten ordnen, Struktur erhalten.",
@@ -179,13 +374,50 @@
         "Scanverlauf durchsuchen und Dokumente jederzeit wiederfinden."
       ],
       "guide": {
+        "steps": {
+          "title": "So funktioniert es",
+          "items": [
+            {
+              "title": "Dokument scannen",
+              "body": "Wähle unter „Ordnen“ die Option „Dokument“, füge die Fotos der Seiten der Reihe nach hinzu und starte den Scan."
+            },
+            {
+              "title": "Übersetzung lesen",
+              "body": "Orientiere dich an Überschriften, Absätzen und Listen."
+            },
+            {
+              "title": "Originaltext prüfen",
+              "body": "Tippe auf einen übersetzten Absatz, um das Original zu sehen."
+            }
+          ]
+        },
         "abilities": {
           "title": "Das kannst du tun",
           "items": [
             {
               "title": "Originalfoto ansehen",
-              "body": "Tippe im Scanergebnis oben rechts auf das Fotosymbol, um das Originalfoto zu öffnen und mit der entsprechenden Seite zu vergleichen.",
-              "shotId": "original"
+              "body": "Tippe im Scanergebnis oben rechts auf das Fotosymbol, um das Originalfoto zu öffnen und mit der entsprechenden Seite zu vergleichen."
+            },
+            {
+              "title": "Mehrere Seiten zusammen scannen",
+              "body": "Füge die Fotos deiner Seiten der Reihe nach hinzu und lass sie in einem Durchgang ordnen."
+            },
+            {
+              "title": "Einen früheren Scan erneut öffnen",
+              "body": "Suche im Scanverlauf nach Titel oder Typ und öffne das Dokument erneut."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "Einen gedruckten Aushang lesen",
+              "body": "Ordne den Aushang in Absätze und Listen in der ursprünglichen Lesereihenfolge."
+            },
+            {
+              "title": "Eine Hausordnung prüfen",
+              "body": "Scanne die gedruckte Hausordnung und öffne sie erneut, um Zeiten oder Gebühren nachzuschlagen."
             }
           ]
         }
@@ -200,7 +432,56 @@
         "Im Eingabefeld übersetzen, Entwurf ersetzen und weiterschreiben.",
         "Tippen oder mit iOS diktieren, dann Sprache und Ton wählen.",
         "Zwischenablage übersetzen, kopieren oder an der Cursorposition einfügen."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
+          "items": [
+            {
+              "title": "Tastatur aktivieren",
+              "body": "Folge der Anleitung in der App, füge die Tastatur hinzu und aktiviere „Vollen Zugriff erlauben“."
+            },
+            {
+              "title": "Zur Tastatur wechseln",
+              "body": "Wähle in einem unterstützten Textfeld über die Globustaste „AnyTranslator“."
+            },
+            {
+              "title": "Einen Entwurf übersetzen",
+              "body": "Tippe deinen Text, wähle die Zielsprache und tippe auf „Übersetzen“."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "Im selben Textfeld übersetzen",
+              "body": "Ersetze den Entwurf durch die Übersetzung und schreibe in derselben App weiter."
+            },
+            {
+              "title": "Ton anpassen",
+              "body": "Wähle einen Ton, um den Text im Feld erneut zu übersetzen."
+            },
+            {
+              "title": "Text aus der Zwischenablage übersetzen",
+              "body": "Übersetze kopierten Text mit den Tastaturwerkzeugen. Kopiere das Ergebnis oder füge es an der Cursorposition ein."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "In einer Nachrichten-App antworten",
+              "body": "Wechsle in einem unterstützten Nachrichtenfeld die Sprache und prüfe die Übersetzung vor dem Absenden."
+            },
+            {
+              "title": "Eine berufliche Nachricht schreiben",
+              "body": "Wähle einen Ton, der zum Empfänger passt, etwa für eine höfliche Bitte oder eine knappe Antwort."
+            }
+          ]
+        }
+      }
     },
     "helper": {
       "title": "Helper erklärt Grammatik und Verwendung.",
@@ -212,20 +493,59 @@
         "Synonyme, Beispielsätze, versteckte Bedeutungen und Antwortvorschläge ergänzen das Lernen.",
         "Fachgebiet, Ziele und Tiefe festlegen und Erkläranweisungen wiederverwenden."
       ],
-      "sections": [
-        {
-          "title": "Warum sich russische und deutsche Endungen ändern",
-          "body": "Beispiele im Kontext: Vom russischen Instrumental bis zum deutschen Dativ zeigen Fälle, Artikel und Substantivendungen ihr Zusammenspiel.",
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
           "items": [
-            "Russisch: Я говорю с мой друг. → Я говорю с моим другом. с im Sinne von „mit“ verlangt den Instrumental; die Endungen von мой und друг ändern sich gemeinsam.",
-            "Deutsch: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit verlangt den Dativ; das schwach deklinierte Kunde wird zu Kunden."
+            {
+              "title": "Einen Satz eingeben",
+              "body": "Gib den Satz in der „Textübersetzung“ ein oder füge ihn ein."
+            },
+            {
+              "title": "Eine Erklärung auswählen",
+              "body": "Wähle unter „Eigenes Wissen“ eine Anweisung wie „Grammatik“."
+            },
+            {
+              "title": "Den Satzbau nachvollziehen",
+              "body": "Lies nach, warum diese Formen, Endungen oder Strukturen verwendet werden."
+            }
           ]
         },
-        {
-          "title": "Erkläranweisungen speichern und wiederverwenden",
-          "body": "Speichere etwa „Erkläre russische Fälle in meiner Sprache“ oder „Erkläre deutsche Endungen“. Neue Sätze werden auf die vertraute Weise erklärt, damit du dich auf dein Lernziel konzentrieren kannst."
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "Grammatik und Fehler im Detail ansehen",
+              "body": "Wähle „Grammatik“, „Häufige Fehler“ oder „Wort für Wort“, um zu sehen, wie der Satz aufgebaut ist."
+            },
+            {
+              "title": "Wörter und Beispiele erkunden",
+              "body": "Nutze Synonyme, Beispielsätze oder versteckte Bedeutungen, um zu sehen, wie sich Formulierungen je nach Kontext ändern."
+            },
+            {
+              "title": "Zwischen Original und Übersetzung wechseln",
+              "body": "Wechsle unter „Eigenes Wissen“ die Textquelle, um das Original oder die Übersetzung erklären zu lassen."
+            },
+            {
+              "title": "Anweisungen speichern und wiederverwenden",
+              "body": "Speichere eine Anweisung für dein Fachgebiet, dein Lernziel oder die gewünschte Erklärungstiefe und verwende sie für neue Sätze."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "Den russischen Instrumental lernen",
+              "body": "Am Beispiel с моим другом siehst du, warum с den Instrumental verlangt und wie sich мой und друг verändern."
+            },
+            {
+              "title": "Deutsche Dativendungen prüfen",
+              "body": "Vergleiche am Beispiel mit dem Kunden den Dativartikel und die Endung eines schwach deklinierten Nomens."
+            }
+          ]
         }
-      ]
+      }
     },
     "widget": {
       "title": "Lern-Widget: nebenbei wiederholen.",
@@ -236,7 +556,60 @@
         "Wörter und Sätze lesen, KI-Aussprache hören und direkt vom Home-Bildschirm nachsprechen.",
         "Mit Wiederholen oder Gelernt die nächste Lernrunde vorbereiten.",
         "Inhaltstyp, Thema und Schwierigkeit wählen und eigene Anweisungen ergänzen."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
+          "items": [
+            {
+              "title": "Zum Home-Bildschirm hinzufügen",
+              "body": "Folge der Anleitung in der App, um das „Lern-Widget“ hinzuzufügen."
+            },
+            {
+              "title": "Lesen und anhören",
+              "body": "Lies die Karte und tippe auf das Lautsprechersymbol, um den Ausdruck zu hören."
+            },
+            {
+              "title": "Wiederholung bewerten",
+              "body": "Wähle „Wiederholen“ oder „Kann ich“, um festzulegen, wann die Karte wieder erscheint."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "Auf dem Home-Bildschirm anhören",
+              "body": "Tippe auf das Lautsprechersymbol auf der Karte, höre dir die Aussprache an und sprich sie nach."
+            },
+            {
+              "title": "Wiederholungen festhalten",
+              "body": "Gib an, ob du eine Karte schon kennst oder erneut wiederholen möchtest. Dadurch wird der Wiederholungszeitpunkt angepasst."
+            },
+            {
+              "title": "Lerninhalte auswählen",
+              "body": "Wähle in den Einstellungen Inhaltstypen, Themen und Schwierigkeit. Wo möglich, kannst du eigene Anweisungen ergänzen."
+            },
+            {
+              "title": "Eine Karte vom Sperrbildschirm öffnen",
+              "body": "Tippe auf die Karte auf dem Sperrbildschirm, um den passenden Ausdruck in der App zu öffnen."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "In einer kurzen Pause wiederholen",
+              "body": "Höre dir einen nützlichen Ausdruck an und sprich ihn nach, während du auf den Bus wartest."
+            },
+            {
+              "title": "Ein Gespräch vorbereiten",
+              "body": "Wiederhole Vokabeln nach Thema und übe, die Ausdrücke laut zu sagen."
+            }
+          ]
+        }
+      }
     },
     "table": {
       "title": "Tabellen übersetzen: jede Zahl im Zusammenhang.",
@@ -247,7 +620,60 @@
         "Zeilen und Spalten erhalten, damit Zeiten und Preise vergleichbar bleiben.",
         "Breite Tabellen seitlich lesen und alle Felder und Einheiten erfassen.",
         "Text und Originalbild vergleichen und den Scan jederzeit im Verlauf öffnen."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
+          "items": [
+            {
+              "title": "Tabelle scannen",
+              "body": "Wähle unter „Ordnen“ die Option „Tabelle“, füge ein Foto hinzu und starte den Scan."
+            },
+            {
+              "title": "Zeilen und Spalten lesen",
+              "body": "Orientiere dich an den Spaltenüberschriften, um Zeiten, Preise oder Einheiten den richtigen Zeilen zuzuordnen."
+            },
+            {
+              "title": "In einer breiten Tabelle seitlich scrollen",
+              "body": "Wische zur Seite, um weitere Spalten zu sehen."
+            },
+            {
+              "title": "Einen Eintrag im Original prüfen",
+              "body": "Tippe auf eine Überschrift oder eine Zelle mit Originaltext, um das Original zu prüfen."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "Tabellenstruktur erhalten",
+              "body": "Spaltenüberschriften, Zeilenbeschriftungen und Datenspalten bleiben getrennt und lassen sich so leicht vergleichen."
+            },
+            {
+              "title": "Zeilenbeschriftungen im Blick behalten",
+              "body": "In breiten Tabellen bleibt die erste Spalte beim seitlichen Scrollen stehen."
+            },
+            {
+              "title": "Mit dem ganzen Foto vergleichen",
+              "body": "Tippe rechts oben auf das Fotosymbol, um das Originalfoto der Seite zu öffnen."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "Fahrpläne prüfen",
+              "body": "Vergleiche Abfahrtszeiten nach Linie und scrolle bei Bedarf zur nächsten Spalte."
+            },
+            {
+              "title": "Ticketpreise und Tarife vergleichen",
+              "body": "Vergleiche Preise, Ticketarten und angegebene Einheiten anhand der Zeilen und Spalten."
+            }
+          ]
+        }
+      }
     },
     "chat": {
       "title": "KI-Assistent",
@@ -259,35 +685,67 @@
         "Szenarien und Ziele üben, um auf Reisen, im Beruf und im Alltag zu sprechen.",
         "Natürliche Beispiele hören, nachsprechen, wiederholen und nützliche Ausdrücke speichern."
       ],
-      "sections": [
-        {
-          "title": "Fotos und Dolmetschen: frag, was gerade wichtig ist",
-          "body": "Füge Fotos von Schildern, Aushängen oder Nachrichten hinzu. Die KI fasst Wichtiges, Hinweise und nächste Schritte zusammen. Überwinde Sprachbarrieren im Sprachgespräch oder mit Live-Dolmetschen und stelle deine Fragen klar.",
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
           "items": [
-            "Sprachgespräch: Frage laut und unterhalte dich weiter.",
-            "Sprich mit mir Englisch: übe in einem natürlichen Gespräch.",
-            "Dolmetsche live für mich: verbinde unterschiedliche Sprachen.",
-            "Foto für die KI: Wichtiges und nächste Schritte erkennen."
+            {
+              "title": "Den Kontext nennen",
+              "body": "Sag, wohin du gehst und was du üben möchtest."
+            },
+            {
+              "title": "Beispiele ansehen",
+              "body": "Lies die Beispiele und wähle eins aus, zu dem du nachfragen möchtest."
+            },
+            {
+              "title": "Eine Frage zu einem Foto stellen",
+              "body": "Füge ein Foto hinzu und sag, was du wissen möchtest."
+            },
+            {
+              "title": "Einen passenden Satz finden",
+              "body": "Bitte um einen Satz, der zum Foto und zum Gespräch passt."
+            }
           ]
         },
-        {
-          "title": "Übe die Sprache, die dein Leben braucht",
-          "body": "Vom Restaurant und Flughafen bis zu Bewerbung und Beruf: Wähle Szenarien zum Sprechen und Ziele zum schrittweisen Lernen oder erstelle eigene. Antworte vor allem laut und bereite dich auf den nächsten echten Sprechanlass vor.",
+        "abilities": {
+          "title": "Das kannst du tun",
           "items": [
-            "Szenariotraining: eine Rolle übernehmen und Gesprächsaufgaben lösen.",
-            "Zieltraining: erst Formulierungen üben, dann im Szenario anwenden.",
-            "Eigenes Lernen: Szenario oder Ziel für einen bestimmten Anlass erstellen."
+            {
+              "title": "Gespräch im Chat",
+              "body": "Tippe oder sende ein Foto. Wenn Spracheingabe verfügbar ist, kannst du laut fragen, um Dolmetschen bitten oder dir ein Beispiel langsamer vorsprechen lassen."
+            },
+            {
+              "title": "Das Wichtigste aus einem Foto erfahren",
+              "body": "Sende ein Foto eines Schilds, Aushangs oder einer Nachricht und frage nach den wichtigsten Punkten, Hinweisen oder nächsten Schritten."
+            },
+            {
+              "title": "Eine Situation üben oder auf ein Ziel hinarbeiten",
+              "body": "Gib im Chat die Rolle, die Situation und das Ziel vor. Übe zuerst einen Ausdruck und verwende ihn dann im Gespräch."
+            },
+            {
+              "title": "Formulierungen vergleichen und nachlesen",
+              "body": "Bitte die KI, Korrekturen an einem kurzen russischen oder deutschen Satz zu erklären. Kopiere nützliche Formulierungen oder öffne den Chat erneut im Verlauf."
+            }
           ]
         },
-        {
-          "title": "Natürlich hören. Leichter sprechen.",
-          "body": "Bitte die KI um ein langsameres Beispiel und übe Aussprache, Akzent und Rhythmus. Verwende die Sätze danach im natürlichen Gespräch, damit jede Übung näher an echten Austausch rückt."
-        },
-        {
-          "title": "Feedback verstehen. Beim nächsten Mal flüssiger sprechen.",
-          "body": "Vergleiche Original und natürliche Formulierung, höre Beispiele und verstehe die Gründe. Die KI kann auch kurze russische, deutsche und andere Sätze korrigieren. Speichere nützliche Ausdrücke, übe erneut und lies Gespräche im Verlauf nach, um dich aufs nächste Sprechen vorzubereiten."
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "Vor einer Reise üben",
+              "body": "Übe den Check-in im Hotel oder das Bestellen. Bitte den Assistenten, dein Gegenüber zu spielen."
+            },
+            {
+              "title": "Ein Vorstellungsgespräch üben",
+              "body": "Bitte die KI, dein Gegenüber im Vorstellungsgespräch zu spielen. Übe deine Antworten und frage nach, wenn du nicht weiterweißt."
+            },
+            {
+              "title": "Eine Antwort auf eine Nachricht vorbereiten",
+              "body": "Beschreibe dem Assistenten die Situation und bitte ihn, mögliche Antworten zu vergleichen."
+            }
+          ]
         }
-      ]
+      }
     },
     "screen-translation": {
       "title": "Bildschirmübersetzung für Untertitel und Text.",
@@ -299,23 +757,67 @@
         "Bildschirmtext: Webseiten, Chats und Spiele dort lesen, wo du gerade bist.",
         "Bild-in-Bild und Verlauf: beim Ansehen vergleichen und später erneut lesen."
       ],
-      "sections": [
-        {
-          "title": "Video-Untertitel: am Inhalt dranbleiben",
-          "body": "Audio aus anderen Apps wird zu übersetzten Untertiteln, auf Wunsch neben dem Original. Bei Videos, Livestreams und beim Sprachenlernen erfasst du die Kernaussagen in deiner Sprache, während der Inhalt weiterläuft."
-        },
-        {
-          "title": "Bildschirmtext: einfach weiterlesen",
-          "body": "Sichtbarer Text in Webseiten, Chats, Spielen und Dokumenten lässt sich übersetzt im Bild-in-Bild-Fenster lesen. Verschiebe es zum gewünschten Absatz oder scrolle die Originalseite weiter, um fremdsprachige Informationen leichter zu erfassen."
-        },
-        {
-          "title": "Bild-in-Bild begleitet dich. Nützliche Sätze bleiben.",
-          "body": "Die Übersetzung folgt dem Originalinhalt zum direkten Vergleich. Fertige Originaltexte und Übersetzungen bleiben im Verlauf. Öffne sie später oder übertrage interessante Formulierungen manuell an den KI-Assistenten, um Bedeutung und Verwendung zu üben.",
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
           "items": [
-            "Benötigt iOS/iPadOS 16 oder neuer, Bild-in-Bild und Internet; geschützte Inhalte lassen sich möglicherweise nicht übersetzen."
+            {
+              "title": "Einen Modus wählen",
+              "body": "Wähle „Video-Untertitel“ oder „Bildschirmtext“."
+            },
+            {
+              "title": "Bildschirmübertragung starten",
+              "body": "Tippe auf „Starten“ und bestätige in iOS mit „Übertragung starten“."
+            },
+            {
+              "title": "Untertitel mitlesen",
+              "body": "Kehre zum Video zurück und lies die Untertitel im Bild-in-Bild-Fenster."
+            },
+            {
+              "title": "Beim Scrollen weiterlesen",
+              "body": "Nutze „Bildschirmtext“ und scrolle auf der Originalseite weiter."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "Video-Untertitel",
+              "body": "Übersetze den Ton von Videos oder Livestreams in anderen Apps. Aktiviere zum Vergleich „Original anzeigen“."
+            },
+            {
+              "title": "Sichtbaren Bildschirmtext übersetzen",
+              "body": "Lies im Bild-in-Bild-Fenster die Übersetzung von sichtbarem Text auf Webseiten, in Chats, Spielen oder Dokumenten."
+            },
+            {
+              "title": "Per Bild-in-Bild vergleichen",
+              "body": "Schiebe das Bild-in-Bild-Fenster neben den Originalinhalt. Voraussetzung sind iOS oder iPadOS 16 oder neuer und eine Internetverbindung. Geschützte Inhalte lassen sich möglicherweise nicht übersetzen."
+            },
+            {
+              "title": "Im Verlauf nachlesen und weiter üben",
+              "body": "Lies Original und Übersetzung im Verlauf nach. Kopiere eine Zeile in den KI-Assistenten, um nach der Verwendung zu fragen oder sie zu üben."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "Videos und Livestreams ansehen",
+              "body": "Lass das Video weiterlaufen und lies die Untertitel mit. Beim Lernen kannst du sie mit dem Original vergleichen."
+            },
+            {
+              "title": "Eine Webseite lesen",
+              "body": "Schiebe das Übersetzungsfenster neben einen Abschnitt und lies beim Scrollen weiter."
+            },
+            {
+              "title": "Chats oder Spielen weiter folgen",
+              "body": "Lies mit „Bildschirmtext“ die sichtbaren Nachrichten und bleib in der ursprünglichen App."
+            }
           ]
         }
-      ]
+      }
     }
   },
   "workflows": {
@@ -566,7 +1068,7 @@
       "reply": {
         "label": "Textübersetzung und Ton",
         "title": "Der Sinn stimmt.\nDer Ton auch.",
-        "body": "Professionell, wenn es passt. Herzlich, wenn du willst. Sieben Tonarten, damit jeder Satz nach dir klingt.",
+        "body": "Professionell, wenn es passt. Herzlich, wenn du willst. Sechs Tonlagen, damit jeder Satz nach dir klingt.",
         "action": "Textübersetzung entdecken"
       },
       "practice": {

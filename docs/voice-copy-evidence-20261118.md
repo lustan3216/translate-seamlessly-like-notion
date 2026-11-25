@@ -25,10 +25,8 @@
 - 本次未生成音檔、未做模型實際發音或裝置聲學測試；自然語音與口音練習為功能介紹，非品質量測結果。
 - 瀏覽器 Light／Dark 與窄螢幕視覺驗收由主代理整合後完成。
 
-## 2026-11-18 語氣標籤窄跟進
+## 文字翻譯語氣
 
-已實讀實機 IPA 固定來源 `7716d40bbe7361f4cbd0956ff0a1e88ccdb4390c`：選項為自動、禮貌、幽默、書信、朋友、精簡，`oral` 繁中標籤由「輕鬆」改成「朋友」。該實機來源沒有「撩人」，截圖來源保持原樣。
+App 2.2.0 建置來源 `f4ce7f6b79cd749355150472dbbc0f59d33f79a3` 已包含語氣移除變更 `aeb642556`。`anytranslator-api/config/default-prompt.public.json:101` 列出 `polite`、`humor`、`letter`、`oral`、`concise` 的各語系標籤，`lib/components/buttons/button_tone_choose.dart:37-41` 另從 App 翻譯加入第一項「自動」。官網以這六項為準。
 
-後續最新 main 的 `431f3c2d88785cfb46b6c66d37d29aa9d6d51a49` 已完整加入 `flirty`／「撩人」：public config 選項、private `toneFlirty`／temperature 與 Worker `provider-tasks.mjs` 路由均已入 Git。App `lib/api/settings.dart:304-342,595-612` 與 `button_tone_choose.dart`、Keyboard `KeyboardViewController.swift:28-49` 皆從設定讀語氣，不需新增固定選項 UI。官網依使用者最新 main 要求同步為七項，補俏皮、親暱的跨國交友口吻介紹；未宣稱已部署或實機已選用此新項。
-
-檢查器完整保留 `25040c5` 的定價／config hash／原始語氣基線檢查，另讀固定 `431f3c2d` Git 物件確認七項標籤、prompt、temperature 與路由；移除新增的 flirty 選項並還原 `oral.titles` 後，整份 public config 必須與原基線完全相同。所有繁中實際語氣 count caller 為 `main-common-zh-tw.json`、`ProductStoryPanels.tsx` 及 `check-main-content.mjs`；`home-scenarios.ts` 沒有寫死六項或舊「輕鬆」選項名，無須改動。一般「輕鬆」形容詞不改。
+較早的實機 IPA 來源 `7716d40bbe7361f4cbd0956ff0a1e88ccdb4390c` 也有六項，繁中為自動、禮貌、幽默、書信、朋友、精簡。原有的截圖證據沿用各自的建置來源。

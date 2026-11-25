@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { createServer } from "vite";
+import sharp from "sharp";
 import { SITE_LOCALES, SITE_ROUTES, localizedPath, localesForPath } from "../src/lib/site-config.mjs";
 import { marketingCatalog } from "../src/data/marketing-content.mjs";
 
@@ -23,16 +24,9 @@ function compare(value, reference, label) {
     assert.equal(value.length, reference.length, `Missing list items: ${label}`);
     reference.forEach((item, index) => compare(value[index], item, `${label}.${index}`));
   } else {
-    const optionalGuide = /^[^.]+\.features\.[^.]+$/.test(label);
-    const requiredKeys = (object) => Object.keys(object).filter((key) => !optionalGuide || key !== "guide").sort();
-    assert.deepEqual(requiredKeys(value), requiredKeys(reference), `Translation key coverage: ${label}`);
-    for (const key of requiredKeys(reference)) compare(value[key], reference[key], `${label}.${key}`);
-    if (optionalGuide && Object.hasOwn(value, "guide")) {
-      for (const [key, block] of Object.entries(value.guide)) {
-        assert.ok(["steps", "abilities", "situations", "faq"].includes(key), `Unknown guide block: ${label}.${key}`);
-        compare(block, reference.guide?.[key] ?? block, `${label}.guide.${key}`);
-      }
-    }
+    const keys = Object.keys(reference).sort();
+    assert.deepEqual(Object.keys(value).sort(), keys, `Translation key coverage: ${label}`);
+    for (const key of keys) compare(value[key], reference[key], `${label}.${key}`);
   }
 }
 assert.deepEqual(Object.keys(returnCopy).sort(), SITE_LOCALES.map(({ code }) => code).sort(), "Payment return locale coverage");
@@ -59,8 +53,13 @@ const visible = (html) => html.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi
 let pages = 0;
 try {
   const { render } = await server.ssrLoadModule("/src/entry-server.tsx");
+  const { featureGuideOptions, featureStepImage } = await server.ssrLoadModule("/src/data/feature-guides.ts");
+  const { marketingCopy } = await server.ssrLoadModule("/src/components/marketing/MarketingShell.tsx");
+  const { getTranslations } = await server.ssrLoadModule("/src/translations/index.ts");
+  const checkedStepImages = new Set();
   for (const locale of SITE_LOCALES) {
     const copy = packs[locale.code], catalog = marketingCatalog(locale.code);
+    const translations = getTranslations(locale.code);
     const check = (route, required = []) => {
       const url = localizedPath(route, locale.code), result = render(url), text = visible(result.html);
       for (const value of required) assert.ok(text.includes(visible(value)), `Missing rendered translation: ${url}: ${value.slice(0, 70)}`);
@@ -77,19 +76,45 @@ try {
     for (const feature of catalog.features) {
       const detail = copy.features[feature.id];
       const guide = detail.guide;
-      const hasGuideSteps = Boolean(guide?.steps?.items.length);
-      const stepsAndGuide = [
-        ...(hasGuideSteps ? [] : detail.steps),
-        ...[guide?.steps, guide?.abilities, guide?.situations].flatMap((section) => section?.items.length
-          ? [section.title, ...section.items.flatMap((item) => [item.title, item.body])]
-          : []),
-        ...(guide?.faq ?? []).flatMap((topic) => [copy.marketing[`faq.${topic}Q`], copy.marketing[`faq.${topic}A`]].filter(Boolean)),
-      ];
-      const { html } = check(`/features/${feature.id}`, [detail.title, detail.heading, detail.body, ...stepsAndGuide, ...(detail.sections || []).flatMap((section) => [section.title, section.body, ...(section.items || [])])]);
-      assert.equal(html.includes('class="mk-step-list"'), !hasGuideSteps, `Feature step layout: ${locale.code}/${feature.id}`);
-      assert.equal((html.match(/<summary>/g) ?? []).length, guide?.faq?.length ?? 0, `Feature FAQ topics: ${locale.code}/${feature.id}`);
-      for (const { image } of guide?.steps?.items ?? []) {
-        assert.ok(html.includes(`src="${image.src}"`), `Missing step image: ${locale.code}/${feature.id}: ${image.src}`);
+      const label = `${locale.code}/${feature.id}`;
+      assert.equal(detail.sections, undefined, `Unused legacy sections: ${label}`);
+      assert.ok(guide, `Missing guide: ${label}`);
+      assert.deepEqual(Object.keys(guide).sort(), ["abilities", "situations", "steps"], `Guide blocks: ${label}`);
+      const guideText = Object.entries(guide).flatMap(([key, block]) => {
+        const blockLabel = `${label}/${key}`;
+        assert.deepEqual(Object.keys(block).sort(), ["items", "title"], `Text-only guide block: ${blockLabel}`);
+        const minimum = key === "situations" ? 2 : 3;
+        assert.ok(block.items.length >= minimum && block.items.length <= 4, `Guide item count: ${blockLabel}`);
+        const itemText = block.items.flatMap((item) => {
+          assert.deepEqual(Object.keys(item).sort(), ["body", "title"], `Text-only guide item: ${blockLabel}`);
+          return [item.title, item.body];
+        });
+        return [block.title, ...itemText];
+      });
+      const topics = featureGuideOptions[feature.id]?.faq ?? [];
+      const faqText = topics.flatMap((topic) => ["Q", "A"].map((part) => {
+        const marketing = marketingCopy[locale.code];
+        return topic === "Platforms" && part === "A" ? marketing["download.macNote"]
+          : marketing[`faq.${topic}${part}`] ?? translations[`landing.faq${topic}${part}`];
+      }));
+      const { html } = check(`/features/${feature.id}`, [detail.title, detail.heading, detail.body, ...guideText, ...faqText]);
+      assert.match(html, /class="mk-feature-guide-steps"/, `Feature step layout: ${label}`);
+      assert.doesNotMatch(html, /mk-step-list|mk-feature-modules|mk-story-panel/, `Guide replaces legacy blocks: ${label}`);
+      assert.equal((html.match(/<summary>/g) ?? []).length, topics.length, `Feature FAQ topics: ${label}`);
+      for (const [index] of guide.steps.items.entries()) {
+        const image = featureStepImage(feature.id, locale.code, index);
+        if (!image) {
+          assert.match(html, /class="mk-feature-guide-steps"[^>]+data-text-only="true"/, `Text-only steps: ${locale.code}/${feature.id}`);
+          continue;
+        }
+        assert.ok(html.includes(`src="${image.src}" width="${image.width}" height="${image.height}"`), `Missing step image or dimensions: ${locale.code}/${feature.id}: ${image.src}`);
+        if (!checkedStepImages.has(image.src)) {
+          const bytes = readFileSync(new URL(`../public${image.src}`, import.meta.url));
+          const { format, width, height } = await sharp(bytes).metadata();
+          assert.deepEqual([format, width, height], ["webp", 720, 540], image.src);
+          assert.ok(bytes.length <= 45_000, `Step image exceeds 45 KB: ${image.src}`);
+          checkedStepImages.add(image.src);
+        }
       }
     }
     for (const item of catalog.cases) check(`/use-cases/${item.id}`, copy.workflows[item.id]);
@@ -127,5 +152,6 @@ try {
       pages++;
     }
   }
+  console.log(`Feature guide images checked: ${checkedStepImages.size} WebPs at 720×540 and ≤45 KB.`);
 } finally { await server.close(); }
 console.log(`Current localization checks passed: ${SITE_LOCALES.length} complete locale packs, exact keys/lists/IDs/placeholders, all current feature/case/article/manifesto copy, 10 home scenarios and current plan minutes; ${pages} localized route renders. Image and browser acceptance remain separate gates.`);

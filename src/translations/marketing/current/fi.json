@@ -97,37 +97,71 @@
   "features": {
     "text": {
       "title": "Tekstikäännös: selkeä merkitys ja sopiva sävy.",
-      "summary": "Seitsemän sävyä viesteihin ja sähköposteihin vastaanottajan mukaan. Ymmärrä venäjän ja saksan taivutus Helperin avulla ja pyydä tekoälyavustajaa oikolukemaan alkuperäinen lause.",
+      "summary": "Kuusi sävyä viesteihin ja sähköposteihin vastaanottajan mukaan. Ymmärrä venäjän ja saksan taivutus Helperin avulla ja pyydä tekoälyavustajaa oikolukemaan alkuperäinen lause.",
       "heading": "Valitse vastaanottajalle sopiva sävy.",
       "body": "Kirjoita työpyynnöt kohteliaasti ja ystäville luontevasti tai tiivistä pitkä viesti. Kuuntele käännöksen tekoälyääntämys ja tallenna hyvät lauseet. Helper selittää venäjän ja saksan sijamuodot ja päätteet, tekoälyavustaja auttaa oikoluvussa.",
       "steps": [
-        "Seitsemän sävyä virallisista kirjeistä arkiseen keskusteluun.",
+        "Kuusi sävyä virallisista kirjeistä arkiseen keskusteluun.",
         "Helper selittää venäjän ja saksan taivutusta, ja tekoälyavustaja oikolukee alkuperäisen lauseen pyynnöstäsi.",
         "Kuuntele luonnollista tekoälyääntämystä, tallenna lauseita tai tuo teksti tekoälyavustajan luonnokseen."
       ],
-      "sections": [
-        {
-          "title": "Ymmärrä venäjän ja saksan sijamuodot ja päätteet",
-          "body": "Kielioppi, tavalliset virheet ja sanakohtainen analyysi selittävät omalla kielelläsi venäjän sijamuodot sekä saksan artikkelit ja päätteet. Ymmärrä lauseen suhteet ja valitse sitten sopiva ilmaisu."
-        },
-        {
-          "title": "Seitsemän sävyä vastaanottajan mukaan",
-          "body": "Automaattinen, kohtelias, humoristinen, kirje, ystävällinen, tiivis ja flirttaileva: sopiva ääni työviesteihin ja kansainväliseen tutustumiseen.",
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
           "items": [
-            "Automaattinen: sovittaa sävyn alkuperäistekstiin ja asiayhteyteen.",
-            "Kohtelias: pyyntöihin, kysymyksiin ja työviesteihin.",
-            "Humoristinen: keventää tilanteeseen sopivaa keskustelua.",
-            "Kirje: sähköposteihin ja kirjeisiin.",
-            "Ystävällinen: luontevaa, rentoa ilmaisua tuttujen kesken.",
-            "Tiivis: lyhentää sanamuotoa; tarkista tärkeät tiedot.",
-            "Flirttaileva: leikkisä ja läheinen sävy kansainväliseen tutustumiseen."
+            {
+              "title": "Syötä alkuperäinen teksti",
+              "body": "Valitse kielet ja kirjoita tai liitä teksti."
+            },
+            {
+              "title": "Lue käännös",
+              "body": "Lue käännös tekstisi alta."
+            },
+            {
+              "title": "Valitse sävy",
+              "body": "Avaa sävyvalikko ja valitse tyyli."
+            },
+            {
+              "title": "Käytä uutta sanamuotoa",
+              "body": "Tarkista merkitys ja kopioi tai tallenna käännös."
+            }
           ]
         },
-        {
-          "title": "Venäjän ja saksan oikoluku: ymmärrä syy ennen sanavalintaa",
-          "body": "Automaattinen sävy säilyttää alkuperäisen tekstin, jos se on kokonaan kohdekielellä. Tarkista sijamuotoja, päätteitä ja kielioppia Helperin avulla tai pyydä tekoälyavustajaa oikolukemaan alkuperäinen."
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "Kuusi sävyä eri tilanteisiin",
+              "body": "Automaattinen mukautuu asiayhteyteen, Kohtelias sopii pyyntöihin ja Huumori keventää tunnelmaa. Kirje sopii sähköpostiin, Rento arkiseen jutteluun, ja Tiivis lyhentää tekstiä."
+            },
+            {
+              "title": "Ymmärrä venäjän ja saksan kielioppia",
+              "body": "Kohdassa Mukautetut tiedot voit tutkia sijamuotoja, artikkeleita ja päätteitä valinnoilla Kielioppi, Yleiset virheet ja Sana sanalta. Pyydä tekoälyavustajaa oikolukemaan alkuperäinen lause."
+            },
+            {
+              "title": "Säilytä kohdekielellä oleva teksti",
+              "body": "Automaattinen säilyttää koko tekstin ennallaan, jos se on jo kohdekielellä."
+            },
+            {
+              "title": "Kuuntele, tallenna tai kopioi",
+              "body": "Kuuntele tekoälyn ääntämä käännös, tallenna hyödylliset ilmaukset tai kopioi käännös tekoälyavustajalle."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Kirjoita pyyntö töissä",
+              "body": "Valitse Kohtelias tai Kirje, kun esität pyynnön kollegalle tai asiakkaalle."
+            },
+            {
+              "title": "Vastaa ystävälle",
+              "body": "Vertaa pitkää viestiä alkuperäiseen ja valitse vastauksen sävyksi Rento."
+            }
+          ]
         }
-      ]
+      }
     },
     "photos": {
       "title": "Kuvakäännös: käännös suoraan kuvan tekstin päälle.",
@@ -138,7 +172,64 @@
         "Reaaliaikainen käännöspeite auttaa lukemaan kyltin heti.",
         "Ota kuva tai valitse kirjastosta ja käännä kuvan teksti.",
         "Avaa käännöksen tiedot ja säilytä alkuperäisen kuvan konteksti."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
+          "items": [
+            {
+              "title": "Ota tai valitse kuva",
+              "body": "Kuvaa teksti tai valitse kuva."
+            },
+            {
+              "title": "Lue käännös kuvasta",
+              "body": "Lue käännös kuvasta alkuperäisen tekstin kohdalta."
+            },
+            {
+              "title": "Napauta tekstiä nähdäksesi lisätiedot",
+              "body": "Napauta riviä ja vertaa alkuperäistä ja käännöstä."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "Käännä kamerassa näkyvää tekstiä reaaliajassa",
+              "body": "Suuntaa kamera luettavaan tekstiin, niin käännös näkyy samassa kohdassa."
+            },
+            {
+              "title": "Käännä valokuvan teksti",
+              "body": "Ota kuva tai valitse se kuvakirjastosta. Käännös näkyy kuvassa alkuperäisen tekstin kohdalla."
+            },
+            {
+              "title": "Vertaa tekstialueen käännöstä alkuperäiseen",
+              "body": "Napauta tekstialuetta ja vertaa alkuperäistä ja käännöstä lisätiedoissa."
+            },
+            {
+              "title": "Suurenna kuvaa",
+              "body": "Suurenna kuvaa levittämällä kahta sormea, niin näet pienenkin tekstin."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Lue kyltti matkoilla",
+              "body": "Suuntaa kamera kylttiin ja lue käännös suoraan kyltin päältä."
+            },
+            {
+              "title": "Tarkista tuotteen etiketti",
+              "body": "Kuvaa etiketti ja napauta riviä, jonka haluat tarkistaa."
+            },
+            {
+              "title": "Lue aiemmin tallentamasi ilmoitus",
+              "body": "Avaa kuvakirjastosta ilmoituksen kuva ja lue käännös kuvan päältä."
+            }
+          ]
+        }
+      }
     },
     "voice": {
       "title": "Puhekäännös: pysy molempien puheessa mukana.",
@@ -150,12 +241,59 @@
         "Kuuntele yksityisesti puhelimen kuulokkeella tai kuulokkeilla; Vain tekstitykset sopii hiljaisiin tilanteisiin.",
         "Palaa keskusteluun, kuuntele tekoälykäännökset ja kopioi tai jaa yhteenvedon pääasiat."
       ],
-      "sections": [
-        {
-          "title": "Luonnollinen tekoälykäännös välittää sävyn ja rytmin",
-          "body": "Uuden sukupolven puhemalli luo käännösäänen, jonka sävelkulku ja hienovaraiset tunteet seuraavat sisältöä. Käytä sitä keskustelussa, kuuntele uudelleen ja toista perässä tutustuaksesi ääntämiseen ja aksentteihin."
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
+          "items": [
+            {
+              "title": "Valitse molemmat kielet",
+              "body": "Valitse molemmat kielet ja napauta mikrofonia."
+            },
+            {
+              "title": "Seuraa molempien puhetta",
+              "body": "Lue jokainen repliikki ja sen käännös."
+            },
+            {
+              "title": "Kuuntele repliikki uudelleen",
+              "body": "Napauta käännöksen vieressä olevaa kaiutinkuvaketta."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "Toista käännökset ääneen",
+              "body": "Kaksisuuntainen keskustelu voi lukea ääneen molempien käännökset. Puhu puolestani toistaa vain sinun puheesi käännökset."
+            },
+            {
+              "title": "Kuuntele yksityisesti tai lue",
+              "body": "Valitse Kuuntele yksityisesti ja käytä puhelimen kuulokaiutinta tai kuulokkeita. Voit myös valita Vain tekstitys."
+            },
+            {
+              "title": "Kuuntele luonnollista tekoälyääntä",
+              "body": "Kuuntele sävyä ja rytmiä. Kuuntele repliikki uudelleen, jotta sen ääntämys ja aksentti tulevat tutuiksi."
+            },
+            {
+              "title": "Palaa yhteenvetoon",
+              "body": "Palaa keskusteluun myöhemmin ja kopioi tai jaa yhteenveto."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Kirjaudu sisään hotelliin",
+              "body": "Tarkista huonetyyppi, vakuusmaksu ja uloskirjautumisaika."
+            },
+            {
+              "title": "Kysy ravintolan henkilökunnalta",
+              "body": "Kysy annoskoosta, aineksista tai valmistustavasta."
+            }
+          ]
         }
-      ]
+      }
     },
     "menu": {
       "title": "Ruokalistan skannaus: ymmärrä annokset ja näytä tilaus henkilökunnalle.",
@@ -166,7 +304,64 @@
         "Annokset, kuvaukset ja hinnat selkeiksi valinnoiksi.",
         "Valitse määrät, koot, saatavilla olevat lisukkeet ja huomautukset.",
         "Näytä alkuperäiskielinen tilaus ja hintasummat valuutoittain."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
+          "items": [
+            {
+              "title": "Skannaa ruokalista",
+              "body": "Avaa Järjestä-tila, valitse Ruokalista, lisää kuva ja aloita skannaus."
+            },
+            {
+              "title": "Lue käännös",
+              "body": "Selaa annoksia ja katso niiden tiedot ja hinnat."
+            },
+            {
+              "title": "Valitse annokset",
+              "body": "Valitse määrät ja lisukkeet."
+            },
+            {
+              "title": "Näytä tilaus henkilökunnalle",
+              "body": "Napauta ”Näytä henkilökunnalle”, niin näet tilauksen alkuperäiskielellä."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "Tarkista ruokalistan alkuperäisteksti",
+              "body": "Napauta annosta nähdäksesi sen alkuperäisen nimen, kuvauksen ja listalla olevan hinnan."
+            },
+            {
+              "title": "Lisää tilaukseen huomautus",
+              "body": "Lisää tilaukseen toive, jonka henkilökunta näkee, kun näytät tilauksen."
+            },
+            {
+              "title": "Katso summat valuutoittain",
+              "body": "Kun kaikkien valittujen annosten ja lisukkeiden hinnat tiedetään, näet kunkin valuutan summan erikseen."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Syö ravintolassa ulkomailla",
+              "body": "Katso paikallisen ruokalistan annokset ja hinnat ennen kuin päätät, mitä tilaat."
+            },
+            {
+              "title": "Tee lisävalinnat kahvilassa",
+              "body": "Valitse, montako kahvia haluat, ja katso, mitä maitovaihtoehtoja tai muita lisävalintoja on tarjolla."
+            },
+            {
+              "title": "Tilaa ystävien puolesta",
+              "body": "Kokoa kaikkien annokset, määrät ja huomautukset samaan tilaukseen."
+            }
+          ]
+        }
+      }
     },
     "document": {
       "title": "Asiakirjaskannaus: sivut järjestykseen, kappaleet ja pääasiat talteen.",
@@ -179,13 +374,50 @@
         "Hae skannaushistoriasta tarvitsemasi asiakirja."
       ],
       "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
+          "items": [
+            {
+              "title": "Skannaa asiakirja",
+              "body": "Avaa Järjestä-tila, valitse Asiakirja, lisää sivukuvat järjestyksessä ja aloita skannaus."
+            },
+            {
+              "title": "Lue käännös",
+              "body": "Lue teksti otsikoiden, kappaleiden ja luetteloiden mukaan."
+            },
+            {
+              "title": "Tarkista alkuperäisteksti",
+              "body": "Napauta käännettyä kappaletta nähdäksesi alkuperäisen tekstin."
+            }
+          ]
+        },
         "abilities": {
           "title": "Mitä voit tehdä",
           "items": [
             {
               "title": "Katso alkuperäinen kuva",
-              "body": "Avaa alkuperäinen valokuva napauttamalla skannaustuloksen oikean yläkulman kuvapainiketta ja vertaa sitä vastaavaan sivuun.",
-              "shotId": "original"
+              "body": "Avaa alkuperäinen valokuva napauttamalla skannaustuloksen oikean yläkulman kuvapainiketta ja vertaa sitä vastaavaan sivuun."
+            },
+            {
+              "title": "Skannaa useita sivuja kerralla",
+              "body": "Lisää sivujen kuvat järjestyksessä ja anna apin järjestää ne yhdessä erässä."
+            },
+            {
+              "title": "Avaa aiempi skannaus",
+              "body": "Hae skannaushistoriasta otsikon tai tyypin mukaan ja avaa asiakirja uudelleen."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Lue paperinen ilmoitus",
+              "body": "Jäsennä ilmoitus kappaleiksi ja luetteloiksi alkuperäisessä lukujärjestyksessä."
+            },
+            {
+              "title": "Tarkista majoitusohjeet",
+              "body": "Skannaa paperiset majoitusohjeet ja avaa ne uudelleen, kun haluat tarkistaa ajat tai maksut."
             }
           ]
         }
@@ -200,7 +432,56 @@
         "Käännä tekstikentässä, korvaa luonnos ja jatka vastaamista.",
         "Kirjoita tai sanele iOS:llä ja valitse kieli ja sävy.",
         "Käännä leikepöydän teksti, kopioi tai lisää kohdistimen kohdalle."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
+          "items": [
+            {
+              "title": "Ota näppäimistö käyttöön",
+              "body": "Lisää näppäimistö apin ohjeen mukaan ja ota käyttöön ”Salli täysi käyttöoikeus”."
+            },
+            {
+              "title": "Vaihda näppäimistöä",
+              "body": "Valitse AnyTranslator maapallonäppäimellä tuetussa tekstikentässä."
+            },
+            {
+              "title": "Käännä luonnos",
+              "body": "Kirjoita teksti, valitse kohdekieli ja napauta ”Käännä”."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "Käännä samassa kentässä",
+              "body": "Korvaa luonnos käännöksellä ja jatka kirjoittamista samassa apissa."
+            },
+            {
+              "title": "Säädä sävyä",
+              "body": "Valitse sävy, niin kentän teksti käännetään uudelleen."
+            },
+            {
+              "title": "Käännä leikepöydän teksti",
+              "body": "Käännä kopioitu teksti näppäimistön työkaluilla. Kopioi tulos tai lisää se kohdistimen kohdalle."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Vastaa chatissa",
+              "body": "Vaihda kieltä tuetussa viestikentässä ja tarkista käännös ennen lähettämistä."
+            },
+            {
+              "title": "Kirjoita työviesti",
+              "body": "Valitse vastaanottajalle sopiva sävy, kun tarvitset kohteliaan pyynnön tai tiiviin vastauksen."
+            }
+          ]
+        }
+      }
     },
     "helper": {
       "title": "Helper selittää kieliopin ja käytön.",
@@ -212,20 +493,59 @@
         "Tutki synonyymeja, esimerkkilauseita, rivien välistä merkitystä ja vastausehdotuksia.",
         "Määritä ala, tavoitteet ja syvyys ja tallenna selitysohjeet uudelleenkäyttöä varten."
       ],
-      "sections": [
-        {
-          "title": "Ymmärrä venäjän ja saksan taivutuksen syyt",
-          "body": "Esimerkkejä asiayhteydessä: venäjän instrumentaalista saksan datiiviin, näe miten sijamuodot, artikkelit ja substantiivien päätteet muuttuvat yhdessä.",
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
           "items": [
-            "Venäjä: Я говорю с мой друг. → Я говорю с моим другом. Merkityksessä ”jonkun kanssa” с vaatii instrumentaalin, joten sekä мой että друг saavat uuden päätteen.",
-            "Saksa: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit vaatii datiivin, ja heikosti taipuva Kunde saa muodon Kunden."
+            {
+              "title": "Syötä lause",
+              "body": "Kirjoita tai liitä lause Teksti-välilehdelle."
+            },
+            {
+              "title": "Valitse selitystapa",
+              "body": "Valitse kohdasta Mukautetut tiedot ohje, esimerkiksi Kielioppi."
+            },
+            {
+              "title": "Lue, miten lause rakentuu",
+              "body": "Lue, miksi lauseessa käytetään juuri näitä muotoja, päätteitä tai rakenteita."
+            }
           ]
         },
-        {
-          "title": "Tallenna selitysohjeet ja käytä uusissa lauseissa",
-          "body": "Tallenna ohjeeksi esimerkiksi ”Selitä venäjän sijamuodot omalla kielelläni” tai ”Selitä saksan päätteet”. Uudet lauseet saavat tutun selitystavan, jotta voit keskittyä oppimistavoitteeseesi."
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "Tutki kielioppia ja virheitä",
+              "body": "Valitse Kielioppi, Yleiset virheet tai Sana sanalta, niin näet, miten lause rakentuu."
+            },
+            {
+              "title": "Tutki sanoja ja esimerkkejä",
+              "body": "Katso Synonyymit-, Esimerkit- tai Rivien välistä -kohdasta, miten sanavalinnat muuttuvat asiayhteyden mukaan."
+            },
+            {
+              "title": "Vaihda alkuperäisen ja käännöksen välillä",
+              "body": "Valitse Mukautetut tiedot -osiossa lähteeksi alkuperäinen tai käännös sen mukaan, kummasta haluat selityksen."
+            },
+            {
+              "title": "Tallenna ohje myöhempää käyttöä varten",
+              "body": "Tallenna oma ohje aiheesta, oppimistavoitteesta tai selityksen tarkkuudesta ja käytä sitä uusien lauseiden kanssa."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Harjoittele venäjän instrumentaalia",
+              "body": "Katso esimerkistä с моим другом, miksi с vaatii instrumentaalin ja miten мой ja друг taipuvat."
+            },
+            {
+              "title": "Tarkista saksan datiivin päätteet",
+              "body": "Katso esimerkistä mit dem Kunden, mitä artikkelia datiivissa käytetään ja mikä pääte heikosti taipuvaan substantiiviin tulee."
+            }
+          ]
         }
-      ]
+      }
     },
     "widget": {
       "title": "Oppimiswidget: kertaa helposti.",
@@ -236,7 +556,60 @@
         "Lue ilmauksia, kuuntele tekoälyääntämystä ja toista aloitusnäytöltä.",
         "Merkitse kerrattavaksi tai opituksi seuraavaa oppimiskierrosta varten.",
         "Valitse ilmaustyyppi, aihe ja vaikeus ja lisää omat ohjeet."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
+          "items": [
+            {
+              "title": "Lisää widget Koti-valikkoon",
+              "body": "Lisää oppimiswidget apin ohjeen mukaan."
+            },
+            {
+              "title": "Lue ja kuuntele",
+              "body": "Lue kortti ja napauta kaiutinta kuullaksesi ilmauksen."
+            },
+            {
+              "title": "Merkitse, miten kertaus sujui",
+              "body": "Valitse ”Kertaa” tai ”Osaan”. Valinta määrää, milloin kortti palaa."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "Kuuntele Koti-valikossa",
+              "body": "Kuuntele ääntämys kortin kaiutinpainikkeella ja toista perässä."
+            },
+            {
+              "title": "Seuraa kertausta",
+              "body": "Merkitse kortti opituksi tai kerrattavaksi, niin sen kertausaikataulu päivittyy."
+            },
+            {
+              "title": "Valitse kerrattava sisältö",
+              "body": "Valitse asetuksista sisältötyypit, aiheet ja vaikeustaso. Lisää omia ohjeita, jos asetus on käytettävissä."
+            },
+            {
+              "title": "Avaa lukitun näytön kortti",
+              "body": "Napauta korttia lukitulla näytöllä, niin vastaava ilmaus aukeaa apissa."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Kertaa, kun sinulla on hetki aikaa",
+              "body": "Kuuntele ja toista hyödyllinen ilmaus bussia odottaessasi."
+            },
+            {
+              "title": "Valmistaudu keskusteluun",
+              "body": "Kertaa sanastoa aiheittain ja harjoittele sanomaan ilmauksia ääneen."
+            }
+          ]
+        }
+      }
     },
     "table": {
       "title": "Taulukkokäännös: vertaa rivejä ja sarakkeita, ymmärrä numerot.",
@@ -247,7 +620,60 @@
         "Rivi- ja sarakerakenne helpottaa aikojen ja hintojen vertailua.",
         "Vieritä leveitä taulukoita sivuttain nähdäksesi kaikki kentät ja yksiköt.",
         "Vertaa alkuperäistekstiä ja kuvaa ja avaa uudelleen skannaushistoriasta."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
+          "items": [
+            {
+              "title": "Skannaa taulukko",
+              "body": "Avaa Järjestä-tila, valitse Taulukko, lisää kuva ja aloita skannaus."
+            },
+            {
+              "title": "Seuraa rivejä ja sarakkeita",
+              "body": "Katso sarakeotsikoista, mitkä ajat, hinnat tai yksiköt kuuluvat kullekin riville."
+            },
+            {
+              "title": "Vieritä leveää taulukkoa",
+              "body": "Pyyhkäise sivusuunnassa, niin näet muutkin sarakkeet."
+            },
+            {
+              "title": "Tarkista alkuperäinen merkintä",
+              "body": "Napauta otsikkoa tai solua, jossa on lähdetekstiä, ja tarkista alkuperäinen."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "Säilytä taulukon rakenne",
+              "body": "Otsikot, rivien nimet ja tietosarakkeet pysyvät erillään, jotta niitä on helppo verrata."
+            },
+            {
+              "title": "Pidä rivien nimet näkyvissä",
+              "body": "Leveän taulukon ensimmäinen sarake pysyy paikallaan, kun vierität sivusuunnassa."
+            },
+            {
+              "title": "Vertaa koko alkuperäiseen kuvaan",
+              "body": "Avaa alkuperäinen sivukuva napauttamalla oikean yläkulman kuvapainiketta."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Tarkista joukkoliikenteen aikataulut",
+              "body": "Vertaa lähtöaikoja reiteittäin ja vieritä tarvittaessa seuraavaan sarakkeeseen."
+            },
+            {
+              "title": "Vertaa lippujen ja palvelujen hintoja",
+              "body": "Vertaa hintoja, lipputyyppejä ja ilmoitettuja yksiköitä riveillä ja sarakkeissa."
+            }
+          ]
+        }
+      }
     },
     "chat": {
       "title": "Tekoälyavustaja",
@@ -259,35 +685,67 @@
         "Harjoittele tilanteita ja tavoitteita matkaa, työtä ja arjen puhetta varten.",
         "Kuuntele luonteva malli, toista ja harjoittele uudelleen sekä tallenna hyödylliset ilmaukset."
       ],
-      "sections": [
-        {
-          "title": "Kysy kuvista ja käytä tulkkausta arjen pulmiin",
-          "body": "Lisää kuva kyltistä, ilmoituksesta tai viestistä. Tekoäly kokoaa pääasiat, muistettavat kohdat ja seuraavat askeleet. Kielimuurin kohdatessa puhekeskustelu tai reaaliaikainen tulkkaus auttaa kysymään selkeästi.",
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
           "items": [
-            "Puhekeskustelu: kysy ääneen ja jatka keskustelua.",
-            "Keskustele kanssani englanniksi: muuta harjoittelu luontevaksi keskusteluksi.",
-            "Tulkkaa minulle reaaliajassa: yhdistä eri kielillä puhuvat.",
-            "Anna tekoälyn ymmärtää kuva: löydä pääasiat ja seuraavat askeleet."
+            {
+              "title": "Kerro tilanteesta",
+              "body": "Kerro, minne olet menossa ja mitä haluat harjoitella."
+            },
+            {
+              "title": "Lue esimerkit",
+              "body": "Lue esimerkit ja valitse yksi, josta haluat kysyä."
+            },
+            {
+              "title": "Kysy kuvasta",
+              "body": "Lisää kuva ja kerro, mitä haluat tietää."
+            },
+            {
+              "title": "Pyydä ilmausta, jota voit käyttää",
+              "body": "Pyydä ilmausta, joka sopii kuvaan ja keskusteluun."
+            }
           ]
         },
-        {
-          "title": "Harjoittele oman elämäsi kielitilanteita",
-          "body": "Ravintola, lentokenttä, haastattelu tai työ: valitse tilanne keskusteluharjoitteluun tai tavoite vaiheittaiseen oppimiseen. Voit luoda omat tilanteet ja tavoitteet. Harjoittelu painottuu ääneen vastaamiseen ja valmistaa seuraavaan aitoon keskusteluun.",
+        "abilities": {
+          "title": "Mitä voit tehdä",
           "items": [
-            "Tilanneharjoittelu: ota rooli ja suorita keskustelutehtävä.",
-            "Tavoiteharjoittelu: harjoittele ilmauksia ja käytä niitä sitten tilanteessa.",
-            "Oma oppiminen: luo tilanne tai tavoite tiettyä tapahtumaa varten."
+            {
+              "title": "Älykäs keskustelu",
+              "body": "Kirjoita viesti tai lähetä kuva. Jos puhe on käytettävissä, kysy ääneen, pyydä tulkkausta tai pyydä hitaampi esimerkki."
+            },
+            {
+              "title": "Poimi kuvasta pääasiat",
+              "body": "Lähetä kuva kyltistä, ilmoituksesta tai viestistä ja kysy pääasioista, huomioitavista kohdista tai seuraavista askelista."
+            },
+            {
+              "title": "Harjoittele tilannetta tai tavoitetta varten",
+              "body": "Määritä keskustelussa rooli, tilanne ja tavoite. Aloita yhdestä ilmauksesta ja käytä sitä sitten keskustelussa."
+            },
+            {
+              "title": "Vertaa ilmauksia ja palaa niihin",
+              "body": "Pyydä tekoälyä perustelemaan lyhyeen venäjän- tai saksankieliseen lauseeseen tehdyt korjaukset. Kopioi hyödylliset ilmaukset tai avaa keskustelu historiasta."
+            }
           ]
         },
-        {
-          "title": "Luonteva puhemalli auttaa avaamaan suun",
-          "body": "Pyydä tekoälyä näyttämään mallia hitaammin ja harjoittele ääntämistä, aksenttia ja rytmiä. Käytä lauseita sitten luontevassa keskustelussa, jotta harjoittelu lähestyy oikeaa viestintää."
-        },
-        {
-          "title": "Ymmärrä palaute ja puhu seuraavalla kerralla sujuvammin",
-          "body": "Vertaa alkuperäistä luontevaan ilmaisuun, kuuntele malli ja lue syyt. Voit myös pyytää venäjän, saksan tai muiden lyhyiden lauseiden oikolukua. Tallenna ilmauksia, kertaa ja harjoittele sekä avaa keskustelut historiasta seuraavaa puhetilannetta varten."
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Harjoittele ennen matkaa",
+              "body": "Harjoittele hotelliin kirjautumista tai tilaamista pyytämällä avustajaa esittämään toista osapuolta."
+            },
+            {
+              "title": "Harjoittele haastattelua",
+              "body": "Pyydä tekoälyä esittämään haastattelijaa. Harjoittele vastaamista ja kysy apua, jos jäät jumiin."
+            },
+            {
+              "title": "Valmistele vastaus viestiin",
+              "body": "Kerro avustajalle taustat ja pyydä sitä vertaamaan mahdollisia vastauksia."
+            }
+          ]
         }
-      ]
+      }
     },
     "screen-translation": {
       "title": "Näyttökäännös avaa tekstitykset ja tekstin.",
@@ -299,23 +757,67 @@
         "Näytön teksti: lue verkkosivujen, keskustelujen ja pelien näkyvä teksti.",
         "Kuva kuvassa ja historia: vertaa katsellessa ja lue myöhemmin uudelleen."
       ],
-      "sections": [
-        {
-          "title": "Seuraa videota tekstitysten avulla",
-          "body": "Käännä muiden appien ääni tekstityksiksi ja näytä alkuperäinen rinnalla. Videoiden, suoratoistojen ja kieliopintojen pääasiat välittyvät tutulla kielellä sisällön jatkuessa."
-        },
-        {
-          "title": "Näytön teksti auttaa jatkamaan lukemista",
-          "body": "Lue verkkosivujen, keskustelujen, pelien ja asiakirjojen näkyvän tekstin käännös kuva kuvassa -ikkunasta. Siirrä ikkuna haluamasi kappaleen lähelle tai vieritä alkuperäistä sivua lukeaksesi seuraavan kohdan."
-        },
-        {
-          "title": "Käännös mukana, hyödylliset lauseet talteen",
-          "body": "Vertaa käännöstä alkuperäiseen sisällön mukana. Valmis alkuperäisteksti ja käännös tallentuvat historiaan uudelleen luettaviksi. Voit myös siirtää ilmauksen itse tekoälyavustajalle ja kysyä merkityksestä tai harjoitella käyttöä.",
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
           "items": [
-            "Vaatii iOS-/iPadOS 16:n tai uudemman, kuva kuvassa -tuen ja verkon. Suojattua sisältöä ei välttämättä voi kääntää."
+            {
+              "title": "Valitse tila",
+              "body": "Valitse Videotekstitys tai Näytön teksti."
+            },
+            {
+              "title": "Aloita näytön lähetys",
+              "body": "Napauta ”Aloita” ja vahvista iOS:ssä valitsemalla ”Aloita lähetys”."
+            },
+            {
+              "title": "Seuraa tekstitystä",
+              "body": "Palaa videoon ja lue tekstitys Kuva kuvassa -ikkunasta."
+            },
+            {
+              "title": "Jatka lukemista vierittäessäsi",
+              "body": "Valitse Näytön teksti ja jatka lukemista vierittämällä alkuperäistä sivua."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "Videotekstitys",
+              "body": "Käännä videoiden tai suorien lähetysten ääni muissa apeissa. Ota alkuperäinen teksti näkyviin vertailua varten."
+            },
+            {
+              "title": "Näytöllä näkyvä teksti",
+              "body": "Lue Kuva kuvassa -ikkunasta verkkosivuilla, keskusteluissa, peleissä tai asiakirjoissa näkyvän tekstin käännös."
+            },
+            {
+              "title": "Vertaa Kuva kuvassa -ikkunassa",
+              "body": "Siirrä Kuva kuvassa -ikkuna alkuperäisen sisällön viereen. Tarvitset iOS:n tai iPadOS:n version 16 tai uudemman ja internetyhteyden. Suojattua sisältöä ei ehkä voi kääntää."
+            },
+            {
+              "title": "Palaa historiaan ja jatka harjoittelua",
+              "body": "Lue alkuperäinen ja käännös uudelleen historiasta. Kopioi ilmaus tekoälyavustajalle, jos haluat kysyä sen käytöstä tai harjoitella sitä."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Katso videoita ja suoria lähetyksiä",
+              "body": "Anna videon pyöriä ja seuraa sitä tekstityksen avulla tai vertaa käännöstä alkuperäiseen, kun opiskelet kieltä."
+            },
+            {
+              "title": "Lue verkkosivua",
+              "body": "Siirrä käännösikkuna tekstikohdan viereen ja jatka lukemista sivua vierittäessäsi."
+            },
+            {
+              "title": "Pysy mukana keskusteluissa tai peleissä",
+              "body": "Lue näytöllä näkyviä viestejä Näytön teksti -tilassa ja pysy samassa apissa."
+            }
           ]
         }
-      ]
+      }
     }
   },
   "workflows": {
@@ -566,7 +1068,7 @@
       "reply": {
         "label": "Tekstikäännös ja sävy",
         "title": "Merkitys kohdalleen,\nsävy sopivaksi.",
-        "body": "Ammattimainen tarvittaessa, ystävällinen sopivassa hetkessä. Seitsemän sävyä saa jokaisen lauseen kuulostamaan sinulta.",
+        "body": "Ammattimainen tarvittaessa, ystävällinen sopivassa hetkessä. Kuusi sävyä saa jokaisen lauseen kuulostamaan sinulta.",
         "action": "Tutustu tekstikäännökseen"
       },
       "practice": {

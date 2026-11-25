@@ -11,8 +11,8 @@ import { marketingCatalog, features, cases, articles, relatedFeatures } from "..
 import { mainSourceCommit, currentMainFeatures, currentMainCases, currentMainArticles, currentMainRelated } from "../src/data/main-current.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
-const toneLabelSourceCommit = "431f3c2d88785cfb46b6c66d37d29aa9d6d51a49";
-const websiteToneChoices = ["自動", "禮貌", "幽默", "書信", "朋友", "精簡", "撩人"];
+const toneLabelSourceCommit = "f4ce7f6b79cd749355150472dbbc0f59d33f79a3";
+const websiteToneChoices = ["自動", "禮貌", "幽默", "書信", "朋友", "精簡"];
 const read = (file) => readFileSync(path.join(root, file), "utf8");
 const json = (file) => JSON.parse(read(file));
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
@@ -78,27 +78,31 @@ function sourceSnapshot() {
   assert.ok(hasAppRepo || !process.env.ANYTRANSLATOR_APP_REPO,
     "ANYTRANSLATOR_APP_REPO must point to the App Git checkout");
   let scan = { free: 1, paid: 10 };
+  let toneChoices = { "zh-tw": websiteToneChoices };
   if (hasAppRepo) {
     const source = (file, commit = mainSourceCommit) => execFileSync("git", ["-C", appRepo, "show", `${commit}:${file}`], { maxBuffer: 16 * 1024 * 1024 });
     const raw = source("anytranslator-api/config/default-prompt.public.json");
     const config = JSON.parse(raw.toString("utf8"));
     const ui = config.uiInformation;
-    assert.deepEqual(ui.toneOptions.map(({ id, titles }) => [id, titles.zh_TW]), [
-      ["polite", "禮貌"], ["humor", "幽默"], ["letter", "書信"], ["oral", "輕鬆"], ["concise", "精簡"],
-    ], "Five configured tones beside the App's automatic option");
-    const toneSource = (file) => execFileSync("git", ["-C", appRepo, "show", `${toneLabelSourceCommit}:${file}`], { maxBuffer: 16 * 1024 * 1024 }).toString("utf8");
-    const toneConfig = JSON.parse(toneSource("anytranslator-api/config/default-prompt.public.json"));
-    assert.deepEqual(toneConfig.uiInformation.toneOptions.map(({ id, titles }) => [id, titles.zh_TW]), [
-      ["polite", "禮貌"], ["humor", "幽默"], ["letter", "書信"], ["oral", "朋友"], ["concise", "精簡"], ["flirty", "撩人"],
-    ], "Tone labels from the fixed 431f main source");
-    assert.deepEqual(["自動", ...toneConfig.uiInformation.toneOptions.map(({ titles }) => titles.zh_TW)], websiteToneChoices, "Website tone choices have pinned source evidence");
-    const tonePrivate = JSON.parse(toneSource("anytranslator-api/config/default-prompt.private.json"));
-    assert.ok(tonePrivate.prompts.toneFlirty.trim(), "Flirty style is configured in the pinned source");
-    assert.equal(tonePrivate.generation.toneTemperatures.flirty, 0.6, "Flirty temperature is configured in the pinned source");
-    assert.match(toneSource("anytranslator-api/shared/provider-tasks.mjs"), /flirty:\s*'toneFlirty'/, "Flirty id routes to its prompt in the pinned source");
-    toneConfig.uiInformation.toneOptions.pop();
-    toneConfig.uiInformation.toneOptions[3].titles = ui.toneOptions[3].titles;
-    assert.deepEqual(toneConfig, config, "Tone follow-up changes no unrelated pinned public configuration");
+    const toneConfig = JSON.parse(source("anytranslator-api/config/default-prompt.public.json", toneLabelSourceCommit));
+    const { toneOptions } = toneConfig.uiInformation;
+    assert.deepEqual(toneOptions.map(({ id }) => id), ["polite", "humor", "letter", "oral", "concise"],
+      "Five configured tones beside the App's automatic option");
+    const localeSource = source("lib/locales/translations.dart", toneLabelSourceCommit).toString("utf8");
+    const automaticLabels = Object.fromEntries(
+      [...localeSource.matchAll(/^ {6}'(\w+)': \{\n([\s\S]*?)^ {6}\},/gm)].map(([, locale, copy]) =>
+        [locale, copy.match(/^ {8}'Automatic': '([^']+)',/m)?.[1]]),
+    );
+    toneChoices = Object.fromEntries(SITE_LOCALES.map(({ code, ogLocale }) => {
+      const language = ogLocale.split("_")[0];
+      const choices = [
+        automaticLabels[ogLocale] ?? automaticLabels[language],
+        ...toneOptions.map(({ titles }) => titles[ogLocale] ?? titles[language]),
+      ];
+      for (const choice of choices) nonempty(choice, `App tone: ${code}`);
+      return [code, choices];
+    }));
+    assert.deepEqual(toneChoices["zh-tw"], websiteToneChoices, "Traditional Chinese tone choices match the App release");
     for (const [id, title] of [["grammar", "文法"], ["commonMistake", "常見錯誤"], ["wordByWord", "逐詞解析"]]) {
       const preset = ui.helperPresets.find((item) => item.id === id);
       assert.equal((preset?.title ?? preset?.titles)?.zh_TW, title, `Current Helper preset: ${id}`);
@@ -174,11 +178,11 @@ function sourceSnapshot() {
   } else {
     console.log("App Git checkout unavailable: pricing/icon snapshot schema and local output hashes checked only; pinned App source and Smart Scan constants remain unverified in this standalone checkout.");
   }
-  return { snapshot, scan, sourceVerified: hasAppRepo };
+  return { snapshot, scan, toneChoices, sourceVerified: hasAppRepo };
 }
 
 export async function checkMainContent() {
-  const { snapshot, scan, sourceVerified } = sourceSnapshot();
+  const { snapshot, scan, toneChoices, sourceVerified } = sourceSnapshot();
   const zh = marketingCatalog("zh-tw");
   assert.deepEqual(zh, { features: currentMainFeatures, cases: currentMainCases, articles: currentMainArticles, relatedFeatures: currentMainRelated });
   assert.equal(zh.features.length, 11);
@@ -228,19 +232,7 @@ export async function checkMainContent() {
       assert.equal(detail.steps.length, 3, `Three current steps: ${feature.id}`);
       unique(detail.steps, `current steps: ${feature.id}`);
       detail.steps.forEach((value, i) => nonempty(value, `${feature.id}.step${i + 1}`));
-      if (detail.sections !== undefined) {
-        assert.ok(Array.isArray(detail.sections) && detail.sections.length, `Feature sections: ${feature.id}`);
-        unique(detail.sections.map(({ title }) => title), `section title: ${feature.id}`);
-        for (const section of detail.sections) {
-          assert.ok(Object.keys(section).every((key) => ["title", "body", "items"].includes(key)), `Unknown section field: ${feature.id}`);
-          nonempty(section.title, `${feature.id}.section.title`);
-          nonempty(section.body, `${feature.id}.section.body`);
-          if (section.items !== undefined) {
-            assert.ok(Array.isArray(section.items) && section.items.length, `Section items: ${feature.id}`);
-            section.items.forEach((value) => nonempty(value, `${feature.id}.section.item`));
-          }
-        }
-      }
+      assert.equal(detail.sections, undefined, `Unused main feature sections: ${feature.id}`);
     }
     for (const item of zh.cases) {
       for (const suffix of ["title", "body"]) nonempty(marketing[`case.${item.id}.${suffix}`], `case.${item.id}.${suffix}`);
@@ -258,15 +250,8 @@ export async function checkMainContent() {
       assert.doesNotMatch(value, /五(?:種|個)(?:對話)?模式|我的句子|自由練習/, "Removed Chat mode or My sentences entry promise");
       assert.doesNotMatch(value, /沒有即時口譯按鈕|沒有新增的即時翻譯模式按鈕/, "The current Chat has an interpreting start suggestion");
     }
-    const chatCopy = strings(copy.features.chat).join(" ");
-    for (const label of ["語音對話", "陪我用", "幫我即時口譯", "拍照讓 AI 看懂"])
-      assert.ok(chatCopy.includes(label), `Current Chat suggestion copy: ${label}`);
-    for (const term of ["照片", "重點", "下一步"])
-      assert.ok(chatCopy.includes(term), `Photo understanding copy: ${term}`);
     assert.ok(!Object.keys(copy.marketing).some((key) => key.startsWith("accuracy.")), "Removed public benchmark copy must not return");
     assert.doesNotMatch(strings(copy).join(" "), /98\.3|開發者自述/, "Removed internal benchmark statement must stay out of public Chinese copy");
-    const toneSection = copy.features.text.sections.find(({ title }) => title.includes("七種語氣"));
-    assert.deepEqual(toneSection?.items?.map((item) => item.split("：")[0]), websiteToneChoices, "Website tone choices match the fixed 431f main source");
     assert.doesNotMatch(copy.features.text.body, /自動校對|自動修正/, "Translation is separate from requested grammar correction");
     for (const label of ["文法", "常見錯誤", "逐詞解析"])
       assert.ok(copy.features.helper.body.includes(label), `Helper correction/explanation route: ${label}`);
@@ -307,8 +292,18 @@ export async function checkMainContent() {
     for (const feature of zh.features) {
       const { guide, ...detail } = featureDetails["zh-tw"].features[feature.id];
       assert.deepEqual(detail, copy.features[feature.id], `Feature adapter: ${feature.id}`);
-      checkRendered(`/features/${feature.id}?lang=zh-tw`, [detail.title, detail.body, ...(guide?.steps?.items.length ? [] : detail.steps), ...(detail.sections ?? []).flatMap((section) => [section.title, section.body, ...(section.items ?? [])])]);
+      assert.ok(guide?.steps?.items.length, `Missing guided layout: ${feature.id}`);
+      checkRendered(`/features/${feature.id}?lang=zh-tw`, [detail.title, detail.body]);
     }
+    const chatGuide = strings(featureDetails["zh-tw"].features.chat.guide).join(" ");
+    for (const term of ["開口", "對話", "口譯", "照片", "重點", "下一步"])
+      assert.ok(chatGuide.includes(term), `Current Chat guide copy: ${term}`);
+    for (const [locale, choices] of Object.entries(toneChoices)) {
+      const abilities = featureDetails[locale].features.text.guide.abilities.items;
+      assert.ok(abilities.some(({ body }) => choices.every((choice) => body.includes(choice))),
+        `Text guide uses all six App tone labels: ${locale}`);
+    }
+    console.log(`Six tone labels checked for ${Object.keys(toneChoices).length} locales${sourceVerified ? ` against App release ${toneLabelSourceCommit}` : ""}.`);
     for (const item of zh.cases) checkRendered(`/use-cases/${item.id}?lang=zh-tw`, copy.workflows[item.id]);
     for (const article of zh.articles)
       checkRendered(`/blog/${article.slug}?lang=zh-tw`, ["intro", "tip", "limit"].map((suffix) => article.id === "document" ? copy.documentArticle[suffix] : copy.articles[`${article.id}.${suffix}`]));

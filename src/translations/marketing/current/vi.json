@@ -97,37 +97,71 @@
   "features": {
     "text": {
       "title": "Dịch văn bản: rõ ý, đúng giọng điệu.",
-      "summary": "Tin nhắn và email với bảy giọng điệu theo người nhận. Hiểu biến cách Nga/Đức qua Helper, rồi nhờ Trợ lý AI hiệu đính câu gốc.",
+      "summary": "Tin nhắn và email với sáu giọng điệu theo người nhận. Hiểu biến cách Nga/Đức qua Helper, rồi nhờ Trợ lý AI hiệu đính câu gốc.",
       "heading": "Viết cho ai, chọn giọng điệu phù hợp.",
       "body": "Yêu cầu công việc lịch sự, trò chuyện bạn bè tự nhiên, tin nhắn dài gọn lại. Nghe phát âm AI, lưu câu hay; dùng Helper giải thích cách và đuôi từ Nga/Đức hoặc nhờ AI hiệu đính.",
       "steps": [
-        "Bảy giọng điệu, từ thư trang trọng đến trò chuyện thường ngày.",
+        "Sáu giọng điệu, từ thư trang trọng đến trò chuyện thường ngày.",
         "Helper giải thích biến cách Nga/Đức; Trợ lý AI hiệu đính câu gốc theo yêu cầu.",
         "Nghe giọng AI tự nhiên, lưu câu hay hoặc đưa vào bản nháp Trợ lý AI."
       ],
-      "sections": [
-        {
-          "title": "Hiểu cách và đuôi từ tiếng Nga, Đức",
-          "body": "Ngữ pháp, lỗi thường gặp và phân tích từng từ giúp hiểu cách tiếng Nga, mạo từ và đuôi từ tiếng Đức bằng ngôn ngữ quen thuộc. Hiểu quan hệ trong câu rồi chọn cách diễn đạt."
-        },
-        {
-          "title": "Bảy giọng điệu theo người nhận",
-          "body": "Tự động, Lịch sự, Hài hước, Thư từ, Bạn bè, Ngắn gọn, Tán tỉnh. Từ công việc đến làm quen quốc tế, luôn có giọng điệu phù hợp.",
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
           "items": [
-            "Tự động: xử lý giọng điệu theo bản gốc và ngữ cảnh.",
-            "Lịch sự: dùng cho đề nghị, câu hỏi hoặc tin nhắn công việc.",
-            "Hài hước: làm cuộc trò chuyện phù hợp nhẹ nhàng hơn.",
-            "Thư từ: dùng cho email hoặc thư.",
-            "Bạn bè: tự nhiên, thoải mái như với người quen.",
-            "Ngắn gọn: rút gọn lời văn, rồi kiểm tra thông tin quan trọng.",
-            "Tán tỉnh: tinh nghịch, thân mật khi làm quen quốc tế."
+            {
+              "title": "Nhập văn bản gốc",
+              "body": "Chọn ngôn ngữ, rồi nhập hoặc dán văn bản."
+            },
+            {
+              "title": "Đọc bản dịch",
+              "body": "Đọc bản dịch ngay bên dưới văn bản bạn đã nhập."
+            },
+            {
+              "title": "Chọn giọng điệu",
+              "body": "Mở bộ chọn giọng điệu rồi chọn cách diễn đạt."
+            },
+            {
+              "title": "Dùng bản dịch mới",
+              "body": "Kiểm tra ý nghĩa rồi sao chép hoặc lưu lại."
+            }
           ]
         },
-        {
-          "title": "Hiệu đính Nga/Đức: hiểu lý do rồi chọn cách viết",
-          "body": "Giọng Tự động giữ nguyên văn bản nếu toàn bộ đã ở ngôn ngữ đích. Kiểm tra cách, đuôi từ hoặc ngữ pháp Nga/Đức qua Helper, hoặc nhờ Trợ lý AI hiệu đính câu gốc."
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "Sáu giọng điệu cho từng tình huống",
+              "body": "“Tự động” theo ngữ cảnh, “Lịch sự” hợp với lời đề nghị và “Hài hước” giúp cuộc trò chuyện nhẹ nhàng hơn. “Thư” hợp với email, “Thân mật” hợp khi trò chuyện với người quen và “Ngắn gọn” giúp rút gọn câu chữ."
+            },
+            {
+              "title": "Hiểu ngữ pháp tiếng Nga và tiếng Đức",
+              "body": "Dùng “Ngữ pháp”, “Lỗi thường gặp” và “Từng từ” trong “Kiến thức tùy chỉnh” để hiểu cách, mạo từ và đuôi từ. Nhờ Trợ lý AI hiệu đính câu gốc."
+            },
+            {
+              "title": "Giữ nguyên văn bản đã ở ngôn ngữ đích",
+              "body": "Giọng Tự động giữ nguyên cả đoạn nếu đoạn đó đã ở ngôn ngữ đích."
+            },
+            {
+              "title": "Nghe, lưu hoặc sao chép",
+              "body": "Nghe AI phát âm, lưu cụm từ hữu ích hoặc sao chép bản dịch sang Trợ lý AI."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Viết lời đề nghị trong công việc",
+              "body": "Dùng “Lịch sự” hoặc “Thư” khi gửi lời đề nghị cho đồng nghiệp hay khách hàng."
+            },
+            {
+              "title": "Trả lời bạn bè",
+              "body": "Đối chiếu tin nhắn dài với bản gốc rồi dùng giọng “Thân mật” để trả lời."
+            }
+          ]
         }
-      ]
+      }
     },
     "photos": {
       "title": "Dịch ảnh: bản dịch ngay trên dòng chữ.",
@@ -138,7 +172,64 @@
         "Bản dịch phủ trực tiếp: hướng vào biển báo để đọc.",
         "Chụp hoặc chọn ảnh từ album để dịch chữ trong ảnh.",
         "Chạm xem chi tiết và vẫn đối chiếu được ảnh gốc."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
+          "items": [
+            {
+              "title": "Chụp hoặc chọn ảnh",
+              "body": "Chụp phần chữ hoặc chọn một ảnh."
+            },
+            {
+              "title": "Đọc bản dịch trên ảnh",
+              "body": "Đọc bản dịch ngay tại vị trí chữ trên ảnh."
+            },
+            {
+              "title": "Chạm vào chữ để xem chi tiết",
+              "body": "Chạm vào một dòng để đối chiếu bản gốc với bản dịch."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "Dịch trực tiếp qua camera",
+              "body": "Hướng camera vào phần chữ đọc được và xem bản dịch ngay tại chỗ."
+            },
+            {
+              "title": "Dịch ảnh tĩnh",
+              "body": "Chụp ảnh hoặc chọn từ album. Bản dịch hiển thị trên ảnh để bạn vẫn thấy ngữ cảnh xung quanh."
+            },
+            {
+              "title": "Đối chiếu từng khối văn bản",
+              "body": "Chạm vào một khối chữ để đối chiếu bản gốc và bản dịch trong phần chi tiết."
+            },
+            {
+              "title": "Phóng to ảnh",
+              "body": "Dùng hai ngón tay phóng to để đọc chữ in nhỏ trong ảnh."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Đọc biển báo khi đi du lịch",
+              "body": "Hướng camera vào biển báo và đọc bản dịch ngay trên ảnh để vẫn thấy ngữ cảnh xung quanh."
+            },
+            {
+              "title": "Kiểm tra nhãn sản phẩm",
+              "body": "Chụp nhãn rồi chạm vào dòng bạn muốn kiểm tra."
+            },
+            {
+              "title": "Đọc thông báo đã lưu",
+              "body": "Mở ảnh chụp thông báo từ album rồi đọc bản dịch hiển thị trên ảnh."
+            }
+          ]
+        }
+      }
     },
     "voice": {
       "title": "Dịch giọng nói: theo kịp lời của cả hai bên.",
@@ -150,12 +241,59 @@
         "Nghe riêng bằng loa thoại hoặc tai nghe; chỉ xem phụ đề ở nơi yên tĩnh.",
         "Xem lại hội thoại, nghe lại giọng AI, sao chép hoặc chia sẻ ý chính tóm tắt."
       ],
-      "sections": [
-        {
-          "title": "Giọng AI tự nhiên, nghe cả ngữ điệu và nhịp điệu",
-          "body": "Mô hình giọng nói thế hệ mới tạo ngữ điệu tự nhiên và sắc thái cảm xúc theo nội dung. Dùng để giao tiếp tại chỗ, rồi nghe lại và nói theo để quen phát âm cùng giọng điệu mới."
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
+          "items": [
+            {
+              "title": "Chọn ngôn ngữ cho hai bên",
+              "body": "Chọn cả hai ngôn ngữ rồi chạm vào micrô."
+            },
+            {
+              "title": "Đọc lời của cả hai bên",
+              "body": "Theo dõi từng dòng gốc và bản dịch tương ứng."
+            },
+            {
+              "title": "Nghe lại một câu",
+              "body": "Chạm vào biểu tượng loa bên cạnh bản dịch."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "Phát bản dịch thành tiếng",
+              "body": "“Hội thoại hai chiều” có thể đọc bản dịch cho cả hai bên. “Nói giúp tôi” chỉ phát bản dịch lời bạn nói."
+            },
+            {
+              "title": "Nghe riêng hoặc đọc phụ đề",
+              "body": "Chọn “Nghe riêng” để nghe qua loa thoại hoặc tai nghe, hoặc chọn “Chỉ phụ đề”."
+            },
+            {
+              "title": "Nghe giọng AI tự nhiên",
+              "body": "Lắng nghe ngữ điệu và nhịp nói. Phát lại một câu để làm quen với cách phát âm và giọng."
+            },
+            {
+              "title": "Xem lại bản tóm tắt",
+              "body": "Sau cuộc trò chuyện, bạn có thể xem lại nội dung, sao chép hoặc chia sẻ bản tóm tắt."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Nhận phòng khách sạn",
+              "body": "Xác nhận loại phòng, tiền đặt cọc và giờ trả phòng."
+            },
+            {
+              "title": "Hỏi nhân viên nhà hàng",
+              "body": "Hỏi nhân viên về khẩu phần, nguyên liệu hoặc cách chế biến món ăn."
+            }
+          ]
         }
-      ]
+      }
     },
     "menu": {
       "title": "Quét thực đơn: hiểu món, rồi đưa đơn cho nhân viên.",
@@ -166,7 +304,64 @@
         "Sắp xếp tên món, mô tả và giá thành danh sách dễ chọn.",
         "Chọn số lượng, cỡ, món thêm có sẵn và ghi chú theo ý thích.",
         "Hiển thị đơn gốc, cộng giá đã biết theo từng tiền tệ."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
+          "items": [
+            {
+              "title": "Quét thực đơn",
+              "body": "Trong “Sắp xếp”, chọn “Thực đơn”, thêm ảnh rồi bắt đầu quét."
+            },
+            {
+              "title": "Đọc bản dịch",
+              "body": "Xem món ăn, thông tin chi tiết và giá."
+            },
+            {
+              "title": "Chọn món",
+              "body": "Chọn số lượng và các món thêm."
+            },
+            {
+              "title": "Đưa đơn gọi món cho nhân viên xem",
+              "body": "Chạm “Đưa nhân viên xem” để hiện đơn gọi món bằng ngôn ngữ gốc."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "Đối chiếu với thực đơn gốc",
+              "body": "Chạm vào món để xem tên gốc, mô tả và giá niêm yết."
+            },
+            {
+              "title": "Thêm ghi chú cho đơn gọi món",
+              "body": "Ghi yêu cầu vào đơn để nhân viên thấy khi bạn đưa cho họ xem."
+            },
+            {
+              "title": "Xem tổng tiền theo từng loại tiền tệ",
+              "body": "Khi đã biết giá của tất cả món ăn và món thêm được chọn, mỗi loại tiền tệ có một tổng riêng."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Ăn ở nước ngoài",
+              "body": "Xem món ăn và giá trên thực đơn địa phương rồi quyết định gọi món."
+            },
+            {
+              "title": "Chọn món thêm ở quán cà phê",
+              "body": "Chọn số ly cà phê, rồi xem có những loại sữa hoặc lựa chọn thêm nào."
+            },
+            {
+              "title": "Gọi món cho bạn bè",
+              "body": "Gộp món ăn, số lượng và ghi chú của mọi người vào một đơn."
+            }
+          ]
+        }
+      }
     },
     "document": {
       "title": "Quét tài liệu: theo từng trang, giữ đoạn và ý chính.",
@@ -179,13 +374,50 @@
         "Tìm lịch sử quét để mở lại tài liệu khi cần."
       ],
       "guide": {
+        "steps": {
+          "title": "Cách dùng",
+          "items": [
+            {
+              "title": "Quét tài liệu",
+              "body": "Trong “Sắp xếp”, chọn “Tài liệu”, thêm ảnh từng trang theo thứ tự rồi bắt đầu quét."
+            },
+            {
+              "title": "Đọc bản dịch",
+              "body": "Đọc theo tiêu đề, đoạn văn và danh sách."
+            },
+            {
+              "title": "Kiểm tra văn bản gốc",
+              "body": "Chạm vào một đoạn đã dịch để xem nguyên văn."
+            }
+          ]
+        },
         "abilities": {
           "title": "Tính năng chính",
           "items": [
             {
               "title": "Xem ảnh gốc",
-              "body": "Chạm vào biểu tượng ảnh ở góc trên bên phải của kết quả quét để mở ảnh gốc và đối chiếu với trang tương ứng.",
-              "shotId": "original"
+              "body": "Chạm vào biểu tượng ảnh ở góc trên bên phải của kết quả quét để mở ảnh gốc và đối chiếu với trang tương ứng."
+            },
+            {
+              "title": "Quét nhiều trang cùng lúc",
+              "body": "Thêm ảnh từng trang theo thứ tự rồi sắp xếp trong cùng một đợt."
+            },
+            {
+              "title": "Mở lại bản quét cũ",
+              "body": "Tìm trong lịch sử quét theo tiêu đề hoặc loại, rồi mở lại tài liệu."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Đọc thông báo trên giấy",
+              "body": "Sắp xếp thông báo thành các đoạn và danh sách theo thứ tự đọc ban đầu."
+            },
+            {
+              "title": "Kiểm tra nội quy chỗ ở",
+              "body": "Quét bản nội quy in rồi mở lại khi cần kiểm tra giờ giấc hoặc các khoản phí."
             }
           ]
         }
@@ -200,7 +432,56 @@
         "Dịch trong ô nhập, thay bản nháp và tiếp tục trả lời.",
         "Gõ hoặc dùng đọc chính tả iOS, rồi chọn ngôn ngữ và giọng điệu.",
         "Dịch, sao chép bảng nhớ tạm hoặc chèn tại con trỏ."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
+          "items": [
+            {
+              "title": "Bật bàn phím",
+              "body": "Làm theo hướng dẫn trong ứng dụng để thêm bàn phím và bật “Cho phép truy cập đầy đủ”."
+            },
+            {
+              "title": "Chuyển bàn phím",
+              "body": "Trong ô nhập văn bản được hỗ trợ, dùng phím quả địa cầu để chọn AnyTranslator."
+            },
+            {
+              "title": "Dịch bản nháp",
+              "body": "Nhập văn bản, chọn ngôn ngữ đích rồi chạm “Dịch”."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "Dịch trong cùng ô nhập",
+              "body": "Thay bản nháp bằng bản dịch rồi viết tiếp trong ứng dụng đang dùng."
+            },
+            {
+              "title": "Chỉnh giọng điệu",
+              "body": "Chọn giọng điệu để dịch lại văn bản trong ô nhập."
+            },
+            {
+              "title": "Dịch văn bản trong bảng nhớ tạm",
+              "body": "Dùng công cụ bàn phím để dịch văn bản đã sao chép. Sao chép kết quả hoặc chèn ngay tại con trỏ."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Trả lời trong ứng dụng nhắn tin",
+              "body": "Đổi ngôn ngữ trong ô nhắn tin được hỗ trợ rồi kiểm tra bản dịch trước khi gửi."
+            },
+            {
+              "title": "Viết tin nhắn công việc",
+              "body": "Chọn giọng điệu hợp với người đọc, dù là lời đề nghị lịch sự hay câu trả lời ngắn gọn."
+            }
+          ]
+        }
+      }
     },
     "helper": {
       "title": "Helper giải thích ngữ pháp và cách dùng.",
@@ -212,20 +493,59 @@
         "Mở rộng với từ đồng nghĩa, ví dụ, hàm ý và gợi ý trả lời.",
         "Tùy chỉnh lĩnh vực, mục tiêu, độ sâu; lưu chỉ dẫn để dùng lại."
       ],
-      "sections": [
-        {
-          "title": "Hiểu lý do biến cách Nga/Đức",
-          "body": "Ví dụ theo ngữ cảnh: từ công cụ cách tiếng Nga đến tặng cách tiếng Đức, xem cách, mạo từ và đuôi danh từ thay đổi cùng nhau.",
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
           "items": [
-            "Tiếng Nga: Я говорю с мой друг. → Я говорю с моим другом. с nghĩa là ‘cùng với’ dùng công cụ cách; đuôi của мой và друг cùng thay đổi.",
-            "Tiếng Đức: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit dùng tặng cách; danh từ biến cách yếu Kunde thành Kunden."
+            {
+              "title": "Nhập một câu",
+              "body": "Nhập hoặc dán câu vào “Dịch văn bản”."
+            },
+            {
+              "title": "Chọn nội dung giải thích",
+              "body": "Trong “Kiến thức tùy chỉnh”, chọn mục như “Ngữ pháp”."
+            },
+            {
+              "title": "Đọc phần phân tích câu",
+              "body": "Xem vì sao câu dùng dạng từ, đuôi từ hoặc cấu trúc đó."
+            }
           ]
         },
-        {
-          "title": "Lưu chỉ dẫn, dùng lại với câu mới",
-          "body": "Lưu ‘giải thích cách tiếng Nga bằng tiếng Việt’ hoặc ‘giải thích đuôi từ tiếng Đức’. Câu mới vẫn theo cách giải thích quen thuộc để bạn tập trung vào điều muốn học."
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "Phân tích ngữ pháp và lỗi",
+              "body": "Chọn “Ngữ pháp”, “Lỗi thường gặp” hoặc “Từng từ” để hiểu cấu tạo câu."
+            },
+            {
+              "title": "Tìm hiểu từ ngữ và ví dụ",
+              "body": "Dùng “Từ đồng nghĩa”, “Ví dụ” hoặc “Hàm ý” để xem cách diễn đạt thay đổi theo ngữ cảnh."
+            },
+            {
+              "title": "Chuyển giữa bản gốc và bản dịch",
+              "body": "Đổi nguồn trong “Kiến thức tùy chỉnh” để giải thích bản gốc hoặc bản dịch."
+            },
+            {
+              "title": "Lưu chỉ dẫn để dùng lại",
+              "body": "Lưu chỉ dẫn theo chủ đề, mục tiêu học hoặc mức độ chi tiết bạn muốn, rồi dùng lại cho các câu mới."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Học công cụ cách trong tiếng Nga",
+              "body": "Dùng с моим другом để hiểu vì sao с đi với công cụ cách và мой, друг đổi dạng thế nào."
+            },
+            {
+              "title": "Kiểm tra đuôi từ ở tặng cách trong tiếng Đức",
+              "body": "Dùng mit dem Kunden để đối chiếu mạo từ ở tặng cách với đuôi của danh từ biến cách yếu."
+            }
+          ]
         }
-      ]
+      }
     },
     "widget": {
       "title": "Widget học tập, ôn lại mọi lúc.",
@@ -236,7 +556,60 @@
         "Xem từ và câu, nghe rồi nói theo AI ngay trên màn hình chính.",
         "Đánh dấu cần ôn／đã nhớ để chuẩn bị lượt học tiếp theo.",
         "Chọn loại từ câu, chủ đề, độ khó và thêm chỉ dẫn riêng."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
+          "items": [
+            {
+              "title": "Thêm vào Màn hình chính",
+              "body": "Làm theo hướng dẫn trong ứng dụng để thêm “Tiện ích học tập”."
+            },
+            {
+              "title": "Đọc và nghe",
+              "body": "Đọc thẻ rồi chạm vào loa để nghe cụm từ."
+            },
+            {
+              "title": "Đánh dấu kết quả ôn tập",
+              "body": "Chọn “Ôn lại” hoặc “Biết rồi” để lên lịch cho thẻ xuất hiện lại."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "Nghe trên Màn hình chính",
+              "body": "Chạm vào loa trên thẻ để nghe phát âm rồi nhắc lại."
+            },
+            {
+              "title": "Theo dõi việc ôn tập",
+              "body": "Đánh dấu thẻ là đã nhớ hoặc cần ôn lại để cập nhật lịch ôn."
+            },
+            {
+              "title": "Chọn nội dung ôn tập",
+              "body": "Chọn loại nội dung, chủ đề và độ khó trong phần cài đặt. Thêm chỉ dẫn tùy chỉnh khi có hỗ trợ."
+            },
+            {
+              "title": "Mở thẻ từ Màn hình khóa",
+              "body": "Chạm vào thẻ trên Màn hình khóa để mở cụm từ tương ứng trong ứng dụng."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Ôn vào lúc rảnh",
+              "body": "Nghe rồi nhắc lại một cụm từ hữu ích trong lúc chờ xe buýt."
+            },
+            {
+              "title": "Chuẩn bị cho một cuộc trò chuyện",
+              "body": "Ôn từ vựng theo chủ đề và luyện nói thành tiếng."
+            }
+          ]
+        }
+      }
     },
     "table": {
       "title": "Dịch bảng: đối chiếu hàng cột, đọc rõ từng con số.",
@@ -247,7 +620,60 @@
         "Giữ cách đọc theo hàng cột để dễ đối chiếu giờ và giá.",
         "Cuộn ngang bảng rộng để xem đủ cột và đơn vị.",
         "Đối chiếu văn bản, ảnh gốc; mở lại từ lịch sử quét."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
+          "items": [
+            {
+              "title": "Quét bảng",
+              "body": "Trong “Sắp xếp”, chọn “Bảng”, thêm ảnh rồi bắt đầu quét."
+            },
+            {
+              "title": "Đọc theo hàng và cột",
+              "body": "Dựa vào tiêu đề cột để đối chiếu giờ, giá hoặc đơn vị ở từng hàng."
+            },
+            {
+              "title": "Cuộn ngang khi bảng rộng",
+              "body": "Vuốt ngang để xem các cột nằm ngoài khung nhìn."
+            },
+            {
+              "title": "Kiểm tra mục gốc",
+              "body": "Chạm vào tiêu đề hoặc ô có văn bản gốc để đối chiếu."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "Giữ cấu trúc bảng",
+              "body": "Tiêu đề, nhãn hàng và cột dữ liệu vẫn tách riêng để dễ đối chiếu."
+            },
+            {
+              "title": "Giữ nhãn hàng trong tầm nhìn",
+              "body": "Trong bảng rộng, cột đầu tiên giữ nguyên vị trí khi bạn cuộn ngang."
+            },
+            {
+              "title": "Đối chiếu với toàn bộ ảnh",
+              "body": "Chạm vào biểu tượng ảnh ở góc trên bên phải để mở ảnh trang gốc."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Xem lịch giao thông",
+              "body": "Đối chiếu giờ khởi hành theo tuyến và cuộn sang cột tiếp theo khi cần."
+            },
+            {
+              "title": "So sánh giá vé và giá dịch vụ",
+              "body": "Đọc theo hàng và cột để so sánh giá, loại vé và đơn vị được ghi."
+            }
+          ]
+        }
+      }
     },
     "chat": {
       "title": "Trợ lý AI",
@@ -259,35 +685,67 @@
         "Luyện tình huống và mục tiêu để sẵn sàng cho du lịch, công việc, hằng ngày.",
         "Nghe mẫu tự nhiên, nói theo, tập lại và lưu cách diễn đạt hữu ích."
       ],
-      "sections": [
-        {
-          "title": "Ảnh hay phiên dịch, điều trước mắt cứ hỏi",
-          "body": "Thêm ảnh biển báo, thông báo hoặc tin nhắn để AI tóm tắt ý chính, điều cần lưu ý và bước tiếp theo. Khi bất đồng ngôn ngữ, dùng trò chuyện giọng nói hoặc phiên dịch trực tiếp để hỏi rõ.",
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
           "items": [
-            "Hội thoại giọng nói: nói để hỏi, rồi tiếp tục trò chuyện.",
-            "Trò chuyện bằng tiếng Anh: biến luyện tập thành hội thoại tự nhiên.",
-            "Phiên dịch trực tiếp: nối cuộc trò chuyện khác ngôn ngữ.",
-            "Cho AI xem ảnh: nắm ý chính và bước tiếp theo."
+            {
+              "title": "Nêu ngữ cảnh",
+              "body": "Cho biết bạn sẽ đi đâu và muốn luyện gì."
+            },
+            {
+              "title": "Xem các ví dụ",
+              "body": "Đọc các ví dụ rồi chọn một câu để hỏi thêm."
+            },
+            {
+              "title": "Hỏi về một bức ảnh",
+              "body": "Đính kèm ảnh và nói rõ điều bạn muốn biết."
+            },
+            {
+              "title": "Xin một câu có thể dùng ngay",
+              "body": "Nhờ trợ lý gợi ý một câu phù hợp với ảnh và cuộc trò chuyện."
+            }
           ]
         },
-        {
-          "title": "Luyện ngoại ngữ hữu ích cho cuộc sống của bạn",
-          "body": "Từ nhà hàng, sân bay đến phỏng vấn và công việc: chọn tình huống để luyện hội thoại, chọn mục tiêu để học từng bước, hoặc tự tạo. Tập trung trả lời thành tiếng để sẵn sàng cho lần nói thật tiếp theo.",
+        "abilities": {
+          "title": "Tính năng chính",
           "items": [
-            "Luyện tình huống: nhập vai và hoàn thành nhiệm vụ hội thoại.",
-            "Luyện mục tiêu: học cách diễn đạt, rồi áp dụng vào tình huống.",
-            "Học tùy chỉnh: tự tạo tình huống hoặc mục tiêu cho dịp cụ thể."
+            {
+              "title": "Chế độ hội thoại",
+              "body": "Nhập chữ hoặc gửi ảnh. Khi có hỗ trợ giọng nói, hãy hỏi bằng lời, nhờ phiên dịch hoặc xin ví dụ được nói chậm hơn."
+            },
+            {
+              "title": "Nắm ý chính từ ảnh",
+              "body": "Gửi ảnh biển báo, thông báo hoặc tin nhắn rồi hỏi về ý chính, điều cần lưu ý hoặc bước tiếp theo."
+            },
+            {
+              "title": "Luyện theo tình huống hoặc mục tiêu",
+              "body": "Đặt vai trò, tình huống và mục tiêu trong cuộc trò chuyện. Bắt đầu bằng một cụm từ rồi đưa vào hội thoại."
+            },
+            {
+              "title": "So sánh cách diễn đạt và xem lại",
+              "body": "Nhờ AI giải thích các chỗ sửa trong một câu ngắn tiếng Nga hoặc tiếng Đức. Sao chép cách diễn đạt hữu ích hoặc mở lại cuộc trò chuyện từ lịch sử."
+            }
           ]
         },
-        {
-          "title": "Nghe tự nhiên, cất lời dễ hơn",
-          "body": "Nhờ AI làm mẫu chậm, rồi tập phát âm, giọng điệu và nhịp điệu. Đưa câu vào hội thoại tự nhiên để mỗi lần tập gần hơn với giao tiếp thật."
-        },
-        {
-          "title": "Hiểu phản hồi, lần sau nói mượt hơn",
-          "body": "So sánh câu gốc với cách nói tự nhiên, nghe mẫu và xem lý do. Có thể nhờ AI hiệu đính câu ngắn tiếng Nga, Đức và hơn nữa. Lưu cách diễn đạt, tập lại, xem hội thoại trong lịch sử để chuẩn bị lần sau."
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Luyện trước chuyến đi",
+              "body": "Tập nhận phòng khách sạn hoặc gọi món bằng cách nhờ trợ lý đóng vai người đối thoại."
+            },
+            {
+              "title": "Tập phỏng vấn",
+              "body": "Nhờ AI đóng vai người phỏng vấn. Tập trả lời rồi hỏi thêm về chỗ bạn vướng."
+            },
+            {
+              "title": "Chuẩn bị trả lời tin nhắn",
+              "body": "Cho trợ lý biết ngữ cảnh rồi nhờ so sánh các câu trả lời có thể dùng."
+            }
+          ]
         }
-      ]
+      }
     },
     "screen-translation": {
       "title": "Dịch màn hình, hiểu phụ đề và chữ.",
@@ -299,23 +757,67 @@
         "Chữ trên màn hình: đọc nội dung đang thấy trong web, chat và trò chơi.",
         "Hình trong hình và lịch sử: vừa xem vừa đối chiếu, sau đó đọc lại."
       ],
-      "sections": [
-        {
-          "title": "Phụ đề video, theo kịp nội dung",
-          "body": "Dịch âm thanh từ ứng dụng khác thành phụ đề cùng bản gốc. Khi xem video, phát trực tiếp hoặc học ngoại ngữ, nắm ý chính bằng ngôn ngữ quen thuộc mà vẫn tiếp tục xem."
-        },
-        {
-          "title": "Chữ trên màn hình, đọc tiếp nội dung",
-          "body": "Đọc bản dịch chữ đang thấy trong web, chat, trò chơi hay tài liệu qua Hình trong hình. Kéo gần đoạn cần đọc hoặc cuộn trang gốc để tiếp tục phần sau."
-        },
-        {
-          "title": "Bản dịch theo nội dung, câu hay lưu lại",
-          "body": "Đối chiếu trong lúc xem bản gốc. Văn bản và bản dịch đã hoàn thành được lưu trong lịch sử để mở lại. Tự đưa cách diễn đạt yêu thích sang Trợ lý AI để hỏi nghĩa và luyện cách dùng.",
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
           "items": [
-            "Cần iOS／iPadOS 16 trở lên, Hình trong hình và internet. Nội dung được bảo vệ có thể không dịch được."
+            {
+              "title": "Chọn chế độ",
+              "body": "Chọn “Phụ đề video” hoặc “Chữ trên màn hình”."
+            },
+            {
+              "title": "Bắt đầu truyền phát",
+              "body": "Chạm “Bắt đầu” rồi xác nhận “Bắt đầu truyền phát” trong iOS."
+            },
+            {
+              "title": "Đọc phụ đề theo video",
+              "body": "Quay lại video và đọc phụ đề trong cửa sổ Hình trong hình."
+            },
+            {
+              "title": "Cuộn để đọc tiếp",
+              "body": "Dùng “Chữ trên màn hình” rồi cuộn trang gốc để đọc tiếp."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "Phụ đề video",
+              "body": "Dịch âm thanh của video hoặc buổi phát trực tiếp trong ứng dụng khác. Bật “Hiện bản gốc” để đối chiếu."
+            },
+            {
+              "title": "Chữ đang hiển thị trên màn hình",
+              "body": "Đọc bản dịch chữ đang hiển thị trên trang web, trong tin nhắn, trò chơi hoặc tài liệu qua cửa sổ Hình trong hình."
+            },
+            {
+              "title": "Đối chiếu trong Hình trong hình",
+              "body": "Di chuyển cửa sổ Hình trong hình đến cạnh nội dung gốc. Cần iOS hoặc iPadOS 16 trở lên và kết nối internet. Một số nội dung được bảo vệ có thể không dịch được."
+            },
+            {
+              "title": "Xem lịch sử và luyện thêm",
+              "body": "Mở lịch sử để xem lại bản gốc và bản dịch. Sao chép một dòng sang Trợ lý AI để hỏi cách dùng hoặc luyện thêm."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Xem video và buổi phát trực tiếp",
+              "body": "Tiếp tục phát video và đọc phụ đề để theo dõi, hoặc đối chiếu với bản gốc khi học."
+            },
+            {
+              "title": "Đọc trang web",
+              "body": "Đưa cửa sổ bản dịch đến cạnh đoạn văn và tiếp tục đọc khi cuộn trang."
+            },
+            {
+              "title": "Theo dõi tin nhắn hoặc trò chơi",
+              "body": "Dùng “Chữ trên màn hình” để đọc tin nhắn đang hiển thị ngay trong ứng dụng ban đầu."
+            }
           ]
         }
-      ]
+      }
     }
   },
   "workflows": {
@@ -566,7 +1068,7 @@
       "reply": {
         "label": "Dịch văn bản và giọng điệu",
         "title": "Đúng ý,\nđúng cả giọng điệu.",
-        "body": "Cần chuyên nghiệp thì chuyên nghiệp, cần thân thiện thì thân thiện. Bảy giọng điệu để mỗi câu đều như lời bạn nói.",
+        "body": "Cần chuyên nghiệp thì chuyên nghiệp, cần thân thiện thì thân thiện. Sáu giọng điệu để mỗi câu đều như lời bạn nói.",
         "action": "Khám phá dịch văn bản"
       },
       "practice": {

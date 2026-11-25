@@ -97,37 +97,71 @@
   "features": {
     "text": {
       "title": "Traduction de texte : le sens juste, le ton adapté.",
-      "summary": "Messages et e-mails : sept tons selon votre destinataire. Helper explique les déclinaisons russes et allemandes ; l’assistant IA peut relire la phrase originale.",
+      "summary": "Messages et e-mails : six tons selon votre destinataire. Helper explique les déclinaisons russes et allemandes ; l’assistant IA peut relire la phrase originale.",
       "heading": "À chaque destinataire, le bon ton.",
       "body": "Une demande polie au travail, un échange naturel entre amis, un long message plus concis. Après traduction, écoutez la voix IA et enregistrez les bonnes phrases. Helper explique les cas et terminaisons ; l’assistant IA peut les corriger.",
       "steps": [
-        "Sept tons, du courrier formel à la conversation quotidienne.",
+        "Six tons, du courrier formel à la conversation quotidienne.",
         "Helper explique les déclinaisons russes et allemandes ; l’assistant IA relit l’original sur demande.",
         "Écoutez la voix IA naturelle, enregistrez des phrases ou préparez un brouillon pour l’assistant IA."
       ],
-      "sections": [
-        {
-          "title": "Comprendre les cas et terminaisons russes et allemands",
-          "body": "Grammaire, erreurs courantes, analyse mot à mot : comprenez les cas russes, les articles et terminaisons allemands dans votre langue. Saisissez les liens de la phrase avant de choisir votre formulation."
-        },
-        {
-          "title": "Sept tons selon votre destinataire",
-          "body": "Automatique, Poli, Humoristique, Correspondance, Amical, Concis ou Séducteur : du travail aux rencontres internationales, trouvez le ton adapté.",
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
           "items": [
-            "Automatique : adapte le ton au texte source et au contexte.",
-            "Poli : pour les demandes, questions ou messages professionnels.",
-            "Humoristique : pour alléger les échanges qui s’y prêtent.",
-            "Correspondance : pour les e-mails et les lettres.",
-            "Amical : un style naturel et décontracté, comme entre proches.",
-            "Concis : raccourcit la formulation ; vérifiez les informations importantes.",
-            "Séducteur : un ton joueur et tendre pour les rencontres internationales."
+            {
+              "title": "Saisir le texte d’origine",
+              "body": "Choisissez les langues, puis saisissez ou collez votre texte."
+            },
+            {
+              "title": "Lire la traduction",
+              "body": "Lisez la traduction sous votre texte."
+            },
+            {
+              "title": "Choisir un ton",
+              "body": "Ouvrez le sélecteur de ton et choisissez un style."
+            },
+            {
+              "title": "Utiliser la nouvelle formulation",
+              "body": "Vérifiez le sens, puis copiez ou enregistrez le texte."
+            }
           ]
         },
-        {
-          "title": "Relire le russe et l’allemand en comprenant les corrections",
-          "body": "Le ton Automatique conserve un passage déjà entièrement dans la langue cible. Pour vérifier les cas, terminaisons ou règles, consultez Helper ou demandez une relecture à l’assistant IA."
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "Six tons selon la situation",
+              "body": "« Automatique » suit le contexte, « Poli » convient aux demandes et « Humour » rend l’échange plus léger. « Lettre » convient aux e-mails, « Décontracté » aux échanges familiers et « Concis » raccourcit le texte."
+            },
+            {
+              "title": "Comprendre la grammaire russe et allemande",
+              "body": "Dans « Connaissances personnalisées », utilisez « Grammaire », « Erreurs courantes » et « Mot à mot » pour comprendre les cas, les articles et les terminaisons. Demandez à l’assistant IA de relire votre phrase d’origine."
+            },
+            {
+              "title": "Conserver le texte déjà dans la langue cible",
+              "body": "Le ton « Automatique » laisse le passage entier intact s’il est déjà dans la langue cible."
+            },
+            {
+              "title": "Écouter, enregistrer ou copier",
+              "body": "Écoutez la prononciation générée par l’IA, enregistrez les phrases utiles ou copiez la traduction pour la coller dans l’assistant IA."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Formuler une demande professionnelle",
+              "body": "Utilisez « Poli » ou « Lettre » pour vos demandes à des collègues ou à des clients."
+            },
+            {
+              "title": "Répondre à un ami",
+              "body": "Comparez la traduction d’un long message à l’original, puis utilisez « Décontracté » pour votre réponse."
+            }
+          ]
         }
-      ]
+      }
     },
     "photos": {
       "title": "Traduction de photos : le sens apparaît sur l’image.",
@@ -138,7 +172,64 @@
         "La traduction se superpose en direct : visez un panneau pour le lire.",
         "Prenez une photo ou ouvrez l’album pour traduire son texte.",
         "Consultez les détails sans perdre les repères de l’image originale."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
+          "items": [
+            {
+              "title": "Prendre ou choisir une photo",
+              "body": "Photographiez le texte ou choisissez une image."
+            },
+            {
+              "title": "Lire la traduction sur l’image",
+              "body": "Lisez la traduction directement là où le texte apparaît sur l’image."
+            },
+            {
+              "title": "Toucher le texte pour voir les détails",
+              "body": "Touchez une ligne pour comparer l’original et la traduction."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "Traduire en direct avec l’appareil photo",
+              "body": "Visez un texte lisible et voyez la traduction à la place de l’original."
+            },
+            {
+              "title": "Traduire une photo",
+              "body": "Prenez une photo ou choisissez-en une dans votre photothèque. La traduction se superpose au texte sur l’image."
+            },
+            {
+              "title": "Comparer un bloc de texte",
+              "body": "Touchez un bloc de texte pour comparer l’original et sa traduction dans les détails."
+            },
+            {
+              "title": "Agrandir la photo",
+              "body": "Écartez deux doigts sur la photo pour agrandir les petits caractères."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Lire un panneau en voyage",
+              "body": "Visez un panneau et lisez la traduction sur l’image."
+            },
+            {
+              "title": "Vérifier l’étiquette d’un produit",
+              "body": "Photographiez l’étiquette et touchez la ligne à vérifier."
+            },
+            {
+              "title": "Lire une affiche déjà photographiée",
+              "body": "Ouvrez la photo de l’affiche dans votre photothèque et lisez la traduction sur l’image."
+            }
+          ]
+        }
+      }
     },
     "voice": {
       "title": "Traduction vocale : suivez les deux côtés de l’échange.",
@@ -150,12 +241,59 @@
         "Écoute privée passe par l’écouteur ou un casque ; Sous-titres seuls convient aux lieux calmes.",
         "Revoyez l’échange, réécoutez la voix IA, copiez ou partagez les points du résumé."
       ],
-      "sections": [
-        {
-          "title": "Une voix IA naturelle, avec ton et rythme",
-          "body": "Des modèles vocaux de nouvelle génération donnent aux traductions une intonation naturelle et des nuances d’émotion adaptées au contenu. Utilisez-les pour échanger, puis réécoutez et répétez pour apprivoiser sons et accents."
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
+          "items": [
+            {
+              "title": "Choisir les deux langues",
+              "body": "Sélectionnez les deux langues, puis touchez le micro."
+            },
+            {
+              "title": "Suivre les deux côtés de l’échange",
+              "body": "Lisez chaque réplique dans la langue d’origine et sa traduction."
+            },
+            {
+              "title": "Réécouter une réplique",
+              "body": "Touchez l’icône de haut-parleur à côté d’une traduction."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "Faire lire les traductions à voix haute",
+              "body": "« Conversation bilingue » peut lire les traductions des deux côtés. « Parler pour moi » ne lit que vos répliques traduites."
+            },
+            {
+              "title": "Écouter en privé ou lire",
+              "body": "Utilisez « Écoute privée » avec l’écouteur du téléphone ou un casque, ou choisissez « Sous-titres seuls »."
+            },
+            {
+              "title": "Écouter une voix IA naturelle",
+              "body": "Écoutez l’intonation et le rythme. Réécoutez une réplique pour vous familiariser avec la prononciation et l’accent."
+            },
+            {
+              "title": "Relire le résumé",
+              "body": "Revenez sur l’échange après coup et copiez ou partagez le résumé."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Arriver à l’hôtel",
+              "body": "Confirmez le type de chambre, le dépôt de garantie et l’heure de départ."
+            },
+            {
+              "title": "Poser des questions au restaurant",
+              "body": "Demandez au personnel la taille des portions, les ingrédients ou la façon dont un plat est préparé."
+            }
+          ]
         }
-      ]
+      }
     },
     "menu": {
       "title": "Scan de menus : comprendre, choisir, montrer sa commande.",
@@ -166,7 +304,64 @@
         "Noms, descriptions et prix deviennent une sélection facile à parcourir.",
         "Choisissez quantités, tailles, suppléments disponibles et notes.",
         "Montrez la commande originale ; les prix connus sont totalisés par devise."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
+          "items": [
+            {
+              "title": "Scanner le menu",
+              "body": "Dans « Organiser », choisissez « Menu », ajoutez une photo et lancez le scan."
+            },
+            {
+              "title": "Lire la traduction",
+              "body": "Parcourez les plats, les descriptions et les prix."
+            },
+            {
+              "title": "Choisir les plats",
+              "body": "Indiquez les quantités et choisissez les suppléments."
+            },
+            {
+              "title": "Montrer la commande au personnel",
+              "body": "Touchez « Montrer au personnel » pour afficher la commande dans la langue d’origine."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "Vérifier le texte original du menu",
+              "body": "Touchez un plat pour voir son nom, sa description et le prix indiqué sur le menu d’origine."
+            },
+            {
+              "title": "Ajouter une note à la commande",
+              "body": "Ajoutez une demande à la commande pour que le personnel puisse la lire quand vous la lui montrez."
+            },
+            {
+              "title": "Voir les totaux par devise",
+              "body": "Si les prix de tous les plats et suppléments sélectionnés sont connus, le total s’affiche séparément pour chaque devise."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Manger au restaurant à l’étranger",
+              "body": "Lisez les plats et les prix sur le menu d’un restaurant local avant de décider quoi commander."
+            },
+            {
+              "title": "Choisir des suppléments au café",
+              "body": "Indiquez le nombre de cafés, puis vérifiez les types de lait ou suppléments proposés."
+            },
+            {
+              "title": "Commander pour des amis",
+              "body": "Regroupez les plats, les quantités et les notes de chacun dans une seule commande."
+            }
+          ]
+        }
+      }
     },
     "document": {
       "title": "Scan de documents : pages ordonnées, paragraphes préservés.",
@@ -179,13 +374,50 @@
         "Recherchez dans l’historique des scans pour retrouver vos documents."
       ],
       "guide": {
+        "steps": {
+          "title": "Utilisation",
+          "items": [
+            {
+              "title": "Scanner un document",
+              "body": "Dans « Organiser », choisissez « Document », ajoutez les photos des pages dans l’ordre et lancez le scan."
+            },
+            {
+              "title": "Lire la traduction",
+              "body": "Suivez les titres, les paragraphes et les listes."
+            },
+            {
+              "title": "Vérifier le texte d’origine",
+              "body": "Touchez un paragraphe traduit pour voir le texte d’origine."
+            }
+          ]
+        },
         "abilities": {
           "title": "Ce que vous pouvez faire",
           "items": [
             {
               "title": "Voir la photo d’origine",
-              "body": "Touchez l’icône de photo en haut à droite du résultat du scan pour ouvrir la photo d’origine et la comparer à la page correspondante.",
-              "shotId": "original"
+              "body": "Touchez l’icône de photo en haut à droite du résultat du scan pour ouvrir la photo d’origine et la comparer à la page correspondante."
+            },
+            {
+              "title": "Scanner plusieurs pages à la fois",
+              "body": "Ajoutez les photos des pages dans l’ordre et organisez-les en un seul lot."
+            },
+            {
+              "title": "Rouvrir un ancien scan",
+              "body": "Recherchez par titre ou par type dans l’historique des scans, puis rouvrez le document."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Lire un avis imprimé",
+              "body": "Organisez l’avis en paragraphes et en listes dans l’ordre de lecture d’origine."
+            },
+            {
+              "title": "Consulter le règlement intérieur",
+              "body": "Scannez le règlement imprimé et rouvrez-le pour vérifier les horaires ou les frais."
             }
           ]
         }
@@ -200,7 +432,56 @@
         "Traduisez dans le champ et remplacez le brouillon pour poursuivre votre réponse.",
         "Tapez ou dictez avec iOS, puis choisissez langue et ton.",
         "Traduisez le presse-papiers, copiez le résultat ou insérez-le au curseur."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
+          "items": [
+            {
+              "title": "Activer le clavier",
+              "body": "Suivez le guide de l’app pour ajouter le clavier et activer « Autoriser l’accès complet »."
+            },
+            {
+              "title": "Changer de clavier",
+              "body": "Dans un champ de texte compatible, utilisez la touche globe pour sélectionner AnyTranslator."
+            },
+            {
+              "title": "Traduire un brouillon",
+              "body": "Saisissez votre texte, choisissez la langue cible, puis touchez « Traduire »."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "Traduire dans le même champ",
+              "body": "Remplacez le brouillon par sa traduction et continuez à écrire dans l’app que vous utilisiez."
+            },
+            {
+              "title": "Ajuster le ton",
+              "body": "Choisissez un ton pour retraduire le texte dans le champ."
+            },
+            {
+              "title": "Traduire le texte du presse-papiers",
+              "body": "Utilisez les outils du clavier pour traduire le texte copié. Copiez le résultat ou insérez-le à l’emplacement du curseur."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Répondre dans une app de messagerie",
+              "body": "Changez de langue dans un champ de message compatible et vérifiez la traduction avant l’envoi."
+            },
+            {
+              "title": "Écrire un message professionnel",
+              "body": "Choisissez un ton adapté à votre destinataire, qu’il s’agisse d’une demande polie ou d’une réponse concise."
+            }
+          ]
+        }
+      }
     },
     "helper": {
       "title": "Helper décrypte grammaire et usages.",
@@ -212,20 +493,59 @@
         "Explorez synonymes, exemples, sens implicites et suggestions de réponse.",
         "Personnalisez domaine, objectifs et profondeur ; enregistrez vos consignes pour les réutiliser."
       ],
-      "sections": [
-        {
-          "title": "Comprendre les déclinaisons russes et allemandes",
-          "body": "Exemples en contexte : de l’instrumental russe au datif allemand, voyez comment cas, articles et terminaisons des noms évoluent ensemble.",
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
           "items": [
-            "Russe : Я говорю с мой друг. → Я говорю с моим другом. Au sens de « avec », с demande l’instrumental ; les terminaisons de мой et друг changent ensemble.",
-            "Allemand : Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit demande le datif ; le nom faible Kunde devient Kunden."
+            {
+              "title": "Saisir une phrase",
+              "body": "Saisissez ou collez la phrase dans « Traduction de texte »."
+            },
+            {
+              "title": "Choisir une explication",
+              "body": "Dans « Connaissances personnalisées », choisissez une consigne comme « Grammaire »."
+            },
+            {
+              "title": "Comprendre la construction de la phrase",
+              "body": "Lisez pourquoi ces formes, terminaisons ou structures sont utilisées."
+            }
           ]
         },
-        {
-          "title": "Enregistrez une consigne, réutilisez-la ailleurs",
-          "body": "Enregistrez « Explique les cas russes dans ma langue » ou « Explique les terminaisons allemandes ». Les nouvelles phrases suivent votre méthode d’explication préférée pour cibler ce que vous voulez apprendre."
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "Analyser la grammaire et les erreurs",
+              "body": "Choisissez « Grammaire », « Erreurs courantes » ou « Mot à mot » pour comprendre comment la phrase est construite."
+            },
+            {
+              "title": "Explorer les mots et les exemples",
+              "body": "Utilisez « Synonymes », « Exemples » ou « Sens caché » pour voir comment la formulation change selon le contexte."
+            },
+            {
+              "title": "Passer de l’original à la traduction",
+              "body": "Changez la source de l’explication pour qu’elle porte sur le texte d’origine ou sa traduction."
+            },
+            {
+              "title": "Enregistrer des consignes pour les réutiliser",
+              "body": "Enregistrez une consigne adaptée au sujet, à votre objectif d’apprentissage ou au niveau de détail souhaité, puis réutilisez-la sur de nouvelles phrases."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Étudier l’instrumental en russe",
+              "body": "Avec с моим другом, voyez pourquoi с se construit avec l’instrumental et comment мой et друг changent de forme."
+            },
+            {
+              "title": "Vérifier les terminaisons du datif en allemand",
+              "body": "Prenez mit dem Kunden pour comparer l’article au datif et la terminaison d’un nom à déclinaison faible."
+            }
+          ]
         }
-      ]
+      }
     },
     "widget": {
       "title": "Widget d’apprentissage : révisez au passage.",
@@ -236,7 +556,60 @@
         "Lisez les mots et phrases, écoutez la voix IA, répétez depuis l’écran d’accueil.",
         "Marquez À revoir ou Mémorisé pour préparer la prochaine révision.",
         "Choisissez le type de contenu, le thème et la difficulté, puis ajoutez vos consignes."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
+          "items": [
+            {
+              "title": "Ajouter le widget à l’écran d’accueil",
+              "body": "Suivez le guide de l’app pour ajouter le « Widget d’apprentissage »."
+            },
+            {
+              "title": "Lire et écouter",
+              "body": "Lisez la carte et touchez le haut-parleur pour écouter la phrase."
+            },
+            {
+              "title": "Indiquer le résultat de la révision",
+              "body": "Choisissez « Revoir » ou « Je sais » pour planifier la prochaine apparition de la carte."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "Écouter depuis l’écran d’accueil",
+              "body": "Touchez le haut-parleur de la carte pour écouter la prononciation et répétez la phrase."
+            },
+            {
+              "title": "Suivre vos révisions",
+              "body": "Indiquez que vous connaissez la carte ou qu’elle est à revoir pour mettre à jour son calendrier de révision."
+            },
+            {
+              "title": "Choisir quoi réviser",
+              "body": "Dans les réglages, choisissez les types de contenu, les thèmes et la difficulté, et ajoutez des consignes personnalisées si l’option est disponible."
+            },
+            {
+              "title": "Ouvrir une carte depuis l’écran verrouillé",
+              "body": "Touchez la carte sur l’écran verrouillé pour ouvrir la phrase correspondante dans l’app."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Réviser pendant un temps mort",
+              "body": "Écoutez et répétez une phrase utile en attendant le bus."
+            },
+            {
+              "title": "Préparer une conversation",
+              "body": "Révisez le vocabulaire par thème et entraînez-vous à dire les phrases à voix haute."
+            }
+          ]
+        }
+      }
     },
     "table": {
       "title": "Traduction de tableaux : chaque chiffre à sa place.",
@@ -247,7 +620,60 @@
         "Conservez lignes et colonnes pour comparer horaires et prix.",
         "Faites défiler les grands tableaux pour lire tous les champs et unités.",
         "Comparez texte et image d’origine, puis rouvrez le scan depuis l’historique."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
+          "items": [
+            {
+              "title": "Scanner un tableau",
+              "body": "Dans « Organiser », choisissez « Tableau », ajoutez une photo et lancez le scan."
+            },
+            {
+              "title": "Suivre les lignes et les colonnes",
+              "body": "Utilisez les titres de colonnes pour retrouver les horaires, les prix ou les unités sur la bonne ligne."
+            },
+            {
+              "title": "Faire défiler un tableau large",
+              "body": "Balayez horizontalement pour voir les colonnes qui ne sont pas à l’écran."
+            },
+            {
+              "title": "Vérifier une donnée d’origine",
+              "body": "Touchez un titre de colonne ou une cellule contenant le texte source pour vérifier l’original."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "Conserver la structure du tableau",
+              "body": "Les titres de colonnes, les libellés de lignes et les colonnes de données restent distincts pour faciliter la comparaison."
+            },
+            {
+              "title": "Garder les libellés de lignes à l’écran",
+              "body": "Dans un tableau large, la première colonne reste en place quand vous faites défiler horizontalement."
+            },
+            {
+              "title": "Comparer avec la photo entière",
+              "body": "Touchez l’icône de photo en haut à droite pour ouvrir la photo d’origine de la page."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Consulter les horaires des transports",
+              "body": "Comparez les heures de départ par ligne et faites défiler jusqu’à la colonne suivante au besoin."
+            },
+            {
+              "title": "Comparer des prix de billets et de services",
+              "body": "Parcourez les lignes et les colonnes pour comparer les prix, les types de billets et les unités indiquées."
+            }
+          ]
+        }
+      }
     },
     "chat": {
       "title": "Assistant IA",
@@ -259,35 +685,67 @@
         "Pratiquez des scènes et objectifs pour parler en voyage, au travail et au quotidien.",
         "Écoutez des modèles naturels, répétez, recommencez et enregistrez les expressions utiles."
       ],
-      "sections": [
-        {
-          "title": "Photos et interprétation : posez vos questions sur le moment",
-          "body": "Ajoutez une photo de panneau, d’annonce ou de message : l’IA en tire les points clés, les précautions et les prochaines étapes. Face à une barrière linguistique, parlez avec l’IA ou utilisez l’interprétation en direct pour formuler vos questions.",
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
           "items": [
-            "Conversation vocale : posez vos questions à voix haute, puis poursuivez.",
-            "Discuter avec moi en anglais : faites de la pratique une vraie conversation.",
-            "Interpréter en direct pour moi : reliez les langues dans l’échange.",
-            "Photographier pour l’IA : faites ressortir l’essentiel et la suite."
+            {
+              "title": "Donner le contexte",
+              "body": "Dites où vous allez et ce que vous voulez pratiquer."
+            },
+            {
+              "title": "Lire les exemples",
+              "body": "Lisez les exemples et choisissez celui sur lequel vous voulez poser une question."
+            },
+            {
+              "title": "Poser une question sur une photo",
+              "body": "Ajoutez une photo et dites ce que vous voulez savoir."
+            },
+            {
+              "title": "Obtenir une phrase à utiliser",
+              "body": "Demandez une phrase adaptée à la photo et à la conversation."
+            }
           ]
         },
-        {
-          "title": "Apprenez la langue qui sert à votre vie",
-          "body": "Restaurant, aéroport, entretien ou travail : choisissez une scène pour dialoguer, un objectif pour progresser, ou créez les vôtres. Répondez surtout à voix haute pour préparer le prochain moment où vous devrez vraiment parler.",
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
           "items": [
-            "Pratique par scène : jouez un rôle et accomplissez les missions de dialogue.",
-            "Pratique par objectif : travaillez les phrases, puis utilisez-les en situation.",
-            "Apprentissage personnalisé : créez une scène ou un objectif pour une occasion précise."
+            {
+              "title": "Mode conversation",
+              "body": "Écrivez ou envoyez une photo. Si la voix est disponible, posez votre question à voix haute, demandez une interprétation ou un exemple prononcé plus lentement."
+            },
+            {
+              "title": "Repérer l’essentiel d’une photo",
+              "body": "Envoyez une photo de panneau, d’annonce ou de message et demandez les points clés, les rappels ou les prochaines étapes."
+            },
+            {
+              "title": "S’entraîner dans une situation ou avec un objectif",
+              "body": "Indiquez le rôle, la situation et l’objectif dans la conversation. Commencez par une phrase, puis utilisez-la dans l’échange."
+            },
+            {
+              "title": "Comparer des formulations et les revoir",
+              "body": "Demandez à l’IA d’expliquer les corrections d’une courte phrase en russe ou en allemand. Copiez les formulations utiles ou retrouvez la conversation dans l’historique."
+            }
           ]
         },
-        {
-          "title": "Une voix naturelle, des mots plus faciles à dire",
-          "body": "Demandez à l’IA un modèle plus lent et entraînez prononciation, accent et rythme. Replacez ensuite les phrases dans un dialogue naturel pour rapprocher chaque séance d’un véritable échange."
-        },
-        {
-          "title": "Comprenez les retours, parlez mieux la prochaine fois",
-          "body": "Comparez votre phrase à une formulation naturelle, écoutez le modèle et comprenez pourquoi. Demandez aussi la correction de courtes phrases en russe, allemand ou d’autres langues. Enregistrez les expressions utiles et retrouvez les échanges dans l’historique pour vous préparer à parler à nouveau."
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "S’entraîner avant un voyage",
+              "body": "Entraînez-vous à vous présenter à la réception d’un hôtel ou à passer commande en demandant à l’assistant de jouer l’autre personne."
+            },
+            {
+              "title": "Simuler un entretien",
+              "body": "Demandez à l’IA de mener l’entretien. Entraînez-vous à répondre et posez des questions sur ce qui vous bloque."
+            },
+            {
+              "title": "Préparer une réponse à un message",
+              "body": "Donnez le contexte à l’assistant et demandez-lui de comparer plusieurs réponses possibles."
+            }
+          ]
         }
-      ]
+      }
     },
     "screen-translation": {
       "title": "Traduction d’écran : comprenez sous-titres et texte.",
@@ -299,23 +757,67 @@
         "Texte à l’écran : lisez ce qui est visible sur le web, dans un chat ou un jeu.",
         "Image dans l’image et historique : comparez en regardant, relisez plus tard."
       ],
-      "sections": [
-        {
-          "title": "Sous-titres vidéo : suivez le contenu",
-          "body": "Traduisez l’audio d’une autre app en sous-titres et affichez l’original à côté. Vidéos, directs et apprentissage deviennent plus accessibles dans votre langue, sans interrompre le contenu."
-        },
-        {
-          "title": "Texte à l’écran : poursuivez votre lecture",
-          "body": "Lisez la traduction du texte visible des pages web, chats, jeux ou documents en image dans l’image. Déplacez la fenêtre près du passage ou faites défiler la page pour continuer à lire les informations étrangères."
-        },
-        {
-          "title": "La traduction vous suit, les bonnes phrases restent",
-          "body": "Comparez la traduction au contenu pendant la lecture. Les originaux et traductions terminés restent dans l’historique. Rouvrez-les ou transmettez manuellement une expression à l’assistant IA pour en comprendre le sens et l’usage.",
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
           "items": [
-            "Nécessite iOS/iPadOS 16 ou version ultérieure, l’image dans l’image et Internet ; certains contenus protégés peuvent ne pas être traduits."
+            {
+              "title": "Choisir un mode",
+              "body": "Choisissez « Sous-titres vidéo » ou « Texte à l’écran »."
+            },
+            {
+              "title": "Lancer la diffusion",
+              "body": "Touchez « Démarrer » et confirmez avec « Lancer la diffusion » dans iOS."
+            },
+            {
+              "title": "Suivre les sous-titres",
+              "body": "Revenez à la vidéo et lisez les sous-titres en Image dans l’image."
+            },
+            {
+              "title": "Lire en faisant défiler",
+              "body": "Utilisez « Texte à l’écran » et faites défiler la page d’origine pour poursuivre la lecture."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "Sous-titres vidéo",
+              "body": "Traduisez l’audio des vidéos ou des directs dans d’autres apps. Activez l’affichage du texte d’origine pour comparer."
+            },
+            {
+              "title": "Texte visible à l’écran",
+              "body": "Lisez en Image dans l’image la traduction du texte visible sur les pages web, dans les conversations, les jeux ou les documents."
+            },
+            {
+              "title": "Comparer en Image dans l’image",
+              "body": "Déplacez la fenêtre Image dans l’image à côté du contenu d’origine. Requiert une connexion internet et iOS ou iPadOS 16 ou ultérieur. Certains contenus protégés peuvent être impossibles à traduire."
+            },
+            {
+              "title": "Revoir et pratiquer à partir de l’historique",
+              "body": "Retrouvez l’original et la traduction dans l’historique. Copiez une ligne dans l’assistant IA pour poser une question sur son usage ou vous entraîner à l’utiliser."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Regarder des vidéos ou des directs",
+              "body": "Laissez la vidéo en cours de lecture et suivez les sous-titres, ou comparez-les à l’original pour apprendre."
+            },
+            {
+              "title": "Lire une page web",
+              "body": "Déplacez la fenêtre de traduction à côté d’un passage et poursuivez la lecture en faisant défiler la page."
+            },
+            {
+              "title": "Suivre des conversations ou des jeux",
+              "body": "Lisez les messages visibles avec « Texte à l’écran » tout en restant dans l’app d’origine."
+            }
           ]
         }
-      ]
+      }
     }
   },
   "workflows": {
@@ -566,7 +1068,7 @@
       "reply": {
         "label": "Traduction de texte et ton",
         "title": "Le bon sens.\nLe bon ton.",
-        "body": "Professionnel quand il le faut, chaleureux quand vous le voulez. Sept tons pour que chaque phrase vous ressemble.",
+        "body": "Professionnel quand il le faut, chaleureux quand vous le voulez. Six tons pour que chaque phrase vous ressemble.",
         "action": "Découvrir la traduction de texte"
       },
       "practice": {

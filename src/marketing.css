@@ -889,17 +889,6 @@ html[data-theme] body {
 .mk-workflow .mk-text-link {
   margin-top: 12px;
 }
-.mk-feature-modules h2 {
-  font-size: 24px;
-  line-height: 1.4;
-  margin-bottom: 16px;
-}
-.mk-feature-modules ul,
-.mk-article-feature-section ul {
-  padding-left: 22px;
-  margin-top: 16px;
-  line-height: 1.75;
-}
 .mk-pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2206,12 +2195,6 @@ html[data-theme] body {
   }
 }
 /* Full detail views retain the native frame; cards show a readable viewport of the same image. */
-.mk-article-feature-section {
-  margin-top: 32px;
-}
-.mk-article-feature-section h3 {
-  margin-bottom: 16px;
-}
 .mk-card-screen,
 .mk-feature-card:last-child .mk-card-screen {
   height: 544px;
@@ -2506,6 +2489,14 @@ html[lang^="zh"] .mk-page-intro h1 {
   gap: 16px;
   min-width: 0;
 }
+.mk-feature-guide-steps[data-text-only] > li {
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--mk-surface);
+}
+.mk-feature-guide-step-copy {
+  flex: 1;
+}
 .mk-feature-guide-step-copy h3 {
   margin-block: 8px;
 }
@@ -2519,12 +2510,15 @@ html[lang^="zh"] .mk-page-intro h1 {
   clip-path: none;
 }
 @media (min-width: 1100px) {
-  .mk-feature-guide {
+  .mk-feature-guide:has(.mk-feature-guide-steps[data-count="4"]) {
     min-width: 1076px;
   }
   .mk-feature-guide-steps {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 12px;
+  }
+  .mk-feature-guide-steps[data-count="3"] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 .mk-feature-guide + .mk-feature-guide-copy,

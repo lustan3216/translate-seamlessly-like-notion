@@ -29,6 +29,7 @@ import { CustomerRecommendations, AskAiPanel } from "@/components/marketing/Cust
 import "@/home-scenarios.css";
 
 import { faqTopics } from "@/data/faq-topics";
+import { featureGuideOptions, featureStepImage } from "@/data/feature-guides";
 import articleBase from "@/translations/marketing/articles-base.json";
 import articleAsia from "@/translations/marketing/articles-asia.json";
 import articleEuropeA from "@/translations/marketing/articles-europe-a.json";
@@ -453,8 +454,10 @@ export function FeaturePage() {
   const feature = features.find((x) => x.id === id);
   if (!feature) return <MissingPage />;
   const copy = details.features[feature.id];
-  const guide = copy.guide;
-  const steps = guide?.steps?.items.length ? guide.steps : undefined;
+  const { steps, abilities, situations } = copy.guide;
+  const guideOptions = featureGuideOptions[feature.id];
+  const stepImages = steps.items.map((_, index) => featureStepImage(feature.id, currentLanguage.code, index));
+  const faq = guideOptions?.faq;
   return (
     <MarketingShell>
       <Head title={copy.title} description={copy.summary} />
@@ -471,75 +474,54 @@ export function FeaturePage() {
           <p className="mk-eyebrow">{m(`feature.${id}`)}</p>
           <h2>{copy.heading}</h2>
           <p>{copy.body}</p>
-          {!steps && (
-            <ol className="mk-step-list">
-              {copy.steps.map((step, index) => (
-                <li key={step}>
-                  <span>0{index + 1}</span>
-                  {step}
-                </li>
-              ))}
-            </ol>
-          )}
           <Link className="mk-text-link" to={href("/download")}>
             {m("nav.download")}
             <Arrow />
           </Link>
         </div>
       </section>
-      {steps ? (
-        <section className="mk-section mk-wrap mk-feature-guide">
-          <h2 className="mk-section-title">{steps.title}</h2>
-          <ol className="mk-feature-guide-steps" role="list" aria-label={steps.title} tabIndex={0}>
-            {steps.items.map((step, index) => (
-              <li key={step.image.src}>
-                <div className="mk-feature-guide-step-copy">
-                  <p className="mk-eyebrow" aria-hidden="true">0{index + 1}</p>
-                  <h3>{step.title}</h3>
-                  <p>{step.body}</p>
-                </div>
-                <img {...step.image} className="native-app-screen" alt="" loading="lazy" decoding="async" />
-              </li>
-            ))}
-          </ol>
-        </section>
-      ) : (
-        <>
-          {id === "menu" && <ProductStoryPanels panel="menu" />}
-          {id === "text" && <ProductStoryPanels panel="reply" />}
-          {id === "chat" && <ProductStoryPanels panel="practice" />}
-        </>
-      )}
-      {[guide?.abilities, guide?.situations].map((section) => section?.items.length ? (
+      <section className="mk-section mk-wrap mk-feature-guide">
+        <h2 className="mk-section-title">{steps.title}</h2>
+        <ol
+          className="mk-feature-guide-steps"
+          role="list"
+          aria-label={steps.title}
+          tabIndex={0}
+          data-count={steps.items.length}
+          data-text-only={!stepImages[0] || undefined}
+        >
+          {steps.items.map((step, index) => (
+            <li key={step.title}>
+              <div className="mk-feature-guide-step-copy">
+                <p className="mk-eyebrow" aria-hidden="true">0{index + 1}</p>
+                <h3>{step.title}</h3>
+                <p>{step.body}</p>
+              </div>
+              {stepImages[index] && <img {...stepImages[index]} className="native-app-screen" alt="" loading="lazy" decoding="async" />}
+            </li>
+          ))}
+        </ol>
+      </section>
+      {[abilities, situations].map((section) => (
         <section className="mk-section mk-wrap mk-feature-guide-copy" key={section.title}>
           <h2 className="mk-section-title">{section.title}</h2>
           <div className="mk-feature-grid mk-workflow" data-count={section.items.length}>
-            {section.items.map((item) => (
-              <article className="mk-feature-guide-card" key={item.title}>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.body}</p>
-                </div>
-                {item.shotId && <AppScreen feature={feature.id as ScreenFeature} shotId={item.shotId} />}
-              </article>
-            ))}
+            {section.items.map((item, index) => {
+              const shotId = section === abilities ? guideOptions?.abilityShots?.[index] : undefined;
+              return (
+                <article className="mk-feature-guide-card" key={item.title}>
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.body}</p>
+                  </div>
+                  {shotId && <AppScreen feature={feature.id as ScreenFeature} shotId={shotId} />}
+                </article>
+              );
+            })}
           </div>
         </section>
-      ) : null)}
-      {guide?.faq?.length ? <FAQ topics={guide.faq} /> : null}
-      {copy.sections?.length ? (
-        <section className="mk-section mk-wrap mk-feature-modules">
-          <div className="mk-workflow">
-            {copy.sections.map((section) => (
-              <article key={section.title}>
-                <h2>{section.title}</h2>
-                <p>{section.body}</p>
-                {section.items?.length ? <ul>{section.items.map((item) => <li key={item}>{item}</li>)}</ul> : null}
-              </article>
-            ))}
-          </div>
-        </section>
-      ) : null}
+      ))}
+      {faq?.length ? <FAQ topics={faq} /> : null}
       <section className="mk-section mk-wrap">
         <h2 className="mk-section-title">{m("features.related")}</h2>
         <FeatureGrid

@@ -97,37 +97,71 @@
   "features": {
     "text": {
       "title": "Tekstoversettelse: tydelig mening og riktig tone.",
-      "summary": "Sju toner til meldinger og e-post etter mottakeren. Forstå russisk og tysk bøying med Helper, og la KI-assistenten korrekturlese originalen.",
+      "summary": "Seks toner til meldinger og e-post etter mottakeren. Forstå russisk og tysk bøying med Helper, og la KI-assistenten korrekturlese originalen.",
       "heading": "Velg en tone som passer mottakeren.",
       "body": "Skriv høflige jobbforespørsler, snakk naturlig med venner eller kort ned lange meldinger. Lytt til KI-uttale og lagre gode setninger. Helper forklarer russiske og tyske kasus og endelser; KI-assistenten hjelper med korrektur.",
       "steps": [
-        "Sju toner, fra formelle brev til hverdagssamtaler.",
+        "Seks toner, fra formelle brev til hverdagssamtaler.",
         "Helper forklarer russisk og tysk bøying, og KI-assistenten korrekturleser originalsetningen ved behov.",
         "Lytt til naturlig KI-uttale, lagre setninger eller ta teksten med som utkast i KI-assistenten."
       ],
-      "sections": [
-        {
-          "title": "Forstå russiske og tyske kasus og endelser",
-          "body": "Grammatikk, vanlige feil og ordanalyse forklarer russiske kasus samt tyske artikler og endelser på ditt språk. Forstå sammenhengene i setningen før du velger formulering."
-        },
-        {
-          "title": "Sju toner etter mottakeren",
-          "body": "Automatisk, høflig, humoristisk, brev, vennlig, kort og flørtende: passende tone fra jobb til internasjonale bekjentskaper.",
+      "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
           "items": [
-            "Automatisk: tilpasser tonen etter originaltekst og sammenheng.",
-            "Høflig: til forespørsler, spørsmål og jobbmeldinger.",
-            "Humoristisk: gjør passende samtaler litt lettere.",
-            "Brev: til e-post og brev.",
-            "Vennlig: naturlig og uformelt, som mellom kjente.",
-            "Kort: forkorter formuleringen; kontroller viktige opplysninger.",
-            "Flørtende: leken og kjærlig tone når du møter folk fra andre land."
+            {
+              "title": "Skriv inn originalteksten",
+              "body": "Velg språkene, og skriv eller lim inn teksten."
+            },
+            {
+              "title": "Les oversettelsen",
+              "body": "Les oversettelsen under originalteksten."
+            },
+            {
+              "title": "Velg en tone",
+              "body": "Åpne tonevelgeren og velg en stil."
+            },
+            {
+              "title": "Bruk den nye formuleringen",
+              "body": "Sjekk meningen, og kopier eller lagre oversettelsen."
+            }
           ]
         },
-        {
-          "title": "Korrektur av russisk og tysk: forstå grunnen før du velger formulering",
-          "body": "Automatisk tone beholder originalen hvis hele teksten allerede er på målspråket. Sjekk kasus, endelser og grammatikk med Helper, eller be KI-assistenten korrekturlese originalsetningen."
+        "abilities": {
+          "title": "Dette kan du gjøre",
+          "items": [
+            {
+              "title": "Seks toner til ulike anledninger",
+              "body": "«Automatisk» følger sammenhengen, «Høflig» passer til forespørsler, og «Humor» letter stemningen. «Brev» passer til e-post, «Uformell» til hverdagssamtaler, og «Kortfattet» kutter ned på ord."
+            },
+            {
+              "title": "Forstå russisk og tysk grammatikk",
+              "body": "Bruk «Grammatikk», «Vanlige feil» og «Ord for ord» under «Tilpasset kunnskap» for å forstå kasus, artikler og endelser. Be KI-assistenten korrekturlese originalsetningen."
+            },
+            {
+              "title": "Behold tekst som allerede er på målspråket",
+              "body": "«Automatisk» lar hele teksten stå uendret hvis den allerede er på målspråket."
+            },
+            {
+              "title": "Lytt, lagre eller kopier",
+              "body": "Spill av KI-uttalen, lagre nyttige uttrykk eller kopier oversettelsen til KI-assistenten."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Skriv en forespørsel på jobb",
+              "body": "Bruk «Høflig» eller «Brev» til forespørsler til kolleger eller kunder."
+            },
+            {
+              "title": "Svar en venn",
+              "body": "Sammenlign en lang melding med originalen, og bruk «Uformell» når du svarer."
+            }
+          ]
         }
-      ]
+      }
     },
     "photos": {
       "title": "Bildeoversettelse: oversettelsen rett på ordene.",
@@ -138,7 +172,64 @@
         "Oversettelse i sanntid over teksten gjør skilt lesbare.",
         "Ta et bilde eller velg fra biblioteket og oversett teksten i det.",
         "Se oversettelsesdetaljer med konteksten fra originalbildet bevart."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
+          "items": [
+            {
+              "title": "Ta eller velg et bilde",
+              "body": "Ta bilde av teksten, eller velg et bilde fra bildebiblioteket."
+            },
+            {
+              "title": "Les oversettelsen på bildet",
+              "body": "Les oversettelsen der originalteksten står på bildet."
+            },
+            {
+              "title": "Trykk på teksten for å se detaljer",
+              "body": "Trykk på en linje for å sammenligne originalen med oversettelsen."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Dette kan du gjøre",
+          "items": [
+            {
+              "title": "Oversett tekst i kamerabildet i sanntid",
+              "body": "Rett kameraet mot lesbar tekst og se oversettelsen der teksten står."
+            },
+            {
+              "title": "Oversett et stillbilde",
+              "body": "Ta et bilde eller velg et fra bildebiblioteket. Oversettelsen vises over teksten i bildet."
+            },
+            {
+              "title": "Sammenlign en tekstblokk med originalen",
+              "body": "Trykk på en tekstblokk for å sammenligne originalen med oversettelsen i detaljvisningen."
+            },
+            {
+              "title": "Zoom inn på bildet",
+              "body": "Spre to fingre for å zoome inn på liten skrift i bildet."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Les et skilt på reise",
+              "body": "Rett kameraet mot et skilt og les oversettelsen på bildet."
+            },
+            {
+              "title": "Sjekk en produktetikett",
+              "body": "Ta bilde av etiketten og trykk på linjen du vil sjekke."
+            },
+            {
+              "title": "Les et oppslag du har lagret",
+              "body": "Åpne et bilde av oppslaget fra bildebiblioteket og les oversettelsen på bildet."
+            }
+          ]
+        }
+      }
     },
     "voice": {
       "title": "Taleoversettelse: følg begge sider av samtalen.",
@@ -150,12 +241,59 @@
         "Lytt privat bruker telefonens ørehøyttaler eller hodetelefoner; Bare teksting passer når det må være stille.",
         "Se gjennom samtalen, spill av KI-oversettelser og kopier eller del hovedpunktene i sammendraget."
       ],
-      "sections": [
-        {
-          "title": "Naturlig KI-opplesning med tonefall og rytme",
-          "body": "En ny generasjon talemodeller lager oversatt tale med naturlig tonefall og små følelsesnyanser etter innholdet. Bruk det i samtalen, og lytt og gjenta senere for å bli kjent med uttale og aksent."
+      "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
+          "items": [
+            {
+              "title": "Velg begge språkene",
+              "body": "Velg begge språkene, og trykk på mikrofonen."
+            },
+            {
+              "title": "Følg begge sider av samtalen",
+              "body": "Følg hver replikk på originalspråket og i oversettelse."
+            },
+            {
+              "title": "Hør en replikk på nytt",
+              "body": "Trykk på høyttalerikonet ved siden av en oversettelse."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Dette kan du gjøre",
+          "items": [
+            {
+              "title": "Spill av oversettelsene høyt",
+              "body": "«Toveissamtale» kan lese opp oversettelsene på begge språkene. «Snakk for meg» spiller bare av dine oversatte replikker."
+            },
+            {
+              "title": "Lytt privat eller les",
+              "body": "Bruk «Lytt privat» med ørehøyttaleren eller hodetelefoner, eller velg «Bare undertekster»."
+            },
+            {
+              "title": "Lytt til naturlig KI-tale",
+              "body": "Lytt til tonefallet og rytmen. Spill av en replikk på nytt for å bli kjent med uttalen og aksenten."
+            },
+            {
+              "title": "Se gjennom sammendraget",
+              "body": "Gå tilbake til samtalen etterpå, og kopier eller del sammendraget."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Sjekk inn på hotell",
+              "body": "Bekreft romtypen, depositumet og tidspunktet for utsjekking."
+            },
+            {
+              "title": "Spør betjeningen på en restaurant",
+              "body": "Spør om porsjonsstørrelser, ingredienser eller hvordan en rett lages."
+            }
+          ]
         }
-      ]
+      }
     },
     "menu": {
       "title": "Menyskanning: fra å forstå rettene til å vise bestillingen.",
@@ -166,7 +304,64 @@
         "Navn, beskrivelser og priser blir til oversiktlige matvalg.",
         "Velg antall, størrelser, tilgjengelige tillegg og merknader.",
         "Vis originalbestillingen med kjente priser summert per valuta."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
+          "items": [
+            {
+              "title": "Skann menyen",
+              "body": "Velg «Meny» under «Organiser», legg til et bilde og start skanningen."
+            },
+            {
+              "title": "Les oversettelsen",
+              "body": "Se gjennom retter, detaljer og priser."
+            },
+            {
+              "title": "Velg retter",
+              "body": "Velg antall porsjoner og eventuelle tillegg."
+            },
+            {
+              "title": "Vis bestillingen til betjeningen",
+              "body": "Trykk på «Vis personalet» for å se bestillingen på originalspråket."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Dette kan du gjøre",
+          "items": [
+            {
+              "title": "Sjekk den opprinnelige menyteksten",
+              "body": "Trykk på en rett for å se det opprinnelige navnet, beskrivelsen og den oppgitte prisen."
+            },
+            {
+              "title": "Legg til en merknad",
+              "body": "Skriv et ønske i bestillingen, så betjeningen ser det når du viser den."
+            },
+            {
+              "title": "Se summen for hver valuta",
+              "body": "Når prisen er kjent for alle valgte retter og tillegg, får du en egen sum for hver valuta."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Spis på restaurant i utlandet",
+              "body": "Les om rettene og se prisene på den lokale menyen før du bestemmer deg for hva du vil bestille."
+            },
+            {
+              "title": "Velg tillegg på kafé",
+              "body": "Velg hvor mange kopper kaffe du vil ha, og sjekk hvilke melketyper eller tillegg du kan velge."
+            },
+            {
+              "title": "Bestill for venner",
+              "body": "Samle alle rettene, antall porsjoner og merknadene i én bestilling."
+            }
+          ]
+        }
+      }
     },
     "document": {
       "title": "Dokumentskanning: ordne sidene og behold avsnitt og hovedpunkter.",
@@ -179,13 +374,50 @@
         "Søk i skannehistorikken og finn dokumentet igjen."
       ],
       "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
+          "items": [
+            {
+              "title": "Skann et dokument",
+              "body": "Velg «Dokument» under «Organiser», legg til bildene av sidene i riktig rekkefølge og start skanningen."
+            },
+            {
+              "title": "Les oversettelsen",
+              "body": "Følg overskriftene, avsnittene og listene."
+            },
+            {
+              "title": "Sjekk originalteksten",
+              "body": "Trykk på et oversatt avsnitt for å se originalen."
+            }
+          ]
+        },
         "abilities": {
           "title": "Dette kan du gjøre",
           "items": [
             {
               "title": "Se originalbildet",
-              "body": "Trykk på bildeikonet øverst til høyre i skanneresultatet for å åpne originalbildet og sammenligne det med den tilsvarende siden.",
-              "shotId": "original"
+              "body": "Trykk på bildeikonet øverst til høyre i skanneresultatet for å åpne originalbildet og sammenligne det med den tilsvarende siden."
+            },
+            {
+              "title": "Skann flere sider samtidig",
+              "body": "Legg til bildene av sidene i riktig rekkefølge og organiser dem samlet."
+            },
+            {
+              "title": "Åpne en tidligere skanning",
+              "body": "Søk i skannehistorikken etter tittel eller type, og åpne dokumentet på nytt."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Les et trykt oppslag",
+              "body": "Ordne oppslagets avsnitt og lister i den opprinnelige leserekkefølgen."
+            },
+            {
+              "title": "Sjekk husreglene",
+              "body": "Skann de trykte husreglene, og åpne dem igjen når du vil sjekke tider eller gebyrer."
             }
           ]
         }
@@ -200,7 +432,56 @@
         "Oversett i tekstfeltet, erstatt utkastet og skriv videre.",
         "Skriv eller bruk iOS-diktering, og velg språk og tone.",
         "Oversett utklippstavlen, kopier eller sett inn ved markøren."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
+          "items": [
+            {
+              "title": "Aktiver tastaturet",
+              "body": "Følg veiledningen i appen for å legge til tastaturet og slå på «Gi full tilgang»."
+            },
+            {
+              "title": "Bytt tastatur",
+              "body": "Bruk globustasten til å velge AnyTranslator i et tekstfelt som støttes."
+            },
+            {
+              "title": "Oversett et utkast",
+              "body": "Skriv teksten, velg målspråk og trykk på «Oversett»."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Dette kan du gjøre",
+          "items": [
+            {
+              "title": "Oversett i det samme feltet",
+              "body": "Erstatt utkastet med oversettelsen og fortsett å skrive i appen du brukte."
+            },
+            {
+              "title": "Juster tonen",
+              "body": "Velg en tone for å oversette teksten i feltet på nytt."
+            },
+            {
+              "title": "Oversett tekst fra utklippstavlen",
+              "body": "Bruk tastaturverktøyene til å oversette kopiert tekst. Kopier oversettelsen eller sett den inn ved markøren."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Svar i en meldingsapp",
+              "body": "Bytt språk i et meldingsfelt som støttes, og sjekk oversettelsen før du sender."
+            },
+            {
+              "title": "Skriv en jobbmelding",
+              "body": "Velg en tone som passer mottakeren, enten du vil sende en høflig forespørsel eller gi et kort svar."
+            }
+          ]
+        }
+      }
     },
     "helper": {
       "title": "Helper forklarer grammatikk og bruk.",
@@ -212,20 +493,59 @@
         "Utforsk synonymer, eksempler, underforstått mening og svarforslag.",
         "Tilpass fagområde, mål og dybde, og lagre forklaringsinstrukser for gjenbruk."
       ],
-      "sections": [
-        {
-          "title": "Forstå hvorfor russisk og tysk bøyes",
-          "body": "Eksempler i sammenheng: fra russisk instrumental til tysk dativ, og hvordan kasus, artikler og substantivendelser endres sammen.",
+      "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
           "items": [
-            "Russisk: Я говорю с мой друг. → Я говорю с моим другом. с i betydningen «sammen med» krever instrumental, så både мой og друг får nye endelser.",
-            "Tysk: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit krever dativ; det svakt bøyde Kunde blir Kunden."
+            {
+              "title": "Skriv inn en setning",
+              "body": "Skriv eller lim inn setningen i «Tekstoversettelse»."
+            },
+            {
+              "title": "Velg en forklaring",
+              "body": "Velg en instruksjon under «Tilpasset kunnskap», for eksempel «Grammatikk»."
+            },
+            {
+              "title": "Se hvordan setningen er bygd opp",
+              "body": "Les hvorfor ordformene, endelsene eller setningsstrukturene brukes."
+            }
           ]
         },
-        {
-          "title": "Lagre forklaringsinstrukser til nye setninger",
-          "body": "Lagre for eksempel «Forklar russiske kasus på mitt språk» eller «Forklar tyske endelser». Nye setninger følger den kjente forklaringsformen, så du kan fokusere på det du vil lære."
+        "abilities": {
+          "title": "Dette kan du gjøre",
+          "items": [
+            {
+              "title": "Få forklart grammatikk og feil",
+              "body": "Velg «Grammatikk», «Vanlige feil» eller «Ord for ord» for å se hvordan setningen er bygd opp."
+            },
+            {
+              "title": "Utforsk ord og eksempler",
+              "body": "Bruk «Synonymer», «Eksempler» eller «Skjult betydning» for å se hvordan ordvalget varierer med sammenhengen."
+            },
+            {
+              "title": "Bytt mellom original og oversettelse",
+              "body": "Bytt kildetekst under «Tilpasset kunnskap» for å få forklart originalen eller oversettelsen."
+            },
+            {
+              "title": "Lagre instruksjoner til senere",
+              "body": "Lagre en instruksjon for fagområdet, læringsmålet eller detaljnivået ditt, og bruk den igjen med nye setninger."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Lær russisk instrumental",
+              "body": "Bruk с моим другом for å se hvorfor с krever instrumental, og hvordan мой og друг bøyes."
+            },
+            {
+              "title": "Sjekk dativendelser på tysk",
+              "body": "Bruk mit dem Kunden for å sammenligne artikkelen i dativ og endelsen på et svakt bøyd substantiv."
+            }
+          ]
         }
-      ]
+      }
     },
     "widget": {
       "title": "Læringswidget: repetisjon lett tilgjengelig.",
@@ -236,7 +556,60 @@
         "Les uttrykk, lytt til KI-uttale og gjenta fra hjemskjermen.",
         "Merk for repetisjon eller som lært til neste læringsrunde.",
         "Velg innholdstype, tema og nivå, og legg til egne instrukser."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
+          "items": [
+            {
+              "title": "Legg widgeten på Hjem-skjermen",
+              "body": "Følg veiledningen i appen for å legge til læringswidgeten."
+            },
+            {
+              "title": "Les og lytt",
+              "body": "Les kortet og trykk på høyttaleren for å høre uttrykket."
+            },
+            {
+              "title": "Merk resultatet av repetisjonen",
+              "body": "Velg «Gjenta» eller «Kan den» for å bestemme når kortet vises igjen."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Dette kan du gjøre",
+          "items": [
+            {
+              "title": "Lytt på Hjem-skjermen",
+              "body": "Trykk på høyttaleren på kortet for å høre uttalen, og gjenta uttrykket."
+            },
+            {
+              "title": "Hold oversikt over repetisjonen",
+              "body": "Merk kortet som lært eller velg å repetere det på nytt for å oppdatere når det vises igjen."
+            },
+            {
+              "title": "Velg hva du vil repetere",
+              "body": "Velg innholdstyper, emner og vanskelighetsgrad i innstillingene. Legg til egne instruksjoner der det er mulig."
+            },
+            {
+              "title": "Åpne et kort på låst skjerm",
+              "body": "Trykk på kortet på låst skjerm for å åpne det aktuelle uttrykket i appen."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Repeter når du har litt tid til overs",
+              "body": "Lytt til et nyttig uttrykk og gjenta det mens du venter på bussen."
+            },
+            {
+              "title": "Forbered deg på en samtale",
+              "body": "Repeter ord og uttrykk etter emne, og øv på å si uttrykkene høyt."
+            }
+          ]
+        }
+      }
     },
     "table": {
       "title": "Tabelloversettelse: sammenlign rader og kolonner og forstå tallene.",
@@ -247,7 +620,60 @@
         "Rader og kolonner gjør tider og priser enkle å sammenligne.",
         "Bla vannrett og se alle felter og enheter i brede tabeller.",
         "Sammenlign originaltekst og bilde, og åpne igjen fra skannehistorikken."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
+          "items": [
+            {
+              "title": "Skann en tabell",
+              "body": "Velg «Tabell» under «Organiser», legg til et bilde og start skanningen."
+            },
+            {
+              "title": "Følg radene og kolonnene",
+              "body": "Bruk kolonneoverskriftene til å finne tidene, prisene eller enhetene som hører til hver rad."
+            },
+            {
+              "title": "Bla sidelengs i en bred tabell",
+              "body": "Sveip sidelengs for å se kolonnene utenfor visningen."
+            },
+            {
+              "title": "Sjekk en oppføring i originalen",
+              "body": "Trykk på en overskrift eller en celle med originaltekst for å sjekke originalen."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Dette kan du gjøre",
+          "items": [
+            {
+              "title": "Behold tabellstrukturen",
+              "body": "Overskrifter, radetiketter og kolonner med data vises hver for seg, så det er lett å sammenligne."
+            },
+            {
+              "title": "Hold radetikettene synlige",
+              "body": "I en bred tabell blir den første kolonnen stående når du blar sidelengs."
+            },
+            {
+              "title": "Sammenlign med hele bildet",
+              "body": "Trykk på bildeikonet øverst til høyre for å åpne originalbildet av siden."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Sjekk rutetabeller",
+              "body": "Sammenlign avgangstider etter rute, og bla til neste kolonne ved behov."
+            },
+            {
+              "title": "Sammenlign billettpriser og priser på tjenester",
+              "body": "Les på tvers av rader og kolonner for å sammenligne priser, billettyper og oppgitte enheter."
+            }
+          ]
+        }
+      }
     },
     "chat": {
       "title": "KI-assistent",
@@ -259,35 +685,67 @@
         "Øv scenarioer og mål for reise, jobb og hverdag.",
         "Lytt til naturlige eksempler, gjenta og øv på nytt, og lagre nyttige uttrykk."
       ],
-      "sections": [
-        {
-          "title": "Spør om bilder og få tolkehjelp der du er",
-          "body": "Legg til et bilde av et skilt, oppslag eller en melding, og la KI samle hovedpunkter, påminnelser og neste steg. Bruk talesamtale eller sanntidstolking når språket står i veien.",
+      "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
           "items": [
-            "Talesamtale: spør høyt og snakk videre.",
-            "Snakk engelsk med meg: gjør øvingen til en naturlig samtale.",
-            "Tolk for meg i sanntid: knytt ulike språk sammen.",
-            "La KI forstå et foto: finn hovedpunkter og neste steg."
+            {
+              "title": "Fortell om situasjonen",
+              "body": "Si hvor du skal, og hva du vil øve på."
+            },
+            {
+              "title": "Les eksemplene",
+              "body": "Les eksemplene og velg ett å spørre om."
+            },
+            {
+              "title": "Spør om et bilde",
+              "body": "Legg ved et bilde og si hva du vil vite."
+            },
+            {
+              "title": "Få et uttrykk du kan bruke",
+              "body": "Be om en setning som passer til bildet og samtalen."
+            }
           ]
         },
-        {
-          "title": "Øv språket du trenger i ditt eget liv",
-          "body": "Fra restaurant og flyplass til intervju og jobb: velg scenarioer til samtaleøving eller mål for trinnvis læring. Lag også egne scenarioer og mål. Fokuset er å svare høyt og forberede neste virkelige samtale.",
+        "abilities": {
+          "title": "Dette kan du gjøre",
           "items": [
-            "Scenarioøving: spill en rolle og fullfør samtaleoppgaver.",
-            "Måløving: øv uttrykk først, og bruk dem så i et scenario.",
-            "Egen læring: tilpass scenarioer eller mål til en bestemt anledning."
+            {
+              "title": "Smart samtale",
+              "body": "Skriv eller send et bilde. Der tale er tilgjengelig, kan du spørre høyt, be om tolking eller be om å få høre et eksempel saktere."
+            },
+            {
+              "title": "Finn hovedpunktene i et bilde",
+              "body": "Send et bilde av et skilt, et oppslag eller en melding, og be om hovedpunkter, påminnelser eller neste steg."
+            },
+            {
+              "title": "Øv på en situasjon eller et mål",
+              "body": "Angi rolle, situasjon og mål i samtalen. Start med ett uttrykk, og bruk det i en samtale."
+            },
+            {
+              "title": "Sammenlign formuleringer og gå tilbake til samtalen",
+              "body": "Be KI forklare rettelser i en kort russisk eller tysk setning. Kopier nyttige formuleringer eller åpne samtalen på nytt fra historikken."
+            }
           ]
         },
-        {
-          "title": "Naturlige eksempler gjør det lettere å snakke",
-          "body": "Be KI vise eksempler saktere og øv uttale, aksent og rytme. Bruk så setningene i naturlig samtale, slik at øvingen ligner mer på ekte kommunikasjon."
-        },
-        {
-          "title": "Forstå tilbakemeldingene og snakk smidigere neste gang",
-          "body": "Sammenlign originalen med naturlige formuleringer, lytt til eksempler og les årsakene. Be også om korrektur av korte russiske, tyske eller andre setninger. Lagre uttrykk, repeter øvelser og se samtaler i historikken før neste gang."
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Øv før en reise",
+              "body": "Øv på å sjekke inn på hotell eller bestille ved å be assistenten spille den andre personen."
+            },
+            {
+              "title": "Øv på et intervju",
+              "body": "Be KI spille intervjueren. Øv på å svare, og still spørsmål hvis du står fast."
+            },
+            {
+              "title": "Forbered et svar på en melding",
+              "body": "Forklar situasjonen for assistenten og be den sammenligne mulige svar."
+            }
+          ]
         }
-      ]
+      }
     },
     "screen-translation": {
       "title": "Skjermoversettelse gjør teksting og tekst forståelig.",
@@ -299,23 +757,67 @@
         "Skjermtekst: les synlig tekst på nettsider, i samtaler og spill.",
         "Bilde i bilde og historikk: sammenlign underveis og les igjen senere."
       ],
-      "sections": [
-        {
-          "title": "Følg videoen med teksting",
-          "body": "Oversett lyd fra andre apper til teksting med originalen ved siden av. Følg videoer, direktesendinger og språklæring på et kjent språk mens innholdet fortsetter."
-        },
-        {
-          "title": "Skjermtekst hjelper deg å lese videre",
-          "body": "Les oversettelse av synlig tekst fra nettsider, samtaler, spill og dokumenter i bilde i bilde. Flytt vinduet nær ønsket avsnitt eller bla videre på originalsiden."
-        },
-        {
-          "title": "Oversettelsen følger med, nyttige uttrykk blir lagret",
-          "body": "Sammenlign oversettelse og original underveis. Ferdig originaltekst og oversettelse lagres i historikken for senere lesing. Flytt selv et uttrykk til KI-assistenten for å spørre om mening eller øve på bruken.",
+      "guide": {
+        "steps": {
+          "title": "Slik bruker du den",
           "items": [
-            "Krever iOS/iPadOS 16 eller nyere, bilde i bilde og internett. Beskyttet innhold kan kanskje ikke oversettes."
+            {
+              "title": "Velg en modus",
+              "body": "Velg «Videoundertekster» eller «Skjermtekst»."
+            },
+            {
+              "title": "Start direktesendingen",
+              "body": "Trykk på «Begynn», og bekreft med «Start direktesending» i iOS."
+            },
+            {
+              "title": "Følg undertekstene",
+              "body": "Gå tilbake til videoen og les undertekstene i Bilde-i-bilde."
+            },
+            {
+              "title": "Les videre mens du blar",
+              "body": "Bruk «Skjermtekst», og bla på originalsiden for å lese videre."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Dette kan du gjøre",
+          "items": [
+            {
+              "title": "Videoundertekster",
+              "body": "Oversett lyden fra videoer eller direktesendinger i andre apper. Slå på «Vis original» for å sammenligne."
+            },
+            {
+              "title": "Synlig skjermtekst",
+              "body": "Les oversettelser av synlig tekst fra nettsider, samtaler, spill eller dokumenter i Bilde-i-bilde."
+            },
+            {
+              "title": "Sammenlign i Bilde-i-bilde",
+              "body": "Flytt Bilde-i-bilde ved siden av originalinnholdet. Krever iOS eller iPadOS 16 eller nyere og internett. Beskyttet innhold kan være utilgjengelig for oversettelse."
+            },
+            {
+              "title": "Historikk og videre øving",
+              "body": "Se originalen og oversettelsen i historikken. Kopier en setning til KI-assistenten for å spørre om bruken eller øve på den."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Når den er nyttig",
+          "items": [
+            {
+              "title": "Se videoer og direktesendinger",
+              "body": "La videoen spille videre, og bruk undertekstene til å følge med eller sammenligne med originalen mens du lærer."
+            },
+            {
+              "title": "Les en nettside",
+              "body": "Flytt oversettelsesvinduet ved siden av et avsnitt og fortsett å lese mens du blar."
+            },
+            {
+              "title": "Følg med i samtaler eller spill",
+              "body": "Les synlige meldinger med «Skjermtekst» mens du blir i appen du bruker."
+            }
           ]
         }
-      ]
+      }
     }
   },
   "workflows": {
@@ -566,7 +1068,7 @@
       "reply": {
         "label": "Tekstoversettelse og tone",
         "title": "Riktig mening.\nRiktig tone.",
-        "body": "Profesjonell når det trengs, vennlig når det passer. Sju toner får hver setning til å høres ut som deg.",
+        "body": "Profesjonell når det trengs, vennlig når det passer. Seks toner får hver setning til å høres ut som deg.",
         "action": "Utforsk tekstoversettelse"
       },
       "practice": {

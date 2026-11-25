@@ -97,37 +97,71 @@
   "features": {
     "text": {
       "title": "Text translation: the right meaning, in the right tone.",
-      "summary": "Messages and email in seven tones to suit the reader. Use Helper to understand Russian and German endings, then ask the AI assistant to proofread your source text.",
+      "summary": "Messages and email in six tones to suit the reader. Use Helper to understand Russian and German endings, then ask the AI assistant to proofread your source text.",
       "heading": "Match your tone to the person you're writing to.",
       "body": "Make work requests polite, chats friendly and long messages concise. Listen to AI pronunciation and save useful phrases. Let Helper explain Russian and German grammar, or ask the AI assistant to proofread.",
       "steps": [
-        "Seven tones, from formal letters to everyday chats.",
+        "Six tones, from formal letters to everyday chats.",
         "Helper explains Russian and German endings; ask the AI assistant to revise your source sentence.",
         "Listen to natural AI speech, save phrases and bring them into an AI assistant draft."
       ],
-      "sections": [
-        {
-          "title": "Understand Russian and German cases and endings",
-          "body": "Grammar, common mistakes and word-by-word analysis explain Russian cases and German articles and endings in your language. Understand how a sentence works, then choose your wording."
-        },
-        {
-          "title": "Seven tones for different occasions",
-          "body": "Automatic, Polite, Humorous, Letter, Friendly, Concise and Flirty—from work messages to making friends abroad.",
+      "guide": {
+        "steps": {
+          "title": "How to use",
           "items": [
-            "Automatic: adapts the tone to your text and context.",
-            "Polite: for requests, questions and work messages.",
-            "Humorous: brings a lighter touch when it fits.",
-            "Letter: for email and correspondence.",
-            "Friendly: natural, informal wording, like chatting with a friend.",
-            "Concise: trims the wording; check that key details remain.",
-            "Flirty: playful, affectionate wording for meeting people across languages."
+            {
+              "title": "Enter the original",
+              "body": "Choose the languages, then type or paste."
+            },
+            {
+              "title": "Read the translation",
+              "body": "Read the translation below your text."
+            },
+            {
+              "title": "Choose a tone",
+              "body": "Open the tone picker and choose a style."
+            },
+            {
+              "title": "Use the new wording",
+              "body": "Check the meaning, then copy or save it."
+            }
           ]
         },
-        {
-          "title": "Understand the correction before choosing your words",
-          "body": "Automatic tone keeps a whole passage unchanged if it is already in the target language. To check Russian or German cases, endings or grammar, use Helper for explanations or ask the AI assistant to proofread."
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "Six tones for different occasions",
+              "body": "Automatic follows the context, Polite suits requests, and Humor lightens the mood. Letter fits email, Casual suits everyday chats, and Concise trims wording."
+            },
+            {
+              "title": "Understand Russian and German grammar",
+              "body": "Use Helper’s Grammar, Common mistakes and Word-by-word analysis for cases, articles and endings. Ask the AI assistant to proofread your source sentence."
+            },
+            {
+              "title": "Keep text already in the target language",
+              "body": "Automatic keeps a whole passage unchanged if it is already in the target language."
+            },
+            {
+              "title": "Listen, save or copy",
+              "body": "Play the AI pronunciation, save useful phrases or copy the translation into the AI assistant."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Write a work request",
+              "body": "Use Polite or Letter for requests to colleagues or clients."
+            },
+            {
+              "title": "Reply to a friend",
+              "body": "Compare a long message with its original, then use Friendly for your reply."
+            }
+          ]
         }
-      ]
+      }
     },
     "photos": {
       "title": "Photo translation: the meaning, right on the image.",
@@ -138,7 +172,64 @@
         "Live translation overlays help you read signs on the spot.",
         "Take a photo or choose one from your library to translate its text.",
         "Tap for translation details while keeping the original context."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "How to use",
+          "items": [
+            {
+              "title": "Take or choose a photo",
+              "body": "Capture the text or pick an image."
+            },
+            {
+              "title": "Read the overlay",
+              "body": "Read the translation in place on the image."
+            },
+            {
+              "title": "Tap the text for details",
+              "body": "Tap a line to compare original and translation."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "Translate live camera text",
+              "body": "Point the camera at readable text and see the translation in place."
+            },
+            {
+              "title": "Translate a still image",
+              "body": "Take a photo or pick one from your library, with the translation overlaid in context."
+            },
+            {
+              "title": "Compare a text block",
+              "body": "Tap a text block to compare the original and its translation in the details."
+            },
+            {
+              "title": "Zoom in on the photo",
+              "body": "Pinch to zoom in on small print in a photo."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Read a sign while travelling",
+              "body": "Point at a sign and read its translation in context."
+            },
+            {
+              "title": "Check a product label",
+              "body": "Photograph a label and tap the line you want to check."
+            },
+            {
+              "title": "Read a notice you saved",
+              "body": "Open a photo of a notice from your library and read the overlay."
+            }
+          ]
+        }
+      }
     },
     "voice": {
       "title": "Voice translation: keep up with both sides.",
@@ -150,12 +241,59 @@
         "Private listening uses the earpiece or headphones; Subtitles only suits quiet places.",
         "Revisit conversations, replay AI speech, and copy or share summary highlights."
       ],
-      "sections": [
-        {
-          "title": "Natural AI speech with tone and rhythm",
-          "body": "New-generation speech models bring natural intonation and subtle emotion to translated speech. Use it to communicate, then replay and repeat to get familiar with pronunciation and accents."
+      "guide": {
+        "steps": {
+          "title": "How to use",
+          "items": [
+            {
+              "title": "Set both languages",
+              "body": "Choose both languages, then tap the mic."
+            },
+            {
+              "title": "Read both sides",
+              "body": "Follow each original line and its translation."
+            },
+            {
+              "title": "Replay a line",
+              "body": "Tap the speaker icon beside a translation."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "Speak translations aloud",
+              "body": "Two-way conversation can read both sides aloud. Speak for me plays just your translated lines."
+            },
+            {
+              "title": "Listen privately or read",
+              "body": "Use Private listening with the earpiece or headphones, or choose Captions only."
+            },
+            {
+              "title": "Hear natural AI speech",
+              "body": "Listen to the tone and rhythm. Replay a line to get familiar with its pronunciation and accent."
+            },
+            {
+              "title": "Review the summary",
+              "body": "Revisit the conversation afterward, and copy or share the summary."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Hotel check-in",
+              "body": "Confirm your room type, deposit and checkout time."
+            },
+            {
+              "title": "Questions for restaurant staff",
+              "body": "Ask staff about portions, ingredients or how a dish is prepared."
+            }
+          ]
         }
-      ]
+      }
     },
     "menu": {
       "title": "Menu scanning: from understanding dishes to showing your order.",
@@ -172,24 +310,20 @@
           "title": "How to use",
           "items": [
             {
-              "title": "Add a menu photo",
-              "body": "Pick Organise → Menu, then scan.",
-              "image": { "src": "/app-preview/videos/20261124/en/menu-step-1.webp", "width": 720, "height": 576 }
+              "title": "Scan the menu",
+              "body": "In Organise, choose Menu, add a photo and start the scan."
             },
             {
               "title": "Read the translation",
-              "body": "Browse dishes, details and prices.",
-              "image": { "src": "/app-preview/videos/20261124/en/menu-step-2.webp", "width": 720, "height": 830 }
+              "body": "Browse dishes, details and prices."
             },
             {
               "title": "Choose dishes",
-              "body": "Set quantities and pick extras.",
-              "image": { "src": "/app-preview/videos/20261124/en/menu-step-3.webp", "width": 720, "height": 730 }
+              "body": "Set quantities and pick extras."
             },
             {
               "title": "Show staff your order",
-              "body": "Tap Show Staff for the original.",
-              "image": { "src": "/app-preview/videos/20261124/en/menu-step-4.webp", "width": 720, "height": 720 }
+              "body": "Tap Show Staff for the original."
             }
           ]
         },
@@ -226,8 +360,7 @@
               "body": "Put everyone’s dishes, quantities and notes together in one order."
             }
           ]
-        },
-        "faq": ["Scan", "Free"]
+        }
       }
     },
     "document": {
@@ -241,13 +374,50 @@
         "Search scan history to find your document again."
       ],
       "guide": {
+        "steps": {
+          "title": "How to use",
+          "items": [
+            {
+              "title": "Scan a document",
+              "body": "Choose Document in Organise, add the page photos in order and start the scan."
+            },
+            {
+              "title": "Read the translation",
+              "body": "Follow the headings, paragraphs and lists."
+            },
+            {
+              "title": "Check the source text",
+              "body": "Tap a translated paragraph to see the original."
+            }
+          ]
+        },
         "abilities": {
           "title": "What you can do",
           "items": [
             {
               "title": "View the original photo",
-              "body": "Tap the photo icon in the top right of a scan result to open the original photo and compare it with the corresponding page.",
-              "shotId": "original"
+              "body": "Tap the photo icon in the top right of a scan result to open the original photo and compare it with the corresponding page."
+            },
+            {
+              "title": "Scan multiple pages together",
+              "body": "Add your page photos in order and organise them in one batch."
+            },
+            {
+              "title": "Reopen a past scan",
+              "body": "Search scan history by title or type and reopen the document."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Read a printed notice",
+              "body": "Organise the notice into paragraphs and lists in their original reading order."
+            },
+            {
+              "title": "Check house rules",
+              "body": "Scan the printed house rules and reopen them to check times or charges."
             }
           ]
         }
@@ -262,7 +432,56 @@
         "Translate and replace the draft in the same text field.",
         "Type or use iOS dictation, then choose your language and tone.",
         "Translate clipboard text, copy the result or insert it at the cursor."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "How to use",
+          "items": [
+            {
+              "title": "Enable the keyboard",
+              "body": "Use the in-app guide to add the keyboard and allow Full Access."
+            },
+            {
+              "title": "Switch keyboards",
+              "body": "In a supported text field, use the globe key to select AnyTranslator."
+            },
+            {
+              "title": "Translate a draft",
+              "body": "Type your text, pick the target language and tap Translate."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "Translate in the same field",
+              "body": "Replace the draft with its translation and keep writing in the app you were using."
+            },
+            {
+              "title": "Adjust the tone",
+              "body": "Pick a tone to retranslate the text in the field."
+            },
+            {
+              "title": "Translate clipboard text",
+              "body": "Use keyboard tools to translate copied text. Copy the result or insert it at the cursor."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Reply in a messaging app",
+              "body": "Switch languages in a supported message field and check the translation before sending."
+            },
+            {
+              "title": "Write a work message",
+              "body": "Choose a tone that fits the reader, whether you need a polite request or a concise reply."
+            }
+          ]
+        }
+      }
     },
     "helper": {
       "title": "Helper explains grammar and usage.",
@@ -274,20 +493,59 @@
         "Go further with synonyms, examples, implied meaning and suggested replies.",
         "Save instructions for your field, goals and explanation depth, then reuse them."
       ],
-      "sections": [
-        {
-          "title": "Why Russian and German endings change",
-          "body": "Illustrative examples: see how cases, articles and noun endings work together, from Russian instrumental to German dative.",
+      "guide": {
+        "steps": {
+          "title": "How to use",
           "items": [
-            "Russian: Я говорю с мой друг. → Я говорю с моим другом. For “with”, с takes the instrumental case, so both мой and друг change endings.",
-            "German: Ich spreche mit der Kunde. → Ich spreche mit dem Kunden. mit takes the dative; the weak noun Kunde becomes Kunden."
+            {
+              "title": "Enter a sentence",
+              "body": "Type or paste the sentence in Text translation."
+            },
+            {
+              "title": "Choose an explanation",
+              "body": "In Helper, choose an instruction such as Grammar."
+            },
+            {
+              "title": "Read how the sentence works",
+              "body": "Read why the forms, endings or structures are used."
+            }
           ]
         },
-        {
-          "title": "Save your instructions. Reuse them with new sentences.",
-          "body": "Save instructions such as “Explain Russian cases in my language” or “Explain German endings”. Keep the explanation style you like and focus on what you want to learn."
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "Break down grammar and mistakes",
+              "body": "Choose Grammar, Common mistakes or Word-by-word analysis to see how a sentence fits together."
+            },
+            {
+              "title": "Explore words and examples",
+              "body": "Use synonyms, example sentences or implied meanings to see how wording changes with context."
+            },
+            {
+              "title": "Switch between original and translation",
+              "body": "Switch Helper’s source to explain the original or the translation."
+            },
+            {
+              "title": "Save instructions for reuse",
+              "body": "Save an instruction for your subject, learning goal or level of detail, then reuse it with new sentences."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Study the Russian instrumental case",
+              "body": "Use с моим другом to see why с takes the instrumental case and how мой and друг change."
+            },
+            {
+              "title": "Check German dative endings",
+              "body": "Use mit dem Kunden to compare the dative article and the ending of a weak noun."
+            }
+          ]
         }
-      ]
+      }
     },
     "widget": {
       "title": "Learning Widget: a little review, anytime.",
@@ -298,7 +556,60 @@
         "Read phrases and repeat AI pronunciation from your Home Screen.",
         "Mark items for review or as learned to guide your next session.",
         "Choose content types, topics and difficulty, then add custom instructions."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "How to use",
+          "items": [
+            {
+              "title": "Add it to your Home Screen",
+              "body": "Follow the in-app guide to add the learning Widget."
+            },
+            {
+              "title": "Read and listen",
+              "body": "Read the card and tap the speaker to hear the phrase."
+            },
+            {
+              "title": "Mark your review",
+              "body": "Choose Review again or Remembered to schedule when the card returns."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "Listen on the Home Screen",
+              "body": "Use the speaker on the card to hear the pronunciation and repeat it."
+            },
+            {
+              "title": "Track your reviews",
+              "body": "Mark a card as remembered or due for another review to update its schedule."
+            },
+            {
+              "title": "Choose what to review",
+              "body": "Choose content types, topics and difficulty in settings, with custom instructions where available."
+            },
+            {
+              "title": "Open a Lock Screen card",
+              "body": "Tap the card on the Lock Screen to open the matching phrase in the app."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Review in a spare moment",
+              "body": "Listen to and repeat a useful phrase while you wait for a bus."
+            },
+            {
+              "title": "Prepare for a conversation",
+              "body": "Review vocabulary by topic and practise saying the phrases aloud."
+            }
+          ]
+        }
+      }
     },
     "table": {
       "title": "Table translation: keep every number in its row and column.",
@@ -309,7 +620,60 @@
         "Keep rows and columns together to compare times and prices.",
         "Scroll wide tables horizontally to read every field and unit.",
         "Tap for source text, compare the image and reopen scans from history."
-      ]
+      ],
+      "guide": {
+        "steps": {
+          "title": "How to use",
+          "items": [
+            {
+              "title": "Scan a table",
+              "body": "Choose Table in Organise, add a photo and start the scan."
+            },
+            {
+              "title": "Follow rows and columns",
+              "body": "Use column headings to match times, prices or units to their rows."
+            },
+            {
+              "title": "Scroll across a wide table",
+              "body": "Swipe sideways to see columns beyond the current view."
+            },
+            {
+              "title": "Check an original entry",
+              "body": "Tap a heading or a cell with source text to check the original."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "Keep table structure",
+              "body": "Headings, row labels and data columns remain distinct for easy comparison."
+            },
+            {
+              "title": "Keep row labels in view",
+              "body": "On a wide table, the first column stays in place as you scroll sideways."
+            },
+            {
+              "title": "Compare with the full photo",
+              "body": "Tap the photo icon in the upper right to open the original page photo."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Check transit timetables",
+              "body": "Compare departure times by route and scroll to the next column when needed."
+            },
+            {
+              "title": "Compare ticket and service prices",
+              "body": "Read across rows and columns to compare prices, ticket types and listed units."
+            }
+          ]
+        }
+      }
     },
     "chat": {
       "title": "AI assistant",
@@ -321,35 +685,67 @@
         "Practise scenes and goals for travel, work and daily conversations.",
         "Listen, repeat and practise again; save expressions you'll use."
       ],
-      "sections": [
-        {
-          "title": "Photos and interpreting: ask about what's in front of you",
-          "body": "Add a photo of a sign, notice or message and ask AI for the key points, reminders and next steps. Use voice chat or live interpreting to get your questions across.",
+      "guide": {
+        "steps": {
+          "title": "How to use",
           "items": [
-            "Voice conversation: ask aloud and keep talking.",
-            "Chat with me in English: turn practice into a natural conversation.",
-            "Interpret for me live: connect people speaking different languages.",
-            "Show AI a photo: get the key points and next steps."
+            {
+              "title": "Give the context",
+              "body": "Say where you are going and what you want to practise."
+            },
+            {
+              "title": "Review the examples",
+              "body": "Read the examples and pick one to ask about."
+            },
+            {
+              "title": "Ask about a photo",
+              "body": "Attach a photo and say what you want to know."
+            },
+            {
+              "title": "Get a phrase you can use",
+              "body": "Ask for a line that fits the photo and the conversation."
+            }
           ]
         },
-        {
-          "title": "Practise the language your life calls for",
-          "body": "From restaurants and airports to interviews and work: choose a scene, follow a learning goal or create your own. Practise mainly by answering aloud, ready for the next real conversation.",
+        "abilities": {
+          "title": "What you can do",
           "items": [
-            "Scenario practice: take a role and complete conversation tasks.",
-            "Goal practice: learn phrases, then use them in a scene.",
-            "Custom learning: create a scene or goal for a specific occasion."
+            {
+              "title": "Conversation mode",
+              "body": "Type or send a photo. Where voice is available, ask aloud, request interpreting or ask for a slower example."
+            },
+            {
+              "title": "Get the key points from a photo",
+              "body": "Send a photo of a sign, notice or message and ask for key points, reminders or next steps."
+            },
+            {
+              "title": "Practise a scene or goal",
+              "body": "Set the role, situation and goal in the chat. Start with one phrase, then use it in a conversation."
+            },
+            {
+              "title": "Compare wording and review",
+              "body": "Ask AI to explain corrections to a short Russian or German sentence. Copy useful wording or revisit the chat in history."
+            }
           ]
         },
-        {
-          "title": "Natural examples make speaking easier",
-          "body": "Ask AI to slow down and model pronunciation, accents and rhythm. Then put the sentence into a natural conversation, so practice feels closer to real life."
-        },
-        {
-          "title": "Understand the feedback. Speak more smoothly next time.",
-          "body": "Compare your sentence with natural wording, listen to examples and read explanations. Ask AI to proofread short Russian or German sentences. Save phrases, practise again and revisit conversations in history."
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Practise before a trip",
+              "body": "Rehearse hotel check-in or ordering by asking the assistant to play the other person."
+            },
+            {
+              "title": "Rehearse an interview",
+              "body": "Ask AI to play the interviewer. Practise answering and ask about anything you get stuck on."
+            },
+            {
+              "title": "Prepare a message reply",
+              "body": "Give the assistant the context and ask it to compare possible replies."
+            }
+          ]
         }
-      ]
+      }
     },
     "screen-translation": {
       "title": "Screen translation: understand subtitles and visible text.",
@@ -361,23 +757,67 @@
         "Screen text: read visible text on websites, chats and games.",
         "Picture in Picture and history: compare as you go, revisit it later."
       ],
-      "sections": [
-        {
-          "title": "Video subtitles that keep you with the story",
-          "body": "Translate audio playing in other Apps into subtitles, alongside the original. Follow videos, live streams or language lessons in a language you know, while the content keeps playing."
-        },
-        {
-          "title": "Screen text: keep reading what's in front of you",
-          "body": "Read translations of visible text on websites, chats, games or documents in Picture in Picture. Move the window near a passage or scroll the original page to read the next part."
-        },
-        {
-          "title": "Keep translation nearby. Save useful lines for later.",
-          "body": "Compare translation with the original as you watch or read. Completed text pairs stay in history. Manually bring a phrase into the AI assistant to ask what it means or practise using it.",
+      "guide": {
+        "steps": {
+          "title": "How to use",
           "items": [
-            "Requires iOS/iPadOS 16 or later, Picture in Picture and internet. Protected content may not be translatable."
+            {
+              "title": "Choose a mode",
+              "body": "Pick Video captions or Screen text."
+            },
+            {
+              "title": "Start the broadcast",
+              "body": "Tap Start and confirm Start Broadcast in iOS."
+            },
+            {
+              "title": "Follow the subtitles",
+              "body": "Return to the video and read subtitles in Picture in Picture."
+            },
+            {
+              "title": "Read as you scroll",
+              "body": "Use Screen text and scroll the original page to keep reading."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "Video captions",
+              "body": "Translate the audio of videos or live streams in other apps. Turn on the original text to compare."
+            },
+            {
+              "title": "Visible screen text",
+              "body": "Read translations of visible text on webpages, in chats, games or documents in Picture in Picture."
+            },
+            {
+              "title": "Compare in Picture in Picture",
+              "body": "Move Picture in Picture beside the original content. Requires iOS or iPadOS 16 or later and internet. Protected content may be unavailable for translation."
+            },
+            {
+              "title": "History and follow-up practice",
+              "body": "Revisit the original and translation in history. Copy a line into the AI assistant to ask about usage or practise it."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Watch videos and live streams",
+              "body": "Keep playing the video and use the captions to follow along or compare the original while learning."
+            },
+            {
+              "title": "Read a webpage",
+              "body": "Move the translation window next to a passage and continue as you scroll."
+            },
+            {
+              "title": "Keep up with chats or games",
+              "body": "Read visible messages with Screen text while staying in the original app."
+            }
           ]
         }
-      ]
+      }
     }
   },
   "workflows": {
@@ -628,7 +1068,7 @@
       "reply": {
         "label": "Text translation and tone",
         "title": "The meaning is right.\nThe tone fits too.",
-        "body": "Professional when it matters. Friendly when it fits. Seven tones help every sentence sound like you.",
+        "body": "Professional when it matters. Friendly when it fits. Six tones help every sentence sound like you.",
         "action": "Explore text translation"
       },
       "practice": {
