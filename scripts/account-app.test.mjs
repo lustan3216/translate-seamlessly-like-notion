@@ -153,18 +153,21 @@ test("the standalone page keeps expired sessions on the page and offers email su
   assert.deepEqual([...page.matchAll(/href="([^"]*)"/g)].map(([, href]) => href), ["mailto:support@anytranslator.app"]);
 });
 
-test("the App plan selector admits deferred options only when purchases are disabled", async () => {
-  const current = { groupLevel: 4, period: "monthly" };
+test("the App plan selector keeps the current plan and only deferred alternatives when purchases are disabled", async () => {
+  const current = { id: "voice-yearly", groupLevel: 4, period: "yearly" };
   const candidates = [
+    current,
     { id: "upgrade", groupLevel: 3, period: "monthly" },
     { id: "downgrade", groupLevel: 5, period: "monthly" },
-    { id: "cross-period", groupLevel: 4, period: "yearly" },
+    { id: "cross-period", groupLevel: 4, period: "monthly" },
     { id: "upgrade-cross-period", groupLevel: 3, period: "yearly" },
     { id: "unknown", period: "yearly" },
   ];
-  const timing = (candidate) => planChangeTiming(current, candidate);
-  assert.deepEqual(appPlanOffers(candidates, timing).map(({ id }) => id), ["downgrade", "cross-period"]);
-  assert.deepEqual(appPlanOffers(candidates, timing, "cross-period"), []);
+  const timing = (candidate) => candidate.id === current.id ? undefined : planChangeTiming(current, candidate);
+  assert.deepEqual(appPlanOffers(candidates, timing, current.id).map(({ id }) => id), [current.id, "downgrade", "cross-period"]);
+  assert.deepEqual(appPlanOffers(candidates, timing, current.id, "cross-period"), [current]);
+  assert.deepEqual(appPlanOffers(candidates, () => undefined, current.id), [current]);
+  assert.equal(appAllowsPlanAction(timing(current)), false);
   assert.equal(appAllowsPlanAction("checkout"), false);
   const page = await source("src/pages/AccountSubscription.tsx");
   assert.match(page, /const visibleOffers = !appPage \|\| canCheckout \? offers : canCancel\s*\? appPlanOffers\(/);

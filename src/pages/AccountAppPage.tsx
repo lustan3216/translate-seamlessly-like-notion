@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactElement } from "react";
 import { Helmet } from "react-helmet-async";
 import { useMarketing } from "@/components/marketing/MarketingShell";
 import { LanguageProvider } from "@/contexts/LanguageContext";
@@ -38,6 +38,7 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
   }, [launch, refresh]);
 
   const tag = localeForCode(locale).tag;
+  const support = <a className="mk-button mk-button-secondary" href="mailto:support@anytranslator.app">{m("contact.support")}</a>;
   return (
     <main className="marketing-site" lang={tag} dir="ltr" aria-labelledby="account-management-title" aria-busy={load.phase === "loading"}>
       <Helmet htmlAttributes={{ lang: tag }}>
@@ -50,8 +51,11 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
           <h1 id="account-management-title">{title}</h1>
         </header>
         {load.phase === "ready" ? <AppBilling key={load.account.id} account={load.account} initialBilling={load.billing}
+          support={support}
           onSessionExpired={() => setLoad({ phase: "expired" })} /> : load.phase === "loading" ? (
-          <div className="mk-account-skeleton" aria-hidden="true" />
+          <div className="mk-account-skeleton mk-account-management-loading" aria-hidden="true">
+            <span /><span /><span /><span />
+          </div>
         ) : (
           <div className="mk-account-notice">
             <p role="alert">{load.phase === "expired" ? subscriptionCopy[locale].appLinkExpired : messages.error}</p>
@@ -61,17 +65,18 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
             }}>{messages.retry}</button>}
           </div>
         )}
-        {load.phase !== "loading" && (
-          <a className="mk-button mk-button-secondary" href="mailto:support@anytranslator.app">{m("contact.support")}</a>
+        {load.phase !== "loading" && load.phase !== "ready" && (
+          <div className="mk-account-actions mk-subscription-secondary">{support}</div>
         )}
       </div>
     </main>
   );
 }
 
-function AppBilling({ account, initialBilling, onSessionExpired }: {
+function AppBilling({ account, initialBilling, support, onSessionExpired }: {
   account: SharedAccount;
   initialBilling: AccountBilling;
+  support: ReactElement;
   onSessionExpired: () => void;
 }) {
   const { currentLanguage } = useMarketing();
@@ -106,7 +111,7 @@ function AppBilling({ account, initialBilling, onSessionExpired }: {
     <div className="mk-subscription" aria-busy={busy}>
       {error && <p className="mk-account-notice" role="alert">{error}</p>}
       <AccountSubscription accountId={account.id} billing={billing} catalog={catalog} busy={busy} allowActions allowCheckout
-        appPage run={run} onBillingChange={setBilling} />
+        appPage secondaryActions={support} run={run} onBillingChange={setBilling} />
     </div>
   );
 }

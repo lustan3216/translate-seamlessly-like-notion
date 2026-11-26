@@ -11,8 +11,9 @@ export function appAllowsPlanAction(timing?: PlanChangeTiming | "checkout") {
 }
 
 export function appPlanOffers(offers: readonly CreemOffer[], timingFor: (offer: CreemOffer) => PlanChangeTiming | undefined,
-  pendingOfferId?: CreemOffer["id"]) {
+  currentOfferId: string | null | undefined, pendingOfferId?: CreemOffer["id"]) {
   return offers.filter((offer) => {
+    if (offer.id === currentOfferId) return true;
     const timing = timingFor(offer);
     return offer.id !== pendingOfferId && appAllowsPlanAction(timing) && !(pendingOfferId && timing === "deferred");
   });

@@ -36,6 +36,7 @@ type Props = {
   allowCheckout: boolean;
   allowActions: boolean;
   appPage?: boolean;
+  secondaryActions?: ReactNode;
   run: (action: () => Promise<void>) => Promise<void>;
   onBillingChange: (status: AccountBilling) => void;
 };
@@ -51,7 +52,7 @@ function planState(entitlement: AccountBilling["entitlement"]) {
 }
 
 export default function AccountSubscription({
-  accountId, billing, catalog, busy, allowCheckout, allowActions, appPage = false, run, onBillingChange,
+  accountId, billing, catalog, busy, allowCheckout, allowActions, appPage = false, secondaryActions, run, onBillingChange,
 }: Props) {
   const { currentLanguage, copy: marketing, m } = useMarketing();
   const locale = currentLanguage.code;
@@ -118,7 +119,7 @@ export default function AccountSubscription({
   const canCheckout = allowActions && allowCheckout && !pending && !hasPlan && billing.enabled === true
     && (!appPage || appAllowsPlanAction("checkout"));
   const visibleOffers = !appPage || canCheckout ? offers : canCancel
-    ? appPlanOffers(offers, (offer) => timingFor(offer, subscription.offerId, currentPeriod), confirmedChange?.offerId) : [];
+    ? appPlanOffers(offers, (offer) => timingFor(offer, subscription.offerId, currentPeriod), currentOfferId, confirmedChange?.offerId) : [];
   const availableTiers = tiers.filter((tab) => visibleOffers.some(({ plan }) => plan === tab));
   const initialTier = currentTier && availableTiers.includes(currentTier) ? currentTier : availableTiers[0];
   const tier = chosenTier && availableTiers.includes(chosenTier) ? chosenTier : (initialTier ?? "standard");
@@ -126,11 +127,11 @@ export default function AccountSubscription({
     const offer = visibleOffers.find((entry) => entry.plan === tier && entry.period === period);
     return offer ? [offer] : [];
   });
-  const selected = options.find(({ id }) => id === selection);
+  const selected = options.find(({ id }) => id === selection && (!hasPlan || id !== currentOfferId));
   const previewOffer = selected ?? options.find(({ id }) => id === currentOfferId)
     ?? options.find(({ period }) => period === "monthly") ?? options.at(-1);
   const showChange = canCancel && !!subscription?.offerId && options.length > 0;
-  const changesCurrent = showChange && !!selected && selected.id !== currentOfferId;
+  const changesCurrent = showChange && !!selected;
   const timing = changesCurrent ? timingFor(selected, subscription.offerId, currentPeriod) : undefined;
   const canChange = changesCurrent && !!timing && selected.id !== confirmedChange?.offerId
     && !(timing === "deferred" && confirmedChange);
@@ -324,15 +325,27 @@ export default function AccountSubscription({
 
   const operationNote = updated === "cancel-pending-change" ? copy.changeCanceled : copy.updated;
   const benefitsOfferId = appPage ? currentOfferId : previewOffer?.id;
+  const benefits = benefitsOfferId && planBenefits(quota(benefitsOfferId));
   const retryAppQuotas = appPage && quotaQuery.isError && !quotaQuery.data;
   const webQuotaProblem = !appPage && (quotaQuery.isError || (!quotaQuery.isPending && changesCurrent && !timing));
   const catalogUnavailable = !catalog.loading && !catalog.offers;
+  const resumeControl = canResume && (
+    <button className={appPage ? "mk-button" : "mk-button mk-button-secondary"} type="button" disabled={busy}
+      onClick={() => void submitPlanChange("resume")}>{copy.resumeSubscription}</button>
+  );
   return (
     <div className="mk-subscription">
       {(entitlement || subscription) && !currentShown && (
         <div className="mk-subscription-current">
-          {currentTier && <strong>{planTitle(currentTier, currentPeriod)}</strong>}
-          {badges()}
+          {appPage ? (
+            <div className="mk-subscription-summary-head">
+              {currentTier && <h2>{planTitle(currentTier, currentPeriod)}</h2>}
+              {badges()}
+            </div>
+          ) : <>
+            {currentTier && <strong>{planTitle(currentTier, currentPeriod)}</strong>}
+            {badges()}
+          </>}
           {appPage && currentOffer && <p className="mk-subscription-price"><bdi>{formatCreemPrice(locale, currentOffer)}</bdi> <small>{pricing[priceUnit[currentOffer.period]]}</small></p>}
           {nextCharge && <p>{copy.nextCharge.replace("{date}", formatter.format(nextCharge.date))
             .replace("{amount}", formatCreemPrice(locale, nextCharge.offer))}</p>}
@@ -351,11 +364,17 @@ export default function AccountSubscription({
       )}
 
       {retryAppQuotas ? (
-        <section aria-label={m("nav.features")}>
+        <section className="mk-subscription-quota-retry" aria-label={m("nav.features")}>
+          <span>{m("nav.features")}</span>
           <button type="button" className="mk-button mk-button-secondary" disabled={busy || quotaQuery.isFetching}
             onClick={() => void quotaQuery.refetch()}>{messages.retry}</button>
         </section>
-      ) : benefitsOfferId && planBenefits(quota(benefitsOfferId))}
+      ) : appPage && benefits ? (
+        <details className="mk-subscription-benefits-details">
+          <summary>{m("nav.features")}</summary>
+          {benefits}
+        </details>
+      ) : benefits}
 
       {(webQuotaProblem || catalogUnavailable) && (
         <div className="mk-account-notice">
@@ -370,6 +389,7 @@ export default function AccountSubscription({
       {catalog.loading ? <div aria-hidden="true" className="mk-account-skeleton" />
         : visibleOffers.length > 0 && (
           <>
+            {appPage && <h2 className="mk-subscription-choice-title">{messages.choosePlan}</h2>}
             <div className="mk-subscription-tiers" role="group" aria-label={messages.choosePlan}>
               {availableTiers.map((tab) => (
                 <button key={tab} type="button" aria-pressed={tier === tab} disabled={busy}
@@ -379,22 +399,22 @@ export default function AccountSubscription({
             <fieldset className="mk-subscription-options" disabled={busy}>
               <legend className="mk-sr-only">{pricing.billing}</legend>
               {options.map((offer) => {
-                const current = currentShown && offer.id === currentOfferId;
+                const current = hasPlan && offer.id === currentOfferId;
                 const data = quota(offer.id);
                 return (
                   <label className="mk-subscription-option" key={offer.id}>
-                    <input type="radio" name="account-offer" value={offer.id} checked={offer.id === selected?.id}
-                      onChange={() => { setSelection(offer.id); setUpdated(undefined); }} />
-                    <span aria-hidden="true" className="mk-subscription-mark"><HugeIcon name="tick-02" /></span>
+                    <input type="radio" name="account-offer" value={offer.id} checked={offer.id === selected?.id} disabled={current}
+                      onChange={current ? undefined : () => { setSelection(offer.id); setUpdated(undefined); }} />
+                    <span aria-hidden="true" className="mk-subscription-mark">{!appPage && <HugeIcon name="tick-02" />}</span>
                     <span className="mk-subscription-option-copy">
                       <strong>{planTitle(offer.plan, offer.period)}</strong>
-                      {current && badges()}
-                      {!current && <span className="mk-subscription-price"><bdi>{formatCreemPrice(locale, offer)}</bdi> <small>{pricing[priceUnit[offer.period]]}</small></span>}
+                      {current && (appPage ? <span className="mk-subscription-badge">{copy.inUse}</span> : badges())}
+                      {(!current || appPage) && <span className="mk-subscription-price"><bdi>{formatCreemPrice(locale, offer)}</bdi> <small>{pricing[priceUnit[offer.period]]}</small></span>}
                       {data && <>
                         <span>{marketing.pricing.voiceLabel} · {allowance(data.audioMinutes, data.quotaPeriod)}</span>
                         <span>{marketing.pricing.chatVoiceLabel} · {allowance(data.voiceAgentMinutes, data.quotaPeriod)}</span>
                       </>}
-                      {current && currentNote && <span>{currentNote}</span>}
+                      {current && !appPage && currentNote && <span>{currentNote}</span>}
                     </span>
                   </label>
                 );
@@ -438,7 +458,9 @@ export default function AccountSubscription({
         </div>
       )}
 
-      {(canCancel || canResume || portalAction) && (
+      {appPage && resumeControl && <div className="mk-subscription-primary">{resumeControl}</div>}
+
+      {(canCancel || (!appPage && canResume) || portalAction || secondaryActions) && (
         <div className="mk-account-actions mk-subscription-secondary">
           {canCancel && confirmControl({
             label: copy.cancelSubscription,
@@ -446,12 +468,12 @@ export default function AccountSubscription({
             onConfirm: () => void submitPlanChange("cancel"),
             secondary: true,
           })}
-          {canResume && <button className="mk-button mk-button-secondary" type="button"
-            disabled={busy} onClick={() => void submitPlanChange("resume")}>{copy.resumeSubscription}</button>}
+          {!appPage && resumeControl}
           {portalAction && (
             <button className="mk-button mk-button-secondary" type="button" disabled={busy}
               onClick={() => void openPortal()}>{!appPage && portalAction === "portalDetails" ? `Creem Portal · ${copy.portalDetails}` : copy[portalAction]}</button>
           )}
+          {secondaryActions}
         </div>
       )}
     </div>
