@@ -17,7 +17,7 @@ import { sharedAccountCopy } from "@/translations/marketing/shared-account";
 import { subscriptionCopy } from "@/translations/marketing/shared-account-subscription";
 import pricingCopy from "@/translations/marketing/pricing.json";
 import creemCopy from "@/translations/marketing/creem-preview.json";
-import { appAllowsPlanAction, planChangeTiming } from "./account-subscription-policy";
+import { appAllowsPlanAction, appNextCharge, planChangeTiming } from "./account-subscription-policy";
 
 const tiers = ["standard", "voice"] as const;
 const periods = ["weekly", "monthly", "yearly"] as const;
@@ -319,6 +319,7 @@ export default function AccountSubscription({
     const appSelection = appOffers.find(({ id }) => id === selection);
     const appTiming = appSelection && timingFor(appSelection, subscription?.offerId, currentPeriod);
     const scheduledOffer = confirmedChange && offers.find(({ id }) => id === confirmedChange.offerId);
+    const nextCharge = appNextCharge(subscription, offers);
 
     const price = (offer: CreemOffer) => <><bdi>{formatCreemPrice(locale, offer)}</bdi> {pricing[priceUnit[offer.period]]}</>;
     return (
@@ -329,6 +330,8 @@ export default function AccountSubscription({
             {state && <span className="app-account-badge">{copy[state]}</span>}
           </div>
           {currentOffer && <p>{price(currentOffer)}</p>}
+          {nextCharge && <p>{copy.nextCharge.replace("{date}", formatter.format(nextCharge.date))
+            .replace("{amount}", formatCreemPrice(locale, nextCharge.offer))}</p>}
           {state === "scheduledCancel" && currentNote ? <p>{currentNote}</p>
             : state !== "grace" && accessEnd && <p>{messages.paidUntil.replace("{date}", accessEnd)}</p>}
         </section>
