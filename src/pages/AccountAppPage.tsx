@@ -38,7 +38,7 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
   }, [launch, refresh]);
 
   const tag = localeForCode(locale).tag;
-  const support = <a className="mk-button mk-button-secondary" href="mailto:support@anytranslator.app">{m("contact.support")}</a>;
+  const support = <a className="mk-text-link" href="mailto:support@anytranslator.app">{m("contact.support")}</a>;
   return (
     <main className="marketing-site" lang={tag} dir="ltr" aria-labelledby="account-management-title" aria-busy={load.phase === "loading"}>
       <Helmet htmlAttributes={{ lang: tag }}>
@@ -46,14 +46,14 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <div className="mk-wrap mk-account-page mk-account-management">
-        <header className="mk-page-intro">
-          <div className="mk-brand"><img src="/app-preview/logo.png" width="36" height="36" alt="AnyTranslator" /></div>
-          <h1 id="account-management-title">{title}</h1>
+        <header>
+          <div className="mk-brand"><img src="/app-preview/logo.png" width="30" height="30" alt="AnyTranslator" /></div>
+          <div className="mk-page-intro"><h1 id="account-management-title">{title}</h1></div>
         </header>
         {load.phase === "ready" ? <AppBilling key={load.account.id} account={load.account} initialBilling={load.billing}
           support={support}
           onSessionExpired={() => setLoad({ phase: "expired" })} /> : load.phase === "loading" ? (
-          <div className="mk-account-skeleton mk-account-management-loading" aria-hidden="true">
+          <div className="mk-price-card mk-price-pro mk-account-management-loading" aria-hidden="true">
             <span /><span /><span /><span />
           </div>
         ) : (
@@ -66,7 +66,7 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
           </div>
         )}
         {load.phase !== "loading" && load.phase !== "ready" && (
-          <div className="mk-account-actions mk-subscription-secondary">{support}</div>
+          <div className="mk-price-card mk-price-pro mk-subscription-secondary">{support}</div>
         )}
       </div>
     </main>

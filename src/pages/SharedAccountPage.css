@@ -285,25 +285,6 @@
   white-space: normal;
 }
 
-@font-face {
-  font-family: CeraRound;
-  src: url("../../drafts/landing-page-20261008/fonts/CeraRound-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: CeraRound;
-  src: url("../../drafts/landing-page-20261008/fonts/CeraRound-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-}
-
-.mk-account-management,
-.mk-account-management-dialog {
-  font-family: CeraRound, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
 .mk-account-management {
   max-width: 520px;
   min-height: 100dvh;
@@ -314,28 +295,15 @@
 }
 
 .mk-account-management .mk-page-intro {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 0;
-  text-align: start;
+  padding-block: 32px 16px;
 }
 
-.marketing-site .mk-account-management .mk-page-intro h1 {
-  font-size: clamp(24px, 4vw, 32px);
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  margin-inline: 0;
-}
-
-.mk-account-management .mk-subscription-current,
-.mk-account-management-loading {
-  background: var(--mk-sky);
-  border-radius: 16px;
+.mk-account-management .mk-price-card {
   padding: 20px;
+  border: 0;
 }
 
-.mk-account-management-loading {
+.mk-account-management .mk-account-management-loading {
   display: grid;
   gap: 12px;
 }
@@ -358,37 +326,23 @@
   width: 48%;
 }
 
-.mk-subscription-summary-head {
-  display: flex;
+.mk-account-management .mk-subscription-summary .mk-card-top {
   flex-wrap: wrap;
-  align-items: center;
-  gap: 6px 12px;
+  align-items: baseline;
 }
 
-.marketing-site .mk-account-management :is(.mk-subscription-summary-head h2, .mk-subscription-choice-title) {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  text-wrap: wrap;
-}
-
-.mk-account-management .mk-subscription-current p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--mk-muted);
-}
-
-.mk-account-management .mk-subscription-current .mk-subscription-price {
-  margin-block: 8px;
-  font-size: 32px;
-  line-height: 1.15;
-  font-weight: 700;
+.mk-account-management .mk-subscription-summary h3 {
+  margin-block-start: 12px;
   font-variant-numeric: tabular-nums;
-  color: var(--mk-ink);
 }
 
-.mk-account-management .mk-subscription-price small {
-  font-weight: 400;
+.mk-account-management .mk-subscription-summary p {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.mk-account-management .mk-subscription-summary p + p {
+  margin-block-start: 4px;
 }
 
 .mk-account-management .mk-account-notice {
@@ -396,35 +350,12 @@
   line-height: 1.55;
 }
 
-.mk-subscription-benefits-details,
-.mk-subscription-quota-retry {
-  border-block-end: 1px solid var(--mk-line);
+.mk-account-management .mk-faq {
+  display: block;
+  padding-block: 0;
 }
 
-.mk-subscription-benefits-details summary,
-.mk-subscription-quota-retry {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  min-height: 48px;
-}
-
-.mk-subscription-benefits-details summary {
-  cursor: pointer;
-  list-style: none;
-}
-
-.mk-subscription-benefits-details summary::-webkit-details-marker {
-  display: none;
-}
-
-.mk-subscription-benefits-details summary:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.mk-subscription-benefits-details summary::after {
+.mk-account-management .mk-faq summary::after {
   content: "";
   width: 8px;
   height: 8px;
@@ -436,76 +367,72 @@
   transition: transform 0.2s;
 }
 
-.mk-subscription-benefits-details[open] summary::after {
+.mk-account-management .mk-faq[open] summary::after {
   transform: translateY(2px) rotate(225deg);
 }
 
 .mk-account-management .mk-subscription-benefits {
   background: transparent;
-  padding: 0 0 8px;
+  gap: 12px;
+  padding: 0 0 20px;
 }
 
 .mk-account-management .mk-subscription-benefits li {
   display: block;
+  padding: 0;
+  border: 0;
 }
 
 .mk-account-management .mk-subscription-quota-retry {
+  flex-direction: row;
   flex-wrap: wrap;
-  padding-block-end: 8px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 8px;
 }
 
 .mk-account-management .mk-subscription-quota-retry .mk-button {
   width: auto;
   min-height: 44px;
+  margin: 0;
   padding: 8px 16px;
 }
 
-.marketing-site .mk-account-management .mk-subscription-choice-title {
-  margin-block-start: 4px;
+.mk-account-management .mk-section-heading {
+  margin: 16px 0 0;
 }
 
-.mk-account-management .mk-subscription-tiers {
-  width: 100%;
-  border-radius: 12px;
+.mk-account-management .mk-pricing-periods {
+  margin: 0;
 }
 
-.mk-account-management .mk-subscription-tiers button {
-  flex: 1 1 0;
-  padding-inline: 8px;
-  border-radius: 8px;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.mk-account-management .mk-subscription-tiers button[aria-pressed="true"] {
-  font-weight: 700;
+.mk-account-management .mk-pricing-periods button {
+  max-width: 100%;
 }
 
 .mk-account-management .mk-subscription-options {
-  gap: 0;
-  border-block-start: 1px solid var(--mk-line);
+  display: grid;
+  align-items: stretch;
+  gap: 4px;
+  padding: 8px;
 }
 
 .mk-account-management .mk-subscription-option {
   min-height: 48px;
-  padding: 12px 8px;
+  padding: 12px;
   border: 0;
-  border-block-end: 1px solid var(--mk-line);
-  border-radius: 0;
   background: transparent;
   transition: background-color 0.2s, transform 0.2s;
 }
 
 .mk-account-management .mk-subscription-option:has(input:checked) {
-  background: var(--mk-surface);
+  background: var(--mk-bg);
 }
 
 @media (hover: hover) {
-  .mk-account-management .mk-subscription-tiers button:hover:not(:disabled) {
-    color: var(--mk-ink);
-  }
-
   .mk-account-management .mk-subscription-option:has(input:hover:not(:disabled)) {
-    background: var(--mk-surface);
+    background: var(--mk-bg);
   }
 }
 
@@ -559,32 +486,29 @@
 .mk-account-management .mk-subscription-secondary {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 0;
-  border-block-start: 1px solid var(--mk-line);
+  padding-block: 8px;
 }
 
-.mk-account-management .mk-subscription-secondary .mk-button {
-  justify-content: flex-start;
+.mk-account-management .mk-subscription-secondary .mk-text-link {
   min-height: 48px;
-  padding-inline: 0;
-  border: 0;
-  border-block-end: 1px solid var(--mk-line);
-  border-radius: 0;
-  color: var(--mk-muted) !important;
+  font-size: 14px;
+  color: var(--mk-muted);
   text-align: start;
 }
 
-.marketing-site .mk-account-management :is(.mk-subscription-secondary, .mk-subscription-quota-retry, .mk-subscription-tiers) button:disabled {
+.marketing-site .mk-account-management button:disabled {
   opacity: 1;
   color: var(--mk-muted) !important;
-  background: transparent;
 }
 
-.mk-account-management .mk-subscription-secondary .mk-button:hover {
-  transform: none;
+.marketing-site .mk-account-management .mk-pricing-periods button[aria-pressed="true"]:disabled {
+  background: var(--mk-surface);
 }
 
-.mk-account-management .mk-subscription-secondary .mk-button:active:not(:disabled),
+.marketing-site .mk-account-management .mk-subscription-primary button.mk-button:disabled {
+  border-color: transparent;
+}
+
 .mk-account-management .mk-subscription-option:has(input:active:not(:disabled)),
 .mk-account-management-dialog .mk-button:active:not(:disabled) {
   transform: translateY(1px);
