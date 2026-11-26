@@ -339,3 +339,57 @@
     width: 100%;
   }
 }
+
+/* Scope the deeper account palette to account content and its portals. */
+:is(.mk-account-page, .mk-page-intro:has(> .mk-account-skeleton-title), .mk-subscription-dialog,
+    body:has(.mk-account-page .mk-language-trigger) .mk-language-menu[data-marketing-language-menu]) {
+  --mk-muted: #5e5e5b;
+  --mk-line: #dddbd7;
+  --mk-surface: #f0efec;
+  --mk-sand: #eeebe3;
+  --mk-mint: #e7ede7;
+  --mk-account-surface-ink: #111111;
+}
+
+:root[data-theme="dark"] :is(.mk-account-page, .mk-page-intro:has(> .mk-account-skeleton-title), .mk-subscription-dialog,
+    body:has(.mk-account-page .mk-language-trigger) .mk-language-menu[data-marketing-language-menu]) {
+  --mk-muted: #b5b5b0;
+  --mk-line: #454544;
+  --mk-surface: #212123;
+  --mk-sand: #272520;
+  --mk-mint: #202924;
+  --mk-account-surface-ink: var(--mk-ink);
+  --mk-account-dialog-bg: #141416;
+  --mk-account-menu-hover: #303032;
+}
+
+.mk-account-page :is(.mk-account-notice, .mk-subscription-current, .mk-subscription-benefits,
+    .mk-subscription-option, .mk-billing-return-badge, .mk-theme-toggle:hover, .mk-language-trigger:hover) {
+  color: var(--mk-account-surface-ink);
+}
+
+.mk-account-page :is(.mk-account-notice .mk-button-secondary, .mk-button-secondary:hover) {
+  color: var(--mk-account-surface-ink) !important;
+}
+
+
+
+.mk-subscription-dialog {
+  --primary-foreground: 240 4% 10%;
+  background: var(--mk-account-dialog-bg, var(--mk-surface));
+  border-color: var(--mk-line);
+  color: var(--mk-account-surface-ink);
+}
+
+.mk-subscription-dialog .text-muted-foreground {
+  color: var(--mk-muted);
+}
+
+.mk-subscription-dialog .border-border-light {
+  border-color: var(--mk-line);
+}
+
+body:has(.mk-account-page .mk-language-trigger) .mk-language-menu[data-marketing-language-menu] {
+  --mk-language-ink: var(--mk-account-surface-ink);
+  --mk-language-hover: var(--mk-account-menu-hover, var(--mk-surface));
+}
