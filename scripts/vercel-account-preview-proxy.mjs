@@ -8,12 +8,13 @@ const guestStatus = "billing/guest-status";
 const guestPostRoutes = new Set(["billing/guest-checkout", guestResend]);
 const subscriptionWrites = new Set(["billing/change-plan", "billing/cancel-pending-change", "billing/cancel", "billing/resume"]);
 const billingAccountPosts = new Set(["billing/checkout", ...subscriptionWrites]);
-const livePostRoutes = new Set(["email-access", "email-access/request"]);
+const livePostRoutes = new Set(["email-access/request"]);
 const getRoutes = new Set([billingCatalog, guestStatus, "session", "billing/status"]);
 const postRoutes = new Set([
   "passkeys/register/options", "passkeys/register/verify",
   "passkeys/login/options", "passkeys/login/verify",
   "pair/preview", "pair/approve", "logout", "delete",
+  "email-access",
   "billing/portal", "billing/app-link", ...billingAccountPosts, ...guestPostRoutes,
 ]);
 const prefix = "/api/account/";

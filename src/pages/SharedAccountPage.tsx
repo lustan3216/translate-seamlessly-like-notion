@@ -7,7 +7,7 @@ import {
 } from "@/lib/shared-account-client";
 import { createPasskey, getPasskey, type LoginOptions, type RegistrationOptions } from "@/lib/passkeys";
 import { sharedAccountCopy } from "@/translations/marketing/shared-account";
-import { isLiveAccountHost, sharedAccountLiveAccountEnabled, sharedAccountPreviewEnabled, useCreemOffer } from "@/lib/shared-account-preview";
+import { isLiveAccountHost, sharedAccountEnabled, sharedAccountLiveAccountEnabled, sharedAccountPreviewEnabled, useCreemOffer } from "@/lib/shared-account-preview";
 import { accountDeliveryCopy } from "@/translations/marketing/shared-account-delivery";
 import { guestCheckoutCopy } from "@/translations/marketing/shared-account-guest";
 import appClaimCopy from "@/translations/marketing/app-claim.json";
@@ -100,7 +100,7 @@ function AccountManagement() {
   const params = new URLSearchParams(location.search);
   const billingReturn = params.get("billing") === "return";
   const guestReturning = sharedAccountLiveAccountEnabled && billingReturn;
-  const emailAccessHash = sharedAccountLiveAccountEnabled && /^#access(?:=|$)/.test(location.hash) ? location.hash : "";
+  const emailAccessHash = sharedAccountEnabled && /^#access(?:=|$)/.test(location.hash) ? location.hash : "";
   const emailAccessPending = Boolean(emailAccessHash || emailAccess);
   const sessionLoading = emailAccessPending || (account === undefined && !sessionError);
   const hasPasskeys = typeof window !== "undefined" && window.isSecureContext

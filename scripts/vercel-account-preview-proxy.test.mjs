@@ -97,6 +97,16 @@ test("account sessions and public billing stay on their assigned origins", async
   assert.equal(previewCatalog.headers["set-cookie"], undefined);
   assert.equal(request.headers.Cookie, undefined);
 
+  const redemption = await call({
+    url: "/api/account/email-access",
+    body: Buffer.from(JSON.stringify({ token: "A".repeat(43) })),
+  });
+  assert.equal(redemption.statusCode, 200);
+  assert.equal(request.url, `${env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN}/v1/account/email-access`);
+  assert.deepEqual(redemption.headers["set-cookie"], [session, clear]);
+  assert.equal(redemption.headers["cache-control"], "private, no-store");
+  assert.equal(redemption.headers["referrer-policy"], "no-referrer");
+
   for (const [options, status] of [
     [{ headers: { host: "www.anytranslator.app", "x-forwarded-host": env.VERCEL_URL } }, 404],
     [{ headers: { origin: "https://other.vercel.app" } }, 403],
@@ -106,7 +116,6 @@ test("account sessions and public billing stay on their assigned origins", async
     [{ url: "/api/account-preview?account_route=session&account_route=delete" }, 404],
     [{ url: "/api/account/session?account_route=delete" }, 404],
     [{ url: "/api/account/pair/start" }, 404],
-    [{ url: "/api/account/email-access" }, 404],
     [{ url: "/api/account/email-access/request" }, 404],
     [{ method: "GET" }, 405],
     [{ headers: { "content-type": "text/plain" } }, 415],
@@ -135,7 +144,7 @@ test("account sessions and public billing stay on their assigned origins", async
     assert.deepEqual(response.body, { error: "not_configured" });
   }
   process.env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN = env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN;
-  assert.equal(upstream.mock.callCount(), 4);
+  assert.equal(upstream.mock.callCount(), 5);
 
   const guestOffer = Buffer.from(JSON.stringify({ attemptId: "local-fixture", offer: offers[1], locale: "zh-tw" }));
   for (const { route, body, status, payload, authenticated } of [
