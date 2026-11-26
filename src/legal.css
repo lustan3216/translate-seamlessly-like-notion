@@ -1,14 +1,69 @@
-.mk-legal { padding-block: 64px 96px; }
-.mk-legal > div { max-width: 760px; }
-.mk-legal h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.2; margin-bottom: 48px; overflow-wrap: anywhere; }
-.mk-legal h2 { line-height: 1.35; border-color: var(--mk-line); }
-.mk-legal, .mk-legal [class*="text-gray-"], .mk-legal [class*="text-blue-"], .mk-legal [class*="text-green-"] { color: var(--mk-ink); }
-.mk-legal .prose { font-size: 17px; line-height: 1.85; }
-.mk-legal .prose p { margin-bottom: 1em; }
-.mk-legal .prose h2 { margin-block: 1.8em .65em; }
-.mk-legal .prose h3 { margin-block: 1.4em .5em; }
-.mk-legal .prose > div p:last-child { margin-bottom: 0; }
-.mk-legal [class*="bg-blue-"], .mk-legal [class*="bg-green-"] { background: var(--mk-surface); border-color: var(--mk-line); }
-.mk-legal a { color: var(--mk-ink); text-underline-offset: 4px; }
-.mk-legal a:hover { text-decoration: underline; }
-@media (max-width: 767px) { .mk-legal { padding-block: 40px 64px; } .mk-legal .prose { font-size: 16px; } }
+.mk-legal {
+  padding-block-end: 96px;
+  color: var(--mk-muted);
+  font-size: 17px;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+.mk-legal :is(h3, h4) {
+  margin-block: 24px 12px;
+  line-height: 1.4;
+}
+
+.mk-legal h4 {
+  color: var(--mk-ink);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mk-legal > p,
+.mk-legal ul {
+  margin-block: 0 16px;
+  line-height: inherit;
+}
+
+.mk-legal ul {
+  padding-inline-start: 1.25em;
+  list-style: disc;
+}
+
+.mk-legal li + li {
+  margin-block-start: 8px;
+}
+
+.mk-legal .mk-price-card {
+  gap: 12px;
+  border: 0;
+  margin-block-end: 20px;
+}
+
+.mk-legal .mk-price-card > p {
+  margin: 0;
+  line-height: inherit;
+}
+
+.marketing-site .mk-legal :is(strong, a) {
+  color: var(--mk-ink);
+}
+
+.marketing-site .mk-legal a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.mk-legal a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.mk-legal > footer {
+  margin-block-start: 48px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .mk-legal {
+    padding-block-end: 64px;
+    font-size: 16px;
+  }
+}

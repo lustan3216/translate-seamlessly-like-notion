@@ -1,24 +1,35 @@
 .mk-account-page {
   max-width: 700px;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
   padding-bottom: 72px;
+  overflow-wrap: anywhere;
 }
 
-.mk-account-section {
+.mk-account-page .mk-price-card {
+  padding: 20px;
+  border: 0;
+}
+
+.mk-account-page .mk-account-section {
   display: grid;
   gap: 16px;
   align-items: start;
   justify-items: start;
   min-width: 0;
-  border: 1px solid var(--mk-line);
-  border-radius: 24px;
-  padding: 28px;
 }
 
-.marketing-site .mk-account-section :is(h1, h2) {
+.marketing-site .mk-account-section.mk-price-card > :is(h1, h2) {
   font-size: 24px;
-  overflow-wrap: anywhere;
+}
+
+.marketing-site .mk-account-section.mk-price-card > :is(p, .mk-button) {
+  margin-top: 0;
+}
+
+.mk-account-section > .mk-button {
+  width: auto;
 }
 
 .mk-account-section form {
@@ -29,18 +40,18 @@
   margin-bottom: 12px;
 }
 
-.mk-account-section button:disabled,
-.mk-account-management button:disabled {
-  opacity: 0.5;
+.mk-subscription button:not(.mk-button):disabled {
+  color: var(--mk-muted);
   cursor: default;
-  transform: none;
 }
 
 .mk-account-notice {
   width: 100%;
   padding: 14px 16px;
-  border-radius: 12px;
+  border-radius: var(--mk-radius-panel);
   background: var(--mk-surface);
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .mk-account-notice .mk-button {
@@ -62,8 +73,8 @@
 .mk-account-skeleton {
   width: 100%;
   min-height: 24px;
-  border-radius: 12px;
-  background: var(--mk-surface);
+  border-radius: var(--mk-radius-panel);
+  background: var(--mk-line);
 }
 
 .mk-account-skeleton-title {
@@ -80,25 +91,10 @@
   overflow-wrap: anywhere;
 }
 
-.mk-subscription-current,
-.mk-subscription-benefits,
-.mk-subscription-option {
-  background: var(--mk-surface);
-  border-radius: 16px;
-}
-
-.mk-subscription-current {
-  padding: 16px;
-}
-
-.mk-subscription-current > strong {
-  margin-inline-end: 8px;
-}
-
-.mk-subscription-benefits {
+.mk-subscription .mk-subscription-benefits {
   display: grid;
+  gap: 12px;
   margin: 0;
-  padding: 0 16px;
   list-style: none;
 }
 
@@ -106,16 +102,11 @@
   display: grid;
   grid-template-columns: 20px minmax(0, 1fr);
   gap: 12px;
-  padding-block: 12px;
 }
 
 .mk-subscription-benefits li > div {
   display: grid;
   gap: 2px;
-}
-
-.mk-subscription-benefits li + li {
-  border-block-start: 1px solid var(--mk-line);
 }
 
 .mk-subscription-benefits li > div > span,
@@ -124,54 +115,19 @@
   font-size: 0.9em;
 }
 
-.mk-subscription-tiers {
-  display: flex;
-  justify-self: center;
-  gap: 4px;
-  max-width: 100%;
-  padding: 4px;
-  border-radius: 24px;
-  background: var(--mk-surface);
-}
-
-.mk-subscription-tiers button {
-  min-width: 0;
-  min-height: 44px;
-  padding: 6px 16px;
-  border-radius: 22px;
-  color: var(--mk-muted);
-  overflow-wrap: anywhere;
-}
-
-.mk-subscription-tiers button[aria-pressed="true"] {
-  color: var(--mk-ink);
-  background: var(--mk-bg);
-}
-
-.mk-subscription-options {
-  display: grid;
-  gap: 10px;
-  min-width: 0;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
 .mk-subscription-option {
   position: relative;
   display: grid;
   grid-template-columns: 20px minmax(0, 1fr);
   align-items: start;
   gap: 12px;
-  padding: 16px;
-  border: 1px solid transparent;
+  min-height: 48px;
+  padding: 12px;
+  border-radius: var(--mk-radius-panel);
+  background: transparent;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
-.mk-subscription-option:has(input:checked) {
-  border-color: var(--mk-focus);
-}
-
-.mk-subscription-tiers button:focus-visible,
 .mk-subscription-option:has(input:focus-visible) {
   outline: 2px solid var(--mk-focus);
   outline-offset: 2px;
@@ -198,31 +154,13 @@
   height: 20px;
   margin-block-start: 3px;
   border-radius: 50%;
-  background: var(--mk-line);
-}
-
-.mk-subscription-mark > span {
-  visibility: hidden;
-}
-
-.mk-subscription-option input:checked + .mk-subscription-mark {
-  background: var(--mk-ink);
-  color: var(--mk-bg);
-}
-
-.mk-subscription-option input:checked + .mk-subscription-mark > span {
-  visibility: visible;
-}
-
-.mk-subscription-option-copy {
-  display: grid;
-  gap: 2px;
+  border: 1px solid var(--mk-focus);
 }
 
 .mk-subscription-badge {
   justify-self: start;
   padding: 2px 9px;
-  border-radius: 20px;
+  border-radius: var(--mk-radius-pill);
   background: var(--mk-mint);
   font-size: 0.8em;
 }
@@ -256,25 +194,19 @@
   min-height: 52px;
 }
 
-.marketing-site .mk-subscription-primary button.mk-button:disabled {
-  opacity: 1;
-  background: var(--mk-surface);
-  border-color: var(--mk-line);
-  color: var(--mk-muted) !important;
-  cursor: default;
-  transform: none;
-}
-
-.mk-subscription-secondary .mk-button {
-  min-height: 44px;
-}
-
 .mk-subscription-dialog {
   width: min(calc(100% - 32px), 420px);
   max-height: calc(100dvh - 32px);
   overflow-y: auto;
   overflow-wrap: anywhere;
-  border-radius: 16px;
+  border-radius: var(--mk-radius-panel);
+  color: var(--mk-ink);
+  background: var(--mk-bg);
+  border-color: var(--mk-line);
+}
+
+.mk-subscription-dialog p {
+  color: var(--mk-muted);
 }
 
 .mk-subscription-dialog button {
@@ -285,22 +217,19 @@
   white-space: normal;
 }
 
-.mk-account-management {
+.mk-account-management,
+.mk-account-result-page {
   max-width: 520px;
+}
+
+.mk-account-management {
   min-height: 100dvh;
-  grid-template-columns: minmax(0, 1fr);
   align-content: start;
   padding-block: max(24px, env(safe-area-inset-top)) max(40px, env(safe-area-inset-bottom));
-  overflow-wrap: anywhere;
 }
 
 .mk-account-management .mk-page-intro {
   padding-block: 32px 16px;
-}
-
-.mk-account-management .mk-price-card {
-  padding: 20px;
-  border: 0;
 }
 
 .mk-account-management .mk-account-management-loading {
@@ -326,28 +255,27 @@
   width: 48%;
 }
 
-.mk-account-management .mk-subscription-summary .mk-card-top {
+.mk-subscription-summary .mk-card-top {
   flex-wrap: wrap;
   align-items: baseline;
 }
 
-.mk-account-management .mk-subscription-summary h3 {
+.mk-subscription-summary .mk-card-top h3 {
+  margin: 0;
+}
+
+.mk-subscription-summary .mk-price-details h3 {
   margin-block-start: 12px;
   font-variant-numeric: tabular-nums;
 }
 
-.mk-account-management .mk-subscription-summary p {
+.mk-subscription-summary p {
   font-size: 14px;
   line-height: 1.55;
 }
 
-.mk-account-management .mk-subscription-summary p + p {
+.mk-subscription-summary p + p {
   margin-block-start: 4px;
-}
-
-.mk-account-management .mk-account-notice {
-  font-size: 15px;
-  line-height: 1.55;
 }
 
 .mk-account-management .mk-faq {
@@ -372,15 +300,11 @@
 }
 
 .mk-account-management .mk-subscription-benefits {
-  background: transparent;
-  gap: 12px;
   padding: 0 0 20px;
 }
 
 .mk-account-management .mk-subscription-benefits li {
   display: block;
-  padding: 0;
-  border: 0;
 }
 
 .mk-account-management .mk-subscription-quota-retry {
@@ -403,49 +327,34 @@
   margin: 16px 0 0;
 }
 
-.mk-account-management .mk-pricing-periods {
+.mk-subscription .mk-pricing-periods {
   margin: 0;
 }
 
-.mk-account-management .mk-pricing-periods button {
+.mk-subscription .mk-pricing-periods button {
   max-width: 100%;
 }
 
-.mk-account-management .mk-subscription-options {
+.mk-account-page .mk-subscription-options {
   display: grid;
   align-items: stretch;
   gap: 4px;
+  min-width: 0;
+  margin: 0;
   padding: 8px;
 }
 
-.mk-account-management .mk-subscription-option {
-  min-height: 48px;
-  padding: 12px;
-  border: 0;
-  background: transparent;
-  transition: background-color 0.2s, transform 0.2s;
-}
-
-.mk-account-management .mk-subscription-option:has(input:checked) {
+.mk-subscription-option:has(input:checked) {
   background: var(--mk-bg);
 }
 
-@media (hover: hover) {
-  .mk-account-management .mk-subscription-option:has(input:hover:not(:disabled)) {
+@media (hover: hover) and (pointer: fine) {
+  .mk-subscription-option:has(input:hover:not(:disabled)) {
     background: var(--mk-bg);
   }
 }
 
-.mk-account-management .mk-subscription-mark {
-  border: 1px solid var(--mk-focus);
-  background: transparent;
-}
-
-.mk-account-management .mk-subscription-option input:checked + .mk-subscription-mark {
-  background: transparent;
-}
-
-.mk-account-management .mk-subscription-option input:checked + .mk-subscription-mark::after {
+.mk-subscription-option input:checked + .mk-subscription-mark::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -453,22 +362,22 @@
   background: var(--mk-ink);
 }
 
-.mk-account-management .mk-subscription-option input[disabled] + .mk-subscription-mark {
+.mk-subscription-option input[disabled] + .mk-subscription-mark {
   visibility: hidden;
 }
 
-.mk-account-management .mk-subscription-option-copy {
+.mk-subscription-option-copy {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 2px 8px;
 }
 
-.mk-account-management .mk-subscription-option-copy > span:not(.mk-subscription-badge) {
+.mk-subscription-option-copy > span:not(.mk-subscription-badge, .mk-subscription-badges) {
   flex-basis: 100%;
 }
 
-.mk-account-management .mk-subscription-option-copy .mk-subscription-price {
+.mk-subscription-option-copy .mk-subscription-price {
   font-size: 18px;
   font-variant-numeric: tabular-nums;
 }
@@ -479,70 +388,46 @@
   padding: 0;
 }
 
-.mk-account-management .mk-subscription-primary .mk-small {
+.mk-subscription-primary .mk-small {
   margin-block-start: 8px;
 }
 
-.mk-account-management .mk-subscription-secondary {
+.mk-account-page .mk-subscription-secondary {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   padding-block: 8px;
 }
 
-.mk-account-management .mk-subscription-secondary .mk-text-link {
+.mk-subscription-secondary .mk-text-link {
   min-height: 48px;
   font-size: 14px;
   color: var(--mk-muted);
   text-align: start;
 }
 
-.marketing-site .mk-account-management button:disabled {
-  opacity: 1;
-  color: var(--mk-muted) !important;
-}
-
-.marketing-site .mk-account-management .mk-pricing-periods button[aria-pressed="true"]:disabled {
+.marketing-site .mk-subscription .mk-pricing-periods button[aria-pressed="true"]:disabled {
   background: var(--mk-surface);
 }
 
-.marketing-site .mk-account-management .mk-subscription-primary button.mk-button:disabled {
-  border-color: transparent;
-}
-
-.mk-account-management .mk-subscription-option:has(input:active:not(:disabled)),
-.mk-account-management-dialog .mk-button:active:not(:disabled) {
-  transform: translateY(1px);
-}
-
-.mk-account-management-dialog {
-  color: var(--mk-ink);
-  background: var(--mk-bg);
-  border-color: var(--mk-line);
-}
-
-.mk-account-management-dialog p {
-  color: var(--mk-muted);
-}
-
-.mk-account-management-dialog .mk-button:focus-visible {
-  outline: 3px solid var(--mk-focus);
-  outline-offset: 4px;
+@media (prefers-reduced-motion: no-preference) {
+  .mk-subscription-option:has(input:active:not(:disabled)) {
+    transform: translateY(1px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .mk-account-management-dialog,
-  .mk-account-management-dialog .mk-button {
+  .mk-subscription-dialog,
+  .mk-subscription-dialog .mk-button {
     animation: none;
     transition: none;
   }
 }
 
-.mk-billing-return-page {
-  max-width: 544px;
+.mk-account-result-page {
   padding-block-start: clamp(32px, 5vw, 60px);
 }
 
-.mk-billing-return {
+.mk-account-page .mk-billing-return {
   grid-template-columns: minmax(0, 1fr);
   justify-items: center;
   text-align: center;
@@ -576,7 +461,7 @@
   width: min(100%, 280px);
   height: auto;
   aspect-ratio: 1;
-  border-radius: 12px;
+  border-radius: var(--mk-radius-panel);
   overflow: hidden;
 }
 
@@ -585,29 +470,21 @@
     padding-bottom: 40px;
   }
 
-  .mk-account-section {
-    padding: 20px;
-  }
-
-  .mk-account-management-dialog .mk-account-actions {
+  .mk-subscription-dialog .mk-account-actions {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .mk-account-management .mk-button,
-  .mk-account-management-dialog .mk-button {
+  .mk-account-page .mk-button,
+  .mk-subscription-dialog .mk-button {
     width: 100%;
   }
 
-  .mk-billing-return-page {
+  .mk-account-result-page {
     padding-block-start: 24px;
   }
 
   .mk-billing-return-qr {
     display: none;
-  }
-
-  .mk-billing-return > .mk-button {
-    width: 100%;
   }
 }

@@ -36,27 +36,20 @@
 .mk-price-placeholder,
 .mk-price-action-placeholder {
   background: var(--mk-line);
-  border-radius: 999px;
-}
-
-.mk-price-card button:disabled {
-  opacity: 0.5;
-  cursor: default;
-  transform: none;
+  border-radius: var(--mk-radius-pill);
 }
 
 .mk-price-comparison {
-  margin-top: 64px;
+  margin-block-start: var(--mk-heading-gap);
 }
 
 .mk-price-comparison > h2 {
-  margin-bottom: 24px;
   text-align: center;
 }
 
 .mk-price-comparison-frame {
   border: 1px solid var(--mk-line);
-  border-radius: 24px;
+  border-radius: var(--mk-radius-card);
   overflow: hidden;
 }
 
@@ -98,20 +91,8 @@
 }
 
 @media (max-width: 767px) {
-  .mk-price-comparison {
-    margin-top: 40px;
-  }
-
-  .mk-price-comparison > h2 {
-    margin-bottom: 16px;
-  }
-
-  .mk-price-comparison-frame {
-    border-radius: 16px;
-  }
-
   .mk-price-comparison-table {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .mk-price-comparison-table th,

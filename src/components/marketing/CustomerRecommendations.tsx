@@ -1,7 +1,7 @@
 import HugeIcon from "@/components/HugeIcon";
 import customerReviews from "@/data/customer-reviews.json";
 import { canonicalUrl } from "@/lib/site-config.mjs";
-import { useMarketing } from "./MarketingShell";
+import { Arrow, useMarketing } from "./MarketingShell";
 import "./CustomerRecommendations.css";
 
 export function CustomerRecommendations() {
@@ -25,9 +25,9 @@ export function CustomerRecommendations() {
             {currentLanguage.code !== "zh-tw" && <p className="mk-small">{reviewCopy.translatedLabel}</p>}
             <figcaption>
               <span className="mk-recommendation-name">{review.name}</span>
-              <a href={review.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={reviewCopy.sourceAriaTemplate.replace("{name}", review.name)}>
+              <a className="mk-text-link" href={review.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={reviewCopy.sourceAriaTemplate.replace("{name}", review.name)}>
                 App Store・{reviewCopy.storefrontLabel}
-                <HugeIcon name="arrow-right-01-round" className="mk-recommendation-arrow" />
+                <Arrow />
               </a>
             </figcaption>
           </figure>
@@ -51,12 +51,12 @@ export function AskAiPanel() {
       <div className="mk-ask-ai-content">
         <h2 id="ask-ai-title">{aiCopy.title}</h2>
         <p>{aiCopy.body}</p>
-        <div className="mk-ask-ai-links">
+        <div className="mk-actions mk-ask-ai-links">
           {services.map((service) => (
-            <a href={service.href} key={service.name} target="_blank" rel="noopener noreferrer">
-              <HugeIcon name="bubble-chat-question" className="mk-ask-ai-icon" />
+            <a className="mk-button mk-button-secondary" href={service.href} key={service.name} target="_blank" rel="noopener noreferrer">
+              <HugeIcon name="bubble-chat-question" className="h-5 w-5" />
               {aiCopy.actionTemplate.replace("{service}", service.name)}
-              <HugeIcon name="arrow-right-01-round" className="mk-ask-ai-arrow" />
+              <Arrow />
             </a>
           ))}
         </div>

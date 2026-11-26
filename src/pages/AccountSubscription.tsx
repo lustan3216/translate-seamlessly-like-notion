@@ -237,8 +237,6 @@ export default function AccountSubscription({
     });
   }
 
-  const secondaryButton = appPage ? "mk-text-link" : "mk-button mk-button-secondary";
-
   function confirmControl({ label, description, onConfirm, secondary = false, disabled = false }: {
     label: string;
     description: ReactNode;
@@ -249,15 +247,15 @@ export default function AccountSubscription({
     return (
       <AlertDialog>
         <AlertDialogTrigger asChild>
-          <button className={secondary ? secondaryButton : "mk-button"} type="button"
+          <button className={secondary ? "mk-text-link" : "mk-button"} type="button"
             disabled={busy || disabled}>{label}</button>
         </AlertDialogTrigger>
-        <AlertDialogContent className={appPage ? "marketing-site mk-subscription-dialog mk-account-management-dialog" : "mk-subscription-dialog"}>
+        <AlertDialogContent className="marketing-site mk-subscription-dialog">
           <AlertDialogTitle>{label}</AlertDialogTitle>
           <AlertDialogDescription>{description}</AlertDialogDescription>
           <div className="mk-account-actions">
-            <AlertDialogCancel className={appPage ? "mk-button mk-button-secondary" : undefined}>{messages.cancel}</AlertDialogCancel>
-            <AlertDialogAction className={appPage ? "mk-button" : undefined}
+            <AlertDialogCancel className="mk-button mk-button-secondary">{messages.cancel}</AlertDialogCancel>
+            <AlertDialogAction className="mk-button"
               disabled={busy || disabled} onClick={onConfirm}>{label}</AlertDialogAction>
           </div>
         </AlertDialogContent>
@@ -285,7 +283,7 @@ export default function AccountSubscription({
       customHelpers: { title: pricing.profiles, description: benefits.helper, icon: "bubble-chat-question" },
     };
     return (
-      <ul className="mk-subscription-benefits" aria-label={m("nav.features")}>
+      <ul className={appPage ? "mk-subscription-benefits" : "mk-price-card mk-price-pro mk-subscription-benefits"} aria-label={m("nav.features")}>
         {selectedQuota.features.map(({ id, quotaKey, maxPhotosPerBatch, maxLanguages }) => {
           const feature = featureCopy[id];
           if (!Object.prototype.hasOwnProperty.call(featureCopy, id)) return null;
@@ -332,22 +330,18 @@ export default function AccountSubscription({
   const webQuotaProblem = !appPage && (quotaQuery.isError || (!quotaQuery.isPending && changesCurrent && !timing));
   const catalogUnavailable = !catalog.loading && !catalog.offers;
   const resumeControl = canResume && (
-    <button className={appPage ? "mk-button" : "mk-button mk-button-secondary"} type="button" disabled={busy}
+    <button className={appPage ? "mk-button" : "mk-text-link"} type="button" disabled={busy}
       onClick={() => void submitPlanChange("resume")}>{copy.resumeSubscription}</button>
   );
+  const SummaryTitle = appPage ? "h2" : "h3";
   return (
     <div className="mk-subscription">
       {(entitlement || subscription) && !currentShown && (
-        <div className={appPage ? "mk-price-card mk-price-pro mk-subscription-summary" : "mk-subscription-current"}>
-          {appPage ? (
-            <div className="mk-card-top">
-              {currentTier && <h2>{planTitle(currentTier, currentPeriod)}</h2>}
-              {badges()}
-            </div>
-          ) : <>
-            {currentTier && <strong>{planTitle(currentTier, currentPeriod)}</strong>}
+        <div className="mk-price-card mk-price-pro mk-subscription-summary">
+          <div className="mk-card-top">
+            {currentTier && <SummaryTitle>{planTitle(currentTier, currentPeriod)}</SummaryTitle>}
             {badges()}
-          </>}
+          </div>
           {appPage && currentOffer && (
             <div className="mk-price-details">
               <h3><bdi>{formatCreemPrice(locale, currentOffer)}</bdi> <span className="mk-price-period">{pricing[priceUnit[currentOffer.period]]}</span></h3>
@@ -396,13 +390,13 @@ export default function AccountSubscription({
         : visibleOffers.length > 0 && (
           <>
             {appPage && <div className="mk-section-heading"><h2>{messages.choosePlan}</h2></div>}
-            <div className={appPage ? "mk-blog-filters mk-pricing-periods" : "mk-subscription-tiers"} role="group" aria-label={messages.choosePlan}>
+            <div className="mk-blog-filters mk-pricing-periods" role="group" aria-label={messages.choosePlan}>
               {availableTiers.map((tab) => (
                 <button key={tab} type="button" aria-pressed={tier === tab} disabled={busy}
                   onClick={() => selectTier(tab)}>{copy.names[tab]}</button>
               ))}
             </div>
-            <fieldset className={appPage ? "mk-price-card mk-price-pro mk-subscription-options" : "mk-subscription-options"} disabled={busy}>
+            <fieldset className="mk-price-card mk-price-pro mk-subscription-options" disabled={busy}>
               <legend className="mk-sr-only">{pricing.billing}</legend>
               {options.map((offer) => {
                 const current = hasPlan && offer.id === currentOfferId;
@@ -411,7 +405,7 @@ export default function AccountSubscription({
                   <label className="mk-subscription-option" key={offer.id}>
                     <input type="radio" name="account-offer" value={offer.id} checked={offer.id === selected?.id} disabled={current}
                       onChange={current ? undefined : () => { setSelection(offer.id); setUpdated(undefined); }} />
-                    <span aria-hidden="true" className="mk-subscription-mark">{!appPage && <HugeIcon name="tick-02" />}</span>
+                    <span aria-hidden="true" className="mk-subscription-mark" />
                     <span className="mk-subscription-option-copy">
                       <strong>{planTitle(offer.plan, offer.period)}</strong>
                       {current && (appPage ? <span className="mk-subscription-badge">{copy.inUse}</span> : badges())}
@@ -467,7 +461,7 @@ export default function AccountSubscription({
       {appPage && resumeControl && <div className="mk-subscription-primary">{resumeControl}</div>}
 
       {(canCancel || (!appPage && canResume) || portalAction || secondaryActions) && (
-        <div className={appPage ? "mk-price-card mk-price-pro mk-subscription-secondary" : "mk-account-actions mk-subscription-secondary"}>
+        <div className="mk-price-card mk-price-pro mk-subscription-secondary">
           {canCancel && confirmControl({
             label: copy.cancelSubscription,
             description: copy.cancelHelp,
@@ -476,7 +470,7 @@ export default function AccountSubscription({
           })}
           {!appPage && resumeControl}
           {portalAction && (
-            <button className={secondaryButton} type="button" disabled={busy}
+            <button className="mk-text-link" type="button" disabled={busy}
               onClick={() => void openPortal()}>{!appPage && portalAction === "portalDetails" ? `Creem Portal · ${copy.portalDetails}` : copy[portalAction]}</button>
           )}
           {secondaryActions}

@@ -260,6 +260,7 @@ export default function PricingPlans() {
           const waiting = !free && catalog.loading;
           const period = p(pricePeriods[billing]);
           const errorCode = !free && checkoutError?.id === offerId ? checkoutError.code : undefined;
+          const actionClass = id === "basic" ? "mk-button" : "mk-button mk-button-secondary";
           return (
             <article
               key={id}
@@ -290,14 +291,14 @@ export default function PricingPlans() {
                 : errorCode === "creem_checkout_expired" ? guestCheckoutCopy[locale].checkoutExpired
                 : sharedAccountCopy(locale).error}</p>}
               {waiting ? <div className="mk-price-action-placeholder" aria-hidden="true" /> : offer ? (
-                <button className="mk-button" type="button" disabled={!!submitting}
+                <button className={actionClass} type="button" disabled={!!submitting}
                   aria-busy={submitting === offer.id} onClick={() => void startCheckout(offer)}>
                   {p(id === "basic" ? "subscribeStandard" : "subscribeVoice")}
                   <Arrow />
                 </button>
               ) : (
                 <AppStoreLink source={`pricing-${id}-${billing}`}
-                  className={`mk-button ${free ? "mk-button-secondary" : ""}`}>
+                  className={actionClass}>
                   {free ? m("download.ios") : p("subscribeInApp")}
                   <Arrow />
                 </AppStoreLink>
@@ -307,7 +308,7 @@ export default function PricingPlans() {
         })}
       </section>
       <section className="mk-wrap mk-price-comparison" aria-labelledby="pricing-comparison-heading">
-        <h2 id="pricing-comparison-heading">{m("pricing.compare")}</h2>
+        <h2 id="pricing-comparison-heading" className="mk-section-title">{m("pricing.compare")}</h2>
         <div className="mk-price-comparison-frame">
           <table className="mk-price-comparison-table" aria-labelledby="pricing-comparison-heading">
             <thead>

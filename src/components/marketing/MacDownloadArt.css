@@ -13,7 +13,7 @@
   min-height: 240px;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: var(--mk-radius-panel);
   background:
     radial-gradient(ellipse at 90% 5%, var(--mac-art-cool), transparent 65%),
     radial-gradient(ellipse at 15% 100%, var(--mac-art-warm), transparent 65%),
@@ -27,7 +27,7 @@
   z-index: -1;
   width: 74%;
   height: 58%;
-  border-radius: 24px;
+  border-radius: var(--mk-radius-card);
 }
 .mk-mac-download-art::before {
   top: 17%;
@@ -49,7 +49,7 @@
   width: 80%;
   padding: clamp(20px, 5cqi, 32px);
   border: 1px solid var(--mk-line);
-  border-radius: 24px;
+  border-radius: var(--mk-radius-panel);
   background: var(--mk-bg);
   box-shadow: 0 20px 48px -32px #20202055;
 }
@@ -70,7 +70,7 @@
   min-width: 0;
 }
 .mk-mac-art-platform {
-  font-size: clamp(12px, 2.6cqi, 16px);
+  font-size: clamp(13px, 2.6cqi, 16px);
   line-height: 1.2;
   color: var(--mk-muted);
 }
@@ -88,10 +88,10 @@
   bottom: 12%;
   padding: 10px 16px;
   border: 1px solid var(--mk-line);
-  border-radius: 12px;
+  border-radius: var(--mk-radius-panel);
   background: var(--mk-bg);
   color: var(--mk-ink);
-  font-size: clamp(12px, 2.8cqi, 16px);
+  font-size: clamp(13px, 2.8cqi, 16px);
   font-weight: 500;
   line-height: 1.4;
   white-space: nowrap;

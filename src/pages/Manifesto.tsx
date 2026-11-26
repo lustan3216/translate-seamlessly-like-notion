@@ -19,23 +19,25 @@ export function ManifestoPage() {
           <h1>{manifesto.title.split("\n")[0]}<br /><span>{manifesto.title.split("\n").slice(1).join(" ")}</span></h1>
           <p className="mk-lead">{manifesto.lead}</p>
         </header>
-        <div className="mk-wrap mk-manifesto-letter">
-          <p className="mk-manifesto-opening" style={{ whiteSpace: "pre-line" }}>{manifesto.opening}</p>
+        <div className="mk-wrap mk-article">
+          <p className="mk-price-card mk-price-pro mk-manifesto-opening" style={{ whiteSpace: "pre-line" }}>{manifesto.opening}</p>
           {manifesto.chapters.map((chapter) => (
-            <section className="mk-manifesto-chapter" key={chapter.title}>
+            <section key={chapter.title}>
               <h2>{chapter.title}</h2>
               {chapter.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </section>
           ))}
         </div>
-        <section className="mk-wrap mk-manifesto-everyday" aria-labelledby="manifesto-everyday-title">
-          <div className="mk-manifesto-letter">
-            <p className="mk-eyebrow">{manifesto.everydayEyebrow}</p>
-            <h2 id="manifesto-everyday-title" style={{ whiteSpace: "pre-line" }}>{manifesto.everydayTitle}</h2>
-          </div>
-          <div className="mk-manifesto-scenes">
+        <section className="mk-section mk-wrap" aria-labelledby="manifesto-everyday-title">
+          <header className="mk-section-heading mk-article mk-manifesto-section-heading">
+            <div>
+              <p className="mk-eyebrow">{manifesto.everydayEyebrow}</p>
+              <h2 id="manifesto-everyday-title" style={{ whiteSpace: "pre-line" }}>{manifesto.everydayTitle}</h2>
+            </div>
+          </header>
+          <div className="mk-feature-grid mk-manifesto-scenes">
             {manifesto.scenarios.map((scene, index) => (
-              <div key={scene.title}>
+              <div className="mk-price-card mk-price-pro" key={scene.title}>
                 <h3>{scene.title}</h3><p>{scene.body}</p>
                 <div className="mk-manifesto-links">
                   {scene.linkLabels.map((label, position) => {
@@ -48,11 +50,13 @@ export function ManifestoPage() {
           </div>
           <div className="mk-manifesto-product-stage"><AppScreen feature="menu" /><AppScreen feature="document" /><AppScreen feature="chat" /></div>
         </section>
-        <section className="mk-wrap mk-manifesto-close">
-          <p className="mk-eyebrow">{manifesto.closeEyebrow}</p>
-          <h2 style={{ whiteSpace: "pre-line" }}>{manifesto.closeTitle}</h2>
-          <p style={{ whiteSpace: "pre-line" }}>{manifesto.closeBody}</p>
-          <DownloadButtons source="manifesto" />
+        <section className="mk-closing">
+          <div className="mk-wrap">
+            <p className="mk-eyebrow">{manifesto.closeEyebrow}</p>
+            <h2 style={{ whiteSpace: "pre-line" }}>{manifesto.closeTitle}</h2>
+            <p className="mk-lead" style={{ whiteSpace: "pre-line" }}>{manifesto.closeBody}</p>
+            <DownloadButtons source="manifesto" />
+          </div>
         </section>
       </article>
     </MarketingShell>

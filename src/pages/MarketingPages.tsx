@@ -240,7 +240,7 @@ export function FAQ({ topics = faqTopics }: {
         <p className="mk-eyebrow">FAQ</p>
         <h2>{m("faq.title")}</h2>
       </div>
-      <div>
+      <div className="mk-faq-list">
         {topics.map((topic) => (
           <details key={topic}>
             <summary>
@@ -486,7 +486,6 @@ export function FeaturePage() {
           className="mk-feature-guide-steps"
           role="list"
           aria-label={steps.title}
-          tabIndex={0}
           data-count={steps.items.length}
           data-text-only={!stepImages[0] || undefined}
         >
@@ -643,10 +642,10 @@ export function DownloadPage() {
             <p>{m(`download.${platform}Note`)}</p>
             <AppStoreLink
               source={`download-page-${platform}`}
-              className="mk-button"
+              className={`mk-button${platform === "ios" ? " mk-button-secondary" : ""}`}
             >
               {m(`download.${platform}`)}
-              <Arrow />
+              {platform === "mac" && <Arrow />}
             </AppStoreLink>
           </article>
         ))}
@@ -680,13 +679,15 @@ export function AboutPage() {
         <div>
           <p className="mk-editorial-large">{m("about.story")}</p>
           <p>Shiny Technology Co., Ltd.</p>
-          <Link to={href("/contact")} className="mk-text-link">
-            {m("nav.contact")}
-            <Arrow />
-          </Link>
-          <Link to={href("/manifesto")} className="mk-text-link">
-            {getCurrentMainCopy(currentLanguage.code).extras.manifesto.aboutAction}<Arrow />
-          </Link>
+          <div className="mk-actions">
+            <Link to={href("/contact")} className="mk-text-link">
+              {m("nav.contact")}
+              <Arrow />
+            </Link>
+            <Link to={href("/manifesto")} className="mk-text-link">
+              {getCurrentMainCopy(currentLanguage.code).extras.manifesto.aboutAction}<Arrow />
+            </Link>
+          </div>
         </div>
       </section>
       <section className="mk-section mk-wrap">
@@ -803,17 +804,19 @@ export function AffiliatePage() {
         {affiliateFaqGroups.map(([group, topics]) => (
           <div className="mk-affiliate-faq-group" key={group}>
             <h3>{affiliateText(`faqGroup.${group}`)}</h3>
-            {topics.map((topic) => (
-              <details name="affiliate-faq" key={topic}>
-                <summary>{affiliateText(`faq${topic}.question`)}<HugeIcon name="arrow-down-01-round" /></summary>
-                <p>
-                  {affiliateText(`faq${topic}.answer`)}
-                  {topic === "Payout" && (
-                    <> <a href={affiliatePayoutGuide} target="_blank" rel="noopener noreferrer">{affiliateText("faqPayout.guide")}</a></>
-                  )}
-                </p>
-              </details>
-            ))}
+            <div className="mk-faq-list">
+              {topics.map((topic) => (
+                <details name="affiliate-faq" key={topic}>
+                  <summary>{affiliateText(`faq${topic}.question`)}<HugeIcon name="arrow-down-01-round" /></summary>
+                  <p>
+                    {affiliateText(`faq${topic}.answer`)}
+                    {topic === "Payout" && (
+                      <> <a href={affiliatePayoutGuide} target="_blank" rel="noopener noreferrer">{affiliateText("faqPayout.guide")}</a></>
+                    )}
+                  </p>
+                </details>
+              ))}
+            </div>
           </div>
         ))}
       </section>
@@ -875,7 +878,7 @@ export function ContactPage() {
           <p>{m("contact.note")}</p>
           <p>{m("affiliate.status")}</p>
         </div>
-        <form noValidate onSubmit={submit} className="mk-contact-form">
+        <form noValidate onSubmit={submit} className="mk-contact-form mk-price-card mk-price-pro">
           {["name", "email", "topic", "message"].map((name) => (
             <div key={name} className="mk-field">
               <label htmlFor={`contact-${name}`}>{m(`contact.${name}`)}</label>

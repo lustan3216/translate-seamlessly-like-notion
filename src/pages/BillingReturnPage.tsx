@@ -116,8 +116,8 @@ export default function BillingReturnPage({ checkoutId }: { checkoutId: string }
         <meta name="robots" content="noindex, nofollow" />
         <meta name="referrer" content="no-referrer" />
       </Helmet>
-      <div className="mk-wrap mk-account-page mk-billing-return-page">
-        <section className="mk-account-section mk-billing-return" aria-labelledby="billing-return-title">
+      <div className="mk-wrap mk-account-page mk-account-result-page">
+        <section className="mk-account-section mk-price-card mk-price-pro mk-billing-return" aria-labelledby="billing-return-title">
           <span className="mk-billing-return-badge" aria-hidden="true">
             <HugeIcon name={paymentStatus === "paid" || paymentStatus === "delivered" ? "tick-02" : "clock-01"} className="h-6 w-6" />
           </span>

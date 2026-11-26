@@ -10,13 +10,9 @@
   grid-template-rows: 1fr auto;
   gap: 24px;
   padding: 28px;
-  border-radius: 20px;
+  border-radius: var(--mk-radius-card);
   background: var(--mk-surface);
   min-width: 0;
-  transition: transform 0.2s;
-}
-.mk-home-scenario:hover {
-  transform: translateY(-2px);
 }
 .mk-home-scenario-copy {
   min-width: 0;
@@ -60,10 +56,6 @@
   max-width: 100%;
   height: auto;
   max-height: none;
-  transition: transform 0.25s;
-}
-.mk-home-scenario:hover .native-app-screen {
-  transform: scale(1.02);
 }
 .mk-home-scenario-art:has([data-native-capture-pending]) {
   display: none;
@@ -74,16 +66,17 @@
 .mk-home-feature-index {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 32px;
+  column-gap: 24px;
+  padding: 8px 20px;
+  border-radius: var(--mk-radius-card);
+  background: var(--mk-surface);
 }
 .mk-home-feature-link {
   display: flex;
   align-items: center;
   gap: 14px;
-  min-height: 84px;
-  border-bottom: 1px solid var(--mk-line);
-  padding-block: 20px;
-  font-size: 17px;
+  min-height: 64px;
+  padding-block: 12px;
 }
 .mk-home-feature-link > span:first-child {
   width: 24px;
@@ -91,12 +84,6 @@
 }
 .mk-home-feature-link > span:nth-child(2) {
   flex: 1;
-}
-.mk-home-feature-link > .mk-arrow {
-  transition: transform 0.2s;
-}
-.mk-home-feature-link:hover > .mk-arrow {
-  transform: translateX(3px);
 }
 @media (min-width: 1024px) {
   .mk-home-scenario-section > .mk-section-heading > p {
@@ -115,28 +102,7 @@
   .mk-home-feature-index {
     grid-template-columns: 1fr;
   }
-  .mk-home-scenario-context {
-    font-size: 12px;
-  }
-  .mk-home-scenario h3 {
-    font-size: 24px;
-  }
-  .mk-home-scenario-copy > p:not(.mk-home-scenario-context) {
-    font-size: 16px;
-  }
   .mk-home-feature-link {
-    min-height: 72px;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .mk-home-scenario,
-  .mk-home-scenario .native-app-screen,
-  .mk-home-feature-link > .mk-arrow {
-    transition: none;
-  }
-  .mk-home-scenario:hover,
-  .mk-home-scenario:hover .native-app-screen,
-  .mk-home-feature-link:hover > .mk-arrow {
-    transform: none;
+    min-height: 48px;
   }
 }

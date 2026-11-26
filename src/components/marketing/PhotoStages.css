@@ -29,14 +29,17 @@
 .marketing-site .mk-demo-stage.mk-photo-stage {
   --photo-wash: linear-gradient(90deg, #ffffffec 0%, #ffffffbc 42%, #ffffff40 100%);
 }
+.marketing-site .mk-demo-stage.mk-photo-stage .mk-demo-copy > p {
+  color: var(--mk-ink);
+}
 .marketing-site .mk-home-scenario-art.mk-photo-stage {
   align-self: stretch;
   align-items: flex-start;
-  border-radius: 20px;
+  border-radius: var(--mk-radius-panel);
   padding: 28px 12px 8px;
 }
 .marketing-site .mk-card-artwork.mk-photo-stage {
-  border-radius: 16px 16px 0 0;
+  border-radius: var(--mk-radius-panel) var(--mk-radius-panel) 0 0;
   margin-inline: -12px;
   padding-top: 24px;
 }
@@ -50,9 +53,12 @@
   height: auto;
   margin-inline: -12px;
   padding: 16px 12px 20px;
-  border-radius: 16px 16px 0 0;
+  border-radius: var(--mk-radius-panel) var(--mk-radius-panel) 0 0;
 }
 .mk-card-translation-context figcaption {
+  padding: 4px 8px;
+  border-radius: var(--mk-radius-pill);
+  background: var(--mk-bg);
   color: var(--mk-ink);
   font-size: 13px;
   font-weight: 600;
@@ -65,7 +71,7 @@
   max-width: none;
   height: auto;
   border: 0;
-  border-radius: 16px;
+  border-radius: var(--mk-radius-panel);
   transform: none;
 }
 @media (min-width: 701px) {
@@ -73,10 +79,12 @@
     flex-grow: 1;
   }
 }
-.mk-platform-art.mk-photo-stage,
-.mk-partner-screens.mk-photo-stage {
+.mk-platform-art.mk-photo-stage {
   padding: 32px;
-  border-radius: 24px;
+  border-radius: var(--mk-radius-panel);
+}
+.mk-partner-screens.mk-photo-stage {
+  border-radius: var(--mk-radius-card);
 }
 @media (max-width: 480px) {
   .marketing-site .mk-home-scenario-art.mk-photo-stage {
@@ -88,13 +96,13 @@
 :root[data-theme="dark"] .mk-photo-stage[data-photo="meadow"],
 :root[data-theme="dark"] .mk-photo-stage--meadow { --photo-wash: #20251a77; }
 :root[data-theme="dark"] .marketing-site .mk-demo-stage.mk-photo-stage {
-  --photo-wash: linear-gradient(90deg, #202020f5 0%, #202020ce 42%, #18212575 100%);
+  --photo-wash: linear-gradient(90deg, #202020f5 0%, #202020ce 42%, #19191bab 100%);
 }
 @media (max-width: 900px) {
   .marketing-site .mk-demo-stage.mk-photo-stage {
     --photo-wash: linear-gradient(180deg, #ffffffed 0%, #ffffffb8 30%, #ffffff3d 100%);
   }
   :root[data-theme="dark"] .marketing-site .mk-demo-stage.mk-photo-stage {
-    --photo-wash: linear-gradient(180deg, #202020f5 0%, #202020ce 30%, #18212575 100%);
+    --photo-wash: linear-gradient(180deg, #202020f5 0%, #202020ce 30%, #19191bab 100%);
   }
 }

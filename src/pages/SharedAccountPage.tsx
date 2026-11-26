@@ -22,9 +22,9 @@ type EmailAccessResult = { account: Account } | {
   error: "creem_web_link_unavailable" | "creem_web_account_conflict" | "request_failed";
 };
 
-function AccountSection({ id, title, children }: { id: string; title: string; children: ReactNode }) {
+function AccountSection({ id, title, children, plain = false }: { id: string; title: string; children: ReactNode; plain?: boolean }) {
   return (
-    <section className="mk-account-section" aria-labelledby={id}>
+    <section className={plain ? "mk-account-section" : "mk-account-section mk-price-card mk-price-pro"} aria-labelledby={id}>
       <h2 id={id} tabIndex={id === "delete" ? -1 : undefined}>{title}</h2>
       {children}
     </section>
@@ -305,6 +305,7 @@ function AccountManagement() {
   const showPreviewAppDelivery = paidAccess && sharedAccountPreviewEnabled && billing?.entitlement?.source === "creem_test";
   const canResendAppLink = paidAccess && billing?.appClaimEmailEnabled === true
     && (showPreviewAppDelivery || (isLiveAccountHost() && billing.entitlement?.source === "creem_live"));
+  const showEmailSignIn = webEmailAccessEnabled && !billingReturn && account === null && !emailAccessPending;
 
   return (
     <MarketingShell close={false}>
@@ -324,7 +325,7 @@ function AccountManagement() {
         {guestReturning && account === null && !emailAccessPending && (
           <p role="status" className="mk-account-notice">{guest.checkInbox}</p>
         )}
-        {webEmailAccessEnabled && !billingReturn && account === null && !emailAccessPending && (
+        {showEmailSignIn && (
           <AccountSection id="account-email-sign-in" title={guest.emailSignIn}>
             <EmailAccessForm copy={guest} disabled={busy} onRequest={requestEmailLink} />
           </AccountSection>
@@ -356,10 +357,11 @@ function AccountManagement() {
         ) : account === undefined ? <AccountSkeleton />
           : account ? (
             <>
-              <section className="mk-account-section" id="account-session" aria-label={messages.signOut}>
+              <section className="mk-account-section mk-price-card mk-price-pro" id="account-session" aria-label={messages.signOut}>
                 <button type="button" className="mk-button mk-button-secondary" disabled={busy} onClick={() => void signOut()}>{messages.signOut}</button>
               </section>
-              {showBilling && <AccountSection id="account-billing" title={sharedAccountPreviewEnabled ? messages.testBilling : webPricing.title}>
+              {showBilling && <AccountSection id="account-billing" title={sharedAccountPreviewEnabled ? messages.testBilling : webPricing.title}
+                plain={billing !== undefined && !billingError}>
                 {billingError ? (
                   <>
                     <p role="alert">{messages.error}</p>
@@ -417,7 +419,8 @@ function AccountManagement() {
             <AccountSection id="account-sign-in" title={messages.signIn}>
               {confirmDeletion && <p>{messages.reauthenticate}</p>}
               {!hasPasskeys && <p role="status">{messages.passkeyUnavailable}</p>}
-              <button className="mk-button" type="button" disabled={busy || !hasPasskeys} onClick={() => void run(() => authenticate("login"))}>{messages.signIn}</button>
+              <button className={showEmailSignIn ? "mk-button mk-button-secondary" : "mk-button"} type="button"
+                disabled={busy || !hasPasskeys} onClick={() => void run(() => authenticate("login"))}>{messages.signIn}</button>
               {!confirmDeletion && (
                 <form onSubmit={(event) => { event.preventDefault(); void run(() => authenticate("register")); }}>
                   <button className="mk-button mk-button-secondary" type="submit" disabled={busy || !hasPasskeys}>{messages.create}</button>

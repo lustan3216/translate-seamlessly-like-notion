@@ -22,12 +22,12 @@ export default function AppClaimPage() {
         <meta name="robots" content="noindex, nofollow" />
         <meta name="referrer" content="no-referrer" />
       </Helmet>
-      <div className="mk-wrap mk-account-page" style={{ paddingBlockStart: 40 }}>
+      <div className="mk-wrap mk-account-page mk-account-result-page">
         <div className="mk-account-actions">
           <ThemeToggle />
           <LanguagePicker />
         </div>
-        <section className="mk-account-section" aria-labelledby="app-claim-title">
+        <section className="mk-account-section mk-price-card mk-price-pro" aria-labelledby="app-claim-title">
           <h1 id="app-claim-title">{copy.title}</h1>
           <p>{token ? copy.openHelp : copy.invalid}</p>
           {token && (

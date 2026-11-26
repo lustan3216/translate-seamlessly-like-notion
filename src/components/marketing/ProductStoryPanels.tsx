@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import HugeIcon from "@/components/HugeIcon";
 import AppScreen, { type ScreenFeature } from "@/components/AppScreen";
-import { useMarketing } from "./MarketingShell";
+import { Arrow, useMarketing } from "./MarketingShell";
 import "./ProductStoryPanels.css";
 
 const panels = {
@@ -25,11 +25,11 @@ export function ProductStoryPanels({ className = "", panel }: {
         return (
           <article className={`mk-story-panel mk-story-panel--${id}`} key={id}>
             <div className="mk-story-copy">
-              <p className="mk-story-label"><HugeIcon name={layout.icon} />{story.label}</p>
+              <p className="mk-eyebrow mk-story-label"><HugeIcon name={layout.icon} />{story.label}</p>
               <h2 style={{ whiteSpace: "pre-line" }}>{story.title}</h2>
               <p className="mk-story-description">{story.body}</p>
               <Link className="mk-text-link" to={href(`/features/${layout.feature}`)}>
-                {story.action}<HugeIcon name="arrow-right-01-round" className="mk-arrow" />
+                {story.action}<Arrow />
               </Link>
             </div>
             <div className="mk-story-art mk-photo-stage" data-photo={layout.photo}>
