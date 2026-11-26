@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useMarketing } from "@/components/marketing/MarketingShell";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import { appSessionAccount, sendAppMessage, type AccountAppLaunch } from "@/lib/account-app-entry";
-import { accountRequest, AccountRequestError, type AccountBilling, type AccountSession, type SharedAccount } from "@/lib/shared-account-client";
+import { finishAccountAppSession, loadAccountApp, sendAppMessage, type AccountAppLaunch, type AccountAppLoad } from "@/lib/account-app-entry";
+import { accountRequest, AccountRequestError, type AccountBilling, type SharedAccount } from "@/lib/shared-account-client";
 import { useCreemOffer } from "@/lib/shared-account-preview";
 import { localeForCode } from "@/lib/site-config.mjs";
 import { sharedAccountCopy } from "@/translations/marketing/shared-account";
@@ -13,8 +13,6 @@ import AccountSubscription from "./AccountSubscription";
 import "./AccountAppPage.css";
 
 const defaultLaunch: AccountAppLaunch = { locale: localeForCode().code };
-type Load = { phase: "loading" | "expired" | "exchange_error" | "error" | "redirect" }
-  | { phase: "ready"; account: SharedAccount; billing: AccountBilling };
 
 export default function AccountAppPage({ launch = defaultLaunch }: { launch?: AccountAppLaunch }) {
   return <LanguageProvider languageCode={launch.locale}><AccountAppContent launch={launch} /></LanguageProvider>;
@@ -24,10 +22,12 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
   const { m, currentLanguage } = useMarketing();
   const title = creemCopy[currentLanguage.code].manageSubscription;
   const messages = sharedAccountCopy(currentLanguage.code);
+  const navigate = useNavigate();
   const page = useRef<HTMLElement>(null);
   const exchange = useRef<Promise<unknown>>();
+  const expiryHandled = useRef(false);
   const [refresh, setRefresh] = useState(0);
-  const [load, setLoad] = useState<Load>({ phase: "loading" });
+  const [load, setLoad] = useState<AccountAppLoad>({ phase: "loading" });
   const [systemDark, setSystemDark] = useState(() => window.matchMedia("(prefers-color-scheme: dark)").matches);
 
   useEffect(() => {
@@ -41,37 +41,20 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
 
   useEffect(() => {
     const controller = new AbortController();
-    const update = (result: Load) => {
-      if (!controller.signal.aborted) setLoad(result);
-    };
-    async function open() {
-      if (launch.access === null) return update({ phase: "expired" });
-      if (launch.access) {
-        try {
-          // The token is single-use. Reuse the exchange if the effect restarts.
-          exchange.current ??= accountRequest("/email-access", { token: launch.access });
-          await exchange.current;
-        } catch (error) {
-          return update({ phase: error instanceof AccountRequestError && [400, 401, 410].includes(error.status)
-            ? "expired" : "exchange_error" });
-        }
-      }
-      if (controller.signal.aborted) return;
-      try {
-        const session = await accountRequest<AccountSession>("/session", undefined, controller.signal);
-        const account = appSessionAccount(session);
-        if (!account) return update({ phase: "redirect" });
-        const billing = await accountRequest<AccountBilling>("/billing/status", undefined, controller.signal);
-        return update(billing?.subscription ? { phase: "ready", account, billing } : { phase: "error" });
-      } catch (error) {
-        update({ phase: error instanceof AccountRequestError && error.status === 401 ? "redirect" : "error" });
-      }
-    }
-    void open();
+    const { access } = launch;
+    // The token is single-use. Reuse the exchange if the effect restarts.
+    if (access) exchange.current ??= accountRequest("/email-access", { token: access });
+    void loadAccountApp(accountRequest, access === null ? null : exchange.current, controller.signal).then((result) => {
+      if (result && !controller.signal.aborted) setLoad(result);
+    });
     return () => controller.abort();
   }, [launch, refresh]);
 
-  if (load.phase === "redirect") return <Navigate to="/account" replace />;
+  useEffect(() => {
+    if (load.phase !== "expired" || expiryHandled.current) return;
+    expiryHandled.current = true;
+    finishAccountAppSession((path) => navigate(path, { replace: true }));
+  }, [load.phase, navigate]);
 
   const tag = localeForCode(currentLanguage.code).tag;
   return (
@@ -83,6 +66,7 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
       </Helmet>
       <div className="app-account-content">
         {load.phase === "ready" ? <AppBilling key={load.account.id} account={load.account} initialBilling={load.billing}
+          onSessionExpired={() => setLoad({ phase: "expired" })}
           dialogContainer={page.current} /> : load.phase === "loading" ? (
           <div className="app-account-block app-account-placeholder" aria-hidden="true" />
         ) : (
@@ -104,14 +88,14 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
   );
 }
 
-function AppBilling({ account, initialBilling, dialogContainer }: {
+function AppBilling({ account, initialBilling, dialogContainer, onSessionExpired }: {
   account: SharedAccount;
   initialBilling: AccountBilling;
   dialogContainer: HTMLElement | null;
+  onSessionExpired: () => void;
 }) {
   const { currentLanguage } = useMarketing();
   const messages = sharedAccountCopy(currentLanguage.code);
-  const navigate = useNavigate();
   const catalog = useCreemOffer();
   const [billing, setBilling] = useState(initialBilling);
   const [error, setError] = useState("");
@@ -127,7 +111,7 @@ function AppBilling({ account, initialBilling, dialogContainer }: {
       await action();
     } catch (failure) {
       if (failure instanceof AccountRequestError && failure.status === 401) {
-        navigate("/account", { replace: true });
+        onSessionExpired();
       } else {
         setError(failure instanceof AccountRequestError && failure.message === "creem_quote_changed"
           ? creemCopy[currentLanguage.code].quoteChanged : messages.error);

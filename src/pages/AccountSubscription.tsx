@@ -196,7 +196,10 @@ export default function AccountSubscription({
         if (error instanceof AccountRequestError && error.status >= 400 && error.status < 500
           && ![401, 429].includes(error.status)) finish();
         if (error instanceof AccountRequestError && billingConflicts.has(error.message)) {
-          const latest = await accountRequest<AccountBilling>("/billing/status").catch(() => undefined);
+          const latest = await accountRequest<AccountBilling>("/billing/status").catch((failure) => {
+            if (appPage && failure instanceof AccountRequestError && failure.status === 401) throw failure;
+            return undefined;
+          });
           if (latest) onBillingChange(latest);
         }
         if (error instanceof AccountRequestError && ["creem_quote_changed", "creem_invalid_offer"].includes(error.message)) {

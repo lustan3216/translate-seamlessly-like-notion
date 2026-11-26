@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { test } from "node:test";
-import { appSessionAccount, sendAppMessage, takeAccountAppLaunch } from "../src/lib/account-app-entry.ts";
+import { finishAccountAppSession, loadAccountApp, sendAppMessage, takeAccountAppLaunch } from "../src/lib/account-app-entry.ts";
 import { accountAppPath } from "../src/lib/site-config.mjs";
 import { appAllowsPlanAction, planChangeTiming } from "../src/pages/account-subscription-policy.ts";
 
@@ -55,15 +55,95 @@ test("matches App locale variants to the website and resets unspecified theme on
   }
 });
 
-test("only an app_link session proceeds to billing; rejected sessions replace the route with /account", async () => {
-  const account = { id: "test-account" };
-  assert.equal(appSessionAccount({ account, session: { source: "app_link" } }), account);
-  for (const session of [{ account }, { account, session: { source: "web" } }, { account: null, session: null }]) {
-    assert.equal(appSessionAccount(session), null);
+const account = { id: "test-account" };
+const appSession = { account, session: { source: "app_link" } };
+const billing = { subscription: { state: "active" } };
+
+test("without a link exchange, billing starts only after an app_link session is confirmed", async () => {
+  for (const session of [appSession, { account }, { account, session: { source: "web" } }, { account: null, session: null }]) {
+    const calls = [];
+    const request = async (path) => {
+      calls.push(path);
+      return path === "/session" ? session : billing;
+    };
+    const result = await loadAccountApp(request, undefined, new AbortController().signal);
+    if (session === appSession) {
+      assert.deepEqual(result, { phase: "ready", account, billing });
+      assert.deepEqual(calls, ["/session", "/billing/status"]);
+    } else {
+      assert.deepEqual(result, { phase: "expired" });
+      assert.deepEqual(calls, ["/session"]);
+    }
   }
-  const page = await source("src/pages/AccountAppPage.tsx");
-  assert.match(page, /appSessionAccount\(session\);\s*if \(!account\) return update\(\{ phase: "redirect" \}\);\s*const billing/);
-  assert.match(page, /load\.phase === "redirect"\) return <Navigate to="\/account" replace/);
+});
+
+test("session and billing start in parallel after a successful exchange", async () => {
+  const exchange = Promise.withResolvers();
+  const session = Promise.withResolvers();
+  const calls = [];
+  const request = (path) => {
+    calls.push(path);
+    return path === "/session" ? session.promise : Promise.resolve(billing);
+  };
+  const result = loadAccountApp(request, exchange.promise, new AbortController().signal);
+  assert.deepEqual(calls, []);
+
+  exchange.resolve();
+  await Promise.resolve();
+  assert.deepEqual(calls, ["/session", "/billing/status"]);
+
+  session.resolve(appSession);
+  assert.deepEqual(await result, { phase: "ready", account, billing });
+});
+
+test("a failed or aborted exchange never starts billing", async () => {
+  const request = () => assert.fail("no requests should start after an invalid or aborted exchange");
+  const controller = new AbortController();
+  const expired = await loadAccountApp(request, Promise.reject({ status: 410 }), controller.signal);
+  assert.deepEqual(expired, { phase: "expired" });
+  const unavailable = await loadAccountApp(request, Promise.reject({ status: 503 }), controller.signal);
+  assert.deepEqual(unavailable, { phase: "exchange_error" });
+  controller.abort();
+  assert.equal(await loadAccountApp(request, Promise.resolve(), controller.signal), undefined);
+});
+
+test("unauthorized or non-App sessions expire even when the other parallel request fails", async () => {
+  for (const [sessionResponse, billingResponse] of [
+    [{ status: 401 }, { status: 500 }],
+    [{ status: 500 }, { status: 401 }],
+    [{ account, session: { source: "web" } }, { status: 500 }],
+    [{ account: null, session: null }, billing],
+  ]) {
+    const request = async (path) => {
+      const response = path === "/session" ? sessionResponse : billingResponse;
+      if (response.status) throw response;
+      return response;
+    };
+    assert.deepEqual(await loadAccountApp(request, Promise.resolve(), new AbortController().signal), { phase: "expired" });
+  }
+});
+
+test("a billing 401 after confirming an existing App session expires the page", async () => {
+  const request = async (path) => {
+    if (path === "/session") return appSession;
+    throw { status: 401 };
+  };
+  assert.deepEqual(await loadAccountApp(request, undefined, new AbortController().signal), { phase: "expired" });
+});
+
+test("an expired App page sends close and stays on the page even if the bridge cannot deliver", () => {
+  const messages = [];
+  const redirect = () => assert.fail("an App page must never open the general account page");
+  finishAccountAppSession(redirect, { AnyTranslatorApp: { postMessage: (message) => messages.push(message) } });
+  assert.deepEqual(messages, ["close"]);
+  finishAccountAppSession(redirect, { AnyTranslatorApp: {} });
+  finishAccountAppSession(redirect, { AnyTranslatorApp: { postMessage() { throw new Error("bridge unavailable"); } } });
+});
+
+test("an expired page in a regular browser redirects to the general account page", () => {
+  const redirects = [];
+  finishAccountAppSession((path) => redirects.push(path), {});
+  assert.deepEqual(redirects, ["/account"]);
 });
 
 test("the App plan selector admits deferred options only when purchases are disabled", async () => {

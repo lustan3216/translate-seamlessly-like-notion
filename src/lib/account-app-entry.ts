@@ -1,5 +1,5 @@
 import { accountAppPath, localeForCode, SITE_LOCALES } from "./site-config.mjs";
-import type { AccountSession } from "./shared-account-client";
+import type { accountRequest, AccountBilling, AccountSession, SharedAccount } from "./shared-account-client";
 
 export type AccountAppLaunch = {
   access?: string | null;
@@ -48,21 +48,70 @@ export function takeAccountAppLaunch(
   return { access, ...presentation };
 }
 
-export function appSessionAccount(session: AccountSession) {
+function appSessionAccount(session: AccountSession) {
   return session?.session?.source === "app_link" && session.account?.id ? session.account : null;
+}
+
+export type AccountAppLoad = { phase: "loading" | "expired" | "exchange_error" | "error" }
+  | { phase: "ready"; account: SharedAccount; billing: AccountBilling };
+
+function httpStatus(error: unknown) {
+  return error && typeof error === "object" && "status" in error ? error.status : undefined;
+}
+
+export async function loadAccountApp(
+  request: typeof accountRequest,
+  exchange: Promise<unknown> | null | undefined,
+  signal: AbortSignal,
+): Promise<AccountAppLoad | undefined> {
+  if (exchange === null) return { phase: "expired" };
+  try {
+    await exchange;
+  } catch (error) {
+    const status = httpStatus(error);
+    return { phase: status === 400 || status === 401 || status === 410 ? "expired" : "exchange_error" };
+  }
+  if (signal.aborted) return;
+
+  const readBilling = () => request<AccountBilling>("/billing/status", undefined, signal);
+  const [session, prefetchedBilling] = await Promise.allSettled([
+    request<AccountSession>("/session", undefined, signal),
+    exchange ? readBilling() : undefined,
+  ]);
+  if (signal.aborted) return;
+
+  const account = session.status === "fulfilled" ? appSessionAccount(session.value) : null;
+  if ((session.status === "fulfilled" && !account) ||
+    [session, prefetchedBilling].some((result) => result.status === "rejected" && httpStatus(result.reason) === 401)) {
+    return { phase: "expired" };
+  }
+  if (!account || prefetchedBilling.status === "rejected") return { phase: "error" };
+
+  try {
+    const billing = exchange ? prefetchedBilling.value : await readBilling();
+    return billing?.subscription ? { phase: "ready", account, billing } : { phase: "error" };
+  } catch (error) {
+    return { phase: httpStatus(error) === 401 ? "expired" : "error" };
+  }
 }
 
 const appMessages = ["openSupport", "close", "statusChanged"] as const;
 type AppMessage = typeof appMessages[number];
+type AppMessageHost = { AnyTranslatorApp?: { postMessage?: (message: string) => void } };
 
 export function sendAppMessage(message: AppMessage, host: unknown = window): boolean {
   if (!appMessages.includes(message)) return false;
-  const channel = (host as { AnyTranslatorApp?: { postMessage?: (message: string) => void } }).AnyTranslatorApp;
-  if (typeof channel?.postMessage !== "function") return false;
   try {
+    const channel = (host as AppMessageHost).AnyTranslatorApp;
+    if (typeof channel?.postMessage !== "function") return false;
     channel.postMessage(message);
     return true;
   } catch {
     return false;
   }
+}
+
+export function finishAccountAppSession(redirect: (path: string) => void, host: unknown = window) {
+  if ((host as AppMessageHost).AnyTranslatorApp !== undefined) sendAppMessage("close", host);
+  else redirect("/account");
 }
