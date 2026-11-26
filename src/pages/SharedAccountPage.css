@@ -12,6 +12,29 @@
   border: 0;
 }
 
+.mk-page-intro.mk-account-login-intro,
+.mk-account-page.mk-account-login {
+  max-width: 440px;
+  overflow-wrap: anywhere;
+}
+
+.mk-page-intro.mk-account-login-intro {
+  padding-block: clamp(36px, 8vw, 64px) 24px;
+}
+
+.mk-account-login-intro .mk-lead {
+  margin-block-start: 12px;
+}
+
+.mk-account-login .mk-account-email-code > .mk-button {
+  width: 100%;
+}
+
+.mk-account-email-code input[name="email"]::placeholder {
+  color: var(--mk-muted);
+  opacity: 1;
+}
+
 .mk-account-page .mk-account-section {
   display: grid;
   gap: 16px;

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useId, useRef, useState, type FormEvent, type ReactNode } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation, useNavigate } from "react-router-dom";
-import MarketingShell, { useMarketing } from "@/components/marketing/MarketingShell";
+import MarketingShell, { marketingCopy, useMarketing } from "@/components/marketing/MarketingShell";
 import {
   accountRequest, AccountRequestError, clearStoredCheckoutAttempt, isAccountCheckoutReturn, passkeyRegistrationBody,
   type AccountBilling, type AccountSession, type SharedAccount as Account,
@@ -38,11 +38,12 @@ function secondsUntil(deadline: number) {
   return Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
 }
 
-function EmailAccessForm({ locale, disabled, run, onAuthenticated }: {
+function EmailAccessForm({ locale, disabled, run, onAuthenticated, signIn = false }: {
   locale: keyof typeof emailCodeCopy;
   disabled: boolean;
   run: (action: () => Promise<void>) => Promise<void>;
   onAuthenticated: (account: Account) => void;
+  signIn?: boolean;
 }) {
   const copy = emailCodeCopy[locale];
   const fieldId = useId();
@@ -166,10 +167,13 @@ function EmailAccessForm({ locale, disabled, run, onAuthenticated }: {
   }
 
   return (
-    <form onSubmit={submitEmail}>
+    <form className={signIn ? "mk-account-email-code" : undefined} onSubmit={submitEmail}>
       <div className="mk-field">
-        <label htmlFor={fieldId}>{guestCheckoutCopy[locale].purchaseEmail}</label>
-        <input ref={field} id={fieldId} name="email" type="email" autoComplete="email" maxLength={254} required dir="ltr" />
+        <label htmlFor={fieldId}>
+          {signIn ? marketingCopy[locale]["contact.email"] : guestCheckoutCopy[locale].purchaseEmail}
+        </label>
+        <input ref={field} id={fieldId} name="email" type="email" autoComplete="email" maxLength={254} required dir="ltr"
+          placeholder={signIn ? "name@example.com" : undefined} />
       </div>
       <button className="mk-button" type="submit" disabled={disabled}>{copy.sendCode}</button>
     </form>
@@ -198,6 +202,7 @@ function AccountManagement() {
   const email = appClaimCopy[currentLanguage.code as keyof typeof appClaimCopy];
   const webPricing = creemCopy[currentLanguage.code];
   const guest = guestCheckoutCopy[currentLanguage.code];
+  const emailCode = emailCodeCopy[currentLanguage.code];
   const catalog = useCreemOffer();
   const { webEmailAccessEnabled } = catalog;
   const [account, setAccount] = useState<Account | null>();
@@ -424,14 +429,16 @@ function AccountManagement() {
       ? sharedAccountPreviewEnabled ? messages.billingBlock : webPricing.deletionBlocked
     : error === "creem_quote_changed" ? webPricing.quoteChanged
     : error === "passkey_cancelled" ? messages.passkeyCancelled
-    : error === "sign_in_required" ? messages.signIn
+    : error === "sign_in_required" ? account === null ? emailCode.signIn : messages.signIn
     : messages.error;
   const expiry = billing?.entitlement ? new Date(billing.entitlement.expiresAt) : null;
   const paidAccess = allowAccountUse && expiry && expiry.getTime() > Date.now();
   const showPreviewAppDelivery = paidAccess && sharedAccountPreviewEnabled && billing?.entitlement?.source === "creem_test";
   const canResendAppLink = paidAccess && billing?.appClaimEmailEnabled === true
     && (showPreviewAppDelivery || (isLiveAccountHost() && billing.entitlement?.source === "creem_live"));
-  const showEmailSignIn = webEmailAccessEnabled && !billingReturn && account === null && !emailAccessPending;
+  const signedOut = account === null && !emailAccessPending && !sessionError && !guestReturning;
+  const showSignInIntro = signedOut && !pairCode;
+  const signInLoading = signedOut && catalog.loading;
 
   return (
     <MarketingShell close={false}>
@@ -440,21 +447,27 @@ function AccountManagement() {
         <meta name="robots" content="noindex, nofollow" />
         <meta name="referrer" content="no-referrer" />
       </Helmet>
-      <header className="mk-page-intro mk-wrap">
+      <header className={showSignInIntro ? "mk-page-intro mk-wrap mk-account-login-intro" : "mk-page-intro mk-wrap"}>
         {sessionLoading ? <AccountSkeleton className="mk-account-skeleton-title" /> : <h1>{messages.title}</h1>}
+        {showSignInIntro && <p className="mk-lead">{confirmDeletion ? messages.deleteAccount : guest.emailSignIn}</p>}
       </header>
-      <div className="mk-wrap mk-account-page" aria-busy={busy || sessionLoading}>
+      <div className={showSignInIntro ? "mk-wrap mk-account-page mk-account-login" : "mk-wrap mk-account-page"}
+        aria-busy={busy || sessionLoading || signInLoading}>
         {(busy || emailAccessPending) && <AccountSkeleton />}
         {error && <p role="alert" className="mk-account-notice">{errorText}</p>}
         {feedback === "deleted" && <p role="status" className="mk-account-notice">{messages.deleted}</p>}
         {guestReturning && account === null && !emailAccessPending && (
           <p role="status" className="mk-account-notice">{guest.checkInbox}</p>
         )}
-        {showEmailSignIn && (
-          <AccountSection id="account-email-sign-in" title={guest.emailSignIn}>
-            <EmailAccessForm locale={currentLanguage.code} disabled={busy} run={run} onAuthenticated={completeEmailAccess} />
-          </AccountSection>
-        )}
+        {signedOut && (signInLoading ? <AccountSkeleton />
+          : webEmailAccessEnabled ? (
+            <EmailAccessForm locale={currentLanguage.code} disabled={busy} run={run} onAuthenticated={completeEmailAccess} signIn />
+          ) : (
+            <div className="mk-account-notice">
+              <p role="alert">{messages.error}</p>
+              <button className="mk-button mk-button-secondary" type="button" onClick={() => void catalog.refetch()}>{messages.retry}</button>
+            </div>
+          ))}
         {pairCode && (
           <AccountSection id="account-pairing" title={messages.pairTitle}>
             {pairApproved ? <p role="status">{messages.pairDone}</p>
@@ -542,19 +555,7 @@ function AccountManagement() {
                 )}
               </AccountSection>
             </>
-          ) : guestReturning ? null : (
-            <AccountSection id="account-sign-in" title={messages.signIn}>
-              {confirmDeletion && <p>{messages.reauthenticate}</p>}
-              {!hasPasskeys && <p role="status">{messages.passkeyUnavailable}</p>}
-              <button className={showEmailSignIn ? "mk-button mk-button-secondary" : "mk-button"} type="button"
-                disabled={busy || !hasPasskeys} onClick={() => void run(() => authenticate("login"))}>{messages.signIn}</button>
-              {!confirmDeletion && (
-                <form onSubmit={(event) => { event.preventDefault(); void run(() => authenticate("register")); }}>
-                  <button className="mk-button mk-button-secondary" type="submit" disabled={busy || !hasPasskeys}>{messages.create}</button>
-                </form>
-              )}
-            </AccountSection>
-          )}
+          ) : null}
       </div>
     </MarketingShell>
   );

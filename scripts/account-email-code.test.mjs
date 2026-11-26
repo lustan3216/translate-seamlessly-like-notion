@@ -44,7 +44,7 @@ const copy = emailCodeCopy.en;
 const account = { id: "synthetic-account" };
 const submit = (tree, email) => tree.props.onSubmit({ preventDefault() {}, currentTarget: { email } });
 
-function setup({ reply, hash = "" } = {}) {
+function setup({ reply, hash = "", preview = false, catalog = { webEmailAccessEnabled: true, loading: false } } = {}) {
   const instances = new Map();
   let slots;
   let index;
@@ -79,7 +79,11 @@ function setup({ reply, hash = "" } = {}) {
     "react/jsx-runtime": jsxRuntime,
     "react-helmet-async": { Helmet: "Helmet" },
     "react-router-dom": { useLocation: () => location, useNavigate: () => () => { location.hash = ""; } },
-    "@/components/marketing/MarketingShell": { default: "MarketingShell", useMarketing: () => ({ currentLanguage: { code: "en" } }) },
+    "@/components/marketing/MarketingShell": {
+      default: "MarketingShell",
+      marketingCopy: { en: { "contact.email": "Your email" } },
+      useMarketing: () => ({ currentLanguage: { code: "en" } }),
+    },
     "@/lib/shared-account-client": {
       async accountRequest(path, body) {
         calls.push({ path, body });
@@ -94,11 +98,17 @@ function setup({ reply, hash = "" } = {}) {
       clearStoredCheckoutAttempt() { attemptClears++; },
     },
     "@/lib/passkeys": {},
-    "@/lib/shared-account-preview": { useCreemOffer: () => ({ webEmailAccessEnabled: true }) },
-    "@/translations/marketing/shared-account": { sharedAccountCopy: () => ({ title: "Your account" }) },
+    "@/lib/shared-account-preview": { sharedAccountPreviewEnabled: preview, useCreemOffer: () => catalog },
+    "@/translations/marketing/shared-account": { sharedAccountCopy: () => ({
+      title: "Your account", signIn: "Sign in with a passkey", create: "Create account with a passkey",
+      error: "Something went wrong. Try again.", retry: "Try again", approve: "Approve connection",
+      pairDone: "Approved. Return to AnyTranslator.",
+    }) },
     "@/translations/marketing/shared-account-delivery": { accountDeliveryCopy: { en: {} } },
     "@/translations/marketing/shared-account-email-code": { emailCodeCopy },
-    "@/translations/marketing/shared-account-guest": { guestCheckoutCopy: { en: { purchaseEmail: "Email used at checkout" } } },
+    "@/translations/marketing/shared-account-guest": {
+      guestCheckoutCopy: { en: { emailSignIn: "Sign in by email", purchaseEmail: "Email used at checkout" } },
+    },
     "@/translations/marketing/app-claim.json": { default: { en: {} } },
     "@/translations/marketing/creem-preview.json": { default: { en: { title: "Manage subscription" } } },
     "./BillingReturnPage": { default: "BillingReturnPage" },
@@ -106,11 +116,13 @@ function setup({ reply, hash = "" } = {}) {
     "./SharedAccountPage.css": {},
   };
   runInNewContext(outputText, {
-    exports, AbortController, DOMException, Error, URLSearchParams,
+    exports, AbortController, DOMException, Error, URLSearchParams, PublicKeyCredential: class {},
+    navigator: { credentials: {} },
     Date: class extends Date { static now() { return now; } },
     FormData: class { constructor(form) { this.form = form; } get(name) { return this.form[name]; } },
     window: {
-      addEventListener() {}, removeEventListener() {}, clearTimeout() {},
+      isSecureContext: true,
+      addEventListener() {}, removeEventListener() {}, setTimeout() {}, clearTimeout() {},
       setInterval(callback) { intervals.add(callback); return callback; },
       clearInterval(callback) { intervals.delete(callback); },
     },
@@ -153,13 +165,23 @@ test("account email sign-in waits for accepted send, accepts pasted codes and op
   const renderForm = () => session.render("EmailAccessForm", find(renderPage(), (node) => node.type === session.formType).props);
   renderPage();
   await Promise.resolve();
-  assert.equal(input(renderForm()).props.type, "email");
+  const signedOut = renderPage();
+  assert.match(text(signedOut), /Sign in by email/);
+  assert.doesNotMatch(text(signedOut), /passkey/);
+  assert.equal([...descendants(signedOut)].filter((node) => node.type === session.formType).length, 1);
+  const emailForm = renderForm();
+  assert.equal(emailForm.props.className, "mk-account-email-code");
+  assert.equal(text(find(emailForm, (node) => node.type === "label")), "Your email");
+  assert.equal(input(emailForm).props.type, "email");
+  assert.equal(input(emailForm).props.placeholder, "name@example.com");
+  assert.equal([...descendants(emailForm)].filter((node) => node.props.type === "submit").length, 1);
   const sending = submit(renderForm(), "person@example.test");
   assert.equal(button(renderForm(), copy.sendCode).props.disabled, true);
   send.resolve({ accepted: true });
   await sending;
 
   let form = renderForm();
+  assert.equal(form.props.className, emailForm.props.className);
   assert.match(text(form), /p•••@example\.test/);
   assert.doesNotMatch(text(form), /person@example\.test/);
   assert.equal(find(form, (node) => node.type === "bdi" && text(node).includes("@")).props.dir, "ltr");
@@ -179,10 +201,59 @@ test("account email sign-in waits for accepted send, accepts pasted codes and op
   await submit(form);
   renderPage();
   await Promise.resolve();
-  assert.equal(find(renderPage(), (node) => node.type === "AccountSubscription").props.accountId, account.id);
+  const signedIn = renderPage();
+  assert.equal(find(signedIn, (node) => node.type === "AccountSubscription").props.accountId, account.id);
+  assert.doesNotMatch(text(signedIn), /Sign in by email/);
   assert.equal(session.cleared(), 1);
   assert.equal(JSON.stringify(session.calls[1].body), JSON.stringify({ email: "person@example.test", locale: "en" }));
   assert.equal(JSON.stringify(session.calls[2].body), JSON.stringify({ email: "person@example.test", code: "000123" }));
+});
+
+test("signed-out email login handles an unavailable catalog and can retry it", async (t) => {
+  let retries = 0;
+  const catalog = { webEmailAccessEnabled: false, loading: true, refetch: () => { retries++; } };
+  const session = setup({ catalog });
+  t.after(session.dispose);
+  const renderPage = () => session.render("AccountManagement");
+  renderPage();
+  await Promise.resolve();
+  const loading = renderPage();
+  assert.equal(find(loading, (node) => node.type === "div" && node.props["aria-busy"]).props["aria-busy"], true);
+  assert.equal(find(loading, (node) => node.type === session.formType), undefined);
+  assert.equal(button(loading, "Try again"), undefined);
+  catalog.loading = false;
+  const unavailable = renderPage();
+  assert.equal(text(find(unavailable, (node) => node.props.role === "alert")), "Something went wrong. Try again.");
+  assert.doesNotMatch(text(unavailable), /passkey/);
+  button(unavailable, "Try again").props.onClick();
+  assert.equal(retries, 1);
+  catalog.webEmailAccessEnabled = true;
+  assert.ok(find(renderPage(), (node) => node.type === session.formType));
+});
+
+test("preview pairing can be approved after signing in with an email code", async (t) => {
+  const session = setup({ preview: true, hash: "#pair=synthetic", reply(path) {
+    if (path === "/session") return { account: null };
+    if (path === "/pair/preview") return { confirmation_code: "123456", expires_at_ms: 60_000 };
+    if (path === "/email-access/request") return { accepted: true };
+    if (path === "/email-access/verify") return { account };
+    if (path === "/pair/approve") return { ok: true };
+    assert.fail(path);
+  } });
+  t.after(session.dispose);
+  const renderPage = () => session.render("AccountManagement");
+  const renderForm = () => session.render("EmailAccessForm", find(renderPage(), (node) => node.type === session.formType).props);
+  renderPage();
+  await setImmediate();
+  assert.match(text(renderPage()), /123456/);
+  assert.equal(button(renderPage(), "Approve connection"), undefined);
+  await submit(renderForm(), "person@example.test");
+  input(renderForm()).props.onChange({ currentTarget: { value: "123456" } });
+  await submit(renderForm());
+  button(renderPage(), "Approve connection").props.onClick();
+  await setImmediate();
+  assert.match(text(renderPage()), /Approved\. Return to AnyTranslator\./);
+  assert.equal(session.calls.at(-1).path, "/pair/approve");
 });
 
 test("invalid or conflicting codes show the same error and stay on the code step", async (t) => {
