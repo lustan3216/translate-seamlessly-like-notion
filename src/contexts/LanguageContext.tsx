@@ -51,14 +51,15 @@ export const useLanguage = () => {
 
 type LanguageProviderProps = {
   children: ReactNode;
+  languageCode?: string;
 };
 
-export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
+export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children, languageCode }) => {
   const location = useLocation();
   const navigate = useNavigate();
   // URLs are shareable language selections, including the English URL without ?lang.
   const currentLanguage = languages.find((language) =>
-    language.code === languageForLocation(location.pathname, location.search)
+    language.code === (languageCode ?? languageForLocation(location.pathname, location.search))
   ) || languages[0];
 
   const setLanguage = (language: Language) => {
@@ -75,9 +76,10 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   };
 
   useEffect(() => {
+    if (languageCode !== undefined) return;
     // Storage can be unavailable in private browsing; it never overrides the URL.
     try { localStorage.setItem('selectedLanguage', currentLanguage.code); } catch { /* optional preference */ }
-  }, [currentLanguage.code]);
+  }, [currentLanguage.code, languageCode]);
 
   return (
     <LanguageContext.Provider value={{ currentLanguage, setLanguage, t, languages }}>

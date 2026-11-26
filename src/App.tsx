@@ -8,6 +8,8 @@ import { HelmetProvider } from "react-helmet-async";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { MarketingThemeProvider } from "./components/marketing/ThemeToggle";
 import { accountClaimPath } from "./lib/creem-app-claim.mjs";
+import { accountAppPath } from "./lib/site-config.mjs";
+import type { AccountAppLaunch } from "./lib/account-app-entry";
 import { isLiveAccountHost, sharedAccountEnabled, sharedAccountLiveAccountEnabled } from "./lib/shared-account-preview";
 
 import {
@@ -34,11 +36,14 @@ const queryClient = new QueryClient();
 const SharedAccountPage = sharedAccountEnabled
   ? lazy(() => import("./pages/SharedAccountPage"))
   : null;
+const AccountAppPage = sharedAccountEnabled
+  ? lazy(() => import("./pages/AccountAppPage"))
+  : null;
 const AppClaimPage = sharedAccountLiveAccountEnabled
   ? lazy(() => import("./pages/AppClaimPage"))
   : null;
 
-const App = ({ helmetContext = {} }: { helmetContext?: object }) => (
+const App = ({ helmetContext = {}, accountAppLaunch }: { helmetContext?: object; accountAppLaunch?: AccountAppLaunch }) => (
   <MarketingThemeProvider>
   <HelmetProvider context={helmetContext}>
     <QueryClientProvider client={queryClient}>
@@ -65,6 +70,9 @@ const App = ({ helmetContext = {} }: { helmetContext?: object }) => (
             <Route path="/support" element={<HelpPage />} />
             {SharedAccountPage && (!sharedAccountLiveAccountEnabled || isLiveAccountHost()) && (
               <Route path="/account" element={<Suspense fallback={null}><SharedAccountPage /></Suspense>} />
+            )}
+            {AccountAppPage && (!sharedAccountLiveAccountEnabled || isLiveAccountHost()) && (
+              <Route path={accountAppPath} element={<Suspense fallback={null}><AccountAppPage launch={accountAppLaunch} /></Suspense>} />
             )}
             {AppClaimPage && isLiveAccountHost() && (
               <Route path={accountClaimPath} element={<Suspense fallback={null}><AppClaimPage /></Suspense>} />

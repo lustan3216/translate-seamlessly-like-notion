@@ -3,11 +3,12 @@ import { Helmet } from "react-helmet-async";
 import { useLocation, useNavigate } from "react-router-dom";
 import MarketingShell, { useMarketing } from "@/components/marketing/MarketingShell";
 import {
-  accountRequest, AccountRequestError, clearStoredCheckoutAttempt, isAccountCheckoutReturn, type AccountBilling,
+  accountRequest, AccountRequestError, clearStoredCheckoutAttempt, isAccountCheckoutReturn, passkeyRegistrationBody,
+  type AccountBilling, type AccountSession, type SharedAccount as Account,
 } from "@/lib/shared-account-client";
 import { createPasskey, getPasskey, type LoginOptions, type RegistrationOptions } from "@/lib/passkeys";
 import { sharedAccountCopy } from "@/translations/marketing/shared-account";
-import { isLiveAccountHost, sharedAccountEnabled, sharedAccountLiveAccountEnabled, sharedAccountPreviewEnabled, useCreemOffer } from "@/lib/shared-account-preview";
+import { isLiveAccountHost, sharedAccountLiveAccountEnabled, sharedAccountPreviewEnabled, useCreemOffer } from "@/lib/shared-account-preview";
 import { accountDeliveryCopy } from "@/translations/marketing/shared-account-delivery";
 import { guestCheckoutCopy } from "@/translations/marketing/shared-account-guest";
 import appClaimCopy from "@/translations/marketing/app-claim.json";
@@ -16,7 +17,6 @@ import BillingReturnPage from "./BillingReturnPage";
 import AccountSubscription from "./AccountSubscription";
 import "./SharedAccountPage.css";
 
-type Account = { id: string; display_name: string };
 type Pairing = { confirmation_code: string; expires_at_ms: number };
 type EmailAccessResult = { account: Account } | {
   error: "creem_web_link_unavailable" | "creem_web_account_conflict" | "request_failed";
@@ -91,7 +91,6 @@ function AccountManagement() {
   const [busy, setBusy] = useState(false);
   const [refresh, setRefresh] = useState(0);
   const lock = useRef(false);
-  const displayName = useRef<HTMLInputElement>(null);
   const handlingEmailFragment = useRef(false);
   const fragment = new URLSearchParams(location.hash.slice(1));
   const pairCode = sharedAccountPreviewEnabled ? fragment.get("pair") : null;
@@ -100,7 +99,7 @@ function AccountManagement() {
   const params = new URLSearchParams(location.search);
   const billingReturn = params.get("billing") === "return";
   const guestReturning = sharedAccountLiveAccountEnabled && billingReturn;
-  const emailAccessHash = sharedAccountEnabled && /^#access(?:=|$)/.test(location.hash) ? location.hash : "";
+  const emailAccessHash = /^#access(?:=|$)/.test(location.hash) ? location.hash : "";
   const emailAccessPending = Boolean(emailAccessHash || emailAccess);
   const sessionLoading = emailAccessPending || (account === undefined && !sessionError);
   const hasPasskeys = typeof window !== "undefined" && window.isSecureContext
@@ -149,7 +148,7 @@ function AccountManagement() {
     if (emailAccessPending) return;
     const controller = new AbortController();
     setSessionError(false);
-    accountRequest<{ account: Account | null }>("/session", undefined, controller.signal)
+    accountRequest<AccountSession>("/session", undefined, controller.signal)
       .then(({ account: active }) => { if (!controller.signal.aborted) setAccount(active); })
       .catch(() => { if (!controller.signal.aborted) setSessionError(true); });
     return () => controller.abort();
@@ -237,7 +236,7 @@ function AccountManagement() {
     const prefix = `/passkeys/${kind}`;
     const credential = kind === "register"
       ? await createPasskey((await accountRequest<{ options: RegistrationOptions }>(
-        `${prefix}/options`, { display_name: displayName.current?.value.trim() },
+        `${prefix}/options`, passkeyRegistrationBody,
       )).options)
       : await getPasskey((await accountRequest<{ options: LoginOptions }>(`${prefix}/options`, {})).options);
     const data = await accountRequest<{ account: Account }>(`${prefix}/verify`, { credential });
@@ -357,9 +356,9 @@ function AccountManagement() {
         ) : account === undefined ? <AccountSkeleton />
           : account ? (
             <>
-              <AccountSection id="account-session" title={account.display_name}>
+              <section className="mk-account-section" id="account-session" aria-label={messages.signOut}>
                 <button type="button" className="mk-button mk-button-secondary" disabled={busy} onClick={() => void signOut()}>{messages.signOut}</button>
-              </AccountSection>
+              </section>
               {showBilling && <AccountSection id="account-billing" title={sharedAccountPreviewEnabled ? messages.testBilling : webPricing.title}>
                 {billingError ? (
                   <>
@@ -421,10 +420,6 @@ function AccountManagement() {
               <button className="mk-button" type="button" disabled={busy || !hasPasskeys} onClick={() => void run(() => authenticate("login"))}>{messages.signIn}</button>
               {!confirmDeletion && (
                 <form onSubmit={(event) => { event.preventDefault(); void run(() => authenticate("register")); }}>
-                  <div className="mk-field">
-                    <label htmlFor="account-name">{messages.name}</label>
-                    <input id="account-name" ref={displayName} autoComplete="name" maxLength={64} required dir="auto" />
-                  </div>
                   <button className="mk-button mk-button-secondary" type="submit" disabled={busy || !hasPasskeys}>{messages.create}</button>
                 </form>
               )}

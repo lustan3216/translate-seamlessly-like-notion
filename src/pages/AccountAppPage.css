@@ -1,0 +1,243 @@
+.app-account {
+  --app-bg: #f8f8f8;
+  --app-surface: #ffffff;
+  --app-ink: #111111;
+  --app-muted: #6e6e6e;
+  --app-chip: #f2f2f2;
+  --app-divider: #ececec;
+  --app-accent: #575757;
+  --app-selected: #ebebeb;
+  --app-on-selected: #3f3f3f;
+  --app-space-xs: 4px;
+  --app-space-sm: 8px;
+  --app-space-md: 12px;
+  --app-space-lg: 16px;
+  --app-space-xl: 24px;
+  --app-radius-md: 12px;
+  --app-radius-lg: 16px;
+  --app-radius-pill: 999px;
+  background: var(--app-bg);
+  color: var(--app-ink);
+  color-scheme: light;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  overflow-wrap: anywhere;
+}
+
+.app-account[data-app-theme="dark"] {
+  --app-bg: #121214;
+  --app-surface: #252427;
+  --app-ink: #ffffff;
+  --app-muted: #b8b8b8;
+  --app-chip: #333236;
+  --app-divider: #3a393d;
+  --app-accent: #c7c7c7;
+  --app-selected: #383838;
+  --app-on-selected: #e4e4e4;
+  color-scheme: dark;
+}
+
+.app-account-content,
+.app-account-block {
+  display: grid;
+  gap: var(--app-space-sm);
+  min-inline-size: 0;
+}
+
+.app-account > .app-account-content {
+  max-inline-size: 480px;
+  margin-inline: auto;
+  padding: var(--app-space-lg);
+  padding-block-end: calc(var(--app-space-xl) + env(safe-area-inset-bottom, 0px));
+}
+
+.app-account-block,
+.app-account-benefits {
+  background: var(--app-surface);
+  border-radius: var(--app-radius-lg);
+}
+
+.app-account-block {
+  padding: var(--app-space-lg);
+}
+
+.app-account-current {
+  background: var(--app-divider);
+  margin-block-end: var(--app-space-lg);
+}
+
+.app-account-placeholder {
+  min-block-size: 96px;
+}
+
+.app-account-plan-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--app-space-xs) var(--app-space-sm);
+}
+
+.app-account-plan-name h1 {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.app-account-badge {
+  padding: var(--app-space-xs) var(--app-space-sm);
+  border-radius: var(--app-radius-pill);
+  color: var(--app-on-selected);
+  background: var(--app-selected);
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.app-account-benefits {
+  margin-block-end: var(--app-space-lg);
+}
+
+.app-account-benefits li {
+  display: flex;
+  align-items: center;
+  gap: var(--app-space-sm);
+  padding: var(--app-space-md) var(--app-space-lg);
+}
+
+.app-account-benefits li + li {
+  border-block-start: 1px solid var(--app-divider);
+}
+
+.app-account-feature-icon {
+  display: grid;
+  flex: 0 0 40px;
+  block-size: 40px;
+  place-items: center;
+  color: var(--app-ink);
+  background: var(--app-chip);
+  border-radius: var(--app-radius-md);
+}
+
+.app-account-benefits strong,
+.app-account-option strong {
+  display: block;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.app-account-benefits li > div > span,
+.app-account-option > span > span {
+  display: block;
+  color: var(--app-muted);
+  font-size: 14px;
+}
+
+.app-account-options {
+  display: grid;
+  gap: var(--app-space-md);
+  min-inline-size: 0;
+  margin-block-end: var(--app-space-lg);
+}
+
+.app-account-options legend {
+  padding-block-end: var(--app-space-sm);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.app-account-option {
+  display: flex;
+  align-items: center;
+  gap: var(--app-space-md);
+  min-block-size: 44px;
+  padding: var(--app-space-lg);
+  background: var(--app-surface);
+  border-radius: var(--app-radius-lg);
+  cursor: pointer;
+}
+
+.app-account-option input {
+  flex: 0 0 20px;
+  block-size: 20px;
+  accent-color: var(--app-accent);
+}
+
+.app-account .app-account-action {
+  display: grid;
+  place-items: center;
+  min-block-size: 44px;
+  padding: var(--app-space-sm) var(--app-space-lg);
+  border: 0;
+  border-radius: var(--app-radius-lg);
+  background: var(--app-surface);
+  color: var(--app-ink);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  white-space: normal;
+  cursor: pointer;
+}
+
+.app-account-block > .app-account-action,
+.app-account-dialog-actions > .app-account-action {
+  background: var(--app-chip);
+}
+
+.app-account .app-account-primary {
+  background: var(--app-ink);
+  color: var(--app-surface);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.app-account .app-account-action:disabled,
+.app-account fieldset:disabled .app-account-option {
+  background: var(--app-chip);
+  color: var(--app-muted);
+  opacity: 1;
+  cursor: default;
+}
+
+.app-account .app-account-action:focus-visible,
+.app-account-option:has(input:focus-visible) {
+  outline: 2px solid var(--app-accent);
+  outline-offset: 2px;
+}
+
+.app-account .app-account-dialog {
+  gap: var(--app-space-md);
+  inline-size: min(400px, calc(100% - 2 * var(--app-space-lg)));
+  max-block-size: calc(100% - 2 * var(--app-space-lg));
+  overflow: auto;
+  padding: var(--app-space-lg);
+  border: 0;
+  border-radius: var(--app-radius-lg);
+  background: var(--app-surface);
+  color: var(--app-ink);
+}
+
+.app-account-dialog h2 {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.app-account-dialog p {
+  color: var(--app-muted);
+}
+
+.app-account-dialog-actions {
+  display: grid;
+  gap: var(--app-space-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-account-dialog {
+    animation: none;
+  }
+}

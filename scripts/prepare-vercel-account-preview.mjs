@@ -3,7 +3,7 @@ import { copyFile, cp, lstat, mkdir, mkdtemp, readFile, rm, writeFile } from "no
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { SITE_ROUTES } from "../src/lib/site-config.mjs";
+import { accountAppPath, SITE_ROUTES } from "../src/lib/site-config.mjs";
 import { accountClaimPath } from "../src/lib/creem-app-claim.mjs";
 import { writeLiveAccountFunction } from "./prepare-vercel-account-function.mjs";
 
@@ -30,7 +30,7 @@ const presentationAssets = live ? ["app-preview/icons"] : [
   "app-preview/native",
   "app-preview/localized-ui",
 ];
-const documentPaths = live ? ["/account", accountClaimPath] : [...SITE_ROUTES.filter((route) => route !== "/"), "/account"];
+const documentPaths = ["/account", accountAppPath, ...(live ? [accountClaimPath] : SITE_ROUTES.filter((route) => route !== "/"))];
 const escapePattern = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const headers = {
   "Cache-Control": "private, no-store",

@@ -1,6 +1,15 @@
 import { applyCreemReferral } from "./creem-referral.mjs";
 import { sharedAccountPreviewEnabled } from "./shared-account-preview";
 import type { BillingPeriod, CreemOffer } from "./shared-account-preview";
+import type { PlanChangeTiming } from "../pages/account-subscription-policy";
+
+export type SharedAccount = { id: string };
+export type AccountSession = {
+  account: SharedAccount | null;
+  session?: { source: "app_link" | "web" } | null;
+};
+
+export const passkeyRegistrationBody = { display_name: "AnyTranslator" };
 
 export type AccountBilling = {
   enabled?: boolean;
@@ -96,11 +105,11 @@ const billingAttemptKey = "anytranslator.creem.billingAttempt";
 const accountCheckoutReturnKey = "anytranslator.creem.accountCheckout";
 
 export type SubscriptionAction = "change-plan" | "cancel-pending-change" | "cancel" | "resume";
-export type BillingAttempt = { action: SubscriptionAction; key: string; offer?: CreemOffer };
+export type BillingAttempt = { action: SubscriptionAction; key: string; offer?: CreemOffer; timing?: PlanChangeTiming };
 
-export function readBillingAttempt(accountId: string): BillingAttempt | undefined {
+export function readBillingAttempt(scope: string): BillingAttempt | undefined {
   try {
-    const saved = sessionStorage.getItem(`${billingAttemptKey}.${accountId}`);
+    const saved = sessionStorage.getItem(`${billingAttemptKey}.${scope}`);
     if (!saved) return;
     const attempt = JSON.parse(saved);
     if (!attempt || typeof attempt.key !== "string" || !checkoutAttemptPattern.test(attempt.key)) return;
@@ -109,8 +118,8 @@ export function readBillingAttempt(accountId: string): BillingAttempt | undefine
   } catch { /* Same-page retries keep their key when storage is unavailable. */ }
 }
 
-export function saveBillingAttempt(accountId: string, attempt?: BillingAttempt) {
-  const key = `${billingAttemptKey}.${accountId}`;
+export function saveBillingAttempt(scope: string, attempt?: BillingAttempt) {
+  const key = `${billingAttemptKey}.${scope}`;
   try {
     if (attempt) sessionStorage.setItem(key, JSON.stringify(attempt));
     else sessionStorage.removeItem(key);

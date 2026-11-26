@@ -1,6 +1,7 @@
 import { marketingRoutes } from "../data/marketing-content.mjs";
 import { currentMainOnlyRoutes } from "../data/main-current.mjs";
 export const SITE_URL = "https://www.anytranslator.app";
+export const accountAppPath = "/account/app";
 export const SITE_ROUTES = [...new Set([
   "/",
   ...marketingRoutes,

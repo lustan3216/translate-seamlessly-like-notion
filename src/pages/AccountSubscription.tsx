@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import HugeIcon from "@/components/HugeIcon";
 import { useMarketing } from "@/components/marketing/MarketingShell";
+import { sendAppMessage } from "@/lib/account-app-entry";
 import {
   AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent,
   AlertDialogDescription, AlertDialogTitle, AlertDialogTrigger,
@@ -16,7 +17,7 @@ import { sharedAccountCopy } from "@/translations/marketing/shared-account";
 import { subscriptionCopy } from "@/translations/marketing/shared-account-subscription";
 import pricingCopy from "@/translations/marketing/pricing.json";
 import creemCopy from "@/translations/marketing/creem-preview.json";
-import { planChangeTiming } from "./account-subscription-policy";
+import { appAllowsPlanAction, planChangeTiming } from "./account-subscription-policy";
 
 const tiers = ["standard", "voice"] as const;
 const periods = ["weekly", "monthly", "yearly"] as const;
@@ -35,6 +36,7 @@ type Props = {
   busy: boolean;
   allowCheckout: boolean;
   allowActions: boolean;
+  appPage?: { dialogContainer: HTMLElement | null };
   run: (action: () => Promise<void>) => Promise<void>;
   onBillingChange: (status: AccountBilling) => void;
 };
@@ -50,7 +52,7 @@ function planState(entitlement: AccountBilling["entitlement"]) {
 }
 
 export default function AccountSubscription({
-  accountId, billing, catalog, busy, allowCheckout, allowActions, run, onBillingChange,
+  accountId, billing, catalog, busy, allowCheckout, allowActions, appPage, run, onBillingChange,
 }: Props) {
   const { currentLanguage, copy: marketing, m } = useMarketing();
   const locale = currentLanguage.code;
@@ -68,7 +70,11 @@ export default function AccountSubscription({
   const currentOfferId = subscription?.offerId ?? entitlement?.offerId;
   const [selection, setSelection] = useState<CreemOffer["id"]>();
   const [updated, setUpdated] = useState<SubscriptionAction>();
-  const [pending, setPending] = useState(() => readBillingAttempt(accountId));
+  const attemptScope = appPage ? `app.${accountId}` : accountId;
+  const [pending, setPending] = useState(() => {
+    const attempt = readBillingAttempt(attemptScope);
+    return appPage && attempt?.action === "change-plan" && !appAllowsPlanAction(attempt.timing) ? undefined : attempt;
+  });
 
   const offers = catalog.offers ?? [];
   const currentOffer = offers.find(({ id }) => currentOfferId === id);
@@ -85,7 +91,7 @@ export default function AccountSubscription({
   });
   const selected = options.find(({ id }) => id === selection) ?? options.find(({ id }) => id === currentOfferId)
     ?? options.find(({ period }) => period === "monthly") ?? options.at(-1);
-  const quota = (offerId: CreemOffer["id"]) => {
+  const quota = (offerId: string) => {
     const definitions = quotaQuery.data;
     const productId = definitions?.billingOffers[offerId]?.productId;
     return productId ? definitions?.plans[productId] : undefined;
@@ -112,15 +118,20 @@ export default function AccountSubscription({
   const canCancel = canManage && (state === "inUse" || state === "grace");
   const showChange = canCancel && !!subscription?.offerId && !!selected;
   const changesCurrent = showChange && selected.id !== currentOfferId;
-  const timing = changesCurrent ? planChangeTiming(
-    { groupLevel: quota(subscription.offerId)?.groupLevel, period: currentPeriod },
-    { groupLevel: quota(selected.id)?.groupLevel, period: selected.period },
-  ) : undefined;
+  function timingFor(offer: CreemOffer, fromOfferId: string | null | undefined, fromPeriod?: BillingPeriod) {
+    if (!fromOfferId || offer.id === fromOfferId) return;
+    return planChangeTiming(
+      { groupLevel: quota(fromOfferId)?.groupLevel, period: fromPeriod },
+      { groupLevel: quota(offer.id)?.groupLevel, period: offer.period },
+    );
+  }
+  const timing = changesCurrent ? timingFor(selected, subscription.offerId, currentPeriod) : undefined;
   const confirmedChange = subscription?.pendingChange;
   const canChange = changesCurrent && !!timing && selected.id !== confirmedChange?.offerId
     && !(timing === "deferred" && confirmedChange);
   const canCancelChange = canCancel && !!confirmedChange;
-  const canCheckout = allowActions && allowCheckout && !pending && !hasPlan && billing.enabled === true;
+  const canCheckout = allowActions && allowCheckout && !pending && !hasPlan && billing.enabled === true
+    && (!appPage || appAllowsPlanAction("checkout"));
   const canResume = canManage && state === "scheduledCancel";
   const showPortal = billing.hasPortal ?? isCreem;
   const formatter = new Intl.DateTimeFormat(locale, { dateStyle: "medium" });
@@ -151,13 +162,26 @@ export default function AccountSubscription({
   function submitPlanChange(action: SubscriptionAction, offer?: CreemOffer) {
     return run(async () => {
       setUpdated(undefined);
-      const attempt: BillingAttempt = pending ?? { key: crypto.randomUUID(), action, offer };
-      saveBillingAttempt(accountId, attempt);
-      setPending(attempt);
+      let attempt: BillingAttempt = pending ?? { key: crypto.randomUUID(), action, offer };
       function finish() {
-        saveBillingAttempt(accountId, undefined);
+        saveBillingAttempt(attemptScope, undefined);
         setPending(undefined);
       }
+      if (appPage && attempt.action === "change-plan" && attempt.offer) {
+        const latest = await accountRequest<AccountBilling>("/billing/status");
+        const latestOfferId = latest.subscription?.offerId;
+        const latestDefinition = latestOfferId ? quotaQuery.data?.billingOffers[latestOfferId] : undefined;
+        const latestPeriod = latestDefinition?.period ?? latest.entitlement?.period;
+        const latestTiming = timingFor(attempt.offer, latestOfferId, latestPeriod);
+        if (!appAllowsPlanAction(latestTiming) || !["active", "grace"].includes(latest.subscription?.state)) {
+          onBillingChange(latest);
+          finish();
+          throw new Error("creem_subscription_changed");
+        }
+        attempt = { ...attempt, timing: latestTiming };
+      }
+      saveBillingAttempt(attemptScope, attempt);
+      setPending(attempt);
       try {
         const result = await accountRequest<AccountBilling>(`/billing/${attempt.action}`,
           attempt.offer ? { offer: attempt.offer } : {}, undefined, attempt.key);
@@ -165,6 +189,7 @@ export default function AccountSubscription({
         onBillingChange(result);
         if (!result.operationPending) {
           finish();
+          if (appPage) sendAppMessage("statusChanged");
           if (attempt.action !== "change-plan" || !result.subscription?.pendingChange) setUpdated(attempt.action);
         }
       } catch (error) {
@@ -195,24 +220,84 @@ export default function AccountSubscription({
     });
   }
 
-  const selectedQuota = selected ? quota(selected.id) : undefined;
-  const benefits = copy.benefits;
-  const featureCopy: Record<string, { title: string; description: string; icon: string }> = {
-    translation: {
-      title: m("feature.text"),
-      description: selectedQuota?.translateCount === -1 ? benefits.translation : "",
-      icon: "language-square",
-    },
-    smartScan: { title: benefits.scanTitle, description: benefits.scan, icon: "file-search" },
-    liveTranslation: { title: marketing.pricing.voiceLabel, description: benefits.voice, icon: "mic-01" },
-    saveRecordings: { title: copy.recordingsTitle, description: benefits.recordings, icon: "mic-01" },
-    shareRecordingLinks: { title: copy.sharingTitle, description: benefits.sharing, icon: "link-01" },
-    multilingualSubtitles: { title: copy.subtitlesTitle, description: benefits.subtitles, icon: "closed-caption" },
-    voiceAgent: { title: marketing.pricing.chatVoiceLabel, description: benefits.agent, icon: "bot" },
-    screenTranslation: { title: m("feature.screen-translation"), description: benefits.screen, icon: "closed-caption" },
-    learningWidget: { title: m("feature.widget"), description: benefits.widget, icon: "book" },
-    customHelpers: { title: pricing.profiles, description: benefits.helper, icon: "bubble-chat-question" },
-  };
+  function openPortal() {
+    return run(async () => {
+      const { portalUrl } = await accountRequest<{ portalUrl: string }>("/billing/portal", {});
+      visitCreem(portalUrl);
+    });
+  }
+
+  function cancelControl() {
+    const secondaryClass = appPage ? "app-account-action" : "mk-button mk-button-secondary";
+    return (
+      <AlertDialog>
+        <AlertDialogTrigger asChild>
+          <button className={secondaryClass} type="button" disabled={busy}>{copy.cancelSubscription}</button>
+        </AlertDialogTrigger>
+        <AlertDialogContent container={appPage?.dialogContainer} className={appPage ? "app-account-dialog" : "mk-subscription-dialog"}>
+          <AlertDialogTitle>{copy.cancelSubscription}</AlertDialogTitle>
+          <AlertDialogDescription>{copy.cancelHelp}</AlertDialogDescription>
+          <div className={appPage ? "app-account-dialog-actions" : "mk-account-actions"}>
+            <AlertDialogCancel className={appPage ? secondaryClass : undefined}>{messages.cancel}</AlertDialogCancel>
+            <AlertDialogAction className={appPage ? "app-account-action app-account-primary" : undefined}
+              onClick={() => void submitPlanChange("cancel")}>{copy.cancelSubscription}</AlertDialogAction>
+          </div>
+        </AlertDialogContent>
+      </AlertDialog>
+    );
+  }
+
+  function planBenefits(selectedQuota: AccountPlanQuota | undefined) {
+    if (!selectedQuota?.features?.length) return null;
+    const benefits = copy.benefits;
+    const featureCopy: Record<string, { title: string; description: string; icon: string }> = {
+      translation: {
+        title: m("feature.text"),
+        description: selectedQuota?.translateCount === -1 ? benefits.translation : "",
+        icon: "language-square",
+      },
+      smartScan: { title: benefits.scanTitle, description: benefits.scan, icon: "file-search" },
+      liveTranslation: { title: marketing.pricing.voiceLabel, description: benefits.voice, icon: "mic-01" },
+      saveRecordings: { title: copy.recordingsTitle, description: benefits.recordings, icon: "mic-01" },
+      shareRecordingLinks: { title: copy.sharingTitle, description: benefits.sharing, icon: "link-01" },
+      multilingualSubtitles: { title: copy.subtitlesTitle, description: benefits.subtitles, icon: "closed-caption" },
+      voiceAgent: { title: marketing.pricing.chatVoiceLabel, description: benefits.agent, icon: "bot" },
+      screenTranslation: { title: m("feature.screen-translation"), description: benefits.screen, icon: "closed-caption" },
+      learningWidget: { title: m("feature.widget"), description: benefits.widget, icon: "book" },
+      customHelpers: { title: pricing.profiles, description: benefits.helper, icon: "bubble-chat-question" },
+    };
+    return (
+      <ul className={appPage ? "app-account-benefits" : "mk-subscription-benefits"} aria-label={m("nav.features")}>
+        {selectedQuota.features.map(({ id, quotaKey, maxPhotosPerBatch, maxLanguages }) => {
+          const feature = featureCopy[id];
+          if (!Object.prototype.hasOwnProperty.call(featureCopy, id)) return null;
+          const amount = quotaKey && selectedQuota[quotaKey];
+          const count = maxPhotosPerBatch ?? maxLanguages ?? (id === "customHelpers" ? amount : undefined);
+          const description = feature.description.includes("{count}")
+            ? typeof count === "number" && count >= 0 ? feature.description.replace("{count}", number.format(count))
+              : count === -1 ? pricing.unlimited : undefined
+            : feature.description;
+          const usage = quotaKey === "audioMinutes" || quotaKey === "voiceAgentMinutes"
+            ? allowance(selectedQuota[quotaKey], selectedQuota.quotaPeriod)
+            : id === "translation" && typeof amount === "number" && amount >= 0
+              ? `${number.format(amount)} ${pricing[selectedQuota.quotaPeriod === "week" ? "perWeek" : "perMonth"]}`
+              : null;
+          return (
+            <li key={id}>
+              {appPage ? <span className="app-account-feature-icon"><HugeIcon name={feature.icon} className="h-5 w-5" /></span>
+                : <HugeIcon name={feature.icon} className="h-5 w-5" />}
+              <div>
+                <strong>{feature.title}</strong>
+                {description && <span>{description}</span>}
+                {usage && <span>{usage}</span>}
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
+
   function badges() {
     if (!state) return null;
     return (
@@ -222,6 +307,98 @@ export default function AccountSubscription({
       </span>
     );
   }
+
+  const operationNote = updated === "cancel-pending-change" ? copy.changeCanceled : copy.updated;
+  if (appPage) {
+    const appOffers = offers.filter((offer) => {
+      if (canCheckout) return true;
+      if (!canCancel || offer.id === confirmedChange?.offerId) return false;
+      const candidateTiming = timingFor(offer, subscription?.offerId, currentPeriod);
+      return appAllowsPlanAction(candidateTiming) && !(confirmedChange && candidateTiming === "deferred");
+    });
+    const appSelection = appOffers.find(({ id }) => id === selection);
+    const appTiming = appSelection && timingFor(appSelection, subscription?.offerId, currentPeriod);
+    const scheduledOffer = confirmedChange && offers.find(({ id }) => id === confirmedChange.offerId);
+
+    const price = (offer: CreemOffer) => <><bdi>{formatCreemPrice(locale, offer)}</bdi> {pricing[priceUnit[offer.period]]}</>;
+    return (
+      <>
+        <section className="app-account-block app-account-current">
+          <div className="app-account-plan-name">
+            {currentTier && <h1>{planTitle(currentTier, currentPeriod)}</h1>}
+            {state && <span className="app-account-badge">{copy[state]}</span>}
+          </div>
+          {currentOffer && <p>{price(currentOffer)}</p>}
+          {state === "scheduledCancel" && currentNote ? <p>{currentNote}</p>
+            : state !== "grace" && accessEnd && <p>{messages.paidUntil.replace("{date}", accessEnd)}</p>}
+        </section>
+
+        {state === "grace" && (
+          <div className="app-account-block">
+            <p role="alert">{currentNote}</p>
+            {showPortal && <button className="app-account-action app-account-primary" type="button" disabled={busy}
+              onClick={() => void openPortal()}>{copy.updatePayment}</button>}
+          </div>
+        )}
+
+        {currentOfferId && planBenefits(quota(currentOfferId))}
+        {(quotaQuery.isError || (!catalog.loading && !catalog.offers)) && (
+          <div className="app-account-block">
+            <p role="alert">{messages.error}</p>
+            <button type="button" className="app-account-action" disabled={busy} onClick={() => {
+              if (quotaQuery.isError) void quotaQuery.refetch();
+              if (!catalog.offers) void catalog.refetch();
+            }}>{messages.retry}</button>
+          </div>
+        )}
+
+        {!!appOffers.length && (
+          <fieldset className="app-account-options" disabled={busy}>
+            <legend>{messages.choosePlan}</legend>
+            {appOffers.map((offer) => (
+              <label className="app-account-option" key={offer.id}>
+                <input type="radio" name="app-account-offer" value={offer.id} checked={appSelection?.id === offer.id}
+                  onChange={() => { setSelection(offer.id); setUpdated(undefined); }} />
+                <span><strong>{planTitle(offer.plan, offer.period)}</strong><span>{price(offer)}</span></span>
+              </label>
+            ))}
+            {appSelection && <>
+              {appTiming && <p>{appTiming === "deferred" ? copy.afterRenewal : copy.proration}</p>}
+              <button className="app-account-action app-account-primary" type="button"
+                onClick={() => void (canCheckout ? checkout(appSelection) : submitPlanChange("change-plan", appSelection))}>
+                {canCheckout ? pricing[appSelection.plan === "standard" ? "subscribeStandard" : "subscribeVoice"]
+                  : appTiming === "deferred" ? copy.switchAtRenewal : copy.switchNow}
+              </button>
+            </>}
+          </fieldset>
+        )}
+
+        {confirmedChange && (nextPlanNote || canCancelChange) && (
+          <div className="app-account-block">
+            {nextPlanNote && <p role="status">{nextPlanNote}</p>}
+            {scheduledOffer && <p>{price(scheduledOffer)}</p>}
+            {canCancelChange && <button className="app-account-action" type="button" disabled={busy}
+              onClick={() => void submitPlanChange("cancel-pending-change")}>{copy.cancelChange}</button>}
+          </div>
+        )}
+        {updated && <p className="app-account-block" role="status">{operationNote}</p>}
+        {pending && (
+          <div className="app-account-block">
+            <p role="status">{copy.pending}</p>
+            <button className="app-account-action" type="button" disabled={busy}
+              onClick={() => void submitPlanChange(pending.action, pending.offer)}>{messages.retry}</button>
+          </div>
+        )}
+
+        {canCancel && cancelControl()}
+        {canResume && <button className="app-account-action" type="button" disabled={busy}
+          onClick={() => void submitPlanChange("resume")}>{copy.resumeSubscription}</button>}
+        {showPortal && <button className="app-account-action" type="button" disabled={busy}
+          onClick={() => void openPortal()}>{copy.portalDetails}</button>}
+      </>
+    );
+  }
+
   return (
     <div className="mk-subscription">
       {(entitlement || subscription) && !currentShown && (
@@ -240,35 +417,7 @@ export default function AccountSubscription({
         </div>
       )}
 
-      {!!selectedQuota?.features?.length && (
-        <ul className="mk-subscription-benefits" aria-label={m("nav.features")}>
-          {selectedQuota.features.map(({ id, quotaKey, maxPhotosPerBatch, maxLanguages }) => {
-            const feature = featureCopy[id];
-            if (!Object.prototype.hasOwnProperty.call(featureCopy, id)) return null;
-            const amount = quotaKey && selectedQuota[quotaKey];
-            const count = maxPhotosPerBatch ?? maxLanguages ?? (id === "customHelpers" ? amount : undefined);
-            const description = feature.description.includes("{count}")
-              ? typeof count === "number" && count >= 0 ? feature.description.replace("{count}", number.format(count))
-                : count === -1 ? pricing.unlimited : undefined
-              : feature.description;
-            const usage = quotaKey === "audioMinutes" || quotaKey === "voiceAgentMinutes"
-              ? allowance(selectedQuota[quotaKey], selectedQuota.quotaPeriod)
-              : id === "translation" && typeof amount === "number" && amount >= 0
-                ? `${number.format(amount)} ${pricing[selectedQuota.quotaPeriod === "week" ? "perWeek" : "perMonth"]}`
-                : null;
-            return (
-              <li key={id}>
-                <HugeIcon name={feature.icon} className="h-5 w-5" />
-                <div>
-                  <strong>{feature.title}</strong>
-                  {description && <span>{description}</span>}
-                  {usage && <span>{usage}</span>}
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-      )}
+      {selected && planBenefits(quota(selected.id))}
 
       {(quotaQuery.isError || (!quotaQuery.isPending && changesCurrent && !timing) || !catalog.loading && !catalog.offers) && (
         <div className="mk-account-notice">
@@ -317,7 +466,7 @@ export default function AccountSubscription({
           </>
         )}
 
-      {updated && <p role="status">{updated === "cancel-pending-change" ? copy.changeCanceled : copy.updated}</p>}
+      {updated && <p role="status">{operationNote}</p>}
       {pending && (
         <div className="mk-account-notice">
           <p role="status">{copy.pending}</p>
@@ -340,29 +489,12 @@ export default function AccountSubscription({
 
       {(canCancel || canResume || showPortal) && (
         <div className="mk-account-actions mk-subscription-secondary">
-          {canCancel && (
-            <AlertDialog>
-              <AlertDialogTrigger asChild>
-                <button className="mk-button mk-button-secondary" type="button" disabled={busy}>{copy.cancelSubscription}</button>
-              </AlertDialogTrigger>
-              <AlertDialogContent className="mk-subscription-dialog">
-                <AlertDialogTitle>{copy.cancelSubscription}</AlertDialogTitle>
-                <AlertDialogDescription>{copy.cancelHelp}</AlertDialogDescription>
-                <div className="mk-account-actions">
-                  <AlertDialogCancel>{messages.cancel}</AlertDialogCancel>
-                  <AlertDialogAction onClick={() => void submitPlanChange("cancel")}>{copy.cancelSubscription}</AlertDialogAction>
-                </div>
-              </AlertDialogContent>
-            </AlertDialog>
-          )}
+          {canCancel && cancelControl()}
           {canResume && <button className="mk-button mk-button-secondary" type="button"
             disabled={busy} onClick={() => void submitPlanChange("resume")}>{copy.resumeSubscription}</button>}
           {showPortal && (
             <button className="mk-button mk-button-secondary" type="button" disabled={busy}
-              onClick={() => void run(async () => {
-                const { portalUrl } = await accountRequest<{ portalUrl: string }>("/billing/portal", {});
-                visitCreem(portalUrl);
-              })}>{state === "grace" ? copy.updatePayment : `Creem Portal · ${copy.portalDetails}`}</button>
+              onClick={() => void openPortal()}>{state === "grace" ? copy.updatePayment : `Creem Portal · ${copy.portalDetails}`}</button>
           )}
         </div>
       )}
