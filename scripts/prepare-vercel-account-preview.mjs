@@ -10,17 +10,19 @@ import { writeLiveAccountFunction } from "./prepare-vercel-account-function.mjs"
 const website = fileURLToPath(new URL("../", import.meta.url));
 const args = process.argv.slice(2);
 const live = args[0] === "--live";
-if (live) args.shift();
+const dev = args[0] === "--dev";
+if (live || dev) args.shift();
 if (args.length > 1 || args[0]?.startsWith("-")) {
-  throw new Error("Usage: node scripts/prepare-vercel-account-preview.mjs [--live] [marketing build output]");
+  throw new Error("Usage: node scripts/prepare-vercel-account-preview.mjs [--live | --dev] [marketing build output]");
 }
 const production = path.resolve(args[0] ?? path.join(website, "output/vercel-release/.vercel/output"));
 const productionStatic = path.join(production, "static");
-const mode = live ? "account-live" : "account-preview";
+const buildMode = live ? "account-live" : "account-preview";
+const mode = dev ? "account-dev" : buildMode;
 const preview = await mkdtemp(path.join(tmpdir(), `anytranslator-vercel-${mode}-`));
 const output = path.join(preview, ".vercel", "output");
 const staticRoot = path.join(output, "static");
-const proxy = path.join(output, "functions", "api", "account-preview.func");
+const proxy = path.join(output, "functions", "api", `${mode}.func`);
 const quotaFunction = "functions/api/plan-quotas.func";
 const presentationAssets = live ? ["app-preview/icons"] : [
   "app-preview/backgrounds/abstract-mist-v3.webp",
@@ -81,7 +83,7 @@ try {
   delete env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN;
   const build = spawnSync(process.execPath, [
     path.join(website, "node_modules", "vite", "bin", "vite.js"),
-    "build", "--mode", mode, "--outDir", staticRoot,
+    "build", "--mode", buildMode, "--outDir", staticRoot,
   ], { cwd: website, env, stdio: ["ignore", process.stderr, process.stderr] });
   if (build.error) throw build.error;
   if (build.status !== 0) throw new Error("Account preview build failed");
@@ -103,10 +105,11 @@ try {
       return true;
     },
   });
-  if (live) await writeLiveAccountFunction(output, "account-live");
+  if (live) await writeLiveAccountFunction(output, mode);
   else {
     await mkdir(proxy, { recursive: true });
-    await copyFile(path.join(website, "scripts", "vercel-account-preview-proxy.mjs"), path.join(proxy, "handler.mjs"));
+    await copyFile(path.join(website, "scripts", "vercel-account-preview-proxy.mjs"), path.join(proxy, dev ? "proxy.mjs" : "handler.mjs"));
+    if (dev) await writeFile(path.join(proxy, "handler.mjs"), 'export { devAccountProxy as default } from "./proxy.mjs";\n');
     await writeFile(path.join(proxy, ".vc-config.json"), JSON.stringify({
       runtime: "nodejs24.x", handler: "handler.mjs", launcherType: "Nodejs", maxDuration: 60,
     }) + "\n");

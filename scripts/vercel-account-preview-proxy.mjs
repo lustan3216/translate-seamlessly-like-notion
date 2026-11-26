@@ -2,6 +2,7 @@ import { isIP } from "node:net";
 
 const liveWorker = "https://cloudflare.anytranslator.app";
 const liveAccountHost = "account.anytranslator.app";
+const devAccountHost = "account-dev.anytranslator.app";
 const billingCatalog = "billing/catalog";
 const guestResend = "billing/guest-resend";
 const guestStatus = "billing/guest-status";
@@ -54,7 +55,7 @@ function reply(res, status, error) {
   res.end(JSON.stringify({ error }));
 }
 
-async function proxy(req, res, { vercelEnvironment, host, token, backend, functionPath, publicBilling = false }) {
+async function proxy(req, res, { vercelEnvironment, host, token, backend, functionPath, live = false, publicBilling = false }) {
   res.setHeader("Content-Type", "application/json; charset=utf-8");
   res.setHeader("Cache-Control", "private, no-store");
   res.setHeader("X-Content-Type-Options", "nosniff");
@@ -72,7 +73,7 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
   const { route, search } = destination;
   const publicRoute = route === billingCatalog || route === guestStatus || guestPostRoutes.has(route);
   if (publicBilling && !publicRoute) return reply(res, 404, "not_found");
-  const canPost = postRoutes.has(route) || (vercelEnvironment === "production" && livePostRoutes.has(route));
+  const canPost = postRoutes.has(route) || (live && livePostRoutes.has(route));
   const method = getRoutes.has(route) ? "GET" : canPost ? "POST" : null;
   if (!method) return reply(res, 404, "not_found");
   if (req.method !== method) {
@@ -89,7 +90,7 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
 
   const headers = { Accept: jsonType, Origin: publicBilling ? `https://${liveAccountHost}` : origin, "X-AT-Account-Proxy-Token": token };
   const visitorIp = req.headers["x-vercel-forwarded-for"];
-  if (vercelEnvironment === "production" && typeof visitorIp === "string" && isIP(visitorIp)) {
+  if (live && typeof visitorIp === "string" && isIP(visitorIp)) {
     headers["X-AT-Account-Client-IP"] = visitorIp;
   }
   const forwardCookies = !publicRoute;
@@ -146,12 +147,25 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
   }
 }
 
-export default function previewAccountProxy(req, res) {
-  const { VERCEL_URL: host, SHARED_ACCOUNT_PROXY_TOKEN: token, SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN: backend } = process.env;
+function previewWorkerProxy(req, res, { vercelEnvironment, host, functionPath }) {
+  const { SHARED_ACCOUNT_PROXY_TOKEN: token, SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN: backend } = process.env;
   return proxy(req, res, {
+    vercelEnvironment, host, functionPath, token, backend: isPreviewWorkerOrigin(backend) ? backend : undefined,
+  });
+}
+
+export default function previewAccountProxy(req, res) {
+  const host = process.env.VERCEL_URL;
+  return previewWorkerProxy(req, res, {
     vercelEnvironment: "preview",
     host: /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.vercel\.app$/.test(host ?? "") ? host : null,
-    token, backend: isPreviewWorkerOrigin(backend) ? backend : undefined, functionPath: "/api/account-preview",
+    functionPath: "/api/account-preview",
+  });
+}
+
+export function devAccountProxy(req, res) {
+  return previewWorkerProxy(req, res, {
+    vercelEnvironment: "production", host: devAccountHost, functionPath: "/api/account-dev",
   });
 }
 
@@ -159,7 +173,7 @@ export function liveAccountProxy(req, res) {
   return proxy(req, res, {
     vercelEnvironment: "production", host: liveAccountHost,
     token: process.env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN, backend: liveWorker,
-    functionPath: "/api/account-live",
+    functionPath: "/api/account-live", live: true,
   });
 }
 
@@ -167,6 +181,6 @@ export function liveCatalogProxy(req, res) {
   return proxy(req, res, {
     vercelEnvironment: "production", host: "www.anytranslator.app",
     token: process.env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN, backend: liveWorker,
-    functionPath: "/api/account-catalog", publicBilling: true,
+    functionPath: "/api/account-catalog", live: true, publicBilling: true,
   });
 }

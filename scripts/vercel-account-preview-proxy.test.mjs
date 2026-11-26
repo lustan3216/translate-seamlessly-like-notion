@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { Readable } from "node:stream";
 import { test } from "node:test";
-import handler, { liveAccountProxy, liveCatalogProxy } from "./vercel-account-preview-proxy.mjs";
+import handler, { devAccountProxy, liveAccountProxy, liveCatalogProxy } from "./vercel-account-preview-proxy.mjs";
 
 test("account sessions and public billing stay on their assigned origins", async (context) => {
   const env = {
@@ -399,4 +399,73 @@ test("account sessions and public billing stay on their assigned origins", async
   assert.equal((await call(liveAccount)).statusCode, 404);
   assert.equal((await call(liveCatalog)).statusCode, 404);
   assert.equal(upstream.mock.callCount(), accepted);
+});
+
+test("the fixed Dev host uses the preview Worker and its account rules", async (context) => {
+  const env = {
+    VERCEL_ENV: "production",
+    VERCEL_URL: "account-dev-fixture.vercel.app",
+    SHARED_ACCOUNT_PROXY_TOKEN: "fixture-dev-proxy-token-12345678901234",
+    SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN: "https://fixture-dev.et3216-c0d.workers.dev",
+    SHARED_ACCOUNT_LIVE_PROXY_TOKEN: "fixture-live-proxy-token-1234567890123",
+  };
+  const original = Object.fromEntries(Object.keys(env).map((key) => [key, process.env[key]]));
+  Object.assign(process.env, env);
+  context.after(() => {
+    for (const [key, old] of Object.entries(original)) {
+      if (old === undefined) delete process.env[key];
+      else process.env[key] = old;
+    }
+  });
+
+  const host = "account-dev.anytranslator.app";
+  const origin = `https://${host}`;
+  const accountCookie = `__Host-at_session=${"d".repeat(43)}`;
+  const session = `${accountCookie}; Max-Age=60; Path=/; HttpOnly; Secure; SameSite=Strict`;
+  const upstream = context.mock.method(globalThis, "fetch", async () => Response.json({ account: {} }, {
+    headers: [["set-cookie", session], ["set-cookie", "unrelated=discard"]],
+  }));
+
+  async function call({ url = "/api/account-dev?account_route=session", method = "GET", requestHost = host } = {}) {
+    const req = Object.assign(Readable.from([Buffer.from("{}")]), {
+      method, url,
+      headers: {
+        host: requestHost, origin, "sec-fetch-site": "same-origin", "content-type": "application/json",
+        cookie: `unrelated=discard; ${accountCookie}`,
+        "x-vercel-forwarded-for": "2001:db8::12", "x-at-account-client-ip": "spoofed",
+      },
+    });
+    const headers = {};
+    const res = { setHeader(name, value) { headers[name.toLowerCase()] = value; }, end() {} };
+    await devAccountProxy(req, res);
+    return { status: res.statusCode, headers };
+  }
+
+  const sessionResponse = await call();
+  assert.equal(sessionResponse.status, 200);
+  assert.deepEqual(sessionResponse.headers["set-cookie"], [session]);
+  const [sessionUrl, sessionRequest] = upstream.mock.calls[0].arguments;
+  assert.equal(sessionUrl, `${env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN}/v1/account/session`);
+  assert.deepEqual(sessionRequest.headers, {
+    Accept: "application/json", Origin: origin, "X-AT-Account-Proxy-Token": env.SHARED_ACCOUNT_PROXY_TOKEN,
+    Cookie: accountCookie,
+  });
+
+  assert.equal((await call({ method: "POST", url: "/api/account/passkeys/login/options" })).status, 200);
+  const [loginUrl, loginRequest] = upstream.mock.calls[1].arguments;
+  assert.equal(loginUrl, `${env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN}/v1/account/passkeys/login/options`);
+  assert.equal(loginRequest.body.toString(), "{}");
+  assert.equal(loginRequest.headers["X-AT-Account-Client-IP"], undefined);
+
+  assert.equal((await call({ requestHost: env.VERCEL_URL })).status, 404);
+  assert.equal((await call({ method: "POST", url: "/api/account/email-access/request" })).status, 404);
+  process.env.VERCEL_ENV = "preview";
+  assert.equal((await call()).status, 404);
+  process.env.VERCEL_ENV = env.VERCEL_ENV;
+  process.env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN = "https://cloudflare.anytranslator.app";
+  assert.equal((await call()).status, 503);
+  process.env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN = env.SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN;
+  delete process.env.SHARED_ACCOUNT_PROXY_TOKEN;
+  assert.equal((await call()).status, 404);
+  assert.equal(upstream.mock.callCount(), 2);
 });
