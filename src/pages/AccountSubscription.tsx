@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { useQuery } from "@tanstack/react-query";
 import HugeIcon from "@/components/HugeIcon";
 import { useMarketing } from "@/components/marketing/MarketingShell";
@@ -67,6 +67,7 @@ export default function AccountSubscription({
   const { entitlement, subscription } = billing;
   const state = subscription ? states[subscription.state] : planState(entitlement);
   const currentOfferId = subscription?.offerId ?? entitlement?.offerId;
+  const [chosenTier, setChosenTier] = useState<BillingPlan>();
   const [selection, setSelection] = useState<CreemOffer["id"]>();
   const [updated, setUpdated] = useState<SubscriptionAction>();
   const attemptScope = appPage ? `app.${accountId}` : accountId;
@@ -91,10 +92,10 @@ export default function AccountSubscription({
     return period ? [copy.names[plan], copy.names[period]].join(copy.names.separator) : copy.names[plan];
   }
   function selectTier(next: BillingPlan) {
+    if (next === tier) return;
     setUpdated(undefined);
-    const available = visibleOffers.filter(({ plan }) => plan === next);
-    setSelection((available.find(({ period }) => period === selected?.period)
-      ?? [...periods].reverse().map((term) => available.find(({ period }) => period === term)).find(Boolean))?.id);
+    setChosenTier(next);
+    setSelection(undefined);
   }
 
   function allowance(amount: number, period: AccountPlanQuota["quotaPeriod"]) {
@@ -118,21 +119,24 @@ export default function AccountSubscription({
     && (!appPage || appAllowsPlanAction("checkout"));
   const visibleOffers = !appPage || canCheckout ? offers : canCancel
     ? appPlanOffers(offers, (offer) => timingFor(offer, subscription.offerId, currentPeriod), confirmedChange?.offerId) : [];
-  const selectionTier = visibleOffers.find(({ id }) => id === selection)?.plan;
   const availableTiers = tiers.filter((tab) => visibleOffers.some(({ plan }) => plan === tab));
   const initialTier = currentTier && availableTiers.includes(currentTier) ? currentTier : availableTiers[0];
-  const tier = selectionTier ?? initialTier ?? "standard";
+  const tier = chosenTier && availableTiers.includes(chosenTier) ? chosenTier : (initialTier ?? "standard");
   const options = periods.flatMap((period) => {
     const offer = visibleOffers.find((entry) => entry.plan === tier && entry.period === period);
     return offer ? [offer] : [];
   });
-  const selected = options.find(({ id }) => id === selection) ?? options.find(({ id }) => id === currentOfferId)
+  const selected = options.find(({ id }) => id === selection);
+  const previewOffer = selected ?? options.find(({ id }) => id === currentOfferId)
     ?? options.find(({ period }) => period === "monthly") ?? options.at(-1);
-  const showChange = canCancel && !!subscription?.offerId && !!selected;
-  const changesCurrent = showChange && selected.id !== currentOfferId;
+  const showChange = canCancel && !!subscription?.offerId && options.length > 0;
+  const changesCurrent = showChange && !!selected && selected.id !== currentOfferId;
   const timing = changesCurrent ? timingFor(selected, subscription.offerId, currentPeriod) : undefined;
   const canChange = changesCurrent && !!timing && selected.id !== confirmedChange?.offerId
     && !(timing === "deferred" && confirmedChange);
+  const changeLabel = timing === "immediate" ? copy.switchNow
+    : timing === "deferred" || (appPage && !appAllowsPlanAction("immediate")) ? copy.switchAtRenewal : copy.changePlan;
+  const changeHelp = timing === "immediate" ? copy.proration : copy.afterRenewal;
   const canResume = canManage && state === "scheduledCancel";
   const portalAction = subscriptionPortalAction(appPage, billing.hasPortal ?? isCreem, state);
   const formatter = new Intl.DateTimeFormat(locale, { dateStyle: "medium" });
@@ -232,19 +236,26 @@ export default function AccountSubscription({
     });
   }
 
-  function cancelControl() {
+  function confirmControl({ label, description, onConfirm, secondary = false, disabled = false }: {
+    label: string;
+    description: ReactNode;
+    onConfirm: () => void;
+    secondary?: boolean;
+    disabled?: boolean;
+  }) {
     return (
       <AlertDialog>
         <AlertDialogTrigger asChild>
-          <button className="mk-button mk-button-secondary" type="button" disabled={busy}>{copy.cancelSubscription}</button>
+          <button className={secondary ? "mk-button mk-button-secondary" : "mk-button"} type="button"
+            disabled={busy || disabled}>{label}</button>
         </AlertDialogTrigger>
         <AlertDialogContent className={appPage ? "mk-subscription-dialog mk-account-management-dialog" : "mk-subscription-dialog"}>
-          <AlertDialogTitle>{copy.cancelSubscription}</AlertDialogTitle>
-          <AlertDialogDescription>{copy.cancelHelp}</AlertDialogDescription>
+          <AlertDialogTitle>{label}</AlertDialogTitle>
+          <AlertDialogDescription>{description}</AlertDialogDescription>
           <div className="mk-account-actions">
             <AlertDialogCancel className={appPage ? "mk-button mk-button-secondary" : undefined}>{messages.cancel}</AlertDialogCancel>
             <AlertDialogAction className={appPage ? "mk-button" : undefined}
-              onClick={() => void submitPlanChange("cancel")}>{copy.cancelSubscription}</AlertDialogAction>
+              disabled={busy || disabled} onClick={onConfirm}>{label}</AlertDialogAction>
           </div>
         </AlertDialogContent>
       </AlertDialog>
@@ -312,7 +323,7 @@ export default function AccountSubscription({
   }
 
   const operationNote = updated === "cancel-pending-change" ? copy.changeCanceled : copy.updated;
-  const benefitsOfferId = appPage ? currentOfferId : selected?.id;
+  const benefitsOfferId = appPage ? currentOfferId : previewOffer?.id;
   const retryAppQuotas = appPage && quotaQuery.isError && !quotaQuery.data;
   const webQuotaProblem = !appPage && (quotaQuery.isError || (!quotaQuery.isPending && changesCurrent && !timing));
   const catalogUnavailable = !catalog.loading && !catalog.offers;
@@ -401,14 +412,27 @@ export default function AccountSubscription({
             onClick={() => void submitPlanChange(pending.action, pending.offer)}>{messages.retry}</button>}
         </div>
       )}
-      {selected && (canCheckout || showChange) && (
+      {(canCheckout || showChange) && (
         <div className="mk-subscription-primary">
-          <button className="mk-button" type="button" disabled={busy || (!canChange && !canCheckout)}
-            onClick={() => void (canCheckout ? checkout(selected) : submitPlanChange("change-plan", selected))}>
-            {canCheckout ? pricing[selected.plan === "standard" ? "subscribeStandard" : "subscribeVoice"]
-              : timing === "immediate" ? copy.switchNow : timing === "deferred" ? copy.switchAtRenewal : copy.changePlan}
-          </button>
-          {canChange && <p className="mk-small">{timing === "immediate" ? copy.proration : copy.afterRenewal}</p>}
+          {canCheckout ? (
+            <button className="mk-button" type="button" disabled={busy || !selected}
+              onClick={() => selected && void checkout(selected)}>
+              {pricing[tier === "standard" ? "subscribeStandard" : "subscribeVoice"]}
+            </button>
+          ) : confirmControl({
+            label: changeLabel,
+            description: selected && <>
+              <strong className="block">{planTitle(selected.plan, selected.period)}</strong>
+              {changeHelp}
+            </>,
+            disabled: !canChange,
+            onConfirm: () => {
+              if (!canChange || !selected || busy) return;
+              setSelection(undefined);
+              void submitPlanChange("change-plan", selected);
+            },
+          })}
+          {canChange && <p className="mk-small">{changeHelp}</p>}
           {timing === "deferred" && confirmedChange && selected.id !== confirmedChange.offerId &&
             <p className="mk-small">{copy.cancelBeforeScheduling}</p>}
         </div>
@@ -416,7 +440,12 @@ export default function AccountSubscription({
 
       {(canCancel || canResume || portalAction) && (
         <div className="mk-account-actions mk-subscription-secondary">
-          {canCancel && cancelControl()}
+          {canCancel && confirmControl({
+            label: copy.cancelSubscription,
+            description: copy.cancelHelp,
+            onConfirm: () => void submitPlanChange("cancel"),
+            secondary: true,
+          })}
           {canResume && <button className="mk-button mk-button-secondary" type="button"
             disabled={busy} onClick={() => void submitPlanChange("resume")}>{copy.resumeSubscription}</button>}
           {portalAction && (

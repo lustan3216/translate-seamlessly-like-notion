@@ -256,6 +256,15 @@
   min-height: 52px;
 }
 
+.marketing-site .mk-subscription-primary button.mk-button:disabled {
+  opacity: 1;
+  background: var(--mk-surface);
+  border-color: var(--mk-line);
+  color: var(--mk-muted) !important;
+  cursor: default;
+  transform: none;
+}
+
 .mk-subscription-secondary .mk-button {
   min-height: 44px;
 }
