@@ -1,16 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { useNavigate } from "react-router-dom";
 import { useMarketing } from "@/components/marketing/MarketingShell";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import { finishAccountAppSession, loadAccountApp, sendAppMessage, type AccountAppLaunch, type AccountAppLoad } from "@/lib/account-app-entry";
+import { loadAccountApp, type AccountAppLaunch, type AccountAppLoad } from "@/lib/account-app-entry";
 import { accountRequest, AccountRequestError, type AccountBilling, type SharedAccount } from "@/lib/shared-account-client";
 import { useCreemOffer } from "@/lib/shared-account-preview";
 import { localeForCode } from "@/lib/site-config.mjs";
 import { sharedAccountCopy } from "@/translations/marketing/shared-account";
+import { subscriptionCopy } from "@/translations/marketing/shared-account-subscription";
 import creemCopy from "@/translations/marketing/creem-preview.json";
 import AccountSubscription from "./AccountSubscription";
-import "./AccountAppPage.css";
+import "./SharedAccountPage.css";
 
 const defaultLaunch: AccountAppLaunch = { locale: localeForCode().code };
 
@@ -20,25 +20,12 @@ export default function AccountAppPage({ launch = defaultLaunch }: { launch?: Ac
 
 function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
   const { m, currentLanguage } = useMarketing();
-  const title = creemCopy[currentLanguage.code].manageSubscription;
-  const messages = sharedAccountCopy(currentLanguage.code);
-  const navigate = useNavigate();
-  const page = useRef<HTMLElement>(null);
+  const locale = currentLanguage.code;
+  const title = creemCopy[locale].manageSubscription;
+  const messages = sharedAccountCopy(locale);
   const exchange = useRef<Promise<unknown>>();
-  const expiryHandled = useRef(false);
   const [refresh, setRefresh] = useState(0);
   const [load, setLoad] = useState<AccountAppLoad>({ phase: "loading" });
-  const [systemDark, setSystemDark] = useState(() => window.matchMedia("(prefers-color-scheme: dark)").matches);
-
-  useEffect(() => {
-    if (launch.theme) return;
-    const media = window.matchMedia("(prefers-color-scheme: dark)");
-    const sync = () => setSystemDark(media.matches);
-    sync();
-    media.addEventListener("change", sync);
-    return () => media.removeEventListener("change", sync);
-  }, [launch.theme]);
-
   useEffect(() => {
     const controller = new AbortController();
     const { access } = launch;
@@ -50,48 +37,41 @@ function AccountAppContent({ launch }: { launch: AccountAppLaunch }) {
     return () => controller.abort();
   }, [launch, refresh]);
 
-  useEffect(() => {
-    if (load.phase !== "expired" || expiryHandled.current) return;
-    expiryHandled.current = true;
-    finishAccountAppSession((path) => navigate(path, { replace: true }));
-  }, [load.phase, navigate]);
-
-  const tag = localeForCode(currentLanguage.code).tag;
+  const tag = localeForCode(locale).tag;
   return (
-    <main className="app-account" ref={page} lang={tag} dir="ltr" data-app-theme={launch.theme ?? (systemDark ? "dark" : "light")}
-      aria-label={title} aria-busy={load.phase === "loading"}>
+    <main className="marketing-site" lang={tag} dir="ltr" aria-labelledby="account-management-title" aria-busy={load.phase === "loading"}>
       <Helmet htmlAttributes={{ lang: tag }}>
-        <title>{title}</title>
+        <title>{`${title} | AnyTranslator`}</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
-      <div className="app-account-content">
+      <div className="mk-wrap mk-account-page mk-account-management">
+        <header className="mk-page-intro">
+          <div className="mk-brand"><img src="/app-preview/logo.png" width="36" height="36" alt="AnyTranslator" /></div>
+          <h1 id="account-management-title">{title}</h1>
+        </header>
         {load.phase === "ready" ? <AppBilling key={load.account.id} account={load.account} initialBilling={load.billing}
-          onSessionExpired={() => setLoad({ phase: "expired" })}
-          dialogContainer={page.current} /> : load.phase === "loading" ? (
-          <div className="app-account-block app-account-placeholder" aria-hidden="true" />
+          onSessionExpired={() => setLoad({ phase: "expired" })} /> : load.phase === "loading" ? (
+          <div className="mk-account-skeleton" aria-hidden="true" />
         ) : (
-          <div className="app-account-block">
-            <p role="alert">{load.phase === "expired" ? messages.pairExpired : messages.error}</p>
-            {load.phase === "error" && <button type="button" className="app-account-action" onClick={() => {
+          <div className="mk-account-notice">
+            <p role="alert">{load.phase === "expired" ? subscriptionCopy[locale].appLinkExpired : messages.error}</p>
+            {load.phase === "error" && <button type="button" className="mk-button mk-button-secondary" onClick={() => {
               setLoad({ phase: "loading" });
               setRefresh((value) => value + 1);
             }}>{messages.retry}</button>}
           </div>
         )}
         {load.phase !== "loading" && (
-          <a className="app-account-action" href="mailto:support@anytranslator.app" onClick={(event) => {
-            if (sendAppMessage("openSupport")) event.preventDefault();
-          }}>{m("contact.support")}</a>
+          <a className="mk-button mk-button-secondary" href="mailto:support@anytranslator.app">{m("contact.support")}</a>
         )}
       </div>
     </main>
   );
 }
 
-function AppBilling({ account, initialBilling, dialogContainer, onSessionExpired }: {
+function AppBilling({ account, initialBilling, onSessionExpired }: {
   account: SharedAccount;
   initialBilling: AccountBilling;
-  dialogContainer: HTMLElement | null;
   onSessionExpired: () => void;
 }) {
   const { currentLanguage } = useMarketing();
@@ -123,10 +103,10 @@ function AppBilling({ account, initialBilling, dialogContainer, onSessionExpired
   }
 
   return (
-    <div className="app-account-content" aria-busy={busy}>
-      {error && <p className="app-account-block" role="alert">{error}</p>}
+    <div className="mk-subscription" aria-busy={busy}>
+      {error && <p className="mk-account-notice" role="alert">{error}</p>}
       <AccountSubscription accountId={account.id} billing={billing} catalog={catalog} busy={busy} allowActions allowCheckout
-        appPage={{ dialogContainer }} run={run} onBillingChange={setBilling} />
+        appPage run={run} onBillingChange={setBilling} />
     </div>
   );
 }

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import HugeIcon from "@/components/HugeIcon";
 import { useMarketing } from "@/components/marketing/MarketingShell";
-import { sendAppMessage } from "@/lib/account-app-entry";
 import {
   AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent,
   AlertDialogDescription, AlertDialogTitle, AlertDialogTrigger,
@@ -17,7 +16,7 @@ import { sharedAccountCopy } from "@/translations/marketing/shared-account";
 import { subscriptionCopy } from "@/translations/marketing/shared-account-subscription";
 import pricingCopy from "@/translations/marketing/pricing.json";
 import creemCopy from "@/translations/marketing/creem-preview.json";
-import { appAllowsPlanAction, appNextCharge, planChangeTiming } from "./account-subscription-policy";
+import { appAllowsPlanAction, appNextCharge, appPlanOffers, planChangeTiming, subscriptionPortalAction } from "./account-subscription-policy";
 
 const tiers = ["standard", "voice"] as const;
 const periods = ["weekly", "monthly", "yearly"] as const;
@@ -36,7 +35,7 @@ type Props = {
   busy: boolean;
   allowCheckout: boolean;
   allowActions: boolean;
-  appPage?: { dialogContainer: HTMLElement | null };
+  appPage?: boolean;
   run: (action: () => Promise<void>) => Promise<void>;
   onBillingChange: (status: AccountBilling) => void;
 };
@@ -52,7 +51,7 @@ function planState(entitlement: AccountBilling["entitlement"]) {
 }
 
 export default function AccountSubscription({
-  accountId, billing, catalog, busy, allowCheckout, allowActions, appPage, run, onBillingChange,
+  accountId, billing, catalog, busy, allowCheckout, allowActions, appPage = false, run, onBillingChange,
 }: Props) {
   const { currentLanguage, copy: marketing, m } = useMarketing();
   const locale = currentLanguage.code;
@@ -81,16 +80,6 @@ export default function AccountSubscription({
   const currentDefinition = currentOffer ?? (subscription?.offerId && quotaQuery.data?.billingOffers[subscription.offerId]);
   const currentTier = currentDefinition?.plan ?? tiers.find((tier) => tier === entitlement?.plan);
   const currentPeriod = currentDefinition?.period ?? periods.find((period) => period === entitlement?.period);
-  const selectionTier = offers.find(({ id }) => id === selection)?.plan;
-  const availableTiers = tiers.filter((tab) => offers.some(({ plan }) => plan === tab));
-  const initialTier = currentTier && availableTiers.includes(currentTier) ? currentTier : availableTiers[0];
-  const tier = selectionTier ?? initialTier ?? "standard";
-  const options = periods.flatMap((period) => {
-    const offer = offers.find((entry) => entry.plan === tier && entry.period === period);
-    return offer ? [offer] : [];
-  });
-  const selected = options.find(({ id }) => id === selection) ?? options.find(({ id }) => id === currentOfferId)
-    ?? options.find(({ period }) => period === "monthly") ?? options.at(-1);
   const quota = (offerId: string) => {
     const definitions = quotaQuery.data;
     const productId = definitions?.billingOffers[offerId]?.productId;
@@ -103,7 +92,7 @@ export default function AccountSubscription({
   }
   function selectTier(next: BillingPlan) {
     setUpdated(undefined);
-    const available = offers.filter(({ plan }) => plan === next);
+    const available = visibleOffers.filter(({ plan }) => plan === next);
     setSelection((available.find(({ period }) => period === selected?.period)
       ?? [...periods].reverse().map((term) => available.find(({ period }) => period === term)).find(Boolean))?.id);
   }
@@ -116,8 +105,6 @@ export default function AccountSubscription({
   const hasPlan = state !== "expired" && (entitlement !== null || subscription != null);
   const canManage = allowActions && !pending && isCreem && subscription != null;
   const canCancel = canManage && (state === "inUse" || state === "grace");
-  const showChange = canCancel && !!subscription?.offerId && !!selected;
-  const changesCurrent = showChange && selected.id !== currentOfferId;
   function timingFor(offer: CreemOffer, fromOfferId: string | null | undefined, fromPeriod?: BillingPeriod) {
     if (!fromOfferId || offer.id === fromOfferId) return;
     return planChangeTiming(
@@ -125,15 +112,29 @@ export default function AccountSubscription({
       { groupLevel: quota(offer.id)?.groupLevel, period: offer.period },
     );
   }
-  const timing = changesCurrent ? timingFor(selected, subscription.offerId, currentPeriod) : undefined;
   const confirmedChange = subscription?.pendingChange;
-  const canChange = changesCurrent && !!timing && selected.id !== confirmedChange?.offerId
-    && !(timing === "deferred" && confirmedChange);
   const canCancelChange = canCancel && !!confirmedChange;
   const canCheckout = allowActions && allowCheckout && !pending && !hasPlan && billing.enabled === true
     && (!appPage || appAllowsPlanAction("checkout"));
+  const visibleOffers = !appPage || canCheckout ? offers : canCancel
+    ? appPlanOffers(offers, (offer) => timingFor(offer, subscription.offerId, currentPeriod), confirmedChange?.offerId) : [];
+  const selectionTier = visibleOffers.find(({ id }) => id === selection)?.plan;
+  const availableTiers = tiers.filter((tab) => visibleOffers.some(({ plan }) => plan === tab));
+  const initialTier = currentTier && availableTiers.includes(currentTier) ? currentTier : availableTiers[0];
+  const tier = selectionTier ?? initialTier ?? "standard";
+  const options = periods.flatMap((period) => {
+    const offer = visibleOffers.find((entry) => entry.plan === tier && entry.period === period);
+    return offer ? [offer] : [];
+  });
+  const selected = options.find(({ id }) => id === selection) ?? options.find(({ id }) => id === currentOfferId)
+    ?? options.find(({ period }) => period === "monthly") ?? options.at(-1);
+  const showChange = canCancel && !!subscription?.offerId && !!selected;
+  const changesCurrent = showChange && selected.id !== currentOfferId;
+  const timing = changesCurrent ? timingFor(selected, subscription.offerId, currentPeriod) : undefined;
+  const canChange = changesCurrent && !!timing && selected.id !== confirmedChange?.offerId
+    && !(timing === "deferred" && confirmedChange);
   const canResume = canManage && state === "scheduledCancel";
-  const showPortal = billing.hasPortal ?? isCreem;
+  const portalAction = subscriptionPortalAction(appPage, billing.hasPortal ?? isCreem, state);
   const formatter = new Intl.DateTimeFormat(locale, { dateStyle: "medium" });
   function displayDate(value?: string | null) {
     const date = value ? Date.parse(value) : NaN;
@@ -142,12 +143,14 @@ export default function AccountSubscription({
   const periodEnd = displayDate(subscription?.periodEndsAt ?? entitlement?.periodEndsAt
     ?? (!subscription ? entitlement?.expiresAt : undefined));
   const accessEnd = displayDate(subscription?.expiresAt ?? entitlement?.expiresAt);
+  const paidUntil = appPage ? accessEnd : state === "inUse" ? periodEnd : undefined;
   const currentNote = state === "scheduledCancel"
     ? periodEnd ? copy.endsOn.replace("{date}", periodEnd) : copy.endsAtPeriodEnd
     : state === "grace"
-      ? accessEnd ? copy.graceUntil.replace("{date}", accessEnd) : copy.gracePayment
-      : state === "inUse" && periodEnd ? messages.paidUntil.replace("{date}", periodEnd) : undefined;
-  const currentShown = !!currentOffer && currentOffer.plan === tier && state !== "expired";
+      ? !appPage && (accessEnd ? copy.graceUntil.replace("{date}", accessEnd) : copy.gracePayment)
+      : paidUntil ? messages.paidUntil.replace("{date}", paidUntil) : undefined;
+  const currentShown = !appPage && !!currentOffer && currentOffer.plan === tier && state !== "expired";
+  const nextCharge = appPage ? appNextCharge(subscription, offers) : undefined;
 
   const nextOffer = confirmedChange && (quotaQuery.data?.billingOffers[confirmedChange.offerId]
     ?? offers.find(({ id }) => id === confirmedChange.offerId));
@@ -189,7 +192,6 @@ export default function AccountSubscription({
         onBillingChange(result);
         if (!result.operationPending) {
           finish();
-          if (appPage) sendAppMessage("statusChanged");
           if (attempt.action !== "change-plan" || !result.subscription?.pendingChange) setUpdated(attempt.action);
         }
       } catch (error) {
@@ -231,18 +233,17 @@ export default function AccountSubscription({
   }
 
   function cancelControl() {
-    const secondaryClass = appPage ? "app-account-action" : "mk-button mk-button-secondary";
     return (
       <AlertDialog>
         <AlertDialogTrigger asChild>
-          <button className={secondaryClass} type="button" disabled={busy}>{copy.cancelSubscription}</button>
+          <button className="mk-button mk-button-secondary" type="button" disabled={busy}>{copy.cancelSubscription}</button>
         </AlertDialogTrigger>
-        <AlertDialogContent container={appPage?.dialogContainer} className={appPage ? "app-account-dialog" : "mk-subscription-dialog"}>
+        <AlertDialogContent className={appPage ? "mk-subscription-dialog mk-account-management-dialog" : "mk-subscription-dialog"}>
           <AlertDialogTitle>{copy.cancelSubscription}</AlertDialogTitle>
           <AlertDialogDescription>{copy.cancelHelp}</AlertDialogDescription>
-          <div className={appPage ? "app-account-dialog-actions" : "mk-account-actions"}>
-            <AlertDialogCancel className={appPage ? secondaryClass : undefined}>{messages.cancel}</AlertDialogCancel>
-            <AlertDialogAction className={appPage ? "app-account-action app-account-primary" : undefined}
+          <div className="mk-account-actions">
+            <AlertDialogCancel className={appPage ? "mk-button mk-button-secondary" : undefined}>{messages.cancel}</AlertDialogCancel>
+            <AlertDialogAction className={appPage ? "mk-button" : undefined}
               onClick={() => void submitPlanChange("cancel")}>{copy.cancelSubscription}</AlertDialogAction>
           </div>
         </AlertDialogContent>
@@ -270,7 +271,7 @@ export default function AccountSubscription({
       customHelpers: { title: pricing.profiles, description: benefits.helper, icon: "bubble-chat-question" },
     };
     return (
-      <ul className={appPage ? "app-account-benefits" : "mk-subscription-benefits"} aria-label={m("nav.features")}>
+      <ul className="mk-subscription-benefits" aria-label={m("nav.features")}>
         {selectedQuota.features.map(({ id, quotaKey, maxPhotosPerBatch, maxLanguages }) => {
           const feature = featureCopy[id];
           if (!Object.prototype.hasOwnProperty.call(featureCopy, id)) return null;
@@ -287,8 +288,7 @@ export default function AccountSubscription({
               : null;
           return (
             <li key={id}>
-              {appPage ? <span className="app-account-feature-icon"><HugeIcon name={feature.icon} className="h-5 w-5" /></span>
-                : <HugeIcon name={feature.icon} className="h-5 w-5" />}
+              <HugeIcon name={feature.icon} className="h-5 w-5" />
               <div>
                 <strong>{feature.title}</strong>
                 {description && <span>{description}</span>}
@@ -312,108 +312,21 @@ export default function AccountSubscription({
   }
 
   const operationNote = updated === "cancel-pending-change" ? copy.changeCanceled : copy.updated;
-  if (appPage) {
-    const appOffers = offers.filter((offer) => {
-      if (canCheckout) return true;
-      if (!canCancel || offer.id === confirmedChange?.offerId) return false;
-      const candidateTiming = timingFor(offer, subscription?.offerId, currentPeriod);
-      return appAllowsPlanAction(candidateTiming) && !(confirmedChange && candidateTiming === "deferred");
-    });
-    const appSelection = appOffers.find(({ id }) => id === selection);
-    const appTiming = appSelection && timingFor(appSelection, subscription?.offerId, currentPeriod);
-    const scheduledOffer = confirmedChange && offers.find(({ id }) => id === confirmedChange.offerId);
-    const nextCharge = appNextCharge(subscription, offers);
-
-    const price = (offer: CreemOffer) => <><bdi>{formatCreemPrice(locale, offer)}</bdi> {pricing[priceUnit[offer.period]]}</>;
-    return (
-      <>
-        <section className="app-account-block app-account-current">
-          <div className="app-account-plan-name">
-            {currentTier && <h1>{planTitle(currentTier, currentPeriod)}</h1>}
-            {state && <span className="app-account-badge">{copy[state]}</span>}
-          </div>
-          {currentOffer && <p>{price(currentOffer)}</p>}
-          {nextCharge && <p>{copy.nextCharge.replace("{date}", formatter.format(nextCharge.date))
-            .replace("{amount}", formatCreemPrice(locale, nextCharge.offer))}</p>}
-          {state === "scheduledCancel" && currentNote ? <p>{currentNote}</p>
-            : state !== "grace" && accessEnd && <p>{messages.paidUntil.replace("{date}", accessEnd)}</p>}
-        </section>
-
-        {state === "grace" && (
-          <div className="app-account-block">
-            <p role="alert">{currentNote}</p>
-            {showPortal && <button className="app-account-action app-account-primary" type="button" disabled={busy}
-              onClick={() => void openPortal()}>{copy.updatePayment}</button>}
-          </div>
-        )}
-
-        {currentOfferId && planBenefits(quota(currentOfferId))}
-        {(quotaQuery.isError || (!catalog.loading && !catalog.offers)) && (
-          <div className="app-account-block">
-            <p role="alert">{messages.error}</p>
-            <button type="button" className="app-account-action" disabled={busy} onClick={() => {
-              if (quotaQuery.isError) void quotaQuery.refetch();
-              if (!catalog.offers) void catalog.refetch();
-            }}>{messages.retry}</button>
-          </div>
-        )}
-
-        {!!appOffers.length && (
-          <fieldset className="app-account-options" disabled={busy}>
-            <legend>{messages.choosePlan}</legend>
-            {appOffers.map((offer) => (
-              <label className="app-account-option" key={offer.id}>
-                <input type="radio" name="app-account-offer" value={offer.id} checked={appSelection?.id === offer.id}
-                  onChange={() => { setSelection(offer.id); setUpdated(undefined); }} />
-                <span><strong>{planTitle(offer.plan, offer.period)}</strong><span>{price(offer)}</span></span>
-              </label>
-            ))}
-            {appSelection && <>
-              {appTiming && <p>{appTiming === "deferred" ? copy.afterRenewal : copy.proration}</p>}
-              <button className="app-account-action app-account-primary" type="button"
-                onClick={() => void (canCheckout ? checkout(appSelection) : submitPlanChange("change-plan", appSelection))}>
-                {canCheckout ? pricing[appSelection.plan === "standard" ? "subscribeStandard" : "subscribeVoice"]
-                  : appTiming === "deferred" ? copy.switchAtRenewal : copy.switchNow}
-              </button>
-            </>}
-          </fieldset>
-        )}
-
-        {confirmedChange && (nextPlanNote || canCancelChange) && (
-          <div className="app-account-block">
-            {nextPlanNote && <p role="status">{nextPlanNote}</p>}
-            {scheduledOffer && <p>{price(scheduledOffer)}</p>}
-            {canCancelChange && <button className="app-account-action" type="button" disabled={busy}
-              onClick={() => void submitPlanChange("cancel-pending-change")}>{copy.cancelChange}</button>}
-          </div>
-        )}
-        {updated && <p className="app-account-block" role="status">{operationNote}</p>}
-        {pending && (
-          <div className="app-account-block">
-            <p role="status">{copy.pending}</p>
-            <button className="app-account-action" type="button" disabled={busy}
-              onClick={() => void submitPlanChange(pending.action, pending.offer)}>{messages.retry}</button>
-          </div>
-        )}
-
-        {canCancel && cancelControl()}
-        {canResume && <button className="app-account-action" type="button" disabled={busy}
-          onClick={() => void submitPlanChange("resume")}>{copy.resumeSubscription}</button>}
-        {showPortal && <button className="app-account-action" type="button" disabled={busy}
-          onClick={() => void openPortal()}>{copy.portalDetails}</button>}
-      </>
-    );
-  }
-
+  const benefitsOfferId = appPage ? currentOfferId : selected?.id;
   return (
     <div className="mk-subscription">
       {(entitlement || subscription) && !currentShown && (
         <div className="mk-subscription-current">
           {currentTier && <strong>{planTitle(currentTier, currentPeriod)}</strong>}
           {badges()}
+          {appPage && currentOffer && <p className="mk-subscription-price"><bdi>{formatCreemPrice(locale, currentOffer)}</bdi> <small>{pricing[priceUnit[currentOffer.period]]}</small></p>}
+          {nextCharge && <p>{copy.nextCharge.replace("{date}", formatter.format(nextCharge.date))
+            .replace("{amount}", formatCreemPrice(locale, nextCharge.offer))}</p>}
           {currentNote && <p>{currentNote}</p>}
         </div>
       )}
+
+      {appPage && state === "grace" && <p className="mk-account-notice" role="alert">{copy.appGracePayment}</p>}
 
       {confirmedChange && (nextPlanNote || canCancelChange) && (
         <div className="mk-account-notice">
@@ -423,7 +336,7 @@ export default function AccountSubscription({
         </div>
       )}
 
-      {selected && planBenefits(quota(selected.id))}
+      {benefitsOfferId && planBenefits(quota(benefitsOfferId))}
 
       {(quotaQuery.isError || (!quotaQuery.isPending && changesCurrent && !timing) || !catalog.loading && !catalog.offers) && (
         <div className="mk-account-notice">
@@ -436,11 +349,12 @@ export default function AccountSubscription({
       )}
 
       {catalog.loading ? <div aria-hidden="true" className="mk-account-skeleton" />
-        : offers.length > 0 && (
+        : visibleOffers.length > 0 && (
           <>
             <div className="mk-subscription-tiers" role="group" aria-label={messages.choosePlan}>
               {availableTiers.map((tab) => (
-                <button key={tab} type="button" aria-pressed={tier === tab} disabled={busy}
+                <button key={tab} className={appPage ? "mk-button mk-button-secondary" : undefined}
+                  type="button" aria-pressed={tier === tab} disabled={busy}
                   onClick={() => selectTier(tab)}>{copy.names[tab]}</button>
               ))}
             </div>
@@ -493,14 +407,14 @@ export default function AccountSubscription({
         </div>
       )}
 
-      {(canCancel || canResume || showPortal) && (
+      {(canCancel || canResume || portalAction) && (
         <div className="mk-account-actions mk-subscription-secondary">
           {canCancel && cancelControl()}
           {canResume && <button className="mk-button mk-button-secondary" type="button"
             disabled={busy} onClick={() => void submitPlanChange("resume")}>{copy.resumeSubscription}</button>}
-          {showPortal && (
+          {portalAction && (
             <button className="mk-button mk-button-secondary" type="button" disabled={busy}
-              onClick={() => void openPortal()}>{state === "grace" ? copy.updatePayment : `Creem Portal · ${copy.portalDetails}`}</button>
+              onClick={() => void openPortal()}>{!appPage && portalAction === "portalDetails" ? `Creem Portal · ${copy.portalDetails}` : copy[portalAction]}</button>
           )}
         </div>
       )}

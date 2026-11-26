@@ -94,24 +94,3 @@ export async function loadAccountApp(
     return { phase: httpStatus(error) === 401 ? "expired" : "error" };
   }
 }
-
-const appMessages = ["openSupport", "close", "statusChanged"] as const;
-type AppMessage = typeof appMessages[number];
-type AppMessageHost = { AnyTranslatorApp?: { postMessage?: (message: string) => void } };
-
-export function sendAppMessage(message: AppMessage, host: unknown = window): boolean {
-  if (!appMessages.includes(message)) return false;
-  try {
-    const channel = (host as AppMessageHost).AnyTranslatorApp;
-    if (typeof channel?.postMessage !== "function") return false;
-    channel.postMessage(message);
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-export function finishAccountAppSession(redirect: (path: string) => void, host: unknown = window) {
-  if ((host as AppMessageHost).AnyTranslatorApp !== undefined) sendAppMessage("close", host);
-  else redirect("/account");
-}

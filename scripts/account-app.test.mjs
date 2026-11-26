@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { test } from "node:test";
-import { finishAccountAppSession, loadAccountApp, sendAppMessage, takeAccountAppLaunch } from "../src/lib/account-app-entry.ts";
+import { loadAccountApp, takeAccountAppLaunch } from "../src/lib/account-app-entry.ts";
 import { accountAppPath } from "../src/lib/site-config.mjs";
-import { appAllowsPlanAction, planChangeTiming } from "../src/pages/account-subscription-policy.ts";
+import { appAllowsPlanAction, appPlanOffers, planChangeTiming, subscriptionPortalAction } from "../src/pages/account-subscription-policy.ts";
 
 const source = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 const token = "Az_-".repeat(10) + "987";
@@ -131,19 +131,13 @@ test("a billing 401 after confirming an existing App session expires the page", 
   assert.deepEqual(await loadAccountApp(request, undefined, new AbortController().signal), { phase: "expired" });
 });
 
-test("an expired App page sends close and stays on the page even if the bridge cannot deliver", () => {
-  const messages = [];
-  const redirect = () => assert.fail("an App page must never open the general account page");
-  finishAccountAppSession(redirect, { AnyTranslatorApp: { postMessage: (message) => messages.push(message) } });
-  assert.deepEqual(messages, ["close"]);
-  finishAccountAppSession(redirect, { AnyTranslatorApp: {} });
-  finishAccountAppSession(redirect, { AnyTranslatorApp: { postMessage() { throw new Error("bridge unavailable"); } } });
-});
-
-test("an expired page in a regular browser redirects to the general account page", () => {
-  const redirects = [];
-  finishAccountAppSession((path) => redirects.push(path), {});
-  assert.deepEqual(redirects, ["/account"]);
+test("the standalone page keeps expired sessions on the page and offers email support", async () => {
+  const page = await source("src/pages/AccountAppPage.tsx");
+  assert.match(page, /load\.phase === "expired" \? subscriptionCopy\[locale\]\.appLinkExpired/);
+  assert.match(page, /onSessionExpired=\{\(\) => setLoad\(\{ phase: "expired" \}\)\}/);
+  assert.doesNotMatch(page, /\b(?:useNavigate|Navigate|MarketingNavigation|MarketingFooter)\b|<MarketingShell/);
+  assert.match(page, /<div className="mk-brand"><img src="\/app-preview\/logo\.png"/);
+  assert.deepEqual([...page.matchAll(/href="([^"]*)"/g)].map(([, href]) => href), ["mailto:support@anytranslator.app"]);
 });
 
 test("the App plan selector admits deferred options only when purchases are disabled", async () => {
@@ -155,25 +149,30 @@ test("the App plan selector admits deferred options only when purchases are disa
     { id: "upgrade-cross-period", groupLevel: 3, period: "yearly" },
     { id: "unknown", period: "yearly" },
   ];
-  assert.deepEqual(candidates.filter((candidate) => appAllowsPlanAction(planChangeTiming(current, candidate)))
-    .map(({ id }) => id), ["downgrade", "cross-period"]);
+  const timing = (candidate) => planChangeTiming(current, candidate);
+  assert.deepEqual(appPlanOffers(candidates, timing).map(({ id }) => id), ["downgrade", "cross-period"]);
+  assert.deepEqual(appPlanOffers(candidates, timing, "cross-period"), []);
   assert.equal(appAllowsPlanAction("checkout"), false);
   const page = await source("src/pages/AccountSubscription.tsx");
-  assert.match(page, /const appOffers = offers\.filter[\s\S]*?return appAllowsPlanAction\(candidateTiming\)/);
+  assert.match(page, /const visibleOffers = !appPage \|\| canCheckout \? offers : canCancel\s*\? appPlanOffers\(/);
   assert.match(page, /appAllowsPlanAction\("checkout"\)/);
   assert.match(page, /appAllowsPlanAction\(attempt\.timing\)/);
   assert.match(page, /if \(appPage && attempt\.action === "change-plan" && attempt\.offer\) \{\s*const latest = await accountRequest<AccountBilling>\("\/billing\/status"\);[\s\S]*?appAllowsPlanAction\(latestTiming\)/);
 });
 
-test("the bridge only posts the three plain string messages", () => {
-  const sent = [];
-  const host = { AnyTranslatorApp: { postMessage: (...args) => sent.push(args) } };
-  for (const message of ["openSupport", "close", "statusChanged"]) assert.equal(sendAppMessage(message, host), true);
-  for (const message of ["statusChanged:account", { message: "openSupport" }, "", undefined]) {
-    assert.equal(sendAppMessage(message, host), false);
+test("App grace uses a plain notice while browser grace retains the payment action", async () => {
+  for (const state of ["inUse", "scheduledCancel"]) {
+    assert.equal(subscriptionPortalAction(true, true, state), "portalDetails");
+    assert.equal(subscriptionPortalAction(false, true, state), "portalDetails");
   }
-  assert.equal(sendAppMessage("openSupport", {}), false);
-  assert.deepEqual(sent, [["openSupport"], ["close"], ["statusChanged"]]);
+  assert.equal(subscriptionPortalAction(true, true, "grace"), undefined);
+  assert.equal(subscriptionPortalAction(true, true, "expired"), undefined);
+  assert.equal(subscriptionPortalAction(true, false, "inUse"), undefined);
+  assert.equal(subscriptionPortalAction(false, true, "grace"), "updatePayment");
+
+  const page = await source("src/pages/AccountSubscription.tsx");
+  assert.match(page, /appPage && state === "grace" && <p className="mk-account-notice" role="alert">\{copy\.appGracePayment\}<\/p>/);
+  assert.match(page, /portalAction && \(\s*<button[\s\S]*?openPortal\(\)/);
 });
 
 test("web passkey registration sends the default name and exposes no editable or signed-in name", async () => {

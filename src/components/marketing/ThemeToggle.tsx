@@ -4,12 +4,13 @@ import HugeIcon from "@/components/HugeIcon";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { getCurrentMainCopy } from "@/data/current-copy";
 
-export function MarketingThemeProvider({ children }: { children: ReactNode }) {
+export function MarketingThemeProvider({ children, forcedTheme }: { children: ReactNode; forcedTheme?: "light" | "dark" }) {
   return (
     <ThemeProvider
       attribute="data-theme"
       storageKey="anytranslator-website-theme"
       defaultTheme="system"
+      forcedTheme={forcedTheme}
       enableSystem
       disableTransitionOnChange
       themes={["light", "dark"]}

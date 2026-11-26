@@ -3,7 +3,7 @@ import { lazy, Suspense } from "react";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useMatch } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { MarketingThemeProvider } from "./components/marketing/ThemeToggle";
@@ -43,8 +43,9 @@ const AppClaimPage = sharedAccountLiveAccountEnabled
   ? lazy(() => import("./pages/AppClaimPage"))
   : null;
 
-const App = ({ helmetContext = {}, accountAppLaunch }: { helmetContext?: object; accountAppLaunch?: AccountAppLaunch }) => (
-  <MarketingThemeProvider>
+function App({ helmetContext = {}, accountAppLaunch }: { helmetContext?: object; accountAppLaunch?: AccountAppLaunch }) {
+  const accountAppRoute = useMatch(accountAppPath);
+  return <MarketingThemeProvider forcedTheme={accountAppRoute ? accountAppLaunch?.theme : undefined}>
   <HelmetProvider context={helmetContext}>
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
@@ -83,7 +84,7 @@ const App = ({ helmetContext = {}, accountAppLaunch }: { helmetContext?: object;
       </LanguageProvider>
     </QueryClientProvider>
   </HelmetProvider>
-  </MarketingThemeProvider>
-);
+  </MarketingThemeProvider>;
+}
 
 export default App;

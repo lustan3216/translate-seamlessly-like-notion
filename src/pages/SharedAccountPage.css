@@ -29,7 +29,8 @@
   margin-bottom: 12px;
 }
 
-.mk-account-section button:disabled {
+.mk-account-section button:disabled,
+.mk-account-management button:disabled {
   opacity: 0.5;
   cursor: default;
   transform: none;
@@ -275,6 +276,74 @@
   white-space: normal;
 }
 
+.mk-account-management {
+  min-height: 100dvh;
+  align-content: start;
+  padding-block-start: clamp(24px, 5vw, 48px);
+  overflow-wrap: anywhere;
+}
+
+.mk-account-management .mk-page-intro {
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  text-align: start;
+}
+
+.marketing-site .mk-account-management .mk-page-intro h1 {
+  font-size: clamp(30px, 4vw, 46px);
+  margin-inline: 0;
+}
+
+.mk-account-management .mk-subscription-primary {
+  position: static;
+  z-index: auto;
+  padding: 0;
+}
+
+.mk-account-management .mk-subscription-tiers {
+  justify-self: stretch;
+  gap: 8px;
+  padding: 0;
+  background: transparent;
+}
+
+.mk-account-management .mk-subscription-tiers button {
+  flex: 1;
+}
+
+.mk-account-management .mk-subscription-tiers button[aria-pressed="true"] {
+  border-color: var(--mk-focus);
+}
+
+.mk-account-management .mk-subscription-option {
+  min-height: 44px;
+}
+
+.mk-account-management .mk-subscription-option:has(input:hover:not(:disabled)) {
+  border-color: var(--mk-focus);
+}
+
+.mk-account-management .mk-subscription-option:has(input:active:not(:disabled)),
+.mk-account-management-dialog .mk-button:active {
+  transform: translateY(1px);
+}
+
+.mk-account-management-dialog {
+  color: var(--mk-ink);
+  background: var(--mk-bg);
+  border-color: var(--mk-line);
+}
+
+.mk-account-management-dialog p {
+  color: var(--mk-muted);
+}
+
+.mk-account-management-dialog .mk-button:focus-visible {
+  outline: 3px solid var(--mk-focus);
+  outline-offset: 4px;
+}
+
 .mk-billing-return-page {
   max-width: 544px;
   padding-block-start: clamp(32px, 5vw, 60px);
@@ -325,6 +394,18 @@
 
   .mk-account-section {
     padding: 20px;
+  }
+
+  .mk-account-management .mk-subscription-tiers,
+  .mk-account-management .mk-account-actions,
+  .mk-account-management-dialog .mk-account-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mk-account-management .mk-button,
+  .mk-account-management-dialog .mk-button {
+    width: 100%;
   }
 
   .mk-billing-return-page {

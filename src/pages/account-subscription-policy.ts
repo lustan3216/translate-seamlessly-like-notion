@@ -10,6 +10,19 @@ export function appAllowsPlanAction(timing?: PlanChangeTiming | "checkout") {
   return timing === "deferred" || (timing !== undefined && APP_PAGE_ALLOW_PURCHASE);
 }
 
+export function appPlanOffers(offers: readonly CreemOffer[], timingFor: (offer: CreemOffer) => PlanChangeTiming | undefined,
+  pendingOfferId?: CreemOffer["id"]) {
+  return offers.filter((offer) => {
+    const timing = timingFor(offer);
+    return offer.id !== pendingOfferId && appAllowsPlanAction(timing) && !(pendingOfferId && timing === "deferred");
+  });
+}
+
+export function subscriptionPortalAction(appPage: boolean, hasPortal: boolean, state: string | null) {
+  if (!hasPortal || (appPage && state !== "inUse" && state !== "scheduledCancel")) return;
+  return state === "grace" ? "updatePayment" : "portalDetails";
+}
+
 export function appNextCharge(subscription: AccountBilling["subscription"], offers: readonly CreemOffer[], now = Date.now()) {
   if (!subscription || subscription.cancelAtPeriodEnd || (subscription.state !== "active" && subscription.state !== "grace")) return;
 
