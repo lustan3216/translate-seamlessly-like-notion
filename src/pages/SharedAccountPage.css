@@ -566,7 +566,7 @@
 .mk-account-management .mk-subscription-secondary .mk-button {
   justify-content: flex-start;
   min-height: 48px;
-  padding-inline: 8px;
+  padding-inline: 0;
   border: 0;
   border-block-end: 1px solid var(--mk-line);
   border-radius: 0;
