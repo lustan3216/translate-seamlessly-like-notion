@@ -1,0 +1,53 @@
+/* Scope the deeper account palette to account content and its portals. */
+:is(.mk-account-page, .mk-page-intro:has(> .mk-account-skeleton-title), .mk-subscription-dialog,
+    body:has(.mk-account-page .mk-language-trigger) .mk-language-menu[data-marketing-language-menu]) {
+  --mk-muted: #555552;
+  --mk-line: #d3d1cd;
+  --mk-surface: #ebeae6;
+  --mk-sand: #e9e6dc;
+  --mk-mint: #e2e8e2;
+  --mk-account-surface-ink: #090909;
+}
+
+:root[data-theme="dark"] :is(.mk-account-page, .mk-page-intro:has(> .mk-account-skeleton-title), .mk-subscription-dialog,
+    body:has(.mk-account-page .mk-language-trigger) .mk-language-menu[data-marketing-language-menu]) {
+  --mk-muted: #bbbbb6;
+  --mk-line: #4e4e4c;
+  --mk-surface: #1d1d1f;
+  --mk-sand: #23211c;
+  --mk-mint: #1c2520;
+  --mk-account-surface-ink: var(--mk-ink);
+  --mk-account-dialog-bg: #101012;
+  --mk-account-menu-hover: #2c2c2e;
+}
+
+.mk-account-page :is(.mk-account-notice, .mk-subscription-current, .mk-subscription-benefits,
+    .mk-subscription-option, .mk-billing-return-badge, .mk-theme-toggle:hover, .mk-language-trigger:hover) {
+  color: var(--mk-account-surface-ink);
+}
+
+.mk-account-page :is(.mk-account-notice .mk-button-secondary, .mk-button-secondary:hover) {
+  color: var(--mk-account-surface-ink) !important;
+}
+
+
+
+.mk-subscription-dialog {
+  --primary-foreground: 240 4% 10%;
+  background: var(--mk-account-dialog-bg, var(--mk-surface));
+  border-color: var(--mk-line);
+  color: var(--mk-account-surface-ink);
+}
+
+.mk-subscription-dialog .text-muted-foreground {
+  color: var(--mk-muted);
+}
+
+.mk-subscription-dialog .border-border-light {
+  border-color: var(--mk-line);
+}
+
+body:has(.mk-account-page .mk-language-trigger) .mk-language-menu[data-marketing-language-menu] {
+  --mk-language-ink: var(--mk-account-surface-ink);
+  --mk-language-hover: var(--mk-account-menu-hover, var(--mk-surface));
+}
