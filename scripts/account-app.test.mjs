@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { test } from "node:test";
 import { loadAccountApp, takeAccountAppLaunch } from "../src/lib/account-app-entry.ts";
-import { accountAppPath } from "../src/lib/site-config.mjs";
+import { accountAppPath, SITE_LOCALES } from "../src/lib/site-config.mjs";
 import { appAllowsPlanAction, appPlanOffers, planChangeTiming, subscriptionPortalAction } from "../src/pages/account-subscription-policy.ts";
 
 const source = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
@@ -44,14 +44,27 @@ test("scrubs the initial App fragment and persists presentation without the sing
   }
 });
 
-test("matches App locale variants to the website and resets unspecified theme on a new launch", () => {
-  for (const [input, output] of Object.entries({
-    en_GB: "en", fr_CA: "fr", es_419: "es", pt_PT: "pt-br", zh_CN: "zh-cn",
-    "zh-Hant-TW": "zh-tw", nb_NO: "no", nl_BE: "nl", de_CH: "de", ar: "en",
-  })) {
-    const { saved } = launchAt(`${accountAppPath}#theme=dark`);
-    const { launch } = launchAt(`${accountAppPath}#access=${token}&lang=${input}`, saved);
-    assert.deepEqual(launch, { access: token, theme: undefined, locale: output });
+test("matches every App interface locale across case and separators, with an English fallback", () => {
+  // App interface locale codes are defined in lib/langs.dart in the App repository.
+  const mapped = {
+    en: ["en_US", "en_GB", "en_AU"], ko: ["ko"], ja: ["ja"],
+    fr: ["fr_FR", "fr_CA"], de: ["de_DE", "de_AT", "de_CH"], es: ["es_ES", "es_419"],
+    it: ["it"], "pt-br": ["pt_BR", "pt_PT"], fi: ["fi"], da: ["da"], nl: ["nl_NL", "nl_BE"],
+    no: ["nb"], sv: ["sv"], "zh-cn": ["zh_CN"], "zh-tw": ["zh_TW", "zh_HK"],
+    id: ["id"], vi: ["vi"], th: ["th"], ru: ["ru"],
+  };
+  const fallback = "hi ar ar_EG bn ur fa pa sw tr fil ms ta pl uk ro si ne km el hu kk zu cs sr he bg hy sk ka lt lv et af sq az eu be bs ca hr gl gu kn mk ml mr sl te".split(" ");
+  assert.deepEqual(Object.keys(mapped).sort(), SITE_LOCALES.map(({ code }) => code).sort());
+  assert.equal(new Set([...Object.values(mapped).flat(), ...fallback]).size, 76);
+
+  for (const [locale, inputs] of [...Object.entries(mapped), ["en", fallback], ["zh-tw", ["zh-Hant-TW"]], ["no", ["nb_NO"]]]) {
+    for (const input of inputs) {
+      for (const variant of [input, input.toLowerCase().replaceAll("_", "-"), input.toUpperCase().replaceAll("-", "_")]) {
+        const { saved } = launchAt(`${accountAppPath}#theme=dark`);
+        const { launch } = launchAt(`${accountAppPath}#access=${token}&lang=${variant}`, saved);
+        assert.deepEqual(launch, { access: token, theme: undefined, locale }, variant);
+      }
+    }
   }
 });
 
@@ -173,6 +186,17 @@ test("App grace uses a plain notice while browser grace retains the payment acti
   const page = await source("src/pages/AccountSubscription.tsx");
   assert.match(page, /appPage && state === "grace" && <p className="mk-account-notice" role="alert">\{copy\.appGracePayment\}<\/p>/);
   assert.match(page, /portalAction && \(\s*<button[\s\S]*?openPortal\(\)/);
+});
+
+test("App quota failures offer a features retry without the general billing error card", async () => {
+  const page = await source("src/pages/AccountSubscription.tsx");
+  assert.match(page, /const retryAppQuotas = appPage && quotaQuery\.isError && !quotaQuery\.data/);
+  const retry = page.match(/\{retryAppQuotas \? \(\s*(<section[\s\S]*?<\/section>)/)?.[1];
+  assert.ok(retry);
+  assert.match(retry, /onClick=\{\(\) => void quotaQuery\.refetch\(\)\}>\{messages\.retry\}/);
+  assert.doesNotMatch(retry, /mk-account-notice|messages\.error/);
+  assert.match(page, /const webQuotaProblem = !appPage && \(quotaQuery\.isError/);
+  assert.match(page, /\{\(webQuotaProblem \|\| catalogUnavailable\) && \(/);
 });
 
 test("web passkey registration sends the default name and exposes no editable or signed-in name", async () => {

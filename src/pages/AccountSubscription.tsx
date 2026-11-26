@@ -313,6 +313,9 @@ export default function AccountSubscription({
 
   const operationNote = updated === "cancel-pending-change" ? copy.changeCanceled : copy.updated;
   const benefitsOfferId = appPage ? currentOfferId : selected?.id;
+  const retryAppQuotas = appPage && quotaQuery.isError && !quotaQuery.data;
+  const webQuotaProblem = !appPage && (quotaQuery.isError || (!quotaQuery.isPending && changesCurrent && !timing));
+  const catalogUnavailable = !catalog.loading && !catalog.offers;
   return (
     <div className="mk-subscription">
       {(entitlement || subscription) && !currentShown && (
@@ -336,13 +339,18 @@ export default function AccountSubscription({
         </div>
       )}
 
-      {benefitsOfferId && planBenefits(quota(benefitsOfferId))}
+      {retryAppQuotas ? (
+        <section aria-label={m("nav.features")}>
+          <button type="button" className="mk-button mk-button-secondary" disabled={busy || quotaQuery.isFetching}
+            onClick={() => void quotaQuery.refetch()}>{messages.retry}</button>
+        </section>
+      ) : benefitsOfferId && planBenefits(quota(benefitsOfferId))}
 
-      {(quotaQuery.isError || (!quotaQuery.isPending && changesCurrent && !timing) || !catalog.loading && !catalog.offers) && (
+      {(webQuotaProblem || catalogUnavailable) && (
         <div className="mk-account-notice">
           <p role="alert">{messages.error}</p>
           <button type="button" className="mk-button mk-button-secondary" disabled={busy} onClick={() => {
-            if (quotaQuery.isError || changesCurrent && !timing) void quotaQuery.refetch();
+            if (webQuotaProblem) void quotaQuery.refetch();
             if (!catalog.offers) void catalog.refetch();
           }}>{messages.retry}</button>
         </div>

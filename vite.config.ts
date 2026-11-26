@@ -6,6 +6,8 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 // @ts-expect-error The Vercel handler is packaged as a standalone JavaScript file.
 import { isPreviewWorkerOrigin } from "./scripts/vercel-account-preview-proxy.mjs";
+// @ts-expect-error The public origin is shared with the standalone site scripts.
+import { SITE_URL } from "./src/lib/site-config.mjs";
 
 function sharedAccountPreview(isolated: boolean): { options: PreviewOptions; guard: Plugin } {
   const siteOrigin = process.env.ACCOUNT_WEB_ORIGIN ?? "http://localhost:8080";
@@ -75,6 +77,25 @@ function sharedAccountPreview(isolated: boolean): { options: PreviewOptions; gua
       cors: false,
       https: cert && key && isolated ? { cert: readFileSync(cert), key: readFileSync(key) } : undefined,
       proxy: {
+        ...(isolated ? {
+          "^/api/plan-quotas$": {
+            target: SITE_URL,
+            changeOrigin: true,
+            followRedirects: false,
+            proxyTimeout: 8_000,
+            bypass(request) {
+              const length = request.headers["content-length"];
+              if (request.method !== "GET" || request.headers["transfer-encoding"] || (length && length !== "0")) return false;
+              request.headers = { accept: "application/json" };
+            },
+            configure(proxy) {
+              proxy.on("proxyRes", (response) => {
+                delete response.headers["set-cookie"];
+                delete response.headers.location;
+              });
+            },
+          },
+        } : {}),
         "^/api/account/": {
           target: target.origin,
           changeOrigin: true,
