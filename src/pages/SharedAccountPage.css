@@ -301,19 +301,8 @@
   padding: 0;
 }
 
-.mk-account-management .mk-subscription-tiers {
-  justify-self: stretch;
-  gap: 8px;
-  padding: 0;
-  background: transparent;
-}
-
-.mk-account-management .mk-subscription-tiers button {
-  flex: 1;
-}
-
-.mk-account-management .mk-subscription-tiers button[aria-pressed="true"] {
-  border-color: var(--mk-focus);
+.mk-account-management .mk-subscription-benefits li {
+  display: block;
 }
 
 .mk-account-management .mk-subscription-option {
@@ -396,7 +385,6 @@
     padding: 20px;
   }
 
-  .mk-account-management .mk-subscription-tiers,
   .mk-account-management .mk-account-actions,
   .mk-account-management-dialog .mk-account-actions {
     display: grid;

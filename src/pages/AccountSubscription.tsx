@@ -288,7 +288,7 @@ export default function AccountSubscription({
               : null;
           return (
             <li key={id}>
-              <HugeIcon name={feature.icon} className="h-5 w-5" />
+              {!appPage && <HugeIcon name={feature.icon} className="h-5 w-5" />}
               <div>
                 <strong>{feature.title}</strong>
                 {description && <span>{description}</span>}
@@ -353,8 +353,7 @@ export default function AccountSubscription({
           <>
             <div className="mk-subscription-tiers" role="group" aria-label={messages.choosePlan}>
               {availableTiers.map((tab) => (
-                <button key={tab} className={appPage ? "mk-button mk-button-secondary" : undefined}
-                  type="button" aria-pressed={tier === tab} disabled={busy}
+                <button key={tab} type="button" aria-pressed={tier === tab} disabled={busy}
                   onClick={() => selectTier(tab)}>{copy.names[tab]}</button>
               ))}
             </div>

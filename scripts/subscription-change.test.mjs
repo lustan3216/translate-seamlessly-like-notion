@@ -43,9 +43,12 @@ test("the App shows the current renewal date and quote, or both from the schedul
   assert.deepEqual(appNextCharge({ ...active, pendingChange }, offers, now), {
     date: Date.parse(pendingChange.effectiveAt), offer: targetOffer,
   });
-  assert.deepEqual(appNextCharge({ ...active, state: "grace", pendingChange }, offers, now), {
-    date: Date.parse(pendingChange.effectiveAt), offer: targetOffer,
-  });
+});
+
+test("the App hides the next charge in grace even when renewal or a plan change has a future date", () => {
+  const grace = { ...active, state: "grace" };
+  assert.equal(appNextCharge(grace, offers, now), undefined);
+  assert.equal(appNextCharge({ ...grace, pendingChange }, offers, now), undefined);
 });
 
 test("the App hides the next charge when renewal has stopped or the date or quote is unknown", () => {
@@ -53,7 +56,6 @@ test("the App hides the next charge when renewal has stopped or the date or quot
     assert.equal(appNextCharge({ ...active, state, pendingChange }, offers, now), undefined, state);
   }
   assert.equal(appNextCharge({ ...active, cancelAtPeriodEnd: true }, offers, now), undefined);
-  assert.equal(appNextCharge({ ...active, state: "grace", periodEndsAt: "2026-11-25T12:00:00Z" }, offers, now), undefined);
   assert.equal(appNextCharge(active, [], now), undefined);
   assert.equal(appNextCharge(null, offers, now), undefined);
   assert.equal(appNextCharge({ ...active, pendingChange }, [currentOffer], now), undefined);

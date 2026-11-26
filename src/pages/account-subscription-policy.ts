@@ -24,7 +24,7 @@ export function subscriptionPortalAction(appPage: boolean, hasPortal: boolean, s
 }
 
 export function appNextCharge(subscription: AccountBilling["subscription"], offers: readonly CreemOffer[], now = Date.now()) {
-  if (!subscription || subscription.cancelAtPeriodEnd || (subscription.state !== "active" && subscription.state !== "grace")) return;
+  if (subscription?.state !== "active" || subscription.cancelAtPeriodEnd) return;
 
   const { pendingChange, offerId, periodEndsAt } = subscription;
   const date = Date.parse((pendingChange ? pendingChange.effectiveAt : periodEndsAt) ?? "");
