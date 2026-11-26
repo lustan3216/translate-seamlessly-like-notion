@@ -40,6 +40,27 @@
   margin-bottom: 12px;
 }
 
+.mk-account-email-code {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+}
+
+.mk-account-email-code .mk-field {
+  width: 100%;
+  margin: 0;
+}
+
+.mk-account-email-code input[name="code"] {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.14em;
+}
+
+.mk-account-email-code .mk-text-link:disabled {
+  color: var(--mk-muted);
+  cursor: default;
+}
+
 .mk-subscription button:not(.mk-button):disabled {
   color: var(--mk-muted);
   cursor: default;

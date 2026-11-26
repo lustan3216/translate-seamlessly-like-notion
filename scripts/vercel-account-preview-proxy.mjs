@@ -9,13 +9,12 @@ const guestStatus = "billing/guest-status";
 const guestPostRoutes = new Set(["billing/guest-checkout", guestResend]);
 const subscriptionWrites = new Set(["billing/change-plan", "billing/cancel-pending-change", "billing/cancel", "billing/resume"]);
 const billingAccountPosts = new Set(["billing/checkout", ...subscriptionWrites]);
-const livePostRoutes = new Set(["email-access/request"]);
 const getRoutes = new Set([billingCatalog, guestStatus, "session", "billing/status"]);
 const postRoutes = new Set([
   "passkeys/register/options", "passkeys/register/verify",
   "passkeys/login/options", "passkeys/login/verify",
   "pair/preview", "pair/approve", "logout", "delete",
-  "email-access",
+  "email-access", "email-access/request", "email-access/verify",
   "billing/portal", "billing/app-link", ...billingAccountPosts, ...guestPostRoutes,
 ]);
 const prefix = "/api/account/";
@@ -73,8 +72,7 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
   const { route, search } = destination;
   const publicRoute = route === billingCatalog || route === guestStatus || guestPostRoutes.has(route);
   if (publicBilling && !publicRoute) return reply(res, 404, "not_found");
-  const canPost = postRoutes.has(route) || (live && livePostRoutes.has(route));
-  const method = getRoutes.has(route) ? "GET" : canPost ? "POST" : null;
+  const method = getRoutes.has(route) ? "GET" : postRoutes.has(route) ? "POST" : null;
   if (!method) return reply(res, 404, "not_found");
   if (req.method !== method) {
     res.setHeader("Allow", method);

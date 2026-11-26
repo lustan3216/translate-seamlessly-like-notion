@@ -116,7 +116,6 @@ test("account sessions and public billing stay on their assigned origins", async
     [{ url: "/api/account-preview?account_route=session&account_route=delete" }, 404],
     [{ url: "/api/account/session?account_route=delete" }, 404],
     [{ url: "/api/account/pair/start" }, 404],
-    [{ url: "/api/account/email-access/request" }, 404],
     [{ method: "GET" }, 405],
     [{ headers: { "content-type": "text/plain" } }, 415],
     [{ body: Buffer.alloc(65_537) }, 413],
@@ -458,7 +457,6 @@ test("the fixed Dev host uses the preview Worker and its account rules", async (
   assert.equal(loginRequest.headers["X-AT-Account-Client-IP"], undefined);
 
   assert.equal((await call({ requestHost: env.VERCEL_URL })).status, 404);
-  assert.equal((await call({ method: "POST", url: "/api/account/email-access/request" })).status, 404);
   process.env.VERCEL_ENV = "preview";
   assert.equal((await call()).status, 404);
   process.env.VERCEL_ENV = env.VERCEL_ENV;
@@ -468,4 +466,111 @@ test("the fixed Dev host uses the preview Worker and its account rules", async (
   delete process.env.SHARED_ACCOUNT_PROXY_TOKEN;
   assert.equal((await call()).status, 404);
   assert.equal(upstream.mock.callCount(), 2);
+});
+
+test("email code access is POST-only on Dev, Preview, and live account hosts", async (context) => {
+  const previewHost = "code-preview-fixture.vercel.app";
+  const previewWorker = "https://code-fixture.et3216-c0d.workers.dev";
+  const liveWorker = "https://cloudflare.anytranslator.app";
+  const env = {
+    VERCEL_ENV: "preview",
+    VERCEL_URL: previewHost,
+    SHARED_ACCOUNT_PROXY_TOKEN: "fixture-proxy-token-123456789012345",
+    SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN: previewWorker,
+    SHARED_ACCOUNT_LIVE_PROXY_TOKEN: "fixture-live-token-1234567890123456",
+  };
+  const original = Object.fromEntries(Object.keys(env).map((key) => [key, process.env[key]]));
+  Object.assign(process.env, env);
+  context.after(() => {
+    for (const [key, old] of Object.entries(original)) {
+      if (old === undefined) delete process.env[key];
+      else process.env[key] = old;
+    }
+  });
+
+  const visitorIp = "2001:db8::42";
+  const accountCookie = `__Host-at_session=${"e".repeat(43)}`;
+  const session = `${accountCookie}; Max-Age=60; Path=/; HttpOnly; Secure; SameSite=Strict`;
+  const account = { id: "account-fixture" };
+  const codes = {
+    410: "creem_web_code_invalid",
+    409: "creem_web_account_conflict",
+  };
+  let verifyStatus = 200;
+  const upstream = context.mock.method(globalThis, "fetch", async (url) => url.endsWith("/request")
+    ? Response.json({ accepted: true })
+    : Response.json(verifyStatus === 200 ? { account } : { error: codes[verifyStatus] }, {
+      status: verifyStatus,
+      headers: [["set-cookie", session], ["set-cookie", "unrelated=discard"]],
+    }));
+
+  for (const [proxy, host, functionName, backend] of [
+    [handler, previewHost, "account-preview", previewWorker],
+    [devAccountProxy, "account-dev.anytranslator.app", "account-dev", previewWorker],
+    [liveAccountProxy, "account.anytranslator.app", "account-live", liveWorker],
+  ]) {
+    process.env.VERCEL_ENV = proxy === handler ? "preview" : "production";
+    const origin = `https://${host}`;
+    for (const [action, payload] of [
+      ["request", { email: "visitor@example.test", locale: "zh-tw" }],
+      ["verify", { email: "visitor@example.test", code: "012345" }],
+    ]) {
+      const route = `email-access/${action}`;
+      async function call({ url = `/api/account/${route}`, method = "POST", headers = {}, invoke = proxy } = {}) {
+        const req = Object.assign(Readable.from([Buffer.from(JSON.stringify(payload))]), {
+          method, url,
+          headers: {
+            host, origin, "sec-fetch-site": "same-origin", "content-type": "application/json",
+            "x-vercel-forwarded-for": visitorIp, "x-at-account-client-ip": "192.0.2.42", ...headers,
+          },
+        });
+        const res = {
+          headers: {},
+          setHeader(name, value) { this.headers[name.toLowerCase()] = value; },
+          end(data) { this.body = JSON.parse(data); },
+        };
+        await invoke(req, res);
+        return res;
+      }
+
+      for (const url of [undefined, `/api/${functionName}?account_route=${encodeURIComponent(route)}`]) {
+        const response = await call({ url, headers: { cookie: "unrelated=discard" } });
+        assert.equal(response.statusCode, 200, `${functionName}/${action}`);
+        assert.deepEqual(response.body, action === "request" ? { accepted: true } : { account });
+        assert.deepEqual(response.headers["set-cookie"], action === "verify" ? [session] : undefined);
+        const [upstreamUrl, request] = upstream.mock.calls.at(-1).arguments;
+        assert.equal(upstreamUrl, `${backend}/v1/account/${route}`);
+        assert.equal(request.headers.Origin, origin);
+        assert.equal(request.headers.Cookie, undefined);
+        assert.equal(request.headers["X-AT-Account-Client-IP"], proxy === liveAccountProxy ? visitorIp : undefined);
+        assert.deepEqual(JSON.parse(request.body), payload);
+      }
+
+      const beforeRejections = upstream.mock.callCount();
+      const get = await call({ method: "GET" });
+      assert.equal(get.statusCode, 405);
+      assert.equal(get.headers.allow, "POST");
+      assert.equal((await call({ headers: { origin: undefined } })).statusCode, 403);
+      assert.equal((await call({ headers: { "sec-fetch-site": "cross-site" } })).statusCode, 403);
+      assert.equal((await call({ headers: { host: "other.example.test" } })).statusCode, 404);
+      if (proxy === liveAccountProxy) {
+        assert.equal((await call({ invoke: liveCatalogProxy, headers: {
+          host: "www.anytranslator.app", origin: "https://www.anytranslator.app",
+        } })).statusCode, 404);
+      }
+      assert.equal(upstream.mock.callCount(), beforeRejections);
+
+      if (action === "verify") {
+        for (const status of [410, 409]) {
+          verifyStatus = status;
+          const response = await call({ headers: { cookie: `unrelated=discard; ${accountCookie}` } });
+          assert.equal(response.statusCode, status);
+          assert.deepEqual(response.body, { error: codes[status] });
+          assert.equal(response.headers["set-cookie"], undefined);
+          assert.equal(upstream.mock.calls.at(-1).arguments[1].headers.Cookie, accountCookie);
+        }
+        verifyStatus = 200;
+      }
+    }
+  }
 });

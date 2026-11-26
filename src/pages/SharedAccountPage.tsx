@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FormEvent, type ReactNode } from "react";
+import { useCallback, useEffect, useId, useRef, useState, type FormEvent, type ReactNode } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation, useNavigate } from "react-router-dom";
 import MarketingShell, { useMarketing } from "@/components/marketing/MarketingShell";
@@ -10,6 +10,7 @@ import { createPasskey, getPasskey, type LoginOptions, type RegistrationOptions 
 import { sharedAccountCopy } from "@/translations/marketing/shared-account";
 import { isLiveAccountHost, sharedAccountLiveAccountEnabled, sharedAccountPreviewEnabled, useCreemOffer } from "@/lib/shared-account-preview";
 import { accountDeliveryCopy } from "@/translations/marketing/shared-account-delivery";
+import { emailCodeCopy } from "@/translations/marketing/shared-account-email-code";
 import { guestCheckoutCopy } from "@/translations/marketing/shared-account-guest";
 import appClaimCopy from "@/translations/marketing/app-claim.json";
 import creemCopy from "@/translations/marketing/creem-preview.json";
@@ -31,22 +32,146 @@ function AccountSection({ id, title, children, plain = false }: { id: string; ti
   );
 }
 
-function EmailAccessForm({
-  copy, disabled, onRequest,
-}: { copy: (typeof guestCheckoutCopy)[keyof typeof guestCheckoutCopy]; disabled: boolean; onRequest: (address: string) => void }) {
-  function submit(event: FormEvent<HTMLFormElement>) {
+const emailResendCooldownMs = 5 * 60_000;
+
+function secondsUntil(deadline: number) {
+  return Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
+}
+
+function EmailAccessForm({ locale, disabled, run, onAuthenticated }: {
+  locale: keyof typeof emailCodeCopy;
+  disabled: boolean;
+  run: (action: () => Promise<void>) => Promise<void>;
+  onAuthenticated: (account: Account) => void;
+}) {
+  const copy = emailCodeCopy[locale];
+  const fieldId = useId();
+  const field = useRef<HTMLInputElement>(null);
+  const focusField = useRef(false);
+  const [resendDeadlines] = useState(() => new Map<string, number>());
+  const [challenge, setChallenge] = useState<{ address: string; resendAt: number }>();
+  const [remaining, setRemaining] = useState(0);
+  const [code, setCode] = useState("");
+  const [invalid, setInvalid] = useState(false);
+  const resendAt = challenge?.resendAt;
+
+  useEffect(() => {
+    if (resendAt === undefined) return;
+    const remainingSeconds = secondsUntil(resendAt);
+    setRemaining(remainingSeconds);
+    if (!remainingSeconds) return;
+    const interval = window.setInterval(() => {
+      const seconds = secondsUntil(resendAt);
+      setRemaining(seconds);
+      if (!seconds) window.clearInterval(interval);
+    }, 1000);
+    return () => window.clearInterval(interval);
+  }, [resendAt]);
+
+  useEffect(() => {
+    if (!focusField.current) return;
+    focusField.current = false;
+    field.current?.focus();
+  }, [challenge]);
+
+  function requestCode(address: string) {
+    if (disabled) return;
+    const key = address.toLowerCase();
+    function showChallenge(deadline: number) {
+      focusField.current = true;
+      setChallenge({ address, resendAt: deadline });
+      setRemaining(secondsUntil(deadline));
+      setCode("");
+      setInvalid(false);
+    }
+
+    const existing = resendDeadlines.get(key);
+    if (existing && secondsUntil(existing)) {
+      if (!challenge) showChallenge(existing);
+      return;
+    }
+    return run(async () => {
+      const result = await accountRequest<{ accepted: boolean }>("/email-access/request", { email: address, locale });
+      if (result?.accepted !== true) throw new Error("request_failed");
+      const deadline = Date.now() + emailResendCooldownMs;
+      resendDeadlines.set(key, deadline);
+      showChallenge(deadline);
+    });
+  }
+
+  function submitEmail(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const address = new FormData(event.currentTarget).get("email");
-    if (typeof address === "string" && address.trim()) onRequest(address.trim());
+    if (typeof address === "string" && address.trim()) return requestCode(address.trim());
+  }
+
+  function submitCode(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (disabled || !challenge || !/^[0-9]{6}$/.test(code)) return;
+    setInvalid(false);
+    return run(async () => {
+      try {
+        const { account } = await accountRequest<{ account: Account }>("/email-access/verify", { email: challenge.address, code });
+        if (!account?.id) throw new Error("request_failed");
+        onAuthenticated(account);
+      } catch (failure) {
+        if (failure instanceof AccountRequestError && ["creem_web_code_invalid", "creem_web_account_conflict"].includes(failure.message)) {
+          setInvalid(true);
+          return;
+        }
+        throw failure;
+      }
+    });
+  }
+
+  function updateCode(value: string) {
+    setCode(value.replace(/[^0-9]/g, "").slice(0, 6));
+    setInvalid(false);
+  }
+
+  if (challenge) {
+    const domain = challenge.address.slice(challenge.address.lastIndexOf("@"));
+    const masked = `${challenge.address[0]}•••${domain}`;
+    const [sentPrefix, sentSuffix] = copy.codeSent.split("{email}");
+    const countdown = `${Math.floor(remaining / 60)}:${String(remaining % 60).padStart(2, "0")}`;
+    return (
+      <form className="mk-account-email-code" onSubmit={submitCode}>
+        <p role="status" className="mk-small">{sentPrefix}<bdi dir="ltr">{masked}</bdi>{sentSuffix}</p>
+        <div className="mk-field">
+          <label htmlFor={fieldId}>{copy.codeLabel}</label>
+          <input ref={field} id={fieldId} name="code" type="text" inputMode="numeric" autoComplete="one-time-code"
+            maxLength={6} pattern="[0-9]{6}" required dir="ltr" value={code} readOnly={disabled}
+            aria-invalid={invalid || undefined} aria-describedby={invalid ? `${fieldId}-error` : undefined}
+            onChange={(event) => updateCode(event.currentTarget.value)}
+            onPaste={(event) => {
+              if (disabled) return;
+              event.preventDefault();
+              updateCode(event.clipboardData.getData("text"));
+            }} />
+          {invalid && <p role="alert" className="mk-error" id={`${fieldId}-error`}>{copy.invalidCode}</p>}
+        </div>
+        <button className="mk-button" type="submit" disabled={disabled || code.length !== 6}>{copy.signIn}</button>
+        <button className="mk-text-link" type="button" disabled={disabled || remaining > 0}
+          onClick={() => requestCode(challenge.address)}>
+          {remaining > 0 ? copy.resendCountdown.replace("{time}", countdown) : copy.resend}
+        </button>
+        <button className="mk-text-link" type="button" disabled={disabled} onClick={() => {
+          focusField.current = true;
+          setChallenge(undefined);
+          setCode("");
+          setInvalid(false);
+        }}>{copy.changeEmail}</button>
+      </form>
+    );
   }
 
   return (
-    <form onSubmit={submit}>
+    <form onSubmit={submitEmail}>
       <div className="mk-field">
-        <label htmlFor="account-purchase-email">{copy.purchaseEmail}</label>
-        <input id="account-purchase-email" name="email" type="email" autoComplete="email" maxLength={254} required dir="ltr" />
+        <label htmlFor={fieldId}>{guestCheckoutCopy[locale].purchaseEmail}</label>
+        <input ref={field} id={fieldId} name="email" type="email" autoComplete="email" maxLength={254} required dir="ltr" />
       </div>
-      <button className="mk-button" type="submit" disabled={disabled}>{copy.sendLink}</button>
+      <button className="mk-button" type="submit" disabled={disabled}>{copy.sendCode}</button>
     </form>
   );
 }
@@ -91,6 +216,7 @@ function AccountManagement() {
   const [busy, setBusy] = useState(false);
   const [refresh, setRefresh] = useState(0);
   const lock = useRef(false);
+  const sessionRead = useRef<AbortController>();
   const handlingEmailFragment = useRef(false);
   const fragment = new URLSearchParams(location.hash.slice(1));
   const pairCode = sharedAccountPreviewEnabled ? fragment.get("pair") : null;
@@ -104,6 +230,14 @@ function AccountManagement() {
   const sessionLoading = emailAccessPending || (account === undefined && !sessionError);
   const hasPasskeys = typeof window !== "undefined" && window.isSecureContext
     && typeof PublicKeyCredential !== "undefined" && !!navigator.credentials;
+
+  const completeEmailAccess = useCallback((active: Account) => {
+    sessionRead.current?.abort();
+    setSessionError(false);
+    setAccount(active);
+    setEmailReauthentication(false);
+    clearStoredCheckoutAttempt();
+  }, []);
 
   useEffect(() => {
     if (!emailAccessHash) {
@@ -133,20 +267,19 @@ function AccountManagement() {
     emailAccess.then((result) => {
       if (!active) return;
       if ("account" in result) {
-        setAccount(result.account);
-        setEmailReauthentication(false);
-        clearStoredCheckoutAttempt();
+        completeEmailAccess(result.account);
       } else {
         setError(result.error);
       }
       setEmailAccess(null);
     });
     return () => { active = false; };
-  }, [emailAccess]);
+  }, [emailAccess, completeEmailAccess]);
 
   useEffect(() => {
     if (emailAccessPending) return;
     const controller = new AbortController();
+    sessionRead.current = controller;
     setSessionError(false);
     accountRequest<AccountSession>("/session", undefined, controller.signal)
       .then(({ account: active }) => { if (!controller.signal.aborted) setAccount(active); })
@@ -282,13 +415,6 @@ function AccountManagement() {
     });
   }
 
-  function requestEmailLink(address: string) {
-    return run(async () => {
-      await accountRequest("/email-access/request", { email: address, locale: currentLanguage.code });
-      setFeedback("email_link_requested");
-    });
-  }
-
   const errorText = error === "recent_passkey_required" ? messages.reauthenticate
     : error === "recent_email_access_required" ? guest.reauthenticate
     : error === "creem_web_link_unavailable" ? guest.linkUnavailable
@@ -321,13 +447,12 @@ function AccountManagement() {
         {(busy || emailAccessPending) && <AccountSkeleton />}
         {error && <p role="alert" className="mk-account-notice">{errorText}</p>}
         {feedback === "deleted" && <p role="status" className="mk-account-notice">{messages.deleted}</p>}
-        {feedback === "email_link_requested" && <p role="status" className="mk-account-notice">{guest.linkRequested}</p>}
         {guestReturning && account === null && !emailAccessPending && (
           <p role="status" className="mk-account-notice">{guest.checkInbox}</p>
         )}
         {showEmailSignIn && (
           <AccountSection id="account-email-sign-in" title={guest.emailSignIn}>
-            <EmailAccessForm copy={guest} disabled={busy} onRequest={requestEmailLink} />
+            <EmailAccessForm locale={currentLanguage.code} disabled={busy} run={run} onAuthenticated={completeEmailAccess} />
           </AccountSection>
         )}
         {pairCode && (
@@ -408,7 +533,9 @@ function AccountManagement() {
                     {error === "recent_passkey_required" && (
                       <button className="mk-button mk-button-secondary" type="button" disabled={busy || !hasPasskeys} onClick={() => void run(() => authenticate("login"))}>{messages.signIn}</button>
                     )}
-                    {emailReauthentication && <EmailAccessForm copy={guest} disabled={busy} onRequest={requestEmailLink} />}
+                    {emailReauthentication && (
+                      <EmailAccessForm locale={currentLanguage.code} disabled={busy} run={run} onAuthenticated={completeEmailAccess} />
+                    )}
                   </>
                 ) : (
                   <button className="mk-button mk-button-secondary" type="button" disabled={busy} onClick={() => setConfirmDeletion(true)}>{messages.deleteAccount}</button>

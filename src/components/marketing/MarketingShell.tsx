@@ -2,7 +2,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { localizedPath, SITE_URL } from "@/lib/site-config.mjs";
-import { liveAccountOrigin, sharedAccountLiveAccountEnabled, sharedAccountLiveEnabled, sharedAccountPreviewEnabled } from "@/lib/shared-account-preview";
+import { liveAccountOrigin, sharedAccountEnabled, sharedAccountLiveAccountEnabled, sharedAccountLiveEnabled, sharedAccountPreviewEnabled } from "@/lib/shared-account-preview";
 import HugeIcon from "@/components/HugeIcon";
 import AppStoreLink from "@/components/AppStoreLink";
 import LanguagePicker from "./LanguagePicker";
@@ -13,6 +13,7 @@ import asia from "@/translations/marketing/asia.json";
 import europeA from "@/translations/marketing/europe-a.json";
 import europeB from "@/translations/marketing/europe-b.json";
 import creemCopy from "@/translations/marketing/creem-preview.json";
+import { emailCodeCopy } from "@/translations/marketing/shared-account-email-code";
 import "@/marketing.css";
 import "./PhotoStages.css";
 import { featureDetails } from "@/data/feature-details";
@@ -39,7 +40,8 @@ export function useMarketing() {
     const localized = localizedPath(path, context.currentLanguage.code);
     return sharedAccountLiveAccountEnabled && path !== "/account" ? `${SITE_URL}${localized}` : localized;
   };
-  return { ...context, ...marketingCatalog(context.currentLanguage.code), m, href, details, copy: getCurrentMainCopy(context.currentLanguage.code) };
+  const accountHref = `${sharedAccountEnabled ? "" : liveAccountOrigin}${href("/account")}`;
+  return { ...context, ...marketingCatalog(context.currentLanguage.code), m, href, accountHref, details, copy: getCurrentMainCopy(context.currentLanguage.code) };
 }
 export const Arrow = () => (
   <HugeIcon name="arrow-right-01-round" className="mk-arrow" />
@@ -62,11 +64,13 @@ export function DownloadButtons({ source = "marketing" }: { source?: string }) {
   );
 }
 export function MarketingNavigation({ liveMarketing = false }: { liveMarketing?: boolean }) {
-  const { m, t, href, currentLanguage } = useMarketing();
+  const { m, t, href, accountHref, currentLanguage } = useMarketing();
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const isPurchasePage = /^\/(?:pricing|account)\/?$/.test(location.pathname);
   const webPlans = sharedAccountPreviewEnabled || sharedAccountLiveAccountEnabled || liveMarketing;
+  const showSignIn = !sharedAccountLiveAccountEnabled && !/^\/account(?:\/|$)/i.test(location.pathname);
+  const signIn = emailCodeCopy[currentLanguage.code].signIn;
   useEffect(() => {
     const media = window.matchMedia("(max-width: 1100px)");
     const closeDesktopMenu = () => {
@@ -132,7 +136,7 @@ export function MarketingNavigation({ liveMarketing = false }: { liveMarketing?:
       <a href="#main-content" className="mk-skip">
         {m("skip")}
       </a>
-      <div className="mk-wrap mk-nav">
+      <div className={showSignIn ? "mk-wrap mk-nav mk-nav-with-sign-in" : "mk-wrap mk-nav"}>
         <Link to={href("/")} className="mk-brand" aria-label="AnyTranslator">
           <img src="/app-preview/logo.png" width="36" height="36" alt="" />
           <span>AnyTranslator</span>
@@ -147,8 +151,13 @@ export function MarketingNavigation({ liveMarketing = false }: { liveMarketing?:
         <div className="mk-nav-end">
           <ThemeToggle />
           <LanguagePicker />
+          {showSignIn && (
+            <a className="mk-button mk-button-secondary mk-nav-action mk-nav-sign-in" href={accountHref}>
+              {signIn}
+            </a>
+          )}
           {(!webPlans || !isPurchasePage) && (
-            <Link className="mk-button mk-nav-download" to={href(webPlans ? "/pricing" : "/download")}>
+            <Link className="mk-button mk-nav-action" to={href(webPlans ? "/pricing" : "/download")}>
               {webPlans ? creemCopy[currentLanguage.code].seePlans : m("nav.download")}
               <Arrow />
             </Link>
@@ -174,6 +183,12 @@ export function MarketingNavigation({ liveMarketing = false }: { liveMarketing?:
           className="mk-mobile-menu"
           aria-label={m("nav.menu")}
         >
+          {showSignIn && (
+            <a href={accountHref}>
+              {signIn}
+              <Arrow />
+            </a>
+          )}
           {[
             ...links,
             ["about", "/about"],
@@ -196,8 +211,8 @@ export function MarketingNavigation({ liveMarketing = false }: { liveMarketing?:
     </header>
   );
 }
-export function MarketingFooter({ liveMarketing = false }: { liveMarketing?: boolean }) {
-  const { m, href, t, currentLanguage } = useMarketing();
+export function MarketingFooter() {
+  const { m, href, accountHref, t, currentLanguage } = useMarketing();
   const groups = [
     [
       "footer.product",
@@ -250,8 +265,8 @@ export function MarketingFooter({ liveMarketing = false }: { liveMarketing?: boo
               ))}
               {title === "footer.resources" && (
                 <>
-                  {liveMarketing && (
-                    <a href={`${liveAccountOrigin}${href("/account")}`}>
+                  {!sharedAccountEnabled && (
+                    <a href={accountHref}>
                       {creemCopy[currentLanguage.code].manageSubscription}
                     </a>
                   )}
@@ -321,7 +336,7 @@ export default function MarketingShell({
         {children}
         {close && <Closing liveMarketing={liveMarketing} />}
       </main>
-      <MarketingFooter liveMarketing={liveMarketing} />
+      <MarketingFooter />
     </div>
   );
 }
