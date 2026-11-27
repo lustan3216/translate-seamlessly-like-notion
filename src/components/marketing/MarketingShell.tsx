@@ -167,7 +167,7 @@ export function MarketingNavigation({ liveMarketing = false, accountSession }: {
     return signedIn ? (
       <button
         type="button"
-        className={mobile ? "flex min-h-14 w-full items-center justify-between border-b border-[var(--mk-line)] text-start text-[20px] disabled:opacity-60" : desktopClass}
+        className={mobile ? undefined : desktopClass}
         disabled={accountSession?.busy ?? signingOut}
         onClick={() => void handleSignOut()}
       >

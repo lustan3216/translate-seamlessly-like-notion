@@ -311,13 +311,23 @@ html[data-theme] body {
   padding: 24px 48px;
   overflow: auto;
 }
-.mk-mobile-menu a {
+.mk-mobile-menu a,
+.mk-mobile-menu > button {
   display: flex;
+  width: 100%;
+  padding: 0;
+  color: inherit;
+  background: none;
+  font: inherit;
+  text-align: start;
   align-items: center;
   justify-content: space-between;
   min-height: 56px;
   border-bottom: 1px solid var(--mk-line);
   font-size: 20px;
+}
+.mk-mobile-menu > button:disabled {
+  opacity: 0.6;
 }
 .mk-actions {
   display: flex;
