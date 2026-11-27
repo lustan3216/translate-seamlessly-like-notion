@@ -400,6 +400,127 @@ test("account sessions and public billing stay on their assigned origins", async
   assert.equal(upstream.mock.callCount(), accepted);
 });
 
+test("only the live marketing origin can read sessions and log out across origins", async (context) => {
+  const accountHost = "account.anytranslator.app";
+  const marketingOrigin = "https://www.anytranslator.app";
+  const env = {
+    VERCEL_ENV: "production",
+    VERCEL_URL: "account-preview-fixture.vercel.app",
+    SHARED_ACCOUNT_LIVE_PROXY_TOKEN: "fixture-live-proxy-token-1234567890123",
+    SHARED_ACCOUNT_PROXY_TOKEN: "fixture-preview-proxy-token-1234567890123",
+    SHARED_ACCOUNT_PREVIEW_WORKER_ORIGIN: "https://fixture-dev.et3216-c0d.workers.dev",
+  };
+  const original = Object.fromEntries(Object.keys(env).map((key) => [key, process.env[key]]));
+  Object.assign(process.env, env);
+  context.after(() => {
+    for (const [key, old] of Object.entries(original)) {
+      if (old === undefined) delete process.env[key];
+      else process.env[key] = old;
+    }
+  });
+
+  const accountCookie = `__Host-at_session=${"s".repeat(43)}`;
+  const clearSession = "__Host-at_session=; Max-Age=0; Path=/; HttpOnly; Secure; SameSite=Strict";
+  const upstream = context.mock.method(globalThis, "fetch", async (url) => url.endsWith("/logout")
+    ? Response.json({ ok: true }, { headers: { "set-cookie": clearSession } })
+    : Response.json({ account: { id: "fixture" }, session: { source: "web" } }));
+
+  async function call(path, method, headers = {}, proxy = liveAccountProxy) {
+    const req = Object.assign(Readable.from([Buffer.from("{}")]), {
+      method, url: `/api/${path}`,
+      headers: {
+        host: accountHost, origin: marketingOrigin, "sec-fetch-site": "same-site",
+        "content-type": "application/json", cookie: `unrelated=discard; ${accountCookie}`, ...headers,
+      },
+    });
+    const res = {
+      headers: {},
+      setHeader(name, value) { this.headers[name.toLowerCase()] = value; },
+      end(body) { this.body = body; },
+    };
+    await proxy(req, res);
+    return res;
+  }
+
+  function assertCors(response) {
+    assert.equal(response.headers["access-control-allow-origin"], marketingOrigin);
+    assert.equal(response.headers["access-control-allow-credentials"], "true");
+    assert.equal(response.headers.vary, "Origin");
+    assert.equal(response.headers["cache-control"], "private, no-store");
+  }
+
+  for (const [route, method] of [["session", "GET"], ["logout", "POST"]]) {
+    const response = await call(`account/${route}`, method);
+    assert.equal(response.statusCode, 200);
+    assertCors(response);
+    assert.equal(response.headers["set-cookie"]?.[0], route === "logout" ? clearSession : undefined);
+    const [url, options] = upstream.mock.calls.at(-1).arguments;
+    assert.equal(url, `https://cloudflare.anytranslator.app/v1/account/${route}`);
+    assert.equal(options.method, method);
+    assert.equal(options.headers.Cookie, accountCookie);
+    assert.equal(options.headers.Origin, `https://${accountHost}`);
+  }
+  for (const [route, method] of [["session", "GET"], ["logout", "POST"]]) {
+    const response = await call(`account/${route}`, method, {
+      origin: `https://${accountHost}`, "sec-fetch-site": "same-origin",
+    });
+    assert.equal(response.statusCode, 200);
+    assert.equal(response.headers.vary, "Origin");
+    assert.equal(response.headers["access-control-allow-origin"], undefined);
+  }
+
+  const accepted = upstream.mock.callCount();
+  const preflightHeaders = {
+    "access-control-request-method": "POST", "access-control-request-headers": "content-type", cookie: undefined,
+  };
+  const response = await call("account-live?account_route=logout", "OPTIONS", preflightHeaders);
+  assert.equal(response.statusCode, 204);
+  assert.equal(response.body, undefined);
+  assertCors(response);
+  assert.equal(response.headers["access-control-allow-methods"], "POST");
+  assert.equal(response.headers["access-control-allow-headers"], "Content-Type");
+  assert.equal(response.headers["set-cookie"], undefined);
+
+  for (const [route, method, headers, status] of [
+    ["account/billing/status", "GET", {}, 403],
+    ["account/delete", "POST", {}, 403],
+    ["account/session", "POST", {}, 405],
+    ["account/logout", "GET", {}, 405],
+    ["account/logout", "POST", { "content-type": "text/plain" }, 415],
+    ["account/session", "OPTIONS", preflightHeaders, 405],
+    ["account/delete", "OPTIONS", preflightHeaders, 405],
+    ["account/logout", "OPTIONS", { ...preflightHeaders, origin: "https://other.anytranslator.app" }, 405],
+    ["account/logout", "OPTIONS", { ...preflightHeaders, "access-control-request-method": "GET" }, 403],
+    ["account/logout", "OPTIONS", { ...preflightHeaders, "access-control-request-headers": "content-type, authorization" }, 403],
+    ...[undefined, "http://www.anytranslator.app", "https://other.anytranslator.app",
+      "https://sub.www.anytranslator.app", "https://www.anytranslator.app.example.test"].flatMap((origin) => [
+      ["account/session", "GET", { origin }, 403],
+      ["account/logout", "POST", { origin }, 403],
+    ]),
+    ...[undefined, "same-origin", "cross-site"].flatMap((fetchSite) => [
+      ["account/session", "GET", { "sec-fetch-site": fetchSite }, 403],
+      ["account/logout", "POST", { "sec-fetch-site": fetchSite }, 403],
+    ]),
+  ]) {
+    const denied = await call(route, method, headers);
+    assert.equal(denied.statusCode, status, `${method} ${route} ${JSON.stringify(headers)}`);
+    // A request from the allowed origin can still get a readable 415.
+    assert.equal(denied.headers["access-control-allow-origin"], status === 415 ? marketingOrigin : undefined);
+  }
+  for (const [proxy, host, environment] of [
+    [devAccountProxy, "account-dev.anytranslator.app", "production"],
+    [handler, env.VERCEL_URL, "preview"],
+  ]) {
+    process.env.VERCEL_ENV = environment;
+    for (const [route, method] of [["session", "GET"], ["logout", "POST"]]) {
+      const denied = await call(`account/${route}`, method, { host }, proxy);
+      assert.equal(denied.statusCode, 403);
+      assert.equal(denied.headers["access-control-allow-origin"], undefined);
+    }
+  }
+  assert.equal(upstream.mock.callCount(), accepted);
+});
+
 test("the fixed Dev host uses the preview Worker and its account rules", async (context) => {
   const env = {
     VERCEL_ENV: "production",

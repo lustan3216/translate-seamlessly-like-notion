@@ -96,6 +96,21 @@ function setup({ reply, hash = "", preview = false, catalog = { webEmailAccessEn
       },
       AccountRequestError,
       clearStoredCheckoutAttempt() { attemptClears++; },
+      useAccountSession(enabled) {
+        const [active, setAccount] = react.useState();
+        const request = modules["@/lib/shared-account-client"].accountRequest;
+        const refetch = () => request("/session").then(({ account }) => setAccount(account));
+        react.useEffect(() => {
+          if (enabled) void refetch();
+        }, [enabled]);
+        return {
+          account: active, setAccount, refetch,
+          signOut: async () => {
+            await request("/logout", {});
+            setAccount(null);
+          },
+        };
+      },
     },
     "@/lib/passkeys": {},
     "@/lib/shared-account-preview": { sharedAccountPreviewEnabled: preview, useCreemOffer: () => catalog },
@@ -158,6 +173,7 @@ test("account email sign-in waits for accepted send, accepts pasted codes and op
     if (path === "/email-access/request") return send.promise;
     if (path === "/email-access/verify") return { account };
     if (path === "/billing/status") return { entitlement: null };
+    if (path === "/logout") return { ok: true };
     assert.fail(path);
   } });
   t.after(session.dispose);
@@ -207,6 +223,13 @@ test("account email sign-in waits for accepted send, accepts pasted codes and op
   assert.equal(session.cleared(), 1);
   assert.equal(JSON.stringify(session.calls[1].body), JSON.stringify({ email: "person@example.test", locale: "en" }));
   assert.equal(JSON.stringify(session.calls[2].body), JSON.stringify({ email: "person@example.test", code: "000123" }));
+  assert.equal(signedIn.props.accountSession.signedIn, true);
+  await signedIn.props.accountSession.signOut();
+  assert.equal(session.calls.filter(({ path }) => path === "/logout").length, 1);
+  const loggedOut = renderPage();
+  assert.equal(loggedOut.props.accountSession.signedIn, false);
+  assert.match(text(loggedOut), /Sign in by email/);
+  assert.equal(find(loggedOut, (node) => node.type === "AccountSubscription"), undefined);
 });
 
 test("signed-out email login handles an unavailable catalog and can retry it", async (t) => {

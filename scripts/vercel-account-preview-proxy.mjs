@@ -3,6 +3,7 @@ import { isIP } from "node:net";
 const liveWorker = "https://cloudflare.anytranslator.app";
 const liveAccountHost = "account.anytranslator.app";
 const devAccountHost = "account-dev.anytranslator.app";
+const liveMarketingHost = "www.anytranslator.app";
 const billingCatalog = "billing/catalog";
 const guestResend = "billing/guest-resend";
 const guestStatus = "billing/guest-status";
@@ -54,7 +55,7 @@ function reply(res, status, error) {
   res.end(JSON.stringify({ error }));
 }
 
-async function proxy(req, res, { vercelEnvironment, host, token, backend, functionPath, live = false, publicBilling = false }) {
+async function proxy(req, res, { vercelEnvironment, host, token, backend, functionPath, live = false, publicBilling = false, marketingOrigin }) {
   res.setHeader("Content-Type", "application/json; charset=utf-8");
   res.setHeader("Cache-Control", "private, no-store");
   res.setHeader("X-Content-Type-Options", "nosniff");
@@ -74,16 +75,37 @@ async function proxy(req, res, { vercelEnvironment, host, token, backend, functi
   if (publicBilling && !publicRoute) return reply(res, 404, "not_found");
   const method = getRoutes.has(route) ? "GET" : postRoutes.has(route) ? "POST" : null;
   if (!method) return reply(res, 404, "not_found");
-  if (req.method !== method) {
-    res.setHeader("Allow", method);
-    return reply(res, 405, "method_not_allowed");
-  }
 
   const origin = `https://${host}`;
   const { origin: requestOrigin, "sec-fetch-site": fetchSite } = req.headers;
-  if ((requestOrigin !== undefined && requestOrigin !== origin)
-    || (fetchSite !== undefined && fetchSite !== "same-origin") || (method === "POST" && requestOrigin !== origin)) {
+  const marketingRoute = marketingOrigin && (route === "session" || route === "logout");
+  const fromMarketing = marketingRoute && requestOrigin === marketingOrigin && fetchSite === "same-site";
+  const preflight = fromMarketing && route === "logout" && req.method === "OPTIONS";
+  if (marketingRoute) res.setHeader("Vary", "Origin");
+  if (req.method !== method && !preflight) {
+    res.setHeader("Allow", method);
+    return reply(res, 405, "method_not_allowed");
+  }
+  if (!fromMarketing && ((requestOrigin !== undefined && requestOrigin !== origin)
+    || (fetchSite !== undefined && fetchSite !== "same-origin") || (method === "POST" && requestOrigin !== origin))) {
     return reply(res, 403, "invalid_preview_request");
+  }
+  if (preflight) {
+    const requestedHeaders = req.headers["access-control-request-headers"];
+    if (req.headers["access-control-request-method"] !== "POST"
+      || (requestedHeaders !== undefined && (typeof requestedHeaders !== "string" || requestedHeaders.toLowerCase() !== "content-type"))) {
+      return reply(res, 403, "invalid_preview_request");
+    }
+  }
+  if (fromMarketing) {
+    res.setHeader("Access-Control-Allow-Origin", marketingOrigin);
+    res.setHeader("Access-Control-Allow-Credentials", "true");
+  }
+  if (preflight) {
+    res.setHeader("Access-Control-Allow-Methods", "POST");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+    res.statusCode = 204;
+    return res.end();
   }
 
   const headers = { Accept: jsonType, Origin: publicBilling ? `https://${liveAccountHost}` : origin, "X-AT-Account-Proxy-Token": token };
@@ -171,13 +193,13 @@ export function liveAccountProxy(req, res) {
   return proxy(req, res, {
     vercelEnvironment: "production", host: liveAccountHost,
     token: process.env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN, backend: liveWorker,
-    functionPath: "/api/account-live", live: true,
+    functionPath: "/api/account-live", live: true, marketingOrigin: `https://${liveMarketingHost}`,
   });
 }
 
 export function liveCatalogProxy(req, res) {
   return proxy(req, res, {
-    vercelEnvironment: "production", host: "www.anytranslator.app",
+    vercelEnvironment: "production", host: liveMarketingHost,
     token: process.env.SHARED_ACCOUNT_LIVE_PROXY_TOKEN, backend: liveWorker,
     functionPath: "/api/account-catalog", live: true, publicBilling: true,
   });
