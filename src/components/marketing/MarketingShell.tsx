@@ -80,7 +80,6 @@ export function MarketingNavigation({ liveMarketing = false, accountSession }: {
   const [open, setOpen] = useState(false);
   const [signingOut, setSigningOut] = useState(false);
   const location = useLocation();
-  const isPurchasePage = /^\/(?:pricing|account)\/?$/.test(location.pathname);
   const webPlans = sharedAccountPreviewEnabled || sharedAccountLiveAccountEnabled || liveMarketing;
   const readSession = !accountSession && (sharedAccountPreviewEnabled || liveMarketing
     || (sharedAccountLiveAccountEnabled && isLiveAccountHost()));
@@ -210,9 +209,9 @@ export function MarketingNavigation({ liveMarketing = false, accountSession }: {
           <ThemeToggle />
           <LanguagePicker />
           {accountAction()}
-          {(!webPlans || !isPurchasePage) && (
-            <Link className="mk-button mk-nav-action" to={href(webPlans ? "/pricing" : "/download")}>
-              {webPlans ? creemCopy[currentLanguage.code].seePlans : m("nav.download")}
+          {!webPlans && (
+            <Link className="mk-button mk-nav-action" to={href("/download")}>
+              {m("nav.download")}
               <Arrow />
             </Link>
           )}

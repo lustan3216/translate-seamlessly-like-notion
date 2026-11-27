@@ -90,7 +90,7 @@ test("marketing site renders full localized header actions and preserves checkou
     assert.ok(header.includes(`href="${siteConfig.localizedPath("/download", code)}">${marketingCopy[code]["nav.download"]}</a>`), code);
     assert.ok(closing.includes('data-source="closing-ios"'), code);
     const liveHeader = renderShell({ code, liveMarketing: true }).header;
-    assert.ok(liveHeader.includes(`href="${siteConfig.localizedPath("/pricing", code)}">${creemCopy[code].seePlans}</a>`), code);
+    assert.ok(!liveHeader.includes(`>${creemCopy[code].seePlans}</a>`), code);
   }
 });
 
@@ -103,9 +103,9 @@ test("the expanded mobile menu offers the localized account sign-in link", () =>
   }
 });
 
-test("the live purchase flag independently retains the existing plan CTA behavior", () => {
+test("the live header has no plans CTA while the closing keeps it", () => {
   const { header, footer, closing } = renderShell({ liveMarketing: true });
-  assert.ok(header.includes('href="/pricing">See plans</a>'));
+  assert.ok(!header.includes('>See plans</a>'));
   assert.ok(footer.includes(`href="${liveAccountOrigin}/account">Manage subscription</a>`));
   assert.ok(closing.includes('href="/pricing">See plans</a>'));
   assert.ok(!renderShell({ liveMarketing: true, pathname: "/pricing" }).header.includes('>See plans</a>'));
