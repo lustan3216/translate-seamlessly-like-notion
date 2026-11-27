@@ -26,6 +26,25 @@
   margin-block-start: 12px;
 }
 
+.mk-account-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, auto) minmax(max-content, 1fr);
+  align-items: center;
+  gap: 12px;
+}
+
+.mk-account-header h1 {
+  grid-column: 2;
+}
+
+.marketing-site .mk-account-header .mk-button {
+  justify-self: end;
+  min-height: 44px;
+  padding: 8px 16px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
 .mk-account-login .mk-account-email-code > .mk-button {
   width: 100%;
 }
@@ -49,6 +68,20 @@
 
 .marketing-site .mk-account-section.mk-price-card > :is(p, .mk-button) {
   margin-top: 0;
+}
+
+.mk-account-page .mk-account-connect {
+  padding: clamp(20px, 4vw, 32px);
+  background: var(--mk-sky);
+}
+
+.marketing-site .mk-account-connect.mk-price-card > h2 {
+  font-size: clamp(28px, 4vw, 36px);
+}
+
+.marketing-site .mk-account-connect.mk-price-card > p {
+  min-height: 0;
+  color: var(--mk-ink);
 }
 
 .mk-account-section > .mk-button {
@@ -109,7 +142,10 @@
 }
 
 .mk-account-code {
-  font-size: 28px;
+  padding: 8px 16px;
+  border-radius: var(--mk-radius-panel);
+  background: var(--mk-bg);
+  font-size: clamp(32px, 5vw, 42px);
   letter-spacing: 0.14em;
   font-variant-numeric: tabular-nums;
 }
@@ -207,6 +243,12 @@
   border-radius: var(--mk-radius-pill);
   background: var(--mk-mint);
   font-size: 0.8em;
+}
+
+.mk-subscription-badge-current {
+  background: var(--mk-ink);
+  color: var(--mk-bg);
+  font-weight: 600;
 }
 
 .mk-subscription-badges {
@@ -398,6 +440,11 @@
   }
 }
 
+.mk-subscription-option[data-current] {
+  --mk-muted: var(--mk-ink-hover);
+  background: var(--mk-surface-current);
+}
+
 .mk-subscription-option input:checked + .mk-subscription-mark::after {
   content: "";
   width: 10px;
@@ -512,6 +559,18 @@
 @media (max-width: 767px) {
   .mk-account-page {
     padding-bottom: 40px;
+  }
+
+  .mk-account-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    text-align: start;
+  }
+
+  .mk-page-intro.mk-account-header h1 {
+    grid-column: 1;
+    margin-inline: 0;
+    font-size: clamp(28px, 7.5vw, 42px);
   }
 
   .mk-subscription-dialog .mk-account-actions {

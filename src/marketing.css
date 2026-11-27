@@ -6,6 +6,7 @@
   --mk-muted: #686865;
   --mk-line: #e8e7e4;
   --mk-surface: #f6f5f2;
+  --mk-surface-current: #deddd7;
   --mk-sand: #f4f1e9;
   --mk-sky: #edf3f8;
   --mk-peach: #f8ede5;
@@ -1310,6 +1311,7 @@ html[data-theme] body {
   --mk-muted: #b0b0ab;
   --mk-line: #393938;
   --mk-surface: #252527;
+  --mk-surface-current: #111112;
   --mk-sand: #2c2a25;
   --mk-sky: #242c33;
   --mk-peach: #322925;

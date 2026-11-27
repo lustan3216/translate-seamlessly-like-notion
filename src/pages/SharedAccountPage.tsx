@@ -23,9 +23,12 @@ type EmailAccessResult = { account: Account } | {
   error: "creem_web_link_unavailable" | "creem_web_account_conflict" | "request_failed";
 };
 
-function AccountSection({ id, title, children, plain = false }: { id: string; title: string; children: ReactNode; plain?: boolean }) {
+function AccountSection({ id, title, children, plain = false, connect = false }: {
+  id: string; title: string; children: ReactNode; plain?: boolean; connect?: boolean;
+}) {
   return (
-    <section className={plain ? "mk-account-section" : "mk-account-section mk-price-card mk-price-pro"} aria-labelledby={id}>
+    <section className={`mk-account-section${plain ? "" : " mk-price-card mk-price-pro"}${connect ? " mk-account-connect" : ""}`}
+      aria-labelledby={id}>
       <h2 id={id} tabIndex={id === "delete" ? -1 : undefined}>{title}</h2>
       {children}
     </section>
@@ -439,6 +442,8 @@ function AccountManagement() {
   const signedOut = account === null && !emailAccessPending && !sessionError && !guestReturning;
   const showSignInIntro = signedOut && !pairCode;
   const signInLoading = signedOut && catalog.loading;
+  const canSignOut = !!account && !emailAccessPending && !sessionError;
+  const introClass = showSignInIntro ? " mk-account-login-intro" : canSignOut ? " mk-account-header" : "";
 
   return (
     <MarketingShell close={false}>
@@ -447,8 +452,9 @@ function AccountManagement() {
         <meta name="robots" content="noindex, nofollow" />
         <meta name="referrer" content="no-referrer" />
       </Helmet>
-      <header className={showSignInIntro ? "mk-page-intro mk-wrap mk-account-login-intro" : "mk-page-intro mk-wrap"}>
+      <header className={`mk-page-intro mk-wrap${introClass}`}>
         {sessionLoading ? <AccountSkeleton className="mk-account-skeleton-title" /> : <h1>{messages.title}</h1>}
+        {canSignOut && <button type="button" className="mk-button mk-button-secondary" disabled={busy} onClick={() => void signOut()}>{messages.signOut}</button>}
         {showSignInIntro && <p className="mk-lead">{confirmDeletion ? messages.deleteAccount : guest.emailSignIn}</p>}
       </header>
       <div className={showSignInIntro ? "mk-wrap mk-account-page mk-account-login" : "mk-wrap mk-account-page"}
@@ -469,7 +475,7 @@ function AccountManagement() {
             </div>
           ))}
         {pairCode && (
-          <AccountSection id="account-pairing" title={messages.pairTitle}>
+          <AccountSection id="account-pairing" title={messages.pairTitle} connect>
             {pairApproved ? <p role="status">{messages.pairDone}</p>
               : pairProblem === "expired" ? <p role="alert">{messages.pairExpired}</p>
               : pairProblem === "failed" ? (
@@ -495,9 +501,6 @@ function AccountManagement() {
         ) : account === undefined ? <AccountSkeleton />
           : account ? (
             <>
-              <section className="mk-account-section mk-price-card mk-price-pro" id="account-session" aria-label={messages.signOut}>
-                <button type="button" className="mk-button mk-button-secondary" disabled={busy} onClick={() => void signOut()}>{messages.signOut}</button>
-              </section>
               {showBilling && <AccountSection id="account-billing" title={sharedAccountPreviewEnabled ? messages.testBilling : webPricing.title}
                 plain={billing !== undefined && !billingError}>
                 {billingError ? (
@@ -521,7 +524,8 @@ function AccountManagement() {
                     )}
               </AccountSection>}
               {(showPreviewAppDelivery || canResendAppLink) && (
-                <AccountSection id="account-app-delivery" title={showPreviewAppDelivery ? messages.pairTitle : email.title}>
+                <AccountSection id="account-app-delivery" title={showPreviewAppDelivery ? messages.pairTitle : email.title}
+                  connect={showPreviewAppDelivery}>
                   {showPreviewAppDelivery && <><p>{webPricing.testMode}</p><p>{delivery.bindHelp}</p></>}
                   {canResendAppLink && (
                     <>

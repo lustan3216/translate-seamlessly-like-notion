@@ -313,12 +313,14 @@ export default function AccountSubscription({
     );
   }
 
-  function badges() {
-    if (!state) return null;
+  function badges(inUseOnly = false) {
+    if (!state && !inUseOnly) return null;
     return (
       <span className="mk-subscription-badges">
-        {state !== "inUse" && state !== "expired" && <span className="mk-subscription-badge">{copy.inUse}</span>}
-        <span className="mk-subscription-badge">{copy[state]}</span>
+        {(inUseOnly || state !== "expired") && (
+          <span className="mk-subscription-badge mk-subscription-badge-current">{copy.inUse}</span>
+        )}
+        {!inUseOnly && state && state !== "inUse" && <span className="mk-subscription-badge">{copy[state]}</span>}
       </span>
     );
   }
@@ -402,13 +404,13 @@ export default function AccountSubscription({
                 const current = hasPlan && offer.id === currentOfferId;
                 const data = quota(offer.id);
                 return (
-                  <label className="mk-subscription-option" key={offer.id}>
+                  <label className="mk-subscription-option" data-current={current || undefined} key={offer.id}>
                     <input type="radio" name="account-offer" value={offer.id} checked={offer.id === selected?.id} disabled={current}
                       onChange={current ? undefined : () => { setSelection(offer.id); setUpdated(undefined); }} />
                     <span aria-hidden="true" className="mk-subscription-mark" />
                     <span className="mk-subscription-option-copy">
                       <strong>{planTitle(offer.plan, offer.period)}</strong>
-                      {current && (appPage ? <span className="mk-subscription-badge">{copy.inUse}</span> : badges())}
+                      {current && badges(appPage)}
                       {(!current || appPage) && <span className="mk-subscription-price"><bdi>{formatCreemPrice(locale, offer)}</bdi> <small>{pricing[priceUnit[offer.period]]}</small></span>}
                       {data && <>
                         <span>{marketing.pricing.voiceLabel} · {allowance(data.audioMinutes, data.quotaPeriod)}</span>
