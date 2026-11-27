@@ -14422,6 +14422,443 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/screen-translation" />
   </url>
   <url>
+    <loc>https://www.anytranslator.app/features/browser-translation</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=ko</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=ja</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=fr</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=de</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=it</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=pt-br</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=fi</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=da</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=nl</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=no</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=sv</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=zh-cn</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=zh-tw</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=id</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=vi</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=th</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
+    <loc>https://www.anytranslator.app/features/browser-translation?lang=ru</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/browser-translation" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/browser-translation?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://www.anytranslator.app/features/browser-translation?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.anytranslator.app/features/browser-translation?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.anytranslator.app/features/browser-translation?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.anytranslator.app/features/browser-translation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.anytranslator.app/features/browser-translation?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.anytranslator.app/features/browser-translation?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.anytranslator.app/features/browser-translation?lang=fi" />
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://www.anytranslator.app/features/browser-translation?lang=da" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.anytranslator.app/features/browser-translation?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://www.anytranslator.app/features/browser-translation?lang=no" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://www.anytranslator.app/features/browser-translation?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.anytranslator.app/features/browser-translation?lang=zh-cn" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.anytranslator.app/features/browser-translation?lang=zh-tw" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://www.anytranslator.app/features/browser-translation?lang=id" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://www.anytranslator.app/features/browser-translation?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://www.anytranslator.app/features/browser-translation?lang=th" />
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://www.anytranslator.app/features/browser-translation?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.anytranslator.app/features/browser-translation" />
+  </url>
+  <url>
     <loc>https://www.anytranslator.app/features/table</loc>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.anytranslator.app/features/table" />
     <xhtml:link rel="alternate" hreflang="ko-KR" href="https://www.anytranslator.app/features/table?lang=ko" />

@@ -8826,6 +8826,265 @@
       }
     },
     {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "ko"
+        }
+      ],
+      "dest": "/_localized/ko/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "ko-KR"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "ja"
+        }
+      ],
+      "dest": "/_localized/ja/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "ja-JP"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "fr"
+        }
+      ],
+      "dest": "/_localized/fr/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "fr-FR"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "de"
+        }
+      ],
+      "dest": "/_localized/de/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "de-DE"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "es"
+        }
+      ],
+      "dest": "/_localized/es/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "es-ES"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "it"
+        }
+      ],
+      "dest": "/_localized/it/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "it-IT"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "pt-br"
+        }
+      ],
+      "dest": "/_localized/pt-br/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "pt-BR"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "fi"
+        }
+      ],
+      "dest": "/_localized/fi/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "fi-FI"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "da"
+        }
+      ],
+      "dest": "/_localized/da/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "da-DK"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "nl"
+        }
+      ],
+      "dest": "/_localized/nl/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "nl-NL"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "no"
+        }
+      ],
+      "dest": "/_localized/no/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "nb-NO"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "sv"
+        }
+      ],
+      "dest": "/_localized/sv/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "sv-SE"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "zh-cn"
+        }
+      ],
+      "dest": "/_localized/zh-cn/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "zh-CN"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "zh-tw"
+        }
+      ],
+      "dest": "/_localized/zh-tw/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "zh-TW"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "id"
+        }
+      ],
+      "dest": "/_localized/id/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "id-ID"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "vi"
+        }
+      ],
+      "dest": "/_localized/vi/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "vi-VN"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "th"
+        }
+      ],
+      "dest": "/_localized/th/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "th-TH"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "ru"
+        }
+      ],
+      "dest": "/_localized/ru/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "ru-RU"
+      }
+    },
+    {
+      "src": "^/features/browser-translation/?$",
+      "dest": "/_localized/en/features/browser-translation/index.html",
+      "headers": {
+        "Content-Language": "en-US"
+      }
+    },
+    {
       "src": "^/features/table/?$",
       "has": [
         {
