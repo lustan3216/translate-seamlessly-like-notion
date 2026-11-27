@@ -11,7 +11,9 @@ import { additionalScreenTextSource } from './native-capture-review-policy.mjs';
 
 export const websiteRoot = fileURLToPath(new URL('../', import.meta.url));
 export const nativeLocales = SITE_LOCALES.map(({ code }) => code);
-export const requiredNativeFeatures = currentMainFeatures.map(({ id }) => id);
+// browser-translation is shown only through its real-device demo video (app-demo-videos.json); no page renders a native still for it.
+const videoOnlyFeatures = new Set(['browser-translation']);
+export const requiredNativeFeatures = currentMainFeatures.map(({ id }) => id).filter((id) => !videoOnlyFeatures.has(id));
 export const nativeFeatures = requiredNativeFeatures;
 export const targetSourceCommit = mainSourceCommit;
 export const requiredNativeLocales = ['zh-tw'];

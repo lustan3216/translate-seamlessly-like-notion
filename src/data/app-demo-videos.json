@@ -7,6 +7,13 @@
       "height": 1560,
       "alt": "螢幕翻譯兩種模式：YouTube 播日文新聞時子母畫面出現雙語字幕，再切到畫面文字翻譯日文網頁"
     },
+    "browser-translation": {
+      "src": "/app-preview/videos/20261124/zh-tw/browser-translation.mp4",
+      "poster": "/app-preview/videos/20261124/zh-tw/browser-translation-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "在 AnyTranslator 內建瀏覽器中，把英文維基百科「Kyoto」整頁翻成繁體中文，TED 演講的英文字幕即時翻成中文，再在維基搜尋框把「清水寺」翻成 Kiyomizu-dera。"
+    },
     "text": {
       "src": "/app-preview/videos/20261124/zh-tw/text.mp4",
       "poster": "/app-preview/videos/20261124/zh-tw/text-poster.webp",
@@ -71,6 +78,13 @@
       "width": 720,
       "height": 1560,
       "alt": "Screen translation in two modes: captions for a Japanese news video on YouTube, then on-screen text of a Japanese web page"
+    },
+    "browser-translation": {
+      "src": "/app-preview/videos/20261124/en/browser-translation.mp4",
+      "poster": "/app-preview/videos/20261124/en/browser-translation-poster.webp",
+      "width": 720,
+      "height": 1560,
+      "alt": "AnyTranslator's built-in browser translates the Japanese Wikipedia page 京都市 into English, turns the Japanese captions on an ANN News YouTube video into English, and changes \"Kiyomizu Temple\" in the Wikipedia search box to 清水寺."
     },
     "text": {
       "src": "/app-preview/videos/20261124/en/text.mp4",
