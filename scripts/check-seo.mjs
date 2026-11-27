@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import {
   SITE_URL,
   SITE_ROUTES,
+  NOINDEX_DEMO_ROUTES,
   SITE_LOCALES,
   canonicalUrl,
   languageFromSearch,
@@ -201,7 +202,13 @@ assert.deepEqual(
   retiredAgentRedirects,
   "Localized retired Agent redirects must precede canonical routes and the fallback redirect.",
 );
-const filesystemIndex = expectedPageCount + retiredAgentRedirects.length;
+const demoIndex = expectedPageCount + retiredAgentRedirects.length;
+assert.deepEqual(
+  routeRules.slice(demoIndex, demoIndex + NOINDEX_DEMO_ROUTES.length),
+  NOINDEX_DEMO_ROUTES,
+  "Unlisted demo pages must keep their noindex routes before filesystem.",
+);
+const filesystemIndex = demoIndex + NOINDEX_DEMO_ROUTES.length;
 assert.equal(
   routeRules.findIndex((rule) => rule.handle === "filesystem"),
   filesystemIndex,

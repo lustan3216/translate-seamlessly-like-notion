@@ -2,6 +2,12 @@ import { marketingRoutes } from "../data/marketing-content.mjs";
 import { currentMainOnlyRoutes } from "../data/main-current.mjs";
 export const SITE_URL = "https://www.anytranslator.app";
 export const accountAppPath = "/account/app";
+// Unlisted store-screenshot pages (public/demo); never in the sitemap or linked.
+export const NOINDEX_DEMO_ROUTES = [
+  { src: "^/demo/(kyoto-tea|kyoto-tea-ja)(?:\\.html)?$", dest: "/demo/$1.html", headers: { "X-Robots-Tag": "noindex, nofollow" } },
+  { src: "^/demo/kyoto-tea\\.jpg$", dest: "/demo/kyoto-tea.jpg", headers: { "X-Robots-Tag": "noindex, nofollow" } },
+];
+
 export const SITE_ROUTES = [...new Set([
   "/",
   ...marketingRoutes,

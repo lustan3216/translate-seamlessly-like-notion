@@ -3,6 +3,7 @@ import {
   SITE_URL,
   SITE_LOCALES,
   SITE_ROUTES,
+  NOINDEX_DEMO_ROUTES,
   canonicalUrl,
   localesForPath,
 } from "../src/lib/site-config.mjs";
@@ -56,6 +57,7 @@ vercel.routes = [
     const [fallback, ...alternates] = localesForPath(route);
     return [...alternates.map((locale) => ruleFor(route, locale.code)), ruleFor(route, fallback.code, true)];
   }),
+  ...NOINDEX_DEMO_ROUTES,
   { handle: "filesystem" },
   { src: "/.*", dest: "/404.html", status: 404 },
 ];

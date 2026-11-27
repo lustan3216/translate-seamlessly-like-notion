@@ -10639,6 +10639,20 @@
       }
     },
     {
+      "src": "^/demo/(kyoto-tea|kyoto-tea-ja)(?:\\.html)?$",
+      "dest": "/demo/$1.html",
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow"
+      }
+    },
+    {
+      "src": "^/demo/kyoto-tea\\.jpg$",
+      "dest": "/demo/kyoto-tea.jpg",
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow"
+      }
+    },
+    {
       "handle": "filesystem"
     },
     {
