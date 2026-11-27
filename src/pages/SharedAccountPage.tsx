@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import MarketingShell, { marketingCopy, useMarketing } from "@/components/marketing/MarketingShell";
 import {
   accountRequest, AccountRequestError, clearStoredCheckoutAttempt, isAccountCheckoutReturn, passkeyRegistrationBody,
-  type AccountBilling, type AccountSession, type SharedAccount as Account,
+  useAccountSession, type AccountBilling, type SharedAccount as Account,
 } from "@/lib/shared-account-client";
 import { createPasskey, getPasskey, type LoginOptions, type RegistrationOptions } from "@/lib/passkeys";
 import { sharedAccountCopy } from "@/translations/marketing/shared-account";
@@ -208,14 +208,12 @@ function AccountManagement() {
   const emailCode = emailCodeCopy[currentLanguage.code];
   const catalog = useCreemOffer();
   const { webEmailAccessEnabled } = catalog;
-  const [account, setAccount] = useState<Account | null>();
   const [billing, setBilling] = useState<AccountBilling>();
   const [pair, setPair] = useState<Pairing>();
   const [pairProblem, setPairProblem] = useState<"expired" | "failed">();
   const [pairRefresh, setPairRefresh] = useState(0);
   const [pairApproved, setPairApproved] = useState(false);
   const [confirmDeletion, setConfirmDeletion] = useState(location.hash === "#delete");
-  const [sessionError, setSessionError] = useState(false);
   const [billingError, setBillingError] = useState(false);
   const [emailAccess, setEmailAccess] = useState<Promise<EmailAccessResult> | null>(null);
   const [emailReauthentication, setEmailReauthentication] = useState(false);
@@ -224,7 +222,6 @@ function AccountManagement() {
   const [busy, setBusy] = useState(false);
   const [refresh, setRefresh] = useState(0);
   const lock = useRef(false);
-  const sessionRead = useRef<AbortController>();
   const handlingEmailFragment = useRef(false);
   const fragment = new URLSearchParams(location.hash.slice(1));
   const pairCode = sharedAccountPreviewEnabled ? fragment.get("pair") : null;
@@ -235,17 +232,16 @@ function AccountManagement() {
   const guestReturning = sharedAccountLiveAccountEnabled && billingReturn;
   const emailAccessHash = /^#access(?:=|$)/.test(location.hash) ? location.hash : "";
   const emailAccessPending = Boolean(emailAccessHash || emailAccess);
+  const { account, sessionError, setAccount, signOut, refetch: refetchSession } = useAccountSession(!emailAccessPending);
   const sessionLoading = emailAccessPending || (account === undefined && !sessionError);
   const hasPasskeys = typeof window !== "undefined" && window.isSecureContext
     && typeof PublicKeyCredential !== "undefined" && !!navigator.credentials;
 
   const completeEmailAccess = useCallback((active: Account) => {
-    sessionRead.current?.abort();
-    setSessionError(false);
     setAccount(active);
     setEmailReauthentication(false);
     clearStoredCheckoutAttempt();
-  }, []);
+  }, [setAccount]);
 
   useEffect(() => {
     if (!emailAccessHash) {
@@ -283,17 +279,6 @@ function AccountManagement() {
     });
     return () => { active = false; };
   }, [emailAccess, completeEmailAccess]);
-
-  useEffect(() => {
-    if (emailAccessPending) return;
-    const controller = new AbortController();
-    sessionRead.current = controller;
-    setSessionError(false);
-    accountRequest<AccountSession>("/session", undefined, controller.signal)
-      .then(({ account: active }) => { if (!controller.signal.aborted) setAccount(active); })
-      .catch(() => { if (!controller.signal.aborted) setSessionError(true); });
-    return () => controller.abort();
-  }, [refresh, emailAccessPending]);
 
   useEffect(() => {
     setBilling(undefined);
@@ -351,11 +336,19 @@ function AccountManagement() {
 
   useEffect(() => {
     const restoreBilling = (event: PageTransitionEvent) => {
-      if (event.persisted) setRefresh((value) => value + 1);
+      if (event.persisted) {
+        if (!emailAccessPending) void refetchSession();
+        setRefresh((value) => value + 1);
+      }
     };
     window.addEventListener("pageshow", restoreBilling);
     return () => window.removeEventListener("pageshow", restoreBilling);
-  }, []);
+  }, [emailAccessPending, refetchSession]);
+
+  function retryAccount() {
+    void refetchSession();
+    setRefresh((value) => value + 1);
+  }
 
   async function run(action: () => Promise<void>) {
     if (lock.current) return;
@@ -383,13 +376,6 @@ function AccountManagement() {
     const data = await accountRequest<{ account: Account }>(`${prefix}/verify`, { credential });
     if (account && account.id !== data.account.id) setConfirmDeletion(false);
     setAccount(data.account);
-  }
-
-  function signOut() {
-    return run(async () => {
-      await accountRequest("/logout", {});
-      setAccount(null);
-    });
   }
 
   function deleteAccount() {
@@ -442,11 +428,14 @@ function AccountManagement() {
   const signedOut = account === null && !emailAccessPending && !sessionError && !guestReturning;
   const showSignInIntro = signedOut && !pairCode;
   const signInLoading = signedOut && catalog.loading;
-  const canSignOut = !!account && !emailAccessPending && !sessionError;
-  const introClass = showSignInIntro ? " mk-account-login-intro" : canSignOut ? " mk-account-header" : "";
+  const introClass = showSignInIntro ? " mk-account-login-intro" : "";
 
   return (
-    <MarketingShell close={false}>
+    <MarketingShell close={false} accountSession={{
+      signedIn: !!account && !emailAccessPending && !sessionError,
+      busy,
+      signOut: () => run(signOut),
+    }}>
       <Helmet>
         <title>{sessionLoading ? "AnyTranslator" : `${messages.title} | AnyTranslator`}</title>
         <meta name="robots" content="noindex, nofollow" />
@@ -454,7 +443,6 @@ function AccountManagement() {
       </Helmet>
       <header className={`mk-page-intro mk-wrap${introClass}`}>
         {sessionLoading ? <AccountSkeleton className="mk-account-skeleton-title" /> : <h1>{messages.title}</h1>}
-        {canSignOut && <button type="button" className="mk-button mk-button-secondary" disabled={busy} onClick={() => void signOut()}>{messages.signOut}</button>}
         {showSignInIntro && <p className="mk-lead">{confirmDeletion ? messages.deleteAccount : guest.emailSignIn}</p>}
       </header>
       <div className={showSignInIntro ? "mk-wrap mk-account-page mk-account-login" : "mk-wrap mk-account-page"}
@@ -496,7 +484,7 @@ function AccountManagement() {
         {emailAccessPending ? null : sessionError ? (
           <div className="mk-account-notice">
             <p role="alert">{messages.error}</p>
-            <button className="mk-button mk-button-secondary" type="button" onClick={() => setRefresh((value) => value + 1)}>{messages.retry}</button>
+            <button className="mk-button mk-button-secondary" type="button" onClick={retryAccount}>{messages.retry}</button>
           </div>
         ) : account === undefined ? <AccountSkeleton />
           : account ? (
@@ -506,7 +494,7 @@ function AccountManagement() {
                 {billingError ? (
                   <>
                     <p role="alert">{messages.error}</p>
-                    <button className="mk-button mk-button-secondary" type="button" onClick={() => setRefresh((value) => value + 1)}>{messages.retry}</button>
+                    <button className="mk-button mk-button-secondary" type="button" onClick={retryAccount}>{messages.retry}</button>
                   </>
                 ) : billing === undefined ? <AccountSkeleton />
                   : (
@@ -515,7 +503,7 @@ function AccountManagement() {
                           <>
                             <p role="status">{delivery.paymentPending}</p>
                             <button type="button" className="mk-button mk-button-secondary" disabled={busy}
-                              onClick={() => setRefresh((value) => value + 1)}>{messages.retry}</button>
+                              onClick={retryAccount}>{messages.retry}</button>
                           </>
                         )}
                         <AccountSubscription key={account.id} accountId={account.id} billing={billing} catalog={catalog} busy={busy}

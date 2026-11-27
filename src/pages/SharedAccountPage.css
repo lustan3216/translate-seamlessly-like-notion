@@ -26,25 +26,6 @@
   margin-block-start: 12px;
 }
 
-.mk-account-header {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, auto) minmax(max-content, 1fr);
-  align-items: center;
-  gap: 12px;
-}
-
-.mk-account-header h1 {
-  grid-column: 2;
-}
-
-.marketing-site .mk-account-header .mk-button {
-  justify-self: end;
-  min-height: 44px;
-  padding: 8px 16px;
-  font-size: 14px;
-  white-space: nowrap;
-}
-
 .mk-account-login .mk-account-email-code > .mk-button {
   width: 100%;
 }
@@ -559,18 +540,6 @@
 @media (max-width: 767px) {
   .mk-account-page {
     padding-bottom: 40px;
-  }
-
-  .mk-account-header {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: start;
-    text-align: start;
-  }
-
-  .mk-page-intro.mk-account-header h1 {
-    grid-column: 1;
-    margin-inline: 0;
-    font-size: clamp(28px, 7.5vw, 42px);
   }
 
   .mk-subscription-dialog .mk-account-actions {

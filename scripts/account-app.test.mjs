@@ -207,5 +207,6 @@ test("web passkey registration sends the default name and exposes no editable or
   assert.match(client, /const passkeyRegistrationBody = \{ display_name: "AnyTranslator" \};/);
   assert.match(page, /kind === "register"\s*\? await createPasskey\(\(await accountRequest<\{ options: RegistrationOptions \}>\(\s*`\$\{prefix\}\/options`, passkeyRegistrationBody/);
   assert.doesNotMatch(page, /account-name|account\.display_name|displayName\.current/);
-  assert.match(page, /onClick=\{\(\) => void signOut\(\)\}/);
+  assert.doesNotMatch(page, /mk-account-header|onClick=\{\(\) => void signOut\(\)\}/);
+  assert.match(page, /signOut: \(\) => run\(signOut\)/);
 });

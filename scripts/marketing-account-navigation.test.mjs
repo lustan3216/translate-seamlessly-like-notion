@@ -14,6 +14,8 @@ const { outputText } = ts.transpileModule(source, {
   compilerOptions: { module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, target: ts.ScriptTarget.ES2022 },
 });
 const liveAccountOrigin = "https://account.anytranslator.app";
+const signOutLabels = { en: "Sign out", "zh-tw": "登出" };
+const sharedAccountCopy = (code) => ({ signOut: signOutLabels[code] ?? signOutLabels.en });
 const creemCopy = JSON.parse(await readFile(new URL("../src/translations/marketing/creem-preview.json", import.meta.url), "utf8"));
 const marketingPacks = Object.fromEntries(await Promise.all(["base", "asia", "europe-a", "europe-b"].map(async (name) => {
   const copy = JSON.parse(await readFile(new URL(`../src/translations/marketing/${name}.json`, import.meta.url), "utf8"));
@@ -21,16 +23,33 @@ const marketingPacks = Object.fromEntries(await Promise.all(["base", "asia", "eu
 })));
 const marketingCopy = Object.assign({}, ...Object.values(marketingPacks).map((pack) => pack.default));
 
-function renderShell({ code = "en", pathname = "/", preview = false, accountHost = false, liveMarketing = false, menuOpen = false } = {}) {
+function renderShell({
+  code = "en", pathname = "/", preview = false, accountHost = false, liveMarketing = false,
+  menuOpen = false, signedIn = false, accountSession,
+} = {}) {
   const Link = ({ to, children, ...props }) => react.createElement("a", { ...props, href: to }, children);
+  let firstState = true;
   const modules = {
-    react: menuOpen ? { ...react, useState: () => react.useState(true) } : react,
+    react: menuOpen ? { ...react, useState(initial) {
+      const open = firstState || initial;
+      firstState = false;
+      return react.useState(open);
+    } } : react,
     "react/jsx-runtime": jsxRuntime,
     "react-router-dom": { Link, NavLink: Link, useLocation: () => ({ pathname }) },
     "@/contexts/LanguageContext": { useLanguage: () => ({ currentLanguage: { code }, t: (key) => key }) },
+    sonner: { toast: { error() {} } },
     "@/lib/site-config.mjs": siteConfig,
+    "@/lib/shared-account-client": {
+      useAccountSession(enabled, origin) {
+        assert.equal(enabled, !accountSession && (preview || accountHost || liveMarketing));
+        assert.equal(origin, liveMarketing ? liveAccountOrigin : "");
+        return { account: enabled && signedIn ? { id: "fixture" } : null };
+      },
+    },
     "@/lib/shared-account-preview": {
       liveAccountOrigin,
+      isLiveAccountHost: () => accountHost,
       sharedAccountPreviewEnabled: preview,
       sharedAccountLiveAccountEnabled: accountHost,
       sharedAccountEnabled: preview || accountHost,
@@ -43,6 +62,7 @@ function renderShell({ code = "en", pathname = "/", preview = false, accountHost
     ...marketingPacks,
     "@/translations/marketing/creem-preview.json": { default: creemCopy },
     "@/translations/marketing/shared-account-email-code": { emailCodeCopy },
+    "@/translations/marketing/shared-account": { sharedAccountCopy },
     "@/marketing.css": {},
     "./PhotoStages.css": {},
     "@/data/feature-details": { featureDetails: {} },
@@ -55,7 +75,7 @@ function renderShell({ code = "en", pathname = "/", preview = false, accountHost
     return modules[name];
   } });
   return {
-    header: renderToStaticMarkup(react.createElement(exports.MarketingNavigation, { liveMarketing })),
+    header: renderToStaticMarkup(react.createElement(exports.MarketingNavigation, { liveMarketing, accountSession })),
     footer: renderToStaticMarkup(react.createElement(exports.MarketingFooter)),
     closing: renderToStaticMarkup(react.createElement(exports.Closing, { liveMarketing })),
   };
@@ -91,14 +111,29 @@ test("the live purchase flag independently retains the existing plan CTA behavio
   assert.ok(!renderShell({ liveMarketing: true, pathname: "/pricing" }).header.includes('>See plans</a>'));
 });
 
-test("preview keeps account navigation isolated and account pages avoid self-links", () => {
+test("preview and live account sites link to their own account page when signed out", () => {
   const { header, footer } = renderShell({ code: "zh-tw", preview: true, menuOpen: true });
   assert.ok(header.includes('mk-nav-sign-in" href="/account?lang=zh-tw">登入</a>'));
   assert.ok(header.includes('><a href="/account?lang=zh-tw">登入</a>'));
   assert.ok(!footer.includes("/account"));
   for (const settings of [{ preview: true }, { accountHost: true }]) {
     const { header, footer } = renderShell({ ...settings, pathname: "/account/", menuOpen: true });
-    assert.ok(!header.includes("/account"));
+    assert.ok(header.includes('mk-nav-sign-in" href="/account">Sign in</a>'));
+    assert.ok(header.includes('><a href="/account">Sign in</a>'));
     assert.ok(!footer.includes("/account"));
+  }
+});
+
+test("localized sign-out replaces the account link on desktop and mobile", () => {
+  for (const [code, label] of Object.entries(signOutLabels)) {
+    for (const settings of [
+      { liveMarketing: true, signedIn: true },
+      { accountHost: true, pathname: "/account", accountSession: { signedIn: true, busy: true } },
+    ]) {
+      const { header } = renderShell({ code, menuOpen: true, ...settings });
+      assert.ok(header.includes(`mk-nav-sign-in"${settings.accountSession ? ' disabled=""' : ""}>${label}</button>`), code);
+      assert.equal(header.split(`>${label}</button>`).length - 1, 2);
+      assert.ok(!header.includes('mk-nav-sign-in" href='));
+    }
   }
 });

@@ -1,3 +1,5 @@
+import { useCallback } from "react";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { applyCreemReferral } from "./creem-referral.mjs";
 import { sharedAccountPreviewEnabled } from "./shared-account-preview";
 import type { BillingPeriod, CreemOffer } from "./shared-account-preview";
@@ -70,16 +72,16 @@ export class AccountRequestError extends Error {
   constructor(readonly status: number, code: string) { super(code); }
 }
 
-export async function accountRequest<T>(path: string, body?: object, signal?: AbortSignal, idempotencyKey?: string): Promise<T> {
+export async function accountRequest<T>(path: string, body?: object, signal?: AbortSignal, idempotencyKey?: string, origin = ""): Promise<T> {
   const timeout = new AbortController();
   const cancel = () => timeout.abort();
   signal?.addEventListener("abort", cancel, { once: true });
   if (signal?.aborted) cancel();
   const timer = window.setTimeout(cancel, 20_000);
   try {
-    const response = await fetch(`/api/account${path}`, {
+    const response = await fetch(`${origin}/api/account${path}`, {
       method: body ? "POST" : "GET",
-      credentials: path === "/billing/guest-checkout" || path === "/billing/guest-resend" ? "omit" : "same-origin",
+      credentials: path === "/billing/guest-checkout" || path === "/billing/guest-resend" ? "omit" : origin ? "include" : "same-origin",
       cache: "no-store",
       signal: timeout.signal,
       ...(body ? {
@@ -96,6 +98,28 @@ export async function accountRequest<T>(path: string, body?: object, signal?: Ab
     window.clearTimeout(timer);
     signal?.removeEventListener("abort", cancel);
   }
+}
+
+export function useAccountSession(enabled: boolean, origin = "") {
+  const queryClient = useQueryClient();
+  const { data, isError, isFetching, refetch } = useQuery({
+    queryKey: ["account-session", origin],
+    enabled,
+    retry: false,
+    queryFn: ({ signal }) => accountRequest<AccountSession>("/session", undefined, signal, undefined, origin),
+  });
+  const setAccount = useCallback((account: SharedAccount | null) => {
+    const queryKey = ["account-session", origin];
+    void queryClient.cancelQueries({ queryKey, exact: true });
+    queryClient.setQueryData<AccountSession>(queryKey, { account });
+  }, [origin, queryClient]);
+
+  async function signOut() {
+    await accountRequest("/logout", {}, undefined, undefined, origin);
+    setAccount(null);
+  }
+
+  return { account: data?.account, sessionError: isError && !isFetching, setAccount, signOut, refetch };
 }
 
 const creemOrigins = new Set(["https://creem.io", "https://www.creem.io", "https://checkout.creem.io"]);

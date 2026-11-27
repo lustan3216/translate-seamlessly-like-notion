@@ -1,8 +1,10 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { toast } from "sonner";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { localizedPath, SITE_URL } from "@/lib/site-config.mjs";
-import { liveAccountOrigin, sharedAccountEnabled, sharedAccountLiveAccountEnabled, sharedAccountLiveEnabled, sharedAccountPreviewEnabled } from "@/lib/shared-account-preview";
+import { useAccountSession } from "@/lib/shared-account-client";
+import { isLiveAccountHost, liveAccountOrigin, sharedAccountEnabled, sharedAccountLiveAccountEnabled, sharedAccountLiveEnabled, sharedAccountPreviewEnabled } from "@/lib/shared-account-preview";
 import HugeIcon from "@/components/HugeIcon";
 import AppStoreLink from "@/components/AppStoreLink";
 import LanguagePicker from "./LanguagePicker";
@@ -13,6 +15,7 @@ import asia from "@/translations/marketing/asia.json";
 import europeA from "@/translations/marketing/europe-a.json";
 import europeB from "@/translations/marketing/europe-b.json";
 import creemCopy from "@/translations/marketing/creem-preview.json";
+import { sharedAccountCopy } from "@/translations/marketing/shared-account";
 import { emailCodeCopy } from "@/translations/marketing/shared-account-email-code";
 import "@/marketing.css";
 import "./PhotoStages.css";
@@ -63,14 +66,36 @@ export function DownloadButtons({ source = "marketing" }: { source?: string }) {
     </div>
   );
 }
-export function MarketingNavigation({ liveMarketing = false }: { liveMarketing?: boolean }) {
+type AccountNavigationSession = {
+  signedIn: boolean;
+  busy: boolean;
+  signOut: () => Promise<void>;
+};
+
+export function MarketingNavigation({ liveMarketing = false, accountSession }: {
+  liveMarketing?: boolean;
+  accountSession?: AccountNavigationSession;
+}) {
   const { m, t, href, accountHref, currentLanguage } = useMarketing();
   const [open, setOpen] = useState(false);
+  const [signingOut, setSigningOut] = useState(false);
   const location = useLocation();
   const isPurchasePage = /^\/(?:pricing|account)\/?$/.test(location.pathname);
   const webPlans = sharedAccountPreviewEnabled || sharedAccountLiveAccountEnabled || liveMarketing;
-  const showSignIn = !sharedAccountLiveAccountEnabled && !/^\/account(?:\/|$)/i.test(location.pathname);
+  const readSession = !accountSession && (sharedAccountPreviewEnabled || liveMarketing
+    || (sharedAccountLiveAccountEnabled && isLiveAccountHost()));
+  const { account, sessionError, signOut, refetch } = useAccountSession(readSession, liveMarketing ? liveAccountOrigin : "");
+  const signedIn = accountSession?.signedIn ?? (readSession && !!account && !sessionError);
   const signIn = emailCodeCopy[currentLanguage.code].signIn;
+  const accountCopy = sharedAccountCopy(currentLanguage.code);
+  useEffect(() => {
+    if (!readSession) return;
+    const restoreSession = (event: PageTransitionEvent) => {
+      if (event.persisted) void refetch();
+    };
+    window.addEventListener("pageshow", restoreSession);
+    return () => window.removeEventListener("pageshow", restoreSession);
+  }, [readSession, refetch]);
   useEffect(() => {
     const media = window.matchMedia("(max-width: 1100px)");
     const closeDesktopMenu = () => {
@@ -124,6 +149,39 @@ export function MarketingNavigation({ liveMarketing = false }: { liveMarketing?:
       document.body.style.overflow = previousOverflow;
     };
   }, [open]);
+
+  async function handleSignOut() {
+    if (accountSession) return accountSession.signOut();
+    setSigningOut(true);
+    try {
+      await signOut();
+    } catch {
+      toast.error(accountCopy.error);
+    } finally {
+      setSigningOut(false);
+    }
+  }
+
+  function accountAction(mobile = false) {
+    const desktopClass = "mk-button mk-button-secondary mk-nav-action mk-nav-sign-in";
+    return signedIn ? (
+      <button
+        type="button"
+        className={mobile ? "flex min-h-14 w-full items-center justify-between border-b border-[var(--mk-line)] text-start text-[20px] disabled:opacity-60" : desktopClass}
+        disabled={accountSession?.busy ?? signingOut}
+        onClick={() => void handleSignOut()}
+      >
+        {accountCopy.signOut}
+        {mobile && <Arrow />}
+      </button>
+    ) : (
+      <a className={mobile ? undefined : desktopClass} href={accountHref}>
+        {signIn}
+        {mobile && <Arrow />}
+      </a>
+    );
+  }
+
   const links = [
     ["manifesto", "/manifesto"],
     ["features", "/features"],
@@ -136,7 +194,7 @@ export function MarketingNavigation({ liveMarketing = false }: { liveMarketing?:
       <a href="#main-content" className="mk-skip">
         {m("skip")}
       </a>
-      <div className={showSignIn ? "mk-wrap mk-nav mk-nav-with-sign-in" : "mk-wrap mk-nav"}>
+      <div className="mk-wrap mk-nav mk-nav-with-sign-in">
         <Link to={href("/")} className="mk-brand" aria-label="AnyTranslator">
           <img src="/app-preview/logo.png" width="36" height="36" alt="" />
           <span>AnyTranslator</span>
@@ -151,11 +209,7 @@ export function MarketingNavigation({ liveMarketing = false }: { liveMarketing?:
         <div className="mk-nav-end">
           <ThemeToggle />
           <LanguagePicker />
-          {showSignIn && (
-            <a className="mk-button mk-button-secondary mk-nav-action mk-nav-sign-in" href={accountHref}>
-              {signIn}
-            </a>
-          )}
+          {accountAction()}
           {(!webPlans || !isPurchasePage) && (
             <Link className="mk-button mk-nav-action" to={href(webPlans ? "/pricing" : "/download")}>
               {webPlans ? creemCopy[currentLanguage.code].seePlans : m("nav.download")}
@@ -183,12 +237,7 @@ export function MarketingNavigation({ liveMarketing = false }: { liveMarketing?:
           className="mk-mobile-menu"
           aria-label={m("nav.menu")}
         >
-          {showSignIn && (
-            <a href={accountHref}>
-              {signIn}
-              <Arrow />
-            </a>
-          )}
+          {accountAction(true)}
           {[
             ...links,
             ["about", "/about"],
@@ -317,9 +366,11 @@ export function Closing({ liveMarketing }: { liveMarketing: boolean }) {
 export default function MarketingShell({
   children,
   close = true,
+  accountSession,
 }: {
   children: ReactNode;
   close?: boolean;
+  accountSession?: AccountNavigationSession;
 }) {
   const { pathname } = useLocation();
   const [liveMarketing, setLiveMarketing] = useState(false);
@@ -331,7 +382,7 @@ export default function MarketingShell({
   }, [pathname]);
   return (
     <div className="marketing-site">
-      <MarketingNavigation liveMarketing={liveMarketing} />
+      <MarketingNavigation liveMarketing={liveMarketing} accountSession={accountSession} />
       <main id="main-content" tabIndex={-1}>
         {children}
         {close && <Closing liveMarketing={liveMarketing} />}
