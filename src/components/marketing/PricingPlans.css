@@ -90,6 +90,11 @@
   font-variant-numeric: tabular-nums;
 }
 
+.mk-price-included {
+  width: 20px;
+  height: 20px;
+}
+
 @media (max-width: 767px) {
   .mk-price-comparison-table {
     font-size: 13px;

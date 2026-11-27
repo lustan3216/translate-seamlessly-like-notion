@@ -29,7 +29,9 @@
     "freeQuotaWeek": "{amount} / week",
     "freeQuotaMonth": "{amount} / month",
     "freeQuotaDays": "{amount} every {days} days",
-    "photoBatchOne": "{count} photo per batch"
+    "photoBatchOne": "{count} photo per batch",
+    "shareRecordings": "Share conversation links (transcript + recording)",
+    "included": "Included"
   },
   "zh-tw": {
     "billing": "付款週期",
@@ -61,7 +63,9 @@
     "freeQuotaWeek": "每週 {amount}",
     "freeQuotaMonth": "每月 {amount}",
     "freeQuotaDays": "每 {days} 天 {amount}",
-    "photoBatchOne": "{count} 張／批"
+    "photoBatchOne": "{count} 張／批",
+    "shareRecordings": "分享對話連結（逐字稿＋錄音）",
+    "included": "包含"
   },
   "ko": {
     "billing": "결제 주기",
@@ -93,7 +97,9 @@
     "freeQuotaWeek": "{amount} /주",
     "freeQuotaMonth": "{amount} /월",
     "freeQuotaDays": "{days}일마다 {amount}",
-    "photoBatchOne": "한 번에 {count}장"
+    "photoBatchOne": "한 번에 {count}장",
+    "shareRecordings": "대화 링크 공유(대본 + 녹음)",
+    "included": "포함"
   },
   "ja": {
     "billing": "請求期間",
@@ -125,7 +131,9 @@
     "freeQuotaWeek": "{amount} ／週",
     "freeQuotaMonth": "{amount} ／月",
     "freeQuotaDays": "{days}日ごとに {amount}",
-    "photoBatchOne": "1回{count}枚"
+    "photoBatchOne": "1回{count}枚",
+    "shareRecordings": "会話リンクの共有（文字起こし＋録音）",
+    "included": "含まれます"
   },
   "fr": {
     "billing": "Période de facturation",
@@ -157,7 +165,9 @@
     "freeQuotaWeek": "{amount} / semaine",
     "freeQuotaMonth": "{amount} / mois",
     "freeQuotaDays": "{amount} tous les {days} jours",
-    "photoBatchOne": "{count} photo/lot"
+    "photoBatchOne": "{count} photo/lot",
+    "shareRecordings": "Partage de liens de conversation (transcription + enregistrement)",
+    "included": "Inclus"
   },
   "de": {
     "billing": "Abrechnungszeitraum",
@@ -189,7 +199,9 @@
     "freeQuotaWeek": "{amount} / Woche",
     "freeQuotaMonth": "{amount} / Monat",
     "freeQuotaDays": "{amount} alle {days} Tage",
-    "photoBatchOne": "{count} Foto/Stapel"
+    "photoBatchOne": "{count} Foto/Stapel",
+    "shareRecordings": "Gesprächslinks teilen (Transkript + Aufnahme)",
+    "included": "Inklusive"
   },
   "es": {
     "billing": "Periodo de facturación",
@@ -221,7 +233,9 @@
     "freeQuotaWeek": "{amount} / semana",
     "freeQuotaMonth": "{amount} / mes",
     "freeQuotaDays": "{amount} cada {days} días",
-    "photoBatchOne": "{count} foto/lote"
+    "photoBatchOne": "{count} foto/lote",
+    "shareRecordings": "Compartir enlaces de conversación (transcripción + grabación)",
+    "included": "Incluido"
   },
   "it": {
     "billing": "Periodo di fatturazione",
@@ -253,7 +267,9 @@
     "freeQuotaWeek": "{amount} / settimana",
     "freeQuotaMonth": "{amount} / mese",
     "freeQuotaDays": "{amount} ogni {days} giorni",
-    "photoBatchOne": "{count} foto/gruppo"
+    "photoBatchOne": "{count} foto/gruppo",
+    "shareRecordings": "Condivisione dei link alle conversazioni (trascrizione + registrazione)",
+    "included": "Incluso"
   },
   "pt-br": {
     "billing": "Período de cobrança",
@@ -285,7 +301,9 @@
     "freeQuotaWeek": "{amount} / semana",
     "freeQuotaMonth": "{amount} / mês",
     "freeQuotaDays": "{amount} a cada {days} dias",
-    "photoBatchOne": "{count} foto/lote"
+    "photoBatchOne": "{count} foto/lote",
+    "shareRecordings": "Compartilhar links de conversa (transcrição + gravação)",
+    "included": "Incluído"
   },
   "fi": {
     "billing": "Laskutusjakso",
@@ -317,7 +335,9 @@
     "freeQuotaWeek": "{amount} / viikko",
     "freeQuotaMonth": "{amount} / kuukausi",
     "freeQuotaDays": "{amount} / {days} päivää",
-    "photoBatchOne": "{count} kuva/erä"
+    "photoBatchOne": "{count} kuva/erä",
+    "shareRecordings": "Keskustelulinkkien jakaminen (litterointi + tallenne)",
+    "included": "Sisältyy"
   },
   "da": {
     "billing": "Betalingsperiode",
@@ -349,7 +369,9 @@
     "freeQuotaWeek": "{amount} / uge",
     "freeQuotaMonth": "{amount} / måned",
     "freeQuotaDays": "{amount} hver {days}. dag",
-    "photoBatchOne": "{count} foto/batch"
+    "photoBatchOne": "{count} foto/batch",
+    "shareRecordings": "Del samtalelinks (transskription + optagelse)",
+    "included": "Inkluderet"
   },
   "nl": {
     "billing": "Factureringsperiode",
@@ -381,7 +403,9 @@
     "freeQuotaWeek": "{amount} per week",
     "freeQuotaMonth": "{amount} / maand",
     "freeQuotaDays": "{amount} per {days} dagen",
-    "photoBatchOne": "{count} foto/batch"
+    "photoBatchOne": "{count} foto/batch",
+    "shareRecordings": "Gesprekslinks delen (transcript + opname)",
+    "included": "Inbegrepen"
   },
   "no": {
     "billing": "Betalingsperiode",
@@ -413,7 +437,9 @@
     "freeQuotaWeek": "{amount} / uke",
     "freeQuotaMonth": "{amount} / måned",
     "freeQuotaDays": "{amount} hver {days}. dag",
-    "photoBatchOne": "{count} bilde/gruppe"
+    "photoBatchOne": "{count} bilde/gruppe",
+    "shareRecordings": "Del samtalelenker (transkripsjon + opptak)",
+    "included": "Inkludert"
   },
   "sv": {
     "billing": "Betalningsperiod",
@@ -445,7 +471,9 @@
     "freeQuotaWeek": "{amount} / vecka",
     "freeQuotaMonth": "{amount} / månad",
     "freeQuotaDays": "{amount} per {days} dagar",
-    "photoBatchOne": "{count} foto/omgång"
+    "photoBatchOne": "{count} foto/omgång",
+    "shareRecordings": "Dela samtalslänkar (transkription + inspelning)",
+    "included": "Ingår"
   },
   "zh-cn": {
     "billing": "付款周期",
@@ -477,7 +505,9 @@
     "freeQuotaWeek": "每周 {amount}",
     "freeQuotaMonth": "每月 {amount}",
     "freeQuotaDays": "每 {days} 天 {amount}",
-    "photoBatchOne": "{count} 张／批"
+    "photoBatchOne": "{count} 张／批",
+    "shareRecordings": "分享对话链接（文字记录＋录音）",
+    "included": "包含"
   },
   "id": {
     "billing": "Periode pembayaran",
@@ -509,7 +539,9 @@
     "freeQuotaWeek": "{amount} / minggu",
     "freeQuotaMonth": "{amount} / bulan",
     "freeQuotaDays": "{amount} setiap {days} hari",
-    "photoBatchOne": "{count} foto／proses"
+    "photoBatchOne": "{count} foto／proses",
+    "shareRecordings": "Bagikan tautan percakapan (transkrip + rekaman)",
+    "included": "Termasuk"
   },
   "vi": {
     "billing": "Chu kỳ thanh toán",
@@ -541,7 +573,9 @@
     "freeQuotaWeek": "{amount} / tuần",
     "freeQuotaMonth": "{amount} / tháng",
     "freeQuotaDays": "{amount} mỗi {days} ngày",
-    "photoBatchOne": "{count} ảnh／đợt"
+    "photoBatchOne": "{count} ảnh／đợt",
+    "shareRecordings": "Chia sẻ liên kết hội thoại (bản chép lời + bản ghi âm)",
+    "included": "Đã bao gồm"
   },
   "th": {
     "billing": "รอบการเรียกเก็บเงิน",
@@ -573,7 +607,9 @@
     "freeQuotaWeek": "{amount} / สัปดาห์",
     "freeQuotaMonth": "{amount} / เดือน",
     "freeQuotaDays": "{amount} ทุก {days} วัน",
-    "photoBatchOne": "{count} รูป/ชุด"
+    "photoBatchOne": "{count} รูป/ชุด",
+    "shareRecordings": "แชร์ลิงก์บทสนทนา (ข้อความถอดเสียง + ไฟล์บันทึกเสียง)",
+    "included": "รวมอยู่ด้วย"
   },
   "ru": {
     "billing": "Период оплаты",
@@ -605,6 +641,8 @@
     "freeQuotaWeek": "{amount} / неделю",
     "freeQuotaMonth": "{amount} / месяц",
     "freeQuotaDays": "{amount} / {days} дн.",
-    "photoBatchOne": "{count} фото/пакет"
+    "photoBatchOne": "{count} фото/пакет",
+    "shareRecordings": "Ссылки на разговоры (расшифровка + запись)",
+    "included": "Включено"
   }
 }

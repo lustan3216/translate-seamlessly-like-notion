@@ -15,6 +15,7 @@ const toneLabelSourceCommit = "f4ce7f6b79cd749355150472dbbc0f59d33f79a3";
 const websiteToneChoices = ["自動", "禮貌", "幽默", "書信", "朋友", "精簡"];
 const read = (file) => readFileSync(path.join(root, file), "utf8");
 const json = (file) => JSON.parse(read(file));
+const pricingCopy = json("src/translations/marketing/pricing.json");
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
 const ids = (entries) => entries.map(({ id }) => id).sort();
 const unique = (entries, label) => assert.equal(new Set(entries).size, entries.length, `Duplicate ${label}`);
@@ -326,8 +327,9 @@ export async function checkMainContent() {
     const rows = new Map([...table.matchAll(/<th scope="row">([\s\S]*?)<\/th>([\s\S]*?)<\/tr>/g)].map((match) => [
       text(match[1]), [...match[2].matchAll(/<td>([\s\S]*?)<\/td>/g)].map((cell) => text(cell[1])),
     ]));
-    assert.equal(rows.size, 8, "Current pricing comparison row count");
+    assert.equal(rows.size, 9, "Current pricing comparison row count");
     for (const values of rows.values()) assert.equal(values.length, 3, "Each feature compares all three plans");
+    assert.deepEqual(rows.get(pricingCopy["zh-tw"].shareRecordings), ["—", "—", pricingCopy["zh-tw"].included], "Only Voice shares conversation links with recordings");
     const free = snapshot.plans.free;
     const zhPeriod = free.periodDays === 1 ? "每天" : free.periodDays === 7 ? "每週" :
       free.periodDays === 30 ? "每月" : `每 ${zhNumber.format(free.periodDays)} 天`;

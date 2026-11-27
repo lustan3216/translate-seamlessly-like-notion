@@ -1,6 +1,7 @@
 /// <reference lib="es2021.intl" />
 import { useEffect, useRef, useState } from "react";
 import AppStoreLink from "@/components/AppStoreLink";
+import HugeIcon from "@/components/HugeIcon";
 import { useSearchParams } from "react-router-dom";
 import { formatCreemPrice, useCreemOffer, type BillingPeriod, type CreemOffer } from "@/lib/shared-account-preview";
 import { accountRequest, AccountRequestError, clearStoredCheckoutAttempt, readCheckoutAttempt, visitCreem } from "@/lib/shared-account-client";
@@ -216,6 +217,10 @@ export default function PricingPlans() {
       return template.replace("{count}", number.format(count));
     })],
     [m("feature.widget"), plans.map(({ free }) => free ? mainCopy.freeWidget : mainCopy.widgetAllowance)],
+    // Mirrors the App paywall: only Voice plans list shareRecordingLinks in the remote config.
+    [p("shareRecordings"), plans.map(({ id }) => id === "voice"
+      ? <><HugeIcon name="tick-02" className="mk-price-included" /><span className="mk-sr-only">{p("included")}</span></>
+      : "—")],
   ] as const;
 
   return (
