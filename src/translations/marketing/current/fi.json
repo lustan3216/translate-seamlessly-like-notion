@@ -5,12 +5,12 @@
     "nav.manifesto": "Manifestimme",
     "hero.body": "Ymmärrä ruokalista ja tilaa, käännä viesti ja vastaa. Teksti, kuvat ja videoiden tekstitykset sekä luonnollinen tekoälypuhe ja keskusteluharjoittelu auttavat käyttämään vierasta kieltä arjessa.",
     "feature.table": "Taulukoiden kääntäminen",
-    "home.featuresTitle": "11 käännös- ja oppimistyökalua aina mukana.",
+    "home.featuresTitle": "{count} käännös- ja oppimistyökalua aina mukana.",
     "home.featuresBody": "Lue ruokalistoja ja asiakirjoja, vastaa viesteihin ja harjoittele puhumista. Kaikki tarvittava yhdessä.",
     "home.blogTitle": "Käytännön oppaita kääntämisen tueksi.",
     "download.macNote": "Tarkista tuetut Mac-mallit ja järjestelmävaatimukset App Storesta. Käännösnäppäimistö, oppimiswidget ja kääntäminen muissa apeissa ovat iOS-/iPadOS-toimintoja.",
     "features.title": "Kääntäminen, keskustelu ja oppiminen yhdessä apissa.",
-    "features.body": "Ymmärrä ruokalistoja, asiakirjoja ja taulukoita, vastaa viesteihin, seuraa videoita ja harjoittele puhumista tekoälyavustajan kanssa. 11 työkalua yhdistää lukemisen, kirjoittamisen, kuuntelun ja puhumisen.",
+    "features.body": "Ymmärrä ruokalistoja, asiakirjoja ja taulukoita, vastaa viesteihin, seuraa videoita ja harjoittele puhumista tekoälyavustajan kanssa. {count} työkalua yhdistää lukemisen, kirjoittamisen, kuuntelun ja puhumisen.",
     "pricing.allowance": "Ilmaisen käytön kiintiöt näkyvät apissa",
     "pricing.more": "Valitse käyttöösi sopiva perus- tai puhepaketti",
     "pricing.manage": "Palauta ostokset apissa ja hallitse uusimista ja peruutuksia Applen kautta. Käyttökortti näyttää jäljellä olevan kiintiön ja sen päivityspäivän.",
@@ -90,6 +90,7 @@
     "article.chat": "Kielivalmentajasi mukana: kuvat, tulkkaus ja puheharjoittelu",
     "article.learning": "Tuo harjoitellut lauseet arkeen.",
     "feature.screen-translation": "Kääntäminen missä tahansa apissa",
+    "feature.browser-translation": "Käännös selaimessa",
     "article.screen": "Tekstitykset ja verkkosivut yli appirajojen",
     "case.media.title": "Katso videoita ja lue sivuja käännöksen kanssa.",
     "case.media.body": "Video jatkuu ja verkkosivu pysyy luettavana. Vertaa tekstityksiä tai näkyvää tekstiä kuva kuvassa -ikkunassa ja kysy kiinnostavasta lauseesta lisää tekoälyavustajalta."
@@ -742,6 +743,78 @@
             {
               "title": "Valmistele vastaus viestiin",
               "body": "Kerro avustajalle taustat ja pyydä sitä vertaamaan mahdollisia vastauksia."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Any-selain: käännä selatessasi.",
+      "summary": "Käännä verkkosivuja, videoiden tekstityksiä ja kirjoittamaasi tekstiä AnyTranslatorin sisäisessä selaimessa.",
+      "heading": "Lue, katso ja vastaa samassa selaimessa.",
+      "body": "Avaa sivusto jollakin 24 pikakuvakkeesta tai kirjoita verkko-osoite. Lue haluamallasi kielellä, seuraa tuettujen videoiden tekstityksiä ja käännä tekstiä yhteensopivissa kentissä. Käännöksiin sovelletaan tilauksesi käyttörajaa.",
+      "steps": [
+        "Verkkosivut: vaihda alkuperäisen ja käännöksen välillä.",
+        "Videoiden tekstitys: ota tekstitys käyttöön tuetussa soittimessa.",
+        "Tekstikentät: käännä luonnos ennen lähettämistä."
+      ],
+      "guide": {
+        "steps": {
+          "title": "Näin käytät toimintoa",
+          "items": [
+            {
+              "title": "Avaa Any-selain",
+              "body": "Avaa Any-selain iPhonen tai iPadin Työkalut-valikosta. Valitse pikakuvake tai kirjoita verkko-osoite."
+            },
+            {
+              "title": "Valitse lukukieli",
+              "body": "Valitse kieli napauttamalla lipun vieressä olevaa nuolta. Vaihda alkuperäisen ja käännöksen välillä napauttamalla lippua."
+            },
+            {
+              "title": "Ota videon tekstitys käyttöön",
+              "body": "Ota tekstitys käyttöön videosoittimessa ja pidä sivun käännetty näkymä päällä."
+            },
+            {
+              "title": "Käännä kirjoittamasi teksti",
+              "body": "Kirjoita tuettuun kenttään ja napauta näppäimistön yläpuolella olevaa käännöspainiketta. Palauta alkuperäinen teksti napauttamalla painiketta uudelleen."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Mitä voit tehdä",
+          "items": [
+            {
+              "title": "24 pikakuvaketta sivustoille",
+              "body": "Avaa aloitussivulta esimerkiksi Wikipedia, Reddit tai BBC News."
+            },
+            {
+              "title": "Verkkosivujen käännös",
+              "body": "Lue käännös suoraan sivulla ja vaihda tarvittaessa takaisin alkuperäiseen."
+            },
+            {
+              "title": "Videoiden tekstitys",
+              "body": "Käännä tuettujen videoiden valmiita tekstityksiä esimerkiksi YouTubessa ja TEDissä."
+            },
+            {
+              "title": "Käännös tekstikentässä",
+              "body": "Käännä luonnos yhteensopivassa verkkosivun kentässä ja lue se läpi ennen lähettämistä."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Käyttötilanteita",
+          "items": [
+            {
+              "title": "Lue ulkomaisia artikkeleita",
+              "body": "Avaa artikkeli ja palaa alkuperäiseen, jos haluat tarkistaa lainauksen tai sanan."
+            },
+            {
+              "title": "Seuraa luentoa tai opastusvideota",
+              "body": "Ota tekstitys käyttöön ja lue käännöstä katsoessasi."
+            },
+            {
+              "title": "Kirjoita kommentti tai vastaus",
+              "body": "Kirjoita luonnos omalla kielelläsi ja käännä se samassa kentässä ennen julkaisua."
             }
           ]
         }

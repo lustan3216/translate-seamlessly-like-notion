@@ -5,12 +5,12 @@
     "nav.manifesto": "Il nostro manifesto",
     "hero.body": "Capisci il menu, ordina. Traduci un messaggio, rispondi. Testo, foto e sottotitoli, voce IA naturale ed esercizi: le lingue diventano utili nella vita vera.",
     "feature.table": "Traduzione di tabelle",
-    "home.featuresTitle": "11 strumenti per tradurre e imparare. Sempre con te.",
+    "home.featuresTitle": "{count} strumenti per tradurre e imparare. Sempre con te.",
     "home.featuresBody": "Menu, documenti, messaggi e pratica orale: tutti gli strumenti che ti servono, insieme.",
     "home.blogTitle": "Guide pratiche per sfruttare al meglio la traduzione.",
     "download.macNote": "Consulta l’App Store per i Mac compatibili e i requisiti di sistema. Tastiera di traduzione, widget di apprendimento e traduzione in qualsiasi app sono per iOS/iPadOS.",
     "features.title": "Traduci, conversa e impara. In una sola app.",
-    "features.body": "Comprendi menu, documenti e tabelle, rispondi ai messaggi, segui i video e fai pratica con l’assistente IA. 11 strumenti uniscono lettura, scrittura, ascolto e conversazione.",
+    "features.body": "Comprendi menu, documenti e tabelle, rispondi ai messaggi, segui i video e fai pratica con l’assistente IA. {count} strumenti uniscono lettura, scrittura, ascolto e conversazione.",
     "pricing.allowance": "Consulta le quote gratuite nell’app",
     "pricing.more": "Scegli Standard o Voce in base al tuo utilizzo",
     "pricing.manage": "Ripristina gli acquisti nell’app e gestisci rinnovi e disdette tramite Apple. La scheda di utilizzo mostra saldo e data di rinnovo delle quote.",
@@ -90,6 +90,7 @@
     "article.chat": "Il tuo coach di lingue tascabile: foto, interpretazione e pratica orale",
     "article.learning": "Porta le frasi che hai imparato nella vita quotidiana.",
     "feature.screen-translation": "Traduzione in qualsiasi app",
+    "feature.browser-translation": "Traduzione nel browser",
     "article.screen": "Sottotitoli e pagine web tra le app",
     "case.media.title": "Video e pagine web: la traduzione ti segue.",
     "case.media.body": "Il video continua, tu continui a leggere. Confronta sottotitoli o testo visibile in Picture in Picture; per approfondire una frase, passa all’assistente IA."
@@ -742,6 +743,78 @@
             {
               "title": "Prepara una risposta a un messaggio",
               "body": "Spiega il contesto all’assistente e chiedigli di confrontare le possibili risposte."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Browser Any: traduci mentre navighi.",
+      "summary": "Traduci pagine web, sottotitoli dei video e il testo che digiti nel browser integrato di AnyTranslator.",
+      "heading": "Leggi, guarda e rispondi nello stesso browser.",
+      "body": "Apri un sito usando uno dei 24 collegamenti rapidi oppure inserisci un indirizzo web. Leggi nella lingua che scegli, segui i sottotitoli dei video compatibili e traduci il testo nei campi supportati. Si applica il limite di traduzione del tuo piano.",
+      "steps": [
+        "Pagine web: passa dall’originale alla traduzione e viceversa.",
+        "Sottotitoli dei video: attivali in un lettore compatibile.",
+        "Campi di testo: traduci la bozza prima di inviarla."
+      ],
+      "guide": {
+        "steps": {
+          "title": "Come si usa",
+          "items": [
+            {
+              "title": "Apri Browser Any",
+              "body": "Su iPhone o iPad, apri Browser Any da Strumenti. Scegli un collegamento rapido o inserisci un indirizzo web."
+            },
+            {
+              "title": "Scegli la lingua di lettura",
+              "body": "Tocca la freccia accanto alla bandiera per scegliere una lingua. Tocca la bandiera per passare dall’originale alla traduzione e viceversa."
+            },
+            {
+              "title": "Attiva i sottotitoli del video",
+              "body": "Attiva i sottotitoli nel lettore video e mantieni la pagina in modalità traduzione."
+            },
+            {
+              "title": "Traduci quello che scrivi",
+              "body": "Scrivi in un campo compatibile e tocca il tasto di traduzione sopra la tastiera. Toccalo di nuovo per ripristinare il testo originale."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Cosa puoi fare",
+          "items": [
+            {
+              "title": "24 collegamenti rapidi a siti web",
+              "body": "Apri Wikipedia, Reddit, BBC News e altri siti dalla pagina iniziale."
+            },
+            {
+              "title": "Traduzione di pagine web",
+              "body": "Leggi il testo tradotto direttamente nella pagina e torna all’originale quando ti serve."
+            },
+            {
+              "title": "Sottotitoli dei video",
+              "body": "Traduci i sottotitoli già presenti nei video supportati, anche su YouTube e TED."
+            },
+            {
+              "title": "Traduzione nei campi di testo",
+              "body": "Traduci una bozza in un campo web compatibile e rileggila prima di inviarla."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quando può servire",
+          "items": [
+            {
+              "title": "Leggi articoli dall’estero",
+              "body": "Apri un articolo e torna all’originale per controllare una citazione o una parola."
+            },
+            {
+              "title": "Segui un intervento o un tutorial",
+              "body": "Attiva i sottotitoli e leggi la traduzione mentre guardi il video."
+            },
+            {
+              "title": "Scrivi un commento o una risposta",
+              "body": "Scrivi il messaggio nella tua lingua, poi traducilo nello stesso campo prima di pubblicarlo."
             }
           ]
         }

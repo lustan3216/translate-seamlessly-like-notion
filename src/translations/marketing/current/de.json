@@ -5,12 +5,12 @@
     "nav.manifesto": "Unser Manifest",
     "hero.body": "Speisekarte verstehen, bestellen. Nachricht übersetzen, antworten. Text, Fotos und Video-Untertitel, natürliche KI-Stimmen und Sprechübungen machen Fremdsprachen im Alltag nutzbar.",
     "feature.table": "Tabellen übersetzen",
-    "home.featuresTitle": "11 Werkzeuge zum Übersetzen und Lernen. Immer dabei.",
+    "home.featuresTitle": "{count} Werkzeuge zum Übersetzen und Lernen. Immer dabei.",
     "home.featuresBody": "Speisekarten, Dokumente, Nachrichten und Sprechübungen: alles, was du brauchst, in einer App.",
     "home.blogTitle": "Praktische Anleitungen für bessere Übersetzungen.",
     "download.macNote": "Kompatible Mac-Modelle und Systemanforderungen findest du im App Store. Übersetzungstastatur, Lern-Widget und Übersetzen in jeder App sind für iOS/iPadOS gedacht.",
     "features.title": "Übersetzen, sprechen und lernen. In einer App.",
-    "features.body": "Speisekarten, Dokumente und Tabellen verstehen, Nachrichten beantworten, Videos folgen und mit dem KI-Assistenten sprechen üben. 11 Werkzeuge verbinden Lesen, Schreiben, Hören und Sprechen.",
+    "features.body": "Speisekarten, Dokumente und Tabellen verstehen, Nachrichten beantworten, Videos folgen und mit dem KI-Assistenten sprechen üben. {count} Werkzeuge verbinden Lesen, Schreiben, Hören und Sprechen.",
     "pricing.allowance": "Kostenlose Kontingente findest du in der App",
     "pricing.more": "Wähle Standard oder Sprache passend zu deiner Nutzung",
     "pricing.manage": "Käufe stellst du in der App wieder her; Verlängerung und Kündigung verwaltest du bei Apple. Die Nutzungskarte zeigt Restkontingent und Erneuerungsdatum.",
@@ -90,6 +90,7 @@
     "article.chat": "Dein Sprachcoach für unterwegs: Fotos, Dolmetschen und Sprechübungen",
     "article.learning": "Bring geübte Sätze in deinen Alltag.",
     "feature.screen-translation": "Übersetzen in jeder App",
+    "feature.browser-translation": "Browser-Übersetzung",
     "article.screen": "Untertitel und Webseiten appübergreifend verstehen",
     "case.media.title": "Videos schauen, Webseiten lesen. Die Übersetzung bleibt dabei.",
     "case.media.body": "Das Video läuft, du liest weiter. Vergleiche Untertitel oder sichtbaren Text im Bild-in-Bild-Fenster. Schwierige Sätze kannst du anschließend mit dem KI-Assistenten vertiefen."
@@ -742,6 +743,78 @@
             {
               "title": "Eine Antwort auf eine Nachricht vorbereiten",
               "body": "Beschreibe dem Assistenten die Situation und bitte ihn, mögliche Antworten zu vergleichen."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Any-Browser: Übersetzen beim Surfen.",
+      "summary": "Übersetze Webseiten, Videountertitel und eigene Eingaben im integrierten Browser von AnyTranslator.",
+      "heading": "Lesen, schauen und antworten im selben Browser.",
+      "body": "Öffne eine Website über einen der 24 Schnellzugriffe oder gib eine Webadresse ein. Lies in deiner gewählten Sprache, folge den Untertiteln unterstützter Videos und übersetze Text in kompatiblen Eingabefeldern. Für Übersetzungen gilt das Kontingent deines Tarifs.",
+      "steps": [
+        "Webseiten: zwischen Original und Übersetzung wechseln.",
+        "Videountertitel: Untertitel in einem unterstützten Player einschalten.",
+        "Eingabefelder: den Entwurf vor dem Senden übersetzen."
+      ],
+      "guide": {
+        "steps": {
+          "title": "So funktioniert es",
+          "items": [
+            {
+              "title": "Any-Browser öffnen",
+            "body": "Öffne auf dem iPhone oder iPad den Any-Browser unter „Werkzeuge“. Wähle einen Schnellzugriff oder gib eine Webadresse ein."
+            },
+            {
+              "title": "Lesesprache wählen",
+              "body": "Tippe auf den Pfeil neben der Flagge, um eine Sprache zu wählen. Tippe auf die Flagge, um zwischen Original und Übersetzung zu wechseln."
+            },
+            {
+              "title": "Videountertitel einschalten",
+              "body": "Aktiviere die Untertitel im Videoplayer und lass die übersetzte Seitenansicht eingeschaltet."
+            },
+            {
+              "title": "Eigene Eingaben übersetzen",
+              "body": "Schreibe in ein unterstütztes Feld und tippe auf die Übersetzungstaste über der Tastatur. Tippe erneut darauf, um den ursprünglichen Text wiederherzustellen."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Das kannst du tun",
+          "items": [
+            {
+              "title": "24 Website-Schnellzugriffe",
+              "body": "Öffne Websites wie Wikipedia, Reddit und BBC News direkt von der Startseite."
+            },
+            {
+              "title": "Webseiten übersetzen",
+              "body": "Lies den übersetzten Text direkt auf der Seite und wechsle bei Bedarf zurück zum Original."
+            },
+            {
+              "title": "Videountertitel",
+              "body": "Übersetze vorhandene Untertitel unterstützter Videos, etwa auf YouTube und TED."
+            },
+            {
+              "title": "Übersetzung im Eingabefeld",
+              "body": "Übersetze deinen Entwurf in einem kompatiblen Eingabefeld und prüfe ihn vor dem Senden."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wann du es nutzen kannst",
+          "items": [
+            {
+              "title": "Artikel aus dem Ausland lesen",
+              "body": "Öffne einen Artikel und wechsle zum Original, um ein Zitat oder ein Wort nachzulesen."
+            },
+            {
+              "title": "Einem Vortrag oder Tutorial folgen",
+              "body": "Schalte die Untertitel ein und lies die Übersetzung beim Anschauen."
+            },
+            {
+              "title": "Einen Kommentar oder eine Antwort schreiben",
+              "body": "Schreibe in deiner Sprache und übersetze den Entwurf vor dem Posten im selben Feld."
             }
           ]
         }

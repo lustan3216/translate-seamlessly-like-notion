@@ -5,12 +5,12 @@
     "nav.manifesto": "Nuestro manifiesto",
     "hero.body": "Entiende la carta y pide. Traduce un mensaje y responde. Texto, fotos y subtítulos, con voz de IA natural y práctica oral: idiomas que sirven en la vida real.",
     "feature.table": "Traducción de tablas",
-    "home.featuresTitle": "11 herramientas para traducir y aprender. Siempre contigo.",
+    "home.featuresTitle": "{count} herramientas para traducir y aprender. Siempre contigo.",
     "home.featuresBody": "Leer cartas y documentos, responder mensajes y practicar: todo lo que necesitas, en un lugar.",
     "home.blogTitle": "Guías prácticas para sacar partido a la traducción.",
     "download.macNote": "Consulta los modelos de Mac y requisitos del sistema en el App Store. El teclado traductor, el widget de aprendizaje y la traducción en cualquier app son para iOS/iPadOS.",
     "features.title": "Traduce, conversa y aprende en una sola app.",
-    "features.body": "Entiende cartas, documentos y tablas, responde mensajes, sigue vídeos y practica con el asistente de IA. 11 herramientas que conectan leer, escribir, escuchar y hablar.",
+    "features.body": "Entiende cartas, documentos y tablas, responde mensajes, sigue vídeos y practica con el asistente de IA. {count} herramientas que conectan leer, escribir, escuchar y hablar.",
     "pricing.allowance": "Consulta los límites gratuitos en la app",
     "pricing.more": "Elige Estándar o Voz según tu uso",
     "pricing.manage": "Restaura compras en la app y gestiona renovaciones y cancelaciones con Apple. La tarjeta de uso muestra el saldo y la fecha de renovación de los límites.",
@@ -90,6 +90,7 @@
     "article.chat": "Tu entrenador de idiomas de bolsillo: fotos, interpretación y práctica oral",
     "article.learning": "Lleva las frases que practicas a tu día a día.",
     "feature.screen-translation": "Traducción en cualquier app",
+    "feature.browser-translation": "Traducción en el navegador",
     "article.screen": "Subtítulos y páginas web entre apps",
     "case.media.title": "Vídeos y páginas web: la traducción va contigo.",
     "case.media.body": "El vídeo sigue y tú sigues leyendo. Compara subtítulos o texto visible en imagen dentro de imagen; si quieres profundizar en una frase, llévala al asistente de IA."
@@ -742,6 +743,78 @@
             {
               "title": "Prepara la respuesta a un mensaje",
               "body": "Dale al asistente el contexto y pídele que compare posibles respuestas."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Navegador Any: traduce mientras navegas.",
+      "summary": "Traduce páginas web, subtítulos de vídeos y lo que escribas en el navegador integrado de AnyTranslator.",
+      "heading": "Lee, mira vídeos y responde en el mismo navegador.",
+      "body": "Abre un sitio desde uno de los 24 accesos directos o introduce una dirección web. Lee en el idioma que elijas, sigue los subtítulos de vídeos compatibles y traduce el texto en campos compatibles. Se aplica el límite de traducción de tu plan.",
+      "steps": [
+        "Páginas web: alterna entre el original y la traducción.",
+        "Subtítulos de vídeo: actívalos en un reproductor compatible.",
+        "Campos de texto: traduce el borrador antes de enviarlo."
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cómo usarlo",
+          "items": [
+            {
+              "title": "Abre el Navegador Any",
+              "body": "En tu iPhone o iPad, abre el Navegador Any desde Herramientas. Elige un acceso directo o introduce una dirección web."
+            },
+            {
+              "title": "Elige el idioma de lectura",
+              "body": "Toca la flecha junto a la bandera para elegir un idioma. Toca la bandera para alternar entre el original y la traducción."
+            },
+            {
+              "title": "Activa los subtítulos del vídeo",
+              "body": "Activa los subtítulos en el reproductor y mantén la página en la vista traducida."
+            },
+            {
+              "title": "Traduce lo que escribes",
+              "body": "Escribe en un campo compatible y toca la tecla de traducción situada encima del teclado. Tócala de nuevo para recuperar el texto original."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Qué puedes hacer",
+          "items": [
+            {
+              "title": "24 accesos directos a sitios web",
+              "body": "Abre sitios como Wikipedia, Reddit y BBC News desde la página de inicio."
+            },
+            {
+              "title": "Traducción de páginas web",
+              "body": "Lee el texto traducido en la propia página y vuelve al original cuando lo necesites."
+            },
+            {
+              "title": "Subtítulos de vídeo",
+              "body": "Traduce subtítulos existentes en vídeos compatibles, incluidos los de YouTube y TED."
+            },
+            {
+              "title": "Traducción en campos de texto",
+              "body": "Traduce un borrador en un campo web compatible y revísalo antes de enviarlo."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Cuándo usarlo",
+          "items": [
+            {
+              "title": "Lee artículos de otros países",
+              "body": "Abre un artículo y vuelve al original para comprobar una cita o una palabra."
+            },
+            {
+              "title": "Sigue una charla o un tutorial",
+              "body": "Activa los subtítulos y lee la traducción mientras ves el vídeo."
+            },
+            {
+              "title": "Escribe un comentario o una respuesta",
+              "body": "Redacta el mensaje en tu idioma y tradúcelo en el mismo campo antes de publicarlo."
             }
           ]
         }

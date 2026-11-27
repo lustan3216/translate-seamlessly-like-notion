@@ -70,13 +70,19 @@ try {
       assert.doesNotMatch(text, /(?:^|\s)(?:nav|hero|feature|faq|article)\.[a-zA-Z][\w.-]*(?:\s|$)/, `Untranslated key: ${url}`);
       return { ...result, text };
     };
-    const home = check("/", [copy.marketing["hero.title"], copy.marketing["hero.accent"], ...copy.extras.homeScenarios.map((group) => group.title), copy.extras.askAi.title]);
+    const featureCount = catalog.features.length.toLocaleString(locale.code);
+    const home = check("/", [copy.marketing["hero.title"], copy.marketing["hero.accent"], ...copy.extras.homeScenarios.map((group) => group.title), copy.extras.askAi.title, copy.marketing["home.featuresTitle"].replace("{count}", featureCount)]);
+    const featureIndex = check("/features", [copy.marketing["features.body"].replace("{count}", featureCount)]);
     assert.doesNotMatch(home.html.match(/<section\b[^>]*mk-home-hero[\s\S]*?<\/section>/)?.[0] ?? "", /iPhone · iPad|mk-note-divider/, `Removed download caption: ${locale.code}`);
     assert.equal((home.html.match(/data-home-scenario=/g) || []).length, 10, `All everyday scenarios: ${locale.code}`);
     for (const feature of catalog.features) {
       const detail = copy.features[feature.id];
       const guide = detail.guide;
       const label = `${locale.code}/${feature.id}`;
+      const route = `/features/${feature.id}`;
+      const link = `href="${localizedPath(route, locale.code)}"`;
+      assert.ok(home.html.includes(link), `Missing home feature link: ${label}`);
+      assert.ok(featureIndex.html.includes(link), `Missing feature card: ${label}`);
       assert.equal(detail.sections, undefined, `Unused legacy sections: ${label}`);
       assert.ok(guide, `Missing guide: ${label}`);
       assert.deepEqual(Object.keys(guide).sort(), ["abilities", "situations", "steps"], `Guide blocks: ${label}`);
@@ -97,7 +103,7 @@ try {
         return topic === "Platforms" && part === "A" ? marketing["download.macNote"]
           : marketing[`faq.${topic}${part}`] ?? translations[`landing.faq${topic}${part}`];
       }));
-      const { html } = check(`/features/${feature.id}`, [detail.title, detail.heading, detail.body, ...guideText, ...faqText]);
+      const { html } = check(route, [detail.title, detail.heading, detail.body, ...guideText, ...faqText]);
       assert.match(html, /class="mk-feature-guide-steps"/, `Feature step layout: ${label}`);
       assert.doesNotMatch(html, /mk-step-list|mk-feature-modules|mk-story-panel/, `Guide replaces legacy blocks: ${label}`);
       assert.equal((html.match(/<summary>/g) ?? []).length, topics.length, `Feature FAQ topics: ${label}`);

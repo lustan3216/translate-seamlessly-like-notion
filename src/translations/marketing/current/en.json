@@ -5,12 +5,12 @@
     "nav.manifesto": "Our manifesto",
     "hero.body": "Read the menu. Send the reply. Text, photos and video subtitles meet natural AI speech and conversation practice, so you can put another language to use.",
     "feature.table": "Table translation",
-    "home.featuresTitle": "11 translation and learning tools. Take them everywhere.",
+    "home.featuresTitle": "{count} translation and learning tools. Take them everywhere.",
     "home.featuresBody": "Read menus and documents, reply to messages and practise speaking—all in one App.",
     "home.blogTitle": "Practical guides to getting more from translation.",
     "download.macNote": "Check the App Store for Mac compatibility and system requirements. The translation keyboard, learning Widget and cross-App translation are for iOS/iPadOS.",
     "features.title": "Translate, talk and learn in one App.",
-    "features.body": "Read menus, documents and tables. Reply to messages, follow videos and practise with your AI assistant. 11 tools connect reading, writing, listening and speaking.",
+    "features.body": "Read menus, documents and tables. Reply to messages, follow videos and practise with your AI assistant. {count} tools connect reading, writing, listening and speaking.",
     "pricing.allowance": "See the App for your free allowance",
     "pricing.more": "Choose Standard or Voice to suit your day",
     "pricing.manage": "Restore purchases in the App; manage renewal and cancellation through Apple. Your usage card shows your balance and reset date.",
@@ -90,6 +90,7 @@
     "article.chat": "Your pocket language coach: photos, interpreting and speaking practice",
     "article.learning": "Bring the phrases you've practised into everyday life.",
     "feature.screen-translation": "Cross-App translation",
+    "feature.browser-translation": "Browser translation",
     "article.screen": "Subtitles and web reading across Apps",
     "case.media.title": "Watch videos. Read websites. Keep translation with you.",
     "case.media.body": "Keep watching or reading. Compare subtitles or visible text in Picture in Picture, then ask the AI assistant about a sentence you want to understand better."
@@ -742,6 +743,78 @@
             {
               "title": "Prepare a message reply",
               "body": "Give the assistant the context and ask it to compare possible replies."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Any Browser: translate as you browse.",
+      "summary": "Translate webpages, video subtitles and what you type in AnyTranslator’s built-in browser.",
+      "heading": "Read, watch and reply in the same browser.",
+      "body": "Open a site from 24 shortcuts or enter a web address. Read in your chosen language, follow subtitles on supported videos and translate text in compatible input fields. Translation is subject to your plan’s allowance.",
+      "steps": [
+        "Webpages: switch between the original and translation.",
+        "Video subtitles: turn on captions in a supported player.",
+        "Input fields: translate your draft before sending it."
+      ],
+      "guide": {
+        "steps": {
+          "title": "How to use",
+          "items": [
+            {
+              "title": "Open Any Browser",
+              "body": "On iPhone or iPad, open Any Browser from Tools. Pick a shortcut or enter a web address."
+            },
+            {
+              "title": "Choose your reading language",
+              "body": "Tap the arrow beside the flag to choose a language. Tap the flag to switch between the original and translation."
+            },
+            {
+              "title": "Turn on video subtitles",
+              "body": "Enable subtitles in the video player and keep the translated page view on."
+            },
+            {
+              "title": "Translate what you type",
+              "body": "Type in a supported field and tap the translate key above the keyboard. Tap the key again to restore your original text."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "What you can do",
+          "items": [
+            {
+              "title": "24 website shortcuts",
+              "body": "Open sites such as Wikipedia, Reddit and BBC News from the start page."
+            },
+            {
+              "title": "Webpage translation",
+              "body": "Read translated text right on the page and switch back to the original when you need it."
+            },
+            {
+              "title": "Video subtitles",
+              "body": "Translate existing subtitles on supported videos, including videos on YouTube and TED."
+            },
+            {
+              "title": "Input field translation",
+              "body": "Translate a draft in a compatible website field, then review it before sending."
+            }
+          ]
+        },
+        "situations": {
+          "title": "When to use it",
+          "items": [
+            {
+              "title": "Read articles from abroad",
+              "body": "Open an article and switch back to the original to check a quote or a word."
+            },
+            {
+              "title": "Follow a talk or tutorial",
+              "body": "Turn on subtitles and read the translation as you watch."
+            },
+            {
+              "title": "Write a comment or reply",
+              "body": "Draft a message in your own language, then translate it in the same field before you post."
             }
           ]
         }

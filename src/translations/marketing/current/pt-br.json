@@ -5,12 +5,12 @@
     "nav.manifesto": "Nosso manifesto",
     "hero.body": "Entenda o cardápio e peça. Traduza a mensagem e responda. Texto, fotos e legendas, com voz de IA natural e prática: idiomas que funcionam na vida real.",
     "feature.table": "Tradução de tabelas",
-    "home.featuresTitle": "11 ferramentas para traduzir e aprender. Sempre com você.",
+    "home.featuresTitle": "{count} ferramentas para traduzir e aprender. Sempre com você.",
     "home.featuresBody": "Cardápios, documentos, mensagens e prática de conversação: tudo de que você precisa em um só lugar.",
     "home.blogTitle": "Guias práticos para aproveitar melhor a tradução.",
     "download.macNote": "Consulte os modelos de Mac e os requisitos do sistema na App Store. Teclado tradutor, widget de aprendizado e tradução em qualquer app são para iOS/iPadOS.",
     "features.title": "Traduza, converse e aprenda em um só app.",
-    "features.body": "Entenda cardápios, documentos e tabelas, responda mensagens, acompanhe vídeos e pratique com o assistente de IA. 11 ferramentas conectam leitura, escrita, escuta e fala.",
+    "features.body": "Entenda cardápios, documentos e tabelas, responda mensagens, acompanhe vídeos e pratique com o assistente de IA. {count} ferramentas conectam leitura, escrita, escuta e fala.",
     "pricing.allowance": "Consulte as cotas gratuitas no app",
     "pricing.more": "Escolha Padrão ou Voz conforme seu uso",
     "pricing.manage": "Restaure compras no app e gerencie renovação e cancelamento pela Apple. O cartão de uso mostra o saldo e a data de renovação das cotas.",
@@ -90,6 +90,7 @@
     "article.chat": "Seu professor de idiomas de bolso: fotos, interpretação e prática oral",
     "article.learning": "Leve as frases que praticou para o dia a dia.",
     "feature.screen-translation": "Tradução em qualquer app",
+    "feature.browser-translation": "Tradução no navegador",
     "article.screen": "Legendas e leitura da web entre apps",
     "case.media.title": "Vídeos e páginas da web: a tradução vai com você.",
     "case.media.body": "O vídeo continua e a leitura também. Compare legendas ou texto visível em Picture in Picture; para explorar uma frase, leve-a ao assistente de IA."
@@ -742,6 +743,78 @@
             {
               "title": "Prepare uma resposta para uma mensagem",
               "body": "Dê o contexto ao assistente e peça que compare possíveis respostas."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Navegador Any: traduza enquanto navega.",
+      "summary": "Traduza páginas da web, legendas de vídeos e o que você digita no navegador integrado do AnyTranslator.",
+      "heading": "Leia, assista e responda no mesmo navegador.",
+      "body": "Abra um site usando um dos 24 atalhos ou digite um endereço. Leia no idioma que escolher, acompanhe legendas de vídeos compatíveis e traduza texto nos campos disponíveis. A tradução está sujeita ao limite do seu plano.",
+      "steps": [
+        "Páginas da web: alterne entre o original e a tradução.",
+        "Legendas de vídeos: ative as legendas em um player compatível.",
+        "Campos de texto: traduza o rascunho antes de enviar."
+      ],
+      "guide": {
+        "steps": {
+          "title": "Como usar",
+          "items": [
+            {
+              "title": "Abra o Navegador Any",
+              "body": "No iPhone ou iPad, abra o Navegador Any em Ferramentas. Escolha um atalho ou digite um endereço."
+            },
+            {
+              "title": "Escolha o idioma de leitura",
+              "body": "Toque na seta ao lado da bandeira para escolher um idioma. Toque na bandeira para alternar entre o original e a tradução."
+            },
+            {
+              "title": "Ative as legendas do vídeo",
+              "body": "Ative as legendas no player e mantenha a página no modo de tradução."
+            },
+            {
+              "title": "Traduza o que você digitou",
+              "body": "Digite em um campo compatível e toque na tecla de tradução acima do teclado. Toque nela novamente para restaurar o texto original."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "O que você pode fazer",
+          "items": [
+            {
+              "title": "24 atalhos para sites",
+              "body": "Abra sites como Wikipédia, Reddit e BBC News a partir da página inicial."
+            },
+            {
+              "title": "Tradução de páginas da web",
+              "body": "Leia a tradução direto na página e volte ao texto original quando precisar."
+            },
+            {
+              "title": "Legendas de vídeos",
+              "body": "Traduza as legendas que já existem em vídeos compatíveis, inclusive no YouTube e no TED."
+            },
+            {
+              "title": "Tradução em campos de texto",
+              "body": "Traduza seu rascunho em um campo compatível no site e revise antes de enviar."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quando usar",
+          "items": [
+            {
+              "title": "Leia artigos de outros países",
+              "body": "Abra um artigo e volte ao original para conferir uma citação ou uma palavra."
+            },
+            {
+              "title": "Acompanhe uma palestra ou um tutorial",
+              "body": "Ative as legendas e leia a tradução enquanto assiste."
+            },
+            {
+              "title": "Escreva comentários ou respostas",
+              "body": "Escreva no seu idioma e traduza a mensagem no mesmo campo antes de publicar."
             }
           ]
         }

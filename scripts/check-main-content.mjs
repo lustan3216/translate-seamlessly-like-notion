@@ -185,7 +185,7 @@ export async function checkMainContent() {
   const { snapshot, scan, toneChoices, sourceVerified } = sourceSnapshot();
   const zh = marketingCatalog("zh-tw");
   assert.deepEqual(zh, { features: currentMainFeatures, cases: currentMainCases, articles: currentMainArticles, relatedFeatures: currentMainRelated });
-  assert.equal(zh.features.length, 11);
+  assert.equal(zh.features.length, 12);
   assert.equal(zh.cases.length, 7);
   assert.equal(zh.articles.length, 9);
   unique(ids(zh.features), "main feature");
@@ -360,7 +360,7 @@ export async function checkMainContent() {
   } finally {
     await server.close();
   }
-  console.log(`Current-main Chinese content passed: 11 features, 7 workflows, 9 articles, actual rendered adapters, pricing/icon snapshots${sourceVerified ? " verified against pinned App Git objects" : " checked for schema/local output only"}; localized content parity is checked separately. Native screenshot coverage is checked separately.`);
+  console.log(`Current-main Chinese content passed: 12 features, 7 workflows, 9 articles, actual rendered adapters, pricing/icon snapshots${sourceVerified ? " verified against pinned App Git objects" : " checked for schema/local output only"}; localized content parity is checked separately. Native screenshot coverage is checked separately.`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) await checkMainContent();
