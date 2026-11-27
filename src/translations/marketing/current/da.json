@@ -5,12 +5,12 @@
     "nav.manifesto": "Vores manifest",
     "hero.body": "Forstå menuen og bestil. Oversæt beskeden og svar. Tekst, billeder og videoundertekster sammen med naturlig AI-stemme og samtaletræning gør fremmedsprog brugbare i hverdagen.",
     "feature.table": "Tabeloversættelse",
-    "home.featuresTitle": "11 værktøjer til oversættelse og læring, lige ved hånden.",
+    "home.featuresTitle": "{count} værktøjer til oversættelse og læring, lige ved hånden.",
     "home.featuresBody": "Læs menuer og dokumenter, besvar beskeder og øv dig i at tale. Alt samlet ét sted.",
     "home.blogTitle": "Praktiske guides til at få mere ud af oversættelse.",
     "download.macNote": "Se understøttede Mac-modeller og systemkrav i App Store. Oversættelsestastatur, læringswidget og oversættelse i andre apps er til iOS/iPadOS.",
     "features.title": "Oversættelse, samtale og læring i én app.",
-    "features.body": "Forstå menuer, dokumenter og tabeller, svar på beskeder, følg videoer og øv tale med AI-assistenten. 11 værktøjer forbinder læsning, skrivning, lytning og tale.",
+    "features.body": "Forstå menuer, dokumenter og tabeller, svar på beskeder, følg videoer og øv tale med AI-assistenten. {count} værktøjer forbinder læsning, skrivning, lytning og tale.",
     "pricing.allowance": "Se gratis forbrug i appen",
     "pricing.more": "Vælg Standard eller Tale efter dit behov",
     "pricing.manage": "Gendan køb i appen, og administrer fornyelse og opsigelse hos Apple. Forbrugskortet viser restsaldo og dato for opdatering.",
@@ -90,6 +90,7 @@
     "article.chat": "Din sprogcoach på farten: billeder, tolkning og taletræning",
     "article.learning": "Tag de øvede sætninger med ind i hverdagen.",
     "feature.screen-translation": "Oversættelse i enhver app",
+    "feature.browser-translation": "Oversættelse i browseren",
     "article.screen": "Undertekster og websider på tværs af apps",
     "case.media.title": "Se videoer og læs websider med oversættelsen ved hånden.",
     "case.media.body": "Videoen spiller videre, og du læser videre på siden. Sammenlign undertekster eller synlig tekst i billede i billede, og spørg AI-assistenten om sætninger, du vil forstå bedre."
@@ -742,6 +743,78 @@
             {
               "title": "Forbered et svar på en besked",
               "body": "Forklar sammenhængen for AI-assistenten, og bed den sammenligne mulige svar."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Any-browser: Oversæt, mens du surfer.",
+      "summary": "Oversæt websider, videoundertekster og det, du skriver, i AnyTranslators indbyggede browser.",
+      "heading": "Læs, se videoer og svar i samme browser.",
+      "body": "Åbn et websted via en af de 24 genveje, eller indtast en webadresse. Læs på det sprog, du vælger, følg undertekster på understøttede videoer, og oversæt tekst i kompatible felter. Oversættelse er omfattet af dit abonnements forbrugsgrænse.",
+      "steps": [
+        "Websider: Skift mellem originalen og oversættelsen.",
+        "Videoundertekster: Slå undertekster til i en understøttet afspiller.",
+        "Tekstfelter: Oversæt dit udkast, før du sender."
+      ],
+      "guide": {
+        "steps": {
+          "title": "Sådan gør du",
+          "items": [
+            {
+              "title": "Åbn Any-browseren",
+              "body": "Åbn Any-browseren under Værktøjer på iPhone eller iPad. Vælg en genvej, eller indtast en webadresse."
+            },
+            {
+              "title": "Vælg det sprog, du vil læse på",
+              "body": "Tryk på pilen ved flaget for at vælge et sprog. Tryk på flaget for at skifte mellem originalen og oversættelsen."
+            },
+            {
+              "title": "Slå videoundertekster til",
+              "body": "Slå undertekster til i afspilleren, og behold siden i oversat visning."
+            },
+            {
+              "title": "Oversæt det, du skriver",
+              "body": "Skriv i et understøttet felt, og tryk på oversættelsesknappen over tastaturet. Tryk igen for at gendanne din oprindelige tekst."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Det kan du gøre",
+          "items": [
+            {
+              "title": "24 genveje til websteder",
+              "body": "Åbn f.eks. Wikipedia, Reddit og BBC News fra startsiden."
+            },
+            {
+              "title": "Oversættelse af websider",
+              "body": "Læs oversættelsen direkte på siden, og skift tilbage til originalen efter behov."
+            },
+            {
+              "title": "Videoundertekster",
+              "body": "Oversæt eksisterende undertekster på understøttede videoer, bl.a. på YouTube og TED."
+            },
+            {
+              "title": "Oversættelse i tekstfelter",
+              "body": "Oversæt dit udkast i et kompatibelt felt på webstedet, og læs det igennem, før du sender."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Hvornår kan du bruge det?",
+          "items": [
+            {
+              "title": "Læs artikler fra udlandet",
+              "body": "Åbn en artikel, og skift til originalen for at tjekke et citat eller et ord."
+            },
+            {
+              "title": "Følg et foredrag eller en vejledning",
+              "body": "Slå undertekster til, og læs oversættelsen, mens du ser videoen."
+            },
+            {
+              "title": "Skriv en kommentar eller et svar",
+              "body": "Skriv kladden på dit eget sprog, og oversæt den i samme felt, før du slår den op."
             }
           ]
         }

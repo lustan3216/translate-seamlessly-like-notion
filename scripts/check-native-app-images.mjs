@@ -65,7 +65,7 @@ async function check() {
   // The manifest retains capture receipts even when a supplementary WebP leaves the site.
   const retainedCaptures = manifest.captures.filter((capture) => captureShotId(capture) === 'primary' || publishedSources.has(capture.src));
   const retainedSources = new Set(retainedCaptures.map(({ src }) => src));
-  assert.equal(nativeLocales.length, 19); assert.equal(requiredNativeFeatures.length, 11); assert.ok(nativeFeatures.includes('table') && nativeFeatures.includes('screen-translation') && !nativeFeatures.includes('agent'));
+  assert.equal(nativeLocales.length, 19); assert.equal(requiredNativeFeatures.length, 12); assert.ok(nativeFeatures.includes('table') && nativeFeatures.includes('screen-translation') && !nativeFeatures.includes('agent'));
   const required = requiredNativeLocales.length * requiredNativeFeatures.length;
   const verified = new Set();
   const verifiedImages = new Set();

@@ -19,6 +19,7 @@ export type ScreenFeature =
   | "chat"
   | "helper"
   | "table"
+  | "browser-translation"
   | "screen-translation";
 type NativeScreen = { src: string; srcSet?: string; width: number; height: number; alt?: string };
 type NativeProductScreen = NativeScreen & {

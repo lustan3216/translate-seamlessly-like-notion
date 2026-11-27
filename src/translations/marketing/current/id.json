@@ -5,12 +5,12 @@
     "nav.manifesto": "Yang kami yakini",
     "hero.body": "Pahami menu, lalu pesan. Terjemahkan pesan, lalu balas. Teks, foto, subtitel video, suara AI alami, dan latihan percakapan—agar bahasa asing benar-benar berguna.",
     "feature.table": "Terjemahan tabel",
-    "home.featuresTitle": "11 alat penerjemahan dan belajar, selalu siap dibawa.",
+    "home.featuresTitle": "{count} alat penerjemahan dan belajar, selalu siap dibawa.",
     "home.featuresBody": "Baca menu dan dokumen, balas pesan, latih percakapan. Semua alat yang Anda butuhkan.",
     "home.blogTitle": "Panduan praktis untuk memaksimalkan terjemahan.",
     "download.macNote": "Model Mac dan persyaratan sistem mengikuti App Store. Keyboard terjemahan, Widget belajar, dan terjemahan di aplikasi lain tersedia untuk iOS／iPadOS.",
     "features.title": "Terjemahan, percakapan, dan belajar dalam satu aplikasi.",
-    "features.body": "Pahami menu, dokumen, dan tabel. Balas pesan, ikuti video, lalu berlatih bicara bersama Asisten AI. 11 alat yang menghubungkan membaca, menulis, mendengar, dan berbicara.",
+    "features.body": "Pahami menu, dokumen, dan tabel. Balas pesan, ikuti video, lalu berlatih bicara bersama Asisten AI. {count} alat yang menghubungkan membaca, menulis, mendengar, dan berbicara.",
     "pricing.allowance": "Lihat kuota gratis di aplikasi",
     "pricing.more": "Pilih paket Standar atau Suara sesuai kebutuhan",
     "pricing.manage": "Pulihkan pembelian di aplikasi; kelola perpanjangan dan pembatalan melalui Apple. Kartu penggunaan menampilkan sisa kuota dan tanggal pembaruan.",
@@ -90,6 +90,7 @@
     "article.chat": "Pelatih bahasa saku: foto, penerjemahan lisan, dan latihan bicara",
     "article.learning": "Bawa kalimat yang dilatih ke kehidupan sehari-hari.",
     "feature.screen-translation": "Terjemahan di aplikasi lain",
+    "feature.browser-translation": "Terjemahan di peramban",
     "article.screen": "Baca subtitel dan web lintas aplikasi",
     "case.media.title": "Tonton video dan baca web, sambil tetap memahami.",
     "case.media.body": "Video tetap berjalan, halaman tetap terbuka. Bandingkan subtitel atau teks yang terlihat lewat Gambar dalam Gambar. Tanyakan kalimat yang menarik kepada Asisten AI."
@@ -742,6 +743,78 @@
             {
               "title": "Siapkan balasan pesan",
               "body": "Beri tahu konteksnya kepada asisten dan minta perbandingan beberapa pilihan balasan."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Peramban Any: terjemahkan sambil menjelajah.",
+      "summary": "Terjemahkan halaman web, subtitle video, dan teks yang Anda ketik di peramban bawaan AnyTranslator.",
+      "heading": "Baca, tonton, dan balas di peramban yang sama.",
+      "body": "Buka situs melalui salah satu dari 24 pintasan atau masukkan alamat web. Baca dalam bahasa pilihan Anda, ikuti subtitle video yang didukung, dan terjemahkan teks di kolom yang kompatibel. Penerjemahan mengikuti kuota paket Anda.",
+      "steps": [
+        "Halaman web: beralih antara teks asli dan terjemahan.",
+        "Subtitle video: aktifkan subtitle di pemutar yang didukung.",
+        "Kolom teks: terjemahkan draf sebelum mengirimkannya."
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cara pakai",
+          "items": [
+            {
+              "title": "Buka Peramban Any",
+              "body": "Di iPhone atau iPad, buka Peramban Any dari Alat. Pilih pintasan atau masukkan alamat web."
+            },
+            {
+              "title": "Pilih bahasa untuk membaca",
+              "body": "Ketuk panah di sebelah bendera untuk memilih bahasa. Ketuk bendera untuk beralih antara teks asli dan terjemahan."
+            },
+            {
+              "title": "Aktifkan subtitle video",
+              "body": "Aktifkan subtitle di pemutar video dan tetap gunakan tampilan halaman terjemahan."
+            },
+            {
+              "title": "Terjemahkan yang Anda ketik",
+              "body": "Ketik di kolom yang didukung dan ketuk tombol Terjemahkan di atas papan ketik. Ketuk lagi untuk mengembalikan teks asli."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Yang bisa dilakukan",
+          "items": [
+            {
+              "title": "24 pintasan situs web",
+              "body": "Buka situs seperti Wikipedia, Reddit, dan BBC News dari halaman awal."
+            },
+            {
+              "title": "Terjemahan halaman web",
+              "body": "Baca terjemahan langsung di halaman, lalu kembali ke teks asli jika perlu."
+            },
+            {
+              "title": "Subtitle video",
+              "body": "Terjemahkan subtitle yang tersedia pada video yang didukung, termasuk di YouTube dan TED."
+            },
+            {
+              "title": "Terjemahan di kolom teks",
+              "body": "Terjemahkan draf di kolom yang kompatibel pada situs web dan periksa sebelum mengirimkannya."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Kapan dipakai",
+          "items": [
+            {
+              "title": "Baca artikel dari luar negeri",
+              "body": "Buka artikel lalu kembali ke teks asli untuk memeriksa kutipan atau kata."
+            },
+            {
+              "title": "Ikuti ceramah atau tutorial",
+              "body": "Aktifkan subtitle dan baca terjemahannya sambil menonton."
+            },
+            {
+              "title": "Tulis komentar atau balasan",
+              "body": "Tulis draf dalam bahasa Anda, lalu terjemahkan di kolom yang sama sebelum mengirimnya."
             }
           ]
         }

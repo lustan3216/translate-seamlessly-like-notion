@@ -260,6 +260,7 @@ export function FAQ({ topics = faqTopics }: {
 }
 export function HomePage() {
   const { m, details, href, currentLanguage, features } = useMarketing();
+  const featureTitle = m("home.featuresTitle").replace("{count}", features.length.toLocaleString(currentLanguage.code));
   const homeScenarioGroups = getHomeScenarioGroups(currentLanguage.code);
   const [selectedDemo, setDemo] = useState<ScreenFeature>("chat");
   const demoIds: ScreenFeature[] = ["chat", "screen-translation", "text", "menu", "document", "voice"];
@@ -384,7 +385,7 @@ export function HomePage() {
           <ProductStoryPanels panel="voice" />
           <section className="mk-section mk-wrap">
             <div className="mk-section-heading">
-              <h2>{m("home.featuresTitle")}</h2>
+              <h2>{featureTitle}</h2>
               <p>{m("home.featuresBody")}</p>
             </div>
             <div className="mk-home-feature-index">
@@ -430,14 +431,15 @@ export function HomePage() {
   );
 }
 export function FeaturesPage() {
-  const { m } = useMarketing();
+  const { m, features, currentLanguage } = useMarketing();
+  const body = m("features.body").replace("{count}", features.length.toLocaleString(currentLanguage.code));
   return (
     <MarketingShell>
-      <Head title={m("nav.features")} description={m("features.body")} />
+      <Head title={m("nav.features")} description={body} />
       <PageIntro
         eyebrow="AnyTranslator"
         title={m("features.title")}
-        body={m("features.body")}
+        body={body}
       />
       <section className="mk-wrap mk-section mk-section-first">
         <h2 className="mk-sr-only">{m("nav.features")}</h2>

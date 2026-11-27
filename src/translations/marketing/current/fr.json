@@ -5,12 +5,12 @@
     "nav.manifesto": "Notre manifeste",
     "hero.body": "Comprenez le menu, commandez. Traduisez un message, répondez. Texte, photos et sous-titres, voix IA naturelle et entraînement : les langues deviennent utiles au quotidien.",
     "feature.table": "Traduction de tableaux",
-    "home.featuresTitle": "11 outils de traduction et d’apprentissage à emporter partout.",
+    "home.featuresTitle": "{count} outils de traduction et d’apprentissage à emporter partout.",
     "home.featuresBody": "Menus, documents, messages et pratique orale : tous les outils dont vous avez besoin, réunis.",
     "home.blogTitle": "Des guides pratiques pour mieux traduire.",
     "download.macNote": "Consultez l’App Store pour les Mac et systèmes compatibles. Le clavier de traduction, le widget d’apprentissage et la traduction dans toute app sont destinés à iOS/iPadOS.",
     "features.title": "Traduire, dialoguer, apprendre. Dans une seule app.",
-    "features.body": "Comprenez menus, documents et tableaux, répondez aux messages, suivez les vidéos et pratiquez avec l’assistant IA. 11 outils pour relier lecture, écriture, écoute et expression.",
+    "features.body": "Comprenez menus, documents et tableaux, répondez aux messages, suivez les vidéos et pratiquez avec l’assistant IA. {count} outils pour relier lecture, écriture, écoute et expression.",
     "pricing.allowance": "Consultez l’app pour les quotas gratuits",
     "pricing.more": "Choisissez Standard ou Voix selon vos besoins",
     "pricing.manage": "Restaurez vos achats dans l’app et gérez renouvellement ou résiliation auprès d’Apple. La carte d’utilisation indique le solde et la date de renouvellement des quotas.",
@@ -90,6 +90,7 @@
     "article.chat": "Votre coach de langue de poche : photos, interprétation et pratique orale",
     "article.learning": "Faites vivre les phrases que vous avez apprises.",
     "feature.screen-translation": "Traduction dans toute app",
+    "feature.browser-translation": "Traduction dans le navigateur",
     "article.screen": "Sous-titres et lecture web entre les apps",
     "case.media.title": "Vidéos et pages web : la traduction vous suit.",
     "case.media.body": "Continuez la vidéo ou la lecture. Comparez sous-titres et texte visible en image dans l’image ; pour approfondir une phrase, passez à l’assistant IA."
@@ -742,6 +743,78 @@
             {
               "title": "Préparer une réponse à un message",
               "body": "Donnez le contexte à l’assistant et demandez-lui de comparer plusieurs réponses possibles."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Navigateur Any : traduisez en naviguant.",
+      "summary": "Traduisez les pages web, les sous-titres vidéo et le texte que vous saisissez dans le navigateur intégré à AnyTranslator.",
+      "heading": "Lisez, regardez et répondez dans le même navigateur.",
+      "body": "Ouvrez un site parmi 24 raccourcis ou saisissez une adresse web. Lisez dans la langue de votre choix, suivez les sous-titres des vidéos compatibles et traduisez le texte dans les champs pris en charge. La traduction est soumise au quota de votre forfait.",
+      "steps": [
+        "Pages web : passez de l’original à la traduction.",
+        "Sous-titres vidéo : activez-les dans un lecteur compatible.",
+        "Champs de saisie : traduisez votre brouillon avant l’envoi."
+      ],
+      "guide": {
+        "steps": {
+          "title": "Utilisation",
+          "items": [
+            {
+              "title": "Ouvrir le Navigateur Any",
+            "body": "Sur iPhone ou iPad, ouvrez le Navigateur Any depuis « Outils ». Choisissez un raccourci ou saisissez une adresse web."
+            },
+            {
+              "title": "Choisir la langue de lecture",
+              "body": "Touchez la flèche à côté du drapeau pour choisir une langue. Touchez le drapeau pour passer de l’original à la traduction."
+            },
+            {
+              "title": "Activer les sous-titres vidéo",
+              "body": "Activez les sous-titres dans le lecteur et gardez la page affichée en mode traduction."
+            },
+            {
+              "title": "Traduire le texte saisi",
+              "body": "Écrivez dans un champ compatible et touchez la touche de traduction au-dessus du clavier. Touchez-la de nouveau pour rétablir votre texte d’origine."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Ce que vous pouvez faire",
+          "items": [
+            {
+              "title": "24 raccourcis vers des sites web",
+              "body": "Ouvrez Wikipédia, Reddit, BBC News et d’autres sites depuis la page de démarrage."
+            },
+            {
+              "title": "Traduction de pages web",
+              "body": "Lisez la traduction directement sur la page et revenez à l’original quand vous en avez besoin."
+            },
+            {
+              "title": "Sous-titres vidéo",
+              "body": "Traduisez les sous-titres existants des vidéos compatibles, notamment sur YouTube et TED."
+            },
+            {
+              "title": "Traduction dans les champs de saisie",
+              "body": "Traduisez votre brouillon dans un champ compatible, puis relisez-le avant de l’envoyer."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Quand l’utiliser",
+          "items": [
+            {
+              "title": "Lire la presse étrangère",
+              "body": "Ouvrez un article et revenez à l’original pour vérifier une citation ou un mot."
+            },
+            {
+              "title": "Suivre une conférence ou un tutoriel",
+              "body": "Activez les sous-titres et lisez la traduction en regardant la vidéo."
+            },
+            {
+              "title": "Écrire un commentaire ou une réponse",
+              "body": "Rédigez dans votre langue, puis traduisez le texte dans le même champ avant de le publier."
             }
           ]
         }

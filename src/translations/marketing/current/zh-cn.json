@@ -5,12 +5,12 @@
     "nav.manifesto": "我们的宣言",
     "hero.body": "菜单看懂就能点，消息翻好就能回。文字、照片、视频字幕，搭配自然 AI 语音与陪练，让外语真正用得上。",
     "feature.table": "表格翻译",
-    "home.featuresTitle": "11 种翻译与学习工具，全部带着走。",
+    "home.featuresTitle": "{count} 种翻译与学习工具，全部带着走。",
     "home.featuresBody": "读菜单、看文档、回消息、练口说，需要的工具一次备齐。",
     "home.blogTitle": "把翻译用到位的实用指南。",
     "download.macNote": "Mac 机型与系统需求以 App Store 为准。翻译键盘、学习 Widget 与任何 App 翻译适用 iOS／iPadOS。",
     "features.title": "翻译、对话与学习，在同一个 App。",
-    "features.body": "看懂菜单、文档与表格，回复消息、跟上视频，再用 AI 助手练口说。11 种工具，把读、写、听、说接在一起。",
+    "features.body": "看懂菜单、文档与表格，回复消息、跟上视频，再用 AI 助手练口说。{count} 种工具，把读、写、听、说接在一起。",
     "pricing.allowance": "免费额度以 App 显示为准",
     "pricing.more": "按使用方式选择标准版或语音版",
     "pricing.manage": "在 App 恢复购买，透过 Apple 管理续订与取消；用量卡片可查余额及更新日期。",
@@ -90,6 +90,7 @@
     "article.chat": "你的随身外语教练：看图、口译、练开口",
     "article.learning": "把练过的句子，带进日常。",
     "feature.screen-translation": "任何 App 翻译",
+    "feature.browser-translation": "浏览器翻译",
     "article.screen": "跨 App 看字幕、读网页",
     "case.media.title": "看视频、读网页，让翻译跟着你。",
     "case.media.body": "视频继续播，网页继续读。用画中画对照字幕或可见文字，遇到想深究的句子，再交给 AI 助手。"
@@ -742,6 +743,78 @@
             {
               "title": "准备回复消息",
               "body": "把来龙去脉告诉 AI 助手，请它比较不同的回复。"
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Any 浏览器，边浏览边翻译。",
+      "summary": "在 AnyTranslator 内置的浏览器里翻译网页、视频字幕和输入的文字。",
+      "heading": "读文章、看视频、回评论，都在同一个浏览器里。",
+      "body": "从 24 个网站快捷入口选择一个，或直接输入网址。用你选择的语言阅读网页、看受支持视频的字幕，也能翻译兼容输入框里的文字。翻译受套餐额度限制。",
+      "steps": [
+        "网页：随时切换原文和译文。",
+        "视频字幕：在支持的播放器中打开字幕。",
+        "输入框：发送前先翻译草稿。"
+      ],
+      "guide": {
+        "steps": {
+          "title": "使用步骤",
+          "items": [
+            {
+              "title": "打开 Any 浏览器",
+              "body": "在 iPhone 或 iPad 的“工具”中打开 Any 浏览器，再选择网站快捷入口或输入网址。"
+            },
+            {
+              "title": "选择阅读语言",
+              "body": "点按国旗旁的箭头选择语言，点按国旗切换原文和译文。"
+            },
+            {
+              "title": "打开视频字幕",
+              "body": "在视频播放器中打开字幕，并保持网页显示译文。"
+            },
+            {
+              "title": "翻译输入的文字",
+              "body": "在支持的输入框里打字，再点按键盘上方的翻译键。再次点按可恢复原文。"
+            }
+          ]
+        },
+        "abilities": {
+          "title": "主要功能",
+          "items": [
+            {
+              "title": "24 个网站快捷入口",
+              "body": "从起始页直接打开维基百科、Reddit、BBC News 等网站。"
+            },
+            {
+              "title": "网页翻译",
+              "body": "在原网页上阅读译文，需要时切回原文。"
+            },
+            {
+              "title": "视频字幕",
+              "body": "翻译 YouTube、TED 等受支持视频已有的字幕。"
+            },
+            {
+              "title": "输入框翻译",
+              "body": "在兼容的网站输入框里翻译草稿，确认后再发送。"
+            }
+          ]
+        },
+        "situations": {
+          "title": "使用场景",
+          "items": [
+            {
+              "title": "读外文文章",
+              "body": "打开文章，遇到想核对的引文或用词时切回原文。"
+            },
+            {
+              "title": "看演讲或教学视频",
+              "body": "打开字幕，边看视频边读译文。"
+            },
+            {
+              "title": "评论或回复",
+              "body": "先用自己的语言写草稿，再在同一个输入框里翻译后发布。"
             }
           ]
         }

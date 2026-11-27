@@ -15,7 +15,7 @@ assert.ok(!SITE_ROUTES.includes("/features/agent"));
 for (const { code } of SITE_LOCALES) {
   assert.equal(localizedPath("/features/agent", code), localizedPath("/features/chat", code));
   const catalog = marketingCatalog(code);
-  assert.equal(catalog.features.length, 11);
+  assert.equal(catalog.features.length, 12);
   assert.equal(catalog.cases.length, 7);
   assert.equal(catalog.articles.length, 9);
   assert.ok(!catalog.features.some(({ id }) => id === "agent"));
@@ -25,4 +25,4 @@ for (const { code } of SITE_LOCALES) {
 }
 assert.equal(languageForLocation("/privacy-policy", "?lang=zh-tw"), "zh-tw");
 assert.equal(localesForPath("/terms-of-service").length, SITE_LOCALES.length);
-console.log("Current routes passed: all 19 locales, 11 features, 7 cases, 9 articles, manifesto, legal translations and retired Agent redirects.");
+console.log("Current routes passed: all 19 locales, 12 features, 7 cases, 9 articles, manifesto, legal translations and retired Agent redirects.");

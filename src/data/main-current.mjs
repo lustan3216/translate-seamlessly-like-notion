@@ -4,6 +4,7 @@ export const mainSourceCommit = "25040c54255b2f7dd073965a749f19ec378e9677";
 export const currentMainFeatures = [
   { id: "chat", icon: "bubble-chat-question", tone: "mint" },
   { id: "screen-translation", icon: "closed-caption", tone: "sky" },
+  { id: "browser-translation", icon: "link-01", tone: "sky" },
   { id: "text", icon: "language-square", tone: "sand" },
   { id: "photos", icon: "image-01", tone: "peach" },
   { id: "voice", icon: "mic-01", tone: "sky" },
@@ -49,10 +50,11 @@ export const currentMainRelated = {
   helper: ["text", "chat", "widget"],
   widget: ["chat", "helper", "text"],
   "screen-translation": ["photos", "voice", "chat"],
+  "browser-translation": ["screen-translation", "text", "keyboard"],
 };
 
 export const currentMainOnlyRoutes = [
   "/manifesto",
-  "/features/screen-translation", "/features/table", "/use-cases/media",
+  "/features/screen-translation", "/features/browser-translation", "/features/table", "/use-cases/media",
   "/blog/chat-language-practice", "/blog/translate-other-apps",
 ];

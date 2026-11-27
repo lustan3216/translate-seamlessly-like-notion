@@ -5,12 +5,12 @@
     "nav.manifesto": "Ons manifest",
     "hero.body": "Begrijp de menukaart en bestel. Vertaal een bericht en antwoord. Tekst, foto's en video-ondertitels, met natuurlijke AI-spraak en gespreksoefeningen, maken een vreemde taal bruikbaar in het dagelijks leven.",
     "feature.table": "Tabellen vertalen",
-    "home.featuresTitle": "11 vertaal- en leerhulpmiddelen, altijd bij je.",
+    "home.featuresTitle": "{count} vertaal- en leerhulpmiddelen, altijd bij je.",
     "home.featuresBody": "Lees menu's en documenten, beantwoord berichten en oefen spreken. Alles wat je nodig hebt bij elkaar.",
     "home.blogTitle": "Praktische gidsen om meer uit vertalen te halen.",
     "download.macNote": "Bekijk ondersteunde Mac-modellen en systeemvereisten in de App Store. Het vertaaltoetsenbord, de leerwidget en vertaling in andere apps zijn voor iOS/iPadOS.",
     "features.title": "Vertalen, gesprekken en leren in één app.",
-    "features.body": "Begrijp menu's, documenten en tabellen, beantwoord berichten, volg video's en oefen spreken met de AI-assistent. 11 hulpmiddelen verbinden lezen, schrijven, luisteren en spreken.",
+    "features.body": "Begrijp menu's, documenten en tabellen, beantwoord berichten, volg video's en oefen spreken met de AI-assistent. {count} hulpmiddelen verbinden lezen, schrijven, luisteren en spreken.",
     "pricing.allowance": "Bekijk de gratis gebruikslimieten in de app",
     "pricing.more": "Kies Standaard of Spraak op basis van je gebruik",
     "pricing.manage": "Herstel aankopen in de app en beheer verlengen en opzeggen via Apple. De gebruikskaart toont je tegoed en de volgende aanvuldatum.",
@@ -90,6 +90,7 @@
     "article.chat": "Je taalcoach onderweg: foto's, tolken en spreken oefenen",
     "article.learning": "Neem geoefende zinnen mee je dagelijks leven in.",
     "feature.screen-translation": "Vertalen in elke app",
+    "feature.browser-translation": "Vertalen in de browser",
     "article.screen": "Ondertitels en webpagina's in andere apps",
     "case.media.title": "Kijk video's en lees webpagina's met vertaling erbij.",
     "case.media.body": "De video speelt door, de webpagina blijft open. Vergelijk ondertitels of zichtbare tekst in beeld-in-beeld en vraag de AI-assistent naar zinnen die je beter wilt begrijpen."
@@ -742,6 +743,78 @@
             {
               "title": "Bereid een antwoord op een bericht voor",
               "body": "Geef de assistent de context en vraag om mogelijke antwoorden te vergelijken."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Any-browser: vertaal terwijl je surft.",
+      "summary": "Vertaal webpagina’s, video-ondertitels en wat je typt in de ingebouwde browser van AnyTranslator.",
+      "heading": "Lees, kijk en reageer in dezelfde browser.",
+      "body": "Open een site via een van de 24 snelkoppelingen of voer een webadres in. Lees in de taal van je keuze, volg ondertitels bij ondersteunde video’s en vertaal tekst in geschikte invoervelden. De vertaallimiet van je abonnement is van toepassing.",
+      "steps": [
+        "Webpagina’s: wissel tussen het origineel en de vertaling.",
+        "Video-ondertitels: zet ondertitels aan in een geschikte speler.",
+        "Invoervelden: vertaal je concept voordat je het verstuurt."
+      ],
+      "guide": {
+        "steps": {
+          "title": "Zo werkt het",
+          "items": [
+            {
+              "title": "Open de Any-browser",
+            "body": "Open op je iPhone of iPad de Any-browser via Hulpmiddelen. Kies een snelkoppeling of vul een webadres in."
+            },
+            {
+              "title": "Kies je leestaal",
+              "body": "Tik op het pijltje naast de vlag om een taal te kiezen. Tik op de vlag om tussen het origineel en de vertaling te wisselen."
+            },
+            {
+              "title": "Zet ondertitels aan",
+              "body": "Zet de ondertitels in de videospeler aan en blijf de vertaalde pagina bekijken."
+            },
+            {
+              "title": "Vertaal wat je typt",
+              "body": "Typ in een ondersteund veld en tik op de vertaalknop boven het toetsenbord. Tik nogmaals om je oorspronkelijke tekst terug te zetten."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Wat je kunt doen",
+          "items": [
+            {
+              "title": "24 snelkoppelingen naar websites",
+              "body": "Open bijvoorbeeld Wikipedia, Reddit of BBC News vanaf de startpagina."
+            },
+            {
+              "title": "Webpagina’s vertalen",
+              "body": "Lees de vertaling direct op de pagina en schakel zo nodig terug naar het origineel."
+            },
+            {
+              "title": "Video-ondertitels",
+              "body": "Vertaal bestaande ondertitels bij ondersteunde video’s, bijvoorbeeld op YouTube en TED."
+            },
+            {
+              "title": "Vertalen in invoervelden",
+              "body": "Vertaal een concept in een geschikt invoerveld op een website en lees het na voor je het verstuurt."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Wanneer het van pas komt",
+          "items": [
+            {
+              "title": "Lees artikelen uit het buitenland",
+              "body": "Open een artikel en schakel terug naar het origineel om een citaat of een woord te controleren."
+            },
+            {
+              "title": "Volg een lezing of uitlegvideo",
+              "body": "Zet de ondertitels aan en lees de vertaling tijdens het kijken."
+            },
+            {
+              "title": "Schrijf een reactie of antwoord",
+              "body": "Schrijf in je eigen taal en vertaal je tekst in hetzelfde veld voordat je die plaatst."
             }
           ]
         }

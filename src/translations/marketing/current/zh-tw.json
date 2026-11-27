@@ -5,12 +5,12 @@
     "nav.manifesto": "我們的宣言",
     "hero.body": "菜單看懂就能點，訊息翻好就能回。文字、照片、影片字幕，搭配自然 AI 語音與陪練，讓外語真正用得上。",
     "feature.table": "表格翻譯",
-    "home.featuresTitle": "11 種翻譯與學習工具，全部帶著走。",
+    "home.featuresTitle": "{count} 種翻譯與學習工具，全部帶著走。",
     "home.featuresBody": "讀菜單、看文件、回訊息、練口說，需要的工具一次備齊。",
     "home.blogTitle": "把翻譯用到位的實用指南。",
     "download.macNote": "Mac 機型與系統需求以 App Store 為準。翻譯鍵盤、學習 Widget 與任何 App 翻譯適用 iOS／iPadOS。",
     "features.title": "翻譯、對話與學習，在同一個 App。",
-    "features.body": "看懂菜單、文件與表格，回覆訊息、跟上影片，再用 AI 助手練口說。11 種工具，把讀、寫、聽、說接在一起。",
+    "features.body": "看懂菜單、文件與表格，回覆訊息、跟上影片，再用 AI 助手練口說。{count} 種工具，把讀、寫、聽、說接在一起。",
     "pricing.allowance": "免費額度以 App 顯示為準",
     "pricing.more": "按使用方式選擇標準版或語音版",
     "pricing.manage": "在 App 恢復購買，透過 Apple 管理續訂與取消；用量卡可查餘額及更新日期。",
@@ -90,6 +90,7 @@
     "article.chat": "你的隨身外語教練：看圖、口譯、練開口",
     "article.learning": "把練過的句子，帶進日常。",
     "feature.screen-translation": "任何 App 翻譯",
+    "feature.browser-translation": "瀏覽器翻譯",
     "article.screen": "跨 App 看字幕、讀網頁",
     "case.media.title": "看影片、讀網頁，讓翻譯跟著你。",
     "case.media.body": "影片繼續播，網頁繼續讀。用子母畫面對照字幕或可見文字，遇到想深究的句子，再交給 AI 助手。"
@@ -742,6 +743,78 @@
             {
               "title": "準備訊息回覆",
               "body": "補上來龍去脈，請 AI 比較不同說法。"
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Any 瀏覽器，邊瀏覽邊翻譯。",
+      "summary": "在 AnyTranslator 內建的瀏覽器翻譯網頁、影片字幕和輸入的文字。",
+      "heading": "讀文章、看影片、回留言，都在同一個瀏覽器。",
+      "body": "從 24 個網站捷徑選一個，或直接輸入網址。用你選的語言閱讀網頁、看支援影片的字幕，也能翻譯相容輸入框內的文字。翻譯適用你的方案額度。",
+      "steps": [
+        "網頁：隨時切換原文和譯文。",
+        "影片字幕：在支援的播放器開啟字幕。",
+        "輸入框：送出前先翻譯草稿。"
+      ],
+      "guide": {
+        "steps": {
+          "title": "使用步驟",
+          "items": [
+            {
+              "title": "開啟 Any 瀏覽器",
+              "body": "在 iPhone 或 iPad 的「工具」開啟 Any 瀏覽器，再選擇網站捷徑或輸入網址。"
+            },
+            {
+              "title": "選擇閱讀語言",
+              "body": "點國旗旁的箭頭選擇語言，點國旗切換原文和譯文。"
+            },
+            {
+              "title": "開啟影片字幕",
+              "body": "在影片播放器開啟字幕，並保持網頁顯示譯文。"
+            },
+            {
+              "title": "翻譯輸入文字",
+              "body": "在支援的輸入框打字，再點鍵盤上方的翻譯鍵。再點一次可還原原文。"
+            }
+          ]
+        },
+        "abilities": {
+          "title": "主要功能",
+          "items": [
+            {
+              "title": "24 個網站捷徑",
+              "body": "從起始頁直接開啟維基百科、Reddit、BBC News 等網站。"
+            },
+            {
+              "title": "網頁翻譯",
+              "body": "在原網頁上讀譯文，需要時切回原文。"
+            },
+            {
+              "title": "影片字幕",
+              "body": "翻譯 YouTube、TED 等支援影片已有的字幕。"
+            },
+            {
+              "title": "輸入框翻譯",
+              "body": "在相容的網站輸入框內翻譯草稿，確認後再送出。"
+            }
+          ]
+        },
+        "situations": {
+          "title": "使用情境",
+          "items": [
+            {
+              "title": "讀外文文章",
+              "body": "打開文章，遇到想核對的引文或用字時切回原文。"
+            },
+            {
+              "title": "看演講或教學影片",
+              "body": "開啟字幕，一邊看影片一邊讀譯文。"
+            },
+            {
+              "title": "留言或回覆",
+              "body": "先用自己的語言打草稿，再在同一個輸入框翻譯後發出。"
             }
           ]
         }

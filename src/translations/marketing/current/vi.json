@@ -5,12 +5,12 @@
     "nav.manifesto": "Điều chúng tôi tin",
     "hero.body": "Hiểu thực đơn để gọi món, dịch tin nhắn để trả lời. Văn bản, ảnh, phụ đề video, giọng AI tự nhiên và luyện hội thoại—đưa ngoại ngữ vào cuộc sống.",
     "feature.table": "Dịch bảng",
-    "home.featuresTitle": "11 công cụ dịch và học, luôn bên bạn.",
+    "home.featuresTitle": "{count} công cụ dịch và học, luôn bên bạn.",
     "home.featuresBody": "Đọc thực đơn, xem tài liệu, trả lời tin nhắn, luyện nói. Đủ công cụ trong một ứng dụng.",
     "home.blogTitle": "Hướng dẫn thực tế để dịch hiệu quả hơn.",
     "download.macNote": "Xem mẫu Mac tương thích và yêu cầu hệ thống trên App Store. Bàn phím dịch, Widget học tập và dịch trong ứng dụng khác dành cho iOS／iPadOS.",
     "features.title": "Dịch, trò chuyện và học trong cùng một ứng dụng.",
-    "features.body": "Hiểu thực đơn, tài liệu và bảng; trả lời tin nhắn, theo dõi video, rồi luyện nói với Trợ lý AI. 11 công cụ kết nối đọc, viết, nghe và nói.",
+    "features.body": "Hiểu thực đơn, tài liệu và bảng; trả lời tin nhắn, theo dõi video, rồi luyện nói với Trợ lý AI. {count} công cụ kết nối đọc, viết, nghe và nói.",
     "pricing.allowance": "Xem hạn mức miễn phí trong ứng dụng",
     "pricing.more": "Chọn gói Tiêu chuẩn hoặc Giọng nói theo nhu cầu",
     "pricing.manage": "Khôi phục giao dịch trong ứng dụng; quản lý gia hạn và hủy qua Apple. Thẻ mức sử dụng hiển thị số dư và ngày làm mới.",
@@ -90,6 +90,7 @@
     "article.chat": "Huấn luyện viên ngoại ngữ bỏ túi: ảnh, phiên dịch và luyện nói",
     "article.learning": "Đưa những câu đã luyện vào đời thường.",
     "feature.screen-translation": "Dịch trong ứng dụng khác",
+    "feature.browser-translation": "Dịch trong trình duyệt",
     "article.screen": "Đọc phụ đề và trang web xuyên ứng dụng",
     "case.media.title": "Xem video, đọc web, hiểu liền mạch.",
     "case.media.body": "Video vẫn phát, trang web vẫn mở. Đối chiếu phụ đề hoặc chữ đang thấy qua Hình trong hình; gặp câu muốn tìm hiểu thêm, hãy hỏi Trợ lý AI."
@@ -742,6 +743,78 @@
             {
               "title": "Chuẩn bị trả lời tin nhắn",
               "body": "Cho trợ lý biết ngữ cảnh rồi nhờ so sánh các câu trả lời có thể dùng."
+            }
+          ]
+        }
+      }
+    },
+    "browser-translation": {
+      "title": "Trình duyệt Any: vừa lướt web vừa dịch.",
+      "summary": "Dịch trang web, phụ đề video và nội dung bạn nhập ngay trong trình duyệt tích hợp của AnyTranslator.",
+      "heading": "Đọc, xem và trả lời trong cùng một trình duyệt.",
+      "body": "Mở trang web từ một trong 24 lối tắt hoặc nhập địa chỉ web. Đọc bằng ngôn ngữ bạn chọn, theo dõi phụ đề trên video được hỗ trợ và dịch nội dung trong ô nhập tương thích. Bản dịch được tính vào hạn mức của gói bạn dùng.",
+      "steps": [
+        "Trang web: chuyển đổi giữa bản gốc và bản dịch.",
+        "Phụ đề video: bật phụ đề trong trình phát được hỗ trợ.",
+        "Ô nhập: dịch bản nháp trước khi gửi."
+      ],
+      "guide": {
+        "steps": {
+          "title": "Cách dùng",
+          "items": [
+            {
+              "title": "Mở Trình duyệt Any",
+              "body": "Trên iPhone hoặc iPad, mở Trình duyệt Any từ mục Công cụ. Chọn một lối tắt hoặc nhập địa chỉ web."
+            },
+            {
+              "title": "Chọn ngôn ngữ để đọc",
+              "body": "Chạm vào mũi tên cạnh lá cờ để chọn ngôn ngữ. Chạm vào lá cờ để chuyển giữa bản gốc và bản dịch."
+            },
+            {
+              "title": "Bật phụ đề video",
+              "body": "Bật phụ đề trong trình phát và giữ trang ở chế độ hiển thị bản dịch."
+            },
+            {
+              "title": "Dịch nội dung bạn nhập",
+              "body": "Nhập văn bản vào ô được hỗ trợ rồi chạm nút dịch phía trên bàn phím. Chạm lại để khôi phục văn bản gốc."
+            }
+          ]
+        },
+        "abilities": {
+          "title": "Tính năng chính",
+          "items": [
+            {
+              "title": "24 lối tắt đến các trang web",
+              "body": "Mở các trang như Wikipedia, Reddit và BBC News ngay từ trang bắt đầu."
+            },
+            {
+              "title": "Dịch trang web",
+              "body": "Đọc bản dịch ngay trên trang và chuyển về bản gốc khi cần."
+            },
+            {
+              "title": "Phụ đề video",
+              "body": "Dịch phụ đề có sẵn của các video được hỗ trợ, bao gồm video trên YouTube và TED."
+            },
+            {
+              "title": "Dịch trong ô nhập",
+              "body": "Dịch bản nháp trong ô nhập tương thích trên trang web rồi đọc lại trước khi gửi."
+            }
+          ]
+        },
+        "situations": {
+          "title": "Khi nào nên dùng",
+          "items": [
+            {
+              "title": "Đọc bài viết nước ngoài",
+              "body": "Mở bài viết và chuyển về bản gốc để kiểm tra một câu trích dẫn hoặc từ ngữ."
+            },
+            {
+              "title": "Theo dõi bài nói hoặc video hướng dẫn",
+              "body": "Bật phụ đề và đọc bản dịch khi xem."
+            },
+            {
+              "title": "Viết bình luận hoặc trả lời",
+              "body": "Soạn nháp bằng ngôn ngữ của bạn rồi dịch ngay trong ô đó trước khi đăng."
             }
           ]
         }
